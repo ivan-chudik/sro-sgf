@@ -31,7 +31,9 @@
      "elType": "widget",
      "widgetType": "header",
      "isInner": false,
-     "settings": {},
+     "settings": {
+      "cta_text": "Buy tickets"
+     },
      "elements": []
     }
    ]

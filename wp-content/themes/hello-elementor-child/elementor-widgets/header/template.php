@@ -1,8 +1,15 @@
 <?php
 // $settings dostupný z render() scope
 $lang      = ( $settings['lang_active'] ?? 'auto' ) === 'auto' ? xn_lang() : $settings['lang_active'];
-$home      = ( $lang === 'en' ? ( $settings['lang_en_url']['url'] ?? '' ) : ( $settings['lang_sk_url']['url'] ?? '' ) ) ?: home_url( '/' );
-$brand_url = ( $settings['brand_url']['url'] ?? '' ) ?: $home;
+$brand_url = ( $settings['brand_url']['url'] ?? '' ) ?: xn_home_url( $lang );
+
+$langs = xn_pll_languages();
+if ( ! $langs ) {
+    $langs = [
+        [ 'slug' => 'sk', 'url' => ( $settings['lang_sk_url']['url'] ?? '' ) ?: XN_HOME_SK ],
+        [ 'slug' => 'en', 'url' => ( $settings['lang_en_url']['url'] ?? '' ) ?: XN_HOME_EN ],
+    ];
+}
 $nav_html  = xn_on( $settings, 'nav_show' ) ? xn_render_template( $settings['nav_template'] ?? 0 ) : '';
 $is_editor = class_exists( '\Elementor\Plugin' ) && \Elementor\Plugin::$instance->editor->is_edit_mode();
 ?>
@@ -25,8 +32,11 @@ $is_editor = class_exists( '\Elementor\Plugin' ) && \Elementor\Plugin::$instance
 
             <?php if ( xn_on( $settings, 'lang_show' ) ) : ?>
                 <div class="header__lang">
-                    <a class="<?php echo $lang === 'sk' ? 'is-on' : ''; ?>" href="<?php echo esc_url( $settings['lang_sk_url']['url'] ?? XN_HOME_SK ); ?>" hreflang="sk"><?php echo esc_html( $settings['lang_sk_label'] ?? 'SK' ); ?></a>
-                    <a class="<?php echo $lang === 'en' ? 'is-on' : ''; ?>" href="<?php echo esc_url( $settings['lang_en_url']['url'] ?? XN_HOME_EN ); ?>" hreflang="en"><?php echo esc_html( $settings['lang_en_label'] ?? 'EN' ); ?></a>
+                    <?php foreach ( $langs as $l ) :
+                        $label = $settings[ 'lang_' . $l['slug'] . '_label' ] ?? '';
+                        $label = $label !== '' ? $label : strtoupper( $l['slug'] ); ?>
+                        <a class="<?php echo $l['slug'] === $lang ? 'is-on' : ''; ?>" href="<?php echo esc_url( $l['url'] ); ?>" hreflang="<?php echo esc_attr( $l['slug'] ); ?>"><?php echo esc_html( $label ); ?></a>
+                    <?php endforeach; ?>
                 </div>
             <?php endif; ?>
 

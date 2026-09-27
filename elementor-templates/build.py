@@ -31,6 +31,9 @@ def p(text):
 
 
 EN = {
+    'header': {
+        'cta_text': 'Buy tickets',
+    },
     'hero': {
         'btn1_url': {'url': '#tickets', 'is_external': '', 'nofollow': ''},
         'btn2_url': {'url': '#tickets', 'is_external': '', 'nofollow': ''},

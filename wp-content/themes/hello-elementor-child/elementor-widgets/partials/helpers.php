@@ -10,26 +10,64 @@ function xn_asset( $path ) {
     return get_stylesheet_directory_uri() . '/elementor-widgets/assets/' . ltrim( $path, '/' );
 }
 
-/**
- * Jazyk aktuálnej stránky: 'en' ak URL stránky začína /en, alebo je EN locale; inak 'sk'.
- * V editore sa číta permalink editovaného dokumentu (render ide cez admin-ajax).
- */
-function xn_lang() {
-    $path = '';
+/** ID stránky, ktorá sa práve renderuje (v editore editovaný dokument, render ide cez admin-ajax). */
+function xn_current_post_id() {
     if ( class_exists( '\Elementor\Plugin' ) && isset( \Elementor\Plugin::$instance->documents ) ) {
         $doc = \Elementor\Plugin::$instance->documents->get_current();
-        if ( $doc ) {
-            $path = (string) wp_parse_url( get_permalink( $doc->get_main_id() ), PHP_URL_PATH );
-        }
+        if ( $doc ) return (int) $doc->get_main_id();
     }
-    if ( $path === '' && function_exists( 'get_queried_object_id' ) && get_queried_object_id() ) {
-        $path = (string) wp_parse_url( get_permalink( get_queried_object_id() ), PHP_URL_PATH );
+    return function_exists( 'get_queried_object_id' ) ? (int) get_queried_object_id() : 0;
+}
+
+/**
+ * Jazyk aktuálnej stránky: 'sk' | 'en'.
+ * 1) Polylang — jazyk stránky, 2) Polylang — aktuálny jazyk, 3) URL začína /en, 4) locale.
+ */
+function xn_lang() {
+    $id = xn_current_post_id();
+    if ( $id && function_exists( 'pll_get_post_language' ) ) {
+        $l = pll_get_post_language( $id, 'slug' );
+        if ( $l ) return $l === 'en' ? 'en' : 'sk';
     }
+    if ( function_exists( 'pll_current_language' ) ) {
+        $l = pll_current_language( 'slug' );
+        if ( $l ) return $l === 'en' ? 'en' : 'sk';
+    }
+    $path = $id ? (string) wp_parse_url( get_permalink( $id ), PHP_URL_PATH ) : '';
     if ( $path === '' ) {
         $path = (string) wp_parse_url( $_SERVER['REQUEST_URI'] ?? '', PHP_URL_PATH );
     }
     if ( preg_match( '#^/en(/|$)#', $path ) ) return 'en';
     return strpos( determine_locale(), 'en' ) === 0 ? 'en' : 'sk';
+}
+
+/** Domovská stránka jazyka (Polylang, inak pevné URL). */
+function xn_home_url( $lang ) {
+    if ( function_exists( 'pll_home_url' ) ) {
+        $url = pll_home_url( $lang );
+        if ( $url ) return $url;
+    }
+    return $lang === 'en' ? XN_HOME_EN : XN_HOME_SK;
+}
+
+/**
+ * Jazyky pre prepínač z Polylangu: [ ['slug' => 'sk', 'url' => ...], ... ].
+ * URL = jazykové dvojča aktuálnej stránky, bez prekladu domovská stránka jazyka. Bez Polylangu [].
+ */
+function xn_pll_languages() {
+    if ( ! function_exists( 'pll_the_languages' ) ) return [];
+    $args = [ 'raw' => 1, 'hide_if_no_translation' => 0, 'hide_if_empty' => 0, 'hide_current' => 0 ];
+    $id   = xn_current_post_id();
+    if ( $id ) $args['post_id'] = $id;
+    $langs = pll_the_languages( $args );
+    if ( ! is_array( $langs ) ) return [];
+    $out = [];
+    foreach ( $langs as $l ) {
+        if ( empty( $l['slug'] ) ) continue;
+        $url = ( empty( $l['url'] ) || ! empty( $l['no_translation'] ) ) ? xn_home_url( $l['slug'] ) : $l['url'];
+        $out[] = [ 'slug' => $l['slug'], 'url' => $url ];
+    }
+    return $out;
 }
 
 function xn_tickets_url() {

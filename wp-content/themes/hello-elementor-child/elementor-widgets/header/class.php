@@ -29,7 +29,7 @@ class Elementor_Widget_Header extends \Elementor\Widget_Base {
             'label'       => 'Odkaz loga',
             'type'        => \Elementor\Controls_Manager::URL,
             'placeholder' => 'prázdne = úvodná stránka jazyka',
-            'description' => 'Prázdne = domovská stránka aktívneho jazyka (sro.sgf.sk / sro.sgf.sk/en).',
+            'description' => 'Prázdne = domovská stránka aktívneho jazyka (Polylang).',
         ]);
         $this->end_controls_section();
 
@@ -57,7 +57,7 @@ class Elementor_Widget_Header extends \Elementor\Widget_Base {
             'label'     => 'Aktívny jazyk',
             'type'      => \Elementor\Controls_Manager::SELECT,
             'default'   => 'auto',
-            'options'   => [ 'auto' => 'Automaticky podľa URL', 'sk' => 'SK', 'en' => 'EN' ],
+            'options'   => [ 'auto' => 'Automaticky (Polylang)', 'sk' => 'SK', 'en' => 'EN' ],
             'condition' => [ 'lang_show' => 'yes' ],
         ]);
         $this->add_control('lang_sk_label', [
@@ -68,6 +68,7 @@ class Elementor_Widget_Header extends \Elementor\Widget_Base {
         ]);
         $this->add_control('lang_sk_url', [
             'label'     => 'SK — odkaz',
+            'description' => 'Používa sa len bez Polylangu. S Polylangom prepínač vedie na jazykové dvojča aktuálnej stránky.',
             'type'      => \Elementor\Controls_Manager::URL,
             'default'   => [ 'url' => XN_HOME_SK ],
             'condition' => [ 'lang_show' => 'yes' ],
@@ -80,6 +81,7 @@ class Elementor_Widget_Header extends \Elementor\Widget_Base {
         ]);
         $this->add_control('lang_en_url', [
             'label'     => 'EN — odkaz',
+            'description' => 'Používa sa len bez Polylangu. S Polylangom prepínač vedie na jazykové dvojča aktuálnej stránky.',
             'type'      => \Elementor\Controls_Manager::URL,
             'default'   => [ 'url' => XN_HOME_EN ],
             'condition' => [ 'lang_show' => 'yes' ],

@@ -54,7 +54,8 @@ Ak by sa kontajnery neimportovali presne, platí pravidlo: každý widget patrí
 - Všetky predajné CTA majú **prázdne URL = automaticky podľa jazyka stránky**
   (stránka pod `/en/` → `tickets.sgf.sk/christmas-nitra-tickets/`, inak `tickets.sgf.sk/sk/christmas-nitra-vstupenky/`).
   Vlastná URL v paneli má vždy prednosť.
-- Prepínač SK/EN v headeri: aktívny jazyk sa určí automaticky podľa URL; odkazy `https://sro.sgf.sk/` a `https://sro.sgf.sk/en/`.
+- Prepínač SK/EN v headeri je napojený na **Polylang**: aktívny jazyk podľa jazyka stránky, odkaz vedie na jazykové dvojča aktuálnej stránky (bez prekladu na domovskú stránku jazyka). Logo vedie na domov aktuálneho jazyka. Bez Polylangu sa použijú URL z panela (`https://sro.sgf.sk/`, `https://sro.sgf.sk/en/`).
+- Jazyk pre predajné linky sa berie z Polylangu (jazyk stránky), záložne z URL `/en/`.
 - Všetky externé linky (iná doména), aj tie vo WYSIWYG textoch, dostanú `target="_blank" rel="noopener"` automaticky. PDF sa otvárajú v novom okne.
 
 ## 6 · Maintenance mode

@@ -1,4 +1,7 @@
 {
+ "header": {
+  "cta_text": "Buy tickets"
+ },
  "hero": {
   "btn1_url": {
    "url": "#tickets",
