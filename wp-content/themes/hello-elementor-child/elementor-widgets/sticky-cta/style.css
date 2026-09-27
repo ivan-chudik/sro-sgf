@@ -1,0 +1,11 @@
+.custom-sticky-cta { position: fixed; left: 0; right: 0; bottom: 0; z-index: 70; display: none; gap: 10px; padding: 12px 16px; padding-bottom: calc(12px + env(safe-area-inset-bottom, 0px)); background: rgba(0, 0, 0, .92); -webkit-backdrop-filter: blur(12px); backdrop-filter: blur(12px); border-top: 1px solid #23232b; }
+.custom-sticky-cta .xn-btn { flex: 1; height: 48px; min-height: 48px; padding: 0 12px; font-size: 12px; }
+
+@media (max-width: 820px) {
+    .custom-sticky-cta { display: flex; }
+}
+@media (max-width: 480px) {
+    .custom-sticky-cta .xn-btn { white-space: nowrap; padding-top: 0; padding-bottom: 0; }
+}
+
+.elementor-editor-active .custom-sticky-cta { position: relative; display: flex; }

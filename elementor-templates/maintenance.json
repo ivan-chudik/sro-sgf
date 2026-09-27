@@ -1,0 +1,44 @@
+{
+ "version": "0.4",
+ "title": "Christmas Nitra — Maintenance",
+ "type": "page",
+ "content": [
+  {
+   "id": "f8ef814",
+   "elType": "container",
+   "isInner": false,
+   "settings": {
+    "content_width": "full",
+    "padding": {
+     "unit": "px",
+     "top": "0",
+     "right": "0",
+     "bottom": "0",
+     "left": "0",
+     "isLinked": true
+    },
+    "flex_gap": {
+     "unit": "px",
+     "size": 0,
+     "column": "0",
+     "row": "0",
+     "isLinked": true
+    }
+   },
+   "elements": [
+    {
+     "id": "0064287",
+     "elType": "widget",
+     "widgetType": "maintenance",
+     "isInner": false,
+     "settings": {},
+     "elements": []
+    }
+   ]
+  }
+ ],
+ "page_settings": {
+  "template": "elementor_canvas",
+  "hide_title": "yes"
+ }
+}

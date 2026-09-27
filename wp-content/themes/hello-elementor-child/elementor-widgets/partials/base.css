@@ -1,0 +1,96 @@
+/* Christmas Nitra — zdieľaný základ všetkých widgetov (reset scoped na .xn-block, layout, typografia, tlačidlá). Tokeny sú v register.php. */
+
+.xn-block {
+    position: relative;
+    font-family: var(--xn-font-text);
+    color: #fff;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+.xn-block,
+.xn-block *,
+.xn-block *::before,
+.xn-block *::after { box-sizing: border-box; }
+.xn-block :is(h1, h2, h3, h4, h5, h6, p, ul, ol, li, figure, figcaption, blockquote, dl, dd, small) { margin: 0; padding: 0; }
+.xn-block :is(h1, h2, h3, h4, h5, h6) { font-size: inherit; font-weight: 400; line-height: 1; color: inherit; }
+.xn-block :is(ul, ol) { list-style: none; }
+.xn-block img { display: block; max-width: 100%; height: auto; border: 0; }
+.xn-block a { color: var(--xn-pink); text-decoration: none; }
+.xn-block a:hover,
+.xn-block a:focus { color: var(--xn-red); }
+
+.xn-block.xn-section { position: relative; overflow: hidden; padding: 110px 0; }
+.xn-block.xn-light { background: #fff; color: #111; }
+.xn-block.xn-light a { color: var(--xn-orchid); }
+.xn-block.xn-light a:hover { color: var(--xn-magenta); }
+
+.xn-block .xn-wrap { max-width: 1240px; margin: 0 auto; padding-left: 32px; padding-right: 32px; }
+.xn-block .xn-z { position: relative; z-index: 1; }
+.xn-block .xn-rib { position: absolute; pointer-events: none; z-index: 0; }
+
+.xn-block .xn-disp { font-family: var(--xn-font); font-weight: 400; text-transform: uppercase; letter-spacing: .04em; line-height: 1; }
+.xn-block .xn-grad { background-image: var(--xn-gradient); -webkit-background-clip: text; background-clip: text; color: transparent; -webkit-text-fill-color: transparent; }
+.xn-block .xn-sub { font-family: var(--xn-font); font-weight: 400; text-transform: uppercase; letter-spacing: .05em; line-height: 1; white-space: nowrap; }
+.xn-block .xn-eyebrow { font-weight: 700; text-transform: uppercase; letter-spacing: .22em; font-size: 12px; line-height: 1.5; color: var(--xn-pink); }
+.xn-block.xn-light .xn-eyebrow { color: var(--xn-orchid); }
+.xn-block .xn-h2 { font-size: clamp(34px, 4.4vw, 60px); margin: 14px 0 22px; max-width: 900px; }
+.xn-block .xn-lead { font-size: 19px; color: #cfcfd8; max-width: 640px; }
+.xn-block.xn-light .xn-lead { color: #444; }
+.xn-block .xn-lead p + p { margin-top: .8em; }
+.xn-block .xn-cta-row { display: flex; gap: 14px; flex-wrap: wrap; }
+.xn-block .xn-grad-line { height: 3px; background: var(--xn-gradient); }
+
+/* ── Tlačidlá ── */
+.xn-block .xn-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    height: 54px;
+    padding: 0 28px;
+    border: 0;
+    border-radius: 999px;
+    font-family: var(--xn-font-text);
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 1.1;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    text-decoration: none;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: transform .15s, box-shadow .15s, background .15s, color .15s;
+}
+.xn-block .xn-btn:hover { transform: translateY(-2px); }
+
+.xn-block .xn-btn--primary { background: #fff; color: #000 !important; }
+.xn-block .xn-btn--primary:hover,
+.xn-block .xn-btn--primary:focus { color: #000 !important; box-shadow: 0 0 0 3px #000, 0 0 0 5px var(--xn-pink); }
+
+.xn-block .xn-btn--grad { border: 2px solid transparent; background: linear-gradient(#000, #000) padding-box, var(--xn-gradient) border-box; color: #fff !important; }
+.xn-block .xn-btn--grad:hover,
+.xn-block .xn-btn--grad:focus { color: #fff !important; background: var(--xn-gradient) padding-box, var(--xn-gradient) border-box; }
+
+.xn-block.xn-light .xn-btn--primary { background: #111; color: #fff !important; }
+.xn-block.xn-light .xn-btn--primary:hover,
+.xn-block.xn-light .xn-btn--primary:focus { color: #fff !important; box-shadow: 0 0 0 3px #fff, 0 0 0 5px var(--xn-orchid); }
+.xn-block.xn-light .xn-btn--grad { background: linear-gradient(#fff, #fff) padding-box, var(--xn-gradient) border-box; color: #111 !important; }
+.xn-block.xn-light .xn-btn--grad:hover,
+.xn-block.xn-light .xn-btn--grad:focus { color: #fff !important; background: var(--xn-gradient) padding-box, var(--xn-gradient) border-box; }
+
+.xn-block .xn-btn--lg { height: 62px; padding: 0 36px; font-size: 14px; }
+
+@keyframes xn-livedot { 0%, 100% { opacity: 1; } 50% { opacity: .35; } }
+
+@media (max-width: 820px) {
+    .xn-block.xn-section { padding: 72px 0; }
+}
+@media (max-width: 480px) {
+    .xn-block .xn-wrap { padding-left: 20px; padding-right: 20px; }
+    .xn-block .xn-cta-row { flex-direction: column; align-items: stretch; }
+    .xn-block .xn-btn { white-space: normal; text-align: center; height: auto; min-height: 54px; padding-top: 12px; padding-bottom: 12px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .xn-block *, .xn-block *::before, .xn-block *::after { animation: none !important; transition: none !important; }
+}

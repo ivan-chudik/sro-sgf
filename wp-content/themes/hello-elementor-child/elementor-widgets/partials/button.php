@@ -1,17 +1,28 @@
 <?php
-// Očakávané premenné: $btn['text'], $btn['url'], $btn['target'], $btn['style'], $btn['size']
+// Očakávané premenné: $btn['text'], $btn['url'], $btn['style'], $btn['size']
+// Voliteľné: $btn['prefix'] (default 'xn'), $btn['fallback'] (URL keď je url prázdna),
+//            $btn['class'], $btn['attrs'] (['data-x' => 'y']), $btn['html'] (už escapovaný obsah namiesto text)
 $btn = wp_parse_args($btn ?? [], [
-    'text'   => '',
-    'url'    => '#',
-    'target' => '_self',
-    'style'  => 'primary',
-    'size'   => 'md',
+    'text'     => '',
+    'html'     => '',
+    'url'      => '',
+    'fallback' => '',
+    'style'    => 'primary',
+    'size'     => 'md',
+    'prefix'   => 'xn',
+    'class'    => '',
+    'attrs'    => [],
 ]);
-if ( empty($btn['text']) ) return;
+if ( $btn['text'] === '' && $btn['html'] === '' ) return;
+
+$btn_classes = [
+    $btn['prefix'] . '-btn',
+    $btn['prefix'] . '-btn--' . $btn['style'],
+    $btn['prefix'] . '-btn--' . $btn['size'],
+    $btn['class'],
+];
 ?>
-<a href="<?php echo esc_url($btn['url']); ?>"
-   target="<?php echo esc_attr($btn['target']); ?>"
-   <?php if ($btn['target'] === '_blank') echo 'rel="noopener noreferrer"'; ?>
-   class="{widget-prefix}-btn {widget-prefix}-btn--<?php echo esc_attr($btn['style']); ?> {widget-prefix}-btn--<?php echo esc_attr($btn['size']); ?>">
-    <?php echo esc_html($btn['text']); ?>
-</a>
+<a class="<?php echo esc_attr( trim( implode( ' ', $btn_classes ) ) ); ?>"<?php
+    echo xn_link_attrs( $btn['url'], $btn['fallback'] ?: '#' );
+    foreach ( $btn['attrs'] as $k => $v ) echo ' ' . esc_attr( $k ) . '="' . esc_attr( $v ) . '"';
+?>><?php echo $btn['html'] !== '' ? $btn['html'] : esc_html( $btn['text'] ); ?></a>

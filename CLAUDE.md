@@ -431,3 +431,14 @@ include get_stylesheet_directory() . '/elementor-widgets/partials/button.php';
 ### register.php   ← len doplnok — nový widget
 [kód]
 ```
+
+---
+
+## Špecifiká tohto projektu (sro.sgf.sk — Christmas Nitra 2026)
+
+- Podklad: `Landing-page/SRO_SGF_Export_HandOff/.../handoff/` (prototyp HTML/CSS/JS). Postup nasadenia: `docs/christmas-nitra-setup.md`.
+- Widgety sú jednorazové, `get_title()` s prefixom `CN ·`, kategória `custom-widgets` (label „Christmas Nitra“).
+- Zdieľané tlačidlá `.xn-btn--primary` / `.xn-btn--grad` v `partials/base.css` (prefix `xn-`, nie `.btn`), aby sa rovnaké 2 varianty nekopírovali do 11 widgetov.
+- Spoločné controls sú v traite `Xn_Widget_Controls` (`partials/controls.php`), helpery v `partials/helpers.php`.
+- SK/EN = ten istý widget, iný obsah. Predajné URL prázdne = automaticky podľa jazyka (`xn_tickets_url()`). EN obsah sa generuje cez `elementor-templates/build.py`.
+- Nav Menu a Form sú natívne Elementor widgety v uložených šablónach, ktoré sa renderujú v CN · Header / CN · Pripomienka (SELECT šablóny).

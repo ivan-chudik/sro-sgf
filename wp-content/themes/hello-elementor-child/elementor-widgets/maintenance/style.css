@@ -1,0 +1,24 @@
+.custom-maintenance.xn-section { min-height: 100vh; display: flex; align-items: center; padding: 80px 0; background: #000; }
+.custom-maintenance .maintenance__inner { width: 100%; display: flex; flex-direction: column; align-items: center; text-align: center; }
+
+.custom-maintenance .maintenance__rib--a { width: 1100px; right: -380px; top: -220px; opacity: .45; }
+.custom-maintenance .maintenance__rib--b { width: 900px; left: -380px; bottom: -360px; opacity: .25; transform: scaleX(-1) rotate(12deg); }
+
+.custom-maintenance .maintenance__logo { height: 34px; width: auto; margin-bottom: 44px; }
+
+.custom-maintenance .maintenance__date { display: inline-flex; align-items: center; gap: 14px; padding: 9px 18px 9px 10px; border: 1.5px solid rgba(255, 255, 255, .3); border-radius: 999px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; font-size: 12.5px; line-height: 1.5; }
+.custom-maintenance .maintenance__date i { flex: none; width: 26px; height: 26px; border-radius: 50%; background: var(--xn-gradient); }
+
+.custom-maintenance .maintenance__title { margin-top: 30px; font-size: clamp(48px, 8vw, 120px); letter-spacing: .03em; filter: drop-shadow(0 0 26px rgba(255, 255, 255, .16)); }
+.custom-maintenance .maintenance__sub { margin-top: 14px; font-size: clamp(15px, 1.8vw, 26px); letter-spacing: .06em; }
+
+.custom-maintenance .maintenance__text { max-width: 620px; margin-top: 40px; font-size: clamp(18px, 1.8vw, 22px); line-height: 1.4; font-weight: 500; color: #cfcfd8; }
+.custom-maintenance .maintenance__text p + p { margin-top: 14px; font-size: .8em; font-weight: 400; color: #9a9aa6; }
+
+.custom-maintenance .maintenance__line { width: 80px; margin-top: 40px; border-radius: 3px; }
+.custom-maintenance .maintenance__contact { margin-top: 22px; font-size: 14px; letter-spacing: .04em; color: #9a9aa6; }
+
+@media (max-width: 480px) {
+    .custom-maintenance .maintenance__date { font-size: 11px; letter-spacing: .1em; }
+    .custom-maintenance .maintenance__sub { white-space: normal; }
+}

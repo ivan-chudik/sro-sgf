@@ -1,0 +1,44 @@
+.custom-competition .competition__rib { width: 820px; left: -320px; top: -220px; opacity: .28; transform: scaleX(-1); }
+
+.custom-competition .competition__grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; margin-top: 44px; }
+
+.custom-competition .competition__box { position: relative; overflow: hidden; display: flex; flex-direction: column; min-height: 300px; padding: 30px 28px 28px; border: 1.5px solid #2a2a33; border-radius: 24px; }
+.custom-competition .competition__box::before { content: ""; position: absolute; left: 0; right: 0; top: 0; height: 4px; background: var(--xn-gradient); }
+
+.custom-competition .competition__k { font-size: 11px; letter-spacing: .18em; text-transform: uppercase; font-weight: 700; color: var(--xn-pink); }
+.custom-competition .competition__title { font-size: 28px; margin: 10px 0 8px; }
+.custom-competition .competition__text { font-size: 15px; color: #9a9aa6; }
+
+.custom-competition .competition__chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 20px; }
+.custom-competition .competition__chip { display: inline-flex; align-items: center; height: 36px; padding: 0 16px; border-radius: 999px; border: 1.5px solid #2a2a33; font-size: 13px; letter-spacing: .06em; text-transform: uppercase; font-weight: 700; color: #cfcfd8; }
+.custom-competition .competition__chip--grad { border-color: transparent; background: var(--xn-gradient); color: #fff; }
+
+.custom-competition .competition__docs { margin-top: 20px; display: flex; flex-direction: column; gap: 8px; }
+.custom-competition .competition__docs li { display: flex; align-items: center; gap: 12px; padding: 12px 14px; border-radius: 14px; border: 1.5px dashed #2a2a33; font-size: 14px; color: #8a8a94; }
+.custom-competition .competition__docs li i { flex: none; width: 28px; height: 28px; border-radius: 8px; background: #15151b; border: 1px solid #2a2a33; }
+.custom-competition .competition__docs li.is-ready { border-style: solid; color: #fff; }
+.custom-competition .competition__docs li.is-ready i { background: var(--xn-gradient); border-color: transparent; }
+.custom-competition .competition__docs li span { flex: 1; }
+.custom-competition .competition__docs li em { font-style: normal; font-size: 11px; letter-spacing: .12em; text-transform: uppercase; font-weight: 700; color: #6f6f7a; white-space: nowrap; }
+.custom-competition .competition__docs li a { flex: 1; color: #fff; }
+.custom-competition .competition__docs li a:hover { color: var(--xn-pink); }
+
+.custom-competition .competition__list { margin-top: 20px; display: flex; flex-direction: column; gap: 12px; font-size: 14.5px; color: #cfcfd8; }
+.custom-competition .competition__list li { display: grid; grid-template-columns: 58px minmax(0, 1fr); gap: 10px; align-items: start; line-height: 1.45; }
+.custom-competition .competition__tag { display: inline-flex; align-items: center; justify-content: center; height: 22px; margin-top: 1px; border-radius: 999px; font-size: 10.5px; letter-spacing: .12em; text-transform: uppercase; font-weight: 700; color: #fff; background: #111; border: 1px solid #2a2a33; white-space: nowrap; }
+.custom-competition .competition__tag--grad { background: var(--xn-gradient); border-color: transparent; }
+.custom-competition .competition__tag--orchid { background: var(--xn-orchid); border-color: transparent; }
+.custom-competition .competition__list li span { color: #fff; }
+.custom-competition .competition__list li small { display: block; font-size: 13px; color: #9a9aa6; margin-top: 2px; }
+
+.custom-competition .competition__note { margin-top: auto; padding-top: 18px; border-top: 1px solid #2a2a33; font-size: 13px; color: #8a8a94; line-height: 1.6; }
+.custom-competition .competition__note b,
+.custom-competition .competition__note strong { color: #cfcfd8; }
+
+@media (max-width: 1100px) {
+    .custom-competition .competition__grid { grid-template-columns: minmax(0, 1fr); }
+    .custom-competition .competition__box { min-height: 0; }
+}
+@media (max-width: 480px) {
+    .custom-competition .competition__box { padding: 26px 20px 22px; }
+}

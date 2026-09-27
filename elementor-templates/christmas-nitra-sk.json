@@ -1,0 +1,539 @@
+{
+ "version": "0.4",
+ "title": "Christmas Nitra 2026 — landing SK",
+ "type": "page",
+ "content": [
+  {
+   "id": "2a555b9",
+   "elType": "container",
+   "isInner": false,
+   "settings": {
+    "content_width": "full",
+    "padding": {
+     "unit": "px",
+     "top": "0",
+     "right": "0",
+     "bottom": "0",
+     "left": "0",
+     "isLinked": true
+    },
+    "flex_gap": {
+     "unit": "px",
+     "size": 0,
+     "column": "0",
+     "row": "0",
+     "isLinked": true
+    }
+   },
+   "elements": [
+    {
+     "id": "5fcdb77",
+     "elType": "widget",
+     "widgetType": "header",
+     "isInner": false,
+     "settings": {},
+     "elements": []
+    }
+   ]
+  },
+  {
+   "id": "ee9b60a",
+   "elType": "container",
+   "isInner": false,
+   "settings": {
+    "content_width": "full",
+    "padding": {
+     "unit": "px",
+     "top": "0",
+     "right": "0",
+     "bottom": "0",
+     "left": "0",
+     "isLinked": true
+    },
+    "flex_gap": {
+     "unit": "px",
+     "size": 0,
+     "column": "0",
+     "row": "0",
+     "isLinked": true
+    }
+   },
+   "elements": [
+    {
+     "id": "091941b",
+     "elType": "widget",
+     "widgetType": "hero",
+     "isInner": false,
+     "settings": {},
+     "elements": []
+    }
+   ]
+  },
+  {
+   "id": "124625f",
+   "elType": "container",
+   "isInner": false,
+   "settings": {
+    "content_width": "full",
+    "padding": {
+     "unit": "px",
+     "top": "0",
+     "right": "0",
+     "bottom": "0",
+     "left": "0",
+     "isLinked": true
+    },
+    "flex_gap": {
+     "unit": "px",
+     "size": 0,
+     "column": "0",
+     "row": "0",
+     "isLinked": true
+    }
+   },
+   "elements": [
+    {
+     "id": "b01e59e",
+     "elType": "widget",
+     "widgetType": "facts",
+     "isInner": false,
+     "settings": {},
+     "elements": []
+    }
+   ]
+  },
+  {
+   "id": "243b8c1",
+   "elType": "container",
+   "isInner": false,
+   "settings": {
+    "content_width": "full",
+    "padding": {
+     "unit": "px",
+     "top": "0",
+     "right": "0",
+     "bottom": "0",
+     "left": "0",
+     "isLinked": true
+    },
+    "flex_gap": {
+     "unit": "px",
+     "size": 0,
+     "column": "0",
+     "row": "0",
+     "isLinked": true
+    }
+   },
+   "elements": [
+    {
+     "id": "3d6421c",
+     "elType": "widget",
+     "widgetType": "ticker",
+     "isInner": false,
+     "settings": {},
+     "elements": []
+    }
+   ]
+  },
+  {
+   "id": "391359a",
+   "elType": "container",
+   "isInner": false,
+   "settings": {
+    "content_width": "full",
+    "padding": {
+     "unit": "px",
+     "top": "0",
+     "right": "0",
+     "bottom": "0",
+     "left": "0",
+     "isLinked": true
+    },
+    "flex_gap": {
+     "unit": "px",
+     "size": 0,
+     "column": "0",
+     "row": "0",
+     "isLinked": true
+    }
+   },
+   "elements": [
+    {
+     "id": "7df2c16",
+     "elType": "widget",
+     "widgetType": "two-paths",
+     "isInner": false,
+     "settings": {},
+     "elements": []
+    }
+   ]
+  },
+  {
+   "id": "2e37871",
+   "elType": "container",
+   "isInner": false,
+   "settings": {
+    "content_width": "full",
+    "padding": {
+     "unit": "px",
+     "top": "0",
+     "right": "0",
+     "bottom": "0",
+     "left": "0",
+     "isLinked": true
+    },
+    "flex_gap": {
+     "unit": "px",
+     "size": 0,
+     "column": "0",
+     "row": "0",
+     "isLinked": true
+    }
+   },
+   "elements": [
+    {
+     "id": "b7cae9a",
+     "elType": "widget",
+     "widgetType": "reasons",
+     "isInner": false,
+     "settings": {},
+     "elements": []
+    }
+   ]
+  },
+  {
+   "id": "69d25bc",
+   "elType": "container",
+   "isInner": false,
+   "settings": {
+    "content_width": "full",
+    "padding": {
+     "unit": "px",
+     "top": "0",
+     "right": "0",
+     "bottom": "0",
+     "left": "0",
+     "isLinked": true
+    },
+    "flex_gap": {
+     "unit": "px",
+     "size": 0,
+     "column": "0",
+     "row": "0",
+     "isLinked": true
+    }
+   },
+   "elements": [
+    {
+     "id": "f274828",
+     "elType": "widget",
+     "widgetType": "pricing",
+     "isInner": false,
+     "settings": {},
+     "elements": []
+    }
+   ]
+  },
+  {
+   "id": "47bb20b",
+   "elType": "container",
+   "isInner": false,
+   "settings": {
+    "content_width": "full",
+    "padding": {
+     "unit": "px",
+     "top": "0",
+     "right": "0",
+     "bottom": "0",
+     "left": "0",
+     "isLinked": true
+    },
+    "flex_gap": {
+     "unit": "px",
+     "size": 0,
+     "column": "0",
+     "row": "0",
+     "isLinked": true
+    }
+   },
+   "elements": [
+    {
+     "id": "8266147",
+     "elType": "widget",
+     "widgetType": "schedule",
+     "isInner": false,
+     "settings": {},
+     "elements": []
+    }
+   ]
+  },
+  {
+   "id": "d5981d7",
+   "elType": "container",
+   "isInner": false,
+   "settings": {
+    "content_width": "full",
+    "padding": {
+     "unit": "px",
+     "top": "0",
+     "right": "0",
+     "bottom": "0",
+     "left": "0",
+     "isLinked": true
+    },
+    "flex_gap": {
+     "unit": "px",
+     "size": 0,
+     "column": "0",
+     "row": "0",
+     "isLinked": true
+    }
+   },
+   "elements": [
+    {
+     "id": "a333c62",
+     "elType": "widget",
+     "widgetType": "competition",
+     "isInner": false,
+     "settings": {},
+     "elements": []
+    }
+   ]
+  },
+  {
+   "id": "e5e4e7f",
+   "elType": "container",
+   "isInner": false,
+   "settings": {
+    "content_width": "full",
+    "padding": {
+     "unit": "px",
+     "top": "0",
+     "right": "0",
+     "bottom": "0",
+     "left": "0",
+     "isLinked": true
+    },
+    "flex_gap": {
+     "unit": "px",
+     "size": 0,
+     "column": "0",
+     "row": "0",
+     "isLinked": true
+    }
+   },
+   "elements": [
+    {
+     "id": "ae4032f",
+     "elType": "widget",
+     "widgetType": "livestream",
+     "isInner": false,
+     "settings": {},
+     "elements": []
+    }
+   ]
+  },
+  {
+   "id": "24b835f",
+   "elType": "container",
+   "isInner": false,
+   "settings": {
+    "content_width": "full",
+    "padding": {
+     "unit": "px",
+     "top": "0",
+     "right": "0",
+     "bottom": "0",
+     "left": "0",
+     "isLinked": true
+    },
+    "flex_gap": {
+     "unit": "px",
+     "size": 0,
+     "column": "0",
+     "row": "0",
+     "isLinked": true
+    }
+   },
+   "elements": [
+    {
+     "id": "f7ca392",
+     "elType": "widget",
+     "widgetType": "faq",
+     "isInner": false,
+     "settings": {},
+     "elements": []
+    }
+   ]
+  },
+  {
+   "id": "2501d40",
+   "elType": "container",
+   "isInner": false,
+   "settings": {
+    "content_width": "full",
+    "padding": {
+     "unit": "px",
+     "top": "0",
+     "right": "0",
+     "bottom": "0",
+     "left": "0",
+     "isLinked": true
+    },
+    "flex_gap": {
+     "unit": "px",
+     "size": 0,
+     "column": "0",
+     "row": "0",
+     "isLinked": true
+    }
+   },
+   "elements": [
+    {
+     "id": "5cda097",
+     "elType": "widget",
+     "widgetType": "venue",
+     "isInner": false,
+     "settings": {},
+     "elements": []
+    }
+   ]
+  },
+  {
+   "id": "8cfccc3",
+   "elType": "container",
+   "isInner": false,
+   "settings": {
+    "content_width": "full",
+    "padding": {
+     "unit": "px",
+     "top": "0",
+     "right": "0",
+     "bottom": "0",
+     "left": "0",
+     "isLinked": true
+    },
+    "flex_gap": {
+     "unit": "px",
+     "size": 0,
+     "column": "0",
+     "row": "0",
+     "isLinked": true
+    }
+   },
+   "elements": [
+    {
+     "id": "64d0a23",
+     "elType": "widget",
+     "widgetType": "reminder",
+     "isInner": false,
+     "settings": {},
+     "elements": []
+    }
+   ]
+  },
+  {
+   "id": "3df2a14",
+   "elType": "container",
+   "isInner": false,
+   "settings": {
+    "content_width": "full",
+    "padding": {
+     "unit": "px",
+     "top": "0",
+     "right": "0",
+     "bottom": "0",
+     "left": "0",
+     "isLinked": true
+    },
+    "flex_gap": {
+     "unit": "px",
+     "size": 0,
+     "column": "0",
+     "row": "0",
+     "isLinked": true
+    }
+   },
+   "elements": [
+    {
+     "id": "01ce605",
+     "elType": "widget",
+     "widgetType": "partners",
+     "isInner": false,
+     "settings": {},
+     "elements": []
+    }
+   ]
+  },
+  {
+   "id": "1159c2d",
+   "elType": "container",
+   "isInner": false,
+   "settings": {
+    "content_width": "full",
+    "padding": {
+     "unit": "px",
+     "top": "0",
+     "right": "0",
+     "bottom": "0",
+     "left": "0",
+     "isLinked": true
+    },
+    "flex_gap": {
+     "unit": "px",
+     "size": 0,
+     "column": "0",
+     "row": "0",
+     "isLinked": true
+    }
+   },
+   "elements": [
+    {
+     "id": "454db3e",
+     "elType": "widget",
+     "widgetType": "footer",
+     "isInner": false,
+     "settings": {},
+     "elements": []
+    }
+   ]
+  },
+  {
+   "id": "d125333",
+   "elType": "container",
+   "isInner": false,
+   "settings": {
+    "content_width": "full",
+    "padding": {
+     "unit": "px",
+     "top": "0",
+     "right": "0",
+     "bottom": "0",
+     "left": "0",
+     "isLinked": true
+    },
+    "flex_gap": {
+     "unit": "px",
+     "size": 0,
+     "column": "0",
+     "row": "0",
+     "isLinked": true
+    }
+   },
+   "elements": [
+    {
+     "id": "1ae156b",
+     "elType": "widget",
+     "widgetType": "sticky-cta",
+     "isInner": false,
+     "settings": {},
+     "elements": []
+    }
+   ]
+  }
+ ],
+ "page_settings": {
+  "template": "elementor_canvas",
+  "hide_title": "yes"
+ }
+}

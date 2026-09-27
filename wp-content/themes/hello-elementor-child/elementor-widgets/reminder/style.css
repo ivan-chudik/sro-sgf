@@ -1,0 +1,65 @@
+.custom-reminder.xn-section { padding-top: 0; }
+
+.custom-reminder .reminder__box { position: relative; overflow: hidden; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 40px; align-items: center; padding: 60px; border-radius: 28px; background: #fff; color: #111; }
+.custom-reminder .reminder__rib { width: 700px; right: -260px; top: -260px; opacity: .5; }
+
+.custom-reminder .xn-h2 { font-size: clamp(28px, 3.2vw, 44px); margin-bottom: 12px; }
+.custom-reminder .xn-lead { font-size: 16px; color: #444; }
+
+.custom-reminder .reminder__note { margin-top: 12px; font-size: 12px; color: #8a8a94; }
+.custom-reminder .reminder__placeholder { padding: 18px 22px; border: 1.5px dashed #ccc; border-radius: 18px; font-size: 13px; color: #8a8a94; }
+
+/* ── Natívny Elementor Form vnorený zo šablóny ── */
+.custom-reminder .reminder__form .e-con,
+.custom-reminder .reminder__form .e-con-inner { padding: 0 !important; margin: 0 !important; gap: 0 !important; background: none !important; min-height: 0 !important; }
+.custom-reminder .reminder__form .elementor-form-fields-wrapper { display: flex; flex-wrap: wrap; gap: 10px; margin: 0 !important; }
+.custom-reminder .reminder__form .elementor-field-group { flex: 1 1 220px; width: auto !important; max-width: none !important; margin: 0 !important; padding: 0 !important; }
+.custom-reminder .reminder__form .elementor-field-group.elementor-field-type-submit,
+.custom-reminder .reminder__form .elementor-field-group.e-form__buttons { flex: 0 0 auto; }
+.custom-reminder .reminder__form .elementor-field-group .elementor-field-textual {
+    height: 54px;
+    min-height: 54px;
+    padding: 0 22px !important;
+    border: 1.5px solid #ccc !important;
+    border-radius: 999px !important;
+    background: #fff !important;
+    color: #111 !important;
+    font-family: var(--xn-font-text) !important;
+    font-size: 15px !important;
+    box-shadow: none;
+}
+.custom-reminder .reminder__form .elementor-field-group .elementor-field-textual:focus { outline: 2px solid var(--xn-orchid); outline-offset: 1px; box-shadow: none; }
+.custom-reminder .reminder__form .elementor-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 54px;
+    padding: 0 28px !important;
+    border: 0 !important;
+    border-radius: 999px !important;
+    background: #111 !important;
+    color: #fff !important;
+    font-family: var(--xn-font-text) !important;
+    font-size: 13px !important;
+    font-weight: 700 !important;
+    letter-spacing: .1em !important;
+    line-height: 1.1;
+    text-transform: uppercase;
+    white-space: nowrap;
+    transition: transform .15s, box-shadow .15s;
+}
+.custom-reminder .reminder__form .elementor-button:hover,
+.custom-reminder .reminder__form .elementor-button:focus { color: #fff !important; transform: translateY(-2px); box-shadow: 0 0 0 3px #fff, 0 0 0 5px var(--xn-orchid); }
+.custom-reminder .reminder__form .elementor-message { margin-top: 12px; font-size: 14px; color: #111; }
+.custom-reminder .reminder__form .elementor-message.elementor-message-danger,
+.custom-reminder .reminder__form .elementor-error .elementor-message { color: #c0304e; }
+
+@media (max-width: 820px) {
+    .custom-reminder .reminder__box { grid-template-columns: minmax(0, 1fr); padding: 36px 28px; }
+}
+@media (max-width: 480px) {
+    .custom-reminder .reminder__box { padding: 30px 20px; }
+    .custom-reminder .reminder__form .elementor-field-group,
+    .custom-reminder .reminder__form .elementor-field-group.elementor-field-type-submit { flex: 1 1 100%; }
+    .custom-reminder .reminder__form .elementor-button { width: 100%; }
+}

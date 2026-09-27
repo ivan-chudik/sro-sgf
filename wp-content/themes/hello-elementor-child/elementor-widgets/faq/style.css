@@ -1,0 +1,15 @@
+.custom-faq .faq__list { max-width: 820px; margin-top: 40px; }
+.custom-faq .faq__item { border-top: 1px solid #e4e4ea; }
+.custom-faq .faq__item:last-child { border-bottom: 1px solid #e4e4ea; }
+.custom-faq .faq__item summary { list-style: none; cursor: pointer; display: flex; justify-content: space-between; gap: 20px; padding: 22px 0; font-size: 19px; font-weight: 500; line-height: 1.5; color: #111; }
+.custom-faq .faq__item summary::-webkit-details-marker { display: none; }
+.custom-faq .faq__item summary::after { content: "+"; flex: none; font-family: var(--xn-font); font-size: 28px; line-height: 1; color: var(--xn-orchid); }
+.custom-faq .faq__item[open] summary::after { content: "–"; }
+.custom-faq .faq__item summary:focus-visible { outline: 2px solid var(--xn-orchid); outline-offset: 4px; }
+.custom-faq .faq__answer { padding: 0 40px 22px 0; font-size: 16px; color: #444; }
+.custom-faq .faq__answer p + p { margin-top: .8em; }
+
+@media (max-width: 480px) {
+    .custom-faq .faq__item summary { font-size: 17px; }
+    .custom-faq .faq__answer { padding-right: 0; }
+}

@@ -1,0 +1,49 @@
+{
+ "version": "0.4",
+ "title": "CN Nav Menu EN",
+ "type": "container",
+ "content": [
+  {
+   "id": "e3341d5",
+   "elType": "container",
+   "isInner": false,
+   "settings": {
+    "content_width": "full",
+    "padding": {
+     "unit": "px",
+     "top": "0",
+     "right": "0",
+     "bottom": "0",
+     "left": "0",
+     "isLinked": true
+    },
+    "flex_gap": {
+     "unit": "px",
+     "size": 0,
+     "column": "0",
+     "row": "0",
+     "isLinked": true
+    }
+   },
+   "elements": [
+    {
+     "id": "e4228cd",
+     "elType": "widget",
+     "widgetType": "nav-menu",
+     "isInner": false,
+     "settings": {
+      "menu": "christmas-nitra-en",
+      "layout": "horizontal",
+      "pointer": "none",
+      "dropdown": "tablet",
+      "toggle": "burger",
+      "full_width": "",
+      "align_items": "end"
+     },
+     "elements": []
+    }
+   ]
+  }
+ ],
+ "page_settings": []
+}

@@ -1,0 +1,12 @@
+.custom-partners.xn-section { padding: 0 0 70px; }
+
+.custom-partners .partners__label { margin-bottom: 26px; font-size: 11px; letter-spacing: .2em; text-transform: uppercase; font-weight: 700; color: #8a8a94; text-align: center; }
+.custom-partners .partners__row { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 34px; }
+.custom-partners .partners__item { display: block; }
+.custom-partners .partners__row img { height: 40px; width: auto; max-width: none; opacity: .9; transition: opacity .15s; }
+.custom-partners a.partners__item:hover img { opacity: 1; }
+
+@media (max-width: 480px) {
+    .custom-partners .partners__row { gap: 24px 28px; }
+    .custom-partners .partners__row img { max-width: 100%; }
+}

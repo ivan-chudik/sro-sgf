@@ -1,0 +1,63 @@
+{
+ "version": "0.4",
+ "title": "CN Formulár pripomienky EN",
+ "type": "container",
+ "content": [
+  {
+   "id": "aa295fd",
+   "elType": "container",
+   "isInner": false,
+   "settings": {
+    "content_width": "full",
+    "padding": {
+     "unit": "px",
+     "top": "0",
+     "right": "0",
+     "bottom": "0",
+     "left": "0",
+     "isLinked": true
+    },
+    "flex_gap": {
+     "unit": "px",
+     "size": 0,
+     "column": "0",
+     "row": "0",
+     "isLinked": true
+    }
+   },
+   "elements": [
+    {
+     "id": "2231d96",
+     "elType": "widget",
+     "widgetType": "form",
+     "isInner": false,
+     "settings": {
+      "form_name": "Reminder EN",
+      "form_fields": [
+       {
+        "_id": "2b6ebe8",
+        "custom_id": "email",
+        "field_type": "email",
+        "field_label": "E-mail",
+        "placeholder": "your@email.com",
+        "required": "true",
+        "width": "100"
+       }
+      ],
+      "show_labels": "",
+      "button_text": "Remind me",
+      "submit_actions": [
+       "save-to-database"
+      ],
+      "success_message": "Thank you! We'll send you a reminder by e-mail.",
+      "required_field_message": "This field is required.",
+      "invalid_message": "Please enter a valid e-mail.",
+      "custom_messages": "yes"
+     },
+     "elements": []
+    }
+   ]
+  }
+ ],
+ "page_settings": []
+}

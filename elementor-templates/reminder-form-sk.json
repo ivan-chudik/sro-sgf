@@ -1,0 +1,63 @@
+{
+ "version": "0.4",
+ "title": "CN Formulár pripomienky SK",
+ "type": "container",
+ "content": [
+  {
+   "id": "f411c7f",
+   "elType": "container",
+   "isInner": false,
+   "settings": {
+    "content_width": "full",
+    "padding": {
+     "unit": "px",
+     "top": "0",
+     "right": "0",
+     "bottom": "0",
+     "left": "0",
+     "isLinked": true
+    },
+    "flex_gap": {
+     "unit": "px",
+     "size": 0,
+     "column": "0",
+     "row": "0",
+     "isLinked": true
+    }
+   },
+   "elements": [
+    {
+     "id": "8ab2b34",
+     "elType": "widget",
+     "widgetType": "form",
+     "isInner": false,
+     "settings": {
+      "form_name": "Pripomienka SK",
+      "form_fields": [
+       {
+        "_id": "f0051d1",
+        "custom_id": "email",
+        "field_type": "email",
+        "field_label": "E-mail",
+        "placeholder": "tvoj@email.sk",
+        "required": "true",
+        "width": "100"
+       }
+      ],
+      "show_labels": "",
+      "button_text": "Pripomeň mi",
+      "submit_actions": [
+       "save-to-database"
+      ],
+      "success_message": "Ďakujeme! Pripomienku ti pošleme e-mailom.",
+      "required_field_message": "Toto pole je povinné.",
+      "invalid_message": "Zadaj platný e-mail.",
+      "custom_messages": "yes"
+     },
+     "elements": []
+    }
+   ]
+  }
+ ],
+ "page_settings": []
+}

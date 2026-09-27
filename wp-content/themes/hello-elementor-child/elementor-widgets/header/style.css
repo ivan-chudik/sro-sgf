@@ -1,0 +1,114 @@
+.custom-header { padding-top: var(--header-bar-h, 74px); }
+
+.custom-header .header__bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 60;
+    background: rgba(0, 0, 0, .9);
+    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid #17171c;
+}
+body.admin-bar .custom-header .header__bar { top: 32px; }
+@media screen and (max-width: 782px) {
+    body.admin-bar .custom-header .header__bar { top: 46px; }
+}
+
+.custom-header .header__inner { display: flex; align-items: center; gap: 28px; height: 74px; }
+
+.custom-header .header__brand { display: flex; align-items: center; gap: 14px; margin-right: auto; color: #fff; min-width: 0; }
+.custom-header .header__brand:hover { color: #fff; }
+.custom-header .header__logo { height: 26px; width: auto; }
+.custom-header .header__brand-text { font-size: 14px; letter-spacing: .12em; white-space: nowrap; }
+
+.custom-header .header__lang { display: flex; flex: none; border: 1px solid #2a2a33; border-radius: 999px; padding: 3px; }
+.custom-header .header__lang a { font-size: 11px; font-weight: 700; letter-spacing: .1em; line-height: 1.5; padding: 4px 10px; border-radius: 999px; color: #fff; }
+.custom-header .header__lang a:hover { color: var(--xn-pink); }
+.custom-header .header__lang a.is-on { background: #fff; color: #000; }
+
+.custom-header .header__cta { flex: none; height: 40px; padding: 0 20px; font-size: 12px; }
+
+.custom-header .header__nav--empty { font-size: 11px; color: #6f6f7a; border: 1px dashed #2a2a33; border-radius: 999px; padding: 6px 12px; }
+
+/* ── Natívny Nav Menu widget vnorený zo šablóny ── */
+.custom-header .header__nav .e-con,
+.custom-header .header__nav .e-con-inner { padding: 0 !important; margin: 0 !important; gap: 0 !important; background: none !important; min-height: 0 !important; }
+.custom-header .header__nav .elementor-nav-menu--main .elementor-nav-menu { display: flex; gap: 26px; }
+.custom-header .header__nav .elementor-nav-menu--main .elementor-item {
+    padding: 0 !important;
+    color: #fff !important;
+    font-family: var(--xn-font-text) !important;
+    font-size: 12.5px !important;
+    font-weight: 700 !important;
+    line-height: 1.5 !important;
+    text-transform: uppercase;
+    letter-spacing: .14em !important;
+}
+.custom-header .header__nav .elementor-nav-menu--main .elementor-item:hover,
+.custom-header .header__nav .elementor-nav-menu--main .elementor-item:focus { color: var(--xn-pink) !important; }
+.custom-header .header__nav .elementor-nav-menu--main .elementor-item::before,
+.custom-header .header__nav .elementor-nav-menu--main .elementor-item::after { display: none !important; }
+
+.custom-header .header__nav .elementor-menu-toggle {
+    background: transparent !important;
+    color: #fff !important;
+    border: 1px solid #2a2a33;
+    border-radius: 999px;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    font-size: 20px;
+}
+.custom-header .header__nav .elementor-menu-toggle svg { fill: #fff !important; }
+.custom-header .header__nav .elementor-menu-toggle:hover,
+.custom-header .header__nav .elementor-menu-toggle:focus { background: transparent !important; color: var(--xn-pink) !important; border-color: var(--xn-pink); }
+
+.custom-header .header__nav .elementor-nav-menu--dropdown.elementor-nav-menu__container {
+    position: fixed;
+    top: 100%;
+    left: 0 !important;
+    right: 0;
+    width: auto !important;
+    margin: 0 !important;
+    background: #000 !important;
+    border-bottom: 1px solid #17171c;
+    z-index: 61;
+}
+.custom-header .header__nav .elementor-menu-toggle.elementor-active + .elementor-nav-menu__container {
+    max-height: calc(100vh - var(--header-bar-h, 74px)) !important;
+    overflow-y: auto;
+}
+.custom-header .header__nav .elementor-nav-menu--dropdown .elementor-item {
+    padding: 16px 32px !important;
+    background: transparent !important;
+    color: #fff !important;
+    font-family: var(--xn-font-text) !important;
+    font-size: 14px !important;
+    font-weight: 700 !important;
+    text-transform: uppercase;
+    letter-spacing: .14em !important;
+    border-top: 1px solid #17171c;
+}
+.custom-header .header__nav .elementor-nav-menu--dropdown .elementor-item:hover,
+.custom-header .header__nav .elementor-nav-menu--dropdown .elementor-item:focus { color: var(--xn-pink) !important; }
+
+/* Dizajn skrýva menu už pod 1100 px — Nav Menu (breakpoint Tablet < 1025) doplníme hamburgerom v pásme 1025–1100 */
+@media (min-width: 1025px) and (max-width: 1100px) {
+    .custom-header .header__nav .elementor-nav-menu--main { display: none !important; }
+    .custom-header .header__nav .elementor-menu-toggle { display: flex !important; }
+    .custom-header .header__nav .elementor-nav-menu--dropdown.elementor-nav-menu__container { display: block !important; }
+}
+
+@media (max-width: 820px) {
+    .custom-header .header__lang,
+    .custom-header .header__cta { display: none; }
+}
+@media (max-width: 480px) {
+    .custom-header .header__brand-text { font-size: 12px; letter-spacing: .08em; }
+}
+
+/* Editor — bez fixed, aby lišta neprekrývala panel */
+.elementor-editor-active .custom-header { padding-top: 0; }
+.elementor-editor-active .custom-header .header__bar { position: relative; top: 0; }
