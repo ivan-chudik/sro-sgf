@@ -1,0 +1,20 @@
+/* 08 · SCHEDULE — 4 day cards */
+.prog{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;margin-top:44px}
+.pday{border:1.5px solid #e4e4ea;border-radius:22px;padding:26px 24px 24px;background:#fff;display:flex;flex-direction:column;min-height:230px;position:relative;overflow:hidden}
+.pday::before{content:"";position:absolute;left:0;right:0;top:0;height:4px;background:var(--xn-gradient)}
+.pday .d{font-size:11px;letter-spacing:.18em;text-transform:uppercase;font-weight:700;color:#ba58ab}
+.pday h3{font-size:30px;margin:10px 0 2px}
+.pday .date{font-size:14px;color:#8a8a94;letter-spacing:.04em}
+.pday ul{list-style:none;margin-top:20px;display:flex;flex-direction:column;gap:12px}
+.pday li{display:grid;grid-template-columns:64px minmax(0,1fr);gap:12px;font-size:14.5px;color:#333;padding-top:12px;border-top:1px solid #eee}
+.pday li em{display:block;font-style:normal;font-size:12.5px;color:#8a8a94;margin-top:2px}
+.pday li .tg{display:inline-flex;align-items:center;justify-content:center;height:22px;padding:0 9px;border-radius:999px;font-size:10.5px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#fff;background:#111;white-space:nowrap;margin-top:1px}
+.pday li .tg.wg{background:var(--xn-gradient)}
+.pday li .tg.msr{background:#ba58ab}
+.pday li .tg.open{background:#111}
+.pday .btn{margin-top:auto;height:44px;font-size:12px;padding:0 18px;align-self:flex-start;margin-top:22px}
+.prog-note{display:flex;gap:16px;flex-wrap:wrap;align-items:center;margin-top:26px;font-size:13.5px;color:#666}
+.prog-note .st{display:inline-flex;align-items:center;gap:8px;height:30px;padding:0 14px;border-radius:999px;border:1.5px solid #e4e4ea;font-weight:700;letter-spacing:.1em;text-transform:uppercase;font-size:11px;color:#111}
+.prog-note .st::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--xn-gradient);animation:livedot 1.4s ease-in-out infinite}
+@media (max-width:1100px){.prog{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:820px){.prog{grid-template-columns:minmax(0,1fr)}.pday{min-height:0}}

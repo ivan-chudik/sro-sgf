@@ -1,0 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@400;500;700&display=swap");
+/* CHRISTMAS NITRA — tokens + fonts. Load FIRST (globally). Fonts live in ../fonts/ */
+@font-face{font-family:"Glacial Indifference";src:url("../fonts/GlacialIndifference-Regular.woff") format("woff");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"Glacial Indifference";src:url("../fonts/GlacialIndifference-Bold.woff") format("woff");font-weight:700;font-style:normal;font-display:swap}
+:root{
+  --xn-black:#000000;--xn-white:#ffffff;--xn-ink:#111111;
+  --xn-red:#ff5e5d;--xn-pink:#f65b80;--xn-magenta:#df5aa0;--xn-orchid:#ba58ab;--xn-purple:#8e5bae;--xn-violet:#7260b1;--xn-blue:#5762b3;
+  --xn-gradient:linear-gradient(90deg,#ff5e5d 0%,#f65b80 22%,#df5aa0 38%,#ba58ab 52%,#8e5bae 66%,#7260b1 82%,#5762b3 100%);
+  --xn-font:"Glacial Indifference","Jost","Futura","Century Gothic","Helvetica Neue",Arial,sans-serif;
+  --xn-font-text:"Jost","Glacial Indifference","Futura","Century Gothic","Helvetica Neue",Arial,sans-serif;
+}
+.xn-grad{background-image:var(--xn-gradient);-webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-fill-color:transparent}
+.xn-sub{font-family:var(--xn-font);font-weight:400;text-transform:uppercase;letter-spacing:.05em;line-height:1;white-space:nowrap}

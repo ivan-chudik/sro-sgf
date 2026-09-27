@@ -1,0 +1,7 @@
+/* 04 · TICKER (marquee) */
+.ticker{padding:0;border-top:1px solid #17171c;border-bottom:1px solid #17171c;overflow:hidden;white-space:nowrap}
+.ticker .track{display:inline-flex;gap:0;animation:tick 40s linear infinite}
+.ticker span{display:inline-flex;align-items:center;gap:26px;padding:22px 26px 22px 0;font-family:var(--xn-font);font-size:28px;letter-spacing:.14em;text-transform:uppercase}
+.ticker span::after{content:"";width:10px;height:10px;border-radius:50%;background:var(--xn-gradient)}
+@keyframes tick{to{transform:translateX(-50%)}}
+@media (max-width:820px){.ticker span{font-size:20px}}
