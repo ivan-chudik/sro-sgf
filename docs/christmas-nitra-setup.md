@@ -22,10 +22,13 @@
 ## 3 · WordPress menu (pre natívny Nav Menu)
 Appearance → Menus → 2 menu s **Custom Links**:
 
-| Menu (slug) | Položky |
+| Menu (názov → slug) | Položky (Vlastné odkazy: URL → text) |
 |---|---|
-| `christmas-nitra-sk` | Vstupenky `#program` · Program `#harmonogram` · Súťaž `#sutaz` · Livestream `#livestream` · Miesto `#miesto` · FAQ `#faq` |
-| `christmas-nitra-en` | Tickets `#program` · Schedule `#harmonogram` · Competition `#sutaz` · Livestream `#livestream` · Venue `#miesto` · FAQ `#faq` |
+| `Christmas Nitra SK` → `christmas-nitra-sk` | `/#vstupenky` Vstupenky · `/#program` Program · `/#sutaz` Súťaž · `/#livestream` Livestream · `/#miesto` Miesto · `/#faq` FAQ |
+| `Christmas Nitra EN` → `christmas-nitra-en` | `/en/#tickets` Tickets · `/en/#schedule` Schedule · `/en/#competition` Competition · `/en/#livestream` Livestream · `/en/#venue` Venue · `/en/#faq` FAQ |
+
+Kotvy sekcií (Anchor ID vo widgetoch): SK = defaulty widgetov (`top, cesty, preco, vstupenky, program, sutaz, livestream, faq, miesto`),
+EN šablóna ich má preložené (`top, ways, why, tickets, schedule, competition, livestream, faq, venue`). Hero tlačidlá na EN smerujú na `#tickets`.
 
 ## 4 · Import šablón (`elementor-templates/`)
 Templates → Saved Templates → **Import Templates**, postupne:

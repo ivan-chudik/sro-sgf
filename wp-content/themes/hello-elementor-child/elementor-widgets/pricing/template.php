@@ -13,7 +13,7 @@ $dual = function( $live, $stream ) {
     return '<span class="only-live">' . esc_html( $live ) . '</span><span class="only-stream">' . esc_html( $stream ) . '</span>';
 };
 ?>
-<section id="<?php echo esc_attr( $settings['anchor_id'] ?? 'program' ); ?>" class="custom-pricing xn-block xn-section" data-widget="pricing" data-mode="<?php echo esc_attr( $mode ); ?>">
+<section id="<?php echo esc_attr( $settings['anchor_id'] ?? 'vstupenky' ); ?>" class="custom-pricing xn-block xn-section" data-widget="pricing" data-mode="<?php echo esc_attr( $mode ); ?>">
     <?php if ( xn_on( $settings, 'line_show' ) ) : ?>
         <div class="xn-grad-line pricing__line"></div>
     <?php endif; ?>

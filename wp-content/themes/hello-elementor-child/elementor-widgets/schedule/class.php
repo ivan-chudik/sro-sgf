@@ -19,7 +19,7 @@ class Elementor_Widget_Schedule extends \Elementor\Widget_Base {
             'label' => 'Hlavička sekcie',
             'tab'   => \Elementor\Controls_Manager::TAB_CONTENT,
         ]);
-        $this->xn_anchor_control( 'harmonogram' );
+        $this->xn_anchor_control( 'program' );
         $this->xn_intro_controls(
             'Program súťaže',
             'Štyri dni, štyri rôzne zážitky',

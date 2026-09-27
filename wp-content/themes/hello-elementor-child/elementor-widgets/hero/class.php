@@ -65,7 +65,7 @@ class Elementor_Widget_Hero extends \Elementor\Widget_Base {
             'tab'   => \Elementor\Controls_Manager::TAB_CONTENT,
         ]);
         $mode_options = [ '' => '— nič —', 'live' => 'Naživo', 'stream' => 'Livestream' ];
-        $this->xn_button_controls( 'btn1', 'Tlačidlo 1', 'Chcem byť pri tom', 'primary', '#program' );
+        $this->xn_button_controls( 'btn1', 'Tlačidlo 1', 'Chcem byť pri tom', 'primary', '#vstupenky' );
         $this->add_control('btn1_mode', [
             'label'       => 'Prepnúť tab v cenníku na',
             'type'        => \Elementor\Controls_Manager::SELECT,
@@ -73,7 +73,7 @@ class Elementor_Widget_Hero extends \Elementor\Widget_Base {
             'options'     => $mode_options,
             'condition'   => [ 'btn1_show' => 'yes' ],
         ]);
-        $this->xn_button_controls( 'btn2', 'Tlačidlo 2', 'Sledovať online', 'grad', '#program' );
+        $this->xn_button_controls( 'btn2', 'Tlačidlo 2', 'Sledovať online', 'grad', '#vstupenky' );
         $this->add_control('btn2_mode', [
             'label'     => 'Prepnúť tab v cenníku na',
             'type'      => \Elementor\Controls_Manager::SELECT,

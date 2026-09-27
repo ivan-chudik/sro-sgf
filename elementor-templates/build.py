@@ -32,6 +32,8 @@ def p(text):
 
 EN = {
     'hero': {
+        'btn1_url': {'url': '#tickets', 'is_external': '', 'nofollow': ''},
+        'btn2_url': {'url': '#tickets', 'is_external': '', 'nofollow': ''},
         'date_text': '26 – 29 November 2026 · Nitra, Slovakia',
         'claim': 'Four days. One arena. <b>World-class rhythmic gymnastics</b> — live in Nitra or on the livestream, wherever you are.',
         'image_alt': 'Rhythmic gymnast with ribbon',
@@ -56,6 +58,7 @@ EN = {
         ]),
     },
     'two-paths': {
+        'anchor_id': 'ways',
         'eyebrow': 'Choose your experience',
         'title': 'Two ways to Christmas Nitra',
         'lead': p('Come to the arena and feel the finals atmosphere for yourself — or switch on the livestream and follow every routine from the comfort of home.'),
@@ -77,6 +80,7 @@ EN = {
         'c2_foot': 'stream.sgf.sk · access right after payment',
     },
     'reasons': {
+        'anchor_id': 'why',
         'eyebrow': 'Why Christmas Nitra',
         'title': 'Three reasons to book this weekend',
         'reasons': items('reasons', [
@@ -92,6 +96,7 @@ EN = {
         'credit': 'Photo: Daniel Palhegyi, Igor Skačan · Christmas Nitra',
     },
     'pricing': {
+        'anchor_id': 'tickets',
         'eyebrow': 'Tickets & prices',
         'title': 'One day, two days or the whole competition',
         'badge_prefix': 'until',
@@ -123,6 +128,7 @@ EN = {
         'fine': p('<b>Early Bird</b> applies until 31 October 2026; from 1 November the full price applies. Prices are final for the buyer — no additional fees. Sales and payment via <a href="https://tickets.sgf.sk/christmas-nitra-tickets/" target="_blank" rel="noopener">tickets.sgf.sk</a>; watch the livestream at <a href="https://stream.sgf.sk/" target="_blank" rel="noopener">stream.sgf.sk</a>. The detailed timetable will be published after the entry deadline on 18 October 2026.'),
     },
     'schedule': {
+        'anchor_id': 'schedule',
         'eyebrow': 'Competition schedule',
         'title': 'Four days, four different experiences',
         'lead': p('Provisional schedule according to the directives — three competitions under one roof: the <b>WG</b> World Gymnastics event, the <b>Open</b> international invitational competition and the <b>SVK</b> National Group Championships. Exact times will be published after the entry deadline on 18 October 2026.'),
@@ -140,6 +146,7 @@ EN = {
         'note_text': p('Session times and start lists will be added after 18 October 2026. The organiser reserves the right to adjust the schedule according to the number of entries.'),
     },
     'competition': {
+        'anchor_id': 'competition',
         'eyebrow': 'For clubs and gymnasts',
         'title': 'Who competes, and in what',
         'lead': p('Age categories, competition programmes and documents according to the directives. Times and start lists will be added after the entry deadline.'),
@@ -199,6 +206,7 @@ EN = {
         ]),
     },
     'venue': {
+        'anchor_id': 'venue',
         'eyebrow': 'Venue',
         'title': 'Nitra, 26 – 29 November',
         'addr_name': 'Nitra City Sports Hall',

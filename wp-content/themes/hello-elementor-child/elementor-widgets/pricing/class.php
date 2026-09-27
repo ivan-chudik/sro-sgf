@@ -19,7 +19,7 @@ class Elementor_Widget_Pricing extends \Elementor\Widget_Base {
             'label' => 'Hlavička sekcie',
             'tab'   => \Elementor\Controls_Manager::TAB_CONTENT,
         ]);
-        $this->xn_anchor_control( 'program' );
+        $this->xn_anchor_control( 'vstupenky' );
         $this->xn_show_control( 'line_show', 'Zobraziť gradientovú linku nad sekciou' );
         $this->xn_show_control( 'parallax_show', 'Zobraziť parallax stuhy' );
         $this->xn_intro_controls(

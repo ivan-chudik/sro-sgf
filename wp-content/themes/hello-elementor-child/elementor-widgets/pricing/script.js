@@ -44,7 +44,7 @@
         initParallax($widget);
     }
 
-    // CTA kdekoľvek na stránke (napr. hero): <a href="#program" data-pricing-mode="live|stream">
+    // CTA kdekoľvek na stránke (napr. hero): <a href="#vstupenky" data-pricing-mode="live|stream">
     $(document).off('click.xnPricingMode').on('click.xnPricingMode', '[data-pricing-mode]', function() {
         const mode = this.getAttribute('data-pricing-mode');
         $('[data-widget="pricing"]').each(function() { setMode($(this), mode); });

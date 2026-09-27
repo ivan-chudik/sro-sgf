@@ -65,6 +65,16 @@
      "widgetType": "hero",
      "isInner": false,
      "settings": {
+      "btn1_url": {
+       "url": "#tickets",
+       "is_external": "",
+       "nofollow": ""
+      },
+      "btn2_url": {
+       "url": "#tickets",
+       "is_external": "",
+       "nofollow": ""
+      },
       "date_text": "26 – 29 November 2026 · Nitra, Slovakia",
       "claim": "Four days. One arena. <b>World-class rhythmic gymnastics</b> — live in Nitra or on the livestream, wherever you are.",
       "image_alt": "Rhythmic gymnast with ribbon",
@@ -241,6 +251,7 @@
      "widgetType": "two-paths",
      "isInner": false,
      "settings": {
+      "anchor_id": "ways",
       "eyebrow": "Choose your experience",
       "title": "Two ways to Christmas Nitra",
       "lead": "<p>Come to the arena and feel the finals atmosphere for yourself — or switch on the livestream and follow every routine from the comfort of home.</p>",
@@ -298,6 +309,7 @@
      "widgetType": "reasons",
      "isInner": false,
      "settings": {
+      "anchor_id": "why",
       "eyebrow": "Why Christmas Nitra",
       "title": "Three reasons to book this weekend",
       "reasons": [
@@ -384,6 +396,7 @@
      "widgetType": "pricing",
      "isInner": false,
      "settings": {
+      "anchor_id": "tickets",
       "eyebrow": "Tickets & prices",
       "title": "One day, two days or the whole competition",
       "badge_prefix": "until",
@@ -491,6 +504,7 @@
      "widgetType": "schedule",
      "isInner": false,
      "settings": {
+      "anchor_id": "schedule",
       "eyebrow": "Competition schedule",
       "title": "Four days, four different experiences",
       "lead": "<p>Provisional schedule according to the directives — three competitions under one roof: the <b>WG</b> World Gymnastics event, the <b>Open</b> international invitational competition and the <b>SVK</b> National Group Championships. Exact times will be published after the entry deadline on 18 October 2026.</p>",
@@ -568,6 +582,7 @@
      "widgetType": "competition",
      "isInner": false,
      "settings": {
+      "anchor_id": "competition",
       "eyebrow": "For clubs and gymnasts",
       "title": "Who competes, and in what",
       "lead": "<p>Age categories, competition programmes and documents according to the directives. Times and start lists will be added after the entry deadline.</p>",
@@ -830,6 +845,7 @@
      "widgetType": "venue",
      "isInner": false,
      "settings": {
+      "anchor_id": "venue",
       "eyebrow": "Venue",
       "title": "Nitra, 26 – 29 November",
       "addr_name": "Nitra City Sports Hall",

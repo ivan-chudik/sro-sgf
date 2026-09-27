@@ -3,7 +3,7 @@
 $fallback = ( $settings['tickets_url']['url'] ?? '' ) ?: xn_tickets_url();
 $note     = xn_on( $settings, 'note_show' ) ? xn_wysiwyg( $settings['note_text'] ?? '' ) : '';
 ?>
-<section id="<?php echo esc_attr( $settings['anchor_id'] ?? 'harmonogram' ); ?>" class="custom-schedule xn-block xn-section xn-light" data-widget="schedule">
+<section id="<?php echo esc_attr( $settings['anchor_id'] ?? 'program' ); ?>" class="custom-schedule xn-block xn-section xn-light" data-widget="schedule">
     <div class="xn-wrap">
         <?php $this->xn_render_intro( $settings ); ?>
 
