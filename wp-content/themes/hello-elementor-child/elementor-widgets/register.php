@@ -22,7 +22,7 @@ add_action('wp_head', function() { ?>
     --xn-font-text: "Jost", "Glacial Indifference", "Futura", "Century Gothic", "Helvetica Neue", Arial, sans-serif;
 }
 html { scroll-behavior: smooth; }
-body { background: #000; color: #fff; font-family: var(--xn-font-text); -webkit-font-smoothing: antialiased; }
+html body { background: #000; color: #fff; font-family: var(--xn-font-text); -webkit-font-smoothing: antialiased; }
 
 /* ── Visibility utility classes — per-element responsive skrývanie ── */
 @media (min-width: 1025px) { .u-hide-desktop { display: none !important; } }

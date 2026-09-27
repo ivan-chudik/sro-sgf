@@ -19,7 +19,10 @@
 .xn-block a:hover,
 .xn-block a:focus { color: var(--xn-red); }
 
-.xn-block.xn-section { position: relative; overflow: hidden; padding: 110px 0; }
+.xn-block.xn-section { position: relative; overflow: hidden; padding: 110px 0; background: #000; }
+
+.elementor-widget:has(> .xn-block),
+.elementor-widget:has(> .elementor-widget-container > .xn-block) { margin: 0 !important; }
 .xn-block.xn-light { background: #fff; color: #111; }
 .xn-block.xn-light a { color: var(--xn-orchid); }
 .xn-block.xn-light a:hover { color: var(--xn-magenta); }

@@ -1,4 +1,4 @@
-.custom-footer { padding: 56px 0 110px; border-top: 1px solid #17171c; }
+.custom-footer { padding: 56px 0 110px; border-top: 1px solid #17171c; background: #000; }
 
 .custom-footer .footer__grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 36px; }
 .custom-footer .footer__col h4 { margin-bottom: 12px; font-family: var(--xn-font-text); font-weight: 700; text-transform: uppercase; letter-spacing: .16em; font-size: 12px; line-height: 1.5; color: var(--xn-pink); }

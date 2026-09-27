@@ -33,6 +33,13 @@ body.admin-bar .custom-header .header__bar { top: 32px; }
 .custom-header .header__nav--empty { font-size: 11px; color: #6f6f7a; border: 1px dashed #2a2a33; border-radius: 999px; padding: 6px 12px; }
 
 /* ── Natívny Nav Menu widget vnorený zo šablóny ── */
+.custom-header .header__nav { display: flex; align-items: center; align-self: stretch; }
+.custom-header .header__nav .elementor,
+.custom-header .header__nav .elementor-element,
+.custom-header .header__nav .elementor-widget-container { margin: 0 !important; padding: 0 !important; }
+.custom-header .header__nav .e-con,
+.custom-header .header__nav .e-con-inner { justify-content: center; }
+.custom-header .header__nav .elementor-nav-menu--main .elementor-nav-menu { align-items: center; }
 .custom-header .header__nav .e-con,
 .custom-header .header__nav .e-con-inner { padding: 0 !important; margin: 0 !important; gap: 0 !important; background: none !important; min-height: 0 !important; }
 .custom-header .header__nav .elementor-nav-menu--main .elementor-nav-menu { display: flex; gap: 26px; }

@@ -1,4 +1,4 @@
-.custom-ticker { padding: 0; border-top: 1px solid #17171c; border-bottom: 1px solid #17171c; overflow: hidden; white-space: nowrap; }
+.custom-ticker { padding: 0; background: #000; border-top: 1px solid #17171c; border-bottom: 1px solid #17171c; overflow: hidden; white-space: nowrap; }
 .custom-ticker .ticker__track { display: inline-flex; animation: xn-tick 80s linear infinite; }
 .custom-ticker .ticker__item { display: inline-flex; align-items: center; gap: 26px; padding: 22px 26px 22px 0; font-family: var(--xn-font); font-size: 28px; line-height: 1.5; letter-spacing: .14em; text-transform: uppercase; color: #fff; }
 .custom-ticker .ticker__item::after { content: ""; flex: none; width: 10px; height: 10px; border-radius: 50%; background: var(--xn-gradient); }
