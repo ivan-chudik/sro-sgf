@@ -52,6 +52,7 @@ $xn_widgets = [
     'footer'      => 'Elementor_Widget_Footer',
     'sticky-cta'  => 'Elementor_Widget_StickyCta',
     'maintenance' => 'Elementor_Widget_Maintenance',
+    'not-found'   => 'Elementor_Widget_NotFound',
 ];
 
 // ── ENQUEUE ──────────────────────────────────────────────────────────

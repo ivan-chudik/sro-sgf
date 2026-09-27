@@ -1,0 +1,44 @@
+{
+ "version": "0.4",
+ "title": "Christmas Nitra — 404",
+ "type": "error-404",
+ "content": [
+  {
+   "id": "009b0ac",
+   "elType": "container",
+   "isInner": false,
+   "settings": {
+    "content_width": "full",
+    "padding": {
+     "unit": "px",
+     "top": "0",
+     "right": "0",
+     "bottom": "0",
+     "left": "0",
+     "isLinked": true
+    },
+    "flex_gap": {
+     "unit": "px",
+     "size": 0,
+     "column": "0",
+     "row": "0",
+     "isLinked": true
+    }
+   },
+   "elements": [
+    {
+     "id": "a9efb98",
+     "elType": "widget",
+     "widgetType": "not-found",
+     "isInner": false,
+     "settings": {},
+     "elements": []
+    }
+   ]
+  }
+ ],
+ "page_settings": {
+  "template": "elementor_canvas",
+  "hide_title": "yes"
+ }
+}

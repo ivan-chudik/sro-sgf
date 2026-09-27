@@ -331,5 +331,7 @@ for lang in ('sk', 'en'):
 
 write('maintenance.json', template('Christmas Nitra — Maintenance', 'page',
                                    [container('maint', [widget('maint', 'maintenance', {})])], PAGE_SETTINGS))
+write('not-found.json', template('Christmas Nitra — 404', 'error-404',
+                                 [container('404', [widget('404', 'not-found', {})])], PAGE_SETTINGS))
 write('en-overrides.json', EN)
 print('ok')
