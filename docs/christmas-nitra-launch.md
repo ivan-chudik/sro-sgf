@@ -10,11 +10,40 @@ Elementor → Šablóny → `CN Formulár pripomienky SK` (a potom EN) → Form 
 |---|---|
 | To | e-mail organizátora (napr. `christmas.nitra@gmail.com`) — overiť s klientom |
 | Subject | `Nová pripomienka — Christmas Nitra 2026 ([field id="email"])` (EN formulár: pridaj „EN“) |
-| Message | `[all-fields]` |
+| Message | HTML šablóna nižšie („Message admin“), v EN formulári prepísať `SK` → `EN` |
 | From Email | adresa nastavená vo WP Mail SMTP (musí sedieť, inak padá do spamu) |
 | From Name | `Christmas Nitra 2026` |
 | Reply-To | `[field id="email"]` |
 | Send As | HTML |
+| Metadáta | Dátum, Čas, URL stránky |
+
+Message admin:
+```html
+<div style="background:#000;padding:32px 16px;font-family:Arial,Helvetica,sans-serif">
+  <div style="max-width:560px;margin:0 auto;background:#0a0a0d;border-radius:20px;overflow:hidden;border:1px solid #2a2a33">
+    <div style="height:4px;background:linear-gradient(90deg,#ff5e5d,#f65b80,#df5aa0,#ba58ab,#8e5bae,#7260b1,#5762b3)"></div>
+    <div style="padding:32px 28px;color:#fff">
+      <p style="margin:0 0 6px;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:#f65b80;font-weight:bold">Christmas Nitra 2026 · sro.sgf.sk</p>
+      <h1 style="margin:0 0 22px;font-size:24px;line-height:1.2;font-weight:normal;text-transform:uppercase;letter-spacing:.04em">Nová žiadosť o pripomienku</h1>
+      <table role="presentation" cellpadding="0" cellspacing="0" style="width:100%;border-collapse:collapse;font-size:15px">
+        <tr>
+          <td style="padding:12px 0;border-top:1px solid #2a2a33;color:#9a9aa6;width:150px">E-mail</td>
+          <td style="padding:12px 0;border-top:1px solid #2a2a33"><a href="mailto:[field id="email"]" style="color:#fff;text-decoration:none;font-weight:bold">[field id="email"]</a></td>
+        </tr>
+        <tr>
+          <td style="padding:12px 0;border-top:1px solid #2a2a33;color:#9a9aa6">Jazyk formulára</td>
+          <td style="padding:12px 0;border-top:1px solid #2a2a33;color:#fff">SK</td>
+        </tr>
+        <tr>
+          <td style="padding:12px 0;border-top:1px solid #2a2a33;border-bottom:1px solid #2a2a33;color:#9a9aa6">Všetky polia</td>
+          <td style="padding:12px 0;border-top:1px solid #2a2a33;border-bottom:1px solid #2a2a33;color:#cfcfd8">[all-fields]</td>
+        </tr>
+      </table>
+      <p style="margin:24px 0 0;font-size:13px;line-height:1.6;color:#7a7a86">Všetky prihlásené e-maily nájdeš v administrácii: Elementor → Submissions. Na tento e-mail môžeš odpovedať priamo, odpoveď pôjde návštevníkovi.</p>
+    </div>
+  </div>
+</div>
+```
 
 ### Email 2 (potvrdenie pre návštevníka)
 | Pole | SK | EN |
