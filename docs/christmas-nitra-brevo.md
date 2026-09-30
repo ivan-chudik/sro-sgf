@@ -14,8 +14,8 @@ Pri každom zozname si poznač **ID** (číslo v stĺpci ID alebo v URL).
 Nad riadok `/* That's all, stop editing! */` (API kľúč z Brevo → SMTP & API → API keys; môže byť ten istý ako vo WP Mail SMTP):
 ```php
 define( 'XN_BREVO_API_KEY', 'xkeysib-...' );
-define( 'XN_BREVO_LIST_SK', 12 );
-define( 'XN_BREVO_LIST_EN', 13 );
+define( 'XN_BREVO_LIST_SK', 116 );
+define( 'XN_BREVO_LIST_EN', 117 );
 ```
 Súbor wp-config.php je mimo témy a mimo repa — kľúč sa nikdy necommituje.
 

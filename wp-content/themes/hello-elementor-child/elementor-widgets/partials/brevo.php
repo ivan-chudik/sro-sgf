@@ -5,8 +5,8 @@ if ( ! defined( 'ABSPATH' ) ) exit;
  * Formulár pripomienky → Brevo zoznam kontaktov.
  * Konfigurácia vo wp-config.php (nie v repe):
  *   define( 'XN_BREVO_API_KEY', 'xkeysib-...' );
- *   define( 'XN_BREVO_LIST_SK', 12 );
- *   define( 'XN_BREVO_LIST_EN', 13 );
+ *   define( 'XN_BREVO_LIST_SK', 116 );
+ *   define( 'XN_BREVO_LIST_EN', 117 );
  * Jazyk sa určuje podľa názvu formulára (Form Name): „Pripomienka SK“ / „Reminder EN“.
  */
 
