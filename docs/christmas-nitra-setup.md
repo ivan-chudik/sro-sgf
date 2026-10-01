@@ -52,7 +52,7 @@ Ak by sa kontajnery neimportovali presne, platí pravidlo: každý widget patrí
 
 ## 5 · Jazyky a linky, ktoré netreba vypĺňať
 - Všetky predajné CTA majú **prázdne URL = automaticky podľa jazyka stránky**
-  (stránka pod `/en/` → `tickets.sgf.sk/christmas-nitra-tickets/`, inak `tickets.sgf.sk/sk/christmas-nitra-vstupenky/`).
+  (stránka pod `/en/` → `tickets.sgf.sk/?add-to-cart=5964`, inak `tickets.sgf.sk/sk/?add-to-cart=5964`).
   Vlastná URL v paneli má vždy prednosť.
 - Prepínač SK/EN v headeri je napojený na **Polylang**: aktívny jazyk podľa jazyka stránky, odkaz vedie na jazykové dvojča aktuálnej stránky (bez prekladu na domovskú stránku jazyka). Logo vedie na domov aktuálneho jazyka. Bez Polylangu sa použijú URL z panela (`https://sro.sgf.sk/`, `https://sro.sgf.sk/en/`).
 - Jazyk pre predajné linky sa berie z Polylangu (jazyk stránky), záložne z URL `/en/`.

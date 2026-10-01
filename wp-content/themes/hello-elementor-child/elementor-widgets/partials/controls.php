@@ -114,7 +114,7 @@ trait Xn_Widget_Controls {
     }
 
     protected function xn_tickets_desc() {
-        return 'Prázdne = predaj vstupeniek podľa jazyka stránky (SK: tickets.sgf.sk/sk/christmas-nitra-vstupenky/, EN: tickets.sgf.sk/christmas-nitra-tickets/). Externé linky sa otvárajú v novom okne automaticky.';
+        return 'Prázdne = checkout tickets.sgf.sk podľa jazyka stránky (SK: tickets.sgf.sk/sk/?add-to-cart=5964, EN: tickets.sgf.sk/?add-to-cart=5964). Externé linky sa otvárajú v novom okne automaticky.';
     }
 
     protected function xn_render_button( $s, $id, $fallback = '', $extra = [] ) {

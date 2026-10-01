@@ -1,8 +1,8 @@
 <?php
 if ( ! defined( 'ABSPATH' ) ) exit;
 
-const XN_TICKETS_SK = 'https://tickets.sgf.sk/sk/christmas-nitra-vstupenky/';
-const XN_TICKETS_EN = 'https://tickets.sgf.sk/christmas-nitra-tickets/';
+const XN_TICKETS_SK = 'https://tickets.sgf.sk/sk/?add-to-cart=5964';
+const XN_TICKETS_EN = 'https://tickets.sgf.sk/?add-to-cart=5964';
 const XN_HOME_SK    = 'https://sro.sgf.sk/';
 const XN_HOME_EN    = 'https://sro.sgf.sk/en/';
 

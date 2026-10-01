@@ -60,7 +60,7 @@ Message SK (vlož celé do poľa Message):
       <h1 style="margin:0 0 18px;font-size:26px;line-height:1.2;font-weight:normal;text-transform:uppercase;letter-spacing:.04em">Ďakujeme, pripomienku máš nastavenú</h1>
       <p style="margin:0 0 14px;font-size:15px;line-height:1.6;color:#cfcfd8">Pošleme ti najviac tri e-maily: štart predaja, program súťaže a pripomienku deň pred súťažou. Žiadny spam.</p>
       <p style="margin:0 0 24px;font-size:15px;line-height:1.6;color:#cfcfd8"><b style="color:#fff">26. – 29. novembra 2026</b> · Mestská športová hala Nitra</p>
-      <a href="https://tickets.sgf.sk/sk/christmas-nitra-vstupenky/" style="display:inline-block;background:#fff;color:#000;text-decoration:none;font-weight:bold;font-size:13px;letter-spacing:.1em;text-transform:uppercase;padding:14px 26px;border-radius:999px">Kúpiť vstupenku</a>
+      <a href="https://tickets.sgf.sk/sk/?add-to-cart=5964" style="display:inline-block;background:#fff;color:#000;text-decoration:none;font-weight:bold;font-size:13px;letter-spacing:.1em;text-transform:uppercase;padding:14px 26px;border-radius:999px">Kúpiť vstupenku</a>
       <p style="margin:28px 0 0;font-size:12px;line-height:1.6;color:#7a7a86">Tento e-mail si dostal/-a, lebo si na sro.sgf.sk požiadal/-a o pripomienku. Ak si o ňu nežiadal/-a, stačí e-mail ignorovať. Kontakt: christmas.nitra@gmail.com</p>
     </div>
   </div>
@@ -77,7 +77,7 @@ Message EN:
       <h1 style="margin:0 0 18px;font-size:26px;line-height:1.2;font-weight:normal;text-transform:uppercase;letter-spacing:.04em">Thank you, your reminder is set</h1>
       <p style="margin:0 0 14px;font-size:15px;line-height:1.6;color:#cfcfd8">We'll send you three e-mails at most: sales opening, the competition schedule and a reminder the day before the event. No spam.</p>
       <p style="margin:0 0 24px;font-size:15px;line-height:1.6;color:#cfcfd8"><b style="color:#fff">26 – 29 November 2026</b> · Nitra City Sports Hall, Slovakia</p>
-      <a href="https://tickets.sgf.sk/christmas-nitra-tickets/" style="display:inline-block;background:#fff;color:#000;text-decoration:none;font-weight:bold;font-size:13px;letter-spacing:.1em;text-transform:uppercase;padding:14px 26px;border-radius:999px">Buy tickets</a>
+      <a href="https://tickets.sgf.sk/?add-to-cart=5964" style="display:inline-block;background:#fff;color:#000;text-decoration:none;font-weight:bold;font-size:13px;letter-spacing:.1em;text-transform:uppercase;padding:14px 26px;border-radius:999px">Buy tickets</a>
       <p style="margin:28px 0 0;font-size:12px;line-height:1.6;color:#7a7a86">You received this e-mail because you asked for a reminder on sro.sgf.sk. If it wasn't you, simply ignore it. Contact: christmas.nitra@gmail.com</p>
     </div>
   </div>

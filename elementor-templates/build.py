@@ -128,7 +128,7 @@ EN = {
              'features': 'All four days, finals included\nOne ticket, no re-buying | One access, every device\nSaturday finals and weekend National Championships included',
              'btn_live': 'Buy 4-day pass', 'btn_stream': 'Buy livestream · 4 days', 'btn_style': 'primary'},
         ]),
-        'fine': p('<b>Early Bird</b> applies until 31 October 2026; from 1 November the full price applies. Prices are final for the buyer — no additional fees. Sales and payment via <a href="https://tickets.sgf.sk/christmas-nitra-tickets/" target="_blank" rel="noopener">tickets.sgf.sk</a>; watch the livestream at <a href="https://stream.sgf.sk/" target="_blank" rel="noopener">stream.sgf.sk</a>. The detailed timetable will be published after the entry deadline on 18 October 2026.'),
+        'fine': p('<b>Early Bird</b> applies until 31 October 2026; from 1 November the full price applies. Prices are final for the buyer — no additional fees. Sales and payment via <a href="https://tickets.sgf.sk/?add-to-cart=5964" target="_blank" rel="noopener">tickets.sgf.sk</a>; watch the livestream at <a href="https://stream.sgf.sk/" target="_blank" rel="noopener">stream.sgf.sk</a>. The detailed timetable will be published after the entry deadline on 18 October 2026.'),
     },
     'schedule': {
         'anchor_id': 'schedule',
@@ -251,7 +251,7 @@ EN = {
         'columns': items('columns', [
             {'title': 'Organiser', 'social': '', 'content': p('ŠK ŠOG Nitra – rhythmic gymnastics | MODERGYM<br />Slančíkovej 2, 950 50 Nitra, Slovakia<br />Zuzana Vilčeková · <a href="tel:+421911430001">+421 911 430 001</a><br /><a href="mailto:christmas.nitra@gmail.com">christmas.nitra@gmail.com</a> · <a href="http://www.gymnastikanitra.sk/" target="_blank" rel="noopener">gymnastikanitra.sk</a>')},
             {'title': 'Slovak Gymnastics Federation', 'social': 'yes', 'content': p('Olympijské námestie 1, 832 80 Bratislava, Slovakia<br /><a href="mailto:office@sgf.sk">office@sgf.sk</a> · <a href="https://sgf.sk" target="_blank" rel="noopener">www.sgf.sk</a><br />in cooperation with the Secondary Sports School Nitra')},
-            {'title': 'Tickets & livestream', 'social': '', 'content': p('Support: <a href="mailto:roman@alttag.media">roman@alttag.media</a><br /><a href="https://tickets.sgf.sk/christmas-nitra-tickets/" target="_blank" rel="noopener">tickets.sgf.sk</a> · <a href="https://stream.sgf.sk/" target="_blank" rel="noopener">stream.sgf.sk</a>')},
+            {'title': 'Tickets & livestream', 'social': '', 'content': p('Support: <a href="mailto:roman@alttag.media">roman@alttag.media</a><br /><a href="https://tickets.sgf.sk/?add-to-cart=5964" target="_blank" rel="noopener">tickets.sgf.sk</a> · <a href="https://stream.sgf.sk/" target="_blank" rel="noopener">stream.sgf.sk</a>')},
             {'title': 'Follow us', 'social': '', 'content': p('<a href="https://www.facebook.com/gymnastikanitra/" target="_blank" rel="noopener">Facebook · ŠK ŠOG Nitra</a><br /><a href="https://www.instagram.com/christmasnitra2026/" target="_blank" rel="noopener">Instagram · @christmasnitra2026</a><br /><a href="https://www.instagram.com/sksognitra_rhythmic_gymnastics/" target="_blank" rel="noopener">Instagram · @sksognitra_rhythmic_gymnastics</a>')},
         ]),
         'social_label': 'SGF on social media',

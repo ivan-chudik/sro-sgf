@@ -229,7 +229,7 @@ class Elementor_Widget_Pricing extends \Elementor\Widget_Base {
         $this->add_control('fine', [
             'label'     => 'Poznámka pod kartami',
             'type'      => \Elementor\Controls_Manager::WYSIWYG,
-            'default'   => '<p><b>Early Bird</b> platí do 31. 10. 2026, od 1. 11. platí plná cena. Ceny sú konečné pre kupujúceho — bez ďalších poplatkov. Predaj a platba cez <a href="https://tickets.sgf.sk/sk/christmas-nitra-vstupenky/" target="_blank" rel="noopener">tickets.sgf.sk</a>; livestream sleduješ na <a href="https://stream.sgf.sk/" target="_blank" rel="noopener">stream.sgf.sk</a>. Podrobný harmonogram s časmi zverejníme po uzávierke prihlášok 18. 10. 2026.</p>',
+            'default'   => '<p><b>Early Bird</b> platí do 31. 10. 2026, od 1. 11. platí plná cena. Ceny sú konečné pre kupujúceho — bez ďalších poplatkov. Predaj a platba cez <a href="https://tickets.sgf.sk/sk/?add-to-cart=5964" target="_blank" rel="noopener">tickets.sgf.sk</a>; livestream sleduješ na <a href="https://stream.sgf.sk/" target="_blank" rel="noopener">stream.sgf.sk</a>. Podrobný harmonogram s časmi zverejníme po uzávierke prihlášok 18. 10. 2026.</p>',
             'condition' => [ 'fine_show' => 'yes' ],
         ]);
         $this->end_controls_section();
