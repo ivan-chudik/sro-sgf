@@ -1,7 +1,10 @@
 <?php
 // $settings dostupný z render() scope
 $mode     = ( $settings['default_mode'] ?? 'live' ) === 'stream' ? 'stream' : 'live';
-$fallback = ( $settings['tickets_url']['url'] ?? '' ) ?: xn_tickets_url();
+$filled   = function( $u ) { return is_array( $u ) && trim( $u['url'] ?? '' ) !== ''; };
+$fallback = $filled( $settings['tickets_url'] ?? null ) ? $settings['tickets_url'] : xn_tickets_url();
+$fb_strm  = $filled( $settings['tickets_url_stream'] ?? null ) ? $settings['tickets_url_stream'] : null;
+$href     = function( $u ) { return is_array( $u ) ? trim( $u['url'] ?? '' ) : (string) $u; };
 $rib      = xn_asset( 'img/xn-ribbons.png' );
 $fine     = xn_on( $settings, 'fine_show' ) ? xn_wysiwyg( $settings['fine'] ?? '' ) : '';
 $modes    = [ 'live', 'stream' ];
@@ -56,7 +59,8 @@ $dual = function( $live, $stream ) {
         <div class="pricing__plans">
             <?php foreach ( $settings['plans'] ?? [] as $p ) :
                 $features = xn_lines( $p['features'] ?? '' );
-                $url      = ( $p['btn_url']['url'] ?? '' ) ? $p['btn_url'] : $fallback; ?>
+                $url      = $filled( $p['btn_url'] ?? null ) ? $p['btn_url'] : $fallback;
+                $url_strm = $filled( $p['btn_url_stream'] ?? null ) ? $p['btn_url_stream'] : ( $fb_strm ?: $url ); ?>
                 <article class="pricing__plan<?php echo xn_on( $p, 'best' ) ? ' is-best' : ''; ?> elementor-repeater-item-<?php echo esc_attr( $p['_id'] ?? '' ); ?>">
                     <?php if ( xn_filled( $p, 'badge' ) ) : ?>
                         <span class="pricing__plan-badge"><?php echo esc_html( $p['badge'] ); ?></span>
@@ -90,11 +94,26 @@ $dual = function( $live, $stream ) {
                         </ul>
                     <?php endif; ?>
 
-                    <?php xn_button( [
-                        'html'  => $dual( $p['btn_live'] ?? '', $p['btn_stream'] ?? '' ),
-                        'url'   => $url,
-                        'style' => $p['btn_style'] ?? 'grad',
-                    ] ); ?>
+                    <?php if ( $href( $url ) === $href( $url_strm ) ) :
+                        xn_button( [
+                            'html'  => $dual( $p['btn_live'] ?? '', $p['btn_stream'] ?? '' ),
+                            'url'   => $url,
+                            'style' => $p['btn_style'] ?? 'grad',
+                        ] );
+                    else :
+                        xn_button( [
+                            'text'  => trim( (string) ( $p['btn_live'] ?? '' ) ),
+                            'url'   => $url,
+                            'style' => $p['btn_style'] ?? 'grad',
+                            'class' => 'only-live',
+                        ] );
+                        xn_button( [
+                            'text'  => trim( (string) ( $p['btn_stream'] ?? '' ) ),
+                            'url'   => $url_strm,
+                            'style' => $p['btn_style'] ?? 'grad',
+                            'class' => 'only-stream',
+                        ] );
+                    endif; ?>
                 </article>
             <?php endforeach; ?>
         </div>

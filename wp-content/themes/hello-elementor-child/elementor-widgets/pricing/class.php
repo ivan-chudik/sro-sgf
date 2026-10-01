@@ -93,10 +93,16 @@ class Elementor_Widget_Pricing extends \Elementor\Widget_Base {
             'tab'   => \Elementor\Controls_Manager::TAB_CONTENT,
         ]);
         $this->add_control('tickets_url', [
-            'label'       => 'Odkaz tlačidiel',
+            'label'       => 'Odkaz tlačidiel — naživo',
             'type'        => \Elementor\Controls_Manager::URL,
             'placeholder' => 'prázdne = predaj vstupeniek (SK/EN)',
             'description' => $this->xn_tickets_desc(),
+        ]);
+        $this->add_control('tickets_url_stream', [
+            'label'       => 'Odkaz tlačidiel — livestream',
+            'type'        => \Elementor\Controls_Manager::URL,
+            'placeholder' => 'prázdne = rovnaký ako naživo',
+            'description' => 'Platí pre tlačidlá v tabe Livestream (napr. add-to-cart s ID livestream produktu).',
         ]);
 
         $plan = new \Elementor\Repeater();
@@ -186,7 +192,12 @@ class Elementor_Widget_Pricing extends \Elementor\Widget_Base {
             'options' => [ 'primary' => 'Plné (biele)', 'grad' => 'Gradientový obrys' ],
         ]);
         $plan->add_control('btn_url', [
-            'label'       => 'Vlastný odkaz tlačidla',
+            'label'       => 'Vlastný odkaz — naživo',
+            'type'        => \Elementor\Controls_Manager::URL,
+            'placeholder' => 'prázdne = odkaz tlačidiel vyššie',
+        ]);
+        $plan->add_control('btn_url_stream', [
+            'label'       => 'Vlastný odkaz — livestream',
             'type'        => \Elementor\Controls_Manager::URL,
             'placeholder' => 'prázdne = odkaz tlačidiel vyššie',
         ]);
