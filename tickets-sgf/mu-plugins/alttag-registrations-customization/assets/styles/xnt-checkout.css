@@ -904,6 +904,12 @@ body.xnt-co-page .select2-container--default .select2-results__option[aria-selec
     white-space: nowrap;
   }
 
+  /* Room for "Early Bird" on one line, so "Ušetríš s Early Bird" takes two
+     lines, not three. */
+  .xnt.xnt-checkout .xnt-tbl th:last-child {
+    min-width: 72px;
+  }
+
   .xnt.xnt-checkout .xnt-tbl :is(th, td):last-child {
     text-align: right;
   }
@@ -942,10 +948,10 @@ body.xnt-co-page .select2-container--default .select2-results__option[aria-selec
     display: block;
     width: max-content;
     margin: 6px 0 2px;
-    padding: 5px 10px 4px;
-    font-size: 9.5px;
+    padding: 4px 8px 3px;
+    font-size: 8.5px;
     line-height: 1.2;
-    letter-spacing: .1em;
+    letter-spacing: .06em;
   }
 
   .xnt.xnt-checkout .xnt-note {
@@ -973,30 +979,38 @@ body.xnt-co-page .select2-container--default .select2-results__option[aria-selec
   }
 }
 
-@media (max-width: 360px) {
-  .xnt.xnt-checkout .xnt-tbl th {
-    font-size: 8.5px;
-    letter-spacing: .04em;
+@media (max-width: 399px) {
+  .xnt.xnt-checkout .xnt-tbl :is(th, td) {
+    padding-left: 4px;
+    padding-right: 4px;
   }
 
   .xnt.xnt-checkout .xnt-tbl td.ebp {
     font-size: 17px;
   }
 
-  .xnt.xnt-checkout .xnt-tbl :is(th, td) {
-    padding-left: 4px;
-    padding-right: 4px;
+  .xnt.xnt-checkout .xnt-tbl td.ebp .per {
+    font-size: 10px;
   }
+}
 
-  .xnt.xnt-checkout .xnt-tbl tr.best td.n em {
-    padding: 4px 8px 3px;
+@media (max-width: 350px) {
+  .xnt.xnt-checkout .xnt-tbl th {
     font-size: 8.5px;
-    letter-spacing: .06em;
+    letter-spacing: .04em;
   }
 
   /* Too narrow for one line here; the column then breaks it as
      "namiesto / 13,60 €". */
   .xnt.xnt-checkout .xnt-tbl td.ebp .per {
     white-space: normal;
+  }
+}
+
+/* 320px phones: the headers may take a third line rather than the table
+   overflowing its panel. */
+@media (max-width: 339px) {
+  .xnt.xnt-checkout .xnt-tbl th:last-child {
+    min-width: 0;
   }
 }
