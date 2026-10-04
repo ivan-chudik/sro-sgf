@@ -899,6 +899,11 @@ body.xnt-co-page .select2-container--default .select2-results__option[aria-selec
     padding: 12px 6px;
   }
 
+  /* "Od 1. 11." is one short label; wrapped it split the date in half. */
+  .xnt.xnt-checkout .xnt-tbl th:nth-child(3) {
+    white-space: nowrap;
+  }
+
   .xnt.xnt-checkout .xnt-tbl :is(th, td):last-child {
     text-align: right;
   }
@@ -920,6 +925,12 @@ body.xnt-co-page .select2-container--default .select2-results__option[aria-selec
     white-space: normal;
   }
 
+  /* "namiesto 13,60 €" wrapped between the amount and the € sign. */
+  .xnt.xnt-checkout .xnt-tbl td.ebp .per {
+    white-space: nowrap;
+    font-size: 10.5px;
+  }
+
   /* The vendor paints the best-value gradient per cell, which in four narrow
      cells reads as four separate bands; one flat tint reads as one row. */
   .xnt.xnt-checkout .xnt-tbl tr.best td {
@@ -928,11 +939,13 @@ body.xnt-co-page .select2-container--default .select2-results__option[aria-selec
 
   /* The best-value pill drops under "4 dni" instead of widening the column. */
   .xnt.xnt-checkout .xnt-tbl tr.best td.n em {
-    display: table;
-    margin: 5px 0 0;
-    padding: 3px 7px;
-    font-size: 9px;
-    letter-spacing: .08em;
+    display: block;
+    width: max-content;
+    margin: 6px 0 2px;
+    padding: 5px 10px 4px;
+    font-size: 9.5px;
+    line-height: 1.2;
+    letter-spacing: .1em;
   }
 
   .xnt.xnt-checkout .xnt-note {
@@ -968,5 +981,22 @@ body.xnt-co-page .select2-container--default .select2-results__option[aria-selec
 
   .xnt.xnt-checkout .xnt-tbl td.ebp {
     font-size: 17px;
+  }
+
+  .xnt.xnt-checkout .xnt-tbl :is(th, td) {
+    padding-left: 4px;
+    padding-right: 4px;
+  }
+
+  .xnt.xnt-checkout .xnt-tbl tr.best td.n em {
+    padding: 4px 8px 3px;
+    font-size: 8.5px;
+    letter-spacing: .06em;
+  }
+
+  /* Too narrow for one line here; the column then breaks it as
+     "namiesto / 13,60 €". */
+  .xnt.xnt-checkout .xnt-tbl td.ebp .per {
+    white-space: normal;
   }
 }
