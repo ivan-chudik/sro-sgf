@@ -1,0 +1,812 @@
+/* Christmas Nitra 2026 - checkout adaptation of Roman's configurator block.
+ *
+ * The design itself lives in assets/styles/xnt.css, which is enqueued as this
+ * file's dependency (christmas-nitra-checkout.php). Nothing here restyles the
+ * block: it only adapts it to where it now sits - above the checkout form,
+ * inside the Elementor checkout widget instead of a page section - and
+ * re-asserts the few vendor rules the theme's own button and form styles
+ * outrank there.
+ *
+ * Everything is scoped under .xnt-checkout, the root the checkout renderer
+ * adds next to Roman's own .xnt class, so the landing page block is untouched.
+ */
+
+/* ── the block above the checkout form ────────────────────────────────────
+   The vendor root is a centred 1180px page section with its own gutters; here
+   it fills the Elementor container the checkout widget sits in (~1250px), so
+   it lines up with the form below it. The summary column of the vendor layout
+   is gone - that panel is the order review now - so the steps take the whole
+   width. */
+.xnt.xnt-checkout {
+  max-width: none;
+  margin: 0 0 28px;
+  padding: 0;
+}
+
+/* The struck-through full price in the banner's meta strip. xnt_render_banner()
+   writes that <del> out server-side and xnt.css carries no rule for it, so its
+   base look is declared here - without it the strip reads "6,80 €8,00 €" with
+   the two prices touching. */
+.xnt-checkout .xnt-ev-meta .xnt-ov-del {
+  text-decoration: line-through;
+  margin-left: .4em;
+  font-weight: 400;
+  font-size: inherit;
+  opacity: .55;
+  color: var(--xnt-mute, #9a9aa5);
+}
+
+.xnt-checkout .xnt-lay {
+  grid-template-columns: minmax(0, 1fr);
+  margin-top: 0;
+}
+
+.xnt-checkout .xnt-lay + .xnt-lay {
+  margin-top: 22px;
+}
+
+/* The step shell. Same declarations as the vendor's landing-page card, under a
+   checkout-owned class: the block is no longer the landing page's, so it does
+   not borrow the landing page's class name for its own panels.
+
+   No horizontal padding: on the landing page the card is the outermost panel,
+   here it sits inside .e-checkout__column-inner, which already pads 24px. The
+   vendor's own 28px on top of that inset the steps from the billing fields
+   below them. Vertical padding stays - it is what separates the steps. */
+.xnt-checkout .xnt-co-card {
+  background: #000;
+  border-radius: 24px;
+  padding: 28px 0;
+}
+
+/* The two notes and the nudge box close each step. The vendor gives all three
+   a 14px margin-top, but its own `.xnt.xnt :is(h1, h2, h3, p, ...)` reset
+   (0,2,1) outranks the single-class `.xnt-acc` (0,1,0), so every <p class
+   ="xnt-acc"> lost it - the people stepper and its note ended up touching.
+   Restate the vendor value one step higher, and close the nudge at the bottom
+   too: it is followed by the accreditation note inside the same card. */
+.xnt.xnt-checkout .xnt-acc {
+  margin-top: 14px;
+}
+
+.xnt-checkout .xnt-nudge {
+  margin-bottom: 14px;
+}
+
+/* The POST contract. Rendered next to the block inside form.checkout, so it is
+   scoped on its own rather than under .xnt-checkout. */
+.xnt-co-fields {
+  display: none;
+}
+
+/* ── theme resets ─────────────────────────────────────────────────────────
+   xnt.css was written for a page where nothing else styles a button. The
+   checkout is a WooCommerce form, so `.woocommerce button`, `.woocommerce
+   input[type=checkbox]` and the theme's form rules all outrank the vendor's
+   single-class selectors. These repeat the vendor declarations one specificity
+   step higher; they are copies, not changes. */
+.xnt-checkout button {
+  font: inherit;
+  color: inherit;
+  background: none;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  line-height: inherit;
+  border-radius: 0;
+  box-shadow: none;
+  text-transform: none;
+  letter-spacing: normal;
+  width: auto;
+  min-height: 0;
+  text-decoration: none;
+}
+
+.xnt-checkout .xnt-seg button {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  text-align: left;
+  padding: 16px 18px;
+  border-radius: 18px;
+  border: 1.5px solid var(--xnt-line);
+  background: var(--xnt-ink2);
+}
+
+.xnt-checkout .xnt-seg button.on {
+  border-color: transparent;
+  background: linear-gradient(#111, #111) padding-box, var(--xnt-grad) border-box;
+}
+
+.xnt-checkout .xnt-quick button {
+  height: 36px;
+  padding: 0 14px;
+  border-radius: 999px;
+  border: 1.5px solid var(--xnt-line);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--xnt-soft);
+}
+
+.xnt-checkout .xnt-quick button.best {
+  border-color: transparent;
+  background: linear-gradient(#000, #000) padding-box, var(--xnt-grad) border-box;
+  color: #fff;
+}
+
+.xnt-checkout .xnt-quick button.on {
+  background: #fff;
+  color: #000;
+  border-color: #fff;
+}
+
+.xnt-checkout .xnt-stepper button {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: var(--xnt-ink3);
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1;
+}
+
+.xnt-checkout .xnt-nudge button {
+  height: 40px;
+  padding: 0 18px;
+  border-radius: 999px;
+  background: #fff;
+  color: #000;
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+}
+
+.xnt-checkout .xnt-nudge button[hidden] {
+  display: none;
+}
+
+/* The day rows are <label>s wrapping a checkbox; the checkout stylesheet gives
+   both of those a width, a float and a margin of their own. */
+.xnt-checkout .xnt-day {
+  width: auto;
+  float: none;
+  margin: 0;
+  font-weight: 400;
+}
+
+.xnt-checkout .xnt-day input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+  width: 0;
+  height: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+.xnt-checkout .xnt-stepper output {
+  min-width: 70px;
+}
+
+/* ── states this block adds ───────────────────────────────────────────────
+   Not part of the design: the type swap is a server round trip here, and it
+   can fail. */
+.xnt-checkout .xnt-nudge[hidden] {
+  display: none;
+}
+
+.xnt-checkout .xnt-co.is-busy {
+  opacity: .55;
+  pointer-events: none;
+}
+
+.xnt-checkout .xnt-seg button[disabled] {
+  cursor: default;
+  opacity: 1;
+}
+
+.xnt-checkout .xnt-co-error {
+  grid-column: 1 / -1;
+  margin: 12px 0 0;
+  padding: 12px 14px;
+  border-radius: 14px;
+  background: rgba(255, 94, 93, .12);
+  border: 1px solid var(--xnt-pink);
+  color: #fff;
+  font-size: 13.5px;
+}
+
+/* ═════════════════════════════════════════════════════════════════════════
+   The order review column, dressed as Roman's "Tvoja vstupenka" panel
+   ═════════════════════════════════════════════════════════════════════════
+   Everything below styles markup that is not Roman's and not inside .xnt:
+   WooCommerce's own #order_review, the payment box, the place-order button and
+   the explainer cards christmas-nitra-checkout.php echoes under the billing
+   form. It is scoped on the `xnt-co-page` body class the same file adds, so no
+   other checkout on the site is touched.
+
+   The vendor tokens live on .xnt, which none of this markup is inside, so the
+   handful that is needed is restated on the scope root. Same values as
+   xnt.css - copies, not a second palette. */
+.xnt-co-page {
+  --xnt-grad: linear-gradient(90deg, #ff5e5d 0%, #f65b80 22%, #df5aa0 38%, #ba58ab 52%, #8e5bae 66%, #7260b1 82%, #5762b3 100%);
+  --xnt-font: "Glacial Indifference", "Jost", "Futura", "Century Gothic", Arial, sans-serif;
+  --xnt-pink: #f65b80;
+  --xnt-blue: #5762b3;
+  --xnt-green: #37d39a;
+  --xnt-co-panel: #151517;
+  --xnt-ink2: #0c0c10;
+  --xnt-ink3: #15151b;
+  --xnt-line: #2a2a33;
+  --xnt-line2: #1e1e24;
+  --xnt-line3: #3a3a46;
+  --xnt-soft: #cfcfd8;
+  --xnt-mute: #a0a0a6;
+  --xnt-mute2: #7a7a86;
+}
+
+/* ── the panel shell ─────────────────────────────────────────────────────── */
+.xnt-co-page .e-checkout__column-inner {
+  background: var(--xnt-co-panel);
+  border: 1px solid var(--xnt-line);
+  border-radius: 16px;
+  padding: 24px;
+  color: #fff;
+}
+
+.xnt-co-page .e-checkout__column-inner #order_review_heading {
+  margin: 0 0 4px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.3;
+  color: #fff;
+}
+
+.xnt-co-page .e-checkout__order_review,
+.xnt-co-page .e-checkout__order_review-2 {
+  background: none;
+  padding: 0;
+  border: 0;
+}
+
+/* ── the review table ────────────────────────────────────────────────────── */
+.xnt-co-page .woocommerce-checkout-review-order-table {
+  width: 100%;
+  margin: 0;
+  border: 0;
+  border-collapse: collapse;
+  background: none;
+  color: var(--xnt-soft);
+  font-size: 14.5px;
+}
+
+.xnt-co-page .woocommerce-checkout-review-order-table :is(th, td) {
+  border: 0;
+  background: none;
+  color: inherit;
+  padding: 12px 0;
+  vertical-align: top;
+  font-weight: inherit;
+}
+
+/* The design opens on the chips, not on a header row; and the native subtotal
+   and total rows say the same thing as the rows below in a shape the design
+   does not use. Left in the markup on purpose - they are WooCommerce's, and
+   removing them would take the fragment update with them. */
+.xnt-co-page .woocommerce-checkout-review-order-table thead,
+.xnt-co-page .woocommerce-checkout-review-order-table .cart-subtotal,
+.xnt-co-page .woocommerce-checkout-review-order-table tfoot > .order-total {
+  display: none;
+}
+
+/* Auto table layout handed the price column ~184px of the 416px table, leaving
+   the name cell 191px of content box - narrower than two chips, so the flex row
+   wrapped every chip onto its own line. Pin the price column to its content and
+   give the rest to the name cell. */
+.xnt-co-page .woocommerce-checkout-review-order-table .cart_item .product-name {
+  width: 100%;
+  padding-right: 12px;
+  font-size: 13px;
+  line-height: 1.45;
+  color: var(--xnt-mute);
+  padding-top: 0;
+}
+
+.xnt-co-page .woocommerce-checkout-review-order-table .cart_item .product-total {
+  width: 1%;
+  text-align: right;
+  white-space: nowrap;
+  color: #fff;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  padding-top: 0;
+}
+
+.xnt-co-page .woocommerce-checkout-review-order-table .product-quantity {
+  color: var(--xnt-mute2);
+  font-weight: 400;
+}
+
+/* ── the chips row (woocommerce_get_item_data) ───────────────────────────── */
+.xnt-co-page .woocommerce-checkout-review-order-table dl.variation {
+  margin: 12px 0 0;
+}
+
+.xnt-co-page .woocommerce-checkout-review-order-table dl.variation dt {
+  /* The chips carry their own meaning visually; the label stays for screen
+     readers rather than being dropped from the markup. */
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.xnt-co-page .woocommerce-checkout-review-order-table dl.variation dd {
+  margin: 0;
+  padding: 0;
+}
+
+.xnt-co-page .woocommerce-checkout-review-order-table dl.variation dd p {
+  margin: 0;
+}
+
+.xnt-chips-row {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.xnt-chip {
+  display: inline-block;
+  font-size: 12.5px;
+  font-weight: 600;
+  line-height: 1.3;
+  padding: 5px 11px;
+  border-radius: 999px;
+  background: var(--xnt-ink3);
+  border: 1px solid var(--xnt-line);
+  color: #fff;
+}
+
+.xnt-chip-type {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--xnt-soft);
+}
+
+/* ── the line rows ───────────────────────────────────────────────────────── */
+.xnt-co-page .xnt-line-row > * {
+  border-top: 1px solid var(--xnt-line2);
+  font-size: 14.5px;
+}
+
+.xnt-co-page .xnt-line-k {
+  text-align: left;
+  font-weight: 400;
+  color: var(--xnt-soft);
+}
+
+.xnt-co-page .xnt-line-v {
+  text-align: right;
+  white-space: nowrap;
+  font-weight: 600;
+  color: #fff;
+  font-variant-numeric: tabular-nums;
+}
+
+.xnt-co-page .xnt-line-discount .xnt-line-v,
+.xnt-co-page .xnt-line-discount .xnt-line-v .amount {
+  color: var(--xnt-green);
+}
+
+/* ── SPOLU ───────────────────────────────────────────────────────────────── */
+/* One spanned cell laid out as a row, not two table cells: see the echo in
+   christmas-nitra-checkout.php. The cell stays a plain table-cell so its
+   colspan=2 still spans the full panel width; the flex row is on the inner
+   .xnt-total-i wrapper. flex-end there, so the 40px amount sits flush at the
+   bottom-right corner of the cell instead of riding the label's first line -
+   it reads as the closing figure of the whole panel. */
+.xnt-co-page .xnt-total-c {
+  border-top: 1px solid var(--xnt-line);
+  padding-top: 18px;
+}
+
+.xnt-co-page .xnt-total-i {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.xnt-co-page .xnt-total-k {
+  flex: 1 1 auto;
+  text-align: left;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--xnt-mute);
+}
+
+.xnt-co-page .xnt-total-sub {
+  display: block;
+  margin-top: 4px;
+  font-size: 12.5px;
+  font-weight: 400;
+  letter-spacing: 0;
+  text-transform: none;
+  color: var(--xnt-mute2);
+}
+
+.xnt-co-page .xnt-total-val {
+  flex: 0 0 auto;
+  font-family: var(--xnt-font);
+  font-size: 40px;
+  line-height: 1;
+  white-space: nowrap;
+  background-image: var(--xnt-grad);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+.xnt-co-page .xnt-total-val .woocommerce-Price-amount {
+  font-size: inherit;
+  font-family: inherit;
+  color: inherit;
+}
+
+/* ── the Early Bird box and the footnote ─────────────────────────────────── */
+.xnt-co-page .xnt-saved-row > td {
+  padding: 0;
+}
+
+.xnt-saved-box {
+  margin: 14px 0 0;
+  padding: 12px 14px;
+  border-radius: 14px;
+  background: linear-gradient(90deg, rgba(255, 94, 93, .14), rgba(87, 98, 179, .14));
+  border: 1px solid #3a2a3a;
+  font-size: 13.5px;
+  line-height: 1.5;
+  color: var(--xnt-soft);
+}
+
+.xnt-saved-box b {
+  color: #fff;
+}
+
+.xnt-saved-box.off {
+  background: var(--xnt-ink3);
+  border-color: var(--xnt-line);
+}
+
+.xnt-fineprint {
+  margin: 12px 0 0;
+  font-size: 12px;
+  line-height: 1.55;
+  color: var(--xnt-mute2);
+}
+
+/* ── the billing fields ──────────────────────────────────────────────────── */
+/* Elementor paints every checkout input white with a 43px pill radius, which
+   on this page left four white boxes as the only light surfaces on the site.
+   Same treatment as the configurator's own controls above them (.xnt-day /
+   .xnt-seg in xnt.css): ink2 on a 1.5px line, 14px radius, the vendor's pink
+   focus ring instead of the browser default.
+
+   The rule that has to be outranked is the per-page kit one in post-352.css,
+   `.elementor-352 .elementor-element-aeffe24 .woocommerce #customer_details
+   .form-row .input-text` - one id and six classes, and it is a Site Settings
+   value, not something this plugin can edit. Hence the long prefix: same id,
+   same six classes, plus the `body` type. No !important, as everywhere else
+   in this file. */
+body.xnt-co-page .elementor .woocommerce :is(#customer_details, .e-coupon-box) .form-row .woocommerce-input-wrapper
+  :is(input[type="text"], input[type="email"], input[type="tel"], input[type="url"],
+      input[type="number"], input[type="password"], select, textarea) {
+  background: var(--xnt-ink2);
+  border: 1.5px solid var(--xnt-line);
+  border-radius: 14px;
+  color: #fff;
+  box-shadow: none;
+  transition: border-color .15s, background .15s;
+}
+
+body.xnt-co-page .elementor .woocommerce :is(#customer_details, .e-coupon-box) .form-row .woocommerce-input-wrapper
+  :is(input[type="text"], input[type="email"], input[type="tel"], input[type="url"],
+      input[type="number"], input[type="password"], select, textarea)::placeholder {
+  /* --xnt-mute2 on --xnt-ink2 is 4.6:1; --xnt-mute is 7.5:1, clear of AA. */
+  color: var(--xnt-mute);
+  opacity: 1;
+}
+
+body.xnt-co-page .elementor .woocommerce :is(#customer_details, .e-coupon-box) .form-row .woocommerce-input-wrapper
+  :is(input[type="text"], input[type="email"], input[type="tel"], input[type="url"],
+      input[type="number"], input[type="password"], select, textarea):hover {
+  border-color: var(--xnt-line3);
+}
+
+body.xnt-co-page .elementor .woocommerce :is(#customer_details, .e-coupon-box) .form-row .woocommerce-input-wrapper
+  :is(input[type="text"], input[type="email"], input[type="tel"], input[type="url"],
+      input[type="number"], input[type="password"], select, textarea):focus {
+  border-color: var(--xnt-pink);
+  outline: 2px solid var(--xnt-pink);
+  outline-offset: 2px;
+  background: var(--xnt-ink3);
+}
+
+/* Chrome repaints an autofilled field white from the UA sheet, which no
+   background declaration overrides - only an inset shadow covers it. */
+body.xnt-co-page .elementor .woocommerce :is(#customer_details, .e-coupon-box) .form-row .woocommerce-input-wrapper
+  :is(input[type="text"], input[type="email"], input[type="tel"], input[type="url"],
+      input[type="number"], input[type="password"], select, textarea):-webkit-autofill {
+  -webkit-text-fill-color: #fff;
+  -webkit-box-shadow: 0 0 0 1000px var(--xnt-ink2) inset;
+  caret-color: #fff;
+}
+
+/* The country field is a Select2: the real <select> is 1x1 and hidden, and the
+   white box on the card was Select2's own default skin on the replacement. */
+body.xnt-co-page .elementor .woocommerce :is(#customer_details, .e-coupon-box) .form-row .woocommerce-input-wrapper
+  .select2-container--default .select2-selection--single {
+  display: flex;
+  align-items: center;
+  /* min-height, not height: the shared alttag-registrations plugin pins
+     `.select2-container .select2-selection--single` to 40px !important, and
+     min-height is the one property that still lifts it to the 48px the text
+     inputs beside it are. Its padding/line-height !importants stand - they
+     already inset the label by 1rem. */
+  min-height: 48px;
+  background: var(--xnt-ink2);
+  border: 1.5px solid var(--xnt-line);
+  border-radius: 14px;
+}
+
+body.xnt-co-page .elementor .woocommerce :is(#customer_details, .e-coupon-box) .form-row .woocommerce-input-wrapper
+  .select2-container--default .select2-selection--single .select2-selection__rendered {
+  color: #fff;
+}
+
+body.xnt-co-page .elementor .woocommerce :is(#customer_details, .e-coupon-box) .form-row .woocommerce-input-wrapper
+  .select2-container--default .select2-selection--single .select2-selection__arrow {
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+}
+
+body.xnt-co-page .elementor .woocommerce :is(#customer_details, .e-coupon-box) .form-row .woocommerce-input-wrapper
+  .select2-container--default.select2-container--open .select2-selection--single {
+  border-color: var(--xnt-pink);
+}
+
+/* The dropdown is appended to <body>, outside the prefix above - but the body
+   carries the scope class, so it is still only this checkout. */
+body.xnt-co-page .select2-container--default .select2-dropdown {
+  background: var(--xnt-ink2);
+  border: 1.5px solid var(--xnt-line);
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+body.xnt-co-page .select2-container--default .select2-search--dropdown .select2-search__field {
+  background: var(--xnt-ink3);
+  border: 1.5px solid var(--xnt-line);
+  border-radius: 10px;
+  color: #fff;
+}
+
+body.xnt-co-page .select2-container--default .select2-results__option {
+  color: var(--xnt-soft);
+}
+
+body.xnt-co-page .select2-container--default .select2-results__option--highlighted[aria-selected],
+body.xnt-co-page .select2-container--default .select2-results__option[aria-selected="true"] {
+  background: var(--xnt-ink3);
+  color: #fff;
+}
+
+/* ── coupon, payment box, terms ──────────────────────────────────────────── */
+.xnt-co-page .e-coupon-box,
+.xnt-co-page .woocommerce-checkout-payment {
+  background: none;
+  border: 0;
+  padding: 0;
+  margin-top: 18px;
+  color: var(--xnt-mute);
+}
+
+.xnt-co-page .woocommerce-checkout-payment .payment_methods {
+  margin: 0 0 12px;
+  padding: 0;
+  border: 0;
+  list-style: none;
+}
+
+.xnt-co-page .woocommerce-checkout-payment .payment_methods > li {
+  background: none;
+  padding: 0;
+}
+
+.xnt-co-page .woocommerce-checkout-payment label,
+.xnt-co-page .e-coupon-box label,
+.xnt-co-page .e-woocommerce-coupon-nudge {
+  color: var(--xnt-soft);
+  font-size: 13.5px;
+}
+
+/* ── the CTA: the checkout's own submit, as Roman's pill ─────────────────── */
+.xnt-co-page .form-row.place-order {
+  margin: 0;
+  padding: 0;
+}
+
+.xnt-co-page #place_order {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  height: 56px;
+  min-height: 56px;
+  margin-top: 16px;
+  padding: 0 18px;
+  border: 0;
+  border-radius: 999px;
+  background: var(--xnt-blue);
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 1;
+  text-decoration: none;
+  transition: background .15s, transform .15s;
+}
+
+.xnt-co-page #place_order:hover {
+  background: #6a74c9;
+  color: #fff;
+  transform: translateY(-1px);
+}
+
+/* ═════════════════════════════════════════════════════════════════════════
+   The three explainer cards under the whole checkout container
+   ═════════════════════════════════════════════════════════════════════════ */
+/* Sibling of .e-checkout__container (echoed on woocommerce_checkout_after_order_review
+   at 96, after Elementor closes the container at 95): a plain block in the same
+   parent, so it is full width and left-aligned with the container by default.
+   Only the gap to the columns above it needs stating.
+
+   Flush with the container is flush with the *panels* above, not with what is
+   printed inside them: the billing column pads 30px (Elementor's own
+   --sections-padding: 16px 30px on .col-1) and the summary column 24px (the
+   .e-checkout__column-inner rule above). Measured at 1440px the container runs
+   95 -> 1345, the billing text 125 -> 765 and the summary text 843 -> 1321, so
+   the cards, the heading and the note started 30px left of every other line on
+   the page. Restating the two column insets here lines the block's content up
+   with the grid: 125 on the left, 1321 on the right. */
+.xnt-co-page .xnt-info-block {
+  margin-top: 48px;
+  padding: 0 24px 0 30px;
+}
+
+/* The eyebrow + heading above them, as on the landing page's .xnt-how. */
+.xnt-co-page .xnt-info-eyebrow {
+  margin: 28px 0 0;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  color: var(--xnt-pink);
+}
+
+.xnt-co-page .xnt-info-hd {
+  margin: 6px 0 0;
+  font-family: var(--xnt-font);
+  font-size: clamp(22px, 2.4vw, 30px);
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.xnt-info {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  margin: 18px 0 0;
+}
+
+.xnt-info-card {
+  position: relative;
+  overflow: hidden;
+  background: var(--xnt-co-panel);
+  border: 1px solid var(--xnt-line);
+  border-radius: 16px;
+  padding: 24px 20px 20px;
+}
+
+.xnt-info-card::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto;
+  height: 3px;
+  background: var(--xnt-grad);
+}
+
+.xnt-info-n {
+  display: block;
+  font-family: var(--xnt-font);
+  font-size: 22px;
+  line-height: 1;
+  letter-spacing: .04em;
+  background-image: var(--xnt-grad);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+.xnt-co-page .xnt-info-h {
+  margin: 10px 0 8px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.3;
+  color: #fff;
+}
+
+.xnt-co-page .xnt-info-b {
+  margin: 0;
+  font-size: 13.5px;
+  line-height: 1.55;
+  color: var(--xnt-mute);
+}
+
+.xnt-co-page .xnt-info-b b {
+  color: #fff;
+  font-weight: 700;
+}
+
+@media (max-width: 1024px) {
+  .xnt-info {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+/* The grid collapses to one column at 1024px, so from 768px down the order
+   summary + PLACE ORDER sit below the billing column on their own. The
+   explainer cards follow .e-checkout__container in the DOM, so the stacked
+   order is already billing, summary, cards - no reordering needed. */
+@media (max-width: 768px) {
+  /* Elementor sticks the summary to the viewport top; harmless in a side
+     column, but stacked it would pin over the cards that follow it. */
+  .xnt-co-page .e-checkout__column-inner.e-sticky-right-column {
+    position: static;
+  }
+}
+
+@media (max-width: 640px) {
+  .xnt-checkout .xnt-co-card {
+    padding: 20px 0;
+  }
+
+  .xnt-co-page .e-checkout__column-inner {
+    padding: 18px;
+  }
+
+  .xnt-co-page .xnt-total-val {
+    font-size: 32px;
+  }
+}

@@ -1,0 +1,28 @@
+.session-selection {
+    margin-bottom: 15px;
+}
+
+.session-selection select {
+    width: 100%;
+    padding: 8px 12px;
+}
+
+.session-slot-field {
+    margin-top: 10px;
+}
+
+.session-slot-field[style*="display: none"] + .session-selection__error {
+    display: none;
+}
+
+/* Fragmented wave: the picked time has the seats, but not side by side. */
+.session-slot-warning {
+    display: block;
+    margin: 8px 0 0;
+    padding: 10px 14px;
+    background: rgba(217, 119, 6, 0.08);
+    border: 1px solid rgba(217, 119, 6, 0.30);
+    border-radius: 6px;
+    color: #b45309;
+    font-size: 13px;
+}

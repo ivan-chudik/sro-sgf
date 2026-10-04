@@ -1,0 +1,389 @@
+/* Day selection — theme-aware via CSS variables.
+   Default = light theme (works on white backgrounds).
+   Add .day-selection--theme-dark for dark backgrounds. */
+
+.day-selection {
+    --ds-bg:                rgba(0, 0, 0, 0.02);
+    --ds-border:            rgba(0, 0, 0, 0.10);
+    --ds-text:              inherit;
+    --ds-muted:             rgba(0, 0, 0, 0.55);
+    --ds-item-bg:           rgba(0, 0, 0, 0.02);
+    --ds-item-border:       rgba(0, 0, 0, 0.12);
+    --ds-item-active-bg:    rgba(43, 92, 99, 0.08);
+    --ds-item-active-border: rgba(43, 92, 99, 0.55);
+    --ds-item-active-text:  #1a3a40;
+    --ds-counter-bg:        rgba(0, 0, 0, 0.04);
+    --ds-counter-border:    rgba(0, 0, 0, 0.12);
+    --ds-counter-text:      rgba(0, 0, 0, 0.65);
+    --ds-counter-text-hover: #1a3a40;
+    --ds-counter-divider:   rgba(0, 0, 0, 0.10);
+    --ds-input-text:        #1a3a40;
+    --ds-total-bg:          rgba(0, 0, 0, 0.04);
+    --ds-total-border:      rgba(0, 0, 0, 0.12);
+    --ds-total-text:        #1a3a40;
+    --ds-accent:            #2b5c63;
+    --ds-accent-soft:       rgba(43, 92, 99, 0.14);
+    --ds-accent-border:     rgba(43, 92, 99, 0.45);
+    --ds-error-bg:          rgba(220, 38, 38, 0.08);
+    --ds-error-border:      rgba(220, 38, 38, 0.30);
+    --ds-error-text:        #b91c1c;
+
+    margin: 0 0 20px;
+    padding: 20px;
+    background: var(--ds-bg);
+    border: 1px solid var(--ds-border);
+    border-radius: 8px;
+    color: var(--ds-text);
+}
+
+.day-selection--theme-dark {
+    --ds-bg:                rgba(255, 255, 255, 0.05);
+    --ds-border:            rgba(255, 255, 255, 0.10);
+    --ds-text:              #FFFFFF;
+    --ds-muted:             rgba(255, 255, 255, 0.70);
+    --ds-item-bg:           rgba(255, 255, 255, 0.05);
+    --ds-item-border:       rgba(255, 255, 255, 0.12);
+    --ds-item-active-bg:    rgba(255, 255, 255, 0.15);
+    --ds-item-active-border: rgba(255, 255, 255, 0.50);
+    --ds-item-active-text:  #FFFFFF;
+    --ds-counter-bg:        rgba(255, 255, 255, 0.08);
+    --ds-counter-border:    rgba(255, 255, 255, 0.15);
+    --ds-counter-text:      rgba(255, 255, 255, 0.70);
+    --ds-counter-text-hover: #FFFFFF;
+    --ds-counter-divider:   rgba(255, 255, 255, 0.12);
+    --ds-input-text:        #FFFFFF;
+    --ds-total-bg:          rgba(255, 255, 255, 0.08);
+    --ds-total-border:      rgba(255, 255, 255, 0.15);
+    --ds-total-text:        #FFFFFF;
+    --ds-accent:            #58B9D8;
+    --ds-accent-soft:       rgba(88, 185, 216, 0.16);
+    --ds-accent-border:     rgba(88, 185, 216, 0.58);
+    --ds-error-bg:          rgba(220, 38, 38, 0.12);
+    --ds-error-border:      rgba(220, 38, 38, 0.30);
+    --ds-error-text:        #FCA5A5;
+}
+
+.day-selection h3 {
+    margin: 0 0 12px;
+    font-size: 16px;
+    font-weight: 600;
+    color: inherit;
+}
+
+.day-selection .day-checkboxes {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.day-selection .day-checkbox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 14px;
+    background: var(--ds-item-bg);
+    border: 1px solid var(--ds-item-border);
+    border-radius: 6px;
+    cursor: pointer;
+    transition: border-color 0.2s, background-color 0.2s, color 0.2s;
+    color: inherit;
+    gap: 12px;
+}
+
+.day-selection .day-checkbox.checked {
+    border-color: var(--ds-item-active-border);
+    background: var(--ds-item-active-bg);
+    color: var(--ds-item-active-text);
+}
+
+.day-selection .day-checkbox.disabled {
+    opacity: 0.45;
+    cursor: not-allowed;
+}
+
+.day-selection-required {
+    margin: 0 0 12px;
+    font-size: 14px;
+    color: var(--ds-muted);
+}
+
+.day-selection-required.satisfied {
+    color: var(--ds-accent);
+}
+
+.day-selection .day-checkbox.checked .day-checkbox-label {
+    color: var(--ds-item-active-text);
+    font-weight: 600;
+}
+
+.day-selection .day-checkbox-left {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    min-width: 0;
+    cursor: pointer;
+    margin: 0;
+    gap: 12px;
+}
+
+/* Visible checkbox indicator (the native input is hidden via the rule below) */
+.day-selection .day-checkbox-left::before {
+    content: '';
+    flex-shrink: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+    border: 2px solid var(--ds-counter-border);
+    background: transparent;
+    transition: background-color 0.15s, border-color 0.15s, background-image 0.15s;
+}
+
+.day-selection .day-checkbox.checked .day-checkbox-left::before {
+    background-color: var(--ds-accent);
+    border-color: var(--ds-accent);
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23ffffff' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'><polyline points='3.5 8.5 6.5 11.5 12.5 5'/></svg>");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 14px 14px;
+}
+
+.day-selection .day-checkbox-right {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex-shrink: 0;
+}
+
+.day-selection .day-checkbox input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+    width: 0;
+    height: 0;
+    margin: 0;
+}
+
+.day-selection .day-checkbox-label {
+    font-size: 14px;
+    color: inherit;
+}
+
+.day-selection .day-price {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--ds-muted);
+    white-space: nowrap;
+}
+
+.day-selection .day-checkbox.checked .day-price {
+    color: var(--ds-item-active-text);
+}
+
+.day-selection .day-participants-group {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.day-selection .day-participants-label {
+    font-size: 12px;
+    color: var(--ds-muted);
+    white-space: nowrap;
+}
+
+.day-selection .day-participants-counter {
+    display: flex;
+    align-items: center;
+    gap: 0;
+    background: var(--ds-counter-bg);
+    border-radius: 6px;
+    overflow: hidden;
+    border: 1px solid var(--ds-counter-border);
+}
+
+.day-selection .participants-btn {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    border: none;
+    color: var(--ds-counter-text);
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.15s, color 0.15s;
+    padding: 0;
+    line-height: 1;
+}
+
+.day-selection .participants-btn:hover {
+    background: var(--ds-accent-soft);
+    color: var(--ds-counter-text-hover);
+}
+
+.day-selection .day-count-input {
+    width: 36px;
+    height: 32px;
+    text-align: center;
+    background: transparent;
+    border: none;
+    border-left: 1px solid var(--ds-counter-divider);
+    border-right: 1px solid var(--ds-counter-divider);
+    color: var(--ds-input-text);
+    font-size: 14px;
+    font-weight: 600;
+    -moz-appearance: textfield;
+    padding: 0;
+}
+
+.day-selection .day-count-input::-webkit-outer-spin-button,
+.day-selection .day-count-input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Total display */
+.day-selection-total {
+    margin-top: 12px;
+    padding: 12px 14px;
+    background: var(--ds-total-bg);
+    border: 1px solid var(--ds-total-border);
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: right;
+    color: var(--ds-total-text);
+    display: none;
+}
+
+.day-selection-total.visible {
+    display: block;
+}
+
+.day-selection-original-price {
+    /* !important + modern shorthand to defeat theme resets of text-decoration */
+    text-decoration: line-through !important;
+    text-decoration-line: line-through;
+    text-decoration-thickness: 1.5px;
+    opacity: 0.55;
+    font-weight: 400;
+    margin-right: 6px;
+    color: var(--ds-muted);
+}
+
+.day-selection-discount {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 4px;
+}
+
+/* Error display */
+.day-selection-error {
+    margin-top: 8px;
+    padding: 10px 14px;
+    background: var(--ds-error-bg);
+    border: 1px solid var(--ds-error-border);
+    border-radius: 6px;
+    color: var(--ds-error-text);
+    font-size: 13px;
+    display: none;
+}
+
+.day-selection-error.visible {
+    display: block;
+}
+
+/* Multi-day pricing summary */
+.day-selection-pricing {
+    margin: 0 0 16px;
+    padding: 12px 14px;
+    background: var(--ds-item-bg);
+    border: 1px solid var(--ds-item-border);
+    border-radius: 12px;
+}
+
+.day-selection-pricing-title {
+    margin: 0 0 8px;
+    font-size: 11px;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--ds-muted);
+}
+
+.day-selection-pricing-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.day-selection-pricing-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    flex: 1 1 220px;
+    min-width: 0;
+    padding: 8px 10px;
+    background: var(--ds-item-bg);
+    border: 1px solid var(--ds-item-border);
+    border-radius: 9px;
+    transition: background-color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.day-selection-pricing-item.active {
+    background: var(--ds-accent-soft);
+    border-color: var(--ds-accent-border);
+    box-shadow: 0 0 0 1px var(--ds-accent-soft);
+}
+
+.day-selection-pricing-copy {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    min-width: 0;
+}
+
+.day-selection-pricing-label {
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: var(--ds-text);
+}
+
+.day-selection-pricing-note {
+    font-size: 11px;
+    line-height: 1.25;
+    color: var(--ds-muted);
+}
+
+.day-selection-pricing-note s {
+    text-decoration: line-through !important;
+    text-decoration-line: line-through;
+    text-decoration-thickness: 1.5px;
+}
+
+.day-selection-pricing-price {
+    flex-shrink: 0;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1;
+    color: var(--ds-text);
+    white-space: nowrap;
+}
+
+@media (max-width: 600px) {
+    .day-selection .day-checkbox {
+        flex-wrap: wrap;
+    }
+
+    .day-selection .day-checkbox-right {
+        width: 100%;
+        justify-content: space-between;
+        margin-top: 8px;
+        padding-left: 28px;
+    }
+}

@@ -1,0 +1,297 @@
+/*
+ * Full-height slide-in sidebar for the per-user testing toggles.
+ * Shares the plugin aesthetic: rounded, hairline separators, #635bff for
+ * Stripe accents, neutral greys elsewhere.
+ */
+
+/* State dot inside the admin bar node title. */
+#wpadminbar .alttag-test-dot {
+    color: #22c55e;
+    font-size: 11px;
+    line-height: 1;
+    margin-left: 4px;
+}
+#wpadminbar .alttag-test-dot[data-on="0"] {
+    display: none;
+}
+
+/* --- Shell ------------------------------------------------------------- */
+
+/*
+ * The panel must clear the admin bar. WP declares the bar's height on <html>
+ * as --wp-admin--admin-bar--height (32px, 46px at <=782px) in
+ * wp-includes/css/admin-bar.css, which is always loaded when this panel is
+ * (both are gated on is_admin_bar_showing()). The literal fallbacks cover any
+ * context where that custom property is absent.
+ */
+.alttag-test-panel-backdrop {
+    position: fixed;
+    top: var(--wp-admin--admin-bar--height, 32px);
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.35);
+    opacity: 0;
+    /* pointer-events rather than visibility: the scrim must stay paintable for
+       the opacity transition, but must never swallow clicks while closed. */
+    pointer-events: none;
+    transition: opacity 220ms ease;
+    z-index: 99998;
+}
+.alttag-test-panel-backdrop.is-open {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.alttag-test-panel {
+    position: fixed;
+    top: var(--wp-admin--admin-bar--height, 32px);
+    right: 0;
+    bottom: 0;
+    width: 360px;
+    max-width: 100vw;
+    min-width: 320px;
+    /* Full-height sidebar: docked flush to the right edge of the viewport,
+       running from just under the admin bar down to the bottom of the window.
+       The rows area flexes so the footer always sits at the bottom. */
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    color: #1a1a1a;
+    font-size: 13px;
+    line-height: 1.45;
+    border-left: 1px solid rgba(0, 0, 0, 0.06);
+    box-shadow: -8px 0 24px rgba(0, 0, 0, 0.25);
+    outline: none;
+    transform: translateX(100%);
+    visibility: hidden;
+    transition: transform 260ms cubic-bezier(0.22, 0.61, 0.36, 1), visibility 0s linear 260ms;
+    z-index: 99999;
+}
+.alttag-test-panel.is-open {
+    transform: translateX(0);
+    visibility: visible;
+    transition: transform 260ms cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+@media screen and (max-width: 782px) {
+    .alttag-test-panel-backdrop,
+    .alttag-test-panel {
+        top: var(--wp-admin--admin-bar--height, 46px);
+    }
+}
+
+/* Below 600px the sidebar is full-bleed. */
+@media (max-width: 599px) {
+    .alttag-test-panel {
+        width: 100vw;
+        min-width: 0;
+        border-left: 0;
+    }
+}
+@media (prefers-reduced-motion: reduce) {
+    .alttag-test-panel,
+    .alttag-test-panel-backdrop,
+    .alttag-test-panel .atp-switch::after {
+        transition-duration: 1ms;
+    }
+}
+
+/* --- Header ------------------------------------------------------------ */
+
+.alttag-test-panel .atp-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 16px 16px 12px;
+    border-bottom: 1px solid #ececf2;
+}
+.alttag-test-panel .atp-title {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.3;
+    color: #1d2327;
+    flex: 1 1 auto;
+}
+
+/*
+ * Quiet ghost icon button: no border and no fill at rest. The element selector
+ * is deliberate: themes and wp-admin both style bare <button>, and without an
+ * explicit reset the close control inherits their filled accent colour and
+ * sticky focus shadow.
+ */
+.alttag-test-panel button.atp-close {
+    flex: 0 0 auto;
+    -webkit-appearance: none;
+    appearance: none;
+    box-sizing: border-box;
+    width: 28px;
+    height: 28px;
+    min-height: 0;
+    padding: 0;
+    border: 0;
+    border-radius: 6px;
+    background: transparent;
+    color: #6b7280;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1;
+    text-shadow: none;
+    box-shadow: none;
+    cursor: pointer;
+    transition: background 150ms ease, color 150ms ease;
+}
+.alttag-test-panel button.atp-close:hover {
+    background: #f1f1f4;
+    color: #1d2327;
+}
+/* Kill the browser/wp-admin focus ring for pointer focus; :focus-visible below
+   re-adds a proper one for keyboard users only. */
+.alttag-test-panel button.atp-close:focus,
+.alttag-test-panel button.atp-close:active {
+    outline: none;
+    box-shadow: none;
+}
+
+/* --- Rows -------------------------------------------------------------- */
+
+.alttag-test-panel .atp-rows {
+    flex: 1 1 auto;
+    overflow-y: auto;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.alttag-test-panel .atp-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 14px 16px;
+    border-bottom: 1px solid #f1f1f5;
+    transition: background 160ms ease;
+}
+/* An enabled mode is scannable without reading the switch. */
+.alttag-test-panel .atp-row.is-on {
+    background: #f6f5ff;
+    box-shadow: inset 3px 0 0 #635bff;
+}
+.alttag-test-panel .atp-row-text {
+    flex: 1 1 0;
+    min-width: 0;
+}
+.alttag-test-panel .atp-label {
+    display: block;
+    font-size: 13.5px;
+    font-weight: 600;
+    color: #1d2327;
+}
+.alttag-test-panel .atp-desc {
+    display: block;
+    margin-top: 3px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.45;
+    color: #6b7280;
+}
+
+/* --- Switch ------------------------------------------------------------ */
+
+.alttag-test-panel button.atp-switch {
+    flex: 0 0 auto;
+    position: relative;
+    -webkit-appearance: none;
+    appearance: none;
+    box-sizing: border-box;
+    width: 36px;
+    height: 20px;
+    min-height: 0;
+    margin-top: 2px;
+    padding: 0;
+    border: 0;
+    border-radius: 10px;
+    background: #d3d6dc;
+    box-shadow: none;
+    cursor: pointer;
+    transition: background 160ms ease;
+}
+.alttag-test-panel .atp-switch::after {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #fff;
+    box-shadow: 0 1px 3px rgba(17, 17, 17, 0.28);
+    transition: transform 160ms ease;
+}
+.alttag-test-panel button.atp-switch[aria-checked="true"] {
+    background: #635bff;
+}
+.alttag-test-panel .atp-switch[aria-checked="true"]::after {
+    transform: translateX(16px);
+}
+.alttag-test-panel .atp-switch:focus-visible,
+.alttag-test-panel button.atp-close:focus-visible,
+.alttag-test-panel a:focus-visible {
+    outline: 2px solid #635bff;
+    outline-offset: 2px;
+}
+.alttag-test-panel .atp-switch.is-busy {
+    opacity: 0.6;
+    cursor: progress;
+}
+
+/* --- Warning / footer -------------------------------------------------- */
+
+/* Rendered inside the row it belongs to, on its own flex line below it. */
+.alttag-test-panel .atp-warning {
+    flex: 1 1 100%;
+    margin: 0;
+    padding: 9px 11px;
+    border-left: 3px solid #b26d0b;
+    border-radius: 0 4px 4px 0;
+    background: #fdf6e7;
+    color: #7a5410;
+    font-size: 12px;
+    line-height: 1.45;
+}
+.alttag-test-panel .atp-warning[hidden] {
+    display: none;
+}
+/* Plain link treatment. The whole phrase is one <a>, so it wraps as a unit
+   rather than leaving a stray word behind on the previous line. */
+.alttag-test-panel .atp-warning a {
+    color: #2f3ea8;
+    font-weight: 500;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+.alttag-test-panel .atp-warning a:hover,
+.alttag-test-panel .atp-warning a:focus {
+    color: #1f2b7a;
+}
+.alttag-test-panel .atp-footer {
+    flex: 0 0 auto;
+    padding: 10px 16px 11px;
+    border-top: 1px solid #ececf2;
+    background: #fafafd;
+    font-size: 11px;
+    font-style: italic;
+    line-height: 1.4;
+    color: #646970;
+}
+.alttag-test-panel .atp-footer ul {
+    margin: 6px 0 0;
+    padding-left: 16px;
+    font-style: normal;
+}
+
+/* No-script fallback: the admin bar node links to #alttag-test-panel. */
+.alttag-test-panel:target {
+    transform: translateX(0);
+    visibility: visible;
+}

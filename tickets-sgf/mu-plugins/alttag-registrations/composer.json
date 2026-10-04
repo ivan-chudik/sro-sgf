@@ -1,0 +1,29 @@
+{
+    "name": "alttag/registrations",
+    "description": "Registration plugin for Alttag",
+    "type": "wordpress-muplugin",
+    "require": {
+        "php": ">=7.4",
+        "endroid/qr-code": "^4.6",
+        "tecnickcom/tcpdf": "^6.6",
+        "phpoffice/phpspreadsheet": "^1.29",
+        "maennchen/zipstream-php": "^2.1",
+        "myclabs/php-enum": "^1.8"
+    },
+    "autoload": {
+        "files": [
+            "helpers.php"
+        ],
+        "psr-4": {
+            "Alttag\\Registrations\\": "includes/"
+        }
+    },
+    "config": {
+        "platform": {
+            "php": "8.4"
+        },
+        "allow-plugins": {
+            "composer/installers": true
+        }
+    }
+}

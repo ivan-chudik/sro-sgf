@@ -1,0 +1,144 @@
+/**
+ * The checkout event picker: two cascading selects, city then theme-and-date.
+ *
+ * Cards showed every city at once, which stops working when one city runs several
+ * themes and several dates per theme - the grid would be the whole programme. The
+ * cascade keeps every list down to the answer above it.
+ *
+ * WHERE THIS RENDERS: woocommerce_before_checkout_billing_form, i.e. inside
+ * .woocommerce-billing-fields, between the "Fakturačné údaje" h3 and the field
+ * grid. The theme paints that card lavender (#EDE7F6) with ink text and styles
+ * its inputs at radius 11px / Manrope - see hello-elementor-child/checkout/
+ * vu-checkout.css. The rows below are WooCommerce .form-row markup, so they
+ * inherit that input styling and this file only adds what the theme does not
+ * say: the picker's own spacing, the hint, the error and the busy state. The
+ * palette is the checkout's own --co-* scale read through var() with literal
+ * fallbacks, for the case where .vu-checkout is not on the section and that
+ * stylesheet is inert.
+ */
+
+.alttag-product-group {
+    /* The gap down to the following .session-selection is owned by
+       alttag-checkout-styling.php (margin-top: 24px on the sibling); the 10px
+       bottom margin collapses with it to max(10, 24) = 24px on checkout and
+       provides spacing everywhere the sibling is absent. */
+    margin: 0 0 10px 0;
+
+    /* The rows are spaced with a gap, not with margins: the theme resets
+       p.form-row inside #customer_details .col-1 to margin: 0 !important
+       (vu-checkout.css:522), which a margin on the rows cannot survive. */
+    display: grid;
+    gap: 14px;
+
+    /* Checkout tokens first, brand literals as the fallback. */
+    --apg-ink: var(--co-ink, #1A1147);
+    --apg-ink-soft: var(--co-ink-2, #4A3B7E);
+    --apg-purple: var(--co-purple, #6B2DB0);
+    /* Elementor kit secondary (elementor-kit-2747). Dark enough for AAA text. */
+    --apg-purple-deep: #4600AA;
+    /* The red the plugin already uses for form errors (--ds-error-text in
+       selection-days.css, the express-checkout guard notice). 6.4:1 on white. */
+    --apg-error: #B91C1C;
+
+    /* The surrounding labels and inputs are all Manrope; without this the picker
+       would inherit the kit body font and read as a foreign component. */
+    font-family: 'Manrope', sans-serif;
+}
+
+.alttag-product-group__hint {
+    margin: 0;
+    font-size: 12.5px;
+    line-height: 1.5;
+    color: var(--apg-ink-soft);
+}
+
+/* One row per select, stacked on every width: the two are read in order, and an
+   event list means nothing next to the city it does not belong to yet. The theme
+   owns .form-row label under .vu-checkout, so this only has to hold up where
+   that stylesheet is inert. */
+.alttag-product-group__row > label {
+    display: block;
+    margin: 0 0 6px;
+    font-size: 12.5px;
+    font-weight: 700;
+    line-height: 1.35;
+    color: var(--apg-ink);
+}
+
+/* The theme styles select.select on the checkout; only the parts it cannot know
+   about are set here, so the picker keeps looking like the fields under it.
+   min-height keeps the touch target past 44px whatever the theme's padding is. */
+.alttag-product-group__select {
+    width: 100%;
+    max-width: 100%;
+    min-height: 46px;
+    font-family: inherit;
+    font-size: 15px;
+    color: var(--apg-ink);
+    cursor: pointer;
+}
+
+/* Focus is left to the theme, which rings a focused select in purple
+   (vu-checkout.css:140) after killing the UA outline with !important; where that
+   stylesheet is inert the UA outline is untouched.
+
+   Disabled means "answer the select above first", not "unavailable for good", so
+   it stays readable rather than being dimmed away. !important and one class more
+   than .vu-checkout select, whose background: #fff !important it has to beat. */
+.alttag-product-group__select:disabled {
+    background-color: rgba(26, 17, 71, .05) !important;
+    color: var(--apg-ink-soft);
+    cursor: not-allowed;
+}
+
+/* A level of the cascade the visitor has not reached yet: the row is gone, not
+   dimmed, so the picker only ever shows one question more than it has answers.
+   Server-rendered visible on purpose (no-JS keeps every row), so this class is
+   put on by checkout-product-group.js on init. !important because the row is a
+   .form-row and both WooCommerce and vu-checkout.css have opinions about how a
+   form row displays; the grid gap goes with it, so nothing is left behind. */
+.alttag-product-group__row--gated {
+    display: none !important;
+}
+
+/* A sold-out date is kept in the list rather than dropped, so its absence cannot
+   read as a date that never existed. */
+.alttag-product-group__select option:disabled {
+    color: var(--apg-ink-soft);
+}
+
+/* Nothing is selected until the visitor picks, so the submit guard has something
+   to say. The [hidden] rule is explicit because the message needs a display of
+   its own for the margin, and that would otherwise beat the UA's [hidden] rule. */
+.alttag-product-group__error {
+    display: block;
+    margin: 0;
+    font-size: 12.5px;
+    font-weight: 700;
+    line-height: 1.5;
+    color: var(--apg-error);
+}
+
+.alttag-product-group__error[hidden] {
+    display: none;
+}
+
+/* The blocked state points at the selects themselves; WooCommerce adds its own
+   .woocommerce-invalid to these rows on blur, this is what the submit guard
+   turns on for both at once. */
+.alttag-product-group--invalid .alttag-product-group__select {
+    border-color: var(--apg-error) !important;
+    box-shadow: 0 0 0 1px var(--apg-error) !important;
+}
+
+/* Both selects are disabled while the switch request is in flight. It lasts the
+   one request before the page reloads, so it is a busy state, not a readable
+   one - hence the opacity that the plain :disabled rule above avoids. */
+.alttag-product-group--busy {
+    cursor: progress;
+}
+
+.alttag-product-group--busy .alttag-product-group__select {
+    opacity: .6;
+    pointer-events: none;
+}

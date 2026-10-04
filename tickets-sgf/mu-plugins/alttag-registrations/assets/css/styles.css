@@ -1,0 +1,313 @@
+.woocommerce form .form-row .input-checkbox {
+    display: inline-block !important;
+}
+
+.woocommerce form .form-row label.checkbox,
+.woocommerce-page form .form-row label.checkbox {
+    cursor: pointer !important;
+}
+
+select {
+    outline: none;
+    color: #666666;
+    border-radius: 12px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: "";
+}
+
+select {
+    background: transparent;
+    background-image: url("data:image/svg+xml;utf8,<svg fill='%23888' height='10' viewBox='0 0 8 10' width='8' xmlns='http://www.w3.org/2000/svg'><path d='M0 0l4 5 4-5z'/></svg>");
+    background-repeat: no-repeat;
+    background-position-x: calc(100% - 6px);
+    background-position-y: calc(50% + 4px);
+}
+
+.select2 {
+    color: #666666;
+}
+
+.select2-container--default .select2-selection--single {
+    border: 1px solid #666;
+    border-radius: 12px;
+    transition: all 0.3s;
+}
+.select2-container .select2-selection--single {
+    height: 40px !important;
+}
+
+.select2-container--default
+    .select2-selection--single
+    .select2-selection__arrow {
+    height: 40px !important;
+}
+
+.select2-container--default
+    .select2-selection--single
+    .select2-selection__rendered {
+    line-height: 40px !important;
+    padding: 0rem 1rem !important;
+    color: #666666;
+}
+
+#customer_details .col-1 {
+    width: 100% !important;
+}
+
+#customer_details .col-2 {
+    display: none !important;
+}
+
+/* Billing field description styles */
+.woocommerce form .woocommerce-billing-fields .form-row .woocommerce-input-wrapper .description {
+    display: block !important;
+    font-size: 12px;
+    background: var(--e-global-color-accent);
+    padding: 5px !important;
+    margin-top: 4px !important;
+    overflow: visible !important;
+    height: auto !important;
+}
+
+.woocommerce form .woocommerce-billing-fields .form-row .woocommerce-input-wrapper .description::before,
+.woocommerce form .woocommerce-billing-fields .form-row .woocommerce-input-wrapper .description::after {
+    display: none;
+}
+
+/* Thank you page styles */
+.checkout-thankyou {
+    color: var(--e-global-color-text);
+}
+
+.checkout-thankyou-download-links {
+    display: flex;
+    gap: 20px;
+    justify-content: flex-start;
+    margin: 20px 0;
+}
+
+.checkout-thankyou-download-links a.elementor-button,
+.checkout-thankyou-download-links a.elementor-button:hover {
+    background: var(--e-global-color-primary) !important;
+    color: #fff !important;
+}
+
+.checkout-thankyou .payment-instructions {
+    background: var(--e-global-color-primary) !important;
+    color: #fff !important;
+}
+
+/* --------------------------------------------------------------------------
+   Checkout: the "registering for" banner above the billing form.
+
+   Colour defaults live on :root, NOT on the block itself, so a project can
+   override them from its own stylesheet regardless of which file loads first.
+   (Project CSS is often printed inline in the head, before this file.)
+
+   Participant rows are NOT styled here on purpose, they have their own
+   selection-participant-types.css.
+   -------------------------------------------------------------------------- */
+:root {
+    --alttag-banner-bg: #ffffff;
+    --alttag-banner-accent: #2f2a7a;
+    --alttag-banner-text: #1d2130;
+    --alttag-banner-border: rgba(0, 0, 0, .08);
+}
+
+.alttag-registration-banner {
+    margin: 0 0 16px;
+    padding: 10px 14px;
+    background: var(--alttag-banner-bg);
+    border: 1px solid var(--alttag-banner-border);
+    border-left: 3px solid var(--alttag-banner-accent);
+    border-radius: 8px;
+    color: var(--alttag-banner-text);
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.alttag-registration-banner strong {
+    display: block;
+    font-size: 14px;
+    line-height: 1.4;
+    color: var(--alttag-banner-accent);
+}
+
+.alttag-registration-banner a {
+    color: var(--alttag-banner-accent);
+    text-decoration: underline;
+}
+
+/* WooCommerce order payment page */
+body.woocommerce-order-pay #order_review {
+    box-sizing: border-box !important;
+    padding: 26px !important;
+    overflow: hidden !important;
+    color: #fff !important;
+    background:
+        radial-gradient(120% 70% at 85% 0%, rgba(107, 45, 176, .5), transparent 55%),
+        linear-gradient(168deg, #1a1257 0%, #120c3e 55%, #0a0a2e 100%) !important;
+    border: 1px solid rgba(255, 255, 255, .12) !important;
+    border-radius: 22px !important;
+    box-shadow: 0 36px 80px -34px rgba(0, 0, 0, .8) !important;
+    font-family: 'Manrope', sans-serif !important;
+}
+
+body.woocommerce-order-pay .woocommerce-form-login {
+    box-sizing: border-box !important;
+    padding: 24px !important;
+    color: var(--co-ink, #1a1147) !important;
+    background: var(--co-lavender, #ede7f6) !important;
+    border: 0 !important;
+    border-radius: 22px !important;
+    box-shadow: none !important;
+    font-family: 'Manrope', sans-serif !important;
+}
+
+body.woocommerce-order-pay .woocommerce-form-login label,
+body.woocommerce-order-pay .woocommerce-form-login__rememberme span,
+body.woocommerce-order-pay .woocommerce-form-login .lost_password a {
+    color: var(--co-ink, #1a1147) !important;
+}
+
+body.woocommerce-order-pay .woocommerce-form-login .input-text {
+    min-height: 46px !important;
+    padding: 12px 14px !important;
+    color: var(--co-ink, #1a1147) !important;
+    background: #fff !important;
+    border: 1px solid var(--co-line, rgba(107, 45, 176, .16)) !important;
+    border-radius: 11px !important;
+}
+
+body.woocommerce-order-pay .woocommerce-form-login__submit {
+    display: block !important;
+    float: none !important;
+    width: 100% !important;
+    margin: 16px 0 0 !important;
+    padding: 16px !important;
+    color: #fff !important;
+    background: var(--co-grad-cta, linear-gradient(135deg, #e91e8c 0%, #6b2db0 100%)) !important;
+    border: 0 !important;
+    border-radius: 14px !important;
+    box-shadow: 0 18px 40px -14px rgba(233, 30, 140, .65) !important;
+    font-family: 'Manrope', sans-serif !important;
+    font-size: 16px !important;
+    font-weight: 800 !important;
+}
+
+body.woocommerce-order-pay .woocommerce-info,
+body.woocommerce-order-pay .woocommerce-error,
+body.woocommerce-order-pay .woocommerce-message {
+    margin: 0 0 22px !important;
+    padding: 13px 15px 13px 46px !important;
+    color: var(--co-ink-2, #4a3b7e) !important;
+    background: var(--co-lavender, #ede7f6) !important;
+    border: 1px solid rgba(107, 45, 176, .28) !important;
+    border-left: 4px solid var(--co-purple, #6b2db0) !important;
+    border-radius: 13px !important;
+    font-family: 'Manrope', sans-serif !important;
+    line-height: 1.5 !important;
+}
+
+body.woocommerce-order-pay .woocommerce-info::before,
+body.woocommerce-order-pay .woocommerce-error::before,
+body.woocommerce-order-pay .woocommerce-message::before {
+    top: 13px !important;
+    color: var(--co-purple, #6b2db0) !important;
+}
+
+/* Order review table on the order-pay page, ported from the theme checkout card. */
+body.woocommerce-order-pay #order_review .shop_table {
+    width: 100% !important;
+    margin: 0 0 18px !important;
+    border-collapse: collapse !important;
+    background: none !important;
+    border: none !important;
+}
+
+body.woocommerce-order-pay #order_review .shop_table thead {
+    display: none !important;
+}
+
+body.woocommerce-order-pay #order_review .shop_table tbody td {
+    padding: 0 0 14px !important;
+    border: none !important;
+    border-bottom: 1px solid rgba(255, 255, 255, .12) !important;
+    color: #fff !important;
+    background: none !important;
+}
+
+body.woocommerce-order-pay #order_review .shop_table td.product-name {
+    font-weight: 700 !important;
+    font-size: 14.5px !important;
+}
+
+body.woocommerce-order-pay #order_review .shop_table td.product-total,
+body.woocommerce-order-pay #order_review .shop_table td.product-subtotal {
+    font-weight: 800 !important;
+    font-size: 15px !important;
+    text-align: right !important;
+    white-space: nowrap !important;
+}
+
+/* Item meta rows rendered under the product name. */
+body.woocommerce-order-pay #order_review .shop_table .wc-item-meta {
+    margin: 6px 0 0 !important;
+}
+
+body.woocommerce-order-pay #order_review .shop_table .wc-item-meta li {
+    margin: 0 !important;
+    font-size: 13px !important;
+    color: rgba(237, 231, 246, .82) !important;
+}
+
+body.woocommerce-order-pay #order_review .shop_table .wc-item-meta li > p,
+body.woocommerce-order-pay #order_review .shop_table .wc-item-meta li > .wc-item-meta-label + p {
+    display: inline !important;
+    margin: 0 !important;
+}
+
+body.woocommerce-order-pay #order_review .shop_table .wc-item-meta-label {
+    display: none !important;
+}
+
+body.woocommerce-order-pay #order_review .shop_table tfoot tr th,
+body.woocommerce-order-pay #order_review .shop_table tfoot tr td {
+    padding: 8px 0 !important;
+    border: none !important;
+    font-size: 14px !important;
+    color: rgba(237, 231, 246, .82) !important;
+    background: none !important;
+}
+
+body.woocommerce-order-pay #order_review .shop_table tfoot tr.order-total th {
+    font-size: 16px !important;
+    font-weight: 800 !important;
+    color: #fff !important;
+}
+
+body.woocommerce-order-pay #order_review .shop_table tfoot tr.order-total td strong {
+    font-size: 26px !important;
+    font-weight: 800 !important;
+    background: linear-gradient(135deg, #fff, #F9A825) !important;
+    -webkit-background-clip: text !important;
+    background-clip: text !important;
+    color: transparent !important;
+}
+
+@media (max-width: 520px) {
+    body.woocommerce-order-pay #order_review,
+    body.woocommerce-order-pay .woocommerce-form-login {
+        padding: 16px !important;
+    }
+
+    body.woocommerce-order-pay #order_review .shop_table td.product-name {
+        font-size: 13.5px !important;
+    }
+
+    body.woocommerce-order-pay #order_review .shop_table tfoot tr.order-total td strong {
+        font-size: 22px !important;
+    }
+}

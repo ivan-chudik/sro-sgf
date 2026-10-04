@@ -1,0 +1,1351 @@
+/* =============================================================================
+   Ticket Designer — modern admin skin.
+   Design tokens come from Shoelace's light theme (loaded from CDN in
+   TicketDesignerSettings::enqueueAssets). This file styles native form
+   elements + the plugin's own classes using --sl-* variables so the UI reads
+   as a single, coherent modern surface — no framework class spam in markup.
+   ============================================================================= */
+
+/* ---- Scope everything under .ticket-designer-wrap so we don't leak into
+        the rest of WP admin. ---- */
+.ticket-designer-wrap {
+    --tdx-radius:      var(--sl-border-radius-medium,  6px);
+    --tdx-radius-lg:   var(--sl-border-radius-large,   8px);
+    --tdx-radius-pill: var(--sl-border-radius-pill,    9999px);
+    --tdx-bg:          var(--sl-color-neutral-0,       #ffffff);
+    --tdx-bg-muted:    var(--sl-color-neutral-50,      #fafafa);
+    --tdx-bg-hover:    var(--sl-color-neutral-100,     #f4f4f5);
+    --tdx-border:      var(--sl-color-neutral-200,     #e4e4e7);
+    --tdx-border-strong: var(--sl-color-neutral-300,   #d4d4d8);
+    --tdx-text:        var(--sl-color-neutral-900,     #18181b);
+    --tdx-text-muted:  var(--sl-color-neutral-500,     #71717a);
+    --tdx-text-subtle: var(--sl-color-neutral-600,     #52525b);
+    --tdx-primary:     var(--sl-color-primary-600,     #2563eb);
+    --tdx-primary-hover: var(--sl-color-primary-700,   #1d4ed8);
+    --tdx-primary-soft: var(--sl-color-primary-50,     #eff6ff);
+    --tdx-primary-border: var(--sl-color-primary-200,  #bfdbfe);
+    --tdx-shadow-sm:   var(--sl-shadow-small,   0 1px 2px rgba(0,0,0,.06));
+    --tdx-shadow-md:   var(--sl-shadow-medium,  0 4px 12px rgba(0,0,0,.08));
+    --tdx-shadow-lg:   var(--sl-shadow-large,   0 12px 32px rgba(0,0,0,.12));
+    --tdx-space-xs:    var(--sl-spacing-x-small,  6px);
+    --tdx-space-sm:    var(--sl-spacing-small,   12px);
+    --tdx-space-md:    var(--sl-spacing-medium,  16px);
+    --tdx-space-lg:    var(--sl-spacing-large,   20px);
+    --tdx-space-xl:    var(--sl-spacing-x-large, 28px);
+    --tdx-font: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+                Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+
+    margin: 20px 20px 20px 0;
+    color: var(--tdx-text);
+    font-family: var(--tdx-font);
+    font-feature-settings: 'cv02', 'cv03', 'cv04', 'cv11';
+}
+
+.ticket-designer-wrap h1 {
+    font-family: var(--tdx-font);
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    margin: 0 0 20px;
+    color: var(--tdx-text);
+}
+
+.ticket-designer-wrap .notice {
+    border-radius: var(--tdx-radius);
+    box-shadow: var(--tdx-shadow-sm);
+}
+
+/* ---- Top switchers (product / language) ------------------------------------- */
+.ticket-designer-product-switcher,
+.ticket-designer-language-switcher {
+    background: var(--tdx-bg) !important;
+    border: 1px solid var(--tdx-border) !important;
+    border-radius: var(--tdx-radius-lg) !important;
+    padding: 14px 18px !important;
+    box-shadow: var(--tdx-shadow-sm);
+    margin-bottom: 16px !important;
+}
+.ticket-designer-product-switcher label,
+.ticket-designer-language-switcher label {
+    font-weight: 600;
+    color: var(--tdx-text-subtle);
+    font-size: 13px;
+}
+.ticket-designer-product-switcher select,
+.ticket-designer-language-switcher select {
+    height: 36px;
+    padding: 0 32px 0 12px;
+    border: 1px solid var(--tdx-border-strong);
+    border-radius: var(--tdx-radius);
+    background-color: var(--tdx-bg);
+    font-size: 14px;
+    color: var(--tdx-text);
+    box-shadow: none;
+    transition: border-color .15s, box-shadow .15s;
+}
+.ticket-designer-product-switcher select:focus,
+.ticket-designer-language-switcher select:focus {
+    border-color: var(--tdx-primary);
+    outline: none;
+    box-shadow: 0 0 0 3px var(--tdx-primary-soft);
+}
+
+/* ---- Main layout ------------------------------------------------------------ */
+.ticket-designer-container {
+    display: flex;
+    gap: 24px;
+    margin-top: 8px;
+    align-items: flex-start;
+}
+.ticket-designer-settings {
+    flex: 0 0 520px;
+    background: var(--tdx-bg);
+    padding: 24px;
+    border: 1px solid var(--tdx-border);
+    border-radius: var(--tdx-radius-lg);
+    box-shadow: var(--tdx-shadow-sm);
+    max-height: calc(100vh - 140px);
+    overflow-y: auto;
+}
+.ticket-designer-settings::-webkit-scrollbar          { width: 10px; }
+.ticket-designer-settings::-webkit-scrollbar-thumb    { background: var(--tdx-border-strong); border-radius: 5px; }
+.ticket-designer-settings::-webkit-scrollbar-thumb:hover { background: var(--tdx-text-muted); }
+.ticket-designer-settings::-webkit-scrollbar-track    { background: transparent; }
+
+.ticket-designer-preview {
+    flex: 1;
+    min-width: 0;
+    background: var(--tdx-bg);
+    padding: 24px;
+    border: 1px solid var(--tdx-border);
+    border-radius: var(--tdx-radius-lg);
+    box-shadow: var(--tdx-shadow-sm);
+    position: sticky;
+    top: 32px;
+    max-height: calc(100vh - 140px);
+}
+.ticket-designer-preview .preview-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 16px;
+    gap: 12px;
+}
+.ticket-designer-preview .preview-header h2 {
+    margin: 0;
+    padding: 0;
+    border: none;
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--tdx-text);
+    letter-spacing: -0.01em;
+}
+
+/* ---- Section headings + bodies --------------------------------------------- */
+.ticket-designer-settings h2 {
+    font-family: var(--tdx-font);
+    font-size: 15px;
+    font-weight: 700;
+    margin: 0 0 14px;
+    padding: 0 0 10px;
+    border-bottom: 1px solid var(--tdx-border);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    letter-spacing: -0.005em;
+    color: var(--tdx-text);
+}
+.ticket-designer-settings h3 {
+    font-size: 13px;
+    font-weight: 600;
+    margin: 0 0 8px;
+    color: var(--tdx-text-subtle);
+    text-transform: uppercase;
+    letter-spacing: .04em;
+}
+.ticket-designer-settings .settings-section {
+    margin: 0 0 24px;
+    padding: 0 0 24px;
+    border-bottom: 1px solid var(--tdx-border);
+}
+.ticket-designer-settings .settings-section:last-of-type {
+    border-bottom: none;
+}
+.ticket-designer-settings .settings-section > .description,
+.ticket-designer-settings .description {
+    color: var(--tdx-text-muted);
+    font-size: 13px;
+    line-height: 1.55;
+    margin: 4px 0 12px;
+}
+
+/* Subsection cards inside ticket-frame */
+.ticket-designer-settings .subsection {
+    background: var(--tdx-bg-muted);
+    border: 1px solid var(--tdx-border);
+    border-radius: var(--tdx-radius);
+    padding: 16px 18px;
+    margin: 0 0 12px;
+}
+.ticket-designer-settings .subsection > .subsection-title {
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .06em;
+    color: var(--tdx-text-subtle);
+    margin: 0 0 12px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.ticket-designer-settings .subsection > .subsection-title .step-num {
+    display: inline-flex;
+    width: 20px;
+    height: 20px;
+    align-items: center;
+    justify-content: center;
+    background: var(--tdx-primary-soft);
+    color: var(--tdx-primary);
+    border-radius: var(--tdx-radius-pill);
+    font-size: 11px;
+    font-weight: 700;
+}
+.ticket-designer-settings .subsection > .subsection-toggle {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0 0 12px;
+}
+.ticket-designer-settings .subsection > .subsection-toggle .subsection-title {
+    margin: 0;
+}
+
+/* Product-design-enabled banner (top blue box) */
+.ticket-designer-settings .product-design-banner {
+    background: var(--tdx-primary-soft);
+    border: 1px solid var(--tdx-primary-border);
+    border-left: 4px solid var(--tdx-primary);
+    border-radius: var(--tdx-radius);
+    padding: 14px 18px;
+    margin: 0 0 24px;
+}
+.ticket-designer-settings .product-design-banner .banner-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+.ticket-designer-settings .product-design-banner .description {
+    margin: 6px 0 0;
+    color: var(--tdx-text-subtle);
+}
+
+/* ---- Form primitives -------------------------------------------------------- */
+.ticket-designer-settings .form-row {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 12px;
+    flex-wrap: wrap;
+}
+.ticket-designer-settings .form-row > .form-group {
+    flex: 1 1 0;
+    min-width: 140px;
+}
+.ticket-designer-settings .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 12px;
+}
+.ticket-designer-settings .form-group > label,
+.ticket-designer-settings .form-label {
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--tdx-text-subtle);
+    letter-spacing: .01em;
+}
+.ticket-designer-settings .form-text {
+    font-size: 12px;
+    color: var(--tdx-text-muted);
+    line-height: 1.5;
+}
+
+/* Native inputs / selects / textareas — force full width AND identical height
+   (36px). WP admin default padding/line-heights on input[type=number] and
+   input.small-text otherwise make them taller than sibling color pickers /
+   selects, breaking row alignment. */
+.ticket-designer-settings input[type="text"]:not(.wp-color-picker):not(.button):not([class*="wp-picker"]),
+.ticket-designer-settings input[type="number"],
+.ticket-designer-settings input[type="url"],
+.ticket-designer-settings input[type="email"],
+.ticket-designer-settings input[type="search"],
+.ticket-designer-settings select,
+.ticket-designer-settings textarea {
+    width: 100% !important;
+    max-width: none !important;
+    height: 36px !important;
+    min-height: 36px !important;
+    box-sizing: border-box !important;
+    line-height: 1.2 !important;
+    padding: 0 12px !important;
+    border: 1px solid var(--tdx-border-strong);
+    border-radius: var(--tdx-radius);
+    background: var(--tdx-bg);
+    color: var(--tdx-text);
+    font-size: 13.5px;
+    font-family: var(--tdx-font);
+    line-height: 1.4;
+    box-shadow: none;
+    transition: border-color .15s, box-shadow .15s;
+    box-sizing: border-box;
+    margin: 0;
+}
+.ticket-designer-settings textarea {
+    height: auto !important;
+    min-height: 68px !important;
+    padding: 10px 12px !important;
+    resize: vertical;
+    line-height: 1.5 !important;
+}
+.ticket-designer-settings select {
+    padding: 0 32px 0 12px;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8' fill='none'%3E%3Cpath d='M1 1.5L6 6.5L11 1.5' stroke='%2371717a' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    background-size: 12px 8px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+.ticket-designer-settings input:hover:not(:disabled):not([class*="wp-picker"]),
+.ticket-designer-settings select:hover:not(:disabled),
+.ticket-designer-settings textarea:hover:not(:disabled) {
+    border-color: var(--tdx-text-muted);
+}
+.ticket-designer-settings input:focus:not([class*="wp-picker"]),
+.ticket-designer-settings select:focus,
+.ticket-designer-settings textarea:focus {
+    outline: none;
+    border-color: var(--tdx-primary);
+    box-shadow: 0 0 0 3px var(--tdx-primary-soft);
+}
+.ticket-designer-settings input:disabled,
+.ticket-designer-settings select:disabled,
+.ticket-designer-settings textarea:disabled {
+    background: var(--tdx-bg-hover);
+    color: var(--tdx-text-muted);
+    cursor: not-allowed;
+}
+.ticket-designer-settings input.small-text {
+    width: 100%;
+    max-width: none;
+}
+
+/* Native checkboxes — modern outline */
+.ticket-designer-settings input[type="checkbox"]:not(.wp-picker-container input) {
+    width: 18px;
+    height: 18px;
+    margin: 0;
+    accent-color: var(--tdx-primary);
+    cursor: pointer;
+}
+
+/* ---- Buttons — restyle WP's `.button` on this screen only ------------------ */
+.ticket-designer-wrap .button,
+.ticket-designer-wrap button.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    height: 36px;
+    padding: 0 14px;
+    border: 1px solid var(--tdx-border-strong);
+    border-radius: var(--tdx-radius);
+    background: var(--tdx-bg);
+    color: var(--tdx-text);
+    font-family: var(--tdx-font);
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1;
+    box-shadow: var(--tdx-shadow-sm);
+    cursor: pointer;
+    transition: background .15s, border-color .15s, transform .05s;
+    text-decoration: none;
+    white-space: nowrap;
+}
+.ticket-designer-wrap .button:hover {
+    background: var(--tdx-bg-hover);
+    border-color: var(--tdx-text-muted);
+    color: var(--tdx-text);
+}
+.ticket-designer-wrap .button:active {
+    transform: translateY(1px);
+}
+.ticket-designer-wrap .button-primary,
+.ticket-designer-wrap button.button-primary {
+    background: var(--tdx-primary);
+    border-color: var(--tdx-primary);
+    color: #fff;
+}
+.ticket-designer-wrap .button-primary:hover {
+    background: var(--tdx-primary-hover);
+    border-color: var(--tdx-primary-hover);
+    color: #fff;
+}
+.ticket-designer-wrap .button-large {
+    height: 42px;
+    padding: 0 22px;
+    font-size: 14px;
+    font-weight: 600;
+}
+.ticket-designer-wrap .button .dashicons {
+    font-size: 16px;
+    width: 16px;
+    height: 16px;
+    line-height: 1;
+    margin: 0;
+}
+
+/* ---- Media upload wrapper --------------------------------------------------- */
+.ticket-designer-settings .media-upload-wrapper {
+    display: flex;
+    gap: 8px;
+    align-items: stretch;
+}
+.ticket-designer-settings .media-upload-wrapper > input[type="text"] {
+    flex: 1;
+    min-width: 0;
+}
+
+/* ---- Form actions bar ------------------------------------------------------- */
+.ticket-designer-settings .form-actions {
+    margin-top: 24px;
+    padding-top: 20px;
+    border-top: 1px solid var(--tdx-border);
+}
+.ticket-designer-settings .form-actions > div {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+/* ---- Ticket frame body dims when disabled ---------------------------------- */
+#ticket-frame-section .ticket-frame-body {
+    transition: opacity 0.2s;
+}
+
+/* ---- WP Color Picker — normalize into modern look -------------------------- */
+/* The .wp-color-result button gets its inline background-color set by WP,
+   so we keep it as the full color chip and add a readable text pill overlay. */
+.ticket-designer-settings .wp-picker-container {
+    /* Match block-level input alignment inside .form-group / .col-md-*.
+       The button inside is height:36px so vertical position lines up with
+       neighboring <select>/<input> elements. */
+    display: block !important;
+    position: relative;
+    margin: 0 !important;
+    line-height: 0; /* kill stray inline-block whitespace / phantom baseline dot */
+}
+.ticket-designer-settings .wp-picker-container .wp-color-result.button {
+    position: relative;
+    width: 100% !important;   /* fill the form-group column same as select/input */
+    height: 36px !important;
+    min-height: 36px !important;
+    max-height: 36px !important;
+    padding: 0 14px !important;
+    margin: 0 !important;
+    border: 1px solid var(--tdx-border-strong) !important;
+    border-radius: var(--tdx-radius) !important;
+    box-shadow: var(--tdx-shadow-sm) !important;
+    font-family: var(--tdx-font) !important;
+    font-size: 12.5px !important;
+    font-weight: 600 !important;
+    line-height: 1 !important;
+    box-sizing: border-box !important;
+    display: flex !important;
+    align-items: center;
+    justify-content: space-between;
+    transition: border-color .15s, box-shadow .15s;
+    vertical-align: top;
+    /* WP sets background-color inline via JS — do NOT override */
+    overflow: hidden;
+}
+.ticket-designer-settings .wp-picker-container .wp-color-result.button::before {
+    /* Kill WP's own arrow / caret element */
+    content: '' !important;
+    display: none !important;
+    background: none !important;
+    border: none !important;
+}
+.ticket-designer-settings .wp-picker-container .wp-color-result.button::after {
+    /* Single chevron drawn as an SVG background — no border tricks (which
+       leave two visible strokes) and no drop-shadow (which ghosts). */
+    content: '' !important;
+    display: inline-block !important;
+    width: 14px !important;
+    height: 14px !important;
+    margin-left: 10px !important;
+    background-color: transparent !important;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 14 14' fill='none'%3E%3Cpath d='M3 5.5L7 9.5L11 5.5' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    background-size: 14px 14px !important;
+    border: none !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    filter: drop-shadow(0 1px 1px rgba(0,0,0,.25));
+    transform: none !important;
+    position: static !important;
+    top: auto !important;
+    left: auto !important;
+    right: auto !important;
+    vertical-align: middle;
+}
+.ticket-designer-settings .wp-picker-container .wp-color-result.button:hover {
+    border-color: var(--tdx-text-muted) !important;
+}
+.ticket-designer-settings .wp-picker-container .wp-color-result.button:focus {
+    outline: none;
+    border-color: var(--tdx-primary) !important;
+    box-shadow: 0 0 0 3px var(--tdx-primary-soft) !important;
+}
+.ticket-designer-settings .wp-picker-container .wp-color-result.button .wp-color-result-text {
+    /* Readable text pill sitting on top of the color background */
+    background: rgba(255, 255, 255, 0.9) !important;
+    border-radius: 999px !important;
+    color: var(--tdx-text) !important;
+    padding: 3px 10px !important;
+    line-height: 1 !important;
+    height: auto !important;
+    box-shadow: 0 1px 3px rgba(0,0,0,.15) !important;
+    display: inline-block !important;
+    border-left: none !important;
+    font-weight: 600 !important;
+    font-size: 11.5px !important;
+    letter-spacing: .01em;
+}
+/* When the button has no picked color yet (transparent), give it a checkered look */
+.ticket-designer-settings .wp-picker-container .wp-color-result.button[style*="background-color: transparent"],
+.ticket-designer-settings .wp-picker-container .wp-color-result.button:not([style*="background-color"]) {
+    background-image: linear-gradient(45deg, #d4d4d8 25%, transparent 25%),
+                      linear-gradient(-45deg, #d4d4d8 25%, transparent 25%),
+                      linear-gradient(45deg, transparent 75%, #d4d4d8 75%),
+                      linear-gradient(-45deg, transparent 75%, #d4d4d8 75%) !important;
+    background-size: 12px 12px !important;
+    background-position: 0 0, 0 6px, 6px -6px, -6px 0px !important;
+}
+/* Kill stray color swatches WP sometimes renders in wp-picker-container */
+.ticket-designer-settings .wp-picker-container > .wp-color-picker,
+.ticket-designer-settings .wp-picker-container > .wp-color-swatch {
+    display: none !important;
+}
+.ticket-designer-settings .wp-picker-input-wrap {
+    align-items: center;
+    gap: 6px;
+    margin-top: 6px;
+    line-height: normal;
+}
+.ticket-designer-settings .wp-picker-input-wrap:not(.hidden) {
+    display: inline-flex;
+}
+.ticket-designer-settings .wp-picker-input-wrap input.wp-color-picker[type="text"] {
+    height: 32px !important;
+    padding: 0 10px !important;
+    width: 100px !important;
+    font-size: 12.5px !important;
+    font-family: 'SF Mono', ui-monospace, monospace !important;
+    margin: 0 !important;
+    border: 1px solid var(--tdx-border-strong) !important;
+    border-radius: var(--tdx-radius) !important;
+}
+.ticket-designer-settings .wp-picker-input-wrap .button.wp-picker-clear,
+.ticket-designer-settings .wp-picker-input-wrap .button.wp-picker-default {
+    height: 32px !important;
+    line-height: 30px !important;
+    padding: 0 10px !important;
+    font-size: 12px !important;
+    margin: 0 !important;
+}
+.ticket-designer-settings .wp-picker-holder {
+    /* Positioning wrapper only — no visual box. The .iris-picker child gets
+       display: none when closed; if we style the holder itself, an empty
+       rounded box floats below every color chip. */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 20;
+    margin-top: 6px;
+    line-height: normal;
+    background: none !important;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+}
+.ticket-designer-settings .wp-picker-holder .iris-picker {
+    background: var(--tdx-bg);
+    border: 1px solid var(--tdx-border);
+    border-radius: var(--tdx-radius-lg);
+    box-shadow: var(--tdx-shadow-lg);
+    padding: 10px;
+}
+
+/* ---- Preview iframe --------------------------------------------------------- */
+#ticket-preview-frame {
+    width: 100%;
+    height: 100%;
+    min-height: 620px;
+    border: none;
+    opacity: 0;
+    transition: opacity 0.3s;
+    border-radius: var(--tdx-radius);
+    background: var(--tdx-bg-muted);
+}
+#ticket-preview-frame.loaded { opacity: 1; }
+
+#preview-loading {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 20px;
+    color: var(--tdx-text-muted);
+    font-size: 13px;
+}
+#preview-loading .spinner {
+    background-image: none;
+    width: 28px;
+    height: 28px;
+    border: 2.5px solid var(--tdx-border);
+    border-top-color: var(--tdx-primary);
+    border-radius: 50%;
+    margin: 0;
+    animation: tdx-spin 0.9s linear infinite;
+    float: none;
+    opacity: 1;
+    visibility: visible;
+}
+@keyframes tdx-spin { to { transform: rotate(360deg); } }
+
+/* ---- Content row "Customize" collapsible ---------------------------------- */
+.content-row-advanced {
+    margin-top: 10px;
+    padding: 0;
+    background: transparent;
+    border: 1px dashed var(--tdx-border);
+    border-radius: var(--tdx-radius);
+    overflow: hidden;
+    transition: border-color .15s, background .15s;
+}
+.content-row-advanced[open] {
+    background: var(--tdx-bg-muted);
+    border-style: solid;
+    border-color: var(--tdx-border);
+}
+.content-row-advanced > summary {
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--tdx-text-muted);
+    letter-spacing: .02em;
+    user-select: none;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    list-style: none;
+    transition: color .15s;
+}
+.content-row-advanced > summary .summary-label {
+    flex: 1;
+}
+.content-row-advanced > summary .block-reset {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    padding: 3px 8px;
+    background: transparent;
+    border: 1px solid var(--tdx-border-strong);
+    border-radius: var(--tdx-radius);
+    color: var(--tdx-text-muted);
+    font-size: 11px;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background .15s, border-color .15s, color .15s;
+    line-height: 1;
+}
+.content-row-advanced > summary .block-reset:hover {
+    color: var(--tdx-primary);
+    border-color: var(--tdx-primary);
+    background: var(--tdx-primary-soft);
+}
+.content-row-advanced > summary .block-reset .dashicons {
+    font-size: 12px;
+    width: 12px;
+    height: 12px;
+    line-height: 1;
+}
+/* Empty Customize inputs render with a muted "Auto" placeholder hint so it's
+   clear defaults are in play. */
+.content-row-advanced input::placeholder {
+    color: var(--tdx-text-muted);
+    opacity: 0.7;
+    font-style: italic;
+}
+.content-row-advanced > summary::-webkit-details-marker { display: none; }
+.content-row-advanced > summary::before {
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='10' viewBox='0 0 10 10' fill='none'%3E%3Cpath d='M2 3.5L5 6.5L8 3.5' stroke='%2371717a' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+    background-size: contain;
+    background-repeat: no-repeat;
+    transform: rotate(-90deg);
+    transition: transform .15s;
+    flex-shrink: 0;
+}
+.content-row-advanced[open] > summary::before {
+    transform: rotate(0);
+}
+.content-row-advanced > summary:hover {
+    color: var(--tdx-primary);
+}
+.content-row-advanced[open] > summary {
+    border-bottom: 1px solid var(--tdx-border);
+}
+.content-row-advanced > *:not(summary) {
+    padding: 12px 14px;
+}
+.content-row-advanced hr {
+    border: none;
+    border-top: 1px solid var(--tdx-border);
+    margin: 12px -14px;
+}
+
+/* ---- Content Rows repeater -------------------------------------------------- */
+.content-row-item {
+    background: var(--tdx-bg);
+    border: 1px solid var(--tdx-border);
+    border-radius: var(--tdx-radius-lg);
+    padding: 16px 18px;
+    margin-bottom: 12px;
+    box-shadow: var(--tdx-shadow-sm);
+    transition: box-shadow .15s, border-color .15s;
+}
+.content-row-item:hover {
+    border-color: var(--tdx-border-strong);
+}
+.content-row-item.ui-sortable-helper {
+    box-shadow: var(--tdx-shadow-lg);
+    border-color: var(--tdx-primary);
+    transform: rotate(-0.3deg);
+}
+.content-row-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 14px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--tdx-border);
+    cursor: move;
+}
+.content-row-header::before {
+    content: '';
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12' fill='%23a1a1aa'%3E%3Ccircle cx='3' cy='2' r='1.2'/%3E%3Ccircle cx='9' cy='2' r='1.2'/%3E%3Ccircle cx='3' cy='6' r='1.2'/%3E%3Ccircle cx='9' cy='6' r='1.2'/%3E%3Ccircle cx='3' cy='10' r='1.2'/%3E%3Ccircle cx='9' cy='10' r='1.2'/%3E%3C/svg%3E");
+    background-size: contain;
+    background-repeat: no-repeat;
+    flex-shrink: 0;
+}
+.content-row-header select {
+    flex: 1;
+}
+.content-row-header .drag-handle {
+    cursor: grab;
+    color: var(--tdx-text-muted);
+    font-size: 20px;
+}
+.content-row-fields {
+    padding-top: 4px;
+}
+
+.sortable-placeholder {
+    background: var(--tdx-primary-soft);
+    border: 2px dashed var(--tdx-primary-border);
+    border-radius: var(--tdx-radius-lg);
+    margin-bottom: 12px;
+}
+
+/* ---- Logos repeater + image picker tile ---------------------------------- */
+.logo-items-container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 10px;
+}
+.logo-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: var(--tdx-bg-muted);
+    border: 1px solid var(--tdx-border);
+    border-radius: var(--tdx-radius);
+    padding: 10px 12px;
+    transition: box-shadow .15s, border-color .15s;
+}
+.logo-item:hover {
+    border-color: var(--tdx-border-strong);
+}
+.logo-item.ui-sortable-helper {
+    box-shadow: var(--tdx-shadow-lg);
+    border-color: var(--tdx-primary);
+    background: var(--tdx-bg);
+}
+.logo-drag-handle {
+    color: var(--tdx-text-muted) !important;
+    cursor: grab;
+    flex-shrink: 0;
+    font-size: 18px !important;
+    width: 18px !important;
+    height: 18px !important;
+    line-height: 1 !important;
+}
+.logo-drag-handle:active {
+    cursor: grabbing;
+}
+/* The big preview / click-to-select tile — shared by logo repeater
+   and generic image content rows via `.image-preview-btn`. */
+.logo-preview-btn,
+.image-preview-btn {
+    width: 72px;
+    height: 72px;
+    padding: 0 !important;
+    margin: 0 !important;
+    background: var(--tdx-bg) !important;
+    border: 2px dashed var(--tdx-border-strong) !important;
+    border-radius: var(--tdx-radius) !important;
+    cursor: pointer;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    flex-shrink: 0;
+    box-shadow: none !important;
+    transition: border-color .15s, background .15s;
+}
+.logo-preview-btn:hover,
+.image-preview-btn:hover {
+    border-color: var(--tdx-primary) !important;
+    background: var(--tdx-primary-soft) !important;
+}
+.logo-preview-btn:has(.logo-preview-img),
+.image-preview-btn:has(.logo-preview-img) {
+    border-style: solid !important;
+    padding: 4px !important;
+}
+.logo-preview-img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    display: block;
+}
+.logo-preview-empty {
+    color: var(--tdx-text-muted);
+    font-size: 26px !important;
+    width: 26px !important;
+    height: 26px !important;
+    line-height: 1 !important;
+}
+.logo-url-field {
+    flex: 1;
+    min-width: 0;
+}
+.logo-url-field input {
+    width: 100% !important;
+}
+.remove-logo-button {
+    width: 36px !important;
+    padding: 0 !important;
+    color: var(--tdx-text-muted);
+    flex-shrink: 0;
+}
+.remove-logo-button:hover {
+    color: #dc2626 !important;
+    border-color: #fecaca !important;
+    background: #fef2f2 !important;
+}
+.remove-logo-button .dashicons {
+    font-size: 16px;
+    width: 16px;
+    height: 16px;
+    line-height: 1;
+}
+.logo-sortable-placeholder {
+    background: var(--tdx-primary-soft);
+    border: 2px dashed var(--tdx-primary-border);
+    border-radius: var(--tdx-radius);
+    height: 90px;
+    margin-bottom: 8px;
+}
+/* Image picker row (generic image content row) */
+.image-picker-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.image-picker-row .image-preview-btn {
+    width: 96px;
+    height: 96px;
+}
+.image-picker-row .logo-url-field {
+    flex: 1;
+    min-width: 0;
+}
+
+/* ---- Ticket field order lists ---------------------------------------------- */
+.ticket-field-order-list {
+    list-style: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    background: var(--tdx-bg-muted) !important;
+    border: 1px solid var(--tdx-border) !important;
+    border-radius: var(--tdx-radius) !important;
+    min-height: 48px !important;
+    overflow: hidden;
+}
+.ticket-field-order-list li {
+    padding: 10px 14px !important;
+    border-bottom: 1px solid var(--tdx-border) !important;
+    background: var(--tdx-bg) !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 10px !important;
+    cursor: grab !important;
+    transition: background .15s;
+}
+.ticket-field-order-list li:hover {
+    background: var(--tdx-primary-soft) !important;
+}
+.ticket-field-order-list li:last-child {
+    border-bottom: none !important;
+}
+.ticket-field-order-list li .dashicons-menu {
+    color: var(--tdx-text-muted) !important;
+    font-size: 16px;
+    width: 16px;
+    height: 16px;
+}
+.ticket-field-order-list li label {
+    display: flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+    margin: 0 !important;
+    cursor: pointer !important;
+    flex: 1;
+    font-size: 13px;
+    color: var(--tdx-text);
+}
+.ticket-field-order-list li span:last-of-type {
+    font-family: 'SF Mono', ui-monospace, monospace !important;
+    font-size: 11px !important;
+    color: var(--tdx-text-muted) !important;
+    background: var(--tdx-bg-hover);
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+
+/* ---- Modern toggle switch (native checkbox styled as iOS switch) ----------- */
+.tdx-toggle {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    user-select: none;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--tdx-text-subtle);
+}
+.tdx-toggle input[type="checkbox"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    position: relative;
+    width: 40px !important;
+    height: 22px !important;
+    margin: 0 !important;
+    padding: 0;
+    border-radius: 999px !important;
+    background: var(--tdx-border-strong) !important;
+    box-shadow: none !important;
+    cursor: pointer;
+    transition: background .18s ease;
+    flex-shrink: 0;
+    border: none !important;
+}
+.tdx-toggle input[type="checkbox"]::before {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: #fff;
+    box-shadow: 0 1px 3px rgba(0,0,0,.2);
+    transition: transform .18s ease;
+}
+.tdx-toggle input[type="checkbox"]:checked {
+    background: var(--tdx-primary) !important;
+    box-shadow: 0 0 0 3px var(--tdx-primary-soft),
+                0 0 8px rgba(37, 99, 235, 0.3) !important;
+}
+.tdx-toggle input[type="checkbox"]:checked::before {
+    transform: translateX(18px);
+}
+.tdx-toggle:has(input[type="checkbox"]:checked) {
+    color: var(--tdx-primary);
+}
+.tdx-toggle input[type="checkbox"]:focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 3px var(--tdx-primary-soft) !important;
+}
+.tdx-toggle input[type="checkbox"]:disabled {
+    opacity: .5;
+    cursor: not-allowed;
+}
+/* Toggle sitting next to a section h2 (right-aligned) */
+.settings-section h2 .tdx-toggle {
+    margin-left: auto;
+    font-size: 12px;
+}
+
+/* ---- Bootstrap class aliases (used only by ticket-frame section markup) ---
+   These let the existing ticket-frame section render nicely without a full
+   template rewrite. They mirror my legacy .form-row / .form-group / .subsection
+   styles so the whole panel reads as one cohesive UI.
+   ------------------------------------------------------------------------- */
+.ticket-designer-settings .card {
+    background: var(--tdx-bg-muted);
+    border: 1px solid var(--tdx-border);
+    border-radius: var(--tdx-radius);
+    padding: 0;
+    margin: 0 0 12px;
+}
+.ticket-designer-settings .card-body {
+    padding: 16px 18px;
+}
+.ticket-designer-settings .card-title,
+.ticket-designer-settings h6.card-title {
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .06em;
+    color: var(--tdx-text-subtle);
+    margin: 0 0 12px;
+    display: block;
+}
+/* Bootstrap grid */
+.ticket-designer-settings .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 0;
+}
+.ticket-designer-settings .row.g-3      { gap: 12px; }
+.ticket-designer-settings [class*="col-"] {
+    flex: 1 1 0;
+    min-width: 140px;
+    padding: 0;
+}
+.ticket-designer-settings .col-md-4  { flex: 1 1 30%; }
+.ticket-designer-settings .col-md-6  { flex: 1 1 45%; }
+.ticket-designer-settings .col-md-12 { flex: 1 1 100%; }
+/* Bootstrap form primitives → alias my styles */
+.ticket-designer-settings .form-label {
+    display: block;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--tdx-text-subtle);
+    margin-bottom: 6px;
+    letter-spacing: .01em;
+}
+.ticket-designer-settings .form-control,
+.ticket-designer-settings .form-control-sm,
+.ticket-designer-settings .form-select,
+.ticket-designer-settings .form-select-sm {
+    width: 100%;
+    height: 36px;
+    padding: 0 12px;
+    border: 1px solid var(--tdx-border-strong);
+    border-radius: var(--tdx-radius);
+    background: var(--tdx-bg);
+    color: var(--tdx-text);
+    font-size: 13.5px;
+    font-family: var(--tdx-font);
+    line-height: 1.4;
+    box-shadow: none;
+    box-sizing: border-box;
+    margin: 0;
+    transition: border-color .15s, box-shadow .15s;
+}
+.ticket-designer-settings textarea.form-control,
+.ticket-designer-settings textarea.form-control-sm {
+    height: auto;
+    min-height: 68px;
+    padding: 10px 12px;
+    line-height: 1.5;
+}
+.ticket-designer-settings .form-select,
+.ticket-designer-settings .form-select-sm {
+    padding: 0 32px 0 12px;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8' fill='none'%3E%3Cpath d='M1 1.5L6 6.5L11 1.5' stroke='%2371717a' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    background-size: 12px 8px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+.ticket-designer-settings .form-control:focus,
+.ticket-designer-settings .form-select:focus {
+    outline: none;
+    border-color: var(--tdx-primary);
+    box-shadow: 0 0 0 3px var(--tdx-primary-soft);
+}
+/* Bootstrap input-group */
+.ticket-designer-settings .input-group {
+    display: flex;
+    gap: 6px;
+    align-items: stretch;
+}
+.ticket-designer-settings .input-group > .form-control,
+.ticket-designer-settings .input-group > .form-control-sm {
+    flex: 1;
+    min-width: 0;
+}
+.ticket-designer-settings .input-group > .btn {
+    flex-shrink: 0;
+}
+/* Bootstrap btn-outline-secondary — treat as our .button */
+.ticket-designer-settings .btn.btn-outline-secondary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 36px;
+    padding: 0 14px;
+    border: 1px solid var(--tdx-border-strong);
+    border-radius: var(--tdx-radius);
+    background: var(--tdx-bg);
+    color: var(--tdx-text);
+    font-family: var(--tdx-font);
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1;
+    cursor: pointer;
+    box-shadow: var(--tdx-shadow-sm);
+    transition: background .15s, border-color .15s;
+}
+.ticket-designer-settings .btn.btn-outline-secondary:hover {
+    background: var(--tdx-bg-hover);
+    border-color: var(--tdx-text-muted);
+}
+/* Bootstrap form-check.form-switch → render as iOS switch
+   Aggressive overrides: WP admin injects an SVG checkmark via
+   input[type=checkbox]:checked::before which shows THROUGH my toggle
+   as a phantom check-shape. We nuke content/font/background-image on
+   both ::before and ::after so only our thumb survives. */
+.ticket-designer-settings .form-check.form-switch {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0;
+    min-height: 24px;
+    padding: 0;
+}
+.ticket-designer-settings .form-check.form-switch .form-check-input,
+.ticket-designer-settings .form-check.form-switch input[type="checkbox"].form-check-input {
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+    appearance: none !important;
+    position: relative !important;
+    width: 40px !important;
+    height: 22px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border-radius: 999px !important;
+    background-color: var(--tdx-border-strong) !important;
+    background-image: none !important;
+    box-shadow: none !important;
+    cursor: pointer;
+    transition: background-color .18s ease;
+    flex-shrink: 0;
+    border: none !important;
+    outline: none !important;
+    float: none !important;
+    display: inline-block !important;
+    vertical-align: middle;
+    /* strip any inherited font settings so ::before content of "" is truly empty */
+    font: 0/0 sans-serif !important;
+    color: transparent !important;
+}
+/* Nuke WP admin's checkmark and any theme leaks */
+.ticket-designer-settings .form-check.form-switch .form-check-input::before,
+.ticket-designer-settings .form-check.form-switch .form-check-input:checked::before,
+.ticket-designer-settings .form-check.form-switch .form-check-input::after,
+.ticket-designer-settings .form-check.form-switch .form-check-input:checked::after {
+    content: '' !important;
+    background-image: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    font: 0/0 sans-serif !important;
+    color: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    transform: none !important;
+}
+/* Our thumb — use ::after so ::before can safely be nuked */
+.ticket-designer-settings .form-check.form-switch .form-check-input::after {
+    position: absolute !important;
+    top: 2px !important;
+    left: 2px !important;
+    width: 18px !important;
+    height: 18px !important;
+    border-radius: 50% !important;
+    background: #fff !important;
+    box-shadow: 0 1px 3px rgba(0,0,0,.25) !important;
+    transition: transform .18s ease !important;
+    display: block !important;
+}
+/* Match the base selector's specificity by including input[type="checkbox"]
+   so :checked can actually override the gray default. */
+.ticket-designer-settings .form-check.form-switch .form-check-input:checked,
+.ticket-designer-settings .form-check.form-switch input[type="checkbox"].form-check-input:checked {
+    background-color: var(--tdx-primary) !important;
+    box-shadow: 0 0 0 3px var(--tdx-primary-soft),
+                0 0 8px rgba(37, 99, 235, 0.3) !important;
+}
+.ticket-designer-settings .form-check.form-switch .form-check-input:checked::after,
+.ticket-designer-settings .form-check.form-switch input[type="checkbox"].form-check-input:checked::after {
+    transform: translateX(18px) !important;
+}
+.ticket-designer-settings .form-check.form-switch .form-check-input:checked ~ .form-check-label {
+    color: var(--tdx-primary);
+}
+.ticket-designer-settings .form-check.form-switch .form-check-label {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--tdx-text-subtle) !important;
+    cursor: pointer;
+    margin: 0;
+}
+/* Compact inline_next / inline switch toggles inside Customize collapsibles.
+   Enforce identical horizontal padding as the surrounding form-rows (which
+   come from the Customize parent's 12px 14px padding rule) so they don't sit
+   flush against the left edge. No background/border to avoid visual clutter. */
+.ticket-designer-settings .inline-next-toggle {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 4px 0;
+    padding-top: 4px !important;
+    padding-bottom: 4px !important;
+    padding-left: 14px !important;
+    padding-right: 14px !important;
+    background: transparent !important;
+    border: none !important;
+    border-radius: 0 !important;
+    box-sizing: border-box;
+}
+.ticket-designer-settings .inline-next-toggle .form-check-label {
+    color: var(--tdx-text-subtle) !important;
+    font-weight: 600;
+    font-size: 12.5px;
+    line-height: 1.3;
+}
+.ticket-designer-settings .inline-next-toggle .form-check-input:checked ~ .form-check-label {
+    color: var(--tdx-primary) !important;
+}
+
+/* Same aggressive nuke for .tdx-toggle (native checkbox toggle used in banner) */
+.ticket-designer-settings .tdx-toggle input[type="checkbox"] {
+    font: 0/0 sans-serif !important;
+    color: transparent !important;
+    background-image: none !important;
+}
+.ticket-designer-settings .tdx-toggle input[type="checkbox"]::before,
+.ticket-designer-settings .tdx-toggle input[type="checkbox"]:checked::before {
+    content: '' !important;
+    background-image: none !important;
+    margin: 0 !important;
+    font: 0/0 sans-serif !important;
+    color: transparent !important;
+    /* keep our thumb visual */
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: #fff !important;
+    box-shadow: 0 1px 3px rgba(0,0,0,.25);
+    transition: transform .18s ease;
+    display: block;
+}
+.ticket-designer-settings .tdx-toggle input[type="checkbox"]:checked::before {
+    transform: translateX(18px);
+}
+/* Bootstrap utility helpers we use */
+.ticket-designer-settings .mb-0  { margin-bottom: 0 !important; }
+.ticket-designer-settings .mb-3  { margin-bottom: 12px !important; }
+.ticket-designer-settings .mt-2  { margin-top: 8px !important; }
+.ticket-designer-settings .mt-3  { margin-top: 12px !important; }
+.ticket-designer-settings .ms-auto { margin-left: auto; }
+.ticket-designer-settings .fw-semibold { font-weight: 600; }
+
+/* ---- Tab group (Shoelace <sl-tab-group>) ---------------------------------- */
+.ticket-designer-settings sl-tab-group {
+    --track-color: var(--tdx-border);
+    --indicator-color: var(--tdx-primary);
+    margin: 0 0 20px;
+}
+.ticket-designer-settings sl-tab::part(base) {
+    font-family: var(--tdx-font);
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--tdx-text-muted);
+    padding: 10px 18px;
+    transition: color .15s;
+    text-transform: uppercase;
+    letter-spacing: .04em;
+}
+.ticket-designer-settings sl-tab[active]::part(base) {
+    color: var(--tdx-primary);
+}
+.ticket-designer-settings sl-tab-panel::part(base) {
+    padding: 20px 0 0;
+}
+
+/* ---- WP admin resets on this page (kill leaks) ----------------------------- */
+.ticket-designer-wrap select {
+    box-shadow: none;
+}
+.ticket-designer-wrap p.description {
+    color: var(--tdx-text-muted);
+    font-size: 12.5px;
+    margin: 4px 0 0;
+}
+.ticket-designer-wrap code {
+    background: var(--tdx-bg-hover);
+    padding: 1px 6px;
+    border-radius: 4px;
+    font-size: 12px;
+    color: var(--tdx-text-subtle);
+    font-family: 'SF Mono', ui-monospace, monospace;
+    border: 1px solid var(--tdx-border);
+}

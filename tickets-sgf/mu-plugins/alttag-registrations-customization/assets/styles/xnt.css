@@ -1,0 +1,157 @@
+/* ═══ CHRISTMAS NITRA 2026 · konfigurátor vstupeniek · xnt.css ═══
+   Všetky triedy majú prefix xnt- a platia len vnútri <div class="xnt"> - bez kolízií s témou / Elementorom.
+   Fonty: Glacial Indifference (./fonts) + Jost (Google Fonts). Ak fonty nahráš cez Elementor → Custom Fonts, riadky @font-face vymaž. */
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&display=swap");
+@font-face{font-family:"Glacial Indifference";src:url("../fonts/GlacialIndifference-Regular.woff") format("woff");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"Glacial Indifference";src:url("../fonts/GlacialIndifference-Bold.woff") format("woff");font-weight:700;font-style:normal;font-display:swap}
+
+/* pozadie - trieda pre Elementor sekciu / kontajner, v ktorom blok sedí */
+.xnt-section{background:#1c1c20;position:relative;overflow:hidden}
+.xnt-section::before{content:"";position:absolute;inset:-20% -10%;pointer-events:none;background:linear-gradient(115deg,transparent 42%,rgba(255,255,255,.035) 42%,rgba(255,255,255,.035) 58%,transparent 58%),linear-gradient(115deg,transparent 64%,rgba(255,255,255,.025) 64%,rgba(255,255,255,.025) 72%,transparent 72%)}
+
+/* koreň bloku + tokeny */
+.xnt{--xnt-grad:linear-gradient(90deg,#ff5e5d 0%,#f65b80 22%,#df5aa0 38%,#ba58ab 52%,#8e5bae 66%,#7260b1 82%,#5762b3 100%);--xnt-font:"Glacial Indifference","Jost","Futura","Century Gothic",Arial,sans-serif;--xnt-text:"Jost","Glacial Indifference","Futura","Century Gothic",Arial,sans-serif;--xnt-pink:#f65b80;--xnt-blue:#5762b3;--xnt-green:#37d39a;--xnt-ink2:#0c0c10;--xnt-ink3:#15151b;--xnt-line:#2a2a33;--xnt-line2:#1e1e24;--xnt-line3:#3a3a46;--xnt-soft:#cfcfd8;--xnt-mute:#a2a2ad;--xnt-mute2:#7a7a86;position:relative;z-index:1;max-width:1180px;margin:0 auto;padding:0 24px 40px;color:#fff;font-family:var(--xnt-text);font-size:16px;line-height:1.5;-webkit-font-smoothing:antialiased}
+.xnt *,.xnt *::before,.xnt *::after{box-sizing:border-box}
+.xnt.xnt :is(h1,h2,h3,p,ul,li,table,label,output){margin:0}
+.xnt.xnt :is(ul,li,table){padding:0}
+.xnt ul{list-style:none}
+.xnt a{color:var(--xnt-pink);text-decoration:none;transition:color .15s}.xnt a:hover{color:#ff5e5d}
+.xnt button{font:inherit;color:inherit;background:none;border:0;padding:0;margin:0;cursor:pointer;line-height:inherit;border-radius:0;box-shadow:none;text-transform:none;letter-spacing:normal}
+.xnt button:focus-visible,.xnt a:focus-visible,.xnt .xnt-day:focus-within{outline:2px solid var(--xnt-pink);outline-offset:3px}
+.xnt-disp{font-family:var(--xnt-font);font-weight:400;text-transform:uppercase;letter-spacing:.04em;line-height:1}
+.xnt-grad{background-image:var(--xnt-grad);-webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-fill-color:transparent}
+.xnt-eyebrow{font-size:11px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--xnt-pink)}
+
+/* ── pásik podujatia + Early Bird ── */
+.xnt-ev{border-radius:24px;background:#000;padding:26px 30px;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;position:relative;overflow:hidden}
+.xnt-ev::after{content:"";position:absolute;right:-120px;top:-160px;width:520px;height:520px;border-radius:50%;background:radial-gradient(closest-side,rgba(186,88,171,.28),transparent 70%);pointer-events:none}
+.xnt .xnt-ev h1{font-size:clamp(28px,3.4vw,42px);margin-top:8px}
+.xnt-ev-sub{margin-top:6px;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--xnt-soft)}
+.xnt-ev-meta{margin-top:12px;display:flex;gap:16px;flex-wrap:wrap;font-size:14px;color:var(--xnt-mute)}
+.xnt-ev-meta b{color:#fff;font-weight:600}
+.xnt-eb{position:relative;z-index:1;display:inline-flex;align-items:center;height:56px;border-radius:999px;background:var(--xnt-grad);padding:0 6px 0 22px;white-space:nowrap}
+.xnt-eb-t{font-family:var(--xnt-font);text-transform:uppercase;letter-spacing:.12em;font-size:19px;padding-right:16px}
+.xnt-eb-d{display:inline-flex;flex-direction:column;justify-content:center;height:44px;padding:0 18px;border-radius:999px;background:#000;font-size:12px;letter-spacing:.06em;text-transform:uppercase;line-height:1.15}
+.xnt-eb-d b{font-size:14px;letter-spacing:.04em}
+.xnt-eb.off{background:var(--xnt-line)}.xnt-eb.off .xnt-eb-t{color:var(--xnt-mute)}
+
+/* ── rozloženie ── */
+.xnt-lay{display:grid;grid-template-columns:minmax(0,1fr) 400px;gap:22px;margin-top:22px;align-items:start}
+.xnt-steps{display:flex;flex-direction:column;gap:16px;min-width:0}
+.xnt-card{background:#000;border-radius:24px;padding:28px}
+.xnt-step{display:flex;align-items:center;gap:14px;margin-bottom:16px}
+.xnt-n{width:30px;height:30px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-family:var(--xnt-font);font-size:16px;background:var(--xnt-grad);flex:none}
+.xnt .xnt-step h2{font-size:22px;font-weight:600;letter-spacing:-.01em;line-height:1.25}
+.xnt-step small{display:block;font-size:14px;color:var(--xnt-mute);font-weight:400;margin-top:2px;letter-spacing:0}
+
+/* krok 1 - typ */
+.xnt-seg{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.xnt-seg button{display:flex;align-items:center;gap:14px;text-align:left;padding:16px 18px;border-radius:18px;border:1.5px solid var(--xnt-line);background:var(--xnt-ink2);transition:border-color .15s,background .15s}
+.xnt-seg button>span{min-width:0}
+.xnt-seg button i{width:20px;height:20px;border-radius:50%;border:2px solid #4a4a56;flex:none;position:relative}
+.xnt-seg button b{display:block;font-size:16px;font-weight:600}
+.xnt-seg button b+span{display:block;font-size:13px;color:var(--xnt-mute);margin-top:2px}
+.xnt-seg button:hover{border-color:var(--xnt-line3)}
+.xnt-seg button.on{border-color:transparent;background:linear-gradient(#111,#111) padding-box,var(--xnt-grad) border-box}
+.xnt-seg button.on i{border-color:transparent;background:var(--xnt-grad)}.xnt-seg button.on i::after{content:"";position:absolute;inset:5px;border-radius:50%;background:#fff}
+
+/* krok 2 - dni */
+.xnt-quick{display:flex;gap:8px;flex-wrap:wrap;margin:4px 0 14px}
+.xnt-quick button{height:36px;padding:0 14px;border-radius:999px;border:1.5px solid var(--xnt-line);font-size:13px;font-weight:600;color:var(--xnt-soft);transition:border-color .15s,background .15s,color .15s}
+.xnt-quick button:hover{border-color:var(--xnt-pink);color:#fff}
+.xnt-quick button.best{border-color:transparent;background:linear-gradient(#000,#000) padding-box,var(--xnt-grad) border-box;color:#fff}
+.xnt-quick button.on{background:#fff;color:#000;border-color:#fff}
+.xnt-days{display:flex;flex-direction:column;gap:10px}
+.xnt-day{display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:16px;align-items:center;padding:16px 18px;border-radius:18px;border:1.5px solid var(--xnt-line);background:var(--xnt-ink2);cursor:pointer;transition:border-color .15s,background .15s;position:relative;font-weight:400}
+.xnt-day:hover{border-color:var(--xnt-line3)}
+.xnt-day.on{border-color:transparent;background:linear-gradient(#121216,#121216) padding-box,var(--xnt-grad) border-box}
+.xnt-day input{position:absolute;opacity:0;pointer-events:none;width:0;height:0;margin:0}
+.xnt-box{width:24px;height:24px;border-radius:8px;border:2px solid #4a4a56;display:inline-flex;align-items:center;justify-content:center;transition:all .15s;flex:none}
+.xnt-day.on .xnt-box{border-color:transparent;background:var(--xnt-grad)}
+.xnt-box svg{width:14px;height:14px;opacity:0;transform:scale(.6);transition:all .15s}
+.xnt-day.on .xnt-box svg{opacity:1;transform:scale(1)}
+.xnt-nm{font-size:16px;font-weight:600;display:flex;align-items:center;gap:10px;flex-wrap:wrap;line-height:1.3}
+.xnt-nm em{font-style:normal;font-size:10.5px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;padding:3px 9px;border-radius:999px;background:var(--xnt-grad);white-space:nowrap}
+.xnt-pg{display:block;font-size:13px;color:var(--xnt-mute);margin-top:3px;line-height:1.4}
+.xnt-pg b{color:var(--xnt-soft);font-weight:600}
+.xnt-pr{font-family:var(--xnt-font);font-size:22px;white-space:nowrap;text-align:right;line-height:1.1}
+.xnt-pr s{display:block;font-family:var(--xnt-text);font-size:12px;color:var(--xnt-soft);text-decoration-color:currentColor;text-decoration-thickness:1px;text-underline-offset:0}
+.xnt-acc{margin-top:14px;padding:12px 14px;border-radius:14px;background:var(--xnt-ink3);border:1px solid var(--xnt-line);font-size:13px;color:var(--xnt-mute);line-height:1.5}
+.xnt-nudge{margin-top:14px;padding:16px 18px;border-radius:18px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;border:1.5px dashed var(--xnt-line3);background:var(--xnt-ink2)}
+.xnt-nudge.hot{border:1.5px solid transparent;background:linear-gradient(#141018,#141018) padding-box,var(--xnt-grad) border-box}
+.xnt-nudge p{font-size:14.5px;color:var(--xnt-soft);flex:1 1 320px;line-height:1.5}
+.xnt-nudge p b{color:#fff}
+.xnt-nudge button{height:40px;padding:0 18px;border-radius:999px;background:#fff;color:#000;font-weight:700;font-size:13px;letter-spacing:.06em;text-transform:uppercase;white-space:nowrap}
+.xnt-nudge button:hover{background:var(--xnt-pink);color:#fff}
+.xnt-nudge button[hidden]{display:none}
+
+/* krok 3 - počet osôb */
+.xnt-qty{display:flex;align-items:center;gap:20px;flex-wrap:wrap}
+.xnt-stepper{display:inline-flex;align-items:center;padding:5px;border-radius:999px;border:1.5px solid var(--xnt-line);background:var(--xnt-ink2)}
+.xnt-stepper button{width:46px;height:46px;border-radius:50%;background:var(--xnt-ink3);font-size:24px;font-weight:500;line-height:1;display:inline-flex;align-items:center;justify-content:center;transition:background .15s,opacity .15s}
+.xnt-stepper button:hover{background:var(--xnt-grad)}
+.xnt-stepper button:disabled{opacity:.3;pointer-events:none}
+.xnt-stepper output{display:inline-block;min-width:70px;text-align:center;font-family:var(--xnt-font);font-size:30px;line-height:1}
+.xnt-qty-hint{font-size:14.5px;color:var(--xnt-soft);flex:1 1 260px;line-height:1.5}
+.xnt-qty-hint b{color:#fff;font-weight:600}
+.xnt-qty-hint small{display:block;font-size:13px;color:var(--xnt-mute)}
+
+/* ── súhrn ── */
+.xnt-sum{position:sticky;top:20px}
+.xnt-sum-hd{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.xnt .xnt-sum-hd h2{font-size:20px;font-weight:600;line-height:1.3}
+.xnt-tags{display:flex;gap:6px;flex-wrap:wrap}
+.xnt-tags span{font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;padding:6px 12px;border-radius:999px;background:var(--xnt-ink3);border:1px solid var(--xnt-line);color:var(--xnt-soft);white-space:nowrap}
+.xnt-chips{display:flex;gap:6px;flex-wrap:wrap;margin:16px 0 8px;min-height:30px}
+.xnt-chips span{font-size:12.5px;font-weight:600;padding:5px 11px;border-radius:999px;background:var(--xnt-ink3);border:1px solid var(--xnt-line)}
+.xnt-chips .none{color:var(--xnt-mute2);border-style:dashed}
+.xnt-lines{margin-top:12px;border-top:1px solid var(--xnt-line)}
+.xnt-line{display:flex;justify-content:space-between;gap:14px;padding:12px 0;border-bottom:1px solid var(--xnt-line2);font-size:14.5px;color:var(--xnt-soft)}
+.xnt-line b{font-weight:600;color:#fff;font-variant-numeric:tabular-nums;white-space:nowrap}
+.xnt-line.dis b{color:var(--xnt-green)}
+.xnt-line[hidden]{display:none}
+.xnt-total{display:flex;justify-content:space-between;align-items:flex-end;gap:14px;padding:18px 0 6px}
+.xnt-total-l{font-size:13px;letter-spacing:.14em;text-transform:uppercase;font-weight:700;color:var(--xnt-mute)}
+.xnt-total-l small{display:block;letter-spacing:0;text-transform:none;font-weight:400;font-size:12.5px;margin-top:4px;color:var(--xnt-mute2)}
+.xnt-total-v{font-family:var(--xnt-font);font-size:48px;line-height:1;white-space:nowrap}
+.xnt-saved{margin-top:10px;padding:12px 14px;border-radius:14px;background:linear-gradient(90deg,rgba(255,94,93,.14),rgba(87,98,179,.14));border:1px solid #3a2a3a;font-size:13.5px;color:var(--xnt-soft);line-height:1.5}
+.xnt-saved b{color:#fff}
+.xnt-saved.off{background:var(--xnt-ink3);border-color:var(--xnt-line)}
+.xnt .xnt-cta{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;height:56px;margin-top:16px;border-radius:999px;background:var(--xnt-blue);color:#fff;font-weight:700;letter-spacing:.08em;text-transform:uppercase;font-size:14px;text-decoration:none;transition:background .15s,transform .15s}
+.xnt .xnt-cta:hover{background:#6a74c9;color:#fff;transform:translateY(-1px)}
+.xnt .xnt-cta[aria-disabled="true"]{background:var(--xnt-line);color:var(--xnt-mute2);pointer-events:none}
+.xnt-fine{margin-top:12px;font-size:12px;color:var(--xnt-mute2);line-height:1.55}
+
+/* ── ako fungujú ceny ── */
+.xnt-how{margin-top:26px}
+.xnt .xnt-how h2{font-size:clamp(26px,3vw,36px);margin:6px 0 18px}
+.xnt-three{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.xnt-ex{background:#000;border-radius:22px;padding:24px;position:relative;overflow:hidden}
+.xnt-ex::before{content:"";position:absolute;left:0;right:0;top:0;height:4px;background:var(--xnt-grad)}
+.xnt-ex-k{font-family:var(--xnt-font);font-size:34px;line-height:1}
+.xnt .xnt-ex h3{font-size:18px;font-weight:600;margin:10px 0 8px;line-height:1.3}
+.xnt-ex p{font-size:14.5px;color:var(--xnt-mute);line-height:1.5}
+.xnt-ex p b{color:#fff;font-weight:600}
+.xnt-tbl{margin-top:16px;background:#000;border-radius:22px;padding:8px 24px 20px;overflow-x:auto}
+.xnt .xnt-tbl table{width:100%;border-collapse:collapse;font-size:15px;min-width:560px;border:0;margin:0}
+.xnt .xnt-tbl th{text-align:left;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--xnt-mute);padding:16px 12px 10px;border:0;border-bottom:1px solid var(--xnt-line);font-weight:700;background:none}
+.xnt .xnt-tbl td{padding:14px 12px;border:0;border-bottom:1px solid var(--xnt-line2);font-variant-numeric:tabular-nums;background:none;color:#fff;vertical-align:top}
+.xnt .xnt-tbl td.n{font-weight:600}
+.xnt-tbl .per{display:block;font-size:12px;color:var(--xnt-mute2);font-weight:400}
+.xnt .xnt-tbl td.ebp{font-family:var(--xnt-font);font-size:22px}
+.xnt .xnt-tbl td.full{color:var(--xnt-mute)}
+.xnt .xnt-tbl td.save{color:var(--xnt-green);font-weight:600}
+.xnt .xnt-tbl tr.best td{background:linear-gradient(90deg,rgba(255,94,93,.10),rgba(87,98,179,.10))}
+.xnt .xnt-tbl tr.best td:first-child{border-radius:12px 0 0 12px}.xnt .xnt-tbl tr.best td:last-child{border-radius:0 12px 12px 0}
+.xnt-tbl tr.best td.n em{font-style:normal;font-size:10.5px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;padding:3px 9px;border-radius:999px;background:var(--xnt-grad);margin-left:8px;vertical-align:middle;white-space:nowrap}
+.xnt .xnt-tbl tr:last-child td{border-bottom:0}
+.xnt-note{margin-top:14px;font-size:13px;color:var(--xnt-mute2)}
+
+/* ── mobilná lišta s cenou (zobrazí sa pod 960 px) ── */
+.xnt-mob{position:fixed;left:0;right:0;bottom:0;z-index:60;display:none;align-items:center;justify-content:space-between;gap:12px;padding:12px 16px;background:rgba(0,0,0,.94);backdrop-filter:blur(12px);border-top:1px solid #23232b}
+.xnt-mob-v{font-family:var(--xnt-font);font-size:28px;line-height:1}
+.xnt-mob small{display:block;font-size:11px;color:var(--xnt-mute);margin-top:3px}
+.xnt .xnt-mob .xnt-cta{width:auto;margin:0;height:48px;padding:0 20px;font-size:12.5px;white-space:nowrap}
+
+@media (max-width:960px){.xnt-lay{grid-template-columns:minmax(0,1fr)}.xnt-sum{position:static}.xnt-three{grid-template-columns:minmax(0,1fr)}.xnt-mob{display:flex}.xnt{padding-bottom:96px}}
+@media (max-width:640px){.xnt{padding-left:16px;padding-right:16px}.xnt-card{padding:20px}.xnt-seg{grid-template-columns:minmax(0,1fr)}.xnt-day{grid-template-columns:auto minmax(0,1fr);row-gap:6px}.xnt-pr{grid-column:2;text-align:left;font-size:19px}.xnt-pr s{display:inline;margin-left:8px}.xnt-ev{padding:22px}.xnt-total-v{font-size:40px}.xnt-eb{height:auto;padding:6px 6px 6px 18px}.xnt-eb-t{font-size:16px}}

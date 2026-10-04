@@ -1,0 +1,12 @@
+/* Accreditation info notice (project-specific) */
+.day-selection-info {
+    margin: 0 0 16px;
+    padding: 12px 14px;
+    background: rgba(255, 229, 0, 0.08);
+    border: 1px solid rgba(255, 229, 0, 0.25);
+    border-radius: 10px;
+    font-size: 13px;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.85);
+}
+

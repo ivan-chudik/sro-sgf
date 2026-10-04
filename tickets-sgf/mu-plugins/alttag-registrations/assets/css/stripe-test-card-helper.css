@@ -1,0 +1,72 @@
+.stripe-test-card-helper {
+    border: 1px dashed #635bff;
+    background: #f6f5ff;
+    color: #1a1a1a;
+    padding: 12px 14px;
+    margin: 0 0 16px;
+    border-radius: 6px;
+    font-size: 13px;
+    line-height: 1.4;
+}
+.stripe-test-card-helper .stch-header {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+    margin-bottom: 8px;
+}
+.stripe-test-card-helper .stch-header strong {
+    color: #635bff;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+}
+.stripe-test-card-helper .stch-header span {
+    color: #555;
+    font-size: 12px;
+}
+.stripe-test-card-helper .stch-rows {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 6px 12px;
+}
+.stripe-test-card-helper .stch-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.stripe-test-card-helper .stch-label {
+    color: #555;
+    min-width: 70px;
+}
+.stripe-test-card-helper code.stch-value {
+    background: #fff;
+    border: 1px solid #d8d6f7;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-family: ui-monospace, Menlo, monospace;
+    color: #111;
+    white-space: nowrap;
+    letter-spacing: 0.5px;
+}
+.stripe-test-card-helper button.stch-copy {
+    font-size: 11px;
+    padding: 2px 8px;
+    border: 1px solid #635bff;
+    background: #fff;
+    color: #635bff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.stripe-test-card-helper button.stch-copy:hover {
+    background: #635bff;
+    color: #fff;
+}
+.stripe-test-card-helper button.stch-copy.is-copied {
+    background: #22c55e;
+    border-color: #22c55e;
+    color: #fff;
+}
+.stripe-test-card-helper .stch-hint {
+    margin: 10px 0 0;
+    color: #555;
+    font-size: 12px;
+}

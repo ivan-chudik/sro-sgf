@@ -1,0 +1,866 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Alttag Registrations Customization\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-08 19:41+0000\n"
+"PO-Revision-Date: 2026-03-21 11:11+0000\n"
+"Last-Translator: \n"
+"Language-Team: Slovenčina\n"
+"Language: sk_SK\n"
+"Plural-Forms: nplurals=3; plural=( n == 1 ) ? 0 : ( n >= 2 && n <= 4 ) ? 1 : "
+"2;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.8.0; wp-6.9; php-8.3.7\n"
+"X-Domain: alttag-registrations-customization"
+
+#. %1$s: event name, %2$s: event dates
+#: includes/email.php:192
+#, php-format
+msgid "%1$s, which will take place on %2$s"
+msgstr "%1$s, ktorý sa uskutoční %2$s"
+
+#. %1$s: event name, %2$s: event dates, %3$s: event location
+#: includes/email.php:200
+#, php-format
+msgid "%1$s, which will take place on %2$s at %3$s"
+msgstr "%1$s, ktorý sa uskutoční %2$s v %3$s"
+
+#. %d: number of persons
+#: includes/multi-day-tickets.php:193 includes/multi-day-tickets.php:278
+msgid "%d person"
+msgid_plural "%d persons"
+msgstr[0] "%d osoba"
+msgstr[1] "%d osoby"
+msgstr[2] "%d osôb"
+
+#. Author of the plugin
+msgid "<a href=\"https://alttag.digital\">AltTag</a>"
+msgstr ""
+
+#: includes/product-fields.php:120
+msgid "Add day"
+msgstr "Pridať deň"
+
+#: includes/product-fields.php:144
+msgid "Add tier"
+msgstr "Pridať úroveň"
+
+#: includes/thankyou.php:107
+msgid "Ak máte kupónový kód, zadajte ho nižšie."
+msgstr "Ak máte kupónový kód, zadajte ho nižšie."
+
+#: includes/participants.php:435
+msgid "All products"
+msgstr "Všetky produkty"
+
+#. Name of the plugin
+msgid "Alttag Registrations Customization"
+msgstr ""
+
+#. %1$s: stream URL, %2$s: stream link text
+#: includes/email.php:286
+#, php-format
+msgid ""
+"An email to create your password will be sent to you. After creating it, you "
+"will be able to log in to %1$s with your email and created password to watch "
+"the livestream."
+msgstr ""
+"Bude Vám zaslaný email na vytvorenie hesla. Po jeho vytvorení sa budete môcť "
+"prihlásiť na %1$s s Vaším emailom a vytvoreným heslom na sledovanie online "
+"prenosu."
+
+#: includes/participants.php:245 includes/field-definitions.php:129
+msgid "City"
+msgstr "Mesto"
+
+#: includes/field-definitions.php:161
+msgid "Company"
+msgstr "Spoločnosť"
+
+#: includes/participants.php:247 includes/field-definitions.php:145
+msgid "Country"
+msgstr "Krajina"
+
+#. Description of the plugin
+msgid ""
+"Customizes the Alttag Registrations functionality. <cite>Od <a href=\"https:"
+"//alttag.digital\">AltTag</a>.</cite>"
+msgstr ""
+
+#: includes/product-fields.php:105
+msgid "Date, label and price per day per person."
+msgstr "Dátum, názov a cena za deň na osobu."
+
+#: includes/participants.php:673
+msgid "Day"
+msgstr "Deň"
+
+#: includes/checkout.php:365
+#| msgid "Days:"
+msgid "days"
+msgstr "dni"
+
+#: includes/product-fields.php:104
+msgid "Days & Pricing"
+msgstr "Dni a ceny"
+
+#: includes/product-fields.php:136 includes/product-fields.php:178
+msgid "days ="
+msgstr "dni ="
+
+#. %s: full name of the participant
+#: includes/email.php:55 includes/thankyou.php:23
+#, php-format
+msgid "Dear %s,"
+msgstr "Vážený/á %s,"
+
+#: includes/product-fields.php:65
+msgid "e.g. Slovak Aerobic Open"
+msgstr "napr. Slovak Aerobic Open"
+
+#: includes/field-definitions.php:65
+msgid "Email"
+msgstr "Email"
+
+#: includes/checkout.php:179
+#, php-format
+msgid ""
+"Email %1$s is already registered for: %2$s. Please select different days or "
+"use a different email."
+msgstr ""
+"Email %1$s je už zaregistrovaný na: %2$s. Vyberte prosím iné dni alebo "
+"použite iný email."
+
+#: includes/checkout.php:156
+#, php-format
+msgid ""
+"Email %s is already registered for this product. Please use a different "
+"email address."
+msgstr ""
+"Email %s je už zaregistrovaný pre tento produkt. Použite prosím inú emailovú "
+"adresu."
+
+#: includes/product-fields.php:19
+msgid "Event Details"
+msgstr "Detaily podujatia"
+
+#: includes/product-fields.php:87
+msgid "Event End Date"
+msgstr "Dátum konca podujatia"
+
+#: includes/product-fields.php:64
+msgid "Event Name"
+msgstr "Názov podujatia"
+
+#: includes/product-fields.php:80
+msgid "Event Start Date"
+msgstr "Dátum začiatku podujatia"
+
+#: includes/product-fields.php:112 includes/product-fields.php:158
+msgid "Friday 10.4."
+msgstr "Piatok 10.4."
+
+#: includes/product-fields.php:49
+msgid "Generates ticket (PDF)"
+msgstr "Generuje vstupenku (PDF)"
+
+#. Author URI of the plugin
+msgid "https://alttag.digital"
+msgstr ""
+
+#: includes/event.php:258
+#, php-format
+msgid "If you have any questions, please contact us at %s."
+msgstr "Ak máte nejaké otázky, prosím, kontaktujte nás na %s."
+
+#: includes/thankyou.php:109
+msgid "Kód kupónu"
+msgstr "Kód kupónu"
+
+#: includes/participants.php:248
+msgid "Livestream"
+msgstr "Livestream"
+
+#: includes/product-fields.php:71
+msgid "Max participants per order"
+msgstr "Max účastníkov na objednávku"
+
+#: includes/product-fields.php:72
+msgid ""
+"Maximum number of people one order can register. Leave empty or 0 to disable "
+"multi-person."
+msgstr ""
+"Maximálny počet osôb, ktoré môže jedna objednávka zaregistrovať. Nechajte "
+"prázdne alebo 0 pre vypnutie."
+
+#: includes/product-fields.php:130
+msgid "Multi-day discounts"
+msgstr "Zľavy za viac dní"
+
+#: includes/product-fields.php:52
+msgid "No — online products do not generate tickets"
+msgstr "Nie — online produkty negenerujú vstupenky"
+
+#: includes/product-fields.php:130
+msgid "optional, overrides per-day sum when all days have same person count"
+msgstr "voliteľné, prepíše súčet cien za dni"
+
+#: includes/field-definitions.php:33
+msgid "Participant's First Name"
+msgstr "Meno účastníka"
+
+#: includes/field-definitions.php:49
+msgid "Participant's Last Name"
+msgstr "Priezvisko účastníka"
+
+#: includes/participants.php:721
+msgid "Person"
+msgstr "Osoba"
+
+#: includes/verification.php:238
+msgid "person checked in"
+msgstr "osoba zaregistrovaná"
+
+#: includes/participants.php:675
+msgid "Persons"
+msgstr "Osoby"
+
+#: includes/participants.php:522
+msgid "Persons per day"
+msgstr "Osoby podľa dňa"
+
+#: includes/checkout.php:419
+msgid "Persons:"
+msgstr "Počet osôb:"
+
+#: includes/field-definitions.php:81
+msgid "Phone"
+msgstr "Telefón"
+
+#: includes/multi-day-tickets.php:584
+msgid "Please select at least one day."
+msgstr "Prosím, vyberte aspoň jeden deň."
+
+#: includes/thankyou.php:111
+msgid "Použiť"
+msgstr "Použiť"
+
+#: includes/participants.php:188 includes/participants.php:344
+#: includes/participants.php:481 includes/participants.php:615
+msgid "Product"
+msgstr "Produkt"
+
+#: includes/participants.php:192
+msgid "Registered days"
+msgstr "Zaregistrované dni"
+
+#. %1$s: separator, %2$s: event name and dates
+#: includes/email.php:79
+#, php-format
+msgid "Registration confirmation for%1$s%2$s"
+msgstr "Potvrdenie registrácie na%1$s%2$s"
+
+#: includes/participants.php:669
+msgid "Registration per day"
+msgstr "Registrácia podľa dňa"
+
+#: includes/checkout.php:363 includes/checkout.php:396
+msgid "Select days"
+msgstr "Vyberte dni"
+
+#: includes/participants.php:190 includes/participants.php:345
+#: includes/participants.php:485 includes/participants.php:622
+#: includes/participants.php:779 includes/participants.php:784
+#: includes/thankyou.php:132 includes/thankyou.php:141
+#: includes/multi-day-tickets.php:526 includes/multi-day-tickets.php:566
+msgid "Selected days"
+msgstr "Vybrané dni"
+
+#: includes/participants.php:599 includes/participants.php:603
+#, php-format
+msgid "Selected days: %s"
+msgstr "Vybrané dni: %s"
+
+#: includes/product-fields.php:43
+msgid ""
+"Show QR code in confirmation email. Determined automatically for online "
+"products (disabled)."
+msgstr ""
+"Zobraziť QR kód v potvrdzovacom emaili. Pre online produkty sa automaticky "
+"nezobrazuje."
+
+#: includes/product-fields.php:42
+msgid "Show QR code in email"
+msgstr "Zobraziť QR kód v emaili"
+
+#: includes/event.php:215 includes/event.php:219
+msgid "Slovak Gymnastics Federation"
+msgstr "Slovenská gymnastická federácia"
+
+#: includes/participants.php:244 includes/field-definitions.php:97
+msgid "Street"
+msgstr "Ulica"
+
+#: includes/thankyou.php:98
+#, php-format
+msgid "Thank you for registering for the livestream of %1$s on %2$s."
+msgstr "Ďakujeme za registráciu na livestream %1$s dňa %2$s."
+
+#. %1$s: separator, %2$s: event name and dates
+#: includes/email.php:84
+#, php-format
+msgid "Ticket for%1$s%2$s"
+msgstr "Vstupenka na%1$s%2$s"
+
+#: includes/participants.php:559 includes/participants.php:754
+#: includes/checkout.php:364
+msgid "Total"
+msgstr "Celkom"
+
+#: includes/participants.php:191
+msgid "Total persons"
+msgstr "Celkový počet osôb"
+
+#: includes/field-definitions.php:177
+msgid "Variable Symbol"
+msgstr "Variabilný symbol"
+
+#: includes/participants.php:193
+msgid "Verified persons"
+msgstr "Overené osoby"
+
+#: includes/thankyou.php:94 includes/thankyou.php:96
+msgid ""
+"We are sending a confirmation email with detailed information.<br>Please "
+"check your spam folder as well."
+msgstr ""
+"Posielame Vám potvrdzujúci email s podrobnými informáciami.<br>Prosím, "
+"skontrolujte aj Váš spamový priečinok."
+
+#: includes/event.php:270
+#, php-format
+#| msgid ""
+#| "When entering Sectec Security Day 2026, please verify your identity using "
+#| "the QR code from the email with invoice."
+msgid ""
+"When entering %s, please verify your identity using the QR code from the "
+"email with invoice."
+msgstr ""
+"Pri vstupovaní na %s, prosím, preukážte svoju identitu pomocou QR kódu z "
+"emailu s faktúrou."
+
+#: includes/product-fields.php:54
+msgid "Yes — in-person products generate tickets"
+msgstr "Áno — osobné produkty generujú vstupenky"
+
+#: includes/email.php:290
+msgid ""
+"You can only watch the livestream from one device. If you log in from "
+"another device, you will be automatically logged out and will need to log in "
+"again."
+msgstr ""
+"Livestream je možné sledovať len z jedného zariadenia. Ak sa prihlásite z "
+"iného zariadenia, budete automaticky odhlásení a budete sa musieť prihlásiť "
+"znova."
+
+#: includes/participants.php:246 includes/field-definitions.php:113
+msgid "ZIP"
+msgstr "PSČ"
+
+msgid "Number of persons registered by the order."
+msgstr "Počet osôb zaregistrovaných objednávkou."
+
+msgid "Person count recalculated: %1$d of %2$d orders updated."
+msgstr "Počty osôb prepočítané: aktualizovaných %1$d z %2$d objednávok."
+
+msgid "Person counts"
+msgstr "Počty osôb"
+
+msgid "Recalculate person counts"
+msgstr "Prepočítať počty osôb"
+
+msgid "Stores the number of people each order registers, shown as the Persons column in Analytics > Orders and included in its CSV export. The number comes from the participant records linked to the order; orders without participants (livestream) fall back to the ordered quantity. Orders are kept up to date automatically — run this after importing participants or to fill in older orders."
+msgstr "Ukladá počet osôb, ktoré objednávka registruje. Zobrazuje sa ako stĺpec Osoby v Analytika > Objednávky a je súčasťou CSV exportu. Číslo vychádza zo záznamov účastníkov priradených k objednávke; objednávky bez účastníkov (livestream) použijú objednané množstvo. Objednávky sa aktualizujú automaticky — toto spustite po importe účastníkov alebo pre doplnenie starších objednávok."
+
+#: includes/christmas-nitra-checkout.php:373
+msgctxt "xnt.step1"
+msgid "How do you want to watch"
+msgstr "Ako chceš sledovať"
+
+#: includes/christmas-nitra-checkout.php:374
+msgctxt "xnt.step1sub"
+msgid "The same price for the arena and the online broadcast"
+msgstr "Rovnaká cena pre halu aj online prenos"
+
+#: includes/christmas-nitra-checkout.php:379
+msgctxt "xnt.step2"
+msgid "Number of people"
+msgstr "Počet osôb"
+
+#: includes/christmas-nitra-checkout.php:380
+msgctxt "xnt.step2sub"
+msgid "Everyone gets the same ticket - same type and same days"
+msgstr "Všetci dostanú rovnakú vstupenku - rovnaký typ aj dni"
+
+#: includes/christmas-nitra-checkout.php:385
+msgctxt "xnt.step3"
+msgid "Select days"
+msgstr "Vyber dni"
+
+#: includes/christmas-nitra-checkout.php:386
+msgctxt "xnt.step3sub"
+msgid "Any combination - the days do not have to follow one another. The price recalculates instantly."
+msgstr "Ľubovoľná kombinácia - dni nemusia ísť za sebou. Cena sa prepočíta hneď."
+
+#: includes/christmas-nitra-checkout.php:393
+msgctxt "xnt.segaria"
+msgid "Ticket type"
+msgstr "Typ vstupenky"
+
+#: includes/christmas-nitra-checkout.php:394
+msgctxt "xnt.live"
+msgid "In-person in the arena"
+msgstr "Osobná účasť v hale"
+
+#: includes/christmas-nitra-checkout.php:395
+msgctxt "xnt.livesub"
+msgid "E-ticket with a QR code · valid all day"
+msgstr "E-vstupenka s QR kódom · platí celý deň"
+
+#: includes/christmas-nitra-checkout.php:400
+msgctxt "xnt.stream"
+msgid "Livestream"
+msgstr "Livestream"
+
+#: includes/christmas-nitra-checkout.php:401
+msgctxt "xnt.streamsub"
+msgid "stream.sgf.sk · phone, laptop, TV"
+msgstr "stream.sgf.sk · mobil, notebook, TV"
+
+#: includes/christmas-nitra-checkout.php:406
+msgctxt "xnt.fixedtype"
+msgid "The ticket type can be changed in the configurator."
+msgstr "Typ vstupenky zmeníš v konfigurátore."
+
+#: includes/christmas-nitra-checkout.php:411
+msgctxt "xnt.switchfailed"
+msgid "The ticket type could not be changed. Please try again."
+msgstr "Typ vstupenky sa nepodarilo zmeniť. Skús to znova."
+
+#: includes/christmas-nitra-checkout.php:418
+msgctxt "xnt.qtyaria"
+msgid "Number of people"
+msgstr "Počet osôb"
+
+#: includes/christmas-nitra-checkout.php:419
+msgctxt "xnt.minus"
+msgid "Fewer people"
+msgstr "Menej osôb"
+
+#: includes/christmas-nitra-checkout.php:420
+msgctxt "xnt.plus"
+msgid "More people"
+msgstr "Viac osôb"
+
+#: includes/christmas-nitra-checkout.php:421
+msgctxt "xnt.acc2"
+msgid "Do you need different days or a different type for someone else? Finish this order and add another ticket in the cart."
+msgstr "Potrebuješ pre niekoho iné dni alebo iný typ? Dokonči túto objednávku a pridaj ďalšiu vstupenku v košíku."
+
+#: includes/christmas-nitra-checkout.php:428
+msgctxt "xnt.quickaria"
+msgid "Quick pick"
+msgstr "Rýchly výber"
+
+#: includes/christmas-nitra-checkout.php:429
+msgctxt "xnt.quick3"
+msgid "Saturday finals"
+msgstr "Sobotné finále"
+
+#: includes/christmas-nitra-checkout.php:430
+msgctxt "xnt.quick34"
+msgid "Weekend · Sat + Sun"
+msgstr "Víkend · So + Ne"
+
+#: includes/christmas-nitra-checkout.php:431
+msgctxt "xnt.quick23"
+msgid "Qualification + finals"
+msgstr "Kvalifikácia + finále"
+
+#: includes/christmas-nitra-checkout.php:432
+msgctxt "xnt.quickall"
+msgid "All 4 days · best value"
+msgstr "Všetky 4 dni · najvýhodnejšie"
+
+#: includes/christmas-nitra-checkout.php:433
+msgctxt "xnt.finals"
+msgid "Finals"
+msgstr "Finále"
+
+#: includes/christmas-nitra-checkout.php:434
+msgctxt "xnt.acc3"
+msgid "Competitors, coaches and accredited support-team members have entry included in their accreditation - they do not need a ticket."
+msgstr "Súťažiaci, tréneri a akreditovaní členovia realizačných tímov majú vstup zahrnutý v akreditácii - vstupenku nepotrebujú."
+
+#: includes/christmas-nitra-checkout.php:441
+msgctxt "xnt.pg1"
+msgid "<b>WG</b> training and podium training · <b>Open</b> individuals, day 1"
+msgstr "<b>WG</b> tréningy a pódiové tréningy · <b>Open</b> jednotlivkyne, 1. deň"
+
+#: includes/christmas-nitra-checkout.php:446
+msgctxt "xnt.pg2"
+msgid "<b>WG</b> qualification · all-around seniors and juniors · <b>Open</b> individuals, day 2"
+msgstr "<b>WG</b> kvalifikácia · viacboj seniorky a juniorky · <b>Open</b> jednotlivkyne, 2. deň"
+
+#: includes/christmas-nitra-checkout.php:451
+msgctxt "xnt.pg3"
+msgid "<b>WG</b> apparatus finals + victory ceremony · <b>Open</b> · <b>MSR</b> group routines"
+msgstr "<b>WG</b> finále na náčiní + vyhlásenie výsledkov · <b>Open</b> · <b>MSR</b> spoločné skladby"
+
+#: includes/christmas-nitra-checkout.php:456
+msgctxt "xnt.pg4"
+msgid "<b>Open</b> group routines, duos and trios · <b>MSR</b> group routines + ceremony"
+msgstr "<b>Open</b> spoločné skladby, dvojice a trojice · <b>MSR</b> spoločné skladby + vyhlásenie"
+
+#: includes/christmas-nitra-checkout.php:463
+msgctxt "xnt.chipsaria"
+msgid "Your selection"
+msgstr "Tvoj výber"
+
+#: includes/christmas-nitra-checkout.php:464
+msgctxt "xnt.cta"
+msgid "Continue to payment"
+msgstr "Pokračovať k platbe"
+
+#: includes/christmas-nitra-checkout.php:465
+msgctxt "xnt.sumtitle"
+msgid "Your ticket"
+msgstr "Tvoja vstupenka"
+
+#: includes/christmas-nitra-checkout.php:466
+msgctxt "xnt.total"
+msgid "Total"
+msgstr "Spolu"
+
+#: includes/christmas-nitra-checkout.php:467
+msgctxt "xnt.vat"
+msgid "incl. VAT · prices are final"
+msgstr "vrátane DPH · ceny sú konečné"
+
+#: includes/christmas-nitra-checkout.php:468
+msgctxt "xnt.fine"
+msgid "The ticket is valid for every competition block of the chosen day - you can leave and come back. Livestream access is active right after payment. Pay by card or Google Pay."
+msgstr "Vstupenka platí na všetky súťažné bloky zvoleného dňa - môžeš odísť a vrátiť sa. Livestream prístup je aktívny ihneď po zaplatení. Platba kartou alebo Google Pay."
+
+#: includes/christmas-nitra-checkout.php:480
+msgctxt "xnt.infoeyebrow"
+msgid "Simply"
+msgstr "Jednoducho"
+
+#: includes/christmas-nitra-checkout.php:481
+msgctxt "xnt.infohd"
+msgid "How the prices work"
+msgstr "Ako fungujú ceny"
+
+#: includes/christmas-nitra-checkout.php:482
+msgctxt "xnt.info1h"
+msgid "Early Bird - until %d"
+msgstr "Early Bird - do %d"
+
+#: includes/christmas-nitra-checkout.php:483
+msgctxt "xnt.info1b"
+msgid "Buy earlier and every day costs you <b>%e</b> instead of %n. From %f the full prices apply. The discount is applied automatically - no coupon, and it works the same for the arena and the livestream."
+msgstr "Kúp skôr a máš každý deň za <b>%e</b> namiesto %n. Od %f platia plné ceny. Zľava sa uplatní automaticky - žiadny kupón, platí rovnako pre halu aj livestream."
+
+#: includes/christmas-nitra-checkout.php:488
+msgctxt "xnt.info2h"
+msgid "More days = cheaper"
+msgstr "Viac dní = lacnejšie"
+
+#: includes/christmas-nitra-checkout.php:489
+msgctxt "xnt.info2b"
+msgid "2 or 3 days: <b>%s</b> comes off the price. All 4 days: a pass for <b>%p</b> - cheaper than 3 days and %a a day. You combine the days freely."
+msgstr "2 alebo 3 dni: z ceny sa odpočíta <b>%s</b>. Všetky 4 dni: pass za <b>%p</b> - vychádza lacnejšie ako 3 dni a na %a za deň. Dni si kombinuješ ľubovoľne."
+
+#: includes/christmas-nitra-checkout.php:494
+msgctxt "xnt.info3h"
+msgid "Prices are per person"
+msgstr "Ceny sú za osobu"
+
+#: includes/christmas-nitra-checkout.php:495
+msgctxt "xnt.info3b"
+msgid "Every person needs their own ticket - you pick the number in <b>step 2</b> and the price is multiplied. The same prices for the arena and the livestream, final, with no extra fees."
+msgstr "Každá osoba potrebuje vlastnú vstupenku - počet vyberieš v <b>kroku 2</b> a cena sa vynásobí. Rovnaké ceny pre halu aj livestream, konečné, bez poplatkov navyše."
+
+#: includes/christmas-nitra-checkout.php:504
+msgctxt "xnt.thdays"
+msgid "Number of days"
+msgstr "Počet dní"
+
+#: includes/christmas-nitra-checkout.php:505
+msgctxt "xnt.theb"
+msgid "Early Bird · until %d"
+msgstr "Early Bird · do %d"
+
+#: includes/christmas-nitra-checkout.php:506
+msgctxt "xnt.thfull"
+msgid "From %f"
+msgstr "Od %f"
+
+#: includes/christmas-nitra-checkout.php:507
+msgctxt "xnt.thsave"
+msgid "You save with Early Bird"
+msgstr "Ušetríš s Early Bird"
+
+#: includes/christmas-nitra-checkout.php:508
+msgctxt "xnt.tbest"
+msgid "best value"
+msgstr "najvýhodnejšie"
+
+#: includes/christmas-nitra-checkout.php:509
+msgctxt "xnt.tperday"
+msgid "%1 per day"
+msgstr "%1 za deň"
+
+#: includes/christmas-nitra-checkout.php:510
+msgctxt "xnt.tinstead"
+msgid "instead of %1"
+msgstr "namiesto %1"
+
+#: includes/christmas-nitra-checkout.php:511
+msgctxt "xnt.note"
+msgid "Prices are per person, the same for in-person attendance and the livestream. Sales and payment via tickets.sgf.sk, the livestream is watched at stream.sgf.sk."
+msgstr "Ceny za jednu osobu, rovnaké pre osobnú účasť aj livestream. Predaj a platba cez tickets.sgf.sk, livestream sledujete na stream.sgf.sk."
+
+#: includes/christmas-nitra-checkout.php:520
+msgctxt "xnt.eveyebrow"
+msgid "Tickets · 26 – 29 November 2026 · Nitra City Sports Hall"
+msgstr "Vstupenky · 26. – 29. novembra 2026 · Mestská športová hala Nitra"
+
+#: includes/christmas-nitra-checkout.php:525
+msgctxt "xnt.evtitle"
+msgid "Christmas Nitra"
+msgstr "Christmas Nitra"
+
+#: includes/christmas-nitra-checkout.php:526
+msgctxt "xnt.evsub"
+msgid "Slovak Rhythmic Gymnastics Open"
+msgstr "Slovak Rhythmic Gymnastics Open"
+
+#: includes/christmas-nitra-checkout.php:531
+msgctxt "xnt.evday"
+msgid "Day from %1"
+msgstr "Deň za %1"
+
+#: includes/christmas-nitra-checkout.php:532
+msgctxt "xnt.evcheaper"
+msgid "More days = <b>cheaper</b>"
+msgstr "Viac dní = <b>lacnejšie</b>"
+
+#: includes/christmas-nitra-checkout.php:537
+msgctxt "xnt.evsame"
+msgid "Hall and livestream at the <b>same price</b>"
+msgstr "Hala aj livestream za <b>rovnakú cenu</b>"
+
+#: includes/christmas-nitra-checkout.php:542
+msgctxt "xnt.ebuntil"
+msgid "until %d"
+msgstr "do %d"
+
+#: includes/christmas-nitra-checkout.php:543
+msgctxt "xnt.ebleft"
+msgid "%n left"
+msgstr "ešte %n"
+
+#: includes/christmas-nitra-checkout.php:544
+msgctxt "xnt.ebended"
+msgid "ended %d"
+msgstr "skončil %d"
+
+#: includes/christmas-nitra-checkout.php:545
+msgctxt "xnt.ebfull"
+msgid "full prices apply"
+msgstr "platia plné ceny"
+
+#: includes/christmas-nitra-checkout.php:549
+msgctxt "xnt.typelive"
+msgid "In-person"
+msgstr "Osobná účasť"
+
+#: includes/christmas-nitra-checkout.php:550
+msgctxt "xnt.typestream"
+msgid "Livestream"
+msgstr "Livestream"
+
+#: includes/christmas-nitra-checkout.php:551
+msgctxt "xnt.noday"
+msgid "Select at least one day"
+msgstr "Vyber aspoň jeden deň"
+
+#: includes/christmas-nitra-checkout.php:552
+msgctxt "xnt.disc"
+msgid "Multi-day discount"
+msgstr "Zľava za viac dní"
+
+#: includes/christmas-nitra-checkout.php:553
+msgctxt "xnt.discpass"
+msgid "Discount · %n-day pass"
+msgstr "Zľava · %n-dňový pass"
+
+#: includes/christmas-nitra-checkout.php:554
+msgctxt "xnt.perperson"
+msgid " per person"
+msgstr " na osobu"
+
+#: includes/christmas-nitra-checkout.php:555
+msgctxt "xnt.vatper"
+msgid "incl. VAT · %1 per person"
+msgstr "vrátane DPH · %1 za osobu"
+
+#: includes/christmas-nitra-checkout.php:556
+msgctxt "xnt.vatperday"
+msgid " · %1 per day"
+msgstr " · %1 za deň"
+
+#: includes/christmas-nitra-checkout.php:557
+msgctxt "xnt.vatday"
+msgid "incl. VAT · %1 per day"
+msgstr "vrátane DPH · %1 za deň"
+
+#: includes/christmas-nitra-checkout.php:562
+msgctxt "xnt.ebtag"
+msgid "Early Bird"
+msgstr "Early Bird"
+
+#: includes/christmas-nitra-checkout.php:563
+msgctxt "xnt.savedeb"
+msgid "<b>Early Bird:</b> you save <b>%1</b> - from %d the same selection would cost %2."
+msgstr "<b>Early Bird:</b> ušetríš <b>%1</b> - od %d by rovnaký výber stál %2."
+
+#: includes/christmas-nitra-checkout.php:568
+msgctxt "xnt.savedfull"
+msgid "Early Bird ended %d - the full price applies. The multi-day discount still applies."
+msgstr "Early Bird skončil %d - platí plná cena. Viacdenná zľava platí naďalej."
+
+#: includes/christmas-nitra-checkout.php:573
+msgctxt "xnt.hintone"
+msgid "Each person needs their own ticket"
+msgstr "Každá osoba potrebuje vlastnú vstupenku"
+
+#: includes/christmas-nitra-checkout.php:578
+msgctxt "xnt.hintmany"
+msgid "%1 per person · each person gets their own ticket"
+msgstr "%1 za osobu · každá osoba dostane vlastnú vstupenku"
+
+#: includes/christmas-nitra-checkout.php:583
+msgctxt "xnt.nudge0"
+msgid "Select at least one day. Tip: <b>Saturday is finals day</b> - WG apparatus finals and the victory ceremony."
+msgstr "Vyber aspoň jeden deň. Tip: <b>sobota je finálový deň</b> - WG finále na náčiní a vyhlásenie výsledkov."
+
+#: includes/christmas-nitra-checkout.php:588
+msgctxt "xnt.nudge1"
+msgid "Add a second day for only <b>+%1</b>%p - two days together %2%p. Or all 4 days for %3%p."
+msgstr "Pridaj druhý deň len za <b>+%1</b>%p - dva dni spolu %2%p. Alebo všetky 4 dni za %3%p."
+
+#: includes/christmas-nitra-checkout.php:593
+msgctxt "xnt.nudge2"
+msgid "All 4 days cost only <b>+%1</b>%p more (%2%p) - and you save %3%p vs individual days."
+msgstr "Všetky 4 dni sú len o <b>+%1</b>%p viac (%2%p) - a ušetríš %3%p oproti jednotlivým dňom."
+
+#: includes/christmas-nitra-checkout.php:598
+msgctxt "xnt.nudge3"
+msgid "<b>Four days are cheaper than three:</b> %1 instead of %2%p. Add the fourth day and <b>save %3%p</b>."
+msgstr "<b>Štyri dni sú lacnejšie ako tri:</b> %1 namiesto %2%p. Pridaj štvrtý deň a <b>ušetríš %3%p</b>."
+
+#: includes/christmas-nitra-checkout.php:603
+msgctxt "xnt.nudge4"
+msgid "<b>Best value.</b> The whole competition Thursday to Sunday for %1%p - that is %2 per day."
+msgstr "<b>Najvýhodnejšia voľba.</b> Celá súťaž od štvrtka do nedele za %1%p - to je %2 za deň."
+
+#: includes/christmas-nitra-checkout.php:608
+msgctxt "xnt.btnsat"
+msgid "Select Saturday"
+msgstr "Vybrať sobotu"
+
+#: includes/christmas-nitra-checkout.php:609
+msgctxt "xnt.btnall"
+msgid "All 4 days"
+msgstr "Všetky 4 dni"
+
+#: includes/christmas-nitra-checkout.php:610
+msgctxt "xnt.btnallsel"
+msgid "Select all 4 days"
+msgstr "Vybrať všetky 4 dni"
+
+#: includes/christmas-nitra-checkout.php:611
+msgctxt "xnt.btnfourth"
+msgid "Add 4th day"
+msgstr "Pridať 4. deň"
+
+#: includes/christmas-nitra-checkout.php:614
+msgctxt "xnt.day0"
+msgid "day"
+msgstr "deň"
+
+#: includes/christmas-nitra-checkout.php:615
+msgctxt "xnt.day1"
+msgid "days"
+msgstr "dni"
+
+#: includes/christmas-nitra-checkout.php:616
+msgctxt "xnt.day2"
+msgid "days"
+msgstr "dní"
+
+#: includes/christmas-nitra-checkout.php:617
+msgctxt "xnt.person0"
+msgid "person"
+msgstr "osoba"
+
+#: includes/christmas-nitra-checkout.php:618
+msgctxt "xnt.person1"
+msgid "people"
+msgstr "osoby"
+
+#: includes/christmas-nitra-checkout.php:619
+msgctxt "xnt.person2"
+msgid "people"
+msgstr "osôb"
+
+#: includes/christmas-nitra-checkout.php:622
+msgctxt "xnt.wd0"
+msgid "Sunday"
+msgstr "Nedeľa"
+
+#: includes/christmas-nitra-checkout.php:623
+msgctxt "xnt.wd1"
+msgid "Monday"
+msgstr "Pondelok"
+
+#: includes/christmas-nitra-checkout.php:624
+msgctxt "xnt.wd2"
+msgid "Tuesday"
+msgstr "Utorok"
+
+#: includes/christmas-nitra-checkout.php:625
+msgctxt "xnt.wd3"
+msgid "Wednesday"
+msgstr "Streda"
+
+#: includes/christmas-nitra-checkout.php:626
+msgctxt "xnt.wd4"
+msgid "Thursday"
+msgstr "Štvrtok"
+
+#: includes/christmas-nitra-checkout.php:627
+msgctxt "xnt.wd5"
+msgid "Friday"
+msgstr "Piatok"
+
+#: includes/christmas-nitra-checkout.php:628
+msgctxt "xnt.wd6"
+msgid "Saturday"
+msgstr "Sobota"

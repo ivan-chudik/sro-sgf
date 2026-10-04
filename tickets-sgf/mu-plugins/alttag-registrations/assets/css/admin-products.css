@@ -1,0 +1,152 @@
+/*
+ * Admin styles for pricing tiers: the "Aktuálna cena (tier)" product list
+ * column and the tier editor in the product's General tab.
+ *
+ * Enqueued by PricingTiers::adminCss() on the product list and product edit
+ * screens.
+ */
+
+/*
+ * Product list column.
+ *
+ * The default column width is too narrow for the rendered content, which
+ * causes WP admin to wrap text vertically (one character per line). We pin
+ * a sensible width, right-align the price, and keep the tier label on a
+ * single line below it.
+ */
+.column-tier_price {
+    width: 130px;
+    text-align: right;
+}
+.column-tier_price .alttag-tier-label {
+    display: block;
+    font-size: 11px;
+    color: #646970;
+    margin-top: 2px;
+    white-space: normal;
+}
+
+/*
+ * Pricing tier editor (PricingTiers::fields() / row() / typePriceInputs()).
+ *
+ * WooCommerce's product data panel is aggressive about form controls inside it:
+ *
+ *   .woocommerce_options_panel input[type=text|number|...] { width:50%; float:left }
+ *   .woocommerce_options_panel label                       { width:auto; display:block }
+ *   .woocommerce_options_panel p                           { margin:9px 0; padding:5px 9px }
+ *
+ * all of which are (0,1,1) and beat a plain single-class rule. That is what
+ * shredded the old inline-styled row. So every rule below is prefixed with
+ * .woocommerce_options_panel to outrank them rather than tie, and the input
+ * float is cleared explicitly.
+ */
+.woocommerce_options_panel p.alttag-tiers-intro {
+    margin: 9px 0 0;
+}
+#alttag-tiers {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 6px 9px 0;
+}
+.woocommerce_options_panel p.alttag-tiers-actions {
+    margin: 9px 0;
+}
+.woocommerce_options_panel .alttag-tier {
+    background: #fff;
+    border: 1px solid #dcdcde;
+    border-radius: 4px;
+    padding: 8px 12px 12px;
+}
+.woocommerce_options_panel .alttag-tier__head {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 8px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #f0f0f1;
+}
+.woocommerce_options_panel .alttag-tier__heading {
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.4;
+}
+.woocommerce_options_panel .alttag-tier__head .alttag-tier-remove {
+    background: none;
+    border: 0;
+    box-shadow: none;
+    padding: 0;
+    width: auto;
+    height: auto;
+    min-height: 0;
+    line-height: 1.4;
+    color: #b32d2e;
+    cursor: pointer;
+    text-decoration: underline;
+}
+.woocommerce_options_panel .alttag-tier__fields {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    gap: 10px 12px;
+}
+.woocommerce_options_panel label.alttag-tier__field {
+    display: block;
+    float: none;
+    margin: 0;
+}
+.woocommerce_options_panel .alttag-tier__label {
+    display: block;
+    margin-bottom: 3px;
+    font-size: 11px;
+    line-height: 1.4;
+    color: #646970;
+    text-transform: uppercase;
+    letter-spacing: .02em;
+}
+.woocommerce_options_panel .alttag-tier__field input[type="text"],
+.woocommerce_options_panel .alttag-tier__field input[type="number"],
+.woocommerce_options_panel .alttag-tier__field input[type="date"],
+.woocommerce_options_panel .alttag-tier__field select {
+    display: block;
+    float: none;
+    width: 100%;
+    min-width: 0;
+    margin: 0;
+}
+.woocommerce_options_panel label.alttag-tier__field--key {
+    width: 130px;
+}
+.woocommerce_options_panel label.alttag-tier__field--label {
+    width: 190px;
+}
+.woocommerce_options_panel label.alttag-tier__field--price,
+.woocommerce_options_panel label.alttag-tier__field--limit {
+    width: 95px;
+}
+.woocommerce_options_panel label.alttag-tier__field--date-from,
+.woocommerce_options_panel label.alttag-tier__field--date-to {
+    width: 150px;
+}
+.woocommerce_options_panel label.alttag-tier__field--status {
+    width: 130px;
+}
+.woocommerce_options_panel label.alttag-tier__field--type-price {
+    width: 120px;
+}
+.woocommerce_options_panel .alttag-tier__types {
+    margin-top: 12px;
+    padding-top: 10px;
+    border-top: 1px dashed #dcdcde;
+}
+.woocommerce_options_panel .alttag-tier__types-heading {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 11px;
+    line-height: 1.4;
+    font-weight: 600;
+    color: #50575e;
+    text-transform: uppercase;
+    letter-spacing: .02em;
+}

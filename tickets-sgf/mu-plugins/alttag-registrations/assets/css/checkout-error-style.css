@@ -1,0 +1,12 @@
+/*
+ * Checkout / order-received error notice reset.
+ *
+ * WooCommerce wraps each error in <a class="showlogin">-style anchors with
+ * the default form-field link styling (blue + underlined), so the list reads
+ * as a series of clickable items instead of one block of text. We override
+ * link colour and underline for these notice anchors only.
+ */
+.woocommerce-error li a {
+    color: inherit;
+    text-decoration: none;
+}

@@ -1,0 +1,83 @@
+/**
+ * Multi-participant checkout — extra attendee blocks styling.
+ * Blocks render inside #alttag-extra-participants after the billing block.
+ */
+
+#alttag-extra-participants {
+    margin: 24px 0 8px;
+}
+
+.attendee-block {
+    margin: 0 0 20px;
+    padding: 18px 20px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.02);
+    position: relative;
+}
+
+.attendee-block .attendee-heading {
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    padding: 0 8px;
+    margin-left: -4px;
+    color: inherit;
+}
+
+.attendee-block .attendee-info-note {
+    font-size: 12.5px;
+    line-height: 1.4;
+    color: rgba(255, 255, 255, 0.6);
+    margin: 4px 0 14px;
+}
+
+/* Reset WC's default form-row bottom-margin inside our blocks so rows sit
+   tighter, matching the buyer block on the same page. */
+.attendee-block .form-row {
+    margin: 0 0 12px;
+    padding: 0;
+}
+
+/* Preserve WC's 50/50 layout (form-row-first + form-row-last). Add clearing
+   because we're inside a fieldset. */
+.attendee-block .form-row-first,
+.attendee-block .form-row-last {
+    width: 48%;
+}
+.attendee-block .form-row-first {
+    float: left;
+}
+.attendee-block .form-row-last {
+    float: right;
+}
+.attendee-block .clear {
+    clear: both;
+}
+
+/* Match Elementor Pro / WC dark-theme input styling. Inherit whatever the
+   theme sets for .input-text; add subtle focus for accessibility. */
+.attendee-block .input-text {
+    width: 100%;
+}
+.attendee-block .input-text:focus {
+    outline: none;
+    border-color: currentColor;
+}
+
+/* Label spacing consistent with WC checkout defaults */
+.attendee-block label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.7);
+}
+.attendee-block label .required {
+    color: #ff8c94;
+    text-decoration: none;
+    margin-left: 2px;
+}

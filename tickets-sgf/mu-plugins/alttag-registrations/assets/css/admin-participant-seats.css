@@ -1,0 +1,24 @@
+.alttag-participant-seats {
+    border-top: 1px solid #dcdcde;
+    margin-top: 16px;
+    padding-top: 4px;
+}
+
+.alttag-participant-seats__row {
+    align-items: center;
+    display: grid;
+    gap: 6px;
+    grid-template-columns: minmax(0, 1fr) 32px 54px 32px;
+    margin-bottom: 8px;
+}
+
+.alttag-participant-seats__count {
+    text-align: center;
+    width: 54px;
+}
+
+.alttag-participant-seats__step {
+    font-size: 18px;
+    min-width: 32px;
+    padding: 0;
+}
