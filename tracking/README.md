@@ -1,6 +1,6 @@
 # Tracking — sro.sgf.sk + tickets.sgf.sk (GTM-KKRD2SZH)
 
-Basic Consent Mode v2, lišta z **Complianz free**, súhlas do GTM posiela náš bridge tag.
+Basic Consent Mode v2, lišta z **Complianz free**, súhlas do GTM nastavuje vlastná šablóna **SGF Consent Bridge** (okamžite, pred ostatnými tagmi).
 Súhlas sa zdieľa medzi subdoménami cez cookie `sgf_ev_consent` na `.sgf.sk` (bez URL parametrov).
 
 | Súbor | Čo to je |
@@ -8,13 +8,14 @@ Súhlas sa zdieľa medzi subdoménami cez cookie `sgf_ev_consent` na `.sgf.sk` (
 | `GTM-KKRD2SZH_workspace9.json` | pôvodný export (nemeniť, je to zdroj) |
 | `GTM-KKRD2SZH_sro-tickets.json` | **nový kontajner na import** |
 | `build_sgf_container.py` | skript, ktorý z pôvodného exportu vyrobí nový (`python3 -I tracking/build_sgf_container.py`) |
-| `gtm/*.html` | kód Custom HTML tagov (bridge, ref v odkazoch, formuláre) |
+| `gtm/sgf-consent-bridge.js` | kód šablóny SGF Consent Bridge (sandboxed JS) |
+| `gtm/*.html` | kód Custom HTML tagov (sledovanie lišty, ref v odkazoch, formuláre) |
 
 ## 1 · Čo sa v kontajneri zmenilo
 
 | | Pred | Po |
 |---|---|---|
-| Súhlas | `Consent Bridge` (len tickets, z `?consent=` v URL), na ostatných weboch default nastavoval Complianz Premium | `Consent - Default + Complianz Bridge` na **všetkých** weboch: default `denied`, update podľa cookies Complianzu (`cmplz_statistics`, `cmplz_marketing`), zápis do `sgf_ev_consent` na `.sgf.sk` |
+| Súhlas | `Consent Bridge` (len tickets, z `?consent=` v URL), na ostatných weboch default nastavoval Complianz Premium | šablóna `Consent - SGF Bridge` na **všetkých** weboch (Consent Initialization + zmena v lište): default `denied`, update podľa cookies Complianzu (`cmplz_statistics`, `cmplz_marketing`), zápis do `sgf_ev_consent` na `.sgf.sk`. `Consent - Complianz Listener` po kliknutí v lište pošle `sgf_cmplz_change` |
 | Odkazy na tickets | `Tickets Links` pridával `ref` + `consent`, predvolene `consent=all` | `Tickets Links - ref` pridáva len `ref` (zdroj pre konverzie), súhlas ide cez cookie |
 | Google tagy | `NOT_SET` (pri chýbajúcom defaulte bežali bez súhlasu) | GA4 čaká na `analytics_storage`, Ads + Conversion Linker na `ad_storage` |
 | Meta tagy | `NOT_NEEDED` + v šablóne natvrdo „consent: true“ = posielali sa vždy | čakajú na `ad_storage` |
@@ -80,6 +81,6 @@ Ak tam beží Complianz (aj po expirácii), bude to fungovať rovnako. Ak na nie
 
 ## 4 · Limity a čo sledovať
 - Bridge číta cookies Complianzu (`cmplz_statistics`, `cmplz_marketing`, `cmplz_banner-status`). Po veľkom update Complianzu zopakuj test z časti 3.
-- Default consent sa nastavuje Custom HTML tagom na Consent Initialization. Vždy over v Preview, že `denied` je nastavené ešte **pred** prvým Google tagom.
+- Súhlas musí nastavovať **šablóna**, nie Custom HTML: `gtag('consent', …)` z Custom HTML sa zaradí do fronty až za Page View a tagy sa zablokujú (overené v Preview 9. 10. 2026).
 - Log súhlasov Complianz free nemá (je v Premium).
 - `ref` na tickets drží `sessionStorage` (zdroj nákupu pre Ads konverziu). Po zatvorení karty sa stratí.

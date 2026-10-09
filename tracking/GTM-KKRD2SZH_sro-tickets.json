@@ -340,7 +340,7 @@
                 "fingerprint": "1791500000000",
                 "firingTriggerId": [
                     "10",
-                    "47"
+                    "48"
                 ],
                 "tagFiringOption": "ONCE_PER_EVENT",
                 "monitoringMetadata": {
@@ -628,7 +628,7 @@
                 "fingerprint": "1791500000000",
                 "firingTriggerId": [
                     "10",
-                    "47"
+                    "48"
                 ],
                 "tagFiringOption": "ONCE_PER_EVENT",
                 "monitoringMetadata": {
@@ -815,23 +815,13 @@
                 "accountId": "6003939028",
                 "containerId": "247192358",
                 "tagId": "41",
-                "name": "Consent - Default + Complianz Bridge",
-                "type": "html",
-                "parameter": [
-                    {
-                        "type": "TEMPLATE",
-                        "key": "html",
-                        "value": "<script>\n(function () {\n  var w = window, d = document;\n  w.dataLayer = w.dataLayer || [];\n  function gtag() { w.dataLayer.push(arguments); }\n\n  var SHARED = 'sgf_ev_consent';\n  var MAX_AGE = 31536000;\n  var DOMAIN = /(^|\\.)sgf\\.sk$/.test(location.hostname) ? '; domain=.sgf.sk' : '';\n\n  function getCookie(name) {\n    var m = d.cookie.match(new RegExp('(?:^|; )' + name.replace(/[-.]/g, '\\\\$&') + '=([^;]*)'));\n    return m ? decodeURIComponent(m[1]) : null;\n  }\n\n  function readComplianz() {\n    var st = getCookie('cmplz_statistics');\n    var mk = getCookie('cmplz_marketing');\n    var decided = getCookie('cmplz_banner-status') === 'dismissed' || st === 'allow' || mk === 'allow';\n    return decided ? { a: st === 'allow', m: mk === 'allow' } : null;\n  }\n\n  function readShared() {\n    var m = (getCookie(SHARED) || '').match(/^a([01])m([01])$/);\n    return m ? { a: m[1] === '1', m: m[2] === '1' } : null;\n  }\n\n  function writeShared(s) {\n    d.cookie = SHARED + '=a' + (s.a ? 1 : 0) + 'm' + (s.m ? 1 : 0) +\n      '; path=/; max-age=' + MAX_AGE + DOMAIN + '; SameSite=Lax' +\n      (location.protocol === 'https:' ? '; Secure' : '');\n  }\n\n  function toConsent(s) {\n    var a = s.a ? 'granted' : 'denied';\n    var m = s.m ? 'granted' : 'denied';\n    return { analytics_storage: a, ad_storage: m, ad_user_data: m, ad_personalization: m };\n  }\n\n  function same(x, y) { return !!x && !!y && x.a === y.a && x.m === y.m; }\n\n  gtag('consent', 'default', {\n    analytics_storage: 'denied',\n    ad_storage: 'denied',\n    ad_user_data: 'denied',\n    ad_personalization: 'denied',\n    functionality_storage: 'granted',\n    security_storage: 'granted',\n    wait_for_update: 500\n  });\n  gtag('set', 'ads_data_redaction', true);\n\n  var local = readComplianz();\n  var shared = readShared();\n  var cur = local || shared || { a: false, m: false };\n  var fired = { a: cur.a, m: cur.m };\n\n  if (local && !same(local, shared)) writeShared(local);\n  if (cur.a || cur.m) gtag('consent', 'update', toConsent(cur));\n\n  function sync() {\n    var next = readComplianz();\n    if (!next) return;\n    if (!same(next, readShared())) writeShared(next);\n    if (same(next, cur)) return;\n    cur = next;\n    gtag('consent', 'update', toConsent(next));\n    w.dataLayer.push({\n      event: 'sgf_consent_update',\n      sgf_consent_analytics: next.a ? 'granted' : 'denied',\n      sgf_consent_ads: next.m ? 'granted' : 'denied'\n    });\n    if (next.a && !fired.a) { fired.a = true; w.dataLayer.push({ event: 'sgf_consent_analytics_granted' }); }\n    if (next.m && !fired.m) { fired.m = true; w.dataLayer.push({ event: 'sgf_consent_ads_granted' }); }\n  }\n\n  ['cmplz_fire_categories', 'cmplz_status_change', 'cmplz_revoke', 'cmplz_enable_category'].forEach(function (e) {\n    d.addEventListener(e, function () { setTimeout(sync, 50); });\n  });\n  d.addEventListener('click', function (e) {\n    var t = e.target;\n    if (t && t.closest && t.closest('.cmplz-cookiebanner, .cmplz-manage-consent, #cmplz-manage-consent, .cmplz-btn')) {\n      setTimeout(sync, 300);\n    }\n  }, true);\n})();\n</script>\n"
-                    },
-                    {
-                        "type": "BOOLEAN",
-                        "key": "supportDocumentWrite",
-                        "value": "false"
-                    }
-                ],
+                "name": "Consent - SGF Bridge",
+                "type": "cvt_247192358_5",
+                "parameter": [],
                 "fingerprint": "1791500000000",
                 "firingTriggerId": [
-                    "2147479572"
+                    "2147479572",
+                    "45"
                 ],
                 "tagFiringOption": "ONCE_PER_EVENT",
                 "monitoringMetadata": {
@@ -849,6 +839,36 @@
                 "accountId": "6003939028",
                 "containerId": "247192358",
                 "tagId": "42",
+                "name": "Consent - Complianz Listener",
+                "type": "html",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "html",
+                        "value": "<script>\n(function () {\n  if (window.__sgfCmplzListener) return;\n  window.__sgfCmplzListener = true;\n\n  var timer;\n  function changed() {\n    clearTimeout(timer);\n    timer = setTimeout(function () {\n      window.dataLayer = window.dataLayer || [];\n      window.dataLayer.push({ event: 'sgf_cmplz_change' });\n    }, 300);\n  }\n\n  ['cmplz_fire_categories', 'cmplz_status_change', 'cmplz_revoke', 'cmplz_enable_category'].forEach(function (e) {\n    document.addEventListener(e, changed);\n  });\n  document.addEventListener('click', function (e) {\n    var t = e.target;\n    if (t && t.closest && t.closest('.cmplz-cookiebanner, .cmplz-manage-consent-container, #cmplz-manage-consent, .cmplz-btn')) changed();\n  }, true);\n})();\n</script>\n"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "supportDocumentWrite",
+                        "value": "false"
+                    }
+                ],
+                "fingerprint": "1791500000000",
+                "firingTriggerId": [
+                    "2147479572"
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                },
+                "consentSettings": {
+                    "consentStatus": "NOT_NEEDED"
+                }
+            },
+            {
+                "accountId": "6003939028",
+                "containerId": "247192358",
+                "tagId": "43",
                 "name": "Tickets Links - ref",
                 "type": "html",
                 "parameter": [
@@ -878,7 +898,7 @@
             {
                 "accountId": "6003939028",
                 "containerId": "247192358",
-                "tagId": "43",
+                "tagId": "44",
                 "name": "Lead Listener - Elementor Forms",
                 "type": "html",
                 "parameter": [
@@ -895,7 +915,7 @@
                 ],
                 "fingerprint": "1791500000000",
                 "firingTriggerId": [
-                    "46"
+                    "47"
                 ],
                 "tagFiringOption": "ONCE_PER_EVENT",
                 "monitoringMetadata": {
@@ -908,7 +928,7 @@
             {
                 "accountId": "6003939028",
                 "containerId": "247192358",
-                "tagId": "44",
+                "tagId": "45",
                 "name": "GA4 - Generate Lead",
                 "type": "gaawe",
                 "parameter": [
@@ -1003,7 +1023,7 @@
             {
                 "accountId": "6003939028",
                 "containerId": "247192358",
-                "tagId": "45",
+                "tagId": "46",
                 "name": "Meta - Lead",
                 "type": "cvt_5RM3Q",
                 "parameter": [
@@ -1118,7 +1138,7 @@
             {
                 "accountId": "6003939028",
                 "containerId": "247192358",
-                "tagId": "46",
+                "tagId": "47",
                 "name": "GAds - Conversion - Nákup SRO",
                 "type": "awct",
                 "parameter": [
@@ -1175,7 +1195,7 @@
                 ],
                 "fingerprint": "1791500000000",
                 "firingTriggerId": [
-                    "45"
+                    "46"
                 ],
                 "tagFiringOption": "ONCE_PER_EVENT",
                 "monitoringMetadata": {
@@ -1438,6 +1458,31 @@
                 "accountId": "6003939028",
                 "containerId": "247192358",
                 "triggerId": "45",
+                "name": "CE - Complianz change",
+                "type": "CUSTOM_EVENT",
+                "fingerprint": "1791500000000",
+                "customEventFilter": [
+                    {
+                        "type": "MATCH_REGEX",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{_event}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "^(sgf_cmplz_change|cmplz_event_.+)$"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "accountId": "6003939028",
+                "containerId": "247192358",
+                "triggerId": "46",
                 "name": "Purchase - SRO",
                 "type": "CUSTOM_EVENT",
                 "fingerprint": "1791500000000",
@@ -1479,7 +1524,7 @@
             {
                 "accountId": "6003939028",
                 "containerId": "247192358",
-                "triggerId": "46",
+                "triggerId": "47",
                 "name": "DOM Ready - Just Events",
                 "type": "DOM_READY",
                 "fingerprint": "1791500000000",
@@ -1509,7 +1554,7 @@
             {
                 "accountId": "6003939028",
                 "containerId": "247192358",
-                "triggerId": "47",
+                "triggerId": "48",
                 "name": "Add To Cart - SRO",
                 "type": "LINK_CLICK",
                 "fingerprint": "1791500000000",
@@ -1939,7 +1984,12 @@
                     {
                         "type": "BOOLEAN",
                         "key": "setDefaultValue",
-                        "value": "false"
+                        "value": "true"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "defaultValue",
+                        "value": ""
                     },
                     {
                         "type": "TEMPLATE",
@@ -1965,7 +2015,12 @@
                     {
                         "type": "BOOLEAN",
                         "key": "setDefaultValue",
-                        "value": "false"
+                        "value": "true"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "defaultValue",
+                        "value": ""
                     },
                     {
                         "type": "TEMPLATE",
@@ -2131,6 +2186,14 @@
                     "signature": "8eaf791b5fb175da7c334a7537d2e05d457cdb6e3cd0b9bd751ed96b6f3ea0bb",
                     "galleryTemplateId": "5RM3Q"
                 }
+            },
+            {
+                "accountId": "6003939028",
+                "containerId": "247192358",
+                "templateId": "5",
+                "name": "SGF Consent Bridge (Complianz free)",
+                "fingerprint": "1791500000000",
+                "templateData": "___TERMS_OF_SERVICE___\n\nBy creating or modifying this file you agree to Google Tag Manager's Community\nTemplate Gallery Developer Terms of Service available at\nhttps://developers.google.com/tag-manager/gallery-tos (or such other URL as\nGoogle may provide), as modified from time to time.\n\n\n___INFO___\n\n{\n  \"type\": \"TAG\",\n  \"id\": \"cvt_temp_public_id\",\n  \"version\": 1,\n  \"securityGroups\": [],\n  \"displayName\": \"SGF Consent Bridge (Complianz free)\",\n  \"categories\": [\n    \"UTILITY\"\n  ],\n  \"brand\": {\n    \"id\": \"brand_dummy\",\n    \"displayName\": \"\"\n  },\n  \"description\": \"Consent Mode v2 z cookies Complianz free + zdie\\u013ean\\u00fd s\\u00fahlas sgf_ev_consent na .sgf.sk\",\n  \"containerContexts\": [\n    \"WEB\"\n  ]\n}\n\n\n___TEMPLATE_PARAMETERS___\n\n[]\n\n\n___SANDBOXED_JS_FOR_WEB_TEMPLATE___\n\nconst setDefaultConsentState = require('setDefaultConsentState');\nconst updateConsentState = require('updateConsentState');\nconst getCookieValues = require('getCookieValues');\nconst setCookie = require('setCookie');\nconst createQueue = require('createQueue');\nconst gtagSet = require('gtagSet');\nconst templateStorage = require('templateStorage');\n\nconst SHARED = 'sgf_ev_consent';\nconst dataLayerPush = createQueue('dataLayer');\n\nconst first = (name) => {\n  const values = getCookieValues(name);\n  return values && values.length ? values[0] : undefined;\n};\n\nconst readComplianz = () => {\n  const st = first('cmplz_statistics');\n  const mk = first('cmplz_marketing');\n  const decided = first('cmplz_banner-status') === 'dismissed' || st === 'allow' || mk === 'allow';\n  if (!decided) return undefined;\n  return { a: st === 'allow', m: mk === 'allow' };\n};\n\nconst readShared = () => {\n  const v = first(SHARED);\n  if (!v || v.length !== 4 || v.substring(0, 1) !== 'a' || v.substring(2, 3) !== 'm') return undefined;\n  return { a: v.substring(1, 2) === '1', m: v.substring(3, 4) === '1' };\n};\n\nconst writeShared = (s) => {\n  setCookie(SHARED, 'a' + (s.a ? '1' : '0') + 'm' + (s.m ? '1' : '0'), {\n    domain: 'auto',\n    path: '/',\n    'max-age': 31536000,\n    samesite: 'Lax',\n    secure: true\n  }, true);\n};\n\nconst same = (x, y) => !!x && !!y && x.a === y.a && x.m === y.m;\n\nconst toConsent = (s) => {\n  const m = s.m ? 'granted' : 'denied';\n  return {\n    analytics_storage: s.a ? 'granted' : 'denied',\n    ad_storage: m,\n    ad_user_data: m,\n    ad_personalization: m\n  };\n};\n\nconst cur = templateStorage.getItem('cur');\n\nif (!cur) {\n  setDefaultConsentState({\n    analytics_storage: 'denied',\n    ad_storage: 'denied',\n    ad_user_data: 'denied',\n    ad_personalization: 'denied',\n    functionality_storage: 'granted',\n    security_storage: 'granted',\n    wait_for_update: 500\n  });\n  gtagSet('ads_data_redaction', true);\n\n  const local = readComplianz();\n  const shared = readShared();\n  const start = local || shared || { a: false, m: false };\n  if (local && !same(local, shared)) writeShared(local);\n  if (start.a || start.m) updateConsentState(toConsent(start));\n\n  templateStorage.setItem('cur', start);\n  templateStorage.setItem('firedA', start.a);\n  templateStorage.setItem('firedM', start.m);\n} else {\n  const next = readComplianz();\n  if (next) {\n    if (!same(next, readShared())) writeShared(next);\n    if (!same(next, cur)) {\n      updateConsentState(toConsent(next));\n      templateStorage.setItem('cur', next);\n      dataLayerPush({\n        event: 'sgf_consent_update',\n        sgf_consent_analytics: next.a ? 'granted' : 'denied',\n        sgf_consent_ads: next.m ? 'granted' : 'denied'\n      });\n      if (next.a && !templateStorage.getItem('firedA')) {\n        templateStorage.setItem('firedA', true);\n        dataLayerPush({ event: 'sgf_consent_analytics_granted' });\n      }\n      if (next.m && !templateStorage.getItem('firedM')) {\n        templateStorage.setItem('firedM', true);\n        dataLayerPush({ event: 'sgf_consent_ads_granted' });\n      }\n    }\n  }\n}\n\ndata.gtmOnSuccess();\n\n\n___WEB_PERMISSIONS___\n\n[\n  {\n    \"instance\": {\n      \"key\": {\n        \"publicId\": \"access_globals\",\n        \"versionId\": \"1\"\n      },\n      \"param\": [\n        {\n          \"key\": \"keys\",\n          \"value\": {\n            \"type\": 2,\n            \"listItem\": [\n              {\n                \"type\": 3,\n                \"mapKey\": [\n                  {\n                    \"type\": 1,\n                    \"string\": \"key\"\n                  },\n                  {\n                    \"type\": 1,\n                    \"string\": \"read\"\n                  },\n                  {\n                    \"type\": 1,\n                    \"string\": \"write\"\n                  },\n                  {\n                    \"type\": 1,\n                    \"string\": \"execute\"\n                  }\n                ],\n                \"mapValue\": [\n                  {\n                    \"type\": 1,\n                    \"string\": \"dataLayer\"\n                  },\n                  {\n                    \"type\": 8,\n                    \"boolean\": true\n                  },\n                  {\n                    \"type\": 8,\n                    \"boolean\": true\n                  },\n                  {\n                    \"type\": 8,\n                    \"boolean\": false\n                  }\n                ]\n              }\n            ]\n          }\n        }\n      ]\n    },\n    \"clientAnnotations\": {\n      \"isEditedByUser\": true\n    },\n    \"isRequired\": true\n  },\n  {\n    \"instance\": {\n      \"key\": {\n        \"publicId\": \"write_data_layer\",\n        \"versionId\": \"1\"\n      },\n      \"param\": [\n        {\n          \"key\": \"keyPatterns\",\n          \"value\": {\n            \"type\": 2,\n            \"listItem\": [\n              {\n                \"type\": 1,\n                \"string\": \"ads_data_redaction\"\n              }\n            ]\n          }\n        }\n      ]\n    },\n    \"clientAnnotations\": {\n      \"isEditedByUser\": true\n    },\n    \"isRequired\": true\n  },\n  {\n    \"instance\": {\n      \"key\": {\n        \"publicId\": \"get_cookies\",\n        \"versionId\": \"1\"\n      },\n      \"param\": [\n        {\n          \"key\": \"cookieAccess\",\n          \"value\": {\n            \"type\": 1,\n            \"string\": \"specific\"\n          }\n        },\n        {\n          \"key\": \"cookieNames\",\n          \"value\": {\n            \"type\": 2,\n            \"listItem\": [\n              {\n                \"type\": 1,\n                \"string\": \"cmplz_statistics\"\n              },\n              {\n                \"type\": 1,\n                \"string\": \"cmplz_marketing\"\n              },\n              {\n                \"type\": 1,\n                \"string\": \"cmplz_banner-status\"\n              },\n              {\n                \"type\": 1,\n                \"string\": \"sgf_ev_consent\"\n              }\n            ]\n          }\n        }\n      ]\n    },\n    \"clientAnnotations\": {\n      \"isEditedByUser\": true\n    },\n    \"isRequired\": true\n  },\n  {\n    \"instance\": {\n      \"key\": {\n        \"publicId\": \"set_cookies\",\n        \"versionId\": \"1\"\n      },\n      \"param\": [\n        {\n          \"key\": \"allowedCookies\",\n          \"value\": {\n            \"type\": 2,\n            \"listItem\": [\n              {\n                \"type\": 3,\n                \"mapKey\": [\n                  {\n                    \"type\": 1,\n                    \"string\": \"name\"\n                  },\n                  {\n                    \"type\": 1,\n                    \"string\": \"domain\"\n                  },\n                  {\n                    \"type\": 1,\n                    \"string\": \"path\"\n                  },\n                  {\n                    \"type\": 1,\n                    \"string\": \"secure\"\n                  },\n                  {\n                    \"type\": 1,\n                    \"string\": \"session\"\n                  }\n                ],\n                \"mapValue\": [\n                  {\n                    \"type\": 1,\n                    \"string\": \"sgf_ev_consent\"\n                  },\n                  {\n                    \"type\": 1,\n                    \"string\": \"*\"\n                  },\n                  {\n                    \"type\": 1,\n                    \"string\": \"*\"\n                  },\n                  {\n                    \"type\": 1,\n                    \"string\": \"any\"\n                  },\n                  {\n                    \"type\": 1,\n                    \"string\": \"any\"\n                  }\n                ]\n              }\n            ]\n          }\n        }\n      ]\n    },\n    \"clientAnnotations\": {\n      \"isEditedByUser\": true\n    },\n    \"isRequired\": true\n  },\n  {\n    \"instance\": {\n      \"key\": {\n        \"publicId\": \"access_consent\",\n        \"versionId\": \"1\"\n      },\n      \"param\": [\n        {\n          \"key\": \"consentTypes\",\n          \"value\": {\n            \"type\": 2,\n            \"listItem\": [\n              {\n                \"type\": 3,\n                \"mapKey\": [\n                  {\n                    \"type\": 1,\n                    \"string\": \"consentType\"\n                  },\n                  {\n                    \"type\": 1,\n                    \"string\": \"read\"\n                  },\n                  {\n                    \"type\": 1,\n                    \"string\": \"write\"\n                  }\n                ],\n                \"mapValue\": [\n                  {\n                    \"type\": 1,\n                    \"string\": \"ad_storage\"\n                  },\n                  {\n                    \"type\": 8,\n                    \"boolean\": true\n                  },\n                  {\n                    \"type\": 8,\n                    \"boolean\": true\n                  }\n                ]\n              },\n              {\n                \"type\": 3,\n                \"mapKey\": [\n                  {\n                    \"type\": 1,\n                    \"string\": \"consentType\"\n                  },\n                  {\n                    \"type\": 1,\n                    \"string\": \"read\"\n                  },\n                  {\n                    \"type\": 1,\n                    \"string\": \"write\"\n                  }\n                ],\n                \"mapValue\": [\n                  {\n                    \"type\": 1,\n                    \"string\": \"ad_user_data\"\n                  },\n                  {\n                    \"type\": 8,\n                    \"boolean\": true\n                  },\n                  {\n                    \"type\": 8,\n                    \"boolean\": true\n                  }\n                ]\n              },\n              {\n                \"type\": 3,\n                \"mapKey\": [\n                  {\n                    \"type\": 1,\n                    \"string\": \"consentType\"\n                  },\n                  {\n                    \"type\": 1,\n                    \"string\": \"read\"\n                  },\n                  {\n                    \"type\": 1,\n                    \"string\": \"write\"\n                  }\n                ],\n                \"mapValue\": [\n                  {\n                    \"type\": 1,\n                    \"string\": \"ad_personalization\"\n                  },\n                  {\n                    \"type\": 8,\n                    \"boolean\": true\n                  },\n                  {\n                    \"type\": 8,\n                    \"boolean\": true\n                  }\n                ]\n              },\n              {\n                \"type\": 3,\n                \"mapKey\": [\n                  {\n                    \"type\": 1,\n                    \"string\": \"consentType\"\n                  },\n                  {\n                    \"type\": 1,\n                    \"string\": \"read\"\n                  },\n                  {\n                    \"type\": 1,\n                    \"string\": \"write\"\n                  }\n                ],\n                \"mapValue\": [\n                  {\n                    \"type\": 1,\n                    \"string\": \"analytics_storage\"\n                  },\n                  {\n                    \"type\": 8,\n                    \"boolean\": true\n                  },\n                  {\n                    \"type\": 8,\n                    \"boolean\": true\n                  }\n                ]\n              },\n              {\n                \"type\": 3,\n                \"mapKey\": [\n                  {\n                    \"type\": 1,\n                    \"string\": \"consentType\"\n                  },\n                  {\n                    \"type\": 1,\n                    \"string\": \"read\"\n                  },\n                  {\n                    \"type\": 1,\n                    \"string\": \"write\"\n                  }\n                ],\n                \"mapValue\": [\n                  {\n                    \"type\": 1,\n                    \"string\": \"functionality_storage\"\n                  },\n                  {\n                    \"type\": 8,\n                    \"boolean\": true\n                  },\n                  {\n                    \"type\": 8,\n                    \"boolean\": true\n                  }\n                ]\n              },\n              {\n                \"type\": 3,\n                \"mapKey\": [\n                  {\n                    \"type\": 1,\n                    \"string\": \"consentType\"\n                  },\n                  {\n                    \"type\": 1,\n                    \"string\": \"read\"\n                  },\n                  {\n                    \"type\": 1,\n                    \"string\": \"write\"\n                  }\n                ],\n                \"mapValue\": [\n                  {\n                    \"type\": 1,\n                    \"string\": \"security_storage\"\n                  },\n                  {\n                    \"type\": 8,\n                    \"boolean\": true\n                  },\n                  {\n                    \"type\": 8,\n                    \"boolean\": true\n                  }\n                ]\n              }\n            ]\n          }\n        }\n      ]\n    },\n    \"clientAnnotations\": {\n      \"isEditedByUser\": true\n    },\n    \"isRequired\": true\n  }\n]\n\n\n___TESTS___\n\nscenarios: []\n\n\n___NOTES___\n\nSGF eventy + tickets.sgf.sk\n\n\n"
             }
         ]
     }
