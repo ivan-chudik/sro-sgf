@@ -1,0 +1,16 @@
+<script>
+(function ($) {
+  if (!$ || window.__sgfLeadListener) return;
+  window.__sgfLeadListener = true;
+
+  $(document).on('submit_success', function (e) {
+    var form = e.target;
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({
+      event: 'generate_lead',
+      form_name: (form && form.getAttribute && form.getAttribute('name')) || '',
+      form_lang: document.documentElement.lang || ''
+    });
+  });
+})(window.jQuery);
+</script>

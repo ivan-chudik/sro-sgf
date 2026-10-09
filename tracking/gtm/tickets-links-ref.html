@@ -1,0 +1,20 @@
+<script>
+(function () {
+  var ref = location.hostname.split('.')[0];
+
+  function addRef(e) {
+    var a = e.target && e.target.closest ? e.target.closest('a[href*="tickets.sgf.sk"]') : null;
+    if (!a) return;
+    try {
+      var u = new URL(a.href);
+      if (u.searchParams.get('ref') === ref) return;
+      u.searchParams.set('ref', ref);
+      a.href = u.toString();
+    } catch (err) {}
+  }
+
+  document.addEventListener('mousedown', addRef, true);
+  document.addEventListener('touchstart', addRef, { capture: true, passive: true });
+  document.addEventListener('click', addRef, true);
+})();
+</script>
