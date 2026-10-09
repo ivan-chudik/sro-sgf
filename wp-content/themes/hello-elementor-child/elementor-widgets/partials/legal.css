@@ -3,7 +3,7 @@
 #cmplz-document {
     max-width: 880px;
     margin: 0 auto;
-    padding: 150px 32px 110px;
+    padding: 80px 32px 110px;
     font-family: var(--xn-font-text);
     font-size: 16px;
     line-height: 1.7;
@@ -360,7 +360,8 @@
 }
 
 @media (max-width: 820px) {
-    #cmplz-document { padding: 120px 20px 72px; font-size: 15px; }
+    #cmplz-document { padding: 60px 20px 72px; font-size: 15px; }
+    #cmplz-document > p:first-child { padding: 10px 30px; }
     #cmplz-document p,
     #cmplz-document ul li { font-size: 15px; }
     #cmplz-document h2 { margin-top: 48px; padding-top: 24px; }
