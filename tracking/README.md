@@ -28,10 +28,11 @@ Ak tam beží Complianz (aj po expirácii), bude to fungovať rovnako. Ak na nie
 
 ## 2 · Nasadenie
 
-### 2.1 sro.sgf.sk — GTM4WP
-1. Pluginy → Pridať → **GTM4WP** (Google Tag Manager for WordPress, rovnaký ako na tickets).
-2. Nastavenia → Google Tag Manager → General: Google Tag Manager ID `GTM-KKRD2SZH`, Container code placement **Codeless injection**.
-3. Záložka Basic data: vypni **Post author name** a **Post author ID** (inak ide meno autora do dataLayeru). To isté urob aj na tickets.
+### 2.1 sro.sgf.sk — GTM je v téme (bez pluginu)
+- `elementor-widgets/partials/gtm.php`: consent default `denied` + GTM snippet v `<head>` a `<noscript>` za `<body>`.
+- Nevkladá sa v administrácii ani v náhľade Elementor editora.
+- Iné ID kontajnera: `define( 'XN_GTM_ID', 'GTM-XXXXXXX' );` vo `wp-config.php`.
+- Na sro **neinštaluj GTM4WP**, kontajner by sa načítal 2×.
 
 ### 2.2 sro.sgf.sk — Complianz free
 1. Pluginy → Pridať → **Complianz – GDPR/CCPA Cookie Consent** → spustiť wizard.
@@ -44,7 +45,10 @@ Ak tam beží Complianz (aj po expirácii), bude to fungovať rovnako. Ak na nie
 ### 2.3 tickets.sgf.sk — bez lišty, bez Complianzu (ako doteraz)
 - Súhlas sa preberá z eventovej stránky (sro, sao, sto…) cez `sgf_ev_consent`, na tickets sa už neklikne druhýkrát.
 - Kto príde na tickets priamo, bez súhlasu z eventovej stránky, nemeria sa (`denied`), rovnako ako doteraz bez `?consent=`.
-- GTM4WP → Integration → WooCommerce: **purchase** musí ostať vypnutý, posiela ho mu-plugin (`WooCommerceManager::pushPurchaseToDataLayer`). Inak bude nákup 2×.
+- GTM4WP → WooCommerce: **Track e-commerce** vypnuté. `purchase` posiela mu-plugin (`WooCommerceManager::pushPurchaseToDataLayer`), inak bude nákup 2×.
+- GTM4WP → Page variables: autor (meno, ID) vypnutý.
+- GTM4WP → Consent mode & consent tools → **Google Consent Mode: zapnúť**. Z príznakov zapni len **Functionality Storage** a **Security Storage**, ostatné nechaj vypnuté (= `denied`).
+  Default sa tak nastaví ešte pred načítaním kontajnera, rovnako ako na sro z témy. Záložky Cookiebot / CookieYes… nechaj vypnuté.
 
 ### 2.4 Import do GTM
 1. GTM → Admin → **Import Container** → súbor `GTM-KKRD2SZH_sro-tickets.json`.
