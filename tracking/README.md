@@ -31,7 +31,7 @@ Ak tam beží Complianz (aj po expirácii), bude to fungovať rovnako. Ak na nie
 ### 2.1 sro.sgf.sk — GTM je v téme (bez pluginu)
 - `elementor-widgets/partials/gtm.php`: consent default `denied` + GTM snippet v `<head>` a `<noscript>` za `<body>`.
 - Nevkladá sa v administrácii ani v náhľade Elementor editora.
-- Iné ID kontajnera: `define( 'XN_GTM_ID', 'GTM-XXXXXXX' );` vo `wp-config.php`.
+- ID kontajnera je konštanta `XN_GTM_ID` priamo v `partials/gtm.php`.
 - Na sro **neinštaluj GTM4WP**, kontajner by sa načítal 2×.
 
 ### 2.2 sro.sgf.sk — Complianz free
