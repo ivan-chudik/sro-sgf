@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 Z exportu GTM-KKRD2SZH (workspace9) vyrobí kontajner pre sro.sgf.sk + tickets.sgf.sk:
-basic Consent Mode v2 cez vlastnú šablónu (Complianz free bridge), zdieľaný súhlas cez cookie na .sgf.sk,
+basic Consent Mode v2 (default nastavuje consent.js na stránke pred GTM), zdieľaný súhlas cez cookie na .sgf.sk,
 Meta tagy viazané na ad_storage, eventy zo sro.sgf.sk.
 
 Spustenie:  python3 -I tracking/build_sgf_container.py
@@ -108,67 +108,6 @@ def html_tag_params(path):
     return [tpl('html', (HERE / 'gtm' / path).read_text(encoding='utf-8')), boolean('supportDocumentWrite', False)]
 
 
-def perm(public_id, params):
-    return {'instance': {'key': {'publicId': public_id, 'versionId': '1'}, 'param': params},
-            'clientAnnotations': {'isEditedByUser': True}, 'isRequired': True}
-
-
-def p_str(v):
-    return {'type': 1, 'string': v}
-
-
-def p_bool(v):
-    return {'type': 8, 'boolean': v}
-
-
-def p_list(items):
-    return {'type': 2, 'listItem': items}
-
-
-def p_map(pairs):
-    return {'type': 3, 'mapKey': [p_str(k) for k, _ in pairs], 'mapValue': [v for _, v in pairs]}
-
-
-def consent_template(code):
-    consent_types = ['ad_storage', 'ad_user_data', 'ad_personalization', 'analytics_storage',
-                     'functionality_storage', 'security_storage']
-    permissions = [
-        perm('access_globals', [{'key': 'keys', 'value': p_list([p_map([
-            ('key', p_str('dataLayer')), ('read', p_bool(True)), ('write', p_bool(True)), ('execute', p_bool(False))])])}]),
-        perm('write_data_layer', [{'key': 'keyPatterns', 'value': p_list([p_str('ads_data_redaction')])}]),
-        perm('get_cookies', [
-            {'key': 'cookieAccess', 'value': p_str('specific')},
-            {'key': 'cookieNames', 'value': p_list([p_str(n) for n in
-                ('cmplz_statistics', 'cmplz_marketing', 'cmplz_banner-status', 'sgf_ev_consent')])},
-        ]),
-        perm('set_cookies', [{'key': 'allowedCookies', 'value': p_list([p_map([
-            ('name', p_str('sgf_ev_consent')), ('domain', p_str('*')), ('path', p_str('*')),
-            ('secure', p_str('any')), ('session', p_str('any'))])])}]),
-        perm('access_consent', [{'key': 'consentTypes', 'value': p_list([p_map([
-            ('consentType', p_str(t)), ('read', p_bool(True)), ('write', p_bool(True))]) for t in consent_types])}]),
-    ]
-    info = {
-        'type': 'TAG', 'id': 'cvt_temp_public_id', 'version': 1, 'securityGroups': [],
-        'displayName': 'SGF Consent Bridge (Complianz free)',
-        'categories': ['UTILITY'],
-        'brand': {'id': 'brand_dummy', 'displayName': ''},
-        'description': 'Consent Mode v2 z cookies Complianz free + zdieľaný súhlas sgf_ev_consent na .sgf.sk',
-        'containerContexts': ['WEB'],
-    }
-    return (
-        '___TERMS_OF_SERVICE___\n\nBy creating or modifying this file you agree to Google Tag Manager\'s Community\n'
-        'Template Gallery Developer Terms of Service available at\n'
-        'https://developers.google.com/tag-manager/gallery-tos (or such other URL as\n'
-        'Google may provide), as modified from time to time.\n\n\n'
-        '___INFO___\n\n' + json.dumps(info, indent=2) + '\n\n\n'
-        '___TEMPLATE_PARAMETERS___\n\n[]\n\n\n'
-        '___SANDBOXED_JS_FOR_WEB_TEMPLATE___\n\n' + code + '\n\n'
-        '___WEB_PERMISSIONS___\n\n' + json.dumps(permissions, indent=2) + '\n\n\n'
-        '___TESTS___\n\nscenarios: []\n\n\n'
-        '___NOTES___\n\nSGF eventy + tickets.sgf.sk\n\n\n'
-    )
-
-
 # ── 1. Odstrániť URL-parameter consent logiku a nepoužité Complianz premenné ──
 REMOVE_TAGS = {'Consent Bridge', 'Tickets Links'}
 REMOVE_TRIGGERS = {'Event - Consent Ready'}
@@ -210,8 +149,6 @@ just_events = by_name(cv['trigger'], 'Trigger - Just Events')['triggerId']
 t_consent_a = custom_event_trigger('CE - Consent analytics granted', 'sgf_consent_analytics_granted')
 t_consent_m = custom_event_trigger('CE - Consent ads granted', 'sgf_consent_ads_granted')
 t_lead = custom_event_trigger('CE - Generate Lead', 'generate_lead')
-t_cmplz_change = add_trigger('CE - Complianz change', 'CUSTOM_EVENT',
-                             customEventFilter=[eq('{{_event}}', '^(sgf_cmplz_change|cmplz_event_.+)$', 'MATCH_REGEX')])
 t_purchase_sro = custom_event_trigger('Purchase - SRO', 'purchase', [eq('{{JS - sgf_source}}', 'sro')])
 t_dom_events = add_trigger('DOM Ready - Just Events', 'DOM_READY',
                            filter=[eq('{{JS - sgf_site}}', 'tickets', negate=True)])
@@ -250,17 +187,8 @@ for name in ('GA4 - Add To Cart', 'Meta - Add To Cart'):
     by_name(cv['tag'], name)['firingTriggerId'].append(t_atc_sro)
 
 # ── 5. Nové tagy ──
-template_id = str(max(int(c['templateId']) for c in cv['customTemplate']) + 1)
-cv['customTemplate'].append({
-    'accountId': ACC, 'containerId': CON, 'templateId': template_id,
-    'name': 'SGF Consent Bridge (Complianz free)', 'fingerprint': FP,
-    'templateData': consent_template((HERE / 'gtm' / 'sgf-consent-bridge.js').read_text(encoding='utf-8')),
-})
-add_tag('Consent - SGF Bridge', f'cvt_{CON}_{template_id}', [],
-        [CONSENT_INIT, t_cmplz_change], {'consentStatus': 'NOT_NEEDED'},
-        priority={'type': 'INTEGER', 'value': '999'})
-add_tag('Consent - Complianz Listener', 'html', html_tag_params('complianz-listener.html'),
-        [CONSENT_INIT], {'consentStatus': 'NOT_NEEDED'})
+add_tag('Consent - Shared Sync (subdomény bez témy)', 'html', html_tag_params('shared-sync.html'),
+        [just_events], {'consentStatus': 'NOT_NEEDED'})
 add_tag('Tickets Links - ref', 'html', html_tag_params('tickets-links-ref.html'),
         [just_events], {'consentStatus': 'NOT_NEEDED'})
 add_tag('Lead Listener - Elementor Forms', 'html', html_tag_params('lead-listener.html'),

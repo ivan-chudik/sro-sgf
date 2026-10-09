@@ -1,6 +1,6 @@
 # Tracking — sro.sgf.sk + tickets.sgf.sk (GTM-KKRD2SZH)
 
-Basic Consent Mode v2, lišta z **Complianz free**, súhlas do GTM nastavuje vlastná šablóna **SGF Consent Bridge** (okamžite, pred ostatnými tagmi).
+Basic Consent Mode v2, lišta z **Complianz free**. Súhlas nastavuje `consent.js` **priamo na stránke pred GTM** (sro: téma, tickets: mu-plugin `sgf-consent.php`), takže platí ešte pred prvým tagom.
 Súhlas sa zdieľa medzi subdoménami cez cookie `sgf_ev_consent` na `.sgf.sk` (bez URL parametrov).
 
 | Súbor | Čo to je |
@@ -8,14 +8,14 @@ Súhlas sa zdieľa medzi subdoménami cez cookie `sgf_ev_consent` na `.sgf.sk` (
 | `GTM-KKRD2SZH_workspace9.json` | pôvodný export (nemeniť, je to zdroj) |
 | `GTM-KKRD2SZH_sro-tickets.json` | **nový kontajner na import** |
 | `build_sgf_container.py` | skript, ktorý z pôvodného exportu vyrobí nový (`python3 -I tracking/build_sgf_container.py`) |
-| `gtm/sgf-consent-bridge.js` | kód šablóny SGF Consent Bridge (sandboxed JS) |
-| `gtm/*.html` | kód Custom HTML tagov (sledovanie lišty, ref v odkazoch, formuláre) |
+| `gtm/*.html` | kód Custom HTML tagov (spoločná cookie na ostatných subdoménach, ref v odkazoch, formuláre) |
+| `wp-content/.../partials/consent.js` = `tickets-sgf/mu-plugins/sgf-consent/consent.js` | default + update súhlasu pred GTM (dve rovnaké kópie, meniť obe) |
 
 ## 1 · Čo sa v kontajneri zmenilo
 
 | | Pred | Po |
 |---|---|---|
-| Súhlas | `Consent Bridge` (len tickets, z `?consent=` v URL), na ostatných weboch default nastavoval Complianz Premium | šablóna `Consent - SGF Bridge` na **všetkých** weboch (Consent Initialization + zmena v lište): default `denied`, update podľa cookies Complianzu (`cmplz_statistics`, `cmplz_marketing`), zápis do `sgf_ev_consent` na `.sgf.sk`. `Consent - Complianz Listener` po kliknutí v lište pošle `sgf_cmplz_change` |
+| Súhlas | `Consent Bridge` (len tickets, z `?consent=` v URL), na ostatných weboch default nastavoval Complianz Premium | **sro:** `consent.js` v téme pred GTM — default podľa cookies Complianzu / `sgf_ev_consent`, po kliknutí `update` + eventy `sgf_consent_*_granted`. **tickets:** ten istý `consent.js` z mu-pluginu pred GTM4WP (súhlas zo `sgf_ev_consent`). **sao, sto…:** GTM tag `Consent - Shared Sync` zapisuje `sgf_ev_consent` z ich Complianzu |
 | Odkazy na tickets | `Tickets Links` pridával `ref` + `consent`, predvolene `consent=all` | `Tickets Links - ref` pridáva len `ref` (zdroj pre konverzie), súhlas ide cez cookie |
 | Google tagy | `NOT_SET` (pri chýbajúcom defaulte bežali bez súhlasu) | GA4 čaká na `analytics_storage`, Ads + Conversion Linker na `ad_storage` |
 | Meta tagy | `NOT_NEEDED` + v šablóne natvrdo „consent: true“ = posielali sa vždy | čakajú na `ad_storage` |
@@ -29,10 +29,9 @@ Ak tam beží Complianz (aj po expirácii), bude to fungovať rovnako. Ak na nie
 
 ## 2 · Nasadenie
 
-### 2.1 sro.sgf.sk — GTM je v téme (bez pluginu)
-- `elementor-widgets/partials/gtm.php`: consent default `denied` + GTM snippet v `<head>` a `<noscript>` za `<body>`.
-- Nevkladá sa v administrácii ani v náhľade Elementor editora.
-- ID kontajnera je konštanta `XN_GTM_ID` priamo v `partials/gtm.php`.
+### 2.1 sro.sgf.sk — GTM a súhlas sú v téme (bez pluginu)
+- `elementor-widgets/partials/gtm.php` vypíše do `<head>` najprv `consent.js` (default súhlasu), potom GTM snippet; `<noscript>` za `<body>`.
+- Nevkladá sa v administrácii ani v náhľade Elementor editora. ID kontajnera je konštanta `XN_GTM_ID` v `gtm.php`.
 - Na sro **neinštaluj GTM4WP**, kontajner by sa načítal 2×.
 
 ### 2.2 sro.sgf.sk — Complianz free
@@ -48,8 +47,8 @@ Ak tam beží Complianz (aj po expirácii), bude to fungovať rovnako. Ak na nie
 - Kto príde na tickets priamo, bez súhlasu z eventovej stránky, nemeria sa (`denied`), rovnako ako doteraz bez `?consent=`.
 - GTM4WP → WooCommerce: **Track e-commerce** vypnuté. `purchase` posiela mu-plugin (`WooCommerceManager::pushPurchaseToDataLayer`), inak bude nákup 2×.
 - GTM4WP → Page variables: autor (meno, ID) vypnutý.
-- GTM4WP → Consent mode & consent tools → **Google Consent Mode: zapnúť**. Z príznakov zapni len **Functionality Storage** a **Security Storage**, ostatné nechaj vypnuté (= `denied`).
-  Default sa tak nastaví ešte pred načítaním kontajnera, rovnako ako na sro z témy. Záložky Cookiebot / CookieYes… nechaj vypnuté.
+- Nahraj **`mu-plugins/sgf-consent.php`** a priečinok **`mu-plugins/sgf-consent/`** (oba z `tickets-sgf/mu-plugins/`). Samostatný súbor, checkout pluginy sa nemenia; WordPress ho načíta sám.
+- GTM4WP → Consent mode & consent tools → **Google Consent Mode: VYPNUTÉ** (default nastavuje `sgf-consent.php`; druhý default z GTM4WP by súhlas prebil na denied).
 
 ### 2.4 Import do GTM
 1. GTM → Admin → **Import Container** → súbor `GTM-KKRD2SZH_sro-tickets.json`.
@@ -81,6 +80,6 @@ Ak tam beží Complianz (aj po expirácii), bude to fungovať rovnako. Ak na nie
 
 ## 4 · Limity a čo sledovať
 - Bridge číta cookies Complianzu (`cmplz_statistics`, `cmplz_marketing`, `cmplz_banner-status`). Po veľkom update Complianzu zopakuj test z časti 3.
-- Súhlas musí nastavovať **šablóna**, nie Custom HTML: `gtag('consent', …)` z Custom HTML sa zaradí do fronty až za Page View a tagy sa zablokujú (overené v Preview 9. 10. 2026).
+- Súhlas sa nesmie nastavovať Custom HTML tagom v GTM: `gtag('consent', …)` z neho sa zaradí do fronty až za Page View a tagy sa zablokujú (overené v Preview 9. 10. 2026). Preto `consent.js` na stránke pred GTM.
 - Log súhlasov Complianz free nemá (je v Premium).
 - `ref` na tickets drží `sessionStorage` (zdroj nákupu pre Ads konverziu). Po zatvorení karty sa stratí.

@@ -3,7 +3,8 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 
 /*
  * Google Tag Manager — spoločný kontajner SGF eventov a tickets.sgf.sk.
- * Consent default (denied) beží pred kontajnerom, update posiela GTM tag „Consent - Default + Complianz Bridge“.
+ * consent.js beží pred kontajnerom: default z cookies Complianzu / sgf_ev_consent, update po kliknutí v lište.
+ * Rovnaký skript je na tickets.sgf.sk v mu-plugins/sgf-consent/ — meniť oba naraz.
  */
 
 const XN_GTM_ID = 'GTM-KKRD2SZH';
@@ -15,19 +16,7 @@ function xn_gtm_enabled() {
 add_action( 'wp_head', function() {
     if ( ! xn_gtm_enabled() ) return;
     ?>
-<script>
-window.dataLayer = window.dataLayer || [];
-function gtag(){ dataLayer.push(arguments); }
-gtag('consent', 'default', {
-    analytics_storage: 'denied',
-    ad_storage: 'denied',
-    ad_user_data: 'denied',
-    ad_personalization: 'denied',
-    functionality_storage: 'granted',
-    security_storage: 'granted',
-    wait_for_update: 500
-});
-</script>
+<script><?php echo file_get_contents( __DIR__ . '/consent.js' ); ?></script>
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','<?php echo esc_js( XN_GTM_ID ); ?>');</script>
     <?php
 }, 0 );
