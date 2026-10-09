@@ -1,10 +1,22 @@
 <script>
 (function () {
+  if (window.__sgfTicketsRef) return;
+  window.__sgfTicketsRef = true;
+
   var ref = location.hostname.split('.')[0];
+  var DOMAIN = /(^|\.)sgf\.sk$/.test(location.hostname) ? '; domain=.sgf.sk' : '';
+
+  function hasConsent() {
+    return /(^|; )sgf_ev_consent=(a1m[01]|a0m1)(;|$)/.test(document.cookie);
+  }
 
   function addRef(e) {
     var a = e.target && e.target.closest ? e.target.closest('a[href*="tickets.sgf.sk"]') : null;
     if (!a) return;
+    if (hasConsent()) {
+      document.cookie = 'sgf_ref=' + ref + '; path=/' + DOMAIN + '; SameSite=Lax' +
+        (location.protocol === 'https:' ? '; Secure' : '');
+    }
     try {
       var u = new URL(a.href);
       if (u.searchParams.get('ref') === ref) return;

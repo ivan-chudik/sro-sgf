@@ -83,3 +83,17 @@ Ak tam beží Complianz (aj po expirácii), bude to fungovať rovnako. Ak na nie
 - Súhlas sa nesmie nastavovať Custom HTML tagom v GTM: `gtag('consent', …)` z neho sa zaradí do fronty až za Page View a tagy sa zablokujú (overené v Preview 9. 10. 2026). Preto `consent.js` na stránke pred GTM.
 - Log súhlasov Complianz free nemá (je v Premium).
 - `ref` na tickets drží `sessionStorage` (zdroj nákupu pre Ads konverziu). Po zatvorení karty sa stratí.
+
+## 5 · Meta — vlastné konverzie pre kampane Christmas Nitra
+
+Events Manager → **Custom conversions** → Create (zdroj: SGF Pixel).
+
+| Konverzia | Udalosť | Pravidlo | Kategória |
+|---|---|---|---|
+| `CN 2026 – Nákup` | Purchase | parameter **content_name** obsahuje `Christmas Nitra` | Nákup (hodnota z udalosti) |
+| `CN 2026 – Lead` | Lead | **URL** obsahuje `sro.sgf.sk` | Lead |
+
+- Nákup podľa produktu (`content_name`) zachytí každý nákup vstupenky na Christmas Nitra, aj keď zákazník prišiel na tickets priamo z reklamy. `event_source = sro` hovorí len to, že prišiel cez sro.sgf.sk — ten parameter sa hodí na reporty, nie ako jediná podmienka pre optimalizáciu.
+- Vlastná konverzia začne počítať od vytvorenia; v kampani ju vyber ako cieľ optimalizácie.
+
+`event_source` na tickets: `?ref=` v URL → cookie `sgf_ref` (zapíše ju `Tickets Links - ref` pri kliku zo sro, len so súhlasom; prežije presmerovanie `?add-to-cart` → checkout) → `direct`.

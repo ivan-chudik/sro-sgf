@@ -121,7 +121,7 @@ param(by_name(cv['variable'], 'JS - sgf_source'), 'javascript')['value'] = (
     "function() {\n"
     "  var sub = {{Page Hostname}}.split('.')[0];\n"
     "  if (sub !== 'tickets') return sub;\n"
-    "  var ref = {{URL - ref}};\n"
+    "  var ref = {{URL - ref}} || {{Cookie - sgf_ref}};\n"
     "  try {\n"
     "    if (ref) { sessionStorage.setItem('sgf_ref', ref); return ref; }\n"
     "    return sessionStorage.getItem('sgf_ref') || 'direct';\n"
@@ -139,8 +139,10 @@ param(by_name(cv['variable'], 'JS - ticket_type'), 'javascript')['value'] = (
     "  return 'unknown';\n"
     "}"
 )
-add_variable('DLV - form_name', 'v', [tpl('dataLayerVersion', '2'), boolean('setDefaultValue', True), tpl('defaultValue', ''), tpl('name', 'form_name')])
-add_variable('DLV - form_lang', 'v', [tpl('dataLayerVersion', '2'), boolean('setDefaultValue', True), tpl('defaultValue', ''), tpl('name', 'form_lang')])
+dl_version = {'type': 'INTEGER', 'key': 'dataLayerVersion', 'value': '2'}
+add_variable('DLV - form_name', 'v', [dl_version, boolean('setDefaultValue', True), tpl('defaultValue', ''), tpl('name', 'form_name')])
+add_variable('DLV - form_lang', 'v', [dl_version, boolean('setDefaultValue', True), tpl('defaultValue', ''), tpl('name', 'form_lang')])
+add_variable('Cookie - sgf_ref', 'k', [boolean('decodeCookie', False), tpl('name', 'sgf_ref')])
 add_variable('ADS-CONV-ID-SRO', 'c', [tpl('value', '850307814')])
 add_variable('ADS-LABEL-SRO', 'c', [tpl('value', 'DOPLNIT')])
 

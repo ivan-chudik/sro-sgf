@@ -851,7 +851,7 @@
                     {
                         "type": "TEMPLATE",
                         "key": "html",
-                        "value": "<script>\n(function () {\n  var ref = location.hostname.split('.')[0];\n\n  function addRef(e) {\n    var a = e.target && e.target.closest ? e.target.closest('a[href*=\"tickets.sgf.sk\"]') : null;\n    if (!a) return;\n    try {\n      var u = new URL(a.href);\n      if (u.searchParams.get('ref') === ref) return;\n      u.searchParams.set('ref', ref);\n      a.href = u.toString();\n    } catch (err) {}\n  }\n\n  document.addEventListener('mousedown', addRef, true);\n  document.addEventListener('touchstart', addRef, { capture: true, passive: true });\n  document.addEventListener('click', addRef, true);\n})();\n</script>\n"
+                        "value": "<script>\n(function () {\n  if (window.__sgfTicketsRef) return;\n  window.__sgfTicketsRef = true;\n\n  var ref = location.hostname.split('.')[0];\n  var DOMAIN = /(^|\\.)sgf\\.sk$/.test(location.hostname) ? '; domain=.sgf.sk' : '';\n\n  function hasConsent() {\n    return /(^|; )sgf_ev_consent=(a1m[01]|a0m1)(;|$)/.test(document.cookie);\n  }\n\n  function addRef(e) {\n    var a = e.target && e.target.closest ? e.target.closest('a[href*=\"tickets.sgf.sk\"]') : null;\n    if (!a) return;\n    if (hasConsent()) {\n      document.cookie = 'sgf_ref=' + ref + '; path=/' + DOMAIN + '; SameSite=Lax' +\n        (location.protocol === 'https:' ? '; Secure' : '');\n    }\n    try {\n      var u = new URL(a.href);\n      if (u.searchParams.get('ref') === ref) return;\n      u.searchParams.set('ref', ref);\n      a.href = u.toString();\n    } catch (err) {}\n  }\n\n  document.addEventListener('mousedown', addRef, true);\n  document.addEventListener('touchstart', addRef, { capture: true, passive: true });\n  document.addEventListener('click', addRef, true);\n})();\n</script>\n"
                     },
                     {
                         "type": "BOOLEAN",
@@ -1872,7 +1872,7 @@
                     {
                         "type": "TEMPLATE",
                         "key": "javascript",
-                        "value": "function() {\n  var sub = {{Page Hostname}}.split('.')[0];\n  if (sub !== 'tickets') return sub;\n  var ref = {{URL - ref}};\n  try {\n    if (ref) { sessionStorage.setItem('sgf_ref', ref); return ref; }\n    return sessionStorage.getItem('sgf_ref') || 'direct';\n  } catch (e) { return ref || 'direct'; }\n}"
+                        "value": "function() {\n  var sub = {{Page Hostname}}.split('.')[0];\n  if (sub !== 'tickets') return sub;\n  var ref = {{URL - ref}} || {{Cookie - sgf_ref}};\n  try {\n    if (ref) { sessionStorage.setItem('sgf_ref', ref); return ref; }\n    return sessionStorage.getItem('sgf_ref') || 'direct';\n  } catch (e) { return ref || 'direct'; }\n}"
                     }
                 ],
                 "fingerprint": "1791500000000",
@@ -1928,7 +1928,7 @@
                 "type": "v",
                 "parameter": [
                     {
-                        "type": "TEMPLATE",
+                        "type": "INTEGER",
                         "key": "dataLayerVersion",
                         "value": "2"
                     },
@@ -1959,7 +1959,7 @@
                 "type": "v",
                 "parameter": [
                     {
-                        "type": "TEMPLATE",
+                        "type": "INTEGER",
                         "key": "dataLayerVersion",
                         "value": "2"
                     },
@@ -1986,6 +1986,27 @@
                 "accountId": "6003939028",
                 "containerId": "247192358",
                 "variableId": "39",
+                "name": "Cookie - sgf_ref",
+                "type": "k",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "decodeCookie",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "name",
+                        "value": "sgf_ref"
+                    }
+                ],
+                "fingerprint": "1791500000000",
+                "formatValue": {}
+            },
+            {
+                "accountId": "6003939028",
+                "containerId": "247192358",
+                "variableId": "40",
                 "name": "ADS-CONV-ID-SRO",
                 "type": "c",
                 "parameter": [
@@ -2001,7 +2022,7 @@
             {
                 "accountId": "6003939028",
                 "containerId": "247192358",
-                "variableId": "40",
+                "variableId": "41",
                 "name": "ADS-LABEL-SRO",
                 "type": "c",
                 "parameter": [
