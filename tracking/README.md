@@ -41,9 +41,9 @@ Ak tam beží Complianz (aj po expirácii), bude to fungovať rovnako. Ak na nie
 5. Nechaj Complianz vygenerovať stránku **Zásady cookies** (SK aj EN). Do pätičky daj odkaz na ňu a na zmenu súhlasu. Z nej odkáž na GDPR na `www.sgf.sk`.
 6. **Overiť:** GTM sa musí načítať aj pred súhlasom (DevTools → Network → `gtm.js`). Ak ho Complianz blokuje, v Integrations vypni blokovanie GTM.
 
-### 2.3 tickets.sgf.sk
-- **Odporúčané:** Complianz free aj tu (samostatný plugin, mu-pluginy sa nemenia). Bez lišty na tickets sa nemerajú ľudia, ktorí prídu priamo na tickets, napr. z reklamy.
-- Kto prišiel zo `sro` a už rozhodol, tomu súhlas platí hneď cez `sgf_ev_consent`. Lišta Complianzu sa mu však na tickets zobrazí znova, lebo Complianz o našej cookie nevie. Ak tam klikne inak, platí nová voľba.
+### 2.3 tickets.sgf.sk — bez lišty, bez Complianzu (ako doteraz)
+- Súhlas sa preberá z eventovej stránky (sro, sao, sto…) cez `sgf_ev_consent`, na tickets sa už neklikne druhýkrát.
+- Kto príde na tickets priamo, bez súhlasu z eventovej stránky, nemeria sa (`denied`), rovnako ako doteraz bez `?consent=`.
 - GTM4WP → Integration → WooCommerce: **purchase** musí ostať vypnutý, posiela ho mu-plugin (`WooCommerceManager::pushPurchaseToDataLayer`). Inak bude nákup 2×.
 
 ### 2.4 Import do GTM
