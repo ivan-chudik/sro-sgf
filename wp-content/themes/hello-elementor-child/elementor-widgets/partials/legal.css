@@ -108,82 +108,155 @@
 }
 
 /* ── Prehľad cookies a služieb (#cmplz-cookies-overview) ── */
-#cmplz-document details,
-#cmplz-document .cmplz-dropdown {
-    margin: 0 0 12px;
-    border: 1px solid #2a2a33;
-    border-radius: 22px;
-    background: #0a0a0d;
+#cmplz-document #cmplz-cookies-overview {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin: 8px 0 24px;
+}
+#cmplz-document #cmplz-cookies-overview .cmplz-dropdown {
+    margin: 0;
+    padding: 0;
+    border: 1px solid #2a2a33 !important;
+    border-radius: 22px !important;
+    background: #0a0a0d !important;
     overflow: hidden;
 }
-#cmplz-document details summary {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    padding: 18px 24px;
-    cursor: pointer;
+#cmplz-document #cmplz-cookies-overview .cmplz-dropdown summary {
+    position: relative;
+    display: block;
+    margin: 0;
+    padding: 18px 76px 18px 24px;
+    border: 0 !important;
+    border-radius: 0 !important;
+    background: transparent !important;
     list-style: none;
-    color: #fff;
-    background: transparent;
+    cursor: pointer;
 }
-#cmplz-document details summary::-webkit-details-marker { display: none; }
-#cmplz-document details summary::after {
-    content: "";
-    flex: 0 0 auto;
-    width: 10px;
-    height: 10px;
-    margin-left: auto;
-    border-right: 2px solid var(--xn-pink);
-    border-bottom: 2px solid var(--xn-pink);
-    transform: rotate(45deg);
-    transition: transform .25s;
+#cmplz-document #cmplz-cookies-overview .cmplz-dropdown summary::-webkit-details-marker { display: none; }
+#cmplz-document #cmplz-cookies-overview .cmplz-dropdown summary::before,
+#cmplz-document #cmplz-cookies-overview .cmplz-dropdown summary > div::before,
+#cmplz-document #cmplz-cookies-overview .cmplz-dropdown summary > div::after { content: none !important; display: none !important; }
+#cmplz-document #cmplz-cookies-overview .cmplz-dropdown summary::after {
+    content: "" !important;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    width: 36px;
+    height: 36px;
+    margin: -18px 0 0;
+    border: 1px solid #2a2a33;
+    border-radius: 50%;
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512'%3E%3Cpath fill='%23f65b80' d='M224 416c-8.188 0-16.38-3.125-22.62-9.375l-192-192c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L224 338.8l169.4-169.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-192 192C240.4 412.9 232.2 416 224 416z'/%3E%3C/svg%3E") center / 14px 14px no-repeat;
+    transform: none;
+    transition: transform .25s, border-color .2s;
 }
-#cmplz-document details[open] > summary::after { transform: rotate(-135deg); }
-#cmplz-document details summary h3,
-#cmplz-document details summary h4,
-#cmplz-document details summary p {
+#cmplz-document #cmplz-cookies-overview .cmplz-dropdown[open] > summary::after { transform: rotate(180deg); }
+#cmplz-document #cmplz-cookies-overview .cmplz-dropdown summary:hover::after { border-color: var(--xn-pink); }
+#cmplz-document #cmplz-cookies-overview .cmplz-dropdown summary > div {
+    display: flex !important;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 4px 16px;
+    margin: 0;
+    padding: 0;
+    background: transparent !important;
+}
+#cmplz-document #cmplz-cookies-overview .cmplz-dropdown summary h3 {
+    margin: 0;
+    font-family: var(--xn-font);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: .04em;
+    text-transform: uppercase;
+    color: #fff !important;
+}
+#cmplz-document #cmplz-cookies-overview .cmplz-dropdown summary p {
+    margin: 0;
+    font-size: 13px;
+    line-height: 1.4;
+    color: #9a9aa6 !important;
+}
+#cmplz-document #cmplz-cookies-overview .cmplz_consent_per_service_label,
+#cmplz-document #cmplz-cookies-overview .cmplz-accept-service { display: none !important; }
+
+#cmplz-document #cmplz-cookies-overview .cmplz-service-description,
+#cmplz-document #cmplz-cookies-overview .cmplz-sharing-data {
+    display: block;
+    margin: 0;
+    padding: 0 24px 16px;
+    border: 0 !important;
+    background: transparent !important;
+}
+#cmplz-document #cmplz-cookies-overview .cmplz-dropdown h4 {
+    margin: 0 0 6px;
+    font-family: var(--xn-font-text);
+    font-weight: 700;
+    font-size: 11px;
+    line-height: 1.4;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: var(--xn-pink) !important;
+}
+#cmplz-document #cmplz-cookies-overview .cmplz-service-description p,
+#cmplz-document #cmplz-cookies-overview .cmplz-sharing-data p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #cfcfd8 !important;
+}
+#cmplz-document #cmplz-cookies-overview .cmplz-service-description p:empty { display: none; }
+#cmplz-document #cmplz-cookies-overview .cmplz-service-description:has(p:empty) { display: none; }
+
+#cmplz-document #cmplz-cookies-overview .cookies-per-purpose {
+    display: grid !important;
+    grid-template-columns: minmax(0, 1.3fr) minmax(0, .8fr) minmax(0, 2fr);
+    grid-auto-flow: row dense;
+    margin: 4px 24px 24px;
+    padding: 0;
+    border: 1px solid #23232b !important;
+    border-radius: 16px !important;
+    background: #15151b !important;
+    overflow: hidden;
+}
+#cmplz-document #cmplz-cookies-overview .cookies-per-purpose > div {
+    margin: 0;
+    padding: 12px 16px;
+    border: 0 !important;
+    border-top: 1px solid #23232b !important;
+    background: transparent !important;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #cfcfd8 !important;
+    word-break: break-word;
+}
+#cmplz-document #cmplz-cookies-overview .cookies-per-purpose .purpose {
+    grid-column: 1 / -1;
+    padding: 14px 16px;
+    border-top: 0 !important;
+    background: rgba(246, 91, 128, .08) !important;
+}
+#cmplz-document #cmplz-cookies-overview .cookies-per-purpose .purpose h4 { margin: 0; }
+#cmplz-document #cmplz-cookies-overview .cookies-per-purpose h5 {
     margin: 0;
     font-family: var(--xn-font-text);
     font-weight: 700;
-    font-size: 16px;
-    letter-spacing: .02em;
-    text-transform: none;
-    color: #fff;
+    font-size: 11px;
+    line-height: 1.4;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: #8a8a94 !important;
 }
-#cmplz-document details summary p,
-#cmplz-document details summary .cmplz-category-info,
-#cmplz-document details summary .cmplz-service-header p { font-weight: 400; font-size: 13px; color: #9a9aa6; }
-#cmplz-document details > div,
-#cmplz-document details .cmplz-service-description,
-#cmplz-document details .cmplz-sharing-data {
-    padding: 0 24px 18px;
-    background: transparent;
-    color: #cfcfd8;
-}
-#cmplz-document details .cmplz-service-description h4,
-#cmplz-document details .cmplz-sharing-data h4 { margin: 14px 0 6px; }
-
-#cmplz-document .cookies-per-purpose {
-    margin: 0 24px 20px;
-    border: 1px solid #23232b;
-    border-radius: 16px;
-    background: #15151b;
-    overflow: hidden;
-}
-#cmplz-document .cookies-per-purpose > div {
-    padding: 10px 16px;
-    border-color: #23232b !important;
-    background: transparent;
-    font-size: 14px;
-    line-height: 1.5;
-    color: #cfcfd8;
-    word-break: break-word;
-}
-#cmplz-document .cookies-per-purpose .purpose {
-    background: rgba(246, 91, 128, .08);
-}
-#cmplz-document .cookies-per-purpose .purpose h4 { color: var(--xn-pink); }
-#cmplz-document .cookies-per-purpose .name { font-weight: 700; color: #fff; }
+#cmplz-document #cmplz-cookies-overview .cookies-per-purpose .name-header ~ .name-header,
+#cmplz-document #cmplz-cookies-overview .cookies-per-purpose .retention-header ~ .retention-header,
+#cmplz-document #cmplz-cookies-overview .cookies-per-purpose .function-header ~ .function-header { display: none !important; }
+#cmplz-document #cmplz-cookies-overview .cookies-per-purpose .name-header { grid-column: 1; }
+#cmplz-document #cmplz-cookies-overview .cookies-per-purpose .retention-header { grid-column: 2; }
+#cmplz-document #cmplz-cookies-overview .cookies-per-purpose .function-header { grid-column: 3; }
+#cmplz-document #cmplz-cookies-overview .cookies-per-purpose .name { grid-column: 1; font-weight: 700; color: #fff !important; }
+#cmplz-document #cmplz-cookies-overview .cookies-per-purpose .retention { grid-column: 2; }
+#cmplz-document #cmplz-cookies-overview .cookies-per-purpose .function { grid-column: 3; }
 
 /* ── Správa súhlasu (#cmplz-manage-consent-container) ── */
 #cmplz-document #cmplz-manage-consent-container {
@@ -365,11 +438,24 @@
     #cmplz-document p,
     #cmplz-document ul li { font-size: 15px; }
     #cmplz-document h2 { margin-top: 48px; padding-top: 24px; }
-    #cmplz-document details summary { padding: 16px 18px; }
-    #cmplz-document details > div,
-    #cmplz-document details .cmplz-service-description,
-    #cmplz-document details .cmplz-sharing-data { padding: 0 18px 16px; }
-    #cmplz-document .cookies-per-purpose { margin: 0 18px 16px; }
+    #cmplz-document #cmplz-cookies-overview .cmplz-dropdown summary { padding: 16px 68px 16px 18px; }
+    #cmplz-document #cmplz-cookies-overview .cmplz-dropdown summary::after { right: 14px; }
+    #cmplz-document #cmplz-cookies-overview .cmplz-dropdown summary h3 { font-size: 17px; }
+    #cmplz-document #cmplz-cookies-overview .cmplz-service-description,
+    #cmplz-document #cmplz-cookies-overview .cmplz-sharing-data { padding: 0 18px 14px; }
+    #cmplz-document #cmplz-cookies-overview .cookies-per-purpose {
+        grid-template-columns: minmax(0, 110px) minmax(0, 1fr);
+        margin: 4px 18px 18px;
+    }
+    #cmplz-document #cmplz-cookies-overview .cookies-per-purpose .name-header ~ .name-header,
+    #cmplz-document #cmplz-cookies-overview .cookies-per-purpose .retention-header ~ .retention-header,
+    #cmplz-document #cmplz-cookies-overview .cookies-per-purpose .function-header ~ .function-header { display: block !important; }
+    #cmplz-document #cmplz-cookies-overview .cookies-per-purpose :is(.name-header, .retention-header, .function-header) { grid-column: 1; padding-right: 8px; }
+    #cmplz-document #cmplz-cookies-overview .cookies-per-purpose :is(.name, .retention, .function) { grid-column: 2; padding-left: 8px; }
+    #cmplz-document #cmplz-cookies-overview .cookies-per-purpose :is(.retention-header, .retention, .function-header, .function) { border-top-color: transparent !important; }
+    #cmplz-document #cmplz-cookies-overview .cookies-per-purpose > div:not(.purpose) { padding-top: 6px; padding-bottom: 6px; }
+    #cmplz-document #cmplz-cookies-overview .cookies-per-purpose :is(.name-header, .name) { padding-top: 14px; }
+    #cmplz-document #cmplz-cookies-overview .cookies-per-purpose :is(.function-header, .function) { padding-bottom: 14px; }
     #cmplz-document #cmplz-manage-consent-container .cmplz-category-header { gap: 12px; padding: 16px 14px 16px 18px; }
     #cmplz-document #cmplz-manage-consent-container .cmplz-category-title { font-size: 17px; }
     #cmplz-document #cmplz-manage-consent-container .cmplz-always-active { padding: 5px 10px; font-size: 10px; letter-spacing: .1em; }
