@@ -85,6 +85,17 @@ add_action('wp_enqueue_scripts', function() use ($dir, $uri, $xn_widgets) {
 
 });
 
+// Právne dokumenty Complianzu — len na stránkach, kde Complianz načítal svoje document CSS
+add_action('wp_enqueue_scripts', function() use ($dir, $uri) {
+    if ( ! wp_style_is( 'cmplz-document', 'enqueued' ) ) return;
+    wp_enqueue_style(
+        'xn-legal-style',
+        $uri . 'partials/legal.css',
+        ['cmplz-document'],
+        filemtime($dir . 'partials/legal.css')
+    );
+}, 100);
+
 // ── KATEGÓRIA ────────────────────────────────────────────────────────
 add_action('elementor/elements/categories_registered', function($elements_manager) {
     $elements_manager->add_category('custom-widgets', [
