@@ -90,10 +90,12 @@ Events Manager → **Custom conversions** → Create (zdroj: SGF Pixel).
 
 | Konverzia | Udalosť | Pravidlo | Kategória |
 |---|---|---|---|
-| `CN 2026 – Nákup` | Purchase | parameter **event_source** obsahuje `sro` (rovnako ako ostatné eventy SGF) | Nákup (hodnota z udalosti) |
+| `CN 2026 – Nákup` | Purchase | parameter **content_name** obsahuje `Christmas Nitra` | Nákup (hodnota z udalosti) |
 | `CN 2026 – Lead` | Lead | **URL** obsahuje `sro.sgf.sk` | Lead |
 
-- `event_source = sro` znamená, že nákupca prišiel na tickets cez sro.sgf.sk (`?ref=` alebo cookie `sgf_ref`). Kto príde na tickets priamo z reklamy bez sro, má `direct` a do tejto konverzie sa nezapočíta.
+- `content_name` (názov produktu) zachytí každý nákup vstupenky na Christmas Nitra bez ohľadu na cestu (sro, iná SGF stránka, priamo). `event_source = sro` slúži na reporty, koľko predaja prišlo cez sro.sgf.sk.
+- Platí len pre návštevníkov so súhlasom: tickets nemá lištu, súhlas preberá zo SGF eventovej stránky.
+- Ďalší ročník: nová konverzia s pravidlom `Christmas Nitra` + rok (napr. `2027`).
 - Vlastná konverzia začne počítať od vytvorenia; v kampani ju vyber ako cieľ optimalizácie.
 
 `event_source` na tickets: `?ref=` v URL → cookie `sgf_ref` (zapíše ju `Tickets Links - ref` pri kliku zo sro, len so súhlasom; prežije presmerovanie `?add-to-cart` → checkout) → `direct`.
