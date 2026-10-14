@@ -517,7 +517,7 @@
         "date": "26 November 2026",
         "btn_text": "Ticket · day 1",
         "btn_style": "grad",
-        "items": "WG | Training and podium training | seniors and juniors\nOpen | Individuals · day 1 | international invitational competition",
+        "items": "Open | Individuals · born 2019 – 2016 | award ceremony\nOpen | Individuals · born 2015 – 2014 | award ceremony",
         "_id": "b935b61"
        },
        {
@@ -526,7 +526,7 @@
         "date": "27 November 2026",
         "btn_text": "Ticket · day 2",
         "btn_style": "grad",
-        "items": "WG | Qualification · all-around | seniors and juniors · hoop, ball, clubs, ribbon\nOpen | Individuals · day 2 | international invitational competition",
+        "items": "WG | FIG qualification · juniors | award ceremony\nOpen | Individuals · juniors | award ceremony\nWG | FIG qualification · seniors | opening ceremony · award ceremony",
         "_id": "4d044cb"
        },
        {
@@ -535,7 +535,7 @@
         "date": "28 November 2026",
         "btn_text": "Ticket · finals",
         "btn_style": "primary",
-        "items": "WG | Apparatus finals | hoop, ball, clubs, ribbon · award ceremony\nOpen | Individuals and groups\nSVK | Slovak National Group Championships",
+        "items": "Open | Individuals · born 2013 | award ceremony\nOpen | Individuals · seniors | award ceremony\nSVK | Groups without apparatus · born 2020 – 2017 and younger | Championships opening · Christmas Nitra & SVK award ceremony\nWG | FIG finals · juniors and seniors | finals opening ceremony",
         "_id": "16d6b5f"
        },
        {
@@ -544,7 +544,7 @@
         "date": "29 November 2026",
         "btn_text": "Ticket · day 4",
         "btn_style": "grad",
-        "items": "Open | Groups | doubles and triplets\nSVK | Slovak National Group Championships | award ceremony",
+        "items": "SVK | Pairs and trios without apparatus | Championships opening ceremony\nSVK | Pairs and trios with apparatus | Christmas Nitra & SVK award ceremony\nSVK | Groups · hopes and juniors\nSVK | Groups · pre-juniors and seniors | Christmas Nitra & SVK award ceremony",
         "_id": "9fbca22"
        }
       ],
