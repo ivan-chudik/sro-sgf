@@ -96,13 +96,13 @@ class Elementor_Widget_Schedule extends \Elementor\Widget_Base {
             'title_field' => '{{{ label }}} — {{{ title }}}',
             'default'     => [
                 [ 'label' => 'Deň 1', 'title' => 'Štvrtok', 'date' => '26. novembra 2026', 'btn_text' => 'Vstupenka · deň 1', 'btn_style' => 'grad',
-                  'items' => "WG | Tréningy a pódiové tréningy | seniorky a juniorky\nOpen | Jednotlivkyne · 1. deň | medzinárodná pozývacia súťaž" ],
+                  'items' => "Open | Jednotlivkyne · ročníky 2019 – 2016 | vyhlásenie výsledkov\nOpen | Jednotlivkyne · ročníky 2015 – 2014 | vyhlásenie výsledkov" ],
                 [ 'label' => 'Deň 2', 'title' => 'Piatok', 'date' => '27. novembra 2026', 'btn_text' => 'Vstupenka · deň 2', 'btn_style' => 'grad',
-                  'items' => "WG | Kvalifikácia · viacboj | seniorky a juniorky · obruč, lopta, kužele, stuha\nOpen | Jednotlivkyne · 2. deň | medzinárodná pozývacia súťaž" ],
+                  'items' => "WG | Kvalifikácia FIG · juniorky | vyhlásenie výsledkov\nOpen | Jednotlivkyne · juniorky | vyhlásenie výsledkov\nWG | Kvalifikácia FIG · seniorky | slávnostné otvorenie súťaže · vyhlásenie výsledkov" ],
                 [ 'label' => 'Deň 3', 'title' => 'Sobota', 'date' => '28. novembra 2026', 'btn_text' => 'Vstupenka · finále', 'btn_style' => 'primary',
-                  'items' => "WG | Finále na náčiní | obruč, lopta, kužele, stuha · vyhlásenie výsledkov\nOpen | Jednotlivkyne a spoločné skladby\nMSR | Majstrovstvá SR spoločných skladieb" ],
+                  'items' => "Open | Jednotlivkyne · ročník 2013 | vyhlásenie výsledkov\nOpen | Jednotlivkyne · seniorky | vyhlásenie výsledkov\nMSR | Spoločné skladby bez náčinia · 2020 – 2017 a mladšie | slávnostné otvorenie MSR · vyhlásenie výsledkov Vianočnej Nitry a MSR\nWG | Finále FIG · juniorky a seniorky | slávnostné otvorenie finále" ],
                 [ 'label' => 'Deň 4', 'title' => 'Nedeľa', 'date' => '29. novembra 2026', 'btn_text' => 'Vstupenka · deň 4', 'btn_style' => 'grad',
-                  'items' => "Open | Spoločné skladby | dvojice a trojice\nMSR | Majstrovstvá SR spoločných skladieb | vyhlásenie výsledkov" ],
+                  'items' => "MSR | Dvojice a trojice bez náčinia | slávnostné otvorenie MSR\nMSR | Dvojice a trojice s náčiním | vyhlásenie výsledkov Vianočnej Nitry a MSR\nMSR | Spoločné skladby · nádeje a juniorky\nMSR | Spoločné skladby · pre-juniorky a seniorky | vyhlásenie výsledkov Vianočnej Nitry a MSR" ],
             ],
         ]);
         $this->end_controls_section();
