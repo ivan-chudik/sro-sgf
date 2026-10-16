@@ -31,6 +31,26 @@
             track.style.scrollBehavior = '';
         };
 
+        const normalize = function() {
+            if ( busy ) return;
+            const m = metrics();
+            if ( m.max < 2 * m.unit - 2 ) return;
+            const pos = track.scrollLeft;
+            if ( pos < m.unit / 2 ) {
+                track.insertBefore(track.lastElementChild, track.firstElementChild);
+                jump(pos + m.unit);
+            } else if ( pos > m.max - m.unit / 2 ) {
+                track.appendChild(track.firstElementChild);
+                jump(pos - m.unit);
+            }
+        };
+
+        let idle;
+        const onScroll = function() {
+            clearTimeout(idle);
+            idle = setTimeout(normalize, 140);
+        };
+
         const update = function() {
             if ( nav ) nav.classList.toggle('is-hidden', track.scrollWidth - track.clientWidth <= 2);
         };
@@ -57,7 +77,7 @@
             track.scrollBy({ left: dir * dist, behavior: 'smooth' });
 
             let done = false;
-            const release = function() { if ( done ) return; done = true; busy = false; };
+            const release = function() { if ( done ) return; done = true; busy = false; normalize(); };
             if ( 'onscrollend' in window ) track.addEventListener('scrollend', release, { once: true });
             setTimeout(release, 700);
         };
@@ -65,9 +85,13 @@
         if ( prev ) prev.onclick = function() { go(-1); };
         if ( next ) next.onclick = function() { go(1); };
 
-        if ( 'ResizeObserver' in window ) new ResizeObserver(update).observe(track);
-        else window.addEventListener('resize', update);
+        if ( 'onscrollend' in window ) track.addEventListener('scrollend', normalize);
+        track.addEventListener('scroll', onScroll, { passive: true });
+
+        if ( 'ResizeObserver' in window ) new ResizeObserver(function() { update(); normalize(); }).observe(track);
+        else window.addEventListener('resize', function() { update(); normalize(); });
         update();
+        normalize();
     }
 
     $(window).on('elementor/frontend/init', function() {
