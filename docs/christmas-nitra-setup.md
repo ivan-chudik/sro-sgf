@@ -1,6 +1,6 @@
 # Christmas Nitra 2026 — nasadenie na sro.sgf.sk
 
-17 custom Elementor widgetov (16 blokov landing page + `maintenance`) v
+19 custom Elementor widgetov (18 blokov landing page + `maintenance`) v
 `wp-content/themes/hello-elementor-child/elementor-widgets/`. Kategória v paneli:
 **Christmas Nitra**, názvy widgetov začínajú `CN ·`.
 
@@ -71,6 +71,18 @@ Elementor → Tools → Maintenance Mode → *Coming Soon* → **Choose Template
 | Odpočet | CN · Hero → Odpočet → cieľový dátum `2026-11-26T09:00:00+01:00` |
 
 SK aj EN stránku treba meniť vždy obe.
+
+## 8 · Video spot a Novinky (pridané 10/2026)
+- **CN · Video spot** (`video`) — YouTube spot, na homepage za tickerom. Video sa načíta až po kliknutí
+  (youtube-nocookie, bez cookies pred prehraním). Odkaz/ID videa: sekcia *Video*. EN stránka má zatiaľ SK spot —
+  keď príde EN verzia, prepíš *YouTube odkaz* na EN stránke.
+- **CN · Novinky** (`news`) — slider WordPress článkov, na homepage za *Kto súťaží*. Jazyk sa filtruje automaticky
+  (Polylang), kategórie voliteľne v sekcii *Články*. Bez článkov sa sekcia na webe skryje.
+- Pri článku je pole **Pôvodný článok (sgf.sk)** (bočný panel editora). Vyplnené → karta vedie na sgf.sk (nové okno),
+  prázdne → na článok na sro.sgf.sk.
+- Testovacie články: `wp-import/novinky-test.xml` → *Nástroje → Import → WordPress*, zaškrtni *Stiahnuť a importovať
+  prílohy*. 4 SK + 4 EN články (slug `test-…`), kategórie *Novinky* / *News*. Po kontrole ich zmaž (aj obrázky `cn-test-…` v Médiách).
+- Na existujúcu stránku sa widgety pridávajú ručne: nový Container (Full width, padding 0, gap 0) → widget z kategórie *Christmas Nitra*.
 
 ## Technické poznámky
 - Zdieľaný základ: `partials/base.css` (reset scoped na `.xn-block`, `.xn-wrap`, typografia, tlačidlá `.xn-btn--primary/--grad`),

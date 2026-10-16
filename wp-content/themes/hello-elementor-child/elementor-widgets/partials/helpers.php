@@ -200,3 +200,17 @@ function xn_button( $args ) {
     $btn = $args;
     include __DIR__ . '/button.php';
 }
+
+/** YouTube URL (watch, youtu.be, embed, shorts) alebo samotné ID → 11-znakové ID, inak ''. */
+function xn_youtube_id( $raw ) {
+    $raw = trim( (string) $raw );
+    if ( preg_match( '/^[A-Za-z0-9_-]{11}$/', $raw ) ) return $raw;
+    if ( preg_match( '#(?:youtube(?:-nocookie)?\.com/(?:watch\?(?:.*&)?v=|embed/|shorts/|live/)|youtu\.be/)([A-Za-z0-9_-]{11})#', $raw, $m ) ) return $m[1];
+    return '';
+}
+
+/** Odkaz článku: pôvodný článok (meta _xn_source_url) má prednosť pred článkom na tomto webe. */
+function xn_post_link( $post_id ) {
+    $source = trim( (string) get_post_meta( $post_id, '_xn_source_url', true ) );
+    return $source !== '' ? $source : get_permalink( $post_id );
+}

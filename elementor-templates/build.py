@@ -14,8 +14,8 @@ import os
 OUT = os.path.dirname(os.path.abspath(__file__))
 THEME = 'https://sro.sgf.sk/wp-content/themes/hello-elementor-child/elementor-widgets/assets/'
 
-ORDER = ['header', 'hero', 'facts', 'ticker', 'two-paths', 'reasons', 'pricing', 'schedule',
-         'competition', 'livestream', 'faq', 'venue', 'reminder', 'partners', 'footer', 'sticky-cta']
+ORDER = ['header', 'hero', 'facts', 'ticker', 'video', 'two-paths', 'reasons', 'pricing', 'schedule',
+         'competition', 'news', 'livestream', 'faq', 'venue', 'reminder', 'partners', 'footer', 'sticky-cta']
 
 
 def uid(*parts):
@@ -179,6 +179,24 @@ EN = {
             {'title': 'Results', 'url': {'url': '', 'is_external': '', 'nofollow': ''}, 'meta': 'After the event'},
         ]),
         'box3_note': p('<b>Deadlines for clubs:</b> definitive registration 30 Sept 2026 · nominative registration 18 Oct 2026 · music upload to KSIS 1 Nov 2026 · <a href="mailto:christmas.nitra@gmail.com">christmas.nitra@gmail.com</a>'),
+    },
+    'video': {
+        'anchor_id': 'spot',
+        'eyebrow': 'Spot · Christmas Nitra 2026',
+        'title': 'This is Christmas Nitra',
+        'video_title': 'Christmas Nitra 2026 — spot',
+        'play_label': 'Play video',
+        'btn1_text': 'Buy tickets',
+    },
+    'news': {
+        'anchor_id': 'news',
+        'eyebrow': 'News',
+        'title': "What's happening at Christmas Nitra",
+        'date_format': 'j M Y',
+        'more_text': 'Read article',
+        'prev_label': 'Previous articles',
+        'next_label': 'Next articles',
+        'btn1_text': 'All news on sgf.sk',
     },
     'livestream': {
         'title': "Can't make it? Miss nothing.",

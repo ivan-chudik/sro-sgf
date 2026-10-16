@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- Testovacie články pre CN · Novinky. Nástroje → Import → WordPress. Po teste zmaž (slug začína test-). -->
+<rss version="2.0" xmlns:excerpt="http://wordpress.org/export/1.2/excerpt/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:wp="http://wordpress.org/export/1.2/">
+<channel>
+<title>sro.sgf.sk</title>
+<link>https://sro.sgf.sk</link>
+<description>Christmas Nitra — testovacie novinky</description>
+<language>sk-SK</language>
+<wp:wxr_version>1.2</wp:wxr_version>
+<wp:base_site_url>https://sro.sgf.sk</wp:base_site_url>
+<wp:base_blog_url>https://sro.sgf.sk</wp:base_blog_url>
+<wp:author><wp:author_id>1</wp:author_id><wp:author_login><![CDATA[cn-test]]></wp:author_login><wp:author_email><![CDATA[]]></wp:author_email><wp:author_display_name><![CDATA[Christmas Nitra]]></wp:author_display_name><wp:author_first_name><![CDATA[]]></wp:author_first_name><wp:author_last_name><![CDATA[]]></wp:author_last_name></wp:author>
+<wp:category><wp:term_id>9001</wp:term_id><wp:category_nicename><![CDATA[novinky]]></wp:category_nicename><wp:category_parent><![CDATA[]]></wp:category_parent><wp:cat_name><![CDATA[Novinky]]></wp:cat_name></wp:category>
+<wp:category><wp:term_id>9002</wp:term_id><wp:category_nicename><![CDATA[news]]></wp:category_nicename><wp:category_parent><![CDATA[]]></wp:category_parent><wp:cat_name><![CDATA[News]]></wp:cat_name></wp:category>
+<item>
+<title><![CDATA[Christmas Nitra — pódium]]></title>
+<link>https://sro.sgf.sk/wp-content/themes/hello-elementor-child/elementor-widgets/assets/photo/moment-podium.jpg</link>
+<pubDate>Thu, 01 Oct 2026 08:00:00 +0000</pubDate>
+<dc:creator><![CDATA[cn-test]]></dc:creator>
+<guid isPermaLink="false">https://sro.sgf.sk/wp-content/themes/hello-elementor-child/elementor-widgets/assets/photo/moment-podium.jpg</guid>
+<description></description>
+<content:encoded><![CDATA[]]></content:encoded>
+<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+<wp:post_id>9101</wp:post_id>
+<wp:post_date>2026-10-01 10:00:00</wp:post_date>
+<wp:post_date_gmt>2026-10-01 08:00:00</wp:post_date_gmt>
+<wp:comment_status>closed</wp:comment_status>
+<wp:ping_status>closed</wp:ping_status>
+<wp:post_name><![CDATA[cn-test-moment-podium]]></wp:post_name>
+<wp:status>inherit</wp:status>
+<wp:post_parent>0</wp:post_parent>
+<wp:menu_order>0</wp:menu_order>
+<wp:post_type>attachment</wp:post_type>
+<wp:post_password><![CDATA[]]></wp:post_password>
+<wp:is_sticky>0</wp:is_sticky>
+<wp:attachment_url>https://sro.sgf.sk/wp-content/themes/hello-elementor-child/elementor-widgets/assets/photo/moment-podium.jpg</wp:attachment_url>
+</item>
+<item>
+<title><![CDATA[Christmas Nitra — obruče]]></title>
+<link>https://sro.sgf.sk/wp-content/themes/hello-elementor-child/elementor-widgets/assets/photo/moment-hoops-2024.jpg</link>
+<pubDate>Thu, 01 Oct 2026 08:00:00 +0000</pubDate>
+<dc:creator><![CDATA[cn-test]]></dc:creator>
+<guid isPermaLink="false">https://sro.sgf.sk/wp-content/themes/hello-elementor-child/elementor-widgets/assets/photo/moment-hoops-2024.jpg</guid>
+<description></description>
+<content:encoded><![CDATA[]]></content:encoded>
+<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+<wp:post_id>9102</wp:post_id>
+<wp:post_date>2026-10-01 10:00:00</wp:post_date>
+<wp:post_date_gmt>2026-10-01 08:00:00</wp:post_date_gmt>
+<wp:comment_status>closed</wp:comment_status>
+<wp:ping_status>closed</wp:ping_status>
+<wp:post_name><![CDATA[cn-test-moment-hoops-2024]]></wp:post_name>
+<wp:status>inherit</wp:status>
+<wp:post_parent>0</wp:post_parent>
+<wp:menu_order>0</wp:menu_order>
+<wp:post_type>attachment</wp:post_type>
+<wp:post_password><![CDATA[]]></wp:post_password>
+<wp:is_sticky>0</wp:is_sticky>
+<wp:attachment_url>https://sro.sgf.sk/wp-content/themes/hello-elementor-child/elementor-widgets/assets/photo/moment-hoops-2024.jpg</wp:attachment_url>
+</item>
+<item>
+<title><![CDATA[Mestská športová hala Nitra]]></title>
+<link>https://sro.sgf.sk/wp-content/themes/hello-elementor-child/elementor-widgets/assets/photo/venue-hall.jpg</link>
+<pubDate>Thu, 01 Oct 2026 08:00:00 +0000</pubDate>
+<dc:creator><![CDATA[cn-test]]></dc:creator>
+<guid isPermaLink="false">https://sro.sgf.sk/wp-content/themes/hello-elementor-child/elementor-widgets/assets/photo/venue-hall.jpg</guid>
+<description></description>
+<content:encoded><![CDATA[]]></content:encoded>
+<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+<wp:post_id>9103</wp:post_id>
+<wp:post_date>2026-10-01 10:00:00</wp:post_date>
+<wp:post_date_gmt>2026-10-01 08:00:00</wp:post_date_gmt>
+<wp:comment_status>closed</wp:comment_status>
+<wp:ping_status>closed</wp:ping_status>
+<wp:post_name><![CDATA[cn-test-venue-hall]]></wp:post_name>
+<wp:status>inherit</wp:status>
+<wp:post_parent>0</wp:post_parent>
+<wp:menu_order>0</wp:menu_order>
+<wp:post_type>attachment</wp:post_type>
+<wp:post_password><![CDATA[]]></wp:post_password>
+<wp:is_sticky>0</wp:is_sticky>
+<wp:attachment_url>https://sro.sgf.sk/wp-content/themes/hello-elementor-child/elementor-widgets/assets/photo/venue-hall.jpg</wp:attachment_url>
+</item>
+<item>
+<title><![CDATA[Christmas Nitra — spoločná skladba]]></title>
+<link>https://sro.sgf.sk/wp-content/themes/hello-elementor-child/elementor-widgets/assets/photo/moment-group-2022.jpg</link>
+<pubDate>Thu, 01 Oct 2026 08:00:00 +0000</pubDate>
+<dc:creator><![CDATA[cn-test]]></dc:creator>
+<guid isPermaLink="false">https://sro.sgf.sk/wp-content/themes/hello-elementor-child/elementor-widgets/assets/photo/moment-group-2022.jpg</guid>
+<description></description>
+<content:encoded><![CDATA[]]></content:encoded>
+<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+<wp:post_id>9104</wp:post_id>
+<wp:post_date>2026-10-01 10:00:00</wp:post_date>
+<wp:post_date_gmt>2026-10-01 08:00:00</wp:post_date_gmt>
+<wp:comment_status>closed</wp:comment_status>
+<wp:ping_status>closed</wp:ping_status>
+<wp:post_name><![CDATA[cn-test-moment-group-2022]]></wp:post_name>
+<wp:status>inherit</wp:status>
+<wp:post_parent>0</wp:post_parent>
+<wp:menu_order>0</wp:menu_order>
+<wp:post_type>attachment</wp:post_type>
+<wp:post_password><![CDATA[]]></wp:post_password>
+<wp:is_sticky>0</wp:is_sticky>
+<wp:attachment_url>https://sro.sgf.sk/wp-content/themes/hello-elementor-child/elementor-widgets/assets/photo/moment-group-2022.jpg</wp:attachment_url>
+</item>
+<item>
+<title><![CDATA[Predaj vstupeniek na Christmas Nitra 2026 je spustený]]></title>
+<link>https://sro.sgf.sk/test-predaj-vstupeniek/</link>
+<dc:creator><![CDATA[cn-test]]></dc:creator>
+<guid isPermaLink="false">https://sro.sgf.sk/?p=9201</guid>
+<description></description>
+<content:encoded><![CDATA[<!-- wp:paragraph -->
+<p>Vstupenky do Mestskej športovej haly v Nitre aj online prístup k livestreamu sú od dnes v predaji na tickets.sgf.sk.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Early Bird ceny platia do 31. októbra 2026, od 1. novembra platí plná cena. Vstupenka platí na celý deň vrátane všetkých súťažných blokov.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><em>Testovací článok — po kontrole vzhľadu ho zmaž.</em></p>
+<!-- /wp:paragraph -->]]></content:encoded>
+<excerpt:encoded><![CDATA[Vstupenky do haly aj online prístup k livestreamu sú v predaji. Early Bird ceny platia do 31. októbra 2026.]]></excerpt:encoded>
+<wp:post_id>9201</wp:post_id>
+<wp:post_date>2026-10-14 10:00:00</wp:post_date>
+<wp:post_date_gmt>2026-10-14 08:00:00</wp:post_date_gmt>
+<wp:comment_status>closed</wp:comment_status>
+<wp:ping_status>closed</wp:ping_status>
+<wp:post_name><![CDATA[test-predaj-vstupeniek]]></wp:post_name>
+<wp:status>publish</wp:status>
+<wp:post_parent>0</wp:post_parent>
+<wp:menu_order>0</wp:menu_order>
+<wp:post_type>post</wp:post_type>
+<wp:post_password><![CDATA[]]></wp:post_password>
+<wp:is_sticky>0</wp:is_sticky>
+<category domain="category" nicename="novinky"><![CDATA[Novinky]]></category>
+<category domain="language" nicename="sk"><![CDATA[Slovenčina]]></category>
+<wp:postmeta><wp:meta_key><![CDATA[_thumbnail_id]]></wp:meta_key><wp:meta_value><![CDATA[9101]]></wp:meta_value></wp:postmeta>
+<wp:postmeta><wp:meta_key><![CDATA[_xn_source_url]]></wp:meta_key><wp:meta_value><![CDATA[https://www.sgf.sk/sk/articles/aktuality]]></wp:meta_value></wp:postmeta>
+</item>
+<item>
+<title><![CDATA[Program súťaže: štyri dni, tri súťaže v jednej hale]]></title>
+<link>https://sro.sgf.sk/test-program-sutaze/</link>
+<dc:creator><![CDATA[cn-test]]></dc:creator>
+<guid isPermaLink="false">https://sro.sgf.sk/?p=9202</guid>
+<description></description>
+<content:encoded><![CDATA[<!-- wp:paragraph -->
+<p>Christmas Nitra 2026 prinesie od 26. do 29. novembra tri súťaže pod jednou strechou.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Vo štvrtok štartujú jednotlivkyne pozývacej súťaže, v piatok kvalifikácie WG, v sobotu finále a v nedeľu patrí hala spoločným skladbám.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><em>Testovací článok — po kontrole vzhľadu ho zmaž.</em></p>
+<!-- /wp:paragraph -->]]></content:encoded>
+<excerpt:encoded><![CDATA[Zverejnili sme predbežný harmonogram. WG súťaž, medzinárodná pozývacia súťaž a Majstrovstvá SR spoločných skladieb.]]></excerpt:encoded>
+<wp:post_id>9202</wp:post_id>
+<wp:post_date>2026-10-10 09:00:00</wp:post_date>
+<wp:post_date_gmt>2026-10-10 07:00:00</wp:post_date_gmt>
+<wp:comment_status>closed</wp:comment_status>
+<wp:ping_status>closed</wp:ping_status>
+<wp:post_name><![CDATA[test-program-sutaze]]></wp:post_name>
+<wp:status>publish</wp:status>
+<wp:post_parent>0</wp:post_parent>
+<wp:menu_order>0</wp:menu_order>
+<wp:post_type>post</wp:post_type>
+<wp:post_password><![CDATA[]]></wp:post_password>
+<wp:is_sticky>0</wp:is_sticky>
+<category domain="category" nicename="novinky"><![CDATA[Novinky]]></category>
+<category domain="language" nicename="sk"><![CDATA[Slovenčina]]></category>
+<wp:postmeta><wp:meta_key><![CDATA[_thumbnail_id]]></wp:meta_key><wp:meta_value><![CDATA[9102]]></wp:meta_value></wp:postmeta>
+<wp:postmeta><wp:meta_key><![CDATA[_xn_source_url]]></wp:meta_key><wp:meta_value><![CDATA[https://www.sgf.sk/sk/articles/aktuality]]></wp:meta_value></wp:postmeta>
+</item>
+<item>
+<title><![CDATA[Mestská športová hala v Nitre opäť privíta svetovú modernú gymnastiku]]></title>
+<link>https://sro.sgf.sk/test-hala-nitra/</link>
+<dc:creator><![CDATA[cn-test]]></dc:creator>
+<guid isPermaLink="false">https://sro.sgf.sk/?p=9203</guid>
+<description></description>
+<content:encoded><![CDATA[<!-- wp:paragraph -->
+<p>Mestská športová hala na Dolnočermánskej ulici je domovom Christmas Nitra už niekoľko rokov.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Divákov čaká jedna súťažná plocha, dve tréningové plochy a parkovanie priamo pri hale.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><em>Testovací článok — po kontrole vzhľadu ho zmaž.</em></p>
+<!-- /wp:paragraph -->]]></content:encoded>
+<excerpt:encoded><![CDATA[Súťažná plocha, dve tréningové plochy a výška stropu 15 metrov. Hala na Klokočine je domovom Christmas Nitra.]]></excerpt:encoded>
+<wp:post_id>9203</wp:post_id>
+<wp:post_date>2026-10-06 12:00:00</wp:post_date>
+<wp:post_date_gmt>2026-10-06 10:00:00</wp:post_date_gmt>
+<wp:comment_status>closed</wp:comment_status>
+<wp:ping_status>closed</wp:ping_status>
+<wp:post_name><![CDATA[test-hala-nitra]]></wp:post_name>
+<wp:status>publish</wp:status>
+<wp:post_parent>0</wp:post_parent>
+<wp:menu_order>0</wp:menu_order>
+<wp:post_type>post</wp:post_type>
+<wp:post_password><![CDATA[]]></wp:post_password>
+<wp:is_sticky>0</wp:is_sticky>
+<category domain="category" nicename="novinky"><![CDATA[Novinky]]></category>
+<category domain="language" nicename="sk"><![CDATA[Slovenčina]]></category>
+<wp:postmeta><wp:meta_key><![CDATA[_thumbnail_id]]></wp:meta_key><wp:meta_value><![CDATA[9103]]></wp:meta_value></wp:postmeta>
+<wp:postmeta><wp:meta_key><![CDATA[_xn_source_url]]></wp:meta_key><wp:meta_value><![CDATA[https://www.sgf.sk/sk/articles/aktuality]]></wp:meta_value></wp:postmeta>
+</item>
+<item>
+<title><![CDATA[Spoločné skladby budú bojovať aj o titul majstra Slovenska]]></title>
+<link>https://sro.sgf.sk/test-msr-spolocne-skladby/</link>
+<dc:creator><![CDATA[cn-test]]></dc:creator>
+<guid isPermaLink="false">https://sro.sgf.sk/?p=9204</guid>
+<description></description>
+<content:encoded><![CDATA[<!-- wp:paragraph -->
+<p>Majstrovstvá Slovenskej republiky v spoločných skladbách sa opäť pripájajú k Christmas Nitra.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Spoločné skladby, dvojice aj trojice súťažia v sobotu a v nedeľu, vyhlásenie výsledkov je spoločné s pozývacou súťažou.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><em>Testovací článok — po kontrole vzhľadu ho zmaž.</em></p>
+<!-- /wp:paragraph -->]]></content:encoded>
+<excerpt:encoded><![CDATA[Súčasťou Christmas Nitra sú aj Majstrovstvá SR spoločných skladieb. Výsledky vyhlásime v sobotu aj v nedeľu.]]></excerpt:encoded>
+<wp:post_id>9204</wp:post_id>
+<wp:post_date>2026-10-02 08:30:00</wp:post_date>
+<wp:post_date_gmt>2026-10-02 06:30:00</wp:post_date_gmt>
+<wp:comment_status>closed</wp:comment_status>
+<wp:ping_status>closed</wp:ping_status>
+<wp:post_name><![CDATA[test-msr-spolocne-skladby]]></wp:post_name>
+<wp:status>publish</wp:status>
+<wp:post_parent>0</wp:post_parent>
+<wp:menu_order>0</wp:menu_order>
+<wp:post_type>post</wp:post_type>
+<wp:post_password><![CDATA[]]></wp:post_password>
+<wp:is_sticky>0</wp:is_sticky>
+<category domain="category" nicename="novinky"><![CDATA[Novinky]]></category>
+<category domain="language" nicename="sk"><![CDATA[Slovenčina]]></category>
+<wp:postmeta><wp:meta_key><![CDATA[_thumbnail_id]]></wp:meta_key><wp:meta_value><![CDATA[9104]]></wp:meta_value></wp:postmeta>
+<wp:postmeta><wp:meta_key><![CDATA[_xn_source_url]]></wp:meta_key><wp:meta_value><![CDATA[https://www.sgf.sk/sk/articles/aktuality]]></wp:meta_value></wp:postmeta>
+</item>
+<item>
+<title><![CDATA[Tickets for Christmas Nitra 2026 are on sale]]></title>
+<link>https://sro.sgf.sk/test-tickets-on-sale/</link>
+<dc:creator><![CDATA[cn-test]]></dc:creator>
+<guid isPermaLink="false">https://sro.sgf.sk/?p=9205</guid>
+<description></description>
+<content:encoded><![CDATA[<!-- wp:paragraph -->
+<p>Tickets for the Nitra City Sports Hall and online livestream access are on sale now at tickets.sgf.sk.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Early Bird prices apply until 31 October 2026; from 1 November the full price applies.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><em>Test article — delete after checking the layout.</em></p>
+<!-- /wp:paragraph -->]]></content:encoded>
+<excerpt:encoded><![CDATA[Arena tickets and online livestream access are now on sale. Early Bird prices apply until 31 October 2026.]]></excerpt:encoded>
+<wp:post_id>9205</wp:post_id>
+<wp:post_date>2026-10-14 10:05:00</wp:post_date>
+<wp:post_date_gmt>2026-10-14 08:05:00</wp:post_date_gmt>
+<wp:comment_status>closed</wp:comment_status>
+<wp:ping_status>closed</wp:ping_status>
+<wp:post_name><![CDATA[test-tickets-on-sale]]></wp:post_name>
+<wp:status>publish</wp:status>
+<wp:post_parent>0</wp:post_parent>
+<wp:menu_order>0</wp:menu_order>
+<wp:post_type>post</wp:post_type>
+<wp:post_password><![CDATA[]]></wp:post_password>
+<wp:is_sticky>0</wp:is_sticky>
+<category domain="category" nicename="news"><![CDATA[News]]></category>
+<category domain="language" nicename="en"><![CDATA[English]]></category>
+<wp:postmeta><wp:meta_key><![CDATA[_thumbnail_id]]></wp:meta_key><wp:meta_value><![CDATA[9101]]></wp:meta_value></wp:postmeta>
+<wp:postmeta><wp:meta_key><![CDATA[_xn_source_url]]></wp:meta_key><wp:meta_value><![CDATA[https://www.sgf.sk/sk/articles/aktuality]]></wp:meta_value></wp:postmeta>
+</item>
+<item>
+<title><![CDATA[Schedule: four days, three competitions under one roof]]></title>
+<link>https://sro.sgf.sk/test-schedule/</link>
+<dc:creator><![CDATA[cn-test]]></dc:creator>
+<guid isPermaLink="false">https://sro.sgf.sk/?p=9206</guid>
+<description></description>
+<content:encoded><![CDATA[<!-- wp:paragraph -->
+<p>Christmas Nitra 2026 brings three competitions under one roof from 26 to 29 November.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Individuals open on Thursday, Friday hosts the WG qualifications, Saturday the finals and Sunday belongs to the groups.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><em>Test article — delete after checking the layout.</em></p>
+<!-- /wp:paragraph -->]]></content:encoded>
+<excerpt:encoded><![CDATA[The provisional schedule is out — the WG event, the international invitational competition and the Slovak Group Championships.]]></excerpt:encoded>
+<wp:post_id>9206</wp:post_id>
+<wp:post_date>2026-10-10 09:05:00</wp:post_date>
+<wp:post_date_gmt>2026-10-10 07:05:00</wp:post_date_gmt>
+<wp:comment_status>closed</wp:comment_status>
+<wp:ping_status>closed</wp:ping_status>
+<wp:post_name><![CDATA[test-schedule]]></wp:post_name>
+<wp:status>publish</wp:status>
+<wp:post_parent>0</wp:post_parent>
+<wp:menu_order>0</wp:menu_order>
+<wp:post_type>post</wp:post_type>
+<wp:post_password><![CDATA[]]></wp:post_password>
+<wp:is_sticky>0</wp:is_sticky>
+<category domain="category" nicename="news"><![CDATA[News]]></category>
+<category domain="language" nicename="en"><![CDATA[English]]></category>
+<wp:postmeta><wp:meta_key><![CDATA[_thumbnail_id]]></wp:meta_key><wp:meta_value><![CDATA[9102]]></wp:meta_value></wp:postmeta>
+<wp:postmeta><wp:meta_key><![CDATA[_xn_source_url]]></wp:meta_key><wp:meta_value><![CDATA[https://www.sgf.sk/sk/articles/aktuality]]></wp:meta_value></wp:postmeta>
+</item>
+<item>
+<title><![CDATA[Nitra City Sports Hall welcomes world-class rhythmic gymnastics again]]></title>
+<link>https://sro.sgf.sk/test-nitra-hall/</link>
+<dc:creator><![CDATA[cn-test]]></dc:creator>
+<guid isPermaLink="false">https://sro.sgf.sk/?p=9207</guid>
+<description></description>
+<content:encoded><![CDATA[<!-- wp:paragraph -->
+<p>The city sports hall on Dolnočermánska street has been the home of Christmas Nitra for years.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Spectators can look forward to one competition floor, two training floors and parking right at the hall.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><em>Test article — delete after checking the layout.</em></p>
+<!-- /wp:paragraph -->]]></content:encoded>
+<excerpt:encoded><![CDATA[One competition floor, two training floors and a 15 m ceiling — the Klokočina hall is the home of Christmas Nitra.]]></excerpt:encoded>
+<wp:post_id>9207</wp:post_id>
+<wp:post_date>2026-10-06 12:05:00</wp:post_date>
+<wp:post_date_gmt>2026-10-06 10:05:00</wp:post_date_gmt>
+<wp:comment_status>closed</wp:comment_status>
+<wp:ping_status>closed</wp:ping_status>
+<wp:post_name><![CDATA[test-nitra-hall]]></wp:post_name>
+<wp:status>publish</wp:status>
+<wp:post_parent>0</wp:post_parent>
+<wp:menu_order>0</wp:menu_order>
+<wp:post_type>post</wp:post_type>
+<wp:post_password><![CDATA[]]></wp:post_password>
+<wp:is_sticky>0</wp:is_sticky>
+<category domain="category" nicename="news"><![CDATA[News]]></category>
+<category domain="language" nicename="en"><![CDATA[English]]></category>
+<wp:postmeta><wp:meta_key><![CDATA[_thumbnail_id]]></wp:meta_key><wp:meta_value><![CDATA[9103]]></wp:meta_value></wp:postmeta>
+<wp:postmeta><wp:meta_key><![CDATA[_xn_source_url]]></wp:meta_key><wp:meta_value><![CDATA[https://www.sgf.sk/sk/articles/aktuality]]></wp:meta_value></wp:postmeta>
+</item>
+<item>
+<title><![CDATA[Groups will also compete for the Slovak national title]]></title>
+<link>https://sro.sgf.sk/test-svk-groups/</link>
+<dc:creator><![CDATA[cn-test]]></dc:creator>
+<guid isPermaLink="false">https://sro.sgf.sk/?p=9208</guid>
+<description></description>
+<content:encoded><![CDATA[<!-- wp:paragraph -->
+<p>The Slovak National Group Championships join Christmas Nitra once again.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Groups, pairs and trios compete on Saturday and Sunday, with joint award ceremonies.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><em>Test article — delete after checking the layout.</em></p>
+<!-- /wp:paragraph -->]]></content:encoded>
+<excerpt:encoded><![CDATA[The Slovak National Group Championships are part of Christmas Nitra, with award ceremonies on Saturday and Sunday.]]></excerpt:encoded>
+<wp:post_id>9208</wp:post_id>
+<wp:post_date>2026-10-02 08:35:00</wp:post_date>
+<wp:post_date_gmt>2026-10-02 06:35:00</wp:post_date_gmt>
+<wp:comment_status>closed</wp:comment_status>
+<wp:ping_status>closed</wp:ping_status>
+<wp:post_name><![CDATA[test-svk-groups]]></wp:post_name>
+<wp:status>publish</wp:status>
+<wp:post_parent>0</wp:post_parent>
+<wp:menu_order>0</wp:menu_order>
+<wp:post_type>post</wp:post_type>
+<wp:post_password><![CDATA[]]></wp:post_password>
+<wp:is_sticky>0</wp:is_sticky>
+<category domain="category" nicename="news"><![CDATA[News]]></category>
+<category domain="language" nicename="en"><![CDATA[English]]></category>
+<wp:postmeta><wp:meta_key><![CDATA[_thumbnail_id]]></wp:meta_key><wp:meta_value><![CDATA[9104]]></wp:meta_value></wp:postmeta>
+<wp:postmeta><wp:meta_key><![CDATA[_xn_source_url]]></wp:meta_key><wp:meta_value><![CDATA[https://www.sgf.sk/sk/articles/aktuality]]></wp:meta_value></wp:postmeta>
+</item>
+</channel>
+</rss>

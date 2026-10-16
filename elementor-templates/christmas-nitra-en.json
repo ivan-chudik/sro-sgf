@@ -225,6 +225,46 @@
    ]
   },
   {
+   "id": "f8b19c4",
+   "elType": "container",
+   "isInner": false,
+   "settings": {
+    "content_width": "full",
+    "padding": {
+     "unit": "px",
+     "top": "0",
+     "right": "0",
+     "bottom": "0",
+     "left": "0",
+     "isLinked": true
+    },
+    "flex_gap": {
+     "unit": "px",
+     "size": 0,
+     "column": "0",
+     "row": "0",
+     "isLinked": true
+    }
+   },
+   "elements": [
+    {
+     "id": "5717393",
+     "elType": "widget",
+     "widgetType": "video",
+     "isInner": false,
+     "settings": {
+      "anchor_id": "spot",
+      "eyebrow": "Spot · Christmas Nitra 2026",
+      "title": "This is Christmas Nitra",
+      "video_title": "Christmas Nitra 2026 — spot",
+      "play_label": "Play video",
+      "btn1_text": "Buy tickets"
+     },
+     "elements": []
+    }
+   ]
+  },
+  {
    "id": "64d6dd9",
    "elType": "container",
    "isInner": false,
@@ -674,6 +714,48 @@
        }
       ],
       "box3_note": "<p><b>Deadlines for clubs:</b> definitive registration 30 Sept 2026 · nominative registration 18 Oct 2026 · music upload to KSIS 1 Nov 2026 · <a href=\"mailto:christmas.nitra@gmail.com\">christmas.nitra@gmail.com</a></p>"
+     },
+     "elements": []
+    }
+   ]
+  },
+  {
+   "id": "6edd6c3",
+   "elType": "container",
+   "isInner": false,
+   "settings": {
+    "content_width": "full",
+    "padding": {
+     "unit": "px",
+     "top": "0",
+     "right": "0",
+     "bottom": "0",
+     "left": "0",
+     "isLinked": true
+    },
+    "flex_gap": {
+     "unit": "px",
+     "size": 0,
+     "column": "0",
+     "row": "0",
+     "isLinked": true
+    }
+   },
+   "elements": [
+    {
+     "id": "2895a94",
+     "elType": "widget",
+     "widgetType": "news",
+     "isInner": false,
+     "settings": {
+      "anchor_id": "news",
+      "eyebrow": "News",
+      "title": "What's happening at Christmas Nitra",
+      "date_format": "j M Y",
+      "more_text": "Read article",
+      "prev_label": "Previous articles",
+      "next_label": "Next articles",
+      "btn1_text": "All news on sgf.sk"
      },
      "elements": []
     }

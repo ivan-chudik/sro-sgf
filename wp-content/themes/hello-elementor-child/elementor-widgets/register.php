@@ -4,6 +4,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 require_once __DIR__ . '/partials/helpers.php';
 require_once __DIR__ . '/partials/brevo.php';
 require_once __DIR__ . '/partials/gtm.php';
+require_once __DIR__ . '/partials/news-meta.php';
 
 // ── CSS TOKENY — priority 1 zaručí načítanie pred všetkým ───────────
 add_action('wp_head', function() { ?>
@@ -41,11 +42,13 @@ $xn_widgets = [
     'hero'        => 'Elementor_Widget_Hero',
     'facts'       => 'Elementor_Widget_Facts',
     'ticker'      => 'Elementor_Widget_Ticker',
+    'video'       => 'Elementor_Widget_Video',
     'two-paths'   => 'Elementor_Widget_TwoPaths',
     'reasons'     => 'Elementor_Widget_Reasons',
     'pricing'     => 'Elementor_Widget_Pricing',
     'schedule'    => 'Elementor_Widget_Schedule',
     'competition' => 'Elementor_Widget_Competition',
+    'news'        => 'Elementor_Widget_News',
     'livestream'  => 'Elementor_Widget_Livestream',
     'faq'         => 'Elementor_Widget_Faq',
     'venue'       => 'Elementor_Widget_Venue',
