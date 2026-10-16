@@ -67,6 +67,7 @@ Elementor → Tools → Maintenance Mode → *Coming Soon* → **Choose Template
 |---|---|
 | Ceny / Early Bird | CN · Dve cesty, CN · Vstupenky a ceny (karty + poznámka), CN · FAQ, CN · Hero (poznámka pri odpočte) |
 | Program po 18. 10. | CN · Program súťaže → Dni → *Bloky programu* (`štítok \| text \| doplnok`) |
+| Logá organizátorov a partnerov | CN · Partneri → *Organizátori* / *Partneri* (2 skupiny, každá vlastné zobrazenie). Biele PNG v `assets/logos/cn-*`, zdroje od klienta v `Landing-page/partneri-loga/` |
 | Štartové listiny, výsledky | CN · Kto súťaží → Box 3 → doplň URL (bez URL sa dokument zobrazí ako čakajúci) |
 | Odpočet | CN · Hero → Odpočet → cieľový dátum `2026-11-26T09:00:00+01:00` |
 

@@ -251,17 +251,22 @@ EN = {
         'note': p('By submitting you agree to the processing of your e-mail for this reminder. <a href="https://www.sgf.sk/sk/article/gdpr" target="_blank" rel="noopener">Privacy policy</a>'),
     },
     'partners': {
-        'label': 'Organisers and partners',
+        'label': 'Organisers',
         'logos': items('logos', [
             {'image': {'url': THEME + 'logos/' + f, 'id': ''}, 'alt': a, 'height': {'size': h, 'unit': 'px'}}
             for f, a, h in [
-                ('sog-nitra-white.png', 'ŠK ŠOG Nitra — rhythmic gymnastics', 34),
-                ('sgf-white.png', 'Slovak Gymnastics Federation', 26),
-                ('sss-white-hd.png', 'Secondary Sports School Nitra', 56),
-                ('wg-white-hd.png', 'World Gymnastics', 40),
-                ('eg-white.png', 'European Gymnastics', 40),
-                ('min-cestovny-ruch-sport-white.png', 'Ministry of Tourism and Sports of the Slovak Republic', 46),
-                ('min-skolstva-white.png', 'Ministry of Education, Research, Development and Youth of the Slovak Republic', 46),
+                ('cn-org-sgf-claim-en-white.png', 'Slovak Gymnastics Federation', 42),
+                ('cn-org-sk-sog-nitra-mg-white.png', 'ŠK ŠOG Nitra — rhythmic gymnastics', 46),
+            ]
+        ]),
+        'label2': 'Partners',
+        'logos2': items('logos2', [
+            {'image': {'url': THEME + 'logos/' + f, 'id': ''}, 'alt': a, 'height': {'size': h, 'unit': 'px'}}
+            for f, a, h in [
+                ('cn-partner-wg-white.png', 'World Gymnastics', 40),
+                ('cn-partner-eg-white.png', 'European Gymnastics', 44),
+                ('cn-partner-mcras-en-white.png', 'Ministry of Tourism and Sports of the Slovak Republic', 40),
+                ('cn-partner-sss-nitra-white.png', 'Secondary Sports School Nitra', 62),
             ]
         ]),
     },

@@ -529,47 +529,38 @@
   "note": "<p>By submitting you agree to the processing of your e-mail for this reminder. <a href=\"https://www.sgf.sk/sk/article/gdpr\" target=\"_blank\" rel=\"noopener\">Privacy policy</a></p>"
  },
  "partners": {
-  "label": "Organisers and partners",
+  "label": "Organisers",
   "logos": [
    {
     "image": {
-     "url": "https://sro.sgf.sk/wp-content/themes/hello-elementor-child/elementor-widgets/assets/logos/sog-nitra-white.png",
+     "url": "https://sro.sgf.sk/wp-content/themes/hello-elementor-child/elementor-widgets/assets/logos/cn-org-sgf-claim-en-white.png",
      "id": ""
     },
-    "alt": "ŠK ŠOG Nitra — rhythmic gymnastics",
+    "alt": "Slovak Gymnastics Federation",
     "height": {
-     "size": 34,
+     "size": 42,
      "unit": "px"
     },
     "_id": "a247d95"
    },
    {
     "image": {
-     "url": "https://sro.sgf.sk/wp-content/themes/hello-elementor-child/elementor-widgets/assets/logos/sgf-white.png",
+     "url": "https://sro.sgf.sk/wp-content/themes/hello-elementor-child/elementor-widgets/assets/logos/cn-org-sk-sog-nitra-mg-white.png",
      "id": ""
     },
-    "alt": "Slovak Gymnastics Federation",
+    "alt": "ŠK ŠOG Nitra — rhythmic gymnastics",
     "height": {
-     "size": 26,
+     "size": 46,
      "unit": "px"
     },
     "_id": "f0ccbb3"
-   },
+   }
+  ],
+  "label2": "Partners",
+  "logos2": [
    {
     "image": {
-     "url": "https://sro.sgf.sk/wp-content/themes/hello-elementor-child/elementor-widgets/assets/logos/sss-white-hd.png",
-     "id": ""
-    },
-    "alt": "Secondary Sports School Nitra",
-    "height": {
-     "size": 56,
-     "unit": "px"
-    },
-    "_id": "a41c93b"
-   },
-   {
-    "image": {
-     "url": "https://sro.sgf.sk/wp-content/themes/hello-elementor-child/elementor-widgets/assets/logos/wg-white-hd.png",
+     "url": "https://sro.sgf.sk/wp-content/themes/hello-elementor-child/elementor-widgets/assets/logos/cn-partner-wg-white.png",
      "id": ""
     },
     "alt": "World Gymnastics",
@@ -577,43 +568,43 @@
      "size": 40,
      "unit": "px"
     },
-    "_id": "9de4288"
+    "_id": "7f3a9fa"
    },
    {
     "image": {
-     "url": "https://sro.sgf.sk/wp-content/themes/hello-elementor-child/elementor-widgets/assets/logos/eg-white.png",
+     "url": "https://sro.sgf.sk/wp-content/themes/hello-elementor-child/elementor-widgets/assets/logos/cn-partner-eg-white.png",
      "id": ""
     },
     "alt": "European Gymnastics",
     "height": {
-     "size": 40,
+     "size": 44,
      "unit": "px"
     },
-    "_id": "29eda0e"
+    "_id": "22fe886"
    },
    {
     "image": {
-     "url": "https://sro.sgf.sk/wp-content/themes/hello-elementor-child/elementor-widgets/assets/logos/min-cestovny-ruch-sport-white.png",
+     "url": "https://sro.sgf.sk/wp-content/themes/hello-elementor-child/elementor-widgets/assets/logos/cn-partner-mcras-en-white.png",
      "id": ""
     },
     "alt": "Ministry of Tourism and Sports of the Slovak Republic",
     "height": {
-     "size": 46,
+     "size": 40,
      "unit": "px"
     },
-    "_id": "8ddd1ba"
+    "_id": "6badb6a"
    },
    {
     "image": {
-     "url": "https://sro.sgf.sk/wp-content/themes/hello-elementor-child/elementor-widgets/assets/logos/min-skolstva-white.png",
+     "url": "https://sro.sgf.sk/wp-content/themes/hello-elementor-child/elementor-widgets/assets/logos/cn-partner-sss-nitra-white.png",
      "id": ""
     },
-    "alt": "Ministry of Education, Research, Development and Youth of the Slovak Republic",
+    "alt": "Secondary Sports School Nitra",
     "height": {
-     "size": 46,
+     "size": 62,
      "unit": "px"
     },
-    "_id": "ed5b2d5"
+    "_id": "65e4e1f"
    }
   ]
  },
