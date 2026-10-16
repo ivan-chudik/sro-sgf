@@ -22,14 +22,18 @@
         const update = function() {
             const max = track.scrollWidth - track.clientWidth;
             if ( nav ) nav.classList.toggle('is-hidden', max <= 2);
-            if ( prev ) prev.disabled = track.scrollLeft <= 2;
-            if ( next ) next.disabled = track.scrollLeft >= max - 2;
         };
 
-        if ( prev ) prev.onclick = function() { track.scrollBy({ left: -step(), behavior: 'smooth' }); };
-        if ( next ) next.onclick = function() { track.scrollBy({ left: step(), behavior: 'smooth' }); };
+        const go = function(dir) {
+            const max = track.scrollWidth - track.clientWidth;
+            if ( dir > 0 && track.scrollLeft >= max - 2 ) return track.scrollTo({ left: 0, behavior: 'smooth' });
+            if ( dir < 0 && track.scrollLeft <= 2 ) return track.scrollTo({ left: max, behavior: 'smooth' });
+            track.scrollBy({ left: dir * step(), behavior: 'smooth' });
+        };
 
-        track.addEventListener('scroll', function() { window.requestAnimationFrame(update); }, { passive: true });
+        if ( prev ) prev.onclick = function() { go(-1); };
+        if ( next ) next.onclick = function() { go(1); };
+
         if ( 'ResizeObserver' in window ) new ResizeObserver(update).observe(track);
         else window.addEventListener('resize', update);
         update();

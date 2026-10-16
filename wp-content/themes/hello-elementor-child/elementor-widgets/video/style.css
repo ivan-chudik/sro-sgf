@@ -67,7 +67,7 @@
     transform: translate(-50%, -50%);
     transition: transform .2s;
 }
-.custom-video .video__play svg { width: 40%; height: 40%; margin-left: 6%; fill: #fff; }
+.custom-video .video__play svg { display: block; width: 40%; height: 40%; margin: 0; fill: #fff; }
 .custom-video .video__trigger:hover .video__play,
 .custom-video .video__trigger:focus-visible .video__play { transform: translate(-50%, -50%) scale(1.08); }
 .custom-video .video__trigger:focus-visible { outline: 3px solid var(--xn-pink); outline-offset: -3px; }

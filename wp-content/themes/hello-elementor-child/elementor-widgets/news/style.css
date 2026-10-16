@@ -20,8 +20,7 @@
 }
 .custom-news .news__arrow svg { width: 20px; height: 20px; }
 .custom-news .news__arrow--prev svg { transform: rotate(180deg); }
-.custom-news .news__arrow:hover:not(:disabled) { background: #111; border-color: #111; color: #fff; }
-.custom-news .news__arrow:disabled { opacity: .35; cursor: default; }
+.custom-news .news__arrow:hover { background: #111; border-color: #111; color: #fff; }
 .custom-news .news__arrow:focus-visible { outline: 3px solid var(--xn-orchid); outline-offset: 2px; }
 
 .custom-news .news__track {

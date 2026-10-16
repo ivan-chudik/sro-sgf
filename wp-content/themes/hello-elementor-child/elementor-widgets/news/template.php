@@ -26,7 +26,7 @@ $arrow  = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7" fi
             <div class="news__intro"><?php $this->xn_render_intro( $settings ); ?></div>
             <?php if ( $arrows && $news_query->have_posts() ) : ?>
                 <div class="news__nav">
-                    <button type="button" class="news__arrow news__arrow--prev" aria-label="<?php echo esc_attr( $settings['prev_label'] ?? '' ); ?>" disabled><?php echo $arrow; ?></button>
+                    <button type="button" class="news__arrow news__arrow--prev" aria-label="<?php echo esc_attr( $settings['prev_label'] ?? '' ); ?>"><?php echo $arrow; ?></button>
                     <button type="button" class="news__arrow news__arrow--next" aria-label="<?php echo esc_attr( $settings['next_label'] ?? '' ); ?>"><?php echo $arrow; ?></button>
                 </div>
             <?php endif; ?>

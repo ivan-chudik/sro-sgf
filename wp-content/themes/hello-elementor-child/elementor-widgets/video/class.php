@@ -51,6 +51,14 @@ class Elementor_Widget_Video extends \Elementor\Widget_Base {
             'range'      => [ 'px' => [ 'min' => 280, 'max' => 1240 ], '%' => [ 'min' => 30, 'max' => 100 ] ],
             'selectors'  => [ '{{WRAPPER}} .video__frame' => 'max-width: {{SIZE}}{{UNIT}};' ],
         ]);
+        $this->add_control('ratio', [
+            'label'       => 'Pomer strán',
+            'type'        => \Elementor\Controls_Manager::SELECT,
+            'default'     => '16 / 9',
+            'options'     => [ '16 / 9' => '16:9', '2 / 1' => '2:1', '21 / 9' => '21:9', '4 / 3' => '4:3', '1 / 1' => '1:1', '9 / 16' => '9:16 (vertikálne)' ],
+            'description' => 'Ak má spot čierne pásy hore a dole, skús 2:1 alebo 21:9.',
+            'selectors'   => [ '{{WRAPPER}} .video__frame' => 'aspect-ratio: {{VALUE}};' ],
+        ]);
         $this->add_control('play_label', [
             'label'   => 'Text tlačidla prehrať (pre čítačky)',
             'type'    => \Elementor\Controls_Manager::TEXT,
