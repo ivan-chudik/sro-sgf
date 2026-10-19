@@ -19,6 +19,7 @@ class Elementor_Widget_Reminder extends \Elementor\Widget_Base {
             'label' => 'Obsah',
             'tab'   => \Elementor\Controls_Manager::TAB_CONTENT,
         ]);
+        $this->xn_anchor_control( 'formular' );
         $this->xn_intro_controls(
             'Ešte sa rozhoduješ?',
             'Pošleme ti pripomienku pred štartom predaja a súťaže',

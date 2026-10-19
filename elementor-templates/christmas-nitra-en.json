@@ -1003,6 +1003,7 @@
      "widgetType": "reminder",
      "isInner": false,
      "settings": {
+      "anchor_id": "form",
       "eyebrow": "Still deciding?",
       "title": "We'll remind you before sales open and before the competition",
       "lead": "<p>No spam — three e-mails at most: sales opening, the schedule and the day before the event.</p>",

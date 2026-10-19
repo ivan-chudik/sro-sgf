@@ -4,7 +4,7 @@ $form_html = xn_render_template( $settings['form_template'] ?? 0 );
 $note      = xn_on( $settings, 'note_show' ) ? xn_wysiwyg( $settings['note'] ?? '' ) : '';
 $is_editor = class_exists( '\Elementor\Plugin' ) && \Elementor\Plugin::$instance->editor->is_edit_mode();
 ?>
-<section class="custom-reminder xn-block xn-section" data-widget="reminder">
+<section id="<?php echo esc_attr( $settings['anchor_id'] ?? 'formular' ); ?>" class="custom-reminder xn-block xn-section" data-widget="reminder">
     <div class="xn-wrap">
         <div class="reminder__box">
             <?php if ( xn_on( $settings, 'ribbons_show' ) ) : ?>

@@ -245,6 +245,7 @@ EN = {
         'photo_alt': 'Nitra City Sports Hall – Klokočina',
     },
     'reminder': {
+        'anchor_id': 'form',
         'eyebrow': 'Still deciding?',
         'title': "We'll remind you before sales open and before the competition",
         'lead': p('No spam — three e-mails at most: sales opening, the schedule and the day before the event.'),
