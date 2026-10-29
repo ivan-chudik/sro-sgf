@@ -606,6 +606,11 @@ function xnt_checkout_strings(string $language): array
             'alttag-registrations-customization'
         ),
         'support' => _x('Questions about your ticket or the livestream?', 'xnt.support', 'alttag-registrations-customization'),
+        'emailticket' => _x(
+            'This ticket with a QR code is valid for everyone in the order. Show it once at the entrance.',
+            'xnt.emailticket',
+            'alttag-registrations-customization'
+        ),
         'btnsat' => _x('Select Saturday', 'xnt.btnsat', 'alttag-registrations-customization'),
         'btnall' => _x('All 4 days', 'xnt.btnall', 'alttag-registrations-customization'),
         'btnallsel' => _x('Select all 4 days', 'xnt.btnallsel', 'alttag-registrations-customization'),
@@ -1768,5 +1773,32 @@ add_action('alttag_registrations_checkout_after_download_links', function ($orde
             echo xnt_support_line(xnt_product_language($product_id), 'margin: 10px 0 20px; color: #555; font-size: 14px;');
             return;
         }
+    }
+});
+
+add_action('alttag_registrations_email_after_intro', function ($order) {
+    if (!$order instanceof \WC_Order) {
+        return;
+    }
+    foreach ($order->get_items() as $item) {
+        $product_id = (int) $item->get_product_id();
+        if (!xnt_is_product($product_id)) {
+            continue;
+        }
+        $language = xnt_product_language($product_id);
+        $color = apply_filters('alttag_registrations_email_primary_color', '#2B5C63');
+        $style = 'width: 100%; box-sizing: border-box; margin: 0 0 25px 0; font-family: Arial, Helvetica, sans-serif;'
+            . ' font-size: 15px; line-height: 1.7; color: ' . $color . ';';
+
+        $text = '';
+        if (xnt_product_type($product_id) === 'live') {
+            $text .= '<strong>' . esc_html(xnt_checkout_text('emailticket', $language)) . '</strong><br>';
+        }
+        $text .= esc_html(xnt_checkout_text('support', $language)) . ' '
+            . '<a href="mailto:' . esc_attr(XNT_SUPPORT_EMAIL) . '" style="color: ' . esc_attr($color) . '; font-weight: 700;">'
+            . esc_html(XNT_SUPPORT_EMAIL) . '</a>';
+
+        echo '<p style="' . esc_attr($style) . '">' . $text . '</p>';
+        return;
     }
 });

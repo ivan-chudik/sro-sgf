@@ -869,3 +869,8 @@ msgstr "Sobota"
 msgctxt "xnt.support"
 msgid "Questions about your ticket or the livestream?"
 msgstr "Otázky k vstupenke alebo livestreamu?"
+
+#: includes/christmas-nitra-checkout.php
+msgctxt "xnt.emailticket"
+msgid "This ticket with a QR code is valid for everyone in the order. Show it once at the entrance."
+msgstr "Táto vstupenka s QR kódom platí pre všetky osoby z objednávky. Pri vstupe ju stačí ukázať raz."
