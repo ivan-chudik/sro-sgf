@@ -1,0 +1,5606 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Alttag Registrations\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/alttag-"
+"registrations\n"
+"POT-Creation-Date: 2026-06-05T04:47:12+00:00\n"
+"PO-Revision-Date: 2026-06-05 05:02+0000\n"
+"Last-Translator: \n"
+"Language-Team: Slovenčina\n"
+"Language: sk_SK\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=( n == 1 ) ? 0 : ( n >= 2 && n <= 4 ) ? 1 : "
+"2;\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.8.0; wp-6.8.3; php-8.3.7\n"
+"X-Domain: alttag-registrations\n"
+
+#: includes/Module/CompanionRegistrationModule.php:733
+msgid ""
+"%1$s %2$s has been automatically registered and will receive an email with a "
+"ticket."
+msgstr ""
+"%1$s %2$s bol/a automaticky zaregistrovaný/á a dostane email so vstupenkou."
+
+#. translators: 1: guest full name, 2: guest email
+#: includes/Module/HotelSelectionModule.php:1377
+msgid "%1$s (%2$s)"
+msgstr "%1$s (%2$s)"
+
+#. translators: 1: section label "Accommodation", 2: night label
+#: includes/Module/HotelSelectionModule.php:1791
+msgid "%1$s — %2$s"
+msgstr "%1$s — %2$s"
+
+#. translators: 1: guest contact info, 2: incremental cost added by this guest
+#: includes/Module/HotelSelectionModule.php:1388
+msgid "%1$s — +%2$s"
+msgstr "%1$s — +%2$s"
+
+#: includes/Module/SessionModule.php:1032 includes/RegistrationContext.php:866
+msgid "%1$s, which will take place on %2$s"
+msgstr "%1$s, ktoré sa uskutoční %2$s"
+
+#: includes/Module/SessionModule.php:1024 includes/RegistrationContext.php:873
+msgid "%1$s, which will take place on %2$s at %3$s"
+msgstr "%1$s, ktoré sa uskutoční %2$s v %3$s"
+
+#: includes/Module/HotelSelectionModule.php:812
+msgid "%d available"
+msgstr "%d k dispozícii"
+
+#: includes/Selection/AbstractSelection.php:466
+msgid "%d day"
+msgid_plural "%d days"
+msgstr[0] "%d deň"
+msgstr[1] "%d dni"
+msgstr[2] "%d dní"
+
+#: includes/Module/AccommodationModule.php:336
+msgid "%d pers."
+msgid_plural "%d pers."
+msgstr[0] "%d os."
+msgstr[1] "%d os."
+msgstr[2] "%d os."
+
+#: helpers.php:1103 helpers.php:1153
+#: includes/Module/AccommodationModule.php:129
+#: includes/Module/AccommodationModule.php:244
+#: includes/Module/AccommodationModule.php:423
+#: includes/Module/AccommodationModule.php:455
+#: includes/Module/AccommodationModule.php:500
+#: includes/Module/HotelSelectionModule.php:566
+#: includes/Module/HotelSelectionModule.php:2920
+#: includes/RegistrationContext.php:1149
+msgid "%d person"
+msgid_plural "%d persons"
+msgstr[0] "%d osoba"
+msgstr[1] "%d osoby"
+msgstr[2] "%d osôb"
+
+#. translators: %d: number of records moved to archive
+#: includes/ArchiveManager.php:217
+msgid "%d record moved to archive."
+msgid_plural "%d records moved to archive."
+msgstr[0] "%d záznam presunutý do archívu."
+msgstr[1] "%d záznamy presunuté do archívu."
+msgstr[2] "%d záznamov presunutých do archívu."
+
+#. translators: %d: number of records restored from archive
+#: includes/ArchiveManager.php:222
+msgid "%d record restored from archive."
+msgid_plural "%d records restored from archive."
+msgstr[0] "%d záznam obnovený z archívu."
+msgstr[1] "%d záznamy obnovené z archívu."
+msgstr[2] "%d záznamov obnovených z archívu."
+
+#: includes/Module/CompanionRegistrationModule.php:864
+msgid ""
+"%s has been automatically registered and will receive an email with a ticket."
+msgstr "%s bol/a automaticky zaregistrovaný/á a dostane email so vstupenkou."
+
+#: includes/Participant/Import.php:1196
+msgid "(empty)"
+msgstr "(prázdne)"
+
+#: includes/Module/HotelSelectionModule.php:843
+msgid "+ Add accommodation"
+msgstr "+ Pridať ubytovanie"
+
+#: includes/Module/SessionModule.php:227 includes/Module/SessionModule.php:254
+msgid "+ Meta"
+msgstr "+ Meta"
+
+#: includes/Module/SessionModule.php:262
+msgid "+ Session Date"
+msgstr "+ Termín"
+
+#: includes/Module/SessionModule.php:242
+msgid "+ Slot"
+msgstr "+ Slot"
+
+#: includes/Module/SessionModule.php:226
+msgid "+ Slots"
+msgstr "+ Sloty"
+
+#: includes/Participant/PostType.php:325
+msgid "-- Select --"
+msgstr "-- Vybrať --"
+
+#: includes/Participant/PostType.php:318
+msgid "-- Select Country --"
+msgstr "-- Vybrať krajinu --"
+
+#: templates/admin/ticket-preview.php:24
+msgid "-- Select Participant --"
+msgstr "-- Vybrať účastníka --"
+
+#: includes/Participant/Import.php:233
+msgid "-- Select participant --"
+msgstr "-- Vybrať účastníka --"
+
+#: includes/Participant/Email.php:503
+msgid "-- Select Template --"
+msgstr "-- Vybrať šablónu --"
+
+#: includes/FieldBuilderPage.php:57
+msgid "A field with this key already exists"
+msgstr "Pole s týmto kľúčom už existuje"
+
+#: includes/Participant/PostType.php:71
+msgid "A link to the participant"
+msgstr "Odkaz na účastníka"
+
+#: includes/Participant/PostType.php:501
+msgid "A new unique variable symbol has been automatically generated: \"%s\""
+msgstr "Automaticky bol vygenerovaný nový jedinečný variabilný symbol: „%s“"
+
+#: templates/admin/ticket-designer-settings.php:200
+#: templates/admin/ticket-designer-settings.php:298
+msgid "Above value"
+msgstr "Nad hodnotou"
+
+#: templates/admin/partials/content-row-item.php:148
+msgid "Absolute Position"
+msgstr "Absolútna pozícia"
+
+#: includes/Settings.php:643
+msgid "Accent Color"
+msgstr "Akcentová farba"
+
+#: includes/Settings.php:646
+msgid "Accent/text color for email header"
+msgstr "Akcentová/farba textu pre hlavičku emailu"
+
+#: includes/FieldBuilderPage.php:730
+msgid "Accept in import"
+msgstr "Akceptovať pri importe"
+
+#: includes/TicketManager.php:557
+msgid "Access Denied"
+msgstr "Prístup odmietnutý"
+
+#: includes/TicketManager.php:556
+msgid "Access denied. Invalid ticket URL."
+msgstr "Prístup odmietnutý. Neplatný odkaz na vstupenku."
+
+#. translators: 1: access type, 2: current grant state
+#: includes/Participant/AdminUI.php:915
+msgid "Access type: %1$s — current state: %2$s"
+msgstr "Typ prístupu: %1$s — aktuálny stav: %2$s"
+
+#: includes/Module/AccommodationModule.php:20
+#: includes/Module/AccommodationModule.php:288
+#: includes/Module/HotelSelectionModule.php:1660
+#: includes/Module/HotelSelectionModule.php:1792
+#: includes/Module/HotelSelectionModule.php:1796
+#: includes/Module/HotelSelectionModule.php:2524
+#: includes/Module/HotelSelectionModule.php:2525
+#: includes/Module/HotelSelectionModule.php:2609
+#: includes/Module/HotelSelectionModule.php:2809
+msgid "Accommodation"
+msgstr "Ubytovanie"
+
+#: includes/Module/HotelSelectionModule.php:155
+msgid "Accommodation checkbox label"
+msgstr "Popis checkboxu ubytovania"
+
+#: includes/Module/HotelSelectionModule.php:2043
+msgid "Accommodation information - %s"
+msgstr "Informácie o ubytovaní - %s"
+
+#: includes/Module/AccommodationModule.php:43
+msgid "Accommodation Label"
+msgstr "Názov ubytovacieho poľa"
+
+#: includes/Module/AccommodationModule.php:293
+msgid "Accommodation Person Count"
+msgstr "Počet osôb (ubytovanie)"
+
+#: includes/Module/AccommodationModule.php:469
+msgid "Accommodation: Number of persons"
+msgstr "Ubytovanie: Počet osôb"
+
+#: includes/Module/MultiDayModule.php:502
+#: includes/Module/ParticipantTypeModule.php:706
+msgid "Action"
+msgstr "Akcia"
+
+#: includes/Module/CompanionRegistrationModule.php:995
+#: includes/Participant/AdminUI.php:99 includes/Participant/Email.php:254
+msgid "Actions"
+msgstr "Akcie"
+
+#: includes/Module/AccommodationModule.php:25
+msgid ""
+"Add accommodation request with person count to checkout, emails, tickets, "
+"and admin."
+msgstr ""
+"Pridá požiadavku na ubytovanie s počtom osôb do checkoutu, emailov, "
+"vstupeniek a adminu."
+
+#: templates/admin/ticket-designer-settings.php:458
+msgid "Add Content Row"
+msgstr "Pridať riadok obsahu"
+
+#: includes/EventManager.php:589
+msgid "Add day"
+msgstr "Pridať deň"
+
+#: includes/FieldBuilderPage.php:360
+msgid "Add Field"
+msgstr "Pridať pole"
+
+#: templates/admin/partials/content-row-item.php:258
+msgid "Add Logo"
+msgstr "Pridať logo"
+
+#: includes/Participant/PostType.php:47
+msgid "Add New"
+msgstr "Pridať nového"
+
+#: includes/Participant/PostType.php:48
+msgid "Add New Participant"
+msgstr "Pridať nového účastníka"
+
+#: includes/Module/CompanionRegistrationModule.php:1017
+#: includes/Module/MultiDayModule.php:537
+#: includes/Module/ParticipantTypeModule.php:719
+msgid "Add one person"
+msgstr "Pridať jednu osobu"
+
+#: includes/EventManager.php:616
+msgid "Add tier"
+msgstr "Pridať úroveň"
+
+#: includes/Module/ParticipantTypeModule.php:190
+msgid "Add type"
+msgstr "Pridať typ"
+
+#: includes/Settings.php:343
+msgid "Add-on product (not a primary ticket)"
+msgstr "Doplnkový produkt (nie hlavná vstupenka)"
+
+#: includes/FieldBuilder.php:479 includes/Participant/PostType.php:202
+#: templates/verification-page.php:20
+msgid "Address"
+msgstr "Adresa"
+
+#: includes/Module/HotelSelectionModule.php:80
+msgid ""
+"Adds a hotel-product picker to checkout. Products in the configured taxonomy "
+"term become room-type options. Each product can opt into per-person pricing "
+"(a price matrix by person count, explicit 1- and 2-person prices, or a per-"
+"extra-person surcharge) and define its own min/max persons range. "
+"Customizations can append site-specific reminders via the "
+"alttag_hotel_email_after_info / alttag_hotel_thankyou_after_info actions."
+msgstr ""
+"Pridá výber hotelového produktu na pokladňu. Produkty v nakonfigurovanej "
+"kategórii sa stanú typmi izieb. Každý produkt môže mať vlastnú cenu na osobu "
+"(cenovú maticu podľa počtu osôb, samostatné ceny pre 1 a 2 osoby alebo "
+"príplatok za každú ďalšiu osobu) a vlastný rozsah min/max osôb. Vlastné "
+"úpravy môžu pridať site-specific upozornenia cez akcie "
+"alttag_hotel_email_after_info / alttag_hotel_thankyou_after_info."
+
+#: includes/FieldBuilderPage.php:771
+msgid "Admin"
+msgstr "Administrácia"
+
+#: includes/FieldBuilderPage.php:649
+msgid "Admin Column"
+msgstr "Stĺpec v administrácii"
+
+#: includes/FieldBuilderPage.php:700
+msgid "Admin Filter"
+msgstr "Filter v administrácii"
+
+#: includes/AdminPreview.php:311
+msgid "ADMIN PREVIEW"
+msgstr "ADMIN NÁHĽAD"
+
+#: includes/Module/ParticipantTypeModule.php:169
+msgid "Adult"
+msgstr "Dospelý"
+
+#: includes/FieldBuilderPage.php:670
+msgid "After Email"
+msgstr "Za email"
+
+#: includes/FieldBuilderPage.php:667
+msgid "After Name"
+msgstr "Za menom"
+
+#: templates/admin/partials/content-row-item.php:142
+msgid "Alignment"
+msgstr "Zarovnanie"
+
+#: includes/Module/CompanionRegistrationModule.php:1033
+#: includes/Module/MultiDayModule.php:553
+#: includes/Module/ParticipantTypeModule.php:721
+msgid "All"
+msgstr "Všetci"
+
+#: includes/Selection/AbstractSelection.php:508
+msgid "All %1$d %2$s"
+msgstr "Všetky %1$d %2$s"
+
+#: includes/Module/AccommodationModule.php:359
+msgid "All (%s)"
+msgstr "Všetci (%s)"
+
+#: includes/Participant/AdminUI.php:549
+msgid "All Languages"
+msgstr "Všetky jazyky"
+
+#: includes/Participant/AdminUI.php:584 includes/Participant/PostType.php:50
+msgid "All Participants"
+msgstr "Všetci účastníci"
+
+#: includes/Module/MultiDayModule.php:179
+msgid "All participants"
+msgstr "Všetci účastníci"
+
+#: includes/Module/ParticipantTypeModule.php:953
+#: includes/VerificationManager.php:691
+msgid "all persons checked in"
+msgstr "všetky osoby zaregistrované pri vstupe"
+
+#: includes/Module/ParticipantTypeModule.php:941
+#: includes/VerificationManager.php:734
+msgid "all persons checked out"
+msgstr "všetky osoby odregistrované"
+
+#: includes/Participant/AdminUI.php:514
+msgid "All Products"
+msgstr "Všetky produkty"
+
+#: includes/Module/MultiDayModule.php:194 includes/Module/SessionModule.php:759
+msgid "All products"
+msgstr "Všetky produkty"
+
+#: includes/Participant/AdminUI.php:568
+msgid "All Promo Codes"
+msgstr "Všetky promo kódy"
+
+#: includes/Participant/AdminUI.php:529
+msgid "All Registration Statuses"
+msgstr "Všetky stavy registrácií"
+
+#: includes/Module/SessionModule.php:781
+msgid "All sessions"
+msgstr "Všetky termíny"
+
+#: includes/Settings.php:558
+msgid "Allow the same email to register multiple times"
+msgstr "Povoliť viacnásobnú registráciu rovnakého emailu"
+
+#. Author of the plugin
+#: alttag-registrations.php
+msgid "Alttag"
+msgstr "Alttag"
+
+#. Plugin Name of the plugin
+#: alttag-registrations.php
+msgid "Alttag Registrations"
+msgstr "Alttag Registrations"
+
+#. Description of the plugin
+#: alttag-registrations.php
+msgid "Alttag Registrations plugin for generating registrations."
+msgstr "Plugin Alttag Registrations pre generovanie registrácií."
+
+#: includes/Module/HotelSelectionModule.php:308
+msgid ""
+"Amount added per additional person beyond the first. Used when no price "
+"matrix or explicit 1-/2-person price matches the selected persons count. "
+"Persons selector visibility is controlled by the product min/max persons "
+"range."
+msgstr ""
+"Suma pridaná za každú ďalšiu osobu nad rámec prvej. Použije sa, keď "
+"zvolenému počtu osôb nezodpovedá ani cenová matica, ani ceny pre 1/2 osoby. "
+"Viditeľnosť výberu osôb je riadená rozsahom min/max osôb produktu."
+
+#: includes/StripeManager.php:411
+msgid "Amount paid"
+msgstr "Zaplatená suma"
+
+#. translators: 1: Stream URL, 2: Stream link text, 3: event noun in genitive case (e.g. "podujatia")
+#: templates/woocommerce/checkout/thankyou.php:111
+msgid ""
+"An email to create a password will be sent after payment of the order. After "
+"creating it, you will be able to log in to the <a href=\"%1$s\" "
+"target=\"_blank\">%2$s</a> page with your email and created password to "
+"watch the online stream of the %3$s."
+msgstr ""
+"Email na vytvorenie hesla Vám bude odoslaný po úhrade objednávky. Po jeho "
+"vytvorení sa budete môcť prihlásiť na stránku <a href=\"%1$s\" "
+"target=\"_blank\">%2$s</a> s Vaším emailom a vytvoreným heslom na sledovanie "
+"online prenosu %3$s."
+
+#. translators: 1: Stream URL, 2: Stream link text, 3: event noun in genitive case
+#: templates/woocommerce/checkout/thankyou.php:118
+msgid ""
+"An email to create a password will be sent. After creating it, you will be "
+"able to log in to the <a href=\"%1$s\" target=\"_blank\">%2$s</a> page with "
+"your email and created password to watch the online stream of the %3$s."
+msgstr ""
+"Email na vytvorenie hesla Vám bude odoslaný. Po jeho vytvorení sa budete "
+"môcť prihlásiť na stránku <a href=\"%1$s\" target=\"_blank\">%2$s</a> s "
+"Vaším emailom a vytvoreným heslom na sledovanie online prenosu %3$s."
+
+#: includes/RegistrationContext.php:975
+msgid ""
+"An email to create your password will be sent to you. After creating it, you "
+"will be able to log in with your email and created password to watch the "
+"livestream."
+msgstr ""
+"Email na vytvorenie hesla vám bude odoslaný. Po jeho vytvorení sa budete "
+"môcť prihlásiť pomocou svojho emailu a vytvoreného hesla a sledovať "
+"livestream."
+
+#: includes/RegistrationContext.php:936
+msgid ""
+"An email to create your password will be sent to you. After creating it, you "
+"will be able to log in to %1$s with your email and created password to watch "
+"the livestream."
+msgstr ""
+"Email na vytvorenie hesla vám bude odoslaný. Po jeho vytvorení sa budete "
+"môcť prihlásiť do %1$s pomocou svojho emailu a vytvoreného hesla a sledovať "
+"livestream."
+
+#: includes/Assets.php:68
+msgid "An error occurred"
+msgstr "Nastala chyba"
+
+#: includes/ArchiveManager.php:298
+msgid "Archived"
+msgstr "Archív"
+
+#: includes/ArchiveManager.php:97
+msgid "Archived <span class=\"count\">(%s)</span>"
+msgid_plural "Archived <span class=\"count\">(%s)</span>"
+msgstr[0] "Archivovaný <span class=\"count\">(%s)</span>"
+msgstr[1] "Archivované <span class=\"count\">(%s)</span>"
+msgstr[2] "Archivovaných <span class=\"count\">(%s)</span>"
+
+#: includes/FieldBuilderPage.php:55
+msgid "Are you sure you want to delete this field?"
+msgstr "Naozaj chcete odstrániť toto pole?"
+
+#: includes/Participant/Email.php:279
+msgid "Are you sure you want to delete this template?"
+msgstr "Ste si istý, že chcete odstrániť túto šablónu?"
+
+#: includes/Participant/Import.php:504
+msgid "Are you sure you want to proceed with the import?"
+msgstr "Naozaj chcete pokračovať s importom?"
+
+#: includes/GroupSeatingUI.php:480
+msgid "Artificial increase"
+msgstr "Umelé navýšenie"
+
+#. translators: %d: artificial seats saved
+#: includes/GroupSeatingUI.php:706
+#, php-format
+msgid "Artificial increase saved (+%d)."
+msgstr "Umelé navýšenie uložené (+%d)."
+
+#: includes/GroupSeatingUI.php:539
+msgid ""
+"Artificial seats are display-only: they do not create participants and do not "
+"change real capacity. Customers see fewer free seats in checkout (at zero it "
+"looks sold out), but orders, exports, check-in and e-mails are never blocked."
+msgstr ""
+"Umelé navýšenie je len zobrazenie: nevytvára účastníkov a nemení reálnu "
+"kapacitu. Zákazníkom sa v pokladni ukáže menej voľných miest (pri nule ako "
+"vypredané), ale objednávku, exporty, check-in ani e-maily to neblokuje."
+
+#: includes/Participant/Email.php:634
+msgid "Attach invoice PDF to the email"
+msgstr "Priložiť faktúru PDF do emailu"
+
+#: includes/Participant/Email.php:628
+msgid "Attach ticket PDF to the email"
+msgstr "Priložiť vstupenku PDF do emailu"
+
+#: includes/Participant/Email.php:622
+msgid "Attachments"
+msgstr "Prílohy"
+
+#: templates/admin/partials/content-row-item.php:101
+msgid "Auto (full width)"
+msgstr "Automaticky (plná šírka)"
+
+#: includes/Module/CompanionRegistrationModule.php:521
+msgid "Auto-registered as companion"
+msgstr "Automaticky zaregistrovaný/á ako sprievodca"
+
+#: includes/Selection/SessionSelection.php:359
+#: includes/Selection/SessionSelection.php:392
+msgid "available"
+msgstr "voľných miest"
+
+#: includes/Participant/Email.php:218
+msgid "Available placeholders:"
+msgstr "Dostupné placeholdery:"
+
+#: templates/admin/partials/content-row-item.php:61
+msgid "Available shortcodes:"
+msgstr "Dostupné shortcódy:"
+
+#: includes/Participant/Import.php:493
+msgid "Back to Upload"
+msgstr "Späť na nahrávanie"
+
+#: includes/Settings.php:649
+msgid "Background Color"
+msgstr "Farba pozadia"
+
+#: templates/admin/ticket-designer-settings.php:115
+msgid "Background Image URL"
+msgstr "URL pozadia obrázka"
+
+#: includes/Participant/Manager.php:75
+msgid "Bank Transfer"
+msgstr "Bankový prevod"
+
+#: includes/Module/HotelSelectionModule.php:1279
+msgid "Base price"
+msgstr "Základná cena"
+
+#: includes/FieldBuilderPage.php:664
+msgid "Before Actions"
+msgstr "Pred akciami"
+
+#: includes/Participant/Email.php:654
+msgid ""
+"Before sending to all participants, you can send a test email to verify how "
+"it looks."
+msgstr ""
+"Pred odoslaním všetkým účastníkom môžete poslať testovací email, aby ste si "
+"overili, ako vyzerá."
+
+#: includes/FieldBuilderPage.php:760
+msgid "Billing"
+msgstr "Fakturačné údaje"
+
+#: includes/Module/SessionModule.php:63
+msgid "Block duplicate session registrations"
+msgstr "Blokovať duplicitné registrácie na reláciu"
+
+#: includes/Module/MultiDayModule.php:59
+msgid ""
+"Block overlapping day registrations for the same email on equivalent products"
+msgstr ""
+"Blokovať prekrývajúce sa registrácie dní pre rovnaký email na ekvivalentných "
+"produktoch"
+
+#: includes/FieldBuilderPage.php:681
+msgid "Boolean (✓/✗)"
+msgstr "Logické pole (✓/✗)"
+
+#: includes/Selection/AbstractSelection.php:509
+msgid "Both days"
+msgstr "Oba dni"
+
+#: templates/admin/ticket-designer-settings.php:208
+#: templates/admin/ticket-designer-settings.php:306
+msgid "Break long words"
+msgstr "Deliť dlhé slová"
+
+#: includes/VerificationManager.php:784
+msgid "Bulk cancelled all days (%s) by %s"
+msgstr "Hromadne zrušené všetky dni (%s) od %s"
+
+#: includes/Module/ParticipantTypeModule.php:1019
+msgid "Bulk cancelled all participants by %s"
+msgstr "Hromadne zrušení všetci účastníci od %s"
+
+#: includes/Module/ParticipantTypeModule.php:1000
+msgid "Bulk registered all participants (%s) by %s"
+msgstr "Hromadne zaregistrovaní všetci účastníci (%s) od %s"
+
+#: includes/VerificationManager.php:640
+msgid "Bulk registered for all days (%s) by %s"
+msgstr "Hromadne zaregistrované všetky dni (%s) od %s"
+
+#: includes/FieldBuilder.php:484 includes/Participant/Manager.php:67
+#: includes/TicketDesignerSettings.php:348 includes/TicketManager.php:85
+#: templates/verification-page.php:53
+msgid "Business ID"
+msgstr "IČO"
+
+#: includes/Module/MultiDayModule.php:570 includes/Participant/Email.php:238
+#: includes/Participant/Email.php:688 includes/Participant/Import.php:205
+#: includes/Participant/Import.php:506
+msgid "Cancel"
+msgstr "Zrušiť"
+
+#: includes/Module/CompanionRegistrationModule.php:1041
+#: includes/Module/MultiDayModule.php:561
+#: includes/Module/MultiDayModule.php:611
+#: includes/Module/ParticipantTypeModule.php:722
+#: includes/Module/ParticipantTypeModule.php:769
+msgid "Cancel All"
+msgstr "Zrušiť všetkých"
+
+#: templates/verification-page.php:189
+msgid "Cancel Registration"
+msgstr "Zrušiť registráciu"
+
+#: includes/Participant/Manager.php:88 includes/VerificationManager.php:945
+#: templates/verification-page.php:91
+msgid "Cancelled"
+msgstr "Zrušené"
+
+#: includes/VerificationManager.php:835
+msgid "Cancelled registration for %s by %s"
+msgstr "Zrušená registrácia pre %s od %s"
+
+#: includes/Module/SessionModule.php:206
+msgid "Capacity"
+msgstr "Kapacita"
+
+#: templates/admin/partials/content-row-item.php:145
+msgid "Centered"
+msgstr "Vycentrované"
+
+#: includes/Participant/Import.php:427
+msgid "Changes"
+msgstr "Zmeny"
+
+#: includes/Participant/Import.php:1206
+msgid "Changes:"
+msgstr "Zmeny:"
+
+#: includes/Module/ParticipantTypeModule.php:700
+msgid "Check-in per participant type"
+msgstr "Registrácia podľa typu účastníka"
+
+#: includes/FieldBuilderPage.php:751
+msgid "Checkbox"
+msgstr "Zaškrtávacie políčko"
+
+#: includes/FieldBuilderPage.php:770 includes/Settings.php:305
+msgid "Checkout"
+msgstr "Pokladňa"
+
+#: includes/Module/MembershipModule.php:75
+msgid "Checkout – email field label"
+msgstr "Checkout – popis poľa Email"
+
+#: includes/Module/MembershipModule.php:65
+msgid "Checkout – first name field label"
+msgstr "Checkout – popis poľa Meno"
+
+#: includes/Module/MembershipModule.php:70
+msgid "Checkout – last name field label"
+msgstr "Checkout – popis poľa Priezvisko"
+
+#: templates/admin/ticket-preview.php:20
+msgid "Choose a participant to preview their ticket:"
+msgstr "Vyberte účastníka pre náhľad jeho vstupenky:"
+
+#: includes/Module/MultiDayModule.php:308 includes/Participant/Manager.php:64
+#: includes/TicketDesignerSettings.php:344 includes/TicketManager.php:53
+#: templates/verification-page.php:57
+msgid "City"
+msgstr "Mesto"
+
+#: includes/Participant/Email.php:317
+msgid "Close"
+msgstr "Zavrieť"
+
+#: includes/Module/SessionModule.php:204
+msgid "Close at"
+msgstr "Uzavrieť dňa"
+
+#: templates/admin/partials/content-row-item.php:86
+msgid "Color"
+msgstr "Farba"
+
+#: includes/FieldBuilderPage.php:610
+msgid "Column:"
+msgstr "Stĺpec:"
+
+#: includes/FieldBuilderPage.php:528
+msgid ""
+"Comma-separated WooCommerce product IDs where this field should be hidden. "
+"Useful for system fields you want to suppress on specific events."
+msgstr ""
+"ID produktov WooCommerce oddelené čiarkami, na ktorých sa má toto pole skryť."
+" Užitočné pri systémových poliach, ktoré chcete potlačiť na konkrétnych "
+"udalostiach."
+
+#: includes/FieldBuilderPage.php:508
+msgid ""
+"Comma-separated WooCommerce product IDs. Leave empty to show for all "
+"products."
+msgstr ""
+"Čiarkami oddelené ID produktov WooCommerce. Nechajte prázdne pre zobrazenie "
+"pri všetkých produktoch."
+
+#: includes/FieldBuilderPage.php:759
+msgid "Common"
+msgstr "Spoločné"
+
+#: includes/Module/CompanionRegistrationModule.php:45
+#: includes/Module/CompanionRegistrationModule.php:112
+msgid "companion"
+msgstr "kolega/kolegyňa"
+
+#: includes/Module/CompanionRegistrationModule.php:43
+msgid "Companion Label"
+msgstr "Označenie sprievodcu"
+
+#: includes/EventManager.php:499
+msgid "Companion Mode"
+msgstr "Režim sprevádzajúcej osoby"
+
+#: includes/Module/CompanionRegistrationModule.php:20
+msgid "Companion Registration"
+msgstr "Registrácia sprievodcu"
+
+#: includes/FieldBuilder.php:470 includes/Participant/Import.php:368
+msgid "Company"
+msgstr "Spoločnosť"
+
+#: includes/Participant/PostType.php:198 templates/verification-page.php:16
+msgid "Company Information"
+msgstr "Informácie o firme"
+
+#: includes/Participant/Manager.php:62 includes/TicketDesignerSettings.php:347
+#: includes/TicketManager.php:38 templates/verification-page.php:52
+msgid "Company Name"
+msgstr "Názov firmy"
+
+#: includes/Participant/Manager.php:87 templates/verification-page.php:89
+msgid "Completed"
+msgstr "Dokončené"
+
+#: includes/Module/SessionModule.php:188
+msgid "Configure session dates with optional time slots."
+msgstr "Nakonfigurujte termíny s voliteľnými časovými slotmi."
+
+#: includes/Participant/Import.php:503
+msgid "Confirm Import"
+msgstr "Potvrdiť import"
+
+#: includes/Participant/Import.php:1134
+msgid "Confirmation email with ticket sent"
+msgstr "Potvrdzovací email so vstupenkou bol odoslaný"
+
+#: includes/Participant/Import.php:164 includes/Participant/Manager.php:85
+#: includes/VerificationManager.php:944
+msgid "Confirmed"
+msgstr "Potvrdený"
+
+#: includes/Settings.php:513
+msgid "Contact Email"
+msgstr "Kontaktný email"
+
+#: includes/Settings.php:515
+msgid "Contact email shown in emails and footer"
+msgstr "Kontaktný email zobrazený v emailoch a pätičke"
+
+#: includes/Participant/Email.php:314
+msgid "Content"
+msgstr "Obsah"
+
+#: templates/admin/ticket-designer-settings.php:449
+msgid "Content Rows"
+msgstr "Riadky obsahu"
+
+#: templates/admin/ticket-designer-settings.php:102
+msgid "Copy from Global"
+msgstr "Kopírovať z globálneho"
+
+#: includes/AdminPreview.php:180
+msgid "Could not build email preview."
+msgstr "Náhľad emailu sa nepodarilo zostaviť."
+
+#: includes/Participant/Export.php:533
+msgid "Could not create ZIP file"
+msgstr "Nepodarilo sa vytvoriť ZIP súbor"
+
+#: includes/TicketDesigner.php:214
+msgid "Could not generate ticket preview"
+msgstr "Nepodarilo sa vygenerovať náhľad vstupenky"
+
+#: includes/TicketDesignerSettings.php:252
+msgid "Could not load global settings."
+msgstr "Nepodarilo sa načítať globálne nastavenia."
+
+#: includes/EventManager.php:504
+msgid "Count only (no companion fields)"
+msgstr "Iba počet (bez polí sprevádzajúcej osoby)"
+
+#: includes/FieldBuilderPage.php:752 includes/Module/MultiDayModule.php:310
+#: includes/Participant/Manager.php:66 includes/TicketDesignerSettings.php:345
+#: includes/TicketManager.php:58 templates/verification-page.php:59
+msgid "Country"
+msgstr "Krajina"
+
+#: includes/Participant/AdminUI.php:98 includes/Participant/Manager.php:98
+msgid "Create Date"
+msgstr "Vytvorené dňa"
+
+#: includes/Participant/Email.php:158
+msgid "Create New Template"
+msgstr "Vytvoriť novú šablónu"
+
+#: includes/Participant/Email.php:253
+msgid "Created"
+msgstr "Vytvorené"
+
+#: includes/Participant/AdminUI.php:615
+msgid "Created from (inclusive)"
+msgstr "Vytvorené od (vrátane)"
+
+#: includes/Participant/AdminUI.php:624
+msgid "Created until (inclusive)"
+msgstr "Vytvorené do (vrátane)"
+
+#: includes/Participant/Import.php:1184
+msgid "CREATED VIA IMPORT"
+msgstr "VYTVORENÉ CEZ IMPORT"
+
+#: includes/Participant/Manager.php:76
+msgid "Credit Card"
+msgstr "Kreditná karta"
+
+#: includes/Participant/Import.php:426
+msgid "Current Name"
+msgstr "Aktuálne meno"
+
+#: includes/PricingTiers.php:45 includes/PricingTiers.php:48
+msgid "Current price (tier)"
+msgstr "Aktuálna cena (tier)"
+
+#: templates/verification-page.php:161
+msgid "Current Status"
+msgstr "Aktuálny stav"
+
+#. translators: %s: language name
+#: templates/admin/ticket-designer-settings.php:76
+msgid "Currently editing: %s"
+msgstr "Práve upravujete: %s"
+
+#: includes/FieldBuilderPage.php:763
+msgid "Custom"
+msgstr "Vlastné"
+
+#: includes/Settings.php:595
+msgid "Custom checkout CSS"
+msgstr "Vlastné CSS pre checkout"
+
+#: includes/EventManager.php:543
+msgid "Custom days & pricing"
+msgstr "Vlastné dni a ceny"
+
+#: includes/Settings.php:674
+msgid "Custom email CSS"
+msgstr "Vlastné CSS pre email"
+
+#: includes/Settings.php:612
+msgid "Dark (overlay on dark backgrounds)"
+msgstr "Tmavá (prekrytie na tmavom pozadí)"
+
+#: includes/Settings.php:655
+msgid "Dark Primary Color"
+msgstr "Tmavá primárna farba"
+
+#: includes/Settings.php:658
+msgid "Darker variant of primary color"
+msgstr "Tmavší variant primárnej farby"
+
+#: includes/FieldBuilderPage.php:684 includes/Module/SessionModule.php:200
+#: templates/verification-page.php:198
+msgid "Date"
+msgstr "Dátum"
+
+#: includes/EventManager.php:565
+msgid "Date, label and price per day per person."
+msgstr "Dátum, názov a cena za deň na osobu."
+
+#: includes/Module/MultiDayModule.php:499
+msgid "Day"
+msgstr "Deň"
+
+#: includes/Settings.php:608
+msgid "Day / participant-type selector theme"
+msgstr "Téma výberu dňa / typu účastníka"
+
+#: includes/CheckoutManager.php:588
+#: includes/Selection/AbstractSelection.php:507
+#: includes/Selection/DaySelection.php:120
+msgid "days"
+msgstr "dni"
+
+#: includes/EventManager.php:563 includes/Settings.php:487
+msgid "Days & Pricing"
+msgstr "Dni a ceny"
+
+#: includes/EventManager.php:605
+msgid "days ="
+msgstr "dni ="
+
+#: templates/order-processing-email.php:41
+#: templates/woocommerce/checkout/thankyou.php:65
+msgid "Dear %s %s,"
+msgstr "Dobrý deň, %s %s,"
+
+#: includes/Module/CompanionRegistrationModule.php:609
+#: includes/Module/HotelSelectionModule.php:2075
+#: includes/RegistrationContext.php:848 includes/ThankYouPage.php:35
+msgid "Dear %s,"
+msgstr "Dobrý deň, %s,"
+
+#: includes/Settings.php:390
+msgid ""
+"Declined event name for sentences like \"na X\", e.g. \"Konferencii "
+"Podnikateľ v pluse\""
+msgstr ""
+"Skloňovaný názov udalosti pre vety typu „na X\", napr. „Konferencii "
+"Podnikateľ v pluse\""
+
+#: includes/Settings.php:401
+msgid ""
+"Declined event name for sentences like \"Pri vstupe na X\", e.g. "
+"\"Konferenciu Podnikateľ v pluse\""
+msgstr ""
+"Skloňovaný názov podujatia pre vety typu „Pri vstupe na X\", napr. "
+"„Konferenciu Podnikateľ v pluse\""
+
+#: includes/Participant/Import.php:173 includes/Settings.php:523
+msgid "Default Language"
+msgstr "Predvolený jazyk"
+
+#: includes/Settings.php:526
+msgid "Default language for registrations"
+msgstr "Predvolený jazyk pre registrácie"
+
+#: includes/Module/HotelSelectionModule.php:269
+msgid ""
+"Default maximum value in the persons selector. Individual hotel products can "
+"override it."
+msgstr ""
+"Predvolená maximálna hodnota vo výbere počtu osôb. Jednotlivé hotelové "
+"produkty ju môžu prepísať."
+
+#: includes/Participant/Import.php:159
+msgid "Default Registration Status"
+msgstr "Predvolený stav registrácie"
+
+#: includes/Module/ParticipantTypeModule.php:148
+msgid ""
+"Define participant categories and their prices. Customer picks how many of "
+"each at checkout. Enable this module on the \"General\" tab under "
+"\"Participant Types\"."
+msgstr ""
+"Zadefinujte kategórie účastníkov a ich ceny. Zákazník na pokladnici vyberie "
+"počet z každého typu. Modul zapnite na karte „Všeobecné\" v sekcii „Typy "
+"účastníkov\"."
+
+#: includes/FieldBuilderPage.php:402 includes/Participant/Email.php:284
+msgid "Delete"
+msgstr "Zmazať"
+
+#: templates/admin/ticket-designer-settings.php:18
+msgid "Design for:"
+msgstr "Dizajn pre:"
+
+#: includes/Module/MembershipModule.php:40
+msgid ""
+"Detect membership products by category and override checkout field labels, "
+"email title/body, Stripe receipt and SuperFaktura invoice text."
+msgstr ""
+"Detegovať členské produkty podľa kategórie a prepísať popisy polí v pokladni,"
+" titulok/telo emailu, účtenku Stripe a text faktúry SuperFaktura."
+
+#: includes/Module/RecordingModule.php:41
+msgid ""
+"Detect recording products by category and override email title/body and the "
+"thank-you page (no ticket, no QR)."
+msgstr ""
+"Detegovať produkty s nahrávkou podľa kategórie a prepísať titulok/telo "
+"emailu a ďakovaciu stránku (bez vstupenky, bez QR)."
+
+#: includes/Settings.php:481
+msgid ""
+"Disable for membership/hotel/livestream products that should not produce a "
+"ticket."
+msgstr ""
+"Vypnúť pre členské/hotelové/livestream produkty, ktoré nemajú vytvárať "
+"vstupenku."
+
+#: includes/Settings.php:531
+msgid "Disable Order Notes"
+msgstr "Vypnúť poznámky k objednávke"
+
+#: includes/EventManager.php:485 includes/EventManager.php:490
+msgid "Disabled"
+msgstr "Zakázané"
+
+#: includes/Selection/ParticipantTypeSelection.php:324
+msgid "Discount (%d days)"
+msgstr "Zľava za %d dni"
+
+#: includes/Settings.php:564
+msgid "Display Invoice Download Link"
+msgstr "Zobraziť odkaz na stiahnutie faktúry"
+
+#: includes/Participant/PostType.php:214 templates/verification-page.php:32
+msgid "Documents"
+msgstr "Dokumenty"
+
+#: includes/Participant/AdminUI.php:484
+msgid "Download All Tickets"
+msgstr "Stiahnuť všetky vstupenky"
+
+#: includes/Participant/Email.php:861 includes/Participant/Email.php:1017
+msgid "Download Invoice"
+msgstr "Stiahnuť faktúru"
+
+#: templates/woocommerce/checkout/thankyou.php:169
+msgid "Download invoice"
+msgstr "Stiahnuť faktúru"
+
+#: includes/Participant/Export.php:100
+msgid "Download selected tickets"
+msgstr "Stiahnuť vybrané vstupenky"
+
+#: includes/Participant/Import.php:211
+msgid "Download Template"
+msgstr "Stiahnuť šablónu"
+
+#: includes/Participant/Email.php:854 includes/Participant/Email.php:1010
+msgid "Download Ticket"
+msgstr "Stiahnuť vstupenku"
+
+#: templates/woocommerce/checkout/thankyou.php:183
+msgid "Download ticket"
+msgstr "Stiahnuť vstupenku"
+
+#: includes/Participant/Export.php:170
+msgid "Downloaded %s participant ticket."
+msgid_plural "Downloaded %s participant tickets."
+msgstr[0] "Stiahnuté vstupenky %s účastníka."
+msgstr[1] "Stiahnuté vstupenky %s účastníkom."
+msgstr[2] "Stiahnuté vstupenky %s účastníkom."
+
+#: templates/admin/ticket-designer-settings.php:353
+msgid ""
+"Drag to reorder. Drag between columns to move. Uncheck to hide a field from "
+"the ticket."
+msgstr ""
+"Ťahaním zmeníte poradie. Ťahaním medzi stĺpcami premiestnite. Odškrtnite pre "
+"skrytie poľa z vstupenky."
+
+#: includes/Participant/Email.php:270
+msgid "Edit"
+msgstr "Upraviť"
+
+#: includes/Participant/PostType.php:49
+msgid "Edit Participant"
+msgstr "Upraviť účastníka"
+
+#: includes/Participant/Email.php:156
+msgid "Edit Template"
+msgstr "Upraviť šablónu"
+
+#: templates/admin/ticket-designer-settings.php:53
+msgid "Edit ticket for language:"
+msgstr "Upraviť lístok pre jazyk:"
+
+#: includes/FieldBuilder.php:459 includes/FieldBuilderPage.php:748
+#: includes/FieldBuilderPage.php:772
+#: includes/Module/HotelSelectionModule.php:853
+#: includes/Participant/AdminUI.php:94 includes/Participant/Import.php:126
+#: includes/Participant/Import.php:342 includes/Participant/Import.php:366
+#: includes/Participant/Import.php:425 includes/Participant/Import.php:467
+#: includes/Participant/Manager.php:60 includes/Settings.php:306
+#: includes/TicketDesignerSettings.php:340 includes/TicketManager.php:43
+#: templates/verification-page.php:50
+msgid "Email"
+msgstr "Email"
+
+#: includes/CheckoutManager.php:153
+msgid ""
+"Email %1$s is already registered for: %2$s. Please select different days or "
+"use a different email."
+msgstr ""
+"Email %1$s je už zaregistrovaný pre: %2$s. Vyberte iné dni alebo použite iný "
+"email."
+
+#: includes/WooCommerceManager.php:1100
+msgid ""
+"Email %s is already registered for livestream access. Please use a different "
+"email address."
+msgstr ""
+"Email %s je už registrovaný pre prístup k livestreamu. Prosím, použite iný "
+"email."
+
+#: includes/CheckoutManager.php:138
+msgid ""
+"Email %s is already registered for this product. Please use a different "
+"email address."
+msgstr ""
+"Email %s je už pre tento produkt zaregistrovaný. Použite inú emailovú adresu."
+
+#: includes/Participant/AdminUI.php:689
+msgid "Email Actions"
+msgstr "Emailové akcie"
+
+#: includes/Module/NotificationModule.php:46
+msgid "Email address to receive sales threshold notifications"
+msgstr ""
+"E-mailová adresa na prijímanie upozornení o dosiahnutí predajného limitu"
+
+#: includes/Settings.php:520
+msgid "Email address used as sender"
+msgstr "Emailová adresa použitá ako odosielateľ"
+
+#: includes/Settings.php:652
+msgid "Email body background color"
+msgstr "Farba pozadia tela emailu"
+
+#: includes/Participant/Email.php:202 includes/Participant/Email.php:577
+msgid "Email Content"
+msgstr "Obsah emailu"
+
+#: includes/Settings.php:682
+msgid "Email greeting format"
+msgstr "Formát pozdravu v emaily"
+
+#: includes/Module/CompanionRegistrationModule.php:271
+#: includes/Module/CompanionRegistrationModule.php:773
+#: includes/Module/CompanionRegistrationModule.php:858
+#: includes/Module/CompanionRegistrationModule.php:933
+msgid "Email of %s"
+msgstr "Email %s"
+
+#. translators: %d is the guest ordinal (2, 3, 4, …)
+#: includes/Module/HotelSelectionModule.php:1423
+msgid "Email of guest %d"
+msgstr "Email hosťa %d"
+
+#. translators: %1$s = subject, %2$d = order id, %3$d = participant id
+#: includes/AdminPreview.php:190
+msgid "Email preview — %1$s (order #%2$d, participant #%3$d)"
+msgstr "Náhľad emailu — %1$s (objednávka #%2$d, účastník #%3$d)"
+
+#: includes/Participant/Email.php:901
+msgid "Email sent"
+msgstr "Email odoslaný"
+
+#: includes/Participant/Email.php:786 includes/Participant/Email.php:951
+msgid "Email session expired or invalid. Please select participants again."
+msgstr ""
+"Časový limit emailovej relácie vypršal alebo je neplatný. Prosím, vyberte "
+"účastníkov znova."
+
+#: includes/Participant/Email.php:186 includes/Participant/Email.php:611
+msgid "Email Subject"
+msgstr "Predmet emailu"
+
+#: includes/Participant/Email.php:801 includes/Participant/Email.php:968
+msgid "Email subject and content are required."
+msgstr "Predmet a obsah emailu sú povinné."
+
+#: includes/Participant/AdminUI.php:1028
+msgid "Email successfully sent to %d participant."
+msgid_plural "Email successfully sent to %d participants."
+msgstr[0] "Email úspešne odoslaný %d účastníkovi."
+msgstr[1] "Email úspešne odoslaný %d účastníkom."
+msgstr[2] "Email úspešne odoslaný %d účastníkom."
+
+#: includes/Participant/Email.php:52 includes/Participant/Email.php:53
+#: includes/Participant/Email.php:149
+msgid "Email Templates"
+msgstr "Šablóny emailu"
+
+#: includes/Module/MembershipModule.php:91
+#: includes/Module/RecordingModule.php:66
+msgid "Email title (paid)"
+msgstr "Titulok emailu (zaplatené)"
+
+#: includes/Module/MembershipModule.php:99
+#: includes/Module/RecordingModule.php:74
+msgid "Email title (unpaid)"
+msgstr "Titulok emailu (neuhradené)"
+
+#: includes/Participant/Email.php:486
+msgid "Emails"
+msgstr "Emaily"
+
+#: includes/Settings.php:536
+msgid "Enable GDPR Consent"
+msgstr "Povoliť GDPR súhlas"
+
+#: includes/Module/MultiDayModule.php:57
+msgid "Enable Multi-Day Duplicate Validation"
+msgstr "Povoliť validáciu duplicít pre viacdňové registrácie"
+
+#: includes/Module/MultiDayModule.php:52
+msgid "Enable Multi-Day Features"
+msgstr "Povoliť viacdňové funkcie"
+
+#: includes/Module/LivestreamModule.php:35
+msgid "Enable online/livestream attendance with access management."
+msgstr "Povolí online/livestream účasť so správou prístupu."
+
+#: includes/Module/MultiDayModule.php:54
+msgid ""
+"Enable selected-days columns, per-day verification tools and multi-day "
+"participant admin helpers"
+msgstr ""
+"Povoliť stĺpce vybraných dní, nástroje overenia po dňoch a viacdňové pomocné "
+"funkcie v administrácii účastníkov"
+
+#: includes/Settings.php:546
+msgid "Enable Terms Consent"
+msgstr "Povoliť súhlas s podmienkami"
+
+#: includes/EventManager.php:484 includes/EventManager.php:489
+msgid "Enabled"
+msgstr "Povolené"
+
+#: includes/Participant/Email.php:677
+msgid "Enter the email address where you want to receive the test email."
+msgstr "Zadajte emailovú adresu, na ktorú chcete dostať testovací email."
+
+#: includes/Participant/Import.php:343
+msgid "Error"
+msgstr "Chyba"
+
+#: includes/Participant/Export.php:362
+msgid "Error generating Excel file: %s"
+msgstr "Chyba pri generovaní Excel súboru: %s"
+
+#: includes/TicketDesignerSettings.php:248
+msgid "Error generating preview. Please try again."
+msgstr "Chyba pri generovaní náhľadu. Skúste to znova."
+
+#: includes/TicketDesignerSettings.php:247
+msgid "Error generating preview:"
+msgstr "Chyba pri generovaní náhľadu:"
+
+#: includes/TicketDesignerSettings.php:250
+msgid "Error importing settings:"
+msgstr "Chyba pri importe nastavení:"
+
+#: includes/TicketDesignerSettings.php:253
+msgid "Error loading global settings. Please try again."
+msgstr "Chyba pri načítavaní globálnych nastavení. Skúste to znova."
+
+#: includes/Participant/Import.php:690
+msgid "Error parsing file: %s"
+msgstr "Chyba pri spracovaní súboru: %s"
+
+#: includes/Participant/Import.php:337
+msgid "Errors (these rows will be skipped)"
+msgstr "Chyby (tieto riadky budú preskočené)"
+
+#: templates/verification-page.php:199
+msgid "Event"
+msgstr "Podujatie"
+
+#: includes/EventManager.php:406
+msgid "Event Details"
+msgstr "Detaily podujatia"
+
+#: includes/Settings.php:418
+msgid "Event End Date"
+msgstr "Dátum konca podujatia"
+
+#: includes/Settings.php:359
+msgid "Event map URL"
+msgstr "URL mapy podujatia"
+
+#: includes/Settings.php:381
+msgid "Event Name"
+msgstr "Názov podujatia"
+
+#: includes/Settings.php:399
+msgid "Event Name (accusative case)"
+msgstr "Názov podujatia (akuzatív)"
+
+#: includes/Settings.php:388
+msgid "Event Name (locative case)"
+msgstr "Názov podujatia (lokál)"
+
+#: includes/Settings.php:370
+msgid "Event program URL"
+msgstr "URL programu podujatia"
+
+#: includes/Settings.php:411
+msgid "Event Start Date"
+msgstr "Dátum začiatku podujatia"
+
+#: includes/Module/SessionModule.php:204
+msgid "Exact datetime when registration closes"
+msgstr "Presný dátum a čas, kedy sa uzatvára registrácia"
+
+#: includes/Participant/Import.php:137
+msgid "Excel File"
+msgstr "Excel súbor"
+
+#: includes/Participant/Import.php:312
+msgid "Existing participants to update:"
+msgstr "Existujúci účastníci na aktualizáciu:"
+
+#: includes/Participant/Import.php:317
+msgid "Existing without changes (skipped):"
+msgstr "Existujúci bez zmien (preskočení):"
+
+#: includes/FieldBuilderPage.php:774
+msgid "Export"
+msgstr "Export"
+
+#: includes/Participant/Import.php:215
+msgid "Export All Participants"
+msgstr "Exportovať všetkých účastníkov"
+
+#: includes/Participant/AdminUI.php:482
+msgid "Export All to Excel"
+msgstr "Exportovať všetky do Excelu"
+
+#: includes/Participant/AdminUI.php:478
+msgid "Export Filtered to Excel"
+msgstr "Exportovať prefiltrovaných do Excelu"
+
+#: includes/FieldBuilderPage.php:333
+msgid "Export JSON"
+msgstr "Exportovať JSON"
+
+#: includes/Participant/Import.php:246
+msgid "Export Selected"
+msgstr "Exportovať vybraného"
+
+#: includes/Participant/Export.php:99
+msgid "Export selected to Excel"
+msgstr "Exportovať vybrané do Excelu"
+
+#: templates/admin/ticket-designer-settings.php:469
+msgid "Export Settings"
+msgstr "Exportovať nastavenia"
+
+#: includes/FieldBuilderPage.php:715
+msgid "Export/Import"
+msgstr "Export/Import"
+
+#: includes/Participant/Export.php:156
+msgid "Exported %s participant to Excel."
+msgid_plural "Exported %s participants to Excel."
+msgstr[0] "Exportovaný %s účastník do Excelu."
+msgstr[1] "Exportovaných %s účastníkov do Excelu."
+msgstr[2] "Exportovaných %s účastníkov do Excelu."
+
+#: includes/Module/MultiDayModule.php:34
+msgid ""
+"Extended participant features for multi-day events with per-day tracking and "
+"verification."
+msgstr ""
+"Rozšírené funkcie pre viacdňové eventy so sledovaním a verifikáciou po dňoch."
+
+#: includes/Settings.php:676
+msgid "Extra CSS injected into the order-processing email <style> block."
+msgstr ""
+"Dodatočné CSS vložené do <style> bloku v emaile o spracovaní objednávky."
+
+#: includes/Settings.php:597
+msgid ""
+"Extra CSS injected on the checkout page (e.g. style the registration banner)."
+msgstr ""
+"Dodatočné CSS vložené na stránke pokladne (napr. štýl banneru registrácie)."
+
+#: includes/Participant/AdminUI.php:212 includes/Participant/Manager.php:120
+#: includes/Participant/Manager.php:142
+msgid "Failed"
+msgstr "Zlyhalo"
+
+#: includes/Participant/AdminUI.php:1125
+msgid "Failed to regenerate ticket"
+msgstr "Nepodarilo sa znova vygenerovať vstupenku"
+
+#: includes/Participant/AdminUI.php:1016
+msgid "Failed to regenerate ticket. Please try again."
+msgstr "Nepodarilo sa znova vygenerovať vstupenku. Prosím, skúste to znova."
+
+#: includes/Participant/AdminUI.php:1039
+msgid "Failed to send email to %d participant."
+msgid_plural "Failed to send email to %d participants."
+msgstr[0] "Nepodarilo sa odoslať email %d účastníkovi."
+msgstr[1] "Nepodarilo sa odoslať email %d účastníkom."
+msgstr[2] "Nepodarilo sa odoslať email %d účastníkom."
+
+#: includes/Participant/Email.php:456
+msgid "Failed to send test email. Please check your email configuration."
+msgstr ""
+"Nepodarilo sa odoslať testovací email. Prosím, skontrolujte nastavenia "
+"emailu."
+
+#: includes/FieldBuilder.php:992
+msgid "Field \"%s\" is missing required \"key\" property"
+msgstr "Poľu \"%s\" chýba povinná vlastnosť \"key\""
+
+#: includes/FieldBuilderPage.php:25 includes/FieldBuilderPage.php:26
+#: includes/FieldBuilderPage.php:322
+msgid "Field Builder"
+msgstr "Tvorca polí"
+
+#: includes/FieldBuilderPage.php:585
+msgid "Field is for ticket/verification display only, not shown on checkout"
+msgstr ""
+"Pole je len pre zobrazenie na vstupenke/overení, na checkoute sa nezobrazuje"
+
+#: includes/FieldBuilderPage.php:56
+msgid "Field key is required"
+msgstr "Kľúč poľa je povinný"
+
+#: includes/FieldBuilderPage.php:109
+msgid "Fields imported successfully"
+msgstr "Polia boli úspešne importované"
+
+#: includes/FieldBuilderPage.php:124
+msgid "Fields saved successfully"
+msgstr "Polia boli úspešne uložené"
+
+#: includes/Participant/Import.php:561
+msgid "File upload failed. Please try again."
+msgstr "Nahrávanie súboru zlyhalo. Prosím, skúste to znova."
+
+#: includes/Participant/PostType.php:62
+msgid "Filter participants list"
+msgstr "Filteruj účastníkov"
+
+#: includes/FieldBuilderPage.php:618
+msgid "First"
+msgstr "Prvý"
+
+#: templates/admin/ticket-designer-settings.php:358
+msgid "First Column"
+msgstr "Prvý stĺpec"
+
+#: includes/Module/HotelSelectionModule.php:854
+msgid "First guest"
+msgstr "Prvý hosť"
+
+#: includes/Participant/AdminUI.php:92 includes/Participant/Import.php:364
+#: includes/Participant/Manager.php:58 includes/TicketDesignerSettings.php:338
+#: includes/TicketManager.php:28 templates/verification-page.php:48
+msgid "First Name"
+msgstr "Meno"
+
+#: includes/Module/HotelSelectionModule.php:851
+msgid "First name"
+msgstr "Meno"
+
+#: includes/Module/CompanionRegistrationModule.php:255
+#: includes/Module/CompanionRegistrationModule.php:765
+#: includes/Module/CompanionRegistrationModule.php:931
+msgid "First name of %s"
+msgstr "Meno %s"
+
+#: templates/admin/ticket-designer-settings.php:162
+#: templates/admin/ticket-designer-settings.php:260
+msgid "Font Size"
+msgstr "Veľkosť písma"
+
+#: templates/admin/partials/content-row-item.php:79
+msgid "Font Size (px)"
+msgstr "Veľkosť písma (px)"
+
+#: includes/Settings.php:666
+msgid "Footer Info Text"
+msgstr "Informačný text v pätičke"
+
+#: includes/Settings.php:668
+msgid "Footer text for emails (supports {contact_email} placeholder)"
+msgstr "Text pätičky emailov (podporuje placeholder {contact_email})"
+
+#: includes/ArchiveManager.php:192 includes/Participant/AdminUI.php:947
+msgid "Forbidden"
+msgstr "Prístup zamietnutý"
+
+#: includes/FieldBuilderPage.php:675
+msgid "Format:"
+msgstr "Formát:"
+
+#: includes/Selection/ParticipantTypeSelection.php:191
+msgid "Free"
+msgstr "Zdarma"
+
+#: includes/EventManager.php:577
+msgid "Friday 10.4."
+msgstr "Piatok 10.4."
+
+#: includes/Participant/AdminUI.php:611
+msgid "From"
+msgstr "Od"
+
+#. translators: %s is the lowest price for a room (e.g. "139,65 €")
+#: includes/Module/HotelSelectionModule.php:2953
+msgid "from %s"
+msgstr "od %s"
+
+#: includes/EventManager.php:503
+msgid "Full (companion fields + registration)"
+msgstr "Plný (polia sprevádzajúcej osoby + registrácia)"
+
+#: includes/EventManager.php:501
+msgid ""
+"Full: companion name/email fields + auto-registration. Count only: just "
+"store person count, no companion fields."
+msgstr ""
+"Plný: polia meno/email sprevádzajúcej osoby + automatická registrácia. Iba "
+"počet: uloží sa iba počet osôb, bez polí sprevádzajúcej osoby."
+
+#: includes/Settings.php:541
+msgid "GDPR Policy URL"
+msgstr "URL GDPR podmienok"
+
+#: includes/WooCommerceManager.php:969
+msgid "GDPR regulations"
+msgstr "podmienkami GDPR"
+
+#: includes/Settings.php:303
+msgid "General"
+msgstr "Všeobecné"
+
+#: includes/Settings.php:475
+msgid "Generate PDF ticket for this product"
+msgstr "Generovať PDF lístok pre tento produkt"
+
+#: templates/admin/ticket-designer-settings.php:492
+msgid "Generating preview..."
+msgstr "Generujem náhľad..."
+
+#: templates/admin/ticket-designer-settings.php:30
+msgid "Global (default)"
+msgstr "Globálny (predvolený)"
+
+#: includes/EventManager.php:482
+msgid "Global: %s"
+msgstr "Globálne: %s"
+
+#: includes/Participant/AdminUI.php:211 includes/Participant/Manager.php:119
+#: includes/Participant/Manager.php:141
+msgid "Granted"
+msgstr "Udelený"
+
+#: includes/Settings.php:687
+msgid ""
+"Greeting template, supports {full_name}, {first_name}, {last_name}, "
+"{titles_before}, {titles_after}. Per-product override allowed."
+msgstr ""
+"Šablóna pozdravu, podporuje {full_name}, {first_name}, {last_name}, "
+"{titles_before}, {titles_after}. Per-produktový override je povolený."
+
+#: includes/FieldBuilderPage.php:535
+msgid "Group"
+msgstr "Skupina"
+
+#. translators: %d is the guest ordinal (3, 4, …)
+#. translators: %d is the guest ordinal (2, 3, 4, …)
+#: includes/Module/HotelSelectionModule.php:857
+#: includes/Module/HotelSelectionModule.php:1407
+msgid "Guest %d"
+msgstr "Hosť %d"
+
+#: includes/Module/HotelSelectionModule.php:1748
+msgid ""
+"Guest <strong>%1$s</strong> - if interested in attending the conference, "
+"they must buy a ticket separately %2$shere%3$s."
+msgid_plural ""
+"Guests <strong>%1$s</strong> - if interested in attending the conference, "
+"they must buy a ticket separately %2$shere%3$s."
+msgstr[0] ""
+"Hosť <strong>%1$s</strong> - ak má záujem zúčastniť sa konferencie, musí si "
+"vstupenku zakúpiť samostatne %2$stu%3$s."
+msgstr[1] ""
+"Hostia <strong>%1$s</strong> - ak majú záujem zúčastniť sa konferencie, "
+"musia si vstupenku zakúpiť samostatne %2$stu%3$s."
+msgstr[2] ""
+"Hostí <strong>%1$s</strong> - ak majú záujem zúčastniť sa konferencie, musia "
+"si vstupenku zakúpiť samostatne %2$stu%3$s."
+
+#: includes/Module/HotelSelectionModule.php:218
+msgid "Guest notification – email heading"
+msgstr "Notifikácia hosťa – nadpis emailu"
+
+#: includes/Module/HotelSelectionModule.php:212
+msgid "Guest notification – email subject"
+msgstr "Notifikácia hosťa – predmet emailu"
+
+#: includes/Module/HotelSelectionModule.php:224
+msgid "Guest notification – intro paragraph"
+msgstr "Notifikácia hosťa – úvodný odsek"
+
+#: includes/Module/HotelSelectionModule.php:247
+msgid "Guest notification – notice body"
+msgstr "Notifikácia hosťa – text upozornenia"
+
+#: includes/Module/HotelSelectionModule.php:242
+msgid "Guest notification – notice title"
+msgstr "Notifikácia hosťa – nadpis upozornenia"
+
+#: includes/Module/HotelSelectionModule.php:256
+msgid "Guest notification – outro paragraph"
+msgstr "Notifikácia hosťa – záverečný odsek"
+
+#: includes/Module/HotelSelectionModule.php:233
+msgid "Guest notification – registrant info"
+msgstr "Notifikácia hosťa – informácie o registrátorovi"
+
+#: includes/Module/HotelSelectionModule.php:261
+msgid "Guest notification – registration URL"
+msgstr "Notifikácia hosťa – URL na registráciu"
+
+#: templates/woocommerce/checkout/thankyou.php:194
+msgid "Have a nice day!"
+msgstr "Prajeme pekný deň!"
+
+#: templates/admin/ticket-designer-settings.php:113
+msgid "Header Image"
+msgstr "Hlavičkový obrázok"
+
+#: templates/admin/partials/content-row-item.php:177
+#: templates/admin/ticket-designer-settings.php:154
+#: templates/admin/ticket-designer-settings.php:252
+msgid "Height (px)"
+msgstr "Výška (px)"
+
+#: includes/FieldBuilderPage.php:515
+msgid "Hidden for products (IDs)"
+msgstr "Skryté pre produkty (ID)"
+
+#: includes/Module/MembershipModule.php:150
+msgid "Hide info text on Stripe receipts"
+msgstr "Skryť info text na Stripe účtenkách"
+
+#: includes/Module/SessionModule.php:227 includes/Module/SessionModule.php:315
+msgid "Hide meta"
+msgstr "Skryť meta"
+
+#: includes/Module/SessionModule.php:226 includes/Module/SessionModule.php:306
+msgid "Hide slots"
+msgstr "Skryť sloty"
+
+#: includes/EventManager.php:511
+msgid "Hide variable symbol"
+msgstr "Skryť variabilný symbol"
+
+#: includes/EventManager.php:513
+msgid "Hide variable symbol from email and ticket for this product."
+msgstr "Skryť variabilný symbol z emailu a vstupenky pre tento produkt."
+
+#: includes/Settings.php:577
+msgid "Hide WC native billing address fields"
+msgstr "Skryť natívne WC fakturačné adresné polia"
+
+#: includes/Module/HotelSelectionModule.php:349
+msgid ""
+"Highest value the persons selector offers for this product. Defaults to the "
+"global \"Maximum persons per room\" setting."
+msgstr ""
+"Najvyššia hodnota, ktorú výber osôb ponúka pre tento produkt. Predvolene "
+"podľa globálneho nastavenia „Maximum osôb v izbe\"."
+
+#: templates/verification-page.php:195
+msgid "History"
+msgstr "História"
+
+#: includes/Module/HotelSelectionModule.php:2348
+msgid "Hold Ctrl/Cmd to select multiple hotels"
+msgstr "Podržte Ctrl/Cmd pre výber viacerých hotelov"
+
+#: includes/FieldBuilderPage.php:762
+#: includes/Module/HotelSelectionModule.php:2154
+#: includes/Module/HotelSelectionModule.php:2160
+#: includes/Module/HotelSelectionModule.php:2495
+#: includes/Module/HotelSelectionModule.php:2531
+#: includes/Module/HotelSelectionModule.php:2817
+msgid "Hotel"
+msgstr "Hotel"
+
+#: includes/Module/AccommodationModule.php:45
+#: includes/Module/AccommodationModule.php:111
+#: includes/Module/CompanionRegistrationModule.php:655
+msgid "Hotel accommodation"
+msgstr "Ubytovanie v hoteli"
+
+#: includes/Module/HotelSelectionModule.php:146
+msgid "Hotel product category slug"
+msgstr "Slug kategórie hotelových produktov"
+
+#: includes/Module/HotelSelectionModule.php:2498
+#: includes/Module/HotelSelectionModule.php:2536
+msgid "Hotel product ID"
+msgstr "ID hotelového produktu"
+
+#: includes/Module/HotelSelectionModule.php:75
+#: includes/Module/HotelSelectionModule.php:2584
+msgid "Hotel selection"
+msgstr "Výber hotela"
+
+#: includes/Module/HotelSelectionModule.php:344
+msgid "Hotel: maximum persons"
+msgstr "Hotel: maximum osôb"
+
+#: includes/Module/HotelSelectionModule.php:333
+msgid "Hotel: minimum persons"
+msgstr "Hotel: minimum osôb"
+
+#: includes/Module/HotelSelectionModule.php:317
+msgid "Hotel: price by person count"
+msgstr "Hotel: cena podľa počtu osôb"
+
+#: includes/Module/HotelSelectionModule.php:279
+msgid "Hotel: price for 1 person"
+msgstr "Hotel: cena za 1 osobu"
+
+#: includes/Module/HotelSelectionModule.php:290
+msgid "Hotel: price for 2 persons"
+msgstr "Hotel: cena za 2 osoby"
+
+#: includes/Module/HotelSelectionModule.php:303
+msgid "Hotel: surcharge per extra person"
+msgstr "Hotel: príplatok za ďalšiu osobu"
+
+#. Author URI of the plugin
+#: alttag-registrations.php
+msgid "https://alttag.digital"
+msgstr "https://alttag.digital"
+
+#: templates/admin/partials/content-row-item.php:271
+msgid "https://example.com or any text"
+msgstr "https://example.com alebo ľubovoľný text"
+
+#: includes/WooCommerceManager.php:974
+msgid "I agree to the processing of my personal data in accordance with %s."
+msgstr "Súhlasím so spracovaním mojich osobných údajov v súlade s %s."
+
+#: includes/WooCommerceManager.php:1014
+msgid ""
+"I agree to the processing of my personal data in accordance with the %s."
+msgstr "Súhlasím so spracovaním mojich osobných údajov v súlade s %s."
+
+#: includes/Module/HotelSelectionModule.php:158
+msgid "I am interested in accommodation"
+msgstr "Mám záujem o ubytovanie v hoteli"
+
+#: includes/Module/ParticipantTypeModule.php:154
+msgid "ID"
+msgstr "ID"
+
+#: templates/order-processing-email.php:159
+msgid ""
+"If the QR code is not displayed, you can find it in the attached ticket or "
+"%sdownload here%s."
+msgstr ""
+"Ak sa QR kód nezobrazuje, nájdete ho v priloženej vstupenke alebo "
+"%sstiahnite tu%s."
+
+#: templates/admin/partials/content-row-item.php:13
+msgid "Image"
+msgstr "Obrázok"
+
+#: includes/TicketDesignerSettings.php:244
+#: templates/admin/partials/content-row-item.php:128
+#: templates/admin/partials/content-row-item.php:240
+msgid "Image URL"
+msgstr "URL obrázka"
+
+#: includes/Participant/Import.php:86
+msgid "Import"
+msgstr "Import"
+
+#: includes/Participant/Import.php:536
+msgid "Import cancelled."
+msgstr "Import zrušený."
+
+#: includes/Participant/Import.php:524
+msgid ""
+"Import completed successfully. Created: %d, Updated: %d, Emails sent: %d"
+msgstr ""
+"Import úspešne dokončený. Vytvorených: %d, Aktualizovaných: %d, Emailov "
+"odoslaných: %d"
+
+#: includes/Participant/Import.php:121
+msgid "Import Format:"
+msgstr "Formát importu:"
+
+#: includes/FieldBuilderPage.php:342
+msgid "Import JSON"
+msgstr "Importovať JSON"
+
+#: includes/Participant/Import.php:85 includes/Participant/Import.php:115
+msgid "Import Participants"
+msgstr "Importovať účastníkov"
+
+#: includes/Participant/Import.php:293
+msgid "Import Preview"
+msgstr "Náhľad importu"
+
+#: includes/Participant/Import.php:613
+msgid "Import session expired. Please upload the file again."
+msgstr "Relácia importu vypršala. Prosím, nahrajte súbor znova."
+
+#: templates/admin/ticket-designer-settings.php:473
+msgid "Import Settings"
+msgstr "Importovať nastavenia"
+
+#: includes/Participant/Import.php:305
+msgid "Import Summary"
+msgstr "Súhrn importu"
+
+#: includes/Module/HotelSelectionModule.php:1721
+#: includes/Module/HotelSelectionModule.php:1846
+msgid "Important notice:"
+msgstr "Dôležité upozornenie:"
+
+#: templates/order-processing-email.php:107
+#: templates/woocommerce/checkout/thankyou.php:148
+msgid ""
+"Important: When making the bank transfer, please use the variable symbol: %s"
+msgstr ""
+"Dôležité: Pri vykonávaní bankového prevodu, prosím, použite variabilný "
+"symbol: %s"
+
+#: includes/Participant/AdminUI.php:588
+msgid "Imported"
+msgstr "Importovaný"
+
+#: includes/Participant/Manager.php:100
+msgid "Imported At"
+msgstr "Importovaný o"
+
+#: includes/Participant/Import.php:1182
+msgid "Imported by: %s"
+msgstr "Importoval: %s"
+
+#: includes/Settings.php:694
+msgid "In-person email title (paid)"
+msgstr "Email titulok osobnej účasti (zaplatené)"
+
+#: includes/Settings.php:703
+msgid "In-person email title (unpaid)"
+msgstr "Email titulok osobnej účasti (neuhradené)"
+
+#: includes/Settings.php:718
+msgid "In-person event-details template"
+msgstr "Šablóna detailov osobnej účasti"
+
+#: includes/Module/MultiDayModule.php:181
+msgid "In-person participants"
+msgstr "Účastníci s osobnou účasťou"
+
+#: includes/Module/NotificationModule.php:49
+msgid "In-person Threshold"
+msgstr "Predajný limit pre osobnú účasť"
+
+#: includes/FieldBuilderPage.php:723
+msgid "Include in Excel export"
+msgstr "Zahrnúť do Excel exportu"
+
+#: includes/Settings.php:661
+msgid "Info Text"
+msgstr "Informačný text"
+
+#: includes/Settings.php:663
+msgid ""
+"Information text shown in confirmation email (supports {event_name} "
+"placeholder)"
+msgstr ""
+"Informačný text zobrazený v potvrdzovacom emaile (podporuje placeholder "
+"{event_name})"
+
+#: templates/admin/ticket-designer-settings.php:197
+#: templates/admin/ticket-designer-settings.php:295
+msgid "Inline (Label: Value)"
+msgstr "V riadku (Popisok: Hodnota)"
+
+#: includes/Participant/PostType.php:60
+msgid "Insert into participant"
+msgstr "Vložiť do účastníka"
+
+#: includes/Selection/AbstractSelection.php:505
+msgid "instead of %s"
+msgstr "namiesto %s"
+
+#: includes/Participant/Import.php:966
+msgid "Invalid email address"
+msgstr "Neplatná emailová adresa"
+
+#: includes/Participant/Email.php:780 includes/Participant/Email.php:945
+msgid "Invalid email session"
+msgstr "Neplatná emailová relácia"
+
+#: includes/Participant/Import.php:570
+msgid "Invalid file type. Please upload an Excel file (.xlsx)."
+msgstr "Neplatný typ súboru. Prosím, nahrajte Excel súbor (.xlsx)."
+
+#: includes/FieldBuilder.php:981
+msgid "Invalid JSON format"
+msgstr "Neplatný JSON formát"
+
+#: includes/Participant/AdminUI.php:944
+msgid "Invalid nonce"
+msgstr "Neplatný nonce"
+
+#: includes/AdminPreview.php:284
+msgid "Invalid or expired preview link."
+msgstr "Neplatný alebo expirovaný odkaz na náhľad."
+
+#: includes/Participant/AdminUI.php:1113 includes/Participant/Export.php:63
+#: includes/TicketDesigner.php:129 includes/TicketDesigner.php:176
+msgid "Invalid participant ID"
+msgstr "Neplatný ID účastníka"
+
+#: includes/Participant/Email.php:1119 includes/Participant/Ticket.php:59
+msgid "Invalid request"
+msgstr "Neplatná žiadosť"
+
+#: includes/Selection/AbstractSelection.php:541
+msgid "Invalid selection: %s"
+msgstr "Neplatný výber: %s"
+
+#: includes/VerificationManager.php:457
+msgid "Invalid verification code."
+msgstr "Nesprávny kód overenia."
+
+#: templates/verification-page.php:68
+msgid "Invoice"
+msgstr "Faktúra"
+
+#: includes/Participant/Manager.php:531
+msgid "invoice"
+msgstr "faktura"
+
+#: includes/Settings.php:621
+msgid "Invoice due days"
+msgstr "Splatnosť faktúry (dni)"
+
+#: includes/Participant/Manager.php:91 templates/verification-page.php:67
+msgid "Invoice ID"
+msgstr "ID faktúry"
+
+#: includes/Participant/Email.php:864 includes/Participant/Email.php:1020
+msgid "Invoice not available"
+msgstr "Faktúra nenájdená"
+
+#: includes/Participant/Manager.php:92
+msgid "Invoice URL"
+msgstr "URL faktúry"
+
+#: includes/Participant/Manager.php:108
+msgid "Is Livestream User"
+msgstr "Je Livestream užívateľ"
+
+#: includes/Participant/Manager.php:130
+msgid "Is Recording User"
+msgstr "Užívateľ nahrávky"
+
+#: templates/admin/ticket-designer-settings.php:211
+#: templates/admin/ticket-designer-settings.php:309
+msgid "Keep whole words"
+msgstr "Zachovať celé slová"
+
+#: includes/FieldBuilderPage.php:410 includes/Module/SessionModule.php:248
+msgid "Key"
+msgstr "Kľúč"
+
+#: includes/Module/ParticipantTypeModule.php:155
+#: includes/Module/SessionModule.php:202 includes/Module/SessionModule.php:235
+msgid "Label"
+msgstr "Označenie"
+
+#: includes/Module/SessionModule.php:217
+msgid "Label (e.g. city)"
+msgstr "Označenie (napr. mesto)"
+
+#: templates/admin/ticket-designer-settings.php:176
+#: templates/admin/ticket-designer-settings.php:274
+msgid "Label Color"
+msgstr "Farba popisku"
+
+#: includes/Module/CompanionRegistrationModule.php:46
+msgid "Label for companion (e.g. \"colleague\", \"companion\", \"guest\")"
+msgstr "Označenie sprievodcu (napr. \"kolega\", \"sprievodca\", \"hosť\")"
+
+#: templates/admin/ticket-designer-settings.php:194
+#: templates/admin/ticket-designer-settings.php:292
+msgid "Label Position"
+msgstr "Pozícia popisku"
+
+#: includes/Module/AccommodationModule.php:46
+msgid "Label shown on checkout, emails, and tickets"
+msgstr "Názov zobrazený na checkoutu, v emailoch a na vstupenkách"
+
+#: includes/FieldBuilderPage.php:424
+msgid "Labels"
+msgstr "Popisky"
+
+#: includes/Participant/AdminUI.php:108
+msgid "Lang"
+msgstr "Jazyk"
+
+#: includes/Participant/Import.php:369 includes/Participant/Manager.php:191
+#: templates/verification-page.php:70
+msgid "Language"
+msgstr "Jazyk"
+
+#: includes/Participant/Import.php:197
+msgid "Language to use for new participants if not specified in the file."
+msgstr "Jazyk pre nových účastníkov, ak nie je uvedený v súbore."
+
+#: includes/Participant/Import.php:1174
+msgid "Language: %s"
+msgstr "Jazyk: %s"
+
+#: includes/Participant/AdminUI.php:93 includes/Participant/Import.php:365
+#: includes/Participant/Manager.php:59 includes/TicketDesignerSettings.php:339
+#: includes/TicketManager.php:33 templates/verification-page.php:49
+msgid "Last Name"
+msgstr "Priezvisko"
+
+#: includes/Module/HotelSelectionModule.php:852
+msgid "Last name"
+msgstr "Priezvisko"
+
+#: includes/Module/CompanionRegistrationModule.php:263
+#: includes/Module/CompanionRegistrationModule.php:769
+#: includes/Module/CompanionRegistrationModule.php:932
+msgid "Last name of %s"
+msgstr "Priezvisko %s"
+
+#: templates/verification-page.php:166
+msgid "Last Update"
+msgstr "Posledná aktualizácia"
+
+#: templates/admin/partials/content-row-item.php:102
+msgid "Leave as 0 for full width"
+msgstr "Nechajte 0 pre plnú šírku"
+
+#: includes/Settings.php:454
+msgid "Leave empty or 0 to disable"
+msgstr "Nechajte prázdne alebo 0 pre vypnutie."
+
+#: templates/admin/ticket-designer-settings.php:131
+msgid "Left Column"
+msgstr "Ľavý stĺpec"
+
+#: includes/Module/ParticipantTypeModule.php:51
+msgid ""
+"Let customers pick how many participants of each type (Adult, Child, …) to "
+"register, with per-type pricing."
+msgstr ""
+"Umožní zákazníkom vybrať počet účastníkov podľa typu (dospelý, dieťa, …) s "
+"cenou na typ."
+
+#: includes/Settings.php:611
+msgid "Light (works on white backgrounds)"
+msgstr "Svetlý (funguje na bielom pozadí)"
+
+#: templates/admin/ticket-designer-settings.php:218
+#: templates/admin/ticket-designer-settings.php:316
+msgid "Line Height (px)"
+msgstr "Výška riadku (px)"
+
+#: includes/Settings.php:543
+msgid "Link to GDPR/privacy policy page"
+msgstr "Odkaz na stránku GDPR/ochrany osobných údajov"
+
+#: includes/Settings.php:553
+msgid "Link to terms & conditions page"
+msgstr "Odkaz na stránku s obchodnými podmienkami"
+
+#: templates/admin/ticket-designer-settings.php:484
+msgid "Live Preview"
+msgstr "Živý náhľad"
+
+#: includes/Module/LivestreamModule.php:30
+#: includes/Module/MultiDayModule.php:312 includes/Participant/PostType.php:230
+msgid "Livestream"
+msgstr "Livestream"
+
+#: includes/Participant/AdminUI.php:118 includes/Participant/Manager.php:113
+msgid "Livestream Access"
+msgstr "Livestream prístup"
+
+#: includes/Module/LivestreamModule.php:185
+msgid "Livestream access granted for %s"
+msgstr "Prístup k livestreamu udelený pre %s"
+
+#: includes/Settings.php:708
+msgid "Livestream email title (paid)"
+msgstr "Email titulok livestream (zaplatené)"
+
+#: includes/Settings.php:713
+msgid "Livestream email title (unpaid)"
+msgstr "Email titulok livestream (neuhradené)"
+
+#: includes/Settings.php:727
+msgid "Livestream event-details template"
+msgstr "Šablóna detailov livestream"
+
+#: includes/Settings.php:745
+msgid "Livestream subject – replacement text"
+msgstr "Livestream predmet – náhradný text"
+
+#: includes/Settings.php:736
+msgid "Livestream subject – text to replace"
+msgstr "Livestream predmet – text na nahradenie"
+
+#: includes/Module/NotificationModule.php:54
+msgid "Livestream Threshold"
+msgstr "Predajný limit pre livestream"
+
+#: includes/Participant/AdminUI.php:117
+msgid "Livestream User"
+msgstr "Livestream užívateľ"
+
+#: includes/Module/MultiDayModule.php:180
+msgid "Livestream users"
+msgstr "Používatelia livestreamu"
+
+#: templates/admin/ticket-preview.php:51
+msgid "Load Preview"
+msgstr "Načítať náhľad"
+
+#: includes/Participant/Email.php:511
+msgid "Load Template"
+msgstr "Načítať šablónu"
+
+#: templates/admin/ticket-preview.php:57
+msgid "Loading preview..."
+msgstr "Načítavam náhľad..."
+
+#: includes/Module/CompanionRegistrationModule.php:650
+#: includes/Module/SessionModule.php:946 includes/Module/SessionModule.php:992
+#: includes/Module/SessionModule.php:1114
+#: includes/Module/SessionModule.php:1177
+msgid "Location"
+msgstr "Miesto"
+
+#: templates/admin/partials/content-row-item.php:204
+msgid "Logo Height (px)"
+msgstr "Výška loga (px)"
+
+#: includes/TicketDesignerSettings.php:243
+#: templates/admin/partials/content-row-item.php:234
+msgid "Logo Image"
+msgstr "Logo obrázok"
+
+#: templates/admin/partials/content-row-item.php:16
+msgid "Logo Row"
+msgstr "Riadok loga"
+
+#: templates/admin/partials/content-row-item.php:197
+msgid "Logo Width (px)"
+msgstr "Šírka loga (px)"
+
+#: templates/admin/partials/content-row-item.php:222
+msgid "Logos"
+msgstr "Logá"
+
+#: includes/Module/HotelSelectionModule.php:338
+msgid ""
+"Lowest value the persons selector offers for this product. Defaults to 1."
+msgstr ""
+"Najnižšia hodnota, ktorú výber osôb ponúka pre tento produkt. Predvolene 1."
+
+#: includes/Settings.php:518
+msgid "Mail From Address"
+msgstr "Email odosielateľa"
+
+#: includes/VerificationManager.php:960
+msgid "Manual"
+msgstr "Manuálny"
+
+#: includes/Settings.php:348
+msgid ""
+"Mark this product as a complementary add-on (e.g. social evening, gala "
+"dinner, optional workshop). Add-on products are excluded when picking the "
+"primary product on an order — the participant, ticket, and webhook all "
+"anchor to the main registration product even if the add-on was in the cart "
+"first."
+msgstr ""
+"Označiť tento produkt ako doplnkový (napr. spoločenský večer, gala večera, "
+"voliteľný workshop). Doplnkové produkty sa vynechávajú pri výbere hlavného "
+"produktu objednávky — účastník, vstupenka aj webhook sa naviažu na hlavný "
+"registračný produkt, aj keď bol doplnok v košíku ako prvý."
+
+#: includes/Module/ParticipantTypeModule.php:158
+msgid "Max"
+msgstr "Max"
+
+#: includes/Settings.php:452
+msgid "Max participants per order"
+msgstr "Maximálny počet účastníkov na objednávku"
+
+#: includes/Module/AccommodationModule.php:55
+msgid "Max persons"
+msgstr "Max. počet osôb"
+
+#: includes/Settings.php:467
+msgid "Max persons per day"
+msgstr "Max. osôb za deň"
+
+#: includes/Settings.php:469
+msgid "Max persons selectable per day. 0 or 1 = no counter."
+msgstr "Maximálny počet voliteľných osôb za deň. 0 alebo 1 = žiadne počítadlo."
+
+#: includes/Module/AccommodationModule.php:58
+msgid "Maximum persons per accommodation (creates select 1..N)"
+msgstr "Maximálny počet osôb na izbu (vytvorí výber 1..N)"
+
+#: includes/Module/HotelSelectionModule.php:266
+msgid "Maximum persons per room"
+msgstr "Maximum osôb v izbe"
+
+#: includes/Module/MembershipModule.php:57
+msgid "Membership product category slug"
+msgstr "Slug kategórie členských produktov"
+
+#: includes/Module/MembershipModule.php:35
+msgid "Memberships"
+msgstr "Členstvá"
+
+#: includes/FieldBuilderPage.php:340
+msgid "Merge"
+msgstr "Zlúčiť"
+
+#: includes/Module/ParticipantTypeModule.php:157
+msgid "Min"
+msgstr "Min"
+
+#: includes/Participant/Import.php:958
+msgid "Missing email address"
+msgstr "Chýba emailová adresa"
+
+#: includes/AdminPreview.php:212 includes/AdminPreview.php:235
+msgid "Missing order_id."
+msgstr "Chýba order_id."
+
+#: includes/ArchiveManager.php:188
+msgid "Missing parameters"
+msgstr "Chýbajú parametre"
+
+#: includes/Participant/AdminUI.php:940
+msgid "Missing participant_id"
+msgstr "Chýba participant_id"
+
+#: includes/AdminPreview.php:149
+msgid "Missing participant_id."
+msgstr "Chýba participant_id."
+
+#: includes/Settings.php:304
+msgid "Modules"
+msgstr "Moduly"
+
+#: includes/Settings.php:569
+msgid "Move order notes to billing column"
+msgstr "Presunúť poznámky k objednávke do fakturačného stĺpca"
+
+#: includes/ArchiveManager.php:115 includes/ArchiveManager.php:171
+msgid "Move to archive"
+msgstr "Presunúť do archívu"
+
+#: includes/EventManager.php:595 includes/Selection/AbstractSelection.php:504
+#: includes/Settings.php:494
+msgid "Multi-day discounts"
+msgstr "Zľavy za viac dní"
+
+#: includes/Module/MultiDayModule.php:29
+msgid "Multi-day Registrations"
+msgstr "Viac-dňové registrácie"
+
+#: includes/FieldBuilder.php:454 includes/Participant/Import.php:468
+msgid "Name"
+msgstr "Meno"
+
+#. translators: %d is the guest ordinal (2, 3, 4, …)
+#: includes/Module/HotelSelectionModule.php:1417
+msgid "Name and surname of guest %d"
+msgstr "Meno a priezvisko %d. hosťa"
+
+#: includes/Settings.php:503
+msgid "Name of the organizing entity"
+msgstr "Názov organizujúceho subjektu"
+
+#: includes/Participant/Import.php:377
+msgid "New Participants"
+msgstr "Noví účastníci"
+
+#: includes/Participant/Import.php:308
+msgid "New participants to create:"
+msgstr "Noví účastníci na vytvorenie:"
+
+#: includes/Module/HotelSelectionModule.php:845
+#: includes/Module/HotelSelectionModule.php:1255
+msgid "Night"
+msgstr "Noc"
+
+#: includes/FieldBuilder.php:555 includes/Module/AccommodationModule.php:324
+#: includes/Module/AccommodationModule.php:497
+#: includes/Participant/AdminUI.php:203 includes/Participant/Import.php:329
+msgid "No"
+msgstr "Nie"
+
+#: includes/Participant/Import.php:936
+msgid "No changes detected"
+msgstr "Žiadne zmeny neboli zistené"
+
+#: includes/FieldBuilder.php:985
+msgid "No field definitions found in JSON"
+msgstr "V JSONe sa nenašli žiadne definície polí"
+
+#: includes/FieldBuilderPage.php:97
+msgid "No file selected"
+msgstr "Nie je vybraný žiadny súbor"
+
+#: includes/Participant/Import.php:487
+msgid "No new participants to create or existing participants to update."
+msgstr "Žiadni noví účastníci na vytvorenie ani existujúci na aktualizáciu."
+
+#: includes/AdminPreview.php:97
+msgid "No participant yet — email preview unavailable."
+msgstr "Účastník ešte nie je vytvorený — náhľad emailu nie je k dispozícii."
+
+#: includes/Participant/Import.php:271
+msgid "No participants available for export."
+msgstr "Žiadni účastníci nie sú k dispozícii na export."
+
+#: includes/Participant/PostType.php:52 includes/TicketDesignerSettings.php:885
+msgid "No participants found"
+msgstr "Žiadni účastníci nenájdení"
+
+#: includes/Participant/Export.php:415
+msgid "No participants found for export"
+msgstr "Žiadni účastníci pre export nenájdení"
+
+#: includes/Participant/Export.php:496
+msgid "No participants found for ticket download"
+msgstr "Žiadni účastníci pre stiahnutie vstupenky nenájdení"
+
+#: includes/Participant/PostType.php:53
+msgid "No participants found in Trash"
+msgstr "Žiadni účastníci v koši"
+
+#: includes/Participant/Export.php:453
+msgid "No participants match the current filters."
+msgstr "Žiadni účastníci neodpovedajú aktuálnym filtrom."
+
+#: includes/ParticipantManager.php:110
+msgid "No participants selected"
+msgstr "Žiadni účastníci vybraní"
+
+#: includes/Participant/AdminUI.php:1081
+msgid "No participants selected for email"
+msgstr "Žiadni účastníci pre email neboli vybraní"
+
+#: includes/Participant/Export.php:192
+msgid "No participants selected for export"
+msgstr "Žiadni účastníci pre export neboli vybraní"
+
+#: includes/Participant/Export.php:134
+msgid "No participants selected for ticket download"
+msgstr "Žiadni účastníci pre stiahnutie vstupenky neboli vybraní"
+
+#: includes/Participant/Email.php:382
+msgid ""
+"No participants selected or selection expired. Please select participants "
+"again."
+msgstr ""
+"Žiadni účastníci neboli vybraní alebo vypršala časová platnosť. Prosím, "
+"vyberte účastníkov znova."
+
+#: includes/Participant/AdminUI.php:569
+msgid "No Promo Code"
+msgstr "Žiaden promo kód"
+
+#: includes/Participant/PostType.php:347
+msgid "No QR code generated yet."
+msgstr "Žiadny QR kód nebol vygenerovaný"
+
+#: includes/AdminPreview.php:247
+msgid ""
+"No Stripe receipt available for this order (payment intent missing or not "
+"paid via Stripe)."
+msgstr ""
+"Pre túto objednávku nie je k dispozícii Stripe potvrdenie (chýba platobný "
+"zámer alebo nebola uhradená cez Stripe)."
+
+#: includes/Participant/Export.php:590
+msgid "No ticket files found for the selected participants"
+msgstr "Žiadne vstupenky pre vybraných účastníkov nenájdené"
+
+#: includes/Participant/Email.php:395
+msgid "No valid participants found."
+msgstr "Žiadny platný účastník nebol nájdený"
+
+#: includes/TicketManager.php:69
+msgid "None"
+msgstr "Žiadne"
+
+#: includes/TicketManager.php:566 includes/TicketManager.php:585
+msgid "Not Found"
+msgstr "Nenájdené"
+
+#: includes/Participant/AdminUI.php:209 includes/Participant/Manager.php:117
+#: includes/Participant/Manager.php:139
+msgid "Not Granted"
+msgstr "Nepridelený"
+
+#: includes/Participant/AdminUI.php:593
+msgid "Not Imported"
+msgstr "Neimportovaný"
+
+#: includes/Module/NotificationModule.php:44
+msgid "Notification Email"
+msgstr "Notifikačný email"
+
+#: includes/Settings.php:626
+msgid ""
+"Number of days until SuperFaktura invoice is due. Per-product override "
+"allowed."
+msgstr ""
+"Počet dní do splatnosti SuperFaktúra faktúry. Povolený per-produkt override."
+
+#: includes/Module/AccommodationModule.php:171
+#: includes/Module/AccommodationModule.php:192
+#: includes/Module/AccommodationModule.php:422
+#: includes/Module/AccommodationModule.php:454
+#: includes/Module/AccommodationModule.php:511
+msgid "Number of persons"
+msgstr "Počet osôb"
+
+#: includes/Module/AccommodationModule.php:294
+msgid "Number of persons (accommodation)"
+msgstr "Počet osôb (ubytovanie)"
+
+#: includes/StripeManager.php:439
+msgid "off"
+msgstr "vypnuté"
+
+#: includes/FieldBuilderPage.php:477
+msgid ""
+"One option per line. Use \"value|Label\" for separate value and label, or "
+"just \"Label\" for both."
+msgstr ""
+"Jedna možnosť na riadok. Použite „value|Label\" pre oddelenú hodnotu a "
+"popisok, alebo len „Label\" pre oboje."
+
+#: includes/AdminPreview.php:89 includes/Participant/AdminUI.php:737
+msgid "Open in a new tab — nothing is sent, nothing is stored."
+msgstr "Otvorí sa v novej karte — nič sa neodošle, nič sa neuloží."
+
+#: includes/Assets.php:69
+msgid "Operation successful"
+msgstr "Operácia prebehla úspešne"
+
+#: includes/Module/AccommodationModule.php:52
+msgid "Optional label like \"paid by organizer\". Leave empty to hide."
+msgstr ""
+"Voliteľné označenie, napríklad „zaplatené organizátorom“. Pre skrytie "
+"nechajte prázdne."
+
+#: includes/Module/HotelSelectionModule.php:322
+msgid ""
+"Optional non-linear price matrix. Use semicolon- or newline-separated "
+"entries in the form \"count:price\" or \"count=price\", e.g. \"1:100; 2:180; "
+"3:250; 4:320\". When the chosen persons count matches an entry, that price "
+"is used; missing counts fall through to the other pricing options below."
+msgstr ""
+"Voliteľná nelineárna cenová matica. Použite položky oddelené bodkočiarkou "
+"alebo novým riadkom vo formáte „count:price\" alebo „count=price\", napr. „1:"
+"100; 2:180; 3:250; 4:320\". Keď zvolený počet osôb zodpovedá záznamu, "
+"použije sa táto cena; chýbajúce počty prepadnú na iné cenové možnosti nižšie."
+
+#: includes/EventManager.php:596
+msgid "optional, overrides per-day sum"
+msgstr "voliteľné, prepíše súčet za jednotlivé dni"
+
+#: includes/FieldBuilderPage.php:457
+msgid "Options (one per line)"
+msgstr "Možnosti (jedna na riadok)"
+
+#: includes/Participant/Import.php:220
+msgid "Or export a single participant as template:"
+msgstr "Alebo exportujte jedného účastníka ako šablónu:"
+
+#: templates/verification-page.php:66
+msgid "Order Comments"
+msgstr "Poznámka k objednávke"
+
+#: includes/Participant/Manager.php:54 templates/verification-page.php:61
+msgid "Order ID"
+msgstr "ID objednávky"
+
+#: includes/AdminPreview.php:217 includes/AdminPreview.php:240
+msgid "Order not found."
+msgstr "Objednávka sa nenašla."
+
+#: includes/Participant/Manager.php:102
+msgid "Order Notes"
+msgstr "Poznámky"
+
+#: includes/FieldBuilder.php:574
+msgid "Order notes"
+msgstr "Poznámky"
+
+#: includes/WooCommerceManager.php:651
+msgid "Order notes:"
+msgstr "Poznámky:"
+
+#: templates/verification-page.php:62
+msgid "Order Status"
+msgstr "Stav objednávky"
+
+#: includes/ArchiveManager.php:89
+msgctxt "order status"
+msgid "Archived"
+msgstr "Archivovaný"
+
+#: includes/Settings.php:501
+msgid "Organization Name"
+msgstr "Názov organizácie"
+
+#: includes/Module/AccommodationModule.php:49
+msgid "Organizer Paid Label"
+msgstr "Označenie hradenia organizátorom"
+
+#: includes/Selection/ParticipantTypeSelection.php:323
+msgid "Original price"
+msgstr "Pôvodná cena"
+
+#: includes/Module/HotelSelectionModule.php:533
+msgid "Other rooms"
+msgstr "Ostatné izby"
+
+#: includes/EventManager.php:544
+msgid "Override global days & pricing for this product"
+msgstr "Prepísať globálne dni a ceny pre tento produkt"
+
+#: includes/StripeManager.php:365
+msgid "Paid amount"
+msgstr "Zaplatená suma"
+
+#: includes/Settings.php:1119
+msgid "Paid invoice for livestream %s"
+msgstr "Zaplatená faktúra za livestream %s"
+
+#: includes/Participant/PostType.php:54
+msgid "Parent Participant:"
+msgstr "Rodičovský účastník:"
+
+#: includes/Module/CompanionRegistrationModule.php:1005
+#: includes/Module/ParticipantTypeModule.php:783
+#: includes/Participant/Manager.php:86 templates/verification-page.php:90
+msgid "Partial"
+msgstr "Čiastočné"
+
+#: includes/Participant/PostType.php:44 includes/Participant/PostType.php:46
+msgid "Participant"
+msgstr "Účastník"
+
+#: includes/Participant/PostType.php:59
+msgid "Participant archives"
+msgstr "Archív účastníka"
+
+#: includes/Participant/PostType.php:171
+msgid "Participant Details"
+msgstr "Podrobnosti účastníka"
+
+#: includes/Participant/PostType.php:70
+msgid "Participant link"
+msgstr "Odkaz na účastníka"
+
+#: includes/TicketDesigner.php:134 includes/TicketDesigner.php:181
+msgid "Participant not found"
+msgstr "Účastník nebol nájdený"
+
+#: includes/AdminPreview.php:154 includes/TicketManager.php:566
+msgid "Participant not found."
+msgstr "Účastník nebol nájdený."
+
+#: includes/Participant/PostType.php:55
+msgid "Participant Photo"
+msgstr "Foto účastníka"
+
+#: includes/Participant/PostType.php:65
+msgid "Participant published"
+msgstr "Účastník publikovaný"
+
+#: includes/Participant/PostType.php:66
+msgid "Participant published privately"
+msgstr "Účastník publikovaný súkromne"
+
+#: includes/Participant/PostType.php:67
+msgid "Participant reverted to draft"
+msgstr "Účastník vrátený do náhľadu"
+
+#: includes/Participant/PostType.php:68
+msgid "Participant scheduled"
+msgstr "Účastník naplánovaný"
+
+#: includes/VerificationManager.php:149 templates/verification-page.php:71
+msgid "Participant type"
+msgstr "Typ účastníka"
+
+#: includes/Module/ParticipantTypeModule.php:46
+#: includes/Module/ParticipantTypeModule.php:123
+#: includes/Module/ParticipantTypeModule.php:316
+#: includes/Module/ParticipantTypeModule.php:317
+msgid "Participant Types"
+msgstr "Typy účastníkov"
+
+#: includes/Participant/PostType.php:69
+msgid "Participant updated"
+msgstr "Účastník aktualizovaný"
+
+#: includes/Module/MembershipModule.php:563 includes/WooCommerceManager.php:642
+msgid "Participant:"
+msgstr "Účastník:"
+
+#: includes/Module/ParticipantTypeModule.php:522
+#: includes/Module/ParticipantTypeModule.php:540
+#: includes/Module/ParticipantTypeModule.php:562
+#: includes/Module/ParticipantTypeModule.php:574
+#: includes/Module/ParticipantTypeModule.php:607
+#: includes/Participant/PostType.php:43 includes/Participant/PostType.php:45
+#: includes/Selection/ParticipantTypeSelection.php:28
+#: includes/Selection/ParticipantTypeSelection.php:36
+msgid "Participants"
+msgstr "Účastníci"
+
+#: includes/Participant/PostType.php:64
+msgid "Participants list"
+msgstr "Zoznam účastníkov"
+
+#: includes/Participant/PostType.php:63
+msgid "Participants list navigation"
+msgstr "Navigácia zoznamu účastníkov"
+
+#: includes/Participant/Import.php:420
+msgid "Participants to Update"
+msgstr "Účastníci na aktualizáciu"
+
+#: includes/Module/ParticipantTypeModule.php:499
+msgid "Participants: %s"
+msgstr "Účastníci: %s"
+
+#: includes/FieldBuilderPage.php:761
+msgid "Participation"
+msgstr "Účasť"
+
+#: includes/StripeManager.php:368
+msgid "Payment date"
+msgstr "Dátum platby"
+
+#: includes/Participant/Manager.php:72
+msgid "Payment Method"
+msgstr "Spôsob platby"
+
+#: includes/StripeManager.php:370
+msgid "Payment method"
+msgstr "Spôsob platby"
+
+#: includes/Module/MembershipModule.php:107
+#: includes/Module/RecordingModule.php:82
+msgid "Payment-confirmation body text"
+msgstr "Text potvrdenia o úhrade"
+
+#: includes/Module/CompanionRegistrationModule.php:1007
+#: includes/Module/MultiDayModule.php:524
+#: includes/Module/ParticipantTypeModule.php:785
+#: includes/Participant/AdminUI.php:210 includes/Participant/Import.php:163
+#: includes/Participant/Manager.php:84 includes/Participant/Manager.php:118
+#: includes/Participant/Manager.php:140 includes/VerificationManager.php:943
+#: templates/verification-page.php:92
+msgid "Pending"
+msgstr "Čakajúca"
+
+#: includes/Module/SessionModule.php:224 includes/Module/SessionModule.php:308
+msgid "per slot"
+msgstr "na slot"
+
+#: includes/Module/ParticipantTypeModule.php:159
+msgid ""
+"Per-type pricing tiers by selected day count. Format: 1:4.00, 2:6.00. "
+"Overrides Price when DaySelection is active."
+msgstr ""
+"Tarify ceny podľa typu a zvoleného počtu dní. Formát: 1:4.00, 2:6.00. "
+"Prepíše Cena, keď je DaySelection aktívny."
+
+#: includes/TicketDesigner.php:123 includes/TicketDesigner.php:172
+#: includes/TicketDesignerSettings.php:648
+#: includes/TicketDesignerSettings.php:864
+#: includes/TicketDesignerSettings.php:972
+msgid "Permission denied"
+msgstr "Prístup zamietnutý"
+
+#: includes/Selection/ParticipantTypeSelection.php:321
+msgid "person"
+msgstr "osoba"
+
+#: includes/Module/ParticipantTypeModule.php:956
+#: includes/VerificationManager.php:210
+msgid "person checked in"
+msgstr "osoba zaregistrovaná pri vstupe"
+
+#: includes/Module/ParticipantTypeModule.php:958
+#: includes/VerificationManager.php:261
+msgid "person checked out"
+msgstr "osoba odregistrovaná"
+
+#: includes/Module/CompanionRegistrationModule.php:1095
+msgid "Person count: %d/%d"
+msgstr "Počet osôb: %d/%d"
+
+#: includes/Participant/PostType.php:194 templates/verification-page.php:12
+msgid "Personal Information"
+msgstr "Osobné údaje"
+
+#: includes/Module/CompanionRegistrationModule.php:993
+#: includes/Module/HotelSelectionModule.php:170
+#: includes/Module/MultiDayModule.php:500
+#: includes/Module/ParticipantTypeModule.php:704
+msgid "Persons"
+msgstr "Osoby"
+
+#: includes/Selection/AbstractSelection.php:287
+msgid "persons"
+msgstr "osoby"
+
+#: includes/Module/HotelSelectionModule.php:167
+msgid "Persons field label"
+msgstr "Popis poľa počtu osôb"
+
+#: includes/Module/MultiDayModule.php:395
+msgid "Persons per day"
+msgstr "Osoby na deň"
+
+#: includes/Selection/AbstractSelection.php:506
+msgid "Persons:"
+msgstr "Osoby:"
+
+#: includes/FieldBuilder.php:460 includes/Participant/AdminUI.php:95
+#: includes/Participant/Import.php:367 includes/Participant/Manager.php:61
+#: includes/TicketDesignerSettings.php:341 includes/TicketManager.php:48
+#: templates/verification-page.php:51
+msgid "Phone"
+msgstr "Telefón"
+
+#: includes/Participant/Import.php:647
+msgid "PhpSpreadsheet library is not available."
+msgstr "Knižnica PhpSpreadsheet nie je dostupná."
+
+#: includes/Participant/Export.php:202
+msgid ""
+"PhpSpreadsheet library is not available. Please install it using Composer."
+msgstr ""
+"PHPSpreadsheet knižnica nie je k dispozícii. Prosím, nainštalujte ju pomocou "
+"Composer."
+
+#: includes/Module/HotelSelectionModule.php:1081
+#: includes/Module/HotelSelectionModule.php:1141
+msgid ""
+"Please add at least one accommodation or uncheck \"I am interested in "
+"accommodation\"."
+msgstr ""
+"Pridajte aspoň jedno ubytovanie alebo zrušte zaškrtnutie „Mám záujem o "
+"ubytovanie v hoteli\"."
+
+#: includes/WooCommerceManager.php:989
+msgid "Please agree to the GDPR consent to proceed with the order."
+msgstr ""
+"Prosím, je potrebné odsúhlasiť spracovanie osobých údajov v súlade s GDPR."
+
+#: includes/WooCommerceManager.php:1032
+msgid "Please agree to the Terms and Conditions to proceed with the order."
+msgstr "Pre pokračovanie v objednávke súhlaste s obchodnými podmienkami."
+
+#: templates/order-processing-email.php:168
+msgid ""
+"Please keep this email for your records.<br>You will need to present the QR "
+"code when attending the event."
+msgstr ""
+"Uložte si tento email vo vlastnom záujme.<br>Budete potrebovať predložiť QR "
+"kód pri vstupnej kontrole."
+
+#: includes/Participant/Email.php:958
+msgid "Please provide a valid test email address."
+msgstr "Prosím, zadajte platnú testovaciu emailovú adresu."
+
+#: includes/Module/HotelSelectionModule.php:1106
+msgid "Please select a night for each accommodation row."
+msgstr "Vyberte noc pre každé pridané ubytovanie."
+
+#: includes/Participant/Import.php:255
+msgid "Please select a participant"
+msgstr "Prosím, vyberte účastníka"
+
+#: includes/Selection/SessionSelection.php:406
+msgid "Please select a session date."
+msgstr "Vyberte termín."
+
+#: includes/Selection/SessionSelection.php:434
+msgid "Please select a time slot."
+msgstr "Vyberte časový slot."
+
+#: includes/Module/HotelSelectionModule.php:1114
+msgid "Please select a valid room for each accommodation row."
+msgstr "Vyberte platnú izbu pre každé pridané ubytovanie."
+
+#. translators: 1: minimum count, 2: type label
+#: includes/Selection/ParticipantTypeSelection.php:241
+msgid "Please select at least %1$d × %2$s."
+msgstr "Vyberte aspoň %1$d × %2$s."
+
+#: includes/ProductGroup.php:492
+msgid "Please pick the location, theme and date you want to attend."
+msgstr "Vyberte prosím lokalitu, tému a termín, na ktorý sa chcete prihlásiť."
+
+#: includes/Selection/AbstractSelection.php:529
+msgid "Please select at least one %s."
+msgstr "Vyberte aspoň jedno %s."
+
+#: includes/Selection/DaySelection.php:82
+msgid "Please select at least one day."
+msgstr "Vyberte si aspoň jeden deň."
+
+#: includes/Selection/ParticipantTypeSelection.php:266
+msgid "Please select at least one participant."
+msgstr "Vyberte aspoň jedného účastníka."
+
+#: includes/Module/HotelSelectionModule.php:1128
+msgid "Please select the number of persons."
+msgstr "Vyberte prosím počet osôb."
+
+#: includes/FieldBuilderPage.php:661
+msgid "Position:"
+msgstr "Pozícia:"
+
+#: includes/ArchiveManager.php:96
+msgctxt "post status"
+msgid "Archived"
+msgstr "Archív"
+
+#: includes/Settings.php:462
+msgid ""
+"Prefix for variable symbols, e.g. \"SAO2026\". Product SKU used if empty."
+msgstr ""
+"Predpona pre variabilné symboly, napr. „SAO2026“. Ak je pole prázdne, "
+"použije sa SKU produktu."
+
+#: includes/AdminPreview.php:95 includes/Participant/AdminUI.php:232
+#: includes/Participant/AdminUI.php:741
+msgid "Preview email"
+msgstr "Náhľad emailu"
+
+#: includes/Participant/Import.php:204
+msgid "Preview Import"
+msgstr "Náhľad importu"
+
+#: includes/AdminPreview.php:107 includes/Participant/AdminUI.php:750
+msgid "Preview Stripe receipt"
+msgstr "Náhľad Stripe potvrdenia"
+
+#: includes/AdminPreview.php:103 includes/Participant/AdminUI.php:746
+msgid "Preview thank-you page"
+msgstr "Náhľad ďakovnej stránky"
+
+#: includes/AdminPreview.php:58 includes/AdminPreview.php:67
+#: includes/Participant/AdminUI.php:721
+msgid "Previews"
+msgstr "Náhľady"
+
+#: includes/Module/ParticipantTypeModule.php:156
+#: includes/Participant/Manager.php:70
+msgid "Price"
+msgstr "Cena"
+
+#: includes/Module/HotelSelectionModule.php:284
+msgid "Price applied when this hotel product is purchased with 1 person."
+msgstr "Cena uplatnená pri zakúpení tohto hotelového produktu pre 1 osobu."
+
+#: includes/Module/HotelSelectionModule.php:295
+msgid ""
+"Price applied when this hotel product is purchased with 2 persons. Setting "
+"both 1- and 2-person prices enables the default explicit per-person pricing "
+"strategy."
+msgstr ""
+"Cena uplatnená pri zakúpení tohto hotelového produktu pre 2 osoby. "
+"Nastavením oboch cien (1 aj 2 osoby) sa aktivuje predvolená stratégia "
+"samostatných cien."
+
+#: includes/Settings.php:640
+msgid "Primary brand color for emails"
+msgstr "Primárna brandová farba pre emaily"
+
+#: includes/Settings.php:637
+msgid "Primary Color"
+msgstr "Primárna farba"
+
+#: includes/Settings.php:605
+msgid "Primary color for Stripe payment form"
+msgstr "Hlavná farba pre Stripe platobný formulár"
+
+#: includes/FieldBuilderPage.php:550
+msgid "Priority"
+msgstr "Priorita"
+
+#: includes/Module/MultiDayModule.php:105
+#: includes/Module/MultiDayModule.php:256
+#: includes/Module/MultiDayModule.php:351 includes/Module/SessionModule.php:702
+#: includes/Module/SessionModule.php:1112
+#: includes/Module/SessionModule.php:1135 includes/Participant/AdminUI.php:96
+#: includes/Participant/Manager.php:56 includes/VerificationManager.php:150
+#: templates/verification-page.php:72
+msgid "Product"
+msgstr "Produkt"
+
+#: includes/Module/MembershipModule.php:59
+msgid ""
+"Product category slug used to detect membership products (e.g. \"membership-"
+"product\")."
+msgstr ""
+"Slug kategórie produktov pre detekciu členských produktov (napr. „membership-"
+"product\")."
+
+#: includes/Module/RecordingModule.php:60
+msgid ""
+"Product category slug used to detect recording products (e.g. \"recording-"
+"product\")."
+msgstr ""
+"Slug product_cat kategórie pre detekciu záznamových produktov (napr. "
+"\"recording-product\")."
+
+#: includes/Module/SessionModule.php:680 includes/Participant/Manager.php:55
+msgid "Product ID"
+msgstr "ID produktu"
+
+#: includes/Module/SessionModule.php:685
+msgid "Product Name"
+msgstr "Názov produktu"
+
+#: includes/Module/HotelSelectionModule.php:149
+msgid "Products in this product_cat taxonomy term are offered as room types."
+msgstr "Produkty v tejto product_cat taxonómii sa ponúkajú ako typy izieb."
+
+#: includes/Participant/Import.php:370
+msgid "Promo Code"
+msgstr "Promo kód"
+
+#: includes/Participant/Import.php:1178
+msgid "Promo code: %s"
+msgstr "Promo kód: %s"
+
+#: includes/Settings.php:374
+msgid ""
+"Public link to the event programme. Available in templates as {program_url}."
+msgstr ""
+"Verejný odkaz na program podujatia. Dostupné v šablónach ako {program_url}."
+
+#: includes/Settings.php:363
+msgid ""
+"Public link to the venue on a map (Google Maps, Apple Maps, …). Available in "
+"templates as {map_url}."
+msgstr ""
+"Verejný odkaz na miesto konania na mape (Google Maps, Apple Maps, …). "
+"Dostupné v šablónach ako {map_url}."
+
+#: includes/Participant/Manager.php:94 includes/Participant/PostType.php:218
+#: templates/admin/partials/content-row-item.php:19
+#: templates/admin/ticket-designer-settings.php:327
+msgid "QR Code"
+msgstr "QR kód"
+
+#: templates/admin/partials/content-row-item.php:266
+msgid "QR Code Content (URL or text)"
+msgstr "Obsah QR kódu (URL alebo text)"
+
+#: templates/order-processing-email.php:157
+msgid "QR Code Ticket"
+msgstr "Vstupenka s QR kódom"
+
+#: includes/Participant/Manager.php:93
+msgid "QR Code URL"
+msgstr "QR kód url"
+
+#: templates/order-processing-email.php:164
+msgid "QR code will be generated after payment confirmation."
+msgstr "QR kód sa vygeneruje po potvrdení platby."
+
+#: includes/Participant/Import.php:469
+msgid "Reason"
+msgstr "Dôvod"
+
+#: includes/StripeManager.php:358
+msgid "Receipt"
+msgstr "Účtenka"
+
+#: includes/Participant/Manager.php:135
+msgid "Recording Access"
+msgstr "Prístup k nahrávke"
+
+#: includes/Module/LivestreamModule.php:184
+msgid "Recording access granted for %s"
+msgstr "Prístup k nahrávke udelený pre %s"
+
+#: includes/Module/RecordingModule.php:58
+msgid "Recording product category slug"
+msgstr "Slug kategórie záznamových produktov"
+
+#: includes/Module/RecordingModule.php:36
+msgid "Recordings"
+msgstr "Záznamy"
+
+#: templates/admin/ticket-designer-settings.php:486
+msgid "Refresh Preview"
+msgstr "Obnoviť náhľad"
+
+#: includes/Participant/AdminUI.php:830
+msgid "Regenerate the ticket for the participant."
+msgstr "Znova vygenerovať vstupenku pre účastníka."
+
+#: includes/Participant/AdminUI.php:833
+msgid "Regenerate Ticket"
+msgstr "Znova vygenerovať vstupenku"
+
+#: includes/Module/MultiDayModule.php:572
+msgid "Register"
+msgstr "Registrovať"
+
+#: templates/verification-page.php:180
+msgid "Register %d Participants"
+msgstr "Registrovať %d účastníkov"
+
+#: includes/Module/CompanionRegistrationModule.php:246
+msgid "Register a %s"
+msgstr "Zaregistrovať %s"
+
+#: includes/Module/CompanionRegistrationModule.php:25
+msgid ""
+"Register a companion (colleague, guest) alongside the main registrant. "
+"Creates a separate participant with ticket and sends confirmation email."
+msgstr ""
+"Registrácia kolegu alebo hosťa spolu s hlavným účastníkom. Vytvorí "
+"samostatného účastníka so vstupenkou a pošle potvrdzovací email."
+
+#: includes/Module/MultiDayModule.php:603
+#: includes/Module/ParticipantTypeModule.php:761
+msgid "Register All"
+msgstr "Zaregistrovať všetkých"
+
+#: templates/verification-page.php:182
+msgid "Register Participant"
+msgstr "Registrovať účastníka"
+
+#: includes/Module/CompanionRegistrationModule.php:1003
+#: includes/Module/MultiDayModule.php:522
+#: includes/Module/ParticipantTypeModule.php:780
+#: templates/verification-page.php:88
+msgid "Registered"
+msgstr "Registrovaný"
+
+#: includes/Module/CompanionRegistrationModule.php:777
+#: includes/Module/CompanionRegistrationModule.php:798
+#: includes/Module/CompanionRegistrationModule.php:934
+msgid "Registered by"
+msgstr "Zaregistroval/a"
+
+#: includes/Module/CompanionRegistrationModule.php:782
+#: includes/Module/CompanionRegistrationModule.php:935
+msgid "Registered by email"
+msgstr "Email registrujúceho"
+
+#: includes/Module/CompanionRegistrationModule.php:630
+msgid "Registered by: %1$s (%2$s)"
+msgstr "Registráciu vykonal/a: %1$s (%2$s)"
+
+#: includes/Module/MultiDayModule.php:261
+msgid "Registered days"
+msgstr "Registrované dni"
+
+#: includes/VerificationManager.php:582
+msgid "Registered for %s by %s"
+msgstr "Registrovaný na %s od %s"
+
+#: includes/VerificationManager.php:491
+msgid "Registration %s by %s via %s"
+msgstr "Registrovanie %s od %s cez %s"
+
+#: includes/Selection/SessionSelection.php:362
+#: includes/Selection/SessionSelection.php:393
+msgid "Registration closed"
+msgstr "Registrácia ukončená"
+
+#: includes/Module/CompanionRegistrationModule.php:603
+msgid "Registration confirmation"
+msgstr "Potvrdenie registrácie"
+
+#: includes/Module/CompanionRegistrationModule.php:597
+msgid "Registration confirmation - %s"
+msgstr "Potvrdenie registrácie - %s"
+
+#: includes/Participant/Import.php:1400
+msgid "Registration confirmation for %s"
+msgstr "Potvrdenie registrácie pre %s"
+
+#: includes/Settings.php:1122
+msgid "Registration confirmation for livestream %s"
+msgstr "Potvrdenie registrácie na livestream %s"
+
+#: includes/RegistrationContext.php:791
+msgid "Registration confirmation for%1$s%2$s"
+msgstr "Potvrdenie registrácie na%1$s%2$s"
+
+#: includes/VerificationManager.php:152 templates/verification-page.php:64
+msgid "Registration date"
+msgstr "Dátum registrácie"
+
+#: includes/Participant/PostType.php:206 templates/verification-page.php:24
+msgid "Registration Details"
+msgstr "Podrobnosti registrácie"
+
+#: includes/Selection/SessionSelection.php:424
+msgid "Registration for %s is closed."
+msgstr "Registrácia pre termín %s je uzavretá."
+
+#: includes/Participant/Manager.php:101
+msgid "Registration History"
+msgstr "História registrácie"
+
+#: includes/Module/MultiDayModule.php:496
+msgid "Registration per day"
+msgstr "Registrácia podľa dní"
+
+#: includes/Settings.php:586
+msgid "Registration product banner template"
+msgstr "Šablóna baneru registračného produktu"
+
+#: includes/Settings.php:909
+msgid "Registration Settings"
+msgstr "Nastavenia registrácie"
+
+#: includes/Participant/AdminUI.php:97 includes/Participant/Manager.php:80
+#: templates/verification-page.php:6 templates/verification-page.php:63
+msgid "Registration Status"
+msgstr "Stav registrácie"
+
+#: templates/verification-page.php:131
+msgid "Registration Verification"
+msgstr "Overenie registrácie"
+
+#: includes/Module/MembershipModule.php:115
+#: includes/Module/RecordingModule.php:90
+msgid "Registration-confirmation body text"
+msgstr "Text potvrdenia o registrácii"
+
+#: includes/Participant/AdminUI.php:909
+msgid "Reimport to Riverstream (livestream)"
+msgstr "Reimportovať do Riverstream (livestream)"
+
+#: includes/Participant/AdminUI.php:908
+msgid "Reimport to Riverstream (recording)"
+msgstr "Reimportovať do Riverstream (nahrávka)"
+
+#: includes/Module/SessionModule.php:66
+msgid ""
+"Reject checkout if the same email is already registered for the same product "
+"and session date."
+msgstr ""
+"Odmietnuť pokladňu, ak je rovnaký email už zaregistrovaný pre rovnaký "
+"produkt a dátum sekcie."
+
+#: includes/TicketDesignerSettings.php:245
+#: templates/admin/partials/content-row-item.php:23
+#: templates/admin/partials/content-row-item.php:250
+msgid "Remove"
+msgstr "Odstrániť"
+
+#: includes/Module/CompanionRegistrationModule.php:1025
+#: includes/Module/MultiDayModule.php:545
+#: includes/Module/ParticipantTypeModule.php:720
+msgid "Remove one person"
+msgstr "Odobrať jednu osobu"
+
+#: includes/Participant/PostType.php:57
+msgid "Remove participant photo"
+msgstr "Odstrániť foto účastníka"
+
+#: includes/Settings.php:533
+msgid "Remove the order notes field from checkout"
+msgstr "Odstrániť pole poznámky k objednávke z checkoutu"
+
+#: includes/Module/HotelSelectionModule.php:844
+msgid "Remove this accommodation"
+msgstr "Odstrániť toto ubytovanie"
+
+#: includes/Settings.php:579
+msgid ""
+"Removes billing_address_1, billing_address_2, billing_city, billing_postcode "
+"and billing_country from checkout. Enable when collecting address through "
+"FieldBuilder fields."
+msgstr ""
+"Odstráni billing_address_1, billing_address_2, billing_city, "
+"billing_postcode a billing_country z pokladne. Zapnite, keď adresu zbierate "
+"cez FieldBuilder polia."
+
+#: includes/Settings.php:571
+msgid ""
+"Render the order-notes field in the billing column instead of the side column"
+msgstr ""
+"Renderovať pole „Poznámky k objednávke\" v billing stĺpci namiesto bočného "
+"stĺpca"
+
+#: includes/Settings.php:589
+msgid ""
+"Rendered above the billing form. Supports {product_name}. Leave empty to "
+"hide."
+msgstr ""
+"Zobrazené nad billing formulárom. Podporuje {product_name}. Nechajte prázdne "
+"pre skrytie."
+
+#: includes/Module/MembershipModule.php:85
+msgid "Replaces \"Participant:\" in SF comment for membership orders."
+msgstr "Nahrádza „Účastník:\" v poznámke SF pre objednávky členstva."
+
+#: includes/Module/MembershipModule.php:175
+#: includes/Module/RecordingModule.php:117
+msgid "Replaces standard greeting on the thank-you page. Supports {full_name}."
+msgstr ""
+"Nahradí štandardný pozdrav na thank-you stránke. Podporuje {full_name}."
+
+#: includes/FieldBuilderPage.php:484
+msgid "Required"
+msgstr "Povinné"
+
+#: includes/Participant/Import.php:125
+msgid "Required columns:"
+msgstr "Povinné stĺpce:"
+
+#: includes/Participant/AdminUI.php:797
+msgid "Resend email"
+msgstr "Odoslať email znova"
+
+#: includes/Participant/AdminUI.php:795
+msgid "Resend email with invoice"
+msgstr "Odoslať email s faktúrou"
+
+#: includes/Participant/AdminUI.php:792
+msgid "Resend email with ticket"
+msgstr "Poslať email so vstupenkou znova"
+
+#: includes/Participant/AdminUI.php:789
+msgid "Resend email with ticket and invoice"
+msgstr "Poslať email so vstupenkou a faktúrou znova"
+
+#: includes/Participant/AdminUI.php:814
+msgid "Resend the email to the participant."
+msgstr "Odoslať účastníkovi email znova."
+
+#: includes/Participant/AdminUI.php:812
+msgid "Resend the email with invoice to the participant."
+msgstr "Odoslať účastníkovi email s faktúrou."
+
+#: includes/Participant/AdminUI.php:806
+msgid "Resend the email with ticket and invoice to the participant."
+msgstr "Poslať email so vstupenkou a faktúrou znova účastníkovi."
+
+#: includes/Participant/AdminUI.php:809
+msgid "Resend the email with ticket to the participant."
+msgstr "Poslať email so vstupenkou znova účastníkovi."
+
+#: includes/Participant/AdminUI.php:925
+msgid ""
+"Resends the registration webhook to Riverstream so the user is (re)assigned "
+"to the proper stage."
+msgstr ""
+"Znova odošle registračný webhook do Riverstream, aby bol používateľ "
+"priradený k správnemu stage."
+
+#: includes/Module/WebhookImportModule.php:34
+msgid ""
+"REST API endpoint that allows external apps (e.g. stream platform) to create "
+"and update participants."
+msgstr ""
+"REST API endpoint, ktorý umožňuje externým aplikáciám (napr. stream "
+"platforma) vytvárať a aktualizovať účastníkov."
+
+#: includes/ArchiveManager.php:116 includes/ArchiveManager.php:170
+msgid "Restore from archive"
+msgstr "Obnoviť z archívu"
+
+#: includes/Participant/Import.php:299
+msgid "Review the changes below before confirming the import."
+msgstr "Pred potvrdením importu skontrolujte zmeny nižšie."
+
+#: templates/admin/ticket-designer-settings.php:229
+msgid "Right Column"
+msgstr "Pravý stĺpec"
+
+#: includes/Participant/AdminUI.php:873
+msgid "Riverstream Access"
+msgstr "Prístup k Riverstream"
+
+#: includes/Participant/AdminUI.php:1001
+msgid "Riverstream webhook failed — check the registration history."
+msgstr "Riverstream webhook zlyhal — skontrolujte históriu registrácie."
+
+#: includes/Participant/AdminUI.php:997
+msgid "Riverstream webhook resent successfully."
+msgstr "Riverstream webhook bol úspešne odoslaný znova."
+
+#: includes/Module/HotelSelectionModule.php:161
+msgid "Room type field label"
+msgstr "Popis poľa typu izby"
+
+#: includes/Participant/Import.php:341
+msgid "Row"
+msgstr "Riadok"
+
+#: includes/Participant/Import.php:323
+msgid "Rows with errors (skipped):"
+msgstr "Riadky s chybami (preskočené):"
+
+#: includes/Module/NotificationModule.php:22
+msgid "Sales Notifications"
+msgstr "Oznámenia o predaji"
+
+#: templates/admin/ticket-designer-settings.php:180
+#: templates/admin/ticket-designer-settings.php:278
+msgid "Same as text"
+msgstr "Rovnaká ako text"
+
+#: includes/Participant/Email.php:640
+msgid "Save as Template"
+msgstr "Uložiť ako šablónu"
+
+#: includes/FieldBuilderPage.php:364
+msgid "Save Fields"
+msgstr "Uložiť polia"
+
+#: includes/GroupSeatingUI.php:532
+msgid "Save increase"
+msgstr "Uložiť navýšenie"
+
+#: templates/admin/ticket-designer-settings.php:465
+msgid "Save Settings"
+msgstr "Uložiť nastavenia"
+
+#: includes/Participant/Email.php:233
+msgid "Save Template"
+msgstr "Uložiť šablónu"
+
+#: includes/Participant/Email.php:643
+msgid "Save this email as a template for future use"
+msgstr "Uložiť tento email ako šablónu pre budúce použitie"
+
+#: includes/Participant/Email.php:247
+msgid "Saved Templates"
+msgstr "Uložené šablóny"
+
+#: includes/Participant/PostType.php:51
+msgid "Search Participants"
+msgstr "Vyhľadať účastníkov"
+
+#: includes/FieldBuilderPage.php:621
+msgid "Second"
+msgstr "Druhý"
+
+#: templates/admin/ticket-designer-settings.php:359
+msgid "Second Column"
+msgstr "Druhý stĺpec"
+
+#: includes/Module/HotelSelectionModule.php:855
+msgid "Second guest"
+msgstr "Druhý hosť"
+
+#: includes/Module/HotelSelectionModule.php:199
+msgid "Second guest email"
+msgstr "Email druhého hosťa"
+
+#: includes/Module/HotelSelectionModule.php:196
+msgid "Second guest email label"
+msgstr "Popis emailu druhého hosťa"
+
+#: includes/Module/HotelSelectionModule.php:176
+msgid "Second guest first name"
+msgstr "Meno druhého hosťa"
+
+#: includes/Module/HotelSelectionModule.php:173
+msgid "Second guest first name label"
+msgstr "Popis poľa meno druhého hosťa"
+
+#: includes/Module/HotelSelectionModule.php:182
+msgid "Second guest last name"
+msgstr "Priezvisko druhého hosťa"
+
+#: includes/Module/HotelSelectionModule.php:179
+msgid "Second guest last name label"
+msgstr "Popis poľa priezvisko druhého hosťa"
+
+#: includes/Module/HotelSelectionModule.php:188
+msgid "Second guest name"
+msgstr "Meno druhého hosťa"
+
+#: includes/Module/HotelSelectionModule.php:185
+msgid "Second guest name label (display)"
+msgstr "Popis mena druhého hosťa (zobrazenie)"
+
+#: includes/Module/WebhookImportModule.php:48
+msgid "Secret key for webhook authentication"
+msgstr "Tajný kľúč pre autentifikáciu webhooku"
+
+#: includes/Participant/AdminUI.php:1102 includes/Participant/Email.php:769
+#: includes/Participant/Email.php:934 includes/Participant/Email.php:1108
+#: includes/Participant/Export.php:52 includes/Participant/Export.php:387
+#: includes/Participant/Export.php:431 includes/Participant/Export.php:468
+#: includes/Participant/Import.php:1315 includes/Participant/Ticket.php:48
+#: includes/TicketDesigner.php:167 includes/TicketDesignerSettings.php:643
+msgid "Security check failed"
+msgstr "Bezpečnostná kontrola zlyhala"
+
+#. translators: 1: Event name, 2: Event date
+#: includes/RegistrationContext.php:706
+msgid "see you at the event %1$s on %2$s"
+msgstr "vidíme sa na podujatí %1$s dňa %2$s"
+
+#. translators: 1: Event name, 2: Event date, 3: Event location (locative)
+#: includes/RegistrationContext.php:694
+msgid "see you at the event %1$s, which will take place on %2$s at %3$s"
+msgstr "vidíme sa na podujatí %1$s, ktoré sa uskutoční dňa %2$s v %3$s"
+
+#: includes/FieldBuilderPage.php:750
+#: includes/Module/AccommodationModule.php:127
+#: includes/Selection/SessionSelection.php:337
+#: includes/Selection/SessionSelection.php:351
+#: includes/Selection/SessionSelection.php:377
+#: includes/Selection/SessionSelection.php:390
+msgid "Select"
+msgstr "Vybrať"
+
+#: includes/Participant/Import.php:142
+msgid ""
+"Select an Excel file (.xlsx) exported from this system or with matching "
+"column structure."
+msgstr ""
+"Vyberte súbor programu Excel (.xlsx) exportovaný z tohto systému alebo so "
+"zodpovedajúcou štruktúrou stĺpcov."
+
+#: includes/CheckoutManager.php:586
+#: includes/Selection/AbstractSelection.php:503
+#: includes/Selection/DaySelection.php:18
+#: includes/Selection/DaySelection.php:118
+msgid "Select days"
+msgstr "Vyberte dni"
+
+#: includes/TicketDesignerSettings.php:240
+#: templates/admin/partials/content-row-item.php:137
+#: templates/admin/partials/content-row-item.php:244
+#: templates/admin/ticket-designer-settings.php:123
+msgid "Select Image"
+msgstr "Vybrať obrázok"
+
+#: includes/TicketDesignerSettings.php:242
+msgid "Select Logo"
+msgstr "Vybrať logo"
+
+#: templates/admin/ticket-preview.php:16
+msgid "Select Participant"
+msgstr "Vybrať účastníka"
+
+#: includes/ProductGroup.php:441
+msgid "Select location"
+msgstr "Vyberte lokalitu"
+
+#: includes/Module/MultiDayModule.php:107
+#: includes/Module/MultiDayModule.php:259
+#: includes/Module/MultiDayModule.php:357 includes/ThankYouPage.php:63
+#: includes/TicketDesignerSettings.php:353 includes/TicketManager.php:154
+#: includes/VerificationManager.php:151 templates/verification-page.php:73
+msgid "Selected days"
+msgstr "Vybrané dni"
+
+#: includes/Module/MultiDayModule.php:451
+msgid "Selected days: %s"
+msgstr "Vybrané dni: %s"
+
+#: includes/Selection/SessionSelection.php:419
+msgid "Selected session is not valid."
+msgstr "Vybraný termín nie je platný."
+
+#: includes/Selection/SessionSelection.php:446
+msgid "Selected time slot is not valid."
+msgstr "Vybraný časový slot nie je platný."
+
+#: includes/Module/CompanionRegistrationModule.php:49
+msgid "Send confirmation email to companion"
+msgstr "Poslať potvrdzovací email sprievodcovi"
+
+#: includes/Participant/Import.php:153
+msgid "Send confirmation email with ticket to new participants"
+msgstr "Poslať potvrdzovací email so vstupenkou novým účastníkom"
+
+#: includes/Participant/AdminUI.php:1059 includes/Participant/Email.php:43
+#: includes/Participant/Email.php:44 includes/Participant/Email.php:686
+msgid "Send Email"
+msgstr "Poslať email"
+
+#: includes/Module/NotificationModule.php:27
+msgid ""
+"Send email notifications when registration count reaches configured "
+"thresholds."
+msgstr ""
+"Odošle emailové notifikácie keď počet registrácií dosiahne nastavené hranice."
+
+#: includes/Participant/Email.php:441
+msgid "Send Email to Participants"
+msgstr "Poslať email účastníkom"
+
+#: includes/Participant/Import.php:148
+msgid "Send Emails"
+msgstr "Poslať emaily"
+
+#: includes/Participant/Import.php:328
+msgid "Send emails to new participants:"
+msgstr "Poslať emaily novým účastníkom:"
+
+#: includes/Module/HotelSelectionModule.php:202
+msgid "Send notification email to second guest"
+msgstr "Odoslať notifikačný email druhému hosťovi"
+
+#: includes/Module/NotificationModule.php:51
+msgid "Send notification when in-person registrations reach this count"
+msgstr ""
+"Poslať notifikáciu, keď registrácie na osobnú účasť dosiahnu tento počet"
+
+#: includes/Module/NotificationModule.php:56
+msgid "Send notification when livestream registrations reach this count"
+msgstr "Poslať notifikáciu, keď registrácie na livestream dosiahnu tento počet"
+
+#: includes/Participant/Email.php:687
+msgid "Send Test Email"
+msgstr "Odoslať testovací email"
+
+#: includes/Module/CompanionRegistrationModule.php:52
+msgid "Send ticket and confirmation email to the companion after registration"
+msgstr "Poslať vstupenku a potvrdzovací email sprievodcovi po registrácii"
+
+#: includes/Module/CompanionRegistrationModule.php:638
+#: includes/Module/SessionModule.php:704 includes/Module/SessionModule.php:931
+#: includes/Module/SessionModule.php:968 includes/Module/SessionModule.php:1113
+#: includes/Module/SessionModule.php:1168
+#: includes/Module/SessionModule.php:1240
+#: includes/Selection/SessionSelection.php:35
+msgid "Session"
+msgstr "Termín"
+
+#: includes/Module/SessionModule.php:670
+msgid "Session Date"
+msgstr "Termín"
+
+#: includes/Selection/SessionSelection.php:271
+msgid "Session date"
+msgstr "Termín"
+
+#: includes/Module/SessionModule.php:29
+msgid ""
+"Session date picker with optional time slots, capacity limits, and auto-"
+"close before event."
+msgstr ""
+"Výber termínu s voliteľnými časovými slotmi, limitmi kapacity a automatickým "
+"uzavretím pred eventom."
+
+#: includes/Module/SessionModule.php:187
+msgid "Session Dates"
+msgstr "Termíny"
+
+#: includes/Module/SessionModule.php:47
+msgid "Session Field Label"
+msgstr "Názov poľa termínu"
+
+#. translators: 1: date, 2: remaining seats, 3: requested
+#: includes/Selection/SessionSelection.php:473
+msgid "Session on %1$s only has %2$d seat(s) left, you requested %3$d."
+msgstr "V termíne %1$s zostávajú už len %2$d miesta, požadovali ste %3$d."
+
+#: includes/Module/SessionModule.php:24 includes/Module/SessionModule.php:168
+msgid "Sessions"
+msgstr "Termíny"
+
+#: includes/Participant/PostType.php:56
+msgid "Set participant photo"
+msgstr "Nastaviť foto účastníka"
+
+#: includes/Settings.php:802 includes/Settings.php:803
+msgid "Settings"
+msgstr "Nastavenia"
+
+#: includes/TicketDesignerSettings.php:249
+msgid "Settings imported successfully!"
+msgstr "Nastavenia boli úspešne importované!"
+
+#: templates/admin/ticket-designer-settings.php:11
+msgid "Settings saved successfully."
+msgstr "Nastavenia úspešne uložené."
+
+#: includes/Settings.php:913
+msgid "Settings saved."
+msgstr "Nastavenia uložené."
+
+#: includes/FieldBuilderPage.php:657
+msgid "Show as column in participant list"
+msgstr "Zobraziť ako stĺpec v zozname účastníkov"
+
+#: includes/FieldBuilderPage.php:708
+msgid "Show as filter dropdown in participant list"
+msgstr "Zobraziť ako filter v zozname účastníkov"
+
+#: includes/Settings.php:538
+msgid "Show GDPR consent checkbox on checkout"
+msgstr "Zobraziť checkbox GDPR súhlasu na checkoute"
+
+#: includes/FieldBuilderPage.php:561
+msgid "Show in"
+msgstr "Zobraziť v"
+
+#: includes/FieldBuilderPage.php:606
+msgid "Show on ticket"
+msgstr "Zobraziť na vstupenke"
+
+#: includes/Module/SessionModule.php:57
+msgid "Show product column & filter"
+msgstr "Zobraziť stĺpec a filter produktu"
+
+#: includes/Module/SessionModule.php:60
+msgid "Show product name column and product filter in participant list"
+msgstr ""
+"Zobraziť stĺpec s názvom produktu a filter produktu v zozname účastníkov"
+
+#: includes/Settings.php:548
+msgid "Show terms & conditions checkbox on checkout"
+msgstr "Zobraziť checkbox obchodných podmienok na checkoute"
+
+#: includes/Settings.php:566
+msgid ""
+"Show the invoice download link on the thank-you page when an invoice exists"
+msgstr ""
+"Zobraziť odkaz na stiahnutie faktúry na ďakovnej stránke, keď faktúra "
+"existuje"
+
+#: templates/admin/partials/content-row-item.php:291
+#: templates/admin/ticket-designer-settings.php:342
+msgid "Size (px)"
+msgstr "Veľkosť (px)"
+
+#: includes/Settings.php:556
+msgid "Skip Email Duplicate Check"
+msgstr "Preskočiť kontrolu duplicitného emailu"
+
+#: includes/Participant/Import.php:461
+msgid "Skipped (no changes)"
+msgstr "Preskočené (bez zmien)"
+
+#: includes/Module/SessionModule.php:52
+msgid "Slot Field Label"
+msgstr "Názov poľa slotu"
+
+#: includes/StripeManager.php:453
+msgid "Slovakia"
+msgstr "Slovensko"
+
+#: includes/ProductGroup.php:188
+#: includes/Selection/SessionSelection.php:357
+#: includes/Selection/SessionSelection.php:391
+msgid "Sold out"
+msgstr "Vypredané"
+
+#: includes/FieldBuilderPage.php:693
+msgid "Sortable"
+msgstr "Zoraditeľné"
+
+#: templates/admin/partials/content-row-item.php:211
+msgid "Spacing (px)"
+msgstr "Medzera (px)"
+
+#: includes/Module/CompanionRegistrationModule.php:994
+#: includes/Module/MultiDayModule.php:501
+#: includes/Module/ParticipantTypeModule.php:705
+#: includes/Participant/Import.php:371
+msgid "Status"
+msgstr "Stav"
+
+#: includes/Participant/Import.php:167
+msgid "Status to use for new participants if not specified in the file."
+msgstr "Stav pre nových účastníkov, ak nie je uvedený v súbore."
+
+#: includes/Participant/Import.php:1173
+msgid "Status: %s"
+msgstr "Stav: %s"
+
+#: includes/Module/LivestreamModule.php:60
+msgid "Stream Link Text"
+msgstr "Text odkazu na stream"
+
+#: includes/Module/LivestreamModule.php:53
+msgid "Stream URL"
+msgstr "URL streamu"
+
+#: includes/Module/MultiDayModule.php:307
+#: includes/TicketDesignerSettings.php:342 includes/TicketManager.php:75
+#: templates/verification-page.php:56
+msgid "Street"
+msgstr "Ulica"
+
+#: includes/Participant/Manager.php:63
+msgid "Street and House Number"
+msgstr "Ulica a číslo domu"
+
+#: includes/Settings.php:603
+msgid "Stripe Elements primary color"
+msgstr "Hlavná farba Stripe Elements"
+
+#: includes/Module/MembershipModule.php:123
+msgid "Stripe receipt \"from\" template"
+msgstr "Šablóna „od\" pre účtenku Stripe"
+
+#: includes/Module/MembershipModule.php:142
+msgid "Stripe receipt email subject template"
+msgstr "Stripe účtenka – šablóna predmetu emailu"
+
+#: includes/Module/MembershipModule.php:131
+msgid "Stripe receipt heading template"
+msgstr "Stripe účtenka – šablóna nadpisu"
+
+#: includes/Participant/Email.php:252 includes/Participant/Email.php:312
+#: includes/Participant/Email.php:902
+msgid "Subject"
+msgstr "Predmet"
+
+#: includes/Settings.php:739
+msgid ""
+"Substring removed from participant manual-email subject when participant is "
+"livestream."
+msgstr ""
+"Časť textu odstránená z predmetu manuálneho emailu pre účastníka, keď je "
+"účastník livestream."
+
+#: includes/StripeManager.php:466
+msgid "Subtotal"
+msgstr "Čiastka"
+
+#: includes/TicketManager.php:760
+msgid ""
+"Successfully updated %d ticket URLs with secure hashes and protected PDF "
+"directory. Please remove the updateExistingTicketUrls function from "
+"TicketManager.php."
+msgstr ""
+"Úspešne aktualizovaných %d URL adries vstupeniek s bezpečnými hashmi a "
+"chráneným PDF adresárom. Odstráňte funkciu updateExistingTicketUrls z "
+"TicketManager.php."
+
+#: includes/StripeManager.php:371
+msgid "Summary"
+msgstr "Súhrn"
+
+#: includes/Module/MembershipModule.php:80
+msgid "SuperFaktura invoice participant label"
+msgstr "Popis účastníka v SuperFaktúra faktúre"
+
+#: includes/Settings.php:697
+msgid "Supports {event_name} and {event_dates} placeholders."
+msgstr "Podporuje placeholdery {event_name} a {event_dates}."
+
+#: includes/Settings.php:730
+msgid "Supports {event_name}, {event_dates} placeholders."
+msgstr "Podporuje placeholdery {event_name}, {event_dates}."
+
+#: includes/Settings.php:721
+msgid "Supports {event_name}, {event_dates}, {event_location} placeholders."
+msgstr "Podporuje placeholdery {event_name}, {event_dates}, {event_location}."
+
+#: includes/Module/HotelSelectionModule.php:227
+msgid "Supports {event_name}, {event_dates}, {hotel_guest_name}."
+msgstr "Podporuje {event_name}, {event_dates}, {hotel_guest_name}."
+
+#: includes/Module/HotelSelectionModule.php:215
+#: includes/Module/HotelSelectionModule.php:221
+msgid "Supports {event_name}."
+msgstr "Podporuje {event_name}."
+
+#: includes/Module/MembershipModule.php:96
+#: includes/Module/MembershipModule.php:104
+#: includes/Module/MembershipModule.php:112
+#: includes/Module/MembershipModule.php:120
+#: includes/Module/MembershipModule.php:128
+#: includes/Module/MembershipModule.php:147
+#: includes/Module/MembershipModule.php:161
+#: includes/Module/MembershipModule.php:169
+#: includes/Module/MembershipModule.php:186
+#: includes/Module/RecordingModule.php:71
+#: includes/Module/RecordingModule.php:79
+#: includes/Module/RecordingModule.php:87
+#: includes/Module/RecordingModule.php:95
+#: includes/Module/RecordingModule.php:103
+#: includes/Module/RecordingModule.php:111
+#: includes/Module/RecordingModule.php:128
+msgid "Supports {product_name}."
+msgstr "Podporuje {product_name}."
+
+#: includes/Module/MembershipModule.php:136
+msgid "Supports {product_name}. Replaces \"Your {event} receipt\" portion."
+msgstr "Podporuje {product_name}. Nahrádza časť „Vaša {event} účtenka\"."
+
+#: includes/Module/HotelSelectionModule.php:236
+msgid ""
+"Supports {registrant_name}, {registrant_email}. Hidden when both are empty."
+msgstr ""
+"Podporuje {registrant_name}, {registrant_email}. Skryté, keď sú obe prázdne."
+
+#: includes/Module/HotelSelectionModule.php:250
+msgid "Supports {registration_url} (rendered as a link)."
+msgstr "Podporuje {registration_url} (renderované ako odkaz)."
+
+#: includes/FieldBuilderPage.php:398
+msgid "System"
+msgstr "Systém"
+
+#: includes/Participant/PostType.php:222
+msgid "System Information"
+msgstr "Informácie o systéme"
+
+#: includes/FieldBuilder.php:486 includes/Participant/Manager.php:68
+#: includes/TicketDesignerSettings.php:349 includes/TicketManager.php:90
+#: templates/verification-page.php:54
+msgid "Tax ID"
+msgstr "DIČ"
+
+#: includes/Settings.php:507
+msgid "Team Name"
+msgstr "Názov tímu"
+
+#: includes/Settings.php:509
+msgid "Team or department name (used in emails)"
+msgstr "Názov tímu alebo oddelenia (používa sa v emailoch)"
+
+#: includes/Participant/Email.php:111
+msgid "Template \"%s\" deleted successfully."
+msgstr "Šablóna \"%s\" úspešne odstránená."
+
+#: includes/Participant/Email.php:96
+msgid "Template \"%s\" saved successfully."
+msgstr "Šablóna \"%s\" úspešne uložená."
+
+#: includes/Participant/Email.php:173 includes/Participant/Email.php:251
+#: includes/Participant/Email.php:645
+msgid "Template Name"
+msgstr "Názov šablóny"
+
+#: includes/Settings.php:551
+msgid "Terms & Conditions URL"
+msgstr "URL obchodných podmienok"
+
+#: includes/WooCommerceManager.php:1008
+msgid "Terms and Conditions"
+msgstr "obchodnými podmienkami"
+
+#: includes/Participant/Email.php:652
+msgid "Test Email"
+msgstr "Testovací email"
+
+#: includes/Participant/Email.php:670
+msgid "Test Email Address"
+msgstr "Testovacia emailová adresa"
+
+#: includes/Participant/Email.php:450
+msgid "Test email sent successfully to %s"
+msgstr "Testovací email úspešne odoslaný na %s"
+
+#: includes/FieldBuilderPage.php:678 includes/FieldBuilderPage.php:747
+#: templates/admin/partials/content-row-item.php:30
+msgid "Text"
+msgstr "Text"
+
+#: templates/admin/partials/content-row-item.php:10
+msgid "Text Block"
+msgstr "Textový blok"
+
+#: templates/admin/ticket-designer-settings.php:168
+#: templates/admin/ticket-designer-settings.php:266
+msgid "Text Color"
+msgstr "Farba textu"
+
+#: includes/Module/LivestreamModule.php:62
+msgid "Text displayed for the stream link"
+msgstr "Text zobrazený pre odkaz na stream"
+
+#: includes/FieldBuilderPage.php:749
+msgid "Textarea"
+msgstr "Viacriadkové textové pole"
+
+#: templates/order-processing-email.php:86
+msgid "Thank you for paying for %s."
+msgstr "Ďakujeme za úhradu za %s."
+
+#: templates/order-processing-email.php:88
+msgid "Thank you for paying for the entrance to %s."
+msgstr "Ďakujeme za úhradu vstupu na podujatie %s."
+
+#: templates/order-processing-email.php:95
+msgid "Thank you for registering for the event %s."
+msgstr "Ďakujeme za registráciu na podujatie %s."
+
+#. translators: 1: Event name, 2: Event date
+#: includes/RegistrationContext.php:684
+msgid "Thank you for registering for the livestream of %1$s on %2$s."
+msgstr "Ďakujeme za registráciu na livestream %1$s dňa %2$s."
+
+#: templates/woocommerce/checkout/thankyou.php:51
+msgid "Thank you for registration!"
+msgstr "Ďakujeme za registráciu!"
+
+#: templates/woocommerce/checkout/thankyou.php:49
+msgid "Thank you for your payment and registration!"
+msgstr "Ďakujeme za Vašu platbu a registráciu!"
+
+#: templates/order-processing-email.php:79
+msgid "Thank you for your registration for %s."
+msgstr "Ďakujeme za vašu registráciu na %s."
+
+#: templates/order-processing-email.php:81
+msgid "Thank you for your registration for the event %s."
+msgstr "Ďakujeme za vašu registráciu na podujatie %s."
+
+#: includes/Module/MembershipModule.php:172
+#: includes/Module/RecordingModule.php:114
+msgid "Thank-you greeting template"
+msgstr "Šablóna pozdravu na thank-you stránke"
+
+#: includes/Module/MembershipModule.php:156
+#: includes/Module/RecordingModule.php:98
+msgid "Thank-you heading (paid)"
+msgstr "Titulok thank-you stránky (zaplatené)"
+
+#: includes/Module/MembershipModule.php:164
+#: includes/Module/RecordingModule.php:106
+msgid "Thank-you heading (unpaid)"
+msgstr "Titulok thank-you stránky (neuhradené)"
+
+#: includes/Module/MembershipModule.php:189
+#: includes/Module/RecordingModule.php:131
+msgid "Thank-you info box body"
+msgstr "Telo info boxu na thank-you stránke"
+
+#: includes/Module/MembershipModule.php:181
+#: includes/Module/RecordingModule.php:123
+msgid "Thank-you info box title template"
+msgstr "Šablóna nadpisu info boxu na thank-you stránke"
+
+#: includes/Module/SessionModule.php:1381
+msgid "The email %1$s is already registered for \"%2$s\" on %3$s."
+msgstr "Email %1$s je už zaregistrovaný na „%2$s\" dňa %3$s."
+
+#: includes/Participant/Import.php:659
+msgid "The file is empty or contains only headers."
+msgstr "Súbor je prázdny alebo obsahuje len hlavičky."
+
+#: includes/Participant/Import.php:670
+msgid "The file must contain an \"Email\" column. Found columns: %s"
+msgstr "Súbor musí obsahovať stĺpec \"Email\". Nájdené stĺpce: %s"
+
+#: includes/Participant/Email.php:659
+msgid "The test email will use data from: <strong>%s %s (%s)</strong>"
+msgstr "Testovací email použije údaje z: <strong>%s %s (%s)</strong>"
+
+#: includes/Participant/AdminUI.php:887
+msgid ""
+"This order has no livestream or recording product — Riverstream webhook does "
+"not apply."
+msgstr ""
+"Táto objednávka neobsahuje livestream ani produkt s nahrávkou — Riverstream "
+"webhook sa neuplatňuje."
+
+#: includes/TicketDesignerSettings.php:251
+msgid ""
+"This will replace all current settings with the global ticket design. "
+"Continue?"
+msgstr ""
+"Toto nahradí všetky aktuálne nastavenia globálnym dizajnom vstupenky. "
+"Pokračovať?"
+
+#: templates/verification-page.php:69
+msgid "Ticket"
+msgstr "Vstupenka"
+
+#: includes/Participant/Export.php:537 includes/TicketManager.php:166
+#: includes/TicketManager.php:578
+msgid "ticket"
+msgstr "vstupenka"
+
+#: includes/Participant/AdminUI.php:706
+msgid "Ticket Actions"
+msgstr "Akcie pre vstupenku"
+
+#: includes/Participant/Email.php:1190
+msgid "Ticket and invoice email resent"
+msgstr "Email so vstupenkou a faktúrou odoslaný znova"
+
+#: includes/Settings.php:1107
+msgid "Ticket and invoice for %s"
+msgstr "Vstupenka a faktúra za %s"
+
+#: includes/Settings.php:1129
+msgid "Ticket and paid Invoice for %s"
+msgstr "Vstupenka a zaplatená faktúra za %s"
+
+#: includes/Settings.php:1130
+msgid "Ticket and unpaid invoice for %s"
+msgstr "Vstupenka a neuhradená faktúra za %s"
+
+#: includes/TicketDesignerSettings.php:195
+#: includes/TicketDesignerSettings.php:196
+#: templates/admin/ticket-designer-settings.php:7
+msgid "Ticket Designer"
+msgstr "Návrhár vstupeniek"
+
+#: includes/FieldBuilderPage.php:591
+msgid "Ticket Display"
+msgstr "Zobrazenie vstupenky"
+
+#: templates/admin/ticket-designer-settings.php:351
+msgid "Ticket Fields"
+msgstr "Polia vstupenky"
+
+#: includes/Participant/Manager.php:96
+msgid "Ticket File Path"
+msgstr "Cesta k vstupenke"
+
+#: includes/RegistrationContext.php:798
+msgid "Ticket for%1$s%2$s"
+msgstr "Vstupenka na%1$s%2$s"
+
+#: includes/FieldBuilderPage.php:628
+msgid "Ticket Labels:"
+msgstr "Popisky vstupenky:"
+
+#: includes/Participant/Email.php:857 includes/Participant/Email.php:1013
+msgid "Ticket not available"
+msgstr "Vstupenka nie je k dispozícii"
+
+#: includes/TicketManager.php:585
+msgid "Ticket not found."
+msgstr "Vstupenka nenájdená."
+
+#: includes/FieldBuilderPage.php:579
+msgid "Ticket Only"
+msgstr "Len vstupenka"
+
+#: includes/TicketDesigner.php:57 includes/TicketDesigner.php:58
+#: templates/admin/ticket-preview.php:12 templates/admin/ticket-preview.php:66
+#: templates/admin/ticket-preview.php:75
+msgid "Ticket Preview"
+msgstr "Náhľad vstupenky"
+
+#: includes/Participant/AdminUI.php:1131 includes/Participant/Ticket.php:101
+msgid "Ticket regenerated"
+msgstr "Vstupenka znova vygenerovaná"
+
+#: includes/Participant/AdminUI.php:1134
+msgid "Ticket regenerated successfully"
+msgstr "Vstupenka úspešne znova vygenerovaná"
+
+#: includes/Participant/Manager.php:95
+msgid "Ticket URL"
+msgstr "URL lístka"
+
+#: includes/Participant/AdminUI.php:1012
+msgid "Ticket was successfully regenerated."
+msgstr "Vstupenka úspešne znova vygenerovaná."
+
+#: includes/Module/ParticipantTypeModule.php:159
+msgid "Tiers (days:price)"
+msgstr "Tarify (dni:cena)"
+
+#: includes/Module/CompanionRegistrationModule.php:641
+#: includes/Module/SessionModule.php:201 includes/Module/SessionModule.php:935
+#: includes/Module/SessionModule.php:976
+msgid "Time"
+msgstr "Čas"
+
+#: includes/Module/SessionModule.php:675
+msgid "Time Slot"
+msgstr "Časový slot"
+
+#: includes/Module/CompanionRegistrationModule.php:644
+#: includes/Module/SessionModule.php:54 includes/Module/SessionModule.php:939
+#: includes/Module/SessionModule.php:982 includes/Module/SessionModule.php:1241
+#: includes/Selection/SessionSelection.php:272
+msgid "Time slot"
+msgstr "Časový slot"
+
+#. translators: 1: slot label, 2: remaining seats, 3: requested
+#: includes/Selection/SessionSelection.php:457
+msgid "Time slot %1$s only has %2$d seat(s) left, you requested %3$d."
+msgstr ""
+"V časovom slote %1$s zostávajú už len %2$d miesta, požadovali ste %3$d."
+
+#: includes/Participant/AdminUI.php:620
+msgid "To"
+msgstr "Do"
+
+#: includes/Participant/Import.php:212
+msgid "To get the correct file format, export existing participants:"
+msgstr ""
+"Pre získanie správneho formátu súboru exportujte existujúcich účastníkov:"
+
+#: includes/TicketManager.php:289
+msgid "To verify your ticket, please scan the QR code at the entrance."
+msgstr ""
+"Na overenie Vašej vstupenky, prosím, oskenujte QR kód pri vstupnej kontrole."
+
+#: includes/CheckoutManager.php:587 includes/Module/MultiDayModule.php:426
+#: includes/Module/MultiDayModule.php:585
+#: includes/Module/ParticipantTypeModule.php:749
+#: includes/Selection/DaySelection.php:119
+#: includes/Selection/ParticipantTypeSelection.php:322
+msgid "Total"
+msgstr "Celkom"
+
+#: includes/StripeManager.php:476
+msgid "Total amount"
+msgstr "Celková suma"
+
+#: includes/Module/MultiDayModule.php:260
+msgid "Total persons"
+msgstr "Celkový počet osôb"
+
+#: includes/Module/SessionModule.php:49
+msgid "Training date"
+msgstr "Termín školenia"
+
+#: includes/FieldBuilderPage.php:442
+#: includes/Module/ParticipantTypeModule.php:703
+msgid "Type"
+msgstr "Typ"
+
+#: includes/Module/HotelSelectionModule.php:164
+msgid "Type of room"
+msgstr "Typ izby"
+
+#: includes/Settings.php:1120
+msgid "Unpaid invoice for livestream %s"
+msgstr "Neuhradená faktúra za livestream %s"
+
+#: includes/TicketDesignerSettings.php:246
+msgid ""
+"Unsupported image format. Please use PNG, JPG or GIF. WebP is not supported "
+"for PDF tickets."
+msgstr ""
+"Nepodporovaný formát obrázka. Použite PNG, JPG alebo GIF. WebP nie je "
+"podporovaný pre PDF vstupenky."
+
+#: includes/Participant/Manager.php:99
+msgid "Update Date"
+msgstr "Dátum aktualizácie"
+
+#: includes/VerificationManager.php:153 templates/verification-page.php:65
+msgid "Updated at"
+msgstr "Aktualizované"
+
+#: includes/Participant/Import.php:1205
+msgid "Updated by: %s"
+msgstr "Aktualizoval: %s"
+
+#: includes/Participant/Import.php:1204
+msgid "UPDATED VIA IMPORT"
+msgstr "AKTUALIZOVANÉ CEZ IMPORT"
+
+#: includes/Participant/Import.php:122
+msgid ""
+"Upload an Excel file (.xlsx) with the same structure as the export file. The "
+"import will match participants by email address."
+msgstr ""
+"Nahrajte súbor programu Excel (.xlsx) s rovnakou štruktúrou ako exportovaný "
+"súbor. Import priradí účastníkov podľa e-mailovej adresy."
+
+#: includes/Participant/PostType.php:61
+msgid "Uploaded to this participant"
+msgstr "Nahrané pre tento účastníka"
+
+#: includes/Module/LivestreamModule.php:55
+msgid "URL of the livestream page"
+msgstr "URL stránky livestreamu"
+
+#: includes/Module/LivestreamModule.php:70
+msgid "URL to send livestream access webhooks"
+msgstr "URL adresa na odoslanie webhookov pre prístup k živému vysielaniu"
+
+#: includes/Module/HotelSelectionModule.php:263
+msgid "URL where the second guest can buy a ticket."
+msgstr "URL, kde si druhý hosť môže kúpiť vstupenku."
+
+#: includes/Participant/PostType.php:58
+msgid "Use as participant photo"
+msgstr "Použiť ako foto účastníka"
+
+#: templates/admin/ticket-designer-settings.php:98
+msgid "Use custom ticket design for this product"
+msgstr "Použiť vlastný dizajn vstupenky pre tento produkt"
+
+#: includes/EventManager.php:488
+msgid "Use global setting"
+msgstr "Použiť globálne nastavenia"
+
+#: includes/Participant/Email.php:501
+msgid "Use Template"
+msgstr "Použiť šablónu"
+
+#: includes/TicketDesignerSettings.php:241
+msgid "Use this image"
+msgstr "Použiť tento obrázok"
+
+#: includes/Participant/Manager.php:97 includes/TicketDesignerSettings.php:352
+#: includes/TicketManager.php:68
+msgid "Used Coupons"
+msgstr "Použité kupóny"
+
+#: includes/Module/HotelSelectionModule.php:189
+msgid ""
+"Used for display only (cart summary, email, invoice, thank-you). Two "
+"separate first/last name inputs are shown at checkout."
+msgstr ""
+"Slúži len pre zobrazenie (zhrnutie košíka, email, faktúra, ďakovacia stránka)"
+". V pokladni sa zobrazujú dve samostatné polia pre meno a priezvisko."
+
+#: includes/EventManager.php:552
+msgid "Using global:"
+msgstr "Používa globálne:"
+
+#: includes/Module/SessionModule.php:249
+msgid "Value"
+msgstr "Hodnota"
+
+#: includes/Participant/Manager.php:57 includes/TicketDesignerSettings.php:351
+#: includes/TicketManager.php:63 templates/verification-page.php:60
+msgid "Variable Symbol"
+msgstr "Variabilný symbol"
+
+#: includes/FieldBuilder.php:496
+msgid "Variable symbol"
+msgstr "Variabilný symbol"
+
+#: includes/WooCommerceManager.php:362
+msgid "Variable symbol generated: %s (no invoice plugin active)"
+msgstr "Variabilný symbol vygenerovaný: %s (plugin faktúr nie je aktívny)"
+
+#: includes/Settings.php:460
+msgid "Variable symbol prefix"
+msgstr "Predpona variabilného symbolu"
+
+#: includes/Participant/Import.php:1181
+msgid "Variable symbol: %s"
+msgstr "Variabilný symbol: %s"
+
+#: includes/StripeManager.php:452 includes/WooCommerceManager.php:800
+msgid "VAT"
+msgstr "DPH"
+
+#: includes/FieldBuilder.php:485 includes/Participant/Manager.php:69
+#: includes/TicketDesignerSettings.php:350 includes/TicketManager.php:95
+#: templates/verification-page.php:55
+msgid "VAT ID"
+msgstr "IČ DPH"
+
+#: includes/Settings.php:425
+msgid "Venue"
+msgstr "Miesto"
+
+#: includes/Settings.php:441
+msgid "Venue (locative case)"
+msgstr "Miesto konania (lokál)"
+
+#: includes/Settings.php:433
+msgid "Venue Address"
+msgstr "Adresa miesta"
+
+#: includes/Settings.php:435
+msgid "Venue address, e.g. \"Junácka 6, Bratislava\""
+msgstr "Adresa miesta konania, napr. \"Junácka 6, Bratislava\""
+
+#: includes/Settings.php:427
+msgid "Venue name, e.g. \"Športová hala Junácka\""
+msgstr "Názov miesta, napr. \"Športová hala Junácka\""
+
+#: includes/Settings.php:443
+msgid ""
+"Venue with address in locative, e.g. \"Športovej hale Junácka, Junácka 6, "
+"Bratislava\""
+msgstr ""
+"Miesto konania s adresou v lokály, napr. \"Športovej hale Junácka, Junácka 6,"
+" Bratislava\""
+
+#: includes/FieldBuilderPage.php:773
+msgid "Verification"
+msgstr "Overenie"
+
+#: includes/VerificationManager.php:457
+msgid "Verification error"
+msgstr "Chyba overenia"
+
+#: includes/Participant/AdminUI.php:1119
+msgid "Verification manager not available"
+msgstr "Správca overenia nie je k dispozícii"
+
+#: includes/Module/MultiDayModule.php:262
+msgid "Verified persons"
+msgstr "Overené osoby"
+
+#: templates/admin/ticket-designer-settings.php:189
+#: templates/admin/ticket-designer-settings.php:287
+msgid "Vertical Center"
+msgstr "Vertikálne vycentrovanie"
+
+#: includes/Participant/Email.php:266 includes/Participant/PostType.php:354
+#: templates/verification-page.php:241
+msgid "View"
+msgstr "Zobraziť"
+
+#: includes/FieldBuilderPage.php:495
+msgid "Visible only for products (IDs)"
+msgstr "Viditeľné iba pre produkty (ID)"
+
+#: includes/Settings.php:615
+msgid ""
+"Visual theme for the multi-day and participant-type selectors on checkout."
+msgstr "Vizuálna téma pre výber viacerých dní a typov účastníka v pokladni."
+
+#: includes/Participant/PostType.php:491
+msgid ""
+"Warning: Variable symbol \"%s\" already exists for another participant. "
+"Please choose a different one."
+msgstr ""
+"Upozornenie: Variabilný symbol „%s“ už existuje pre iného účastníka. Prosím, "
+"vyberte iný."
+
+#: includes/RegistrationContext.php:740 includes/RegistrationContext.php:751
+msgid ""
+"We are sending the detailed information to your email.<br>Please check your "
+"spam folder as well."
+msgstr ""
+"Posielame Vám podrobné informácie na Vašu emailovú adresu.<br>Prosím, "
+"skontrolujte aj spamový priečinok."
+
+#: includes/RegistrationContext.php:748
+msgid ""
+"We are sending the invoice and detailed information to your email.<br>Please "
+"check your spam folder as well."
+msgstr ""
+"Posielame Vám faktúru a podrobné informácie na Vašu emailovú adresu.<br>"
+"Prosím, skontrolujte aj spamový priečinok."
+
+#: includes/RegistrationContext.php:744
+msgid ""
+"We are sending the invoice and the receipt with detailed information to your "
+"email.<br>Please check your spam folder as well."
+msgstr ""
+"Posielame Vám faktúru a účtenku s podrobnými informáciami na Vašu emailovú "
+"adresu.<br>Prosím, skontrolujte aj spamový priečinok."
+
+#: includes/Module/SessionModule.php:909
+msgid ""
+"we look forward to seeing you at <strong>%1$s</strong>, which will take "
+"place on <strong>%2$s</strong> at <strong>%3$s</strong>."
+msgstr ""
+"vidíme sa na podujatí <strong>%1$s</strong>, ktoré sa uskutoční <strong>"
+"%2$s</strong> v <strong>%3$s</strong>."
+
+#: includes/Module/SessionModule.php:917
+msgid ""
+"we look forward to seeing you at <strong>%1$s</strong>, which will take "
+"place on <strong>%2$s</strong>."
+msgstr ""
+"vidíme sa na podujatí <strong>%1$s</strong>, ktoré sa uskutoční <strong>"
+"%2$s</strong>."
+
+#: includes/Module/CompanionRegistrationModule.php:678
+msgid "We look forward to seeing you!"
+msgstr "Tešíme sa na Vás!"
+
+#: includes/Module/WebhookImportModule.php:29
+msgid "Webhook Import"
+msgstr "Webhook Import"
+
+#: includes/Module/WebhookImportModule.php:46
+msgid "Webhook Key"
+msgstr "Webhook API kľúč"
+
+#: includes/Module/LivestreamModule.php:68
+msgid "Webhook URL"
+msgstr "Webhook URL"
+
+#: templates/admin/ticket-designer-settings.php:106
+msgid "When disabled, the global ticket design will be used."
+msgstr "Ak je vypnuté, použije sa globálny dizajn vstupenky."
+
+#. translators: 1: Event name (accusative), 2: Event date, 3: Event location, 4: accent color
+#: templates/woocommerce/checkout/thankyou.php:130
+msgid ""
+"When entering the <strong>%1$s</strong> on <strong>%2$s</strong> at <strong>"
+"%3$s</strong>, please show your <span style=\"color:%4$s; font-weight: bold;"
+"\">QR code</span> from the email."
+msgstr "Pri vstupe na <strong>%1$s</strong> dňa <strong>%2$s</strong> v <strong>%3$s</strong> prosím predložte svoj <span style=\"color:%4$s; font-weight: bold;\">QR kód</span> z emailu."
+
+#: includes/RegistrationContext.php:954
+msgid "When entering %1$s on %2$s at %3$s, please show your QR code from the email."
+msgstr "Pri vstupe na %1$s dňa %2$s v %3$s prosím predložte svoj QR kód z emailu."
+
+#: includes/StripeManager.php:56
+msgid "Please fill in all required checkout fields first."
+msgstr "Najprv vyplňte všetky povinné polia v objednávke."
+
+#: includes/Module/HotelSelectionModule.php:205
+msgid ""
+"When the order is paid, send the second guest an email about the "
+"accommodation and the need to purchase a conference ticket separately."
+msgstr ""
+"Po zaplatení objednávky odoslať druhému hosťovi email o ubytovaní a potrebe "
+"samostatne zakúpiť vstupenku na konferenciu."
+
+#: templates/admin/partials/content-row-item.php:95
+#: templates/admin/partials/content-row-item.php:170
+#: templates/admin/ticket-designer-settings.php:148
+#: templates/admin/ticket-designer-settings.php:246
+msgid "Width (px)"
+msgstr "Šírka (px)"
+
+#: includes/Module/AccommodationModule.php:360
+msgid "With accommodation"
+msgstr "S ubytovaním"
+
+#: includes/Module/AccommodationModule.php:361
+msgid "Without accommodation"
+msgstr "Bez ubytovania"
+
+#: templates/admin/ticket-designer-settings.php:205
+#: templates/admin/ticket-designer-settings.php:303
+msgid "Word Wrap"
+msgstr "Zalamovanie textu"
+
+#: templates/admin/partials/content-row-item.php:107
+#: templates/admin/partials/content-row-item.php:154
+#: templates/admin/partials/content-row-item.php:275
+#: templates/admin/ticket-designer-settings.php:134
+#: templates/admin/ticket-designer-settings.php:232
+#: templates/admin/ticket-designer-settings.php:330
+msgid "X Position (px)"
+msgstr "X pozícia (px)"
+
+#: templates/admin/partials/content-row-item.php:115
+#: templates/admin/partials/content-row-item.php:161
+#: templates/admin/partials/content-row-item.php:190
+#: templates/admin/partials/content-row-item.php:283
+#: templates/admin/ticket-designer-settings.php:140
+#: templates/admin/ticket-designer-settings.php:238
+#: templates/admin/ticket-designer-settings.php:336
+msgid "Y Position (px)"
+msgstr "Y pozícia (px)"
+
+#: includes/FieldBuilder.php:555 includes/Module/AccommodationModule.php:330
+#: includes/Module/AccommodationModule.php:337
+#: includes/Module/AccommodationModule.php:415
+#: includes/Module/AccommodationModule.php:447
+#: includes/Module/AccommodationModule.php:497
+#: includes/Module/CompanionRegistrationModule.php:660
+#: includes/Participant/AdminUI.php:201 includes/Participant/Import.php:329
+msgid "Yes"
+msgstr "Áno"
+
+#: includes/Participant/Email.php:466
+msgid "You are about to send an email to %s participant."
+msgid_plural "You are about to send an email to %s participants."
+msgstr[0] "Odosielate email %s účastníkovi."
+msgstr[1] "Odosielate email %s účastníkom."
+msgstr[2] "Odosielate email %s účastníkom."
+
+#: includes/AdminPreview.php:276
+msgid "You are not allowed to preview this."
+msgstr "Na tento náhľad nemáte oprávnenie."
+
+#: includes/RegistrationContext.php:939
+msgid ""
+"You can only watch the livestream from one device. If you log in from "
+"another device, you will be automatically logged out and will need to log in "
+"again."
+msgstr ""
+"Livestream môžete sledovať len z jedného zariadenia. Ak sa prihlásite z "
+"iného zariadenia, budete automaticky odhlásený a budete sa musieť prihlásiť "
+"znova."
+
+#. translators: 1: maximum count, 2: type label
+#: includes/Selection/ParticipantTypeSelection.php:253
+msgid "You can select at most %1$d × %2$s."
+msgstr "Môžete vybrať najviac %1$d × %2$s."
+
+#: includes/Participant/Email.php:195
+msgid "You can use placeholders like {first_name}, {last_name}, etc."
+msgstr "Môžete použiť placeholdery ako {first_name}, {last_name}, atď."
+
+#: includes/Participant/Email.php:593
+msgid "You can use the following placeholders in your email:"
+msgstr "Môžete použiť nasledujúce placeholdery v emaili:"
+
+#: includes/Participant/Email.php:617
+msgid "You can use the same placeholders as in the email content."
+msgstr "Môžete použiť rovnaké placeholdery ako v obsahu emailu."
+
+#. translators: %s: event noun in genitive case
+#: templates/woocommerce/checkout/thankyou.php:121
+msgid ""
+"You can watch the online stream of the %s from only one device. If you log "
+"in from another device, you will be automatically logged out and will have "
+"to log in again."
+msgstr ""
+"Online prenos %s môžete sledovať len z jedného zariadenia. V "
+"prípade prihlásenia z iného zariadenia budete automaticky odhlásený a budete "
+"sa musieť znova prihlásiť."
+
+#: includes/Participant/Export.php:130 includes/Participant/Export.php:473
+msgid "You do not have permission to download tickets"
+msgstr "Nemáte oprávnenie stiahnuť vstupenky"
+
+#: includes/Participant/Export.php:57 includes/Participant/Export.php:118
+#: includes/Participant/Export.php:392 includes/Participant/Export.php:434
+msgid "You do not have permission to export participants"
+msgstr "Nemáte oprávnenie exportovať účastníkov"
+
+#: includes/Participant/Import.php:1325
+msgid "You do not have permission to import participants"
+msgstr "Nemáte oprávnenie importovať účastníkov"
+
+#: includes/Participant/AdminUI.php:1107 includes/Participant/Email.php:1113
+#: includes/Participant/Ticket.php:53
+msgid "You do not have permission to perform this action"
+msgstr "Nemáte oprávnenie vykonať túto akciu"
+
+#: includes/Participant/AdminUI.php:1077 includes/Participant/Email.php:774
+#: includes/Participant/Email.php:939 includes/ParticipantManager.php:104
+msgid "You do not have permission to send emails to participants"
+msgstr "Nemáte oprávnenie poslať emaily účastníkom"
+
+#: includes/Module/CompanionRegistrationModule.php:615
+msgid "You have been registered for %1$s, taking place on %2$s at %3$s."
+msgstr ""
+"Boli ste zaregistrovaný/á na podujatie %1$s, ktoré sa uskutoční %2$s v %3$s."
+
+#: includes/Module/CompanionRegistrationModule.php:622
+msgid "You have been registered for %1$s, taking place on %2$s."
+msgstr "Boli ste zaregistrovaný/á na podujatie %1$s, ktoré sa uskutoční %2$s."
+
+#. translators: %s: event noun in genitive case
+#: templates/woocommerce/checkout/thankyou.php:114
+msgid ""
+"You will be able to watch the online stream of the %s from only one device. "
+"If you log in from another device, you will be automatically logged out and "
+"will have to log in again."
+msgstr ""
+"Online prenos %s budete môcť sledovať len z jedného zariadenia. V "
+"prípade prihlásenia z iného zariadenia budete automaticky odhlásený a budete "
+"sa musieť znova prihlásiť."
+
+#: helpers.php:283
+msgid "Your %s receipt"
+msgstr "Vaša účtenka za %s"
+
+#: templates/order-processing-email.php:118
+msgid "Your order details:"
+msgstr "Detaily Vašej objednávky:"
+
+#: templates/order-processing-email.php:154
+msgid "Your QR Code Ticket:"
+msgstr "Vaša vstupenka s QR kódom:"
+
+#: includes/Participant/Import.php:1407 includes/Settings.php:1109
+#: includes/Settings.php:1126
+msgid "Your ticket for %s"
+msgstr "Vaša vstupenka na %s"
+
+#: includes/Module/CompanionRegistrationModule.php:672
+msgid "Your ticket with QR code:"
+msgstr "Vaša vstupenka s QR kódom:"
+
+#: includes/Participant/Email.php:675
+msgid "your@email.com"
+msgstr "vas@email.sk"
+
+#: includes/Module/MultiDayModule.php:309 includes/Participant/Manager.php:65
+#: includes/TicketDesignerSettings.php:343 includes/TicketManager.php:80
+#: templates/verification-page.php:58
+msgid "ZIP"
+msgstr "PSČ"
+
+#: includes/Participant/Export.php:525
+msgid "ZipArchive extension is not available on this server."
+msgstr "ZipArchive rozšírenie nie je k dispozícii na tejto serveri."
+
+#: includes/Module/HotelSelectionModule.php:841
+msgid "— select a night —"
+msgstr "— vybrať noc —"
+
+#: includes/Module/HotelSelectionModule.php:842
+msgid "— select a room —"
+msgstr "— vyberte izbu —"
+
+#: includes/Module/HotelSelectionModule.php:563
+msgid "— select —"
+msgstr "— vyberte —"
+
+#: includes/Participant/AdminUI.php
+msgid "Payment"
+msgstr "Platba"
+
+#: includes/Participant/AdminUI.php
+msgid "Paid"
+msgstr "Zaplatené"
+
+#: includes/Participant/AdminUI.php
+msgid "Unpaid"
+msgstr "Nezaplatené"
+
+#: includes/Participant/AdminUI.php
+msgid "Order status: %s"
+msgstr "Stav objednávky: %s"
+
+#: includes/WooCommerceManager.php
+msgid "%s is required when purchasing as a company."
+msgstr "%s je povinné pole pri nákupe ako firma."
+
+#: includes/WooCommerceManager.php
+msgid "Company name"
+msgstr "Názov spoločnosti"
+
+#: includes/PricingTiers.php
+msgid "Registration for"
+msgstr "Registrácia na"
+
+#: includes/PricingTiers.php
+msgid "Full price"
+msgstr "Plná cena"
+
+#: includes/RegistrationContext.php
+msgid "on the map"
+msgstr "na mape"
+
+#: includes/WooCommerceManager.php
+msgid "Ulica a číslo domu"
+msgstr "Ulica a číslo domu"
+
+#: includes/WooCommerceManager.php
+msgid "PSČ"
+msgstr "PSČ"
+
+#: includes/WooCommerceManager.php
+msgid "Mesto"
+msgstr "Mesto"
+
+#: includes/WooCommerceManager.php
+msgid "Názov spoločnosti"
+msgstr "Názov spoločnosti"
+
+#: includes/WooCommerceManager.php
+msgid "IČO"
+msgstr "IČO"
+
+#: includes/WooCommerceManager.php
+msgid "DIČ"
+msgstr "DIČ"
+
+#: includes/WooCommerceManager.php
+msgid "IČ DPH"
+msgstr "IČ DPH"
+
+#: includes/WooCommerceManager.php
+msgid "%s is a required field."
+msgstr "%s je povinné pole."
+
+#: includes/WooCommerceManager.php
+msgid "must contain 6 to 8 digits"
+msgstr "musí obsahovať 6 až 8 číslic"
+
+#: includes/WooCommerceManager.php
+msgid "must contain digits only (max. 12)"
+msgstr "musí obsahovať iba číslice (max. 12)"
+
+#: includes/WooCommerceManager.php
+msgid "must start with a country prefix followed by digits (e.g. SK1234567890)"
+msgstr "musí začínať prefixom krajiny a pokračovať číslicami (napr. SK1234567890)"
+
+# --- Rozdelenie do skupin + kapacita ceny (2026-08-20) ---
+
+msgid "%s remaining"
+msgstr "%s zostáva"
+
+msgid "sold out at this price"
+msgstr "za túto cenu vypredané"
+
+msgid "Seats (0 = unlimited)"
+msgstr "Miest (0 = neobmedzene)"
+
+msgid "This event is sold out."
+msgstr "Toto podujatie je vypredané."
+
+msgid "We can no longer seat %1$d people together. Only %2$d single seats are left. Please register the people separately or contact us."
+msgstr "Už nedokážeme usadiť %1$d ľudí spolu. Zostáva len %2$d jednotlivých miest. Zaregistrujte ich prosím samostatne alebo nás kontaktujte."
+
+msgid "Grouped seating"
+msgstr "Rozdelenie do skupín"
+
+msgid "Place each booking into a group (station) within a wave."
+msgstr "Zaradí každú registráciu do skupiny (stanovišťa) v rámci vlny."
+
+msgid "Seats per group"
+msgstr "Miest v skupine"
+
+msgid "Total capacity = seats per group × number of groups."
+msgstr "Celková kapacita = miest v skupine × počet skupín."
+
+msgid "Group (seating)"
+msgstr "Skupina (rozdelenie)"
+
+msgid "This product does not use grouped seating."
+msgstr "Tento produkt nepoužíva rozdelenie do skupín."
+
+msgid "not assigned"
+msgstr "nepriradené"
+
+msgid "Wave %d%s"
+msgstr "Vlna %d%s"
+
+msgid "Moving somebody here does not check capacity. The numbers next to each group are shown so you can decide."
+msgstr "Presun sem nekontroluje kapacitu. Čísla pri skupinách sú tu na to, aby ste sa rozhodli."
+
+msgid "Group capacity"
+msgstr "Obsadenosť skupín"
+
+msgid "No product uses grouped seating yet. Enable it in the product Inventory tab."
+msgstr "Žiadny produkt zatiaľ nepoužíva rozdelenie do skupín. Zapnete ho v záložke Sklad na produkte."
+
+msgid "Booked: %1$d of %2$d"
+msgstr "Obsadené: %1$d z %2$d"
+
+msgid "No waves are configured for this product."
+msgstr "Pre tento produkt nie sú nastavené vlny."
+
+msgid "Wave"
+msgstr "Vlna"
+
+msgid "Booked"
+msgstr "Obsadené"
+
+msgid "%d seat"
+msgid_plural "%d seats"
+msgstr[0] "%d miesto"
+msgstr[1] "%d miesta"
+msgstr[2] "%d miest"
+
+msgid "Free seats"
+msgstr "Voľné"
+
+msgid "podujatie"
+msgstr "podujatie"
+
+msgid "We can no longer keep %1$s together in this time slot - %2$s remain, but only separately. Please choose another time or register the people separately."
+msgstr "V tomto čase už nedokážeme udržať %1$s spolu - ostáva síce %2$s, ale len jednotlivo. Vyberte prosím iný čas alebo zaregistrujte ľudí samostatne."
+
+msgid "This time slot is sold out. Please choose another one."
+msgstr "Tento časový slot je vypredaný. Vyberte prosím iný."
+
+msgid "Only %1$s is left in this time, so we cannot fit your %2$s. Please choose another time."
+msgstr "V tomto čase ostáva už len %1$s, preto doň vaše %2$s už nepomestíme. Vyberte prosím iný čas."
+
+msgid "Assign each booking to a station inside the time slot it chose."
+msgstr "Priradiť každú rezerváciu na stanovisko v rámci vybraného časového slotu."
+
+msgid "Stations per time slot"
+msgstr "Počet stanovísk na časový slot"
+
+msgid "Seats per station = the time slot capacity divided by this number."
+msgstr "Miesta na stanovisko = kapacita časového slotu delená týmto číslom."
+
+msgid "No time slots are configured for this product."
+msgstr "Tento produkt nemá nastavené žiadne časové sloty."
+
+msgid "Moving somebody here does not check capacity. The numbers next to each station are shown so you can decide."
+msgstr "Presun tu nekontroluje kapacitu. Čísla pri stanoviskách sú zobrazené preto, aby ste sa mohli rozhodnúť."
+
+msgid "Split each time slot into stations and place every booking into one of them, keeping a booking together."
+msgstr "Rozdelí každý časový slot na stanoviská a každú rezerváciu umiestni na jedno z nich tak, aby zostala pohromade."
+
+msgid "Used when a product does not set its own number. The seats of a time slot are divided between them."
+msgstr "Použije sa, keď produkt nemá vlastný počet. Miesta časového slotu sa medzi ne rozdelia."
+
+msgid "Station names"
+msgstr "Názvy stanovísk"
+
+msgid "Comma separated, in order. Leave empty for A, B, C, ..."
+msgstr "Oddelené čiarkou, v poradí. Prázdne = A, B, C, ..."
+
+msgid "Planned for any day"
+msgstr "Plánovaný na ktorýkoľvek deň"
+
+msgid "Attended on any day"
+msgstr "Zúčastnil sa v ktorýkoľvek deň"
+
+msgid "Mark the days this person attended on site (works for online/livestream tickets too)."
+msgstr "Označte dni, kedy sa táto osoba zúčastnila osobne (funguje aj pri online vstupenkách)."
+
+msgid "Attended in person"
+msgstr "Zúčastnil sa osobne"
+
+msgid "added %s"
+msgstr "pridané %s"
+
+msgid "removed %s"
+msgstr "odobrané %s"
+
+msgid "On-site attendance updated (%s) by %s"
+msgstr "Osobná účasť aktualizovaná (%s) používateľom %s"
+
+msgid "Multi-participant Checkout"
+msgstr "Checkout s viacerými účastníkmi"
+
+msgid "Collect first name, last name, e-mail and job title per attendee when Number of Seats > 1. Each attendee becomes a separate participant with their own ticket and confirmation e-mail."
+msgstr "Pri počte miest väčšom ako 1 zbiera meno, priezvisko, e-mail a pracovnú pozíciu za každého účastníka. Každý účastník sa stane samostatným účastníkom s vlastnou vstupenkou a potvrdzovacím e-mailom."
+
+msgid "Participant %1$d: %2$s (%3$s)"
+msgstr "Účastník %1$d: %2$s (%3$s)"
+
+msgid "Attendee %d"
+msgstr "Účastník %d"
+
+msgid "E-mail"
+msgstr "E-mail"
+
+msgid "Job title"
+msgstr "Pracovná pozícia"
+
+msgid "e.g. DevOps Engineer"
+msgstr "napr. DevOps Engineer"
+
+msgid "Additional attendees will receive their own ticket by email. Company info from the buyer is copied automatically."
+msgstr "Ďalší účastníci dostanú vlastnú vstupenku e-mailom. Firemné údaje kupujúceho sa skopírujú automaticky."
+
+msgid "Attendee %1$d: %2$s is required."
+msgstr "Účastník %1$d: %2$s je povinné pole."
+
+msgid "Attendee %d: e-mail address is not valid."
+msgstr "Účastník %d: e-mailová adresa nie je platná."
+
+msgid "Attendee %d: e-mail must be different from the buyer and other attendees."
+msgstr "Účastník %d: e-mail musí byť iný ako e-mail kupujúceho a ostatných účastníkov."
+
+msgid "Attendee %1$d: e-mail %2$s is already registered for this product. Use a different e-mail address."
+msgstr "Účastník %1$d: e-mail %2$s je na tento produkt už zaregistrovaný. Použite inú e-mailovú adresu."
+
+msgid "Registered by (name)"
+msgstr "Registroval (meno)"
+
+msgid "Registered by (e-mail)"
+msgstr "Registroval (e-mail)"
+
+msgid "Registration pricing tiers"
+msgstr "Cenové úrovne registrácie"
+
+msgid "Active is a fallback outside dates; Scheduled follows dates; Disabled is unavailable."
+msgstr "Aktívna platí aj mimo dátumov, Naplánovaná sa riadi dátumami, Vypnutá je nedostupná."
+
+msgid "Add pricing tier"
+msgstr "Pridať cenovú úroveň"
+
+msgid "Registration is currently not available for any pricing tier."
+msgstr "Registrácia momentálne nie je dostupná v žiadnej cenovej úrovni."
+
+msgid "A registration price could not be selected. Remove the product and add it again."
+msgstr "Nepodarilo sa určiť cenu registrácie. Odoberte produkt a pridajte ho znova."
+
+msgid "Pricing tier"
+msgstr "Cenová úroveň"
+
+msgid "Pricing tier key"
+msgstr "Kľúč cenovej úrovne"
+
+msgid "Tier price"
+msgstr "Cena úrovne"
+
+msgid "All pricing tiers"
+msgstr "Všetky cenové úrovne"
+
+msgid "Skip session selection (registers for all sessions)"
+msgstr "Preskočiť výber termínu (registruje na všetky termíny)"
+
+msgid "For multi-session/full-package tickets where the buyer should not pick one session at checkout. Disables every session/day/participant-type selector for this product, and projects can opt in to custom checkout UIs via the `alttag_registrations_selection_is_active` filter. The participant is checked in at scan time against any of the product's sessions."
+msgstr "Pre vstupenky na viac termínov alebo na celý balík, kde kupujúci nemá v checkoute vyberať jeden termín. Vypne pre tento produkt všetky výbery termínu, dňa aj typu účastníka. Projekty si vlastné checkout UI zapnú cez filter `alttag_registrations_selection_is_active`. Účastník sa pri skenovaní overuje voči ktorémukoľvek termínu produktu."
+
+msgid "Event Noun (singular)"
+msgstr "Podstatné meno podujatia (jednotné číslo)"
+
+msgid "The generic word used to refer to the event in templates, e.g. \"podujatie\" (Sk) or \"event\" (En). Available in templates as {event_noun}. Override per product when a different word fits (e.g. \"stretnutie\", \"workshop\")."
+msgstr "Všeobecné slovo, ktorým sa podujatie označuje v šablónach, napr. \"podujatie\" (Sk) alebo \"event\" (En). V šablónach je dostupné ako {event_noun}. Pri produkte ho prepíšte, ak sa hodí iné slovo (napr. \"stretnutie\", \"workshop\")."
+
+msgid "Event Noun (genitive, singular)"
+msgstr "Podstatné meno podujatia (genitív, jednotné číslo)"
+
+msgid "Genitive form of the event noun for sentences like \"online stream of the {event_noun_genitive}\". Example: \"podujatia\" (Sk genitive of \"podujatie\"). Falls back to {event_noun} when empty."
+msgstr "Genitív podstatného mena podujatia pre vety ako \"online stream {event_noun_genitive}\". Príklad: \"podujatia\" (genitív slova \"podujatie\"). Ak je prázdne, použije sa {event_noun}."
+
+msgid "Event Start Time"
+msgstr "Čas začiatku podujatia"
+
+msgid "Format: HH:MM (24h), e.g. \"09:00\". Available in templates as {event_time} and appended to date displays that opt in (email header, thank-you page)."
+msgstr "Formát HH:MM (24h), napr. \"09:00\". V šablónach je dostupný ako {event_time} a pridáva sa k zobrazeniu dátumu tam, kde je to zapnuté (hlavička e-mailu, stránka po objednávke)."
+
+msgid "Street address"
+msgstr "Ulica a číslo"
+
+msgid "Postal code"
+msgstr "PSČ"
+
+msgid "%1$s %2$s."
+msgstr "%1$s %2$s."
+
+msgid "Pill (title on colored bar)"
+msgstr "Pilulka (titulok na farebnom pruhu)"
+
+msgid "Customize (font, color, spacing, position)"
+msgstr "Prispôsobiť (font, farba, odsadenie, pozícia)"
+
+msgid "Reset all customizations to Auto"
+msgstr "Vrátiť všetky úpravy na Auto"
+
+msgid "Reset"
+msgstr "Vrátiť"
+
+msgid "Padding Top (px)"
+msgstr "Odsadenie zhora (px)"
+
+msgid "Padding Bottom (px)"
+msgstr "Odsadenie zdola (px)"
+
+msgid "Auto"
+msgstr "Auto"
+
+msgid "Click to change image"
+msgstr "Kliknutím zmeníte obrázok"
+
+msgid "Image URL — click the tile to browse"
+msgstr "URL obrázka, kliknutím na dlaždicu ho vyberiete"
+
+msgid "Customize (alignment, size, spacing, position)"
+msgstr "Prispôsobiť (zarovnanie, veľkosť, odsadenie, pozícia)"
+
+msgid "Drag to reorder"
+msgstr "Presunutím zmeníte poradie"
+
+msgid "Image URL — click the tile above to browse"
+msgstr "URL obrázka, kliknutím na dlaždicu vyššie ho vyberiete"
+
+msgid "Remove logo"
+msgstr "Odobrať logo"
+
+msgid "Customize (dimensions, spacing, position)"
+msgstr "Prispôsobiť (rozmery, odsadenie, pozícia)"
+
+msgid "Title"
+msgstr "Titulok"
+
+msgid "e.g. PARTNERS"
+msgstr "napr. PARTNERI"
+
+msgid "Customize (colors, size, spacing, position)"
+msgstr "Prispôsobiť (farby, veľkosť, odsadenie, pozícia)"
+
+msgid "Background color"
+msgstr "Farba pozadia"
+
+msgid "Text color"
+msgstr "Farba textu"
+
+msgid "Font size (px)"
+msgstr "Veľkosť písma (px)"
+
+msgid "Border radius (px)"
+msgstr "Zaoblenie (px)"
+
+msgid "Half of height = full pill"
+msgstr "Polovica výšky = plná pilulka"
+
+msgid "Absolute position"
+msgstr "Absolútna pozícia"
+
+msgid "Customize (position, size, frame, title label, spacing)"
+msgstr "Prispôsobiť (pozícia, veľkosť, rámik, titulok, odsadenie)"
+
+msgid "Padding left (px)"
+msgstr "Odsadenie zľava (px)"
+
+msgid "Padding right (px)"
+msgstr "Odsadenie zprava (px)"
+
+msgid "Render next block inline (side by side)"
+msgstr "Vykresliť ďalší blok v jednom riadku (vedľa seba)"
+
+msgid "Frame (border around QR)"
+msgstr "Rámik (okolo QR kódu)"
+
+msgid "Draw frame around QR"
+msgstr "Vykresliť rámik okolo QR kódu"
+
+msgid "Frame color"
+msgstr "Farba rámika"
+
+msgid "Frame width (px)"
+msgstr "Šírka rámika (px)"
+
+msgid "Frame radius (px)"
+msgstr "Zaoblenie rámika (px)"
+
+msgid "Padding (px)"
+msgstr "Odsadenie (px)"
+
+msgid "Title label below QR"
+msgstr "Titulok pod QR kódom"
+
+msgid "Title text"
+msgstr "Text titulku"
+
+msgid "e.g. PROGRAM (leave empty to hide)"
+msgstr "napr. PROGRAM (prázdne = skryté)"
+
+msgid "Pill background"
+msgstr "Pozadie pilulky"
+
+msgid "Pill text color"
+msgstr "Farba textu pilulky"
+
+msgid "Pill height (px)"
+msgstr "Výška pilulky (px)"
+
+msgid "Header"
+msgstr "Hlavička"
+
+msgid "Body"
+msgstr "Telo"
+
+msgid "Footer"
+msgstr "Pätička"
+
+msgid "Header Logo"
+msgstr "Logo v hlavičke"
+
+msgid "Reset this section to defaults"
+msgstr "Vrátiť túto sekciu na predvolené"
+
+msgid "Small logo image rendered above the ticket frame."
+msgstr "Malé logo vykreslené nad rámom vstupenky."
+
+msgid "Click to change logo"
+msgstr "Kliknutím zmeníte logo"
+
+msgid "Logo URL — click the tile to browse"
+msgstr "URL loga, kliknutím na dlaždicu ho vyberiete"
+
+msgid "Vertical space reserved above the ticket where the logo image is placed and centered."
+msgstr "Zvislý priestor nad vstupenkou, kde sa logo umiestni a vycentruje."
+
+msgid "Header height (px)"
+msgstr "Výška hlavičky (px)"
+
+msgid "Ticket Frame"
+msgstr "Rám vstupenky"
+
+msgid "Enable"
+msgstr "Zapnúť"
+
+msgid "Draws a styled ticket body (rounded rectangle with background, left stub, perforation and vertical right text). When enabled, the Header Image is used as a small logo above the frame — not as full background."
+msgstr "Vykreslí telo vstupenky (zaoblený obdĺžnik s pozadím, ľavým odtrhávacím dielom, perforáciou a zvislým textom vpravo). Keď je zapnuté, obrázok hlavičky sa použije ako malé logo nad rámom, nie ako celé pozadie."
+
+msgid "1. Layout"
+msgstr "1. Rozloženie"
+
+msgid "Minimum height — ticket auto-grows if the content is taller."
+msgstr "Minimálna výška, vstupenka sa sama zväčší, ak je obsah vyšší."
+
+msgid "Min height (px)"
+msgstr "Minimálna výška (px)"
+
+msgid "Odsadenie od loga (px)"
+msgstr "Odsadenie od loga (px)"
+
+msgid "2. Background"
+msgstr "2. Pozadie"
+
+msgid "Solid color"
+msgstr "Jednolitá farba"
+
+msgid "Gradient (two colors)"
+msgstr "Prechod (dve farby)"
+
+msgid "Gradient start color"
+msgstr "Počiatočná farba prechodu"
+
+msgid "Gradient end color"
+msgstr "Koncová farba prechodu"
+
+msgid "Direction"
+msgstr "Smer"
+
+msgid "Left → Right"
+msgstr "Zľava doprava"
+
+msgid "Top → Bottom"
+msgstr "Zhora dole"
+
+msgid "Background image"
+msgstr "Obrázok pozadia"
+
+msgid "3. Left stub"
+msgstr "3. Ľavý odtrhávací diel"
+
+msgid "Stub color"
+msgstr "Farba odtrhávacieho dielu"
+
+msgid "Stub width (px)"
+msgstr "Šírka odtrhávacieho dielu (px)"
+
+msgid "A stylized ticket icon is drawn centered in the stub automatically."
+msgstr "V odtrhávacom diele sa automaticky vycentruje ikona vstupenky."
+
+msgid "4. Perforation (dashed line + white notches)"
+msgstr "4. Perforácia (čiarkovaná línia + biele zárezy)"
+
+msgid "X position (px from ticket left)"
+msgstr "Pozícia X (px od ľavého okraja vstupenky)"
+
+msgid "Line color"
+msgstr "Farba línie"
+
+msgid "5. Cut line below ticket (scissors + dashed line)"
+msgstr "5. Strihacia línia pod vstupenkou (nožnice + čiarkovaná línia)"
+
+msgid "Gap from ticket bottom (px)"
+msgstr "Odstup od spodného okraja vstupenky (px)"
+
+msgid "6. Right vertical text"
+msgstr "6. Zvislý text vpravo"
+
+msgid "Text (rotated 90°, read bottom → top on the right edge). Leave empty to hide."
+msgstr "Text (otočený o 90°, číta sa zdola nahor na pravom okraji). Prázdne = skryté."
+
+msgid "e.g. To validate your ticket, please scan the QR code at the entrance control."
+msgstr "napr. Pre overenie vstupenky naskenujte QR kód pri vstupe."
+
+msgid "The QR code is auto-centered in the ticket's right section (right of the perforation line)."
+msgstr "QR kód sa automaticky vycentruje v pravej časti vstupenky (vpravo od perforácie)."
+
+msgid "Redistribute fields evenly between the two columns in their natural category order"
+msgstr "Rozdeliť polia rovnomerne medzi dva stĺpce v ich prirodzenom poradí kategórií"
+
+msgid "Reset to auto"
+msgstr "Vrátiť na auto"
+
+msgid "Auto-distribute filled fields evenly between columns"
+msgstr "Automaticky rozdeliť vyplnené polia rovnomerne medzi stĺpce"
+
+msgid "When enabled, empty fields (like unused company data) are skipped and the remaining populated fields are split evenly between the two columns at render time. The manual drag order below still controls the FIELD ORDER within the natural flow."
+msgstr "Keď je zapnuté, prázdne polia (napríklad nevyplnené firemné údaje) sa preskočia a zostávajúce vyplnené polia sa pri vykreslení rozdelia rovnomerne medzi dva stĺpce. Ručné poradie nižšie stále určuje PORADIE POLÍ v rámci prirodzeného toku."
+
+msgid "Remove all content rows"
+msgstr "Odobrať všetky obsahové riadky"
+
+msgid "Footer Text"
+msgstr "Text pätičky"
+
+msgid "Fixed text block that always renders at the very bottom of the ticket (e.g. legal info / GDPR notice)."
+msgstr "Pevný textový blok, ktorý sa vždy vykreslí na spodku vstupenky (napr. právne informácie alebo GDPR)."
+
+msgid "Supports basic formatting (bold, italic, underline, lists). Shortcodes:"
+msgstr "Podporuje základné formátovanie (tučné, kurzíva, podčiarknuté, zoznamy). Skratky:"
+
+msgid "0 = auto full-width"
+msgstr "0 = automaticky celá šírka"
+
+msgid "Registered attendees:"
+msgstr "Registrovaní účastníci:"
+
+msgid "you"
+msgstr "vy"
+
+msgid "Additional attendees will receive their own ticket at the e-mail address listed above."
+msgstr "Ďalší účastníci dostanú vlastnú vstupenku na e-mailovú adresu uvedenú vyššie."
+
+
+msgid "Moves the whole booking, because a booking sits together in one station. Capacity is not enforced here, the numbers next to each station are shown so you can decide."
+msgstr "Presunie celú rezerváciu, pretože rezervácia sedí pohromade na jednom stanovisku. Kapacita sa tu nevynucuje, čísla pri stanoviskách sú zobrazené preto, aby ste sa mohli rozhodnúť."
+
+msgid "Participants (check-in)"
+msgstr "Účastníci (odbavenie)"
+
+msgid "How many people of each type have arrived. The registration status follows these numbers."
+msgstr "Koľko ľudí z každého typu prišlo. Stav registrácie sa riadi týmito číslami."
+
+msgid "of %d booked"
+msgstr "z %d rezervovaných"
+
+msgid "People total"
+msgstr "Počet osôb"
+
+msgid "People checked in"
+msgstr "Odbavených osôb"
+
+msgid "Export selected to Excel (%d)"
+msgstr "Exportovať vybrané do Excelu (%d)"
+
+msgid "Duplicate"
+msgstr "Duplikovať"
+
+msgid "Removes billing_address_1, billing_address_2, billing_city, billing_postcode and billing_country from checkout. Enable when collecting address through FieldBuilder fields. Turn it off on a product that needs a postal address, e.g. because it is invoiced."
+msgstr "Odstráni z checkoutu polia billing_address_1, billing_address_2, billing_city, billing_postcode a billing_country. Zapnite, keď adresu zbierate cez polia FieldBuildera. Vypnite pri produkte, ktorý potrebuje poštovú adresu, napríklad preto, že sa k nemu vystavuje faktúra."
+
+msgid "Active is a fallback outside dates; Scheduled follows dates; Disabled is unavailable. Ticket limit ends a tier once that many tickets are sold, even inside its dates."
+msgstr "Aktívna platí aj mimo dátumov, Naplánovaná sa riadi dátumami, Vypnutá je nedostupná. Limit lístkov ukončí úroveň po predaji daného počtu lístkov, aj keď jej dátumy ešte platia."
+
+msgid "Number of tickets at this price. 0 = no limit."
+msgstr "Počet lístkov za túto cenu. 0 = bez limitu."
+
+msgid "Ticket limit"
+msgstr "Limit lístkov"
+
+msgid "free seats %1$s/%2$s"
+msgstr "voľných miest %1$s/%2$s"
+
+msgid "Date:"
+msgstr "Termín:"
+
+msgid "Time slot:"
+msgstr "Časový slot:"
+
+msgid "%s discount"
+msgstr "Zľava %s"
+
+msgid "Participants:"
+msgstr "Účastníci:"
+
+msgid "Expired request, please reload the page."
+msgstr "Požiadavka expirovala, obnovte prosím stránku."
+
+msgid "Nothing to switch."
+msgstr "Nie je čo prepnúť."
+
+msgid "That product is not part of this event."
+msgstr "Tento produkt nepatrí k tomuto podujatiu."
+
+msgid "The product could not be added."
+msgstr "Produkt sa nepodarilo pridať."
+
+msgid "Event group"
+msgstr "Skupina podujatia"
+
+msgid "Products sharing this key are alternatives of one event (e.g. one city each) and the checkout offers a select between them."
+msgstr "Produkty s rovnakým kľúčom sú alternatívy jedného podujatia (napríklad každý pre jedno mesto) a v checkoute sa medzi nimi dá prepnúť."
+
+msgid "Name inside the group"
+msgstr "Názov v rámci skupiny"
+
+msgid "What this product is called in that select, e.g. \"Bratislava (11. 9. 2026)\". Falls back to the venue."
+msgstr "Ako sa tento produkt zobrazí v tom výbere, napríklad \"Bratislava (11. 9. 2026)\". Ak je prázdne, použije sa miesto konania."
+
+msgid "Discount"
+msgstr "Zľava"
+
+msgid "Event group select label"
+msgstr "Názov výberu skupiny podujatia"
+
+msgid "Label of the checkout select that switches between products of one event group, e.g. \"City\". Empty falls back to \"Location\"."
+msgstr "Názov výberu v checkoute, ktorým sa prepína medzi produktmi jednej skupiny podujatia, napríklad \"Mesto\". Ak je prázdne, použije sa \"Miesto\"."
+
+msgid "Pick the city you want to attend. Date, capacity and price differ per city."
+msgstr "Vyberte mesto, v ktorom sa chcete zúčastniť. Dátum, kapacita a cena sa líšia podľa mesta."
+
+msgid "That city is sold out."
+msgstr "Toto mesto je vypredané."
+
+msgid "Please pick the city you want to attend."
+msgstr "Vyberte mesto, v ktorom sa chcete zúčastniť."
+
+msgid "The city could not be switched, please try again."
+msgstr "Mesto sa nepodarilo prepnúť, skúste to znova."
+
+msgid "Time slot \"%s\" no longer exists on the product and could not be matched."
+msgstr "Časový slot \"%s\" už na produkte neexistuje a nepodarilo sa ho priradiť."
+
+msgid "Station \"%1$s\" does not exist in time slot \"%2$s\" and no station holds the same position."
+msgstr "Skupina \"%1$s\" v časovom slote \"%2$s\" neexistuje a žiadna skupina nemá rovnakú pozíciu."
+
+msgid "Recalculate groups"
+msgstr "Prepočítať skupiny"
+
+msgid "Groups recalculated: %1$d orders checked, %2$d groups fixed, %3$d waves fixed, %4$d participants updated, %5$d parties restored."
+msgstr "Skupiny prepočítané: skontrolovaných objednávok: %1$d, opravených skupín: %2$d, opravených vĺn: %3$d, aktualizovaných účastníkov: %4$d, obnovených počtov osôb: %5$d."
+
+msgid "The participants add up to %1$d seats but the order books %2$d, and their participant types do not cover the difference. Correct the line item by hand."
+msgstr "Účastníci majú spolu %1$d miest, ale objednávka obsahuje %2$d, a ich typy účastníkov tento rozdiel nepokrývajú. Opravte položku objednávky ručne."
+
+msgid "Orders that could not be recalculated automatically:"
+msgstr "Objednávky, ktoré sa nepodarilo prepočítať automaticky:"
+
+msgid "Order #%1$d: %2$s"
+msgstr "Objednávka #%1$d: %2$s"
+
+msgid "The link has expired, please reload the page and try again."
+msgstr "Odkaz exspiroval, načítajte stránku znova a skúste to ešte raz."
+
+msgid "All groups"
+msgstr "Všetky skupiny"
+
+msgid "All time slots"
+msgstr "Všetky časové sloty"
+
+msgid "Only participants with a valid order are counted towards occupancy; cancelled, refunded and failed orders are not."
+msgstr "Do obsadenosti sa počítajú iba účastníci s platnou objednávkou; zrušené, refundované a neúspešné objednávky sa nezapočítavajú."
+
+msgid "Seat counts"
+msgstr "Počet miest"
+
+#. translators: %s: participant type
+#, php-format
+msgid "Decrease %s"
+msgstr "Znížiť počet: %s"
+
+#. translators: %s: participant type
+#, php-format
+msgid "Seat count for %s"
+msgstr "Počet miest pre typ %s"
+
+#. translators: %s: participant type
+#, php-format
+msgid "Increase %s"
+msgstr "Zvýšiť počet: %s"
+
+msgid "Saving updates occupancy immediately. Zero removes every seat of that type."
+msgstr "Uložením sa obsadenosť ihneď prepočíta. Nula odoberie všetky miesta daného typu."
+
+#. translators: 1: administrator identity, 2: changed seat counts
+#, php-format
+msgid "Participant seat counts changed by %1$s: %2$s."
+msgstr "Počty miest účastníka zmenil používateľ %1$s: %2$s."
+
+#: includes/ProductGroup.php
+msgid "Pick the city first, then the date and theme. Date, capacity and price differ per event."
+msgstr "Najprv vyberte mesto, potom termín a tému. Dátum, kapacita aj cena sa líšia podľa podujatia."
+
+#: includes/ProductGroup.php
+msgid "Select city"
+msgstr "Vyberte mesto"
+
+#: includes/ProductGroup.php
+msgid "Date and theme"
+msgstr "Termín a téma"
+
+#: includes/ProductGroup.php
+msgid "Select date and theme"
+msgstr "Vyberte termín a tému"
+
+#: includes/ProductGroup.php
+msgid "Theme"
+msgstr "Téma"
+
+#: includes/ProductGroup.php
+msgid "The city the checkout offers first, e.g. \"Bratislava\". Products of one city are offered together. Falls back to what stands before the comma in the name inside the group."
+msgstr "Mesto, ktoré pokladňa ponúka ako prvé, napr. „Bratislava“. Produkty jedného mesta sa ponúkajú spolu. Ak je prázdne, použije sa časť pred čiarkou z názvu v skupine."
+
+#: includes/ProductGroup.php
+msgid "What is played, e.g. \"Vesmírny piatok\". Offered with the date once the city is picked. Falls back to the date alone."
+msgstr "Čo sa hrá, napr. „Vesmírny piatok“. Po výbere mesta sa ponúka spolu s dátumom. Ak je prázdne, použije sa samotný dátum."
+
+#: includes/ProductGroup.php
+msgid "Pick the city, then the theme and date. Date, capacity and price differ per event."
+msgstr "Najprv vyberte mesto, potom tému a termín. Dátum, kapacita aj cena sa líšia podľa podujatia."
+
+#: includes/ProductGroup.php
+msgid "Select theme and date"
+msgstr "Vyberte tému a termín"
+
+#: includes/ProductGroup.php
+msgid "Theme and date"
+msgstr "Téma a termín"
+
+#: includes/ProductGroup.php
+msgid "Please pick the city, theme and date you want to attend."
+msgstr "Vyberte mesto, tému a termín, na ktorý sa chcete prihlásiť."
+
+#: includes/ProductGroup.php
+msgid "The event could not be switched, please try again."
+msgstr "Podujatie sa nepodarilo zmeniť, skúste to znova."
+
+#: includes/ProductGroup.php
+msgid "That date is sold out."
+msgstr "Tento termín je vypredaný."
+
+#: includes/GroupSeating.php
+#: includes/Selection/SessionSelection.php
+msgid "In this time %1$s remain free, but split across groups - at most %2$s can be together in one group. We always keep families in one group, so this time does not fit your %3$s. Please choose another time."
+msgstr "V tomto čase ostáva síce %1$s, ale sú rozdelené medzi skupiny - v jednej skupine je spolu najviac %2$s. Rodiny vždy držíme pohromade, preto tento čas nepostačuje pre %3$s. Vyberte prosím iný čas."
+
+#: includes/Selection/SessionSelection.php
+msgid "at most %1$s together in one group"
+msgstr "najviac %1$s spolu"
+
+#: includes/Selection/ParticipantTypeSelection.php
+msgid "Register the whole family in one order - we always keep one group together. Separate orders may end up in different groups."
+msgstr "Celú rodinu registrujte v jednej objednávke - jednu skupinu vždy držíme pohromade. Samostatné objednávky môžu skončiť v rôznych skupinách."
+
+#: includes/ProductGroup.php
+msgid "Pick the location, then the theme and date. Date, capacity and price differ per event."
+msgstr "Vyberte lokalitu a následne tému s termínom. Termín, kapacita aj cena sa líšia podľa podujatia."
+
+#: includes/GroupSeating.php
+#: includes/Selection/SessionSelection.php
+msgctxt "accusative, follows a preposition or verb"
+msgid "%d person"
+msgid_plural "%d people"
+msgstr[0] "%d osobu"
+msgstr[1] "%d osoby"
+msgstr[2] "%d osôb"
+
+#: includes/FailedOrderEmail.php
+msgid "Payment for order no. %s was not successful"
+msgstr "Platba objednávky č. %s neprebehla úspešne"
+
+#: includes/FailedOrderEmail.php
+msgid "Hello,"
+msgstr "Dobrý deň,"
+
+#: includes/FailedOrderEmail.php
+msgid ""
+"We could not process the payment for your order no. %s, so your registration "
+"is not complete yet."
+msgstr ""
+"platbu za Vašu objednávku č. %s sa nepodarilo spracovať, preto Vaša "
+"registrácia zatiaľ nie je dokončená."
+
+#: includes/FailedOrderEmail.php
+msgid ""
+"The most common cause is a decline by your bank or an interrupted payment "
+"verification. No amount has been debited from your account."
+msgstr ""
+"Najčastejšou príčinou býva zamietnutie platby zo strany banky alebo "
+"prerušené overenie platby. Z Vášho účtu nebola stiahnutá žiadna suma."
+
+#: includes/FailedOrderEmail.php
+msgid ""
+"You can retry the payment at any time using the link below. Your order stays "
+"saved, you do not need to enter it again."
+msgstr ""
+"Platbu môžete kedykoľvek zopakovať kliknutím na odkaz nižšie. Vaša "
+"objednávka zostáva uložená, nemusíte ju zadávať znova."
+
+#: includes/FailedOrderEmail.php
+msgid "Retry payment"
+msgstr "Zopakovať platbu"
+
+#: includes/AdminTestToggles.php:189
+msgid "Test modes"
+msgstr "Testovacie režimy"
+
+#: includes/AdminTestToggles.php:192
+msgid "These toggles only affect your own session."
+msgstr "Tieto prepínače ovplyvňujú iba vašu vlastnú reláciu."
+
+#: includes/AdminTestToggles.php:195
+msgid "Stripe: test card"
+msgstr "Stripe: testovacia karta"
+
+#: includes/AdminTestToggles.php:202
+msgid "SuperFaktúra: generate invoices"
+msgstr "SuperFaktúra: generovať faktúry"
+
+#: includes/AdminTestToggles.php:219
+msgid "ON"
+msgstr "ZAP"
+
+#: includes/AdminTestToggles.php:220
+msgid "OFF"
+msgstr "VYP"
+
+#: includes/AdminTestToggles.php:210
+msgid "Stripe test keys are not configured."
+msgstr "Testovacie Stripe kľúče nie sú nastavené."
+
+#: includes/AdminTestToggles.php:257
+msgid "Pay with the Stripe test card for this session"
+msgstr "Zaplatiť testovacou kartou Stripe v tejto relácii"
+
+#: includes/AdminTestToggles.php:268
+msgid "Create a SuperFaktúra invoice for orders you place"
+msgstr "Vytvárať faktúru v SuperFaktúre pre objednávky, ktoré vytvoríte"
+
+#: includes/AdminTestToggles.php:241
+msgid "The toggle could not be changed. Please try again."
+msgstr "Prepínač sa nepodarilo zmeniť. Skúste to znova."
+
+#: includes/AdminTestToggles.php:333
+msgid "Open Stripe API settings"
+msgstr "Otvoriť nastavenia Stripe API"
+
+#: includes/AdminTestToggles.php:247
+msgid "You are not allowed to change testing toggles."
+msgstr "Nemáte oprávnenie meniť testovacie prepínače."
+
+#: includes/AdminTestToggles.php:253
+msgid "Unknown testing toggle."
+msgstr "Neznámy testovací prepínač."
+
+#: includes/AdminTestToggles.php:293
+msgid "The \"Stripe: test card\" toggle is on, but the Stripe gateway plugin is not active."
+msgstr "Prepínač „Stripe: testovacia karta“ je zapnutý, ale plugin Stripe brány nie je aktívny."
+
+#: includes/AdminTestToggles.php:303
+msgid "The \"Stripe: test card\" toggle is on, but no Stripe test API keys are configured. Fill in the test publishable and secret key in WooCommerce → Settings → Payments → API Settings."
+msgstr "Prepínač „Stripe: testovacia karta“ je zapnutý, ale nie sú nastavené žiadne testovacie Stripe API kľúče. Vyplňte testovací publishable a secret kľúč v WooCommerce → Nastavenia → Platby → Nastavenia API."
+
+#: includes/StripeTestCardHelper.php:51
+msgid "Copied"
+msgstr "Skopírované"
+
+#: includes/StripeTestCardHelper.php:72
+msgid "Stripe test card"
+msgstr "Stripe testovacia karta"
+
+#: includes/StripeTestCardHelper.php:74
+msgid "Stripe TEST mode"
+msgstr "Stripe TEST režim"
+
+#: includes/StripeTestCardHelper.php:75
+msgid "Test card for verifying the checkout"
+msgstr "Testovacia karta na overenie checkoutu"
+
+#: includes/StripeTestCardHelper.php:78
+msgid "Card number"
+msgstr "Číslo karty"
+
+#: includes/StripeTestCardHelper.php:84
+msgid "Copy"
+msgstr "Kopírovať"
+
+#: includes/StripeTestCardHelper.php:90
+msgid "Expiry: any future date (month/year later than the current one). CVC: any 3-digit number. More test cards: %s"
+msgstr "Expirácia: ľubovoľný dátum v budúcnosti (mesiac/rok > aktuálny). CVC: ľubovoľné 3-miestne číslo. Ďalšie testovacie karty: %s"
+

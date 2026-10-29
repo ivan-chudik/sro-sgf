@@ -1109,8 +1109,18 @@ class WooCommerceManager
 
         do_action('alttag_registrations_add_to_cart', $product_id, WC()->cart, WC()->session);
 
-        // Redirect to checkout
-        wp_safe_redirect(wc_get_checkout_url());
+        // Redirect to the checkout in the product's own language: the buy
+        // buttons link to /?add-to-cart=<id> on the bare home URL, which
+        // Polylang resolves to the default language.
+        $checkout_url = wc_get_checkout_url();
+        if (function_exists('pll_get_post_language') && function_exists('pll_get_post')) {
+            $language = pll_get_post_language($product_id);
+            $checkout_id = $language ? (int) pll_get_post(wc_get_page_id('checkout'), $language) : 0;
+            if ($checkout_id) {
+                $checkout_url = get_permalink($checkout_id);
+            }
+        }
+        wp_safe_redirect($checkout_url);
         exit();
     }
 

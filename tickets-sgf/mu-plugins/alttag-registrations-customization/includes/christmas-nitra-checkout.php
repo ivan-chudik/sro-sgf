@@ -1076,6 +1076,15 @@ function xnt_ajax_switch_type(): void
         }
     }
 
+    // The posted page language wins over the cart's: after a language switch
+    // the cart still holds the old language's twin, and the swap must move
+    // the line to the page language's product (Polylang resolves admin-ajax
+    // from the last-viewed cookie, so the posted lang is the page's own).
+    $posted_lang = isset($_POST['lang']) ? sanitize_key(wp_unslash($_POST['lang'])) : '';
+    if ($posted_lang !== '' && isset(XNT_PRODUCTS['live'][$posted_lang])) {
+        $language = $posted_lang;
+    }
+
     $language = $language ?: xnt_current_language();
     $target = (int) (XNT_PRODUCTS[$type][$language] ?? XNT_PRODUCTS[$type]['sk']);
 

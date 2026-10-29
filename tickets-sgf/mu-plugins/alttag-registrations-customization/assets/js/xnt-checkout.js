@@ -378,6 +378,9 @@
     var body = new URLSearchParams();
     body.append('action', cfg.action);
     body.append('nonce', cfg.nonce);
+    // Polylang resolves admin-ajax from the cookie of the last page viewed;
+    // pin it to this page so the cart is translated into the page language.
+    body.append('lang', cfg.lang);
     body.append('type', type);
     body.append('people', String(state.people));
     state.indexes.forEach(function (index) {

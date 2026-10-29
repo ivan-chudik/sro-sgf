@@ -7,7 +7,9 @@ use Alttag\Registrations\Selection\ParticipantTypeSelection;
 use Alttag\Registrations\Selection\SelectionManager;
 
 use function Alttag\Registrations\ctx;
+use function Alttag\Registrations\get_label_product_id;
 use function Alttag\Registrations\get_participant_by_variable_symbol;
+use function Alttag\Registrations\get_participant_language;
 
 if (!defined('ABSPATH')) {
     exit;
@@ -427,7 +429,8 @@ class ParticipantTypeModule extends AbstractModule
         }
 
         $product_id = (int) get_post_meta($participant_id, 'product_id', true);
-        return $this->formatRowsSummary($this->buildTypeRows($data, $product_id));
+        $label_product_id = get_label_product_id($product_id, get_participant_language($participant_id));
+        return $this->formatRowsSummary($this->buildTypeRows($data, $label_product_id));
     }
 
     /**
@@ -441,7 +444,7 @@ class ParticipantTypeModule extends AbstractModule
                 continue;
             }
             $product_id = (int) ($item->get_variation_id() ?: $item->get_product_id());
-            $summary = $this->formatRowsSummary($this->buildTypeRows($data, $product_id));
+            $summary = $this->formatRowsSummary($this->buildTypeRows($data, get_label_product_id($product_id)));
             if ($summary !== '') {
                 return $summary;
             }

@@ -695,6 +695,39 @@ function get_participant_language($participant_id)
 }
 
 /**
+ * Get the product whose meta supplies visible labels (day names, venue,
+ * participant type labels): its Polylang translation in the label language,
+ * or the product itself when there is none.
+ *
+ * The order-received page renders in the page language, which differs from
+ * the order language once the visitor switches language there (Polylang for
+ * WooCommerce keeps the order in the switcher URL), so it uses the current
+ * language. Elsewhere $fallback_lang applies (e.g. the participant language);
+ * empty keeps the product itself.
+ *
+ * @param int $product_id
+ * @param string $fallback_lang Language code used outside the order-received page
+ * @return int Product ID
+ */
+function get_label_product_id($product_id, $fallback_lang = '')
+{
+    $product_id = (int) $product_id;
+    if (!$product_id || !function_exists('pll_get_post')) {
+        return $product_id;
+    }
+
+    $lang = function_exists('is_order_received_page') && is_order_received_page()
+        ? get_current_language()
+        : $fallback_lang;
+    if (!$lang) {
+        return $product_id;
+    }
+
+    $translated_id = (int) pll_get_post($product_id, $lang);
+    return $translated_id ?: $product_id;
+}
+
+/**
  * Execute callback in participant's language context
  *
  * @param int $participant_id Participant ID
