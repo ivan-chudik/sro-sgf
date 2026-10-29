@@ -402,8 +402,8 @@ msgstr "Počet osôb"
 
 #: includes/christmas-nitra-checkout.php:380
 msgctxt "xnt.step2sub"
-msgid "Everyone gets the same ticket - same type and same days"
-msgstr "Všetci dostanú rovnakú vstupenku - rovnaký typ aj dni"
+msgid "One ticket with a QR code covers everyone in the order - same type and same days"
+msgstr "Jedna vstupenka s QR kódom platí pre všetky osoby z objednávky - rovnaký typ aj dni"
 
 #: includes/christmas-nitra-checkout.php:385
 msgctxt "xnt.step3"
@@ -592,8 +592,8 @@ msgstr "Ceny sú za osobu"
 
 #: includes/christmas-nitra-checkout.php:495
 msgctxt "xnt.info3b"
-msgid "Every person needs their own ticket - you pick the number in <b>step 2</b> and the price is multiplied. The same prices for the arena and the livestream, final, with no extra fees."
-msgstr "Každá osoba potrebuje vlastnú vstupenku - počet vyberieš v <b>kroku 2</b> a cena sa vynásobí. Rovnaké ceny pre halu aj livestream, konečné, bez poplatkov navyše."
+msgid "The price is paid for every person - you pick the number in <b>step 2</b> and the price is multiplied. You get one ticket with a QR code for everyone in the order. The same prices for the arena and the livestream, final, with no extra fees."
+msgstr "Cena sa platí za každú osobu - počet vyberieš v <b>kroku 2</b> a cena sa vynásobí. Dostaneš jednu vstupenku s QR kódom pre všetky osoby z objednávky. Rovnaké ceny pre halu aj livestream, konečné, bez poplatkov navyše."
 
 #: includes/christmas-nitra-checkout.php:504
 msgctxt "xnt.thdays"
@@ -747,13 +747,13 @@ msgstr "Early Bird skončil %d - platí plná cena. Viacdenná zľava platí na�
 
 #: includes/christmas-nitra-checkout.php:573
 msgctxt "xnt.hintone"
-msgid "Each person needs their own ticket"
-msgstr "Každá osoba potrebuje vlastnú vstupenku"
+msgid "Price is per person"
+msgstr "Cena je za osobu"
 
 #: includes/christmas-nitra-checkout.php:578
 msgctxt "xnt.hintmany"
-msgid "%1 per person · each person gets their own ticket"
-msgstr "%1 za osobu · každá osoba dostane vlastnú vstupenku"
+msgid "%1 per person · one shared ticket for everyone"
+msgstr "%1 za osobu · jedna spoločná vstupenka pre všetkých"
 
 #: includes/christmas-nitra-checkout.php:583
 msgctxt "xnt.nudge0"
@@ -864,3 +864,8 @@ msgstr "Piatok"
 msgctxt "xnt.wd6"
 msgid "Saturday"
 msgstr "Sobota"
+
+#: includes/christmas-nitra-checkout.php
+msgctxt "xnt.support"
+msgid "Questions about your ticket or the livestream?"
+msgstr "Otázky k vstupenke alebo livestreamu?"

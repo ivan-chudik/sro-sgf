@@ -378,7 +378,7 @@ function xnt_checkout_strings(string $language): array
         ),
         'step2' => _x('Number of people', 'xnt.step2', 'alttag-registrations-customization'),
         'step2sub' => _x(
-            'Everyone gets the same ticket - same type and same days',
+            'One ticket with a QR code covers everyone in the order - same type and same days',
             'xnt.step2sub',
             'alttag-registrations-customization'
         ),
@@ -493,7 +493,7 @@ function xnt_checkout_strings(string $language): array
         ),
         'info3h' => _x('Prices are per person', 'xnt.info3h', 'alttag-registrations-customization'),
         'info3b' => _x(
-            'Every person needs their own ticket - you pick the number in <b>step 2</b> and the price is multiplied. The same prices for the arena and the livestream, final, with no extra fees.',
+            'The price is paid for every person - you pick the number in <b>step 2</b> and the price is multiplied. You get one ticket with a QR code for everyone in the order. The same prices for the arena and the livestream, final, with no extra fees.',
             'xnt.info3b',
             'alttag-registrations-customization'
         ),
@@ -571,12 +571,12 @@ function xnt_checkout_strings(string $language): array
             'alttag-registrations-customization'
         ),
         'hintone' => _x(
-            'Each person needs their own ticket',
+            'Price is per person',
             'xnt.hintone',
             'alttag-registrations-customization'
         ),
         'hintmany' => _x(
-            '%1 per person · each person gets their own ticket',
+            '%1 per person · one shared ticket for everyone',
             'xnt.hintmany',
             'alttag-registrations-customization'
         ),
@@ -605,6 +605,7 @@ function xnt_checkout_strings(string $language): array
             'xnt.nudge4',
             'alttag-registrations-customization'
         ),
+        'support' => _x('Questions about your ticket or the livestream?', 'xnt.support', 'alttag-registrations-customization'),
         'btnsat' => _x('Select Saturday', 'xnt.btnsat', 'alttag-registrations-customization'),
         'btnall' => _x('All 4 days', 'xnt.btnall', 'alttag-registrations-customization'),
         'btnallsel' => _x('Select all 4 days', 'xnt.btnallsel', 'alttag-registrations-customization'),
@@ -1738,3 +1739,34 @@ add_action('woocommerce_before_checkout_form', function () {
     }
     echo xnt_render_banner(xnt_current_language());
 }, 5);
+
+const XNT_SUPPORT_EMAIL = 'roman@alttag.media';
+
+function xnt_support_line(string $language, string $style = ''): string
+{
+    $attr = $style !== '' ? ' style="' . esc_attr($style) . '"' : '';
+    return '<p class="xnt-support"' . $attr . '>'
+        . esc_html(xnt_checkout_text('support', $language)) . ' '
+        . '<a href="mailto:' . esc_attr(XNT_SUPPORT_EMAIL) . '">' . esc_html(XNT_SUPPORT_EMAIL) . '</a>'
+        . '</p>';
+}
+
+add_action('woocommerce_review_order_after_submit', function () {
+    if (!xnt_review_applies()) {
+        return;
+    }
+    echo xnt_support_line(xnt_current_language());
+});
+
+add_action('alttag_registrations_checkout_after_download_links', function ($order) {
+    if (!$order instanceof \WC_Order) {
+        return;
+    }
+    foreach ($order->get_items() as $item) {
+        $product_id = (int) $item->get_product_id();
+        if (xnt_is_product($product_id)) {
+            echo xnt_support_line(xnt_product_language($product_id), 'margin: 10px 0 20px; color: #555; font-size: 14px;');
+            return;
+        }
+    }
+});

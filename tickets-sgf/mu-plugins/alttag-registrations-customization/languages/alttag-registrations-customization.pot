@@ -379,7 +379,7 @@ msgstr ""
 
 #: includes/christmas-nitra-checkout.php:380
 msgctxt "xnt.step2sub"
-msgid "Everyone gets the same ticket - same type and same days"
+msgid "One ticket with a QR code covers everyone in the order - same type and same days"
 msgstr ""
 
 #: includes/christmas-nitra-checkout.php:385
@@ -569,7 +569,7 @@ msgstr ""
 
 #: includes/christmas-nitra-checkout.php:495
 msgctxt "xnt.info3b"
-msgid "Every person needs their own ticket - you pick the number in <b>step 2</b> and the price is multiplied. The same prices for the arena and the livestream, final, with no extra fees."
+msgid "The price is paid for every person - you pick the number in <b>step 2</b> and the price is multiplied. You get one ticket with a QR code for everyone in the order. The same prices for the arena and the livestream, final, with no extra fees."
 msgstr ""
 
 #: includes/christmas-nitra-checkout.php:504
@@ -724,12 +724,12 @@ msgstr ""
 
 #: includes/christmas-nitra-checkout.php:573
 msgctxt "xnt.hintone"
-msgid "Each person needs their own ticket"
+msgid "Price is per person"
 msgstr ""
 
 #: includes/christmas-nitra-checkout.php:578
 msgctxt "xnt.hintmany"
-msgid "%1 per person · each person gets their own ticket"
+msgid "%1 per person · one shared ticket for everyone"
 msgstr ""
 
 #: includes/christmas-nitra-checkout.php:583
@@ -840,4 +840,9 @@ msgstr ""
 #: includes/christmas-nitra-checkout.php:628
 msgctxt "xnt.wd6"
 msgid "Saturday"
+msgstr ""
+
+#: includes/christmas-nitra-checkout.php
+msgctxt "xnt.support"
+msgid "Questions about your ticket or the livestream?"
 msgstr ""
