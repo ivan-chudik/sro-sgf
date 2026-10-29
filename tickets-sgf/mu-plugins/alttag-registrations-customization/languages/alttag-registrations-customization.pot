@@ -849,5 +849,5 @@ msgstr ""
 
 #: includes/christmas-nitra-checkout.php
 msgctxt "xnt.emailticket"
-msgid "This ticket with a QR code is valid for everyone in the order. Show it once at the entrance."
+msgid "This ticket with a QR code is valid for everyone in the order."
 msgstr ""

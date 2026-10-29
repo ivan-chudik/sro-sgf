@@ -607,7 +607,7 @@ function xnt_checkout_strings(string $language): array
         ),
         'support' => _x('Questions about your ticket or the livestream?', 'xnt.support', 'alttag-registrations-customization'),
         'emailticket' => _x(
-            'This ticket with a QR code is valid for everyone in the order. Show it once at the entrance.',
+            'This ticket with a QR code is valid for everyone in the order.',
             'xnt.emailticket',
             'alttag-registrations-customization'
         ),
