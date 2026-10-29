@@ -1,10 +1,6 @@
 <?php
 if ( ! defined( 'ABSPATH' ) ) exit;
 
-/**
- * Pole „Pôvodný článok“ pri článkoch — CN · Novinky naň presmeruje kartu (napr. článok na sgf.sk).
- * Prázdne = karta vedie na článok na tomto webe.
- */
 add_action( 'init', function() {
     register_post_meta( 'post', '_xn_source_url', [
         'type'              => 'string',
