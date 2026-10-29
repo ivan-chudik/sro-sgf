@@ -1747,13 +1747,12 @@ add_action('woocommerce_before_checkout_form', function () {
 
 const XNT_SUPPORT_EMAIL = 'roman@alttag.media';
 
-function xnt_support_line(string $language, string $style = '', string $link_style = ''): string
+function xnt_support_line(string $language, string $style = ''): string
 {
     $attr = $style !== '' ? ' style="' . esc_attr($style) . '"' : '';
-    $link_attr = $link_style !== '' ? ' style="' . esc_attr($link_style) . '"' : '';
     return '<p class="xnt-support"' . $attr . '>'
         . esc_html(xnt_checkout_text('support', $language)) . ' '
-        . '<a href="mailto:' . esc_attr(XNT_SUPPORT_EMAIL) . '"' . $link_attr . '>' . esc_html(XNT_SUPPORT_EMAIL) . '</a>'
+        . '<a href="mailto:' . esc_attr(XNT_SUPPORT_EMAIL) . '">' . esc_html(XNT_SUPPORT_EMAIL) . '</a>'
         . '</p>';
 }
 
@@ -1771,12 +1770,7 @@ add_action('alttag_registrations_checkout_after_download_links', function ($orde
     foreach ($order->get_items() as $item) {
         $product_id = (int) $item->get_product_id();
         if (xnt_is_product($product_id)) {
-            echo xnt_support_line(
-                xnt_product_language($product_id),
-                'margin: 10px 0 20px; color: inherit; font-size: 14px;',
-                'display: inline; padding: 0; margin: 0; background: none; border: 0; border-radius: 0;'
-                . ' box-shadow: none; color: inherit; font-weight: 700; text-decoration: underline;'
-            );
+            echo xnt_support_line(xnt_product_language($product_id), 'margin: 10px 0 20px; font-size: 14px;');
             return;
         }
     }
