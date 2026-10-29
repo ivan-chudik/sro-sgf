@@ -247,7 +247,7 @@
     "_id": "ae05fcc"
    }
   ],
-  "fine": "<p><b>Early Bird</b> applies until 31 October 2026; from 1 November the full price applies. Prices are final for the buyer — no additional fees. Sales and payment via <a href=\"https://tickets.sgf.sk/?add-to-cart=5964\" target=\"_blank\" rel=\"noopener\">tickets.sgf.sk</a>; watch the livestream at <a href=\"https://stream.sgf.sk/\" target=\"_blank\" rel=\"noopener\">stream.sgf.sk</a>. The detailed timetable will be published after the entry deadline on 18 October 2026.</p>"
+  "fine": "<p><b>Early Bird</b> applies until 31 October 2026; from 1 November the full price applies. Prices are final for the buyer — no additional fees. Sales and payment via <a href=\"https://tickets.sgf.sk/?add-to-cart=5964\" target=\"_blank\" rel=\"noopener\">tickets.sgf.sk</a>; watch the livestream at <a href=\"https://stream.sgf.sk/\" target=\"_blank\" rel=\"noopener\">stream.sgf.sk</a>. Prices are per person, but the whole order receives <b>one ticket with a QR code valid for everyone in the order</b>. Questions about tickets and the livestream: <a href=\"mailto:roman@alttag.media\">roman@alttag.media</a>. The detailed timetable will be published after the entry deadline on 18 October 2026.</p>"
  },
  "schedule": {
   "anchor_id": "schedule",
@@ -456,27 +456,39 @@
    },
    {
     "open": "",
+    "question": "I'm buying for several people. How many tickets will I get?",
+    "answer": "<p>One. The price is per person, but the whole order receives <b>one ticket with a QR code that is valid for everyone in the order</b>. Show it once at the entrance, so please arrive together. If everyone needs their own ticket (for example, you arrive at different times), place a separate order for each person.</p>",
+    "_id": "cd12806"
+   },
+   {
+    "open": "",
+    "question": "My ticket didn't arrive or I have a problem with it. Who do I contact?",
+    "answer": "<p>We send the ticket by e-mail right after payment, so please also check your Spam or Promotions folder. If you can't find it or need help with your purchase or the livestream, write to <a href=\"mailto:roman@alttag.media\">roman@alttag.media</a> and include your order number.</p>",
+    "_id": "67a9359"
+   },
+   {
+    "open": "",
     "question": "What does Early Bird mean?",
     "answer": "<p>A discounted price for purchases until 31 October 2026 — it applies equally to arena tickets and to the livestream. From 1 November the full price applies. Prices are final, nothing is added.</p>",
-    "_id": "cd12806"
+    "_id": "00c4c40"
    },
    {
     "open": "",
     "question": "How does the livestream work?",
     "answer": "<p>Buy access at tickets.sgf.sk and watch at stream.sgf.sk after signing in with the same e-mail. It works on phones, laptops and smart TVs. Access is active right after payment.</p>",
-    "_id": "67a9359"
+    "_id": "3e93fb3"
    },
    {
     "open": "",
     "question": "Can I return a ticket or move it to another day?",
-    "answer": "<p>Tickets are tied to a specific day or days. Refund and exchange conditions follow the terms and conditions of tickets.sgf.sk — you'll find them at checkout.</p>",
-    "_id": "00c4c40"
+    "answer": "<p>Tickets are tied to a specific day or days. Refund and exchange conditions follow the terms and conditions of tickets.sgf.sk — you'll find them at checkout. For questions about your order, contact support at <a href='mailto:roman@alttag.media'>roman@alttag.media</a>.</p>",
+    "_id": "0cd925c"
    },
    {
     "open": "",
     "question": "Who organises the competition?",
     "answer": "<p>ŠK ŠOG Nitra – rhythmic gymnastics (MODERGYM) in cooperation with the Slovak Gymnastics Federation and the Secondary Sports School Nitra. The event is an official World Gymnastics competition. Contact: Zuzana Vilčeková, <a href=\"mailto:christmas.nitra@gmail.com\">christmas.nitra@gmail.com</a>, +421 911 430 001.</p>",
-    "_id": "3e93fb3"
+    "_id": "18abf43"
    }
   ]
  },
