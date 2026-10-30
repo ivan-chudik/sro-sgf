@@ -36,13 +36,16 @@ $cards = [ 'c1' => 'light', 'c2' => 'dark' ];
                         </ul>
                     <?php endif; ?>
 
-                    <?php if ( xn_on( $settings, $c . '_price_show' ) ) : ?>
+                    <?php if ( xn_on( $settings, $c . '_price_show' ) ) :
+                        $price = (string) ( $settings[ $c . '_price' ] ?? '' );
+                        $after = trim( (string) ( $settings[ $c . '_price_after' ] ?? '' ) );
+                        if ( $after === '' ) $after = xn_price_format( XN_DAY_PRICE, $price ); ?>
                         <div class="two-paths__price xn-z">
                             <?php if ( xn_filled( $settings, $c . '_price_from' ) ) : ?><span><?php echo esc_html( $settings[ $c . '_price_from' ] ); ?></span><?php endif; ?>
-                            <b><?php echo esc_html( $settings[ $c . '_price' ] ?? '' ); ?></b>
+                            <b><?php echo xn_eb_parts( $price, $after ); ?></b>
                             <?php if ( xn_filled( $settings, $c . '_price_unit' ) ) : ?><span><?php echo esc_html( $settings[ $c . '_price_unit' ] ); ?></span><?php endif; ?>
                             <?php if ( xn_on( $settings, $c . '_eb_show' ) ) : ?>
-                                <span class="two-paths__eb"><span class="two-paths__eb-t"><?php echo esc_html( $settings[ $c . '_eb_label' ] ?? '' ); ?></span><span class="two-paths__eb-d"><?php echo esc_html( $settings[ $c . '_eb_date' ] ?? '' ); ?></span></span>
+                                <span class="two-paths__eb xn-eb-only"><span class="two-paths__eb-t"><?php echo esc_html( $settings[ $c . '_eb_label' ] ?? '' ); ?></span><span class="two-paths__eb-d"><?php echo esc_html( $settings[ $c . '_eb_date' ] ?? '' ); ?></span></span>
                             <?php endif; ?>
                         </div>
                     <?php endif; ?>

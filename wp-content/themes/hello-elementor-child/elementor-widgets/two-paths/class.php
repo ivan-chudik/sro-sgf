@@ -92,6 +92,13 @@ class Elementor_Widget_TwoPaths extends \Elementor\Widget_Base {
                 'default'   => '6,80 €',
                 'condition' => [ $c . '_price_show' => 'yes' ],
             ]);
+            $this->add_control( $c . '_price_after', [
+                'label'       => 'Cena po skončení Early Bird',
+                'type'        => \Elementor\Controls_Manager::TEXT,
+                'default'     => '',
+                'description' => 'Prázdne = plná cena 1 dňa (8,00 €). Early Bird končí automaticky 1. 11. 2026 o 00:00.',
+                'condition'   => [ $c . '_price_show' => 'yes' ],
+            ]);
             $this->add_control( $c . '_price_unit', [
                 'label'     => 'Za cenou',
                 'type'      => \Elementor\Controls_Manager::TEXT,

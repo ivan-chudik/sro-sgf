@@ -47,6 +47,18 @@ class Elementor_Widget_Pricing extends \Elementor\Widget_Base {
             'default'   => '31. 10. 2026',
             'condition' => [ 'badge_show' => 'yes' ],
         ]);
+        $this->xn_heading_control( 'eb_after_heading', 'Po skončení Early Bird' );
+        $this->add_control('eb_after_note', [
+            'type'            => \Elementor\Controls_Manager::RAW_HTML,
+            'raw'             => 'Early Bird končí automaticky 1. 11. 2026 o 00:00. Odznak a Early Bird texty sa skryjú, karty ukážu plnú cenu. Náhľad: pridaj k adrese stránky <b>?xn_eb=over</b>.',
+            'content_classes' => 'elementor-descriptor',
+        ]);
+        $this->add_control('lead_after', [
+            'label'       => 'Úvodný text po skončení Early Bird',
+            'type'        => \Elementor\Controls_Manager::WYSIWYG,
+            'default'     => '',
+            'description' => 'Prázdne = štandardný text v jazyku stránky (SK/EN).',
+        ]);
         $this->end_controls_section();
 
         $this->start_controls_section( 'section_tabs', [
@@ -157,7 +169,7 @@ class Elementor_Widget_Pricing extends \Elementor\Widget_Base {
             'default' => 'Od 1. 11.',
         ]);
         $plan->add_control('was_price', [
-            'label'   => 'Plná cena',
+            'label'   => 'Plná cena (platí od 1. 11.)',
             'type'    => \Elementor\Controls_Manager::TEXT,
             'default' => '',
         ]);
@@ -167,6 +179,13 @@ class Elementor_Widget_Pricing extends \Elementor\Widget_Base {
             'rows'        => 2,
             'default'     => '',
             'description' => '&lt;b&gt;…&lt;/b&gt; = zvýraznenie',
+        ]);
+        $plan->add_control('per_after', [
+            'label'       => 'Cena za deň — po skončení Early Bird',
+            'type'        => \Elementor\Controls_Manager::TEXTAREA,
+            'rows'        => 2,
+            'default'     => '',
+            'description' => 'Prázdne = vypočíta sa z plnej ceny a počtu dní.',
         ]);
         $plan->add_control('features', [
             'label'       => 'Body zoznamu',
@@ -212,7 +231,7 @@ class Elementor_Widget_Pricing extends \Elementor\Widget_Base {
                     'k' => '1 deň', 'title_live' => 'Jeden deň', 'title_stream' => 'Livestream — 1 deň',
                     'sub_live' => 'Vstup na ľubovoľný súťažný deň', 'sub_stream' => 'Prenos z ľubovoľného súťažného dňa',
                     'eb_label' => 'Early Bird do 31. 10.', 'price' => '6,80 €', 'was_label' => 'Od 1. 11.', 'was_price' => '8,00 €',
-                    'per' => 'Cena za deň <b>6,80 €</b>',
+                    'per' => 'Cena za deň <b>6,80 €</b>', 'per_after' => 'Cena za deň <b>8,00 €</b>',
                     'features' => "Všetky súťažné bloky daného dňa | Celý súťažný deň naživo\nIdeálne na sobotné finále\nE-vstupenka s QR kódom | Prístup ihneď po zaplatení",
                     'btn_live' => 'Kúpiť vstupenku · 1 deň', 'btn_stream' => 'Kúpiť livestream · 1 deň', 'btn_style' => 'grad',
                 ],
@@ -220,7 +239,7 @@ class Elementor_Widget_Pricing extends \Elementor\Widget_Base {
                     'k' => '2 dni', 'title_live' => 'Dva dni', 'title_stream' => 'Livestream — 2 dni',
                     'sub_live' => 'Dva ľubovoľné súťažné dni', 'sub_stream' => 'Prenos z dvoch súťažných dní',
                     'eb_label' => 'Early Bird do 31. 10.', 'price' => '12,75 €', 'was_label' => 'Od 1. 11.', 'was_price' => '15,00 €',
-                    'per' => 'Cena za deň <b>6,38 €</b>',
+                    'per' => 'Cena za deň <b>6,38 €</b>', 'per_after' => 'Cena za deň <b>7,50 €</b>',
                     'features' => "Napr. sobotné finále + nedeľné MSR\nVšetky bloky oboch dní | Oba dni naživo na všetkých zariadeniach\nE-vstupenka s QR kódom | Prístup ihneď po zaplatení",
                     'btn_live' => 'Kúpiť vstupenku · 2 dni', 'btn_stream' => 'Kúpiť livestream · 2 dni', 'btn_style' => 'grad',
                 ],
@@ -229,7 +248,7 @@ class Elementor_Widget_Pricing extends \Elementor\Widget_Base {
                     'k' => '4 dni', 'title_live' => '4-dňový pass', 'title_stream' => 'Livestream — 4-dňový pass',
                     'sub_live' => 'Celá súťaž — štvrtok až nedeľa', 'sub_stream' => 'Celá súťaž naživo — štvrtok až nedeľa',
                     'eb_label' => 'Early Bird do 31. 10.', 'price' => '17,00 €', 'was_label' => 'Od 1. 11.', 'was_price' => '20,00 €',
-                    'per' => 'Cena za deň <b>4,25 €</b> — dva dni v cene navyše',
+                    'per' => 'Cena za deň <b>4,25 €</b> — dva dni v cene navyše', 'per_after' => 'Cena za deň <b>5,00 €</b>',
                     'features' => "Všetky štyri dni vrátane finále\nJedna vstupenka, žiadne prekupovanie | Jeden prístup, všetky zariadenia\nSobotné finále a víkendové MSR v cene",
                     'btn_live' => 'Kúpiť 4-dňový pass', 'btn_stream' => 'Kúpiť livestream · 4 dni', 'btn_style' => 'primary',
                 ],
@@ -242,6 +261,13 @@ class Elementor_Widget_Pricing extends \Elementor\Widget_Base {
             'type'      => \Elementor\Controls_Manager::WYSIWYG,
             'default'   => '<p><b>Early Bird</b> platí do 31. 10. 2026, od 1. 11. platí plná cena. Ceny sú konečné pre kupujúceho — bez ďalších poplatkov. Predaj a platba cez <a href="https://tickets.sgf.sk/sk/?add-to-cart=5964" target="_blank" rel="noopener">tickets.sgf.sk</a>; livestream sleduješ na <a href="https://stream.sgf.sk/" target="_blank" rel="noopener">stream.sgf.sk</a>. Ceny sú za osobu, no celá objednávka dostane <b>jednu vstupenku s QR kódom pre všetky osoby</b>. Otázky k vstupenkám a livestreamu: <a href="mailto:roman@alttag.media">roman@alttag.media</a>. Podrobný harmonogram s časmi zverejníme po uzávierke prihlášok 18. 10. 2026.</p>',
             'condition' => [ 'fine_show' => 'yes' ],
+        ]);
+        $this->add_control('fine_after', [
+            'label'       => 'Poznámka pod kartami — po skončení Early Bird',
+            'type'        => \Elementor\Controls_Manager::WYSIWYG,
+            'default'     => '',
+            'description' => 'Prázdne = štandardný text v jazyku stránky (SK/EN).',
+            'condition'   => [ 'fine_show' => 'yes' ],
         ]);
         $this->end_controls_section();
 

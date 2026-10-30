@@ -109,6 +109,14 @@ class Elementor_Widget_Hero extends \Elementor\Widget_Base {
             'description' => 'Text v &lt;em&gt;…&lt;/em&gt; sa zvýrazní.',
             'condition'   => [ 'countdown_show' => 'yes' ],
         ]);
+        $this->add_control('countdown_note_after', [
+            'label'       => 'Poznámka po skončení Early Bird',
+            'type'        => \Elementor\Controls_Manager::TEXTAREA,
+            'rows'        => 2,
+            'default'     => '',
+            'description' => 'Prázdne = poznámka sa od 1. 11. 2026 00:00 automaticky skryje.',
+            'condition'   => [ 'countdown_show' => 'yes' ],
+        ]);
         $this->end_controls_section();
 
         $this->xn_style_section();

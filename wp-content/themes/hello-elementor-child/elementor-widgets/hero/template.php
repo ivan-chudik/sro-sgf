@@ -56,7 +56,10 @@ $days   = $ts ? max( 0, (int) ceil( ( $ts - time() ) / DAY_IN_SECONDS ) ) : '—
                         <span class="hero__cd-label"><?php echo esc_html( $settings['countdown_label'] ); ?></span>
                     <?php endif; ?>
                     <?php if ( xn_filled( $settings, 'countdown_note' ) ) : ?>
-                        <small class="hero__cd-note"><?php echo xn_inline( $settings['countdown_note'] ); ?></small>
+                        <small class="hero__cd-note xn-eb-only"><?php echo xn_inline( $settings['countdown_note'] ); ?></small>
+                    <?php endif; ?>
+                    <?php if ( xn_filled( $settings, 'countdown_note_after' ) ) : ?>
+                        <small class="hero__cd-note xn-eb-after"><?php echo xn_inline( $settings['countdown_note_after'] ); ?></small>
                     <?php endif; ?>
                 </div>
             </div>

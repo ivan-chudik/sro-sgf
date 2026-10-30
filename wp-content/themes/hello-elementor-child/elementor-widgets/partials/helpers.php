@@ -5,6 +5,8 @@ const XN_TICKETS_SK = 'https://tickets.sgf.sk/sk/?add-to-cart=5964';
 const XN_TICKETS_EN = 'https://tickets.sgf.sk/?add-to-cart=5964';
 const XN_HOME_SK    = 'https://sro.sgf.sk/';
 const XN_HOME_EN    = 'https://sro.sgf.sk/en/';
+const XN_EB_END     = '2026-11-01T00:00:00+01:00';
+const XN_DAY_PRICE  = 8.00;
 
 function xn_asset( $path ) {
     return get_stylesheet_directory_uri() . '/elementor-widgets/assets/' . ltrim( $path, '/' );
@@ -212,3 +214,29 @@ function xn_post_link( $post_id ) {
     $source = trim( (string) get_post_meta( $post_id, '_xn_source_url', true ) );
     return $source !== '' ? $source : get_permalink( $post_id );
 }
+
+function xn_eb_end_ms() {
+    return (int) strtotime( XN_EB_END ) * 1000;
+}
+
+function xn_eb_parts( $during, $after, $escape = 'esc_html' ) {
+    $during = (string) $during;
+    $after  = (string) $after;
+    if ( $during === $after ) return $escape( $during );
+    $out = '';
+    if ( $during !== '' ) $out .= '<span class="xn-eb-only">' . $escape( $during ) . '</span>';
+    if ( $after !== '' )  $out .= '<span class="xn-eb-after">' . $escape( $after ) . '</span>';
+    return $out;
+}
+
+function xn_price_value( $text ) {
+    if ( ! preg_match( '/\d+(?:[.,]\d+)?/', (string) $text, $m ) ) return null;
+    return (float) str_replace( ',', '.', $m[0] );
+}
+
+function xn_price_format( $value, $sample ) {
+    $sample = (string) $sample;
+    $num    = number_format( $value, 2, strpos( $sample, '.' ) !== false ? '.' : ',', '' );
+    return strpos( trim( $sample ), '€' ) === 0 ? '€' . $num : $num . ' €';
+}
+

@@ -38,6 +38,13 @@ class Elementor_Widget_Faq extends \Elementor\Widget_Base {
             'type'    => \Elementor\Controls_Manager::WYSIWYG,
             'default' => '',
         ]);
+        $repeater->add_control('eb_show', [
+            'label'       => 'Zobrazovať',
+            'type'        => \Elementor\Controls_Manager::SELECT,
+            'default'     => '',
+            'options'     => [ '' => 'Vždy', 'only' => 'Len počas Early Bird', 'after' => 'Len po skončení Early Bird' ],
+            'description' => 'Early Bird končí automaticky 1. 11. 2026 o 00:00.',
+        ]);
         $repeater->add_control('open', [
             'label'        => 'Otvorená pri načítaní',
             'type'         => \Elementor\Controls_Manager::SWITCHER,
