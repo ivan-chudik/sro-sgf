@@ -96,7 +96,7 @@ class Elementor_Widget_TwoPaths extends \Elementor\Widget_Base {
                 'label'       => 'Cena po skončení Early Bird',
                 'type'        => \Elementor\Controls_Manager::TEXT,
                 'default'     => '',
-                'description' => 'Prázdne = plná cena 1 dňa (8,00 €). Early Bird končí automaticky 1. 11. 2026 o 00:00.',
+                'description' => 'Prázdne = plná cena 1 dňa (8,00 €). Koniec Early Bird: Nastavenia → Všeobecné.',
                 'condition'   => [ $c . '_price_show' => 'yes' ],
             ]);
             $this->add_control( $c . '_price_unit', [
@@ -117,6 +117,14 @@ class Elementor_Widget_TwoPaths extends \Elementor\Widget_Base {
                 'type'      => \Elementor\Controls_Manager::TEXT,
                 'default'   => 'do 31. 10.',
                 'condition' => [ $c . '_eb_show' => 'yes' ],
+            ]);
+            $this->add_control( $c . '_eb_after_date', [
+                'label'       => 'Early Bird — dátum po skončení',
+                'type'        => \Elementor\Controls_Manager::TEXT,
+                'default'     => '',
+                'placeholder' => 'skončil 31. 10.',
+                'description' => 'Vyplnené = štítok ostane aj po skončení Early Bird s týmto textom. Prázdne = štítok sa skryje.',
+                'condition'   => [ $c . '_eb_show' => 'yes' ],
             ]);
 
             $this->xn_button_controls( $c . '_btn', 'Tlačidlo', $d['btn'], 'primary', '', $this->xn_tickets_desc() );

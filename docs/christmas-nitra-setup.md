@@ -86,12 +86,14 @@ SK aj EN stránku treba meniť vždy obe.
 - Na existujúcu stránku sa widgety pridávajú ručne: nový Container (Full width, padding 0, gap 0) → widget z kategórie *Christmas Nitra*.
 
 ## 9 · Koniec Early Bird (automaticky)
-- Dátum je jeden pre celý web: `XN_EB_END` v `partials/helpers.php` (`2026-11-01T00:00:00+01:00`), plná cena 1 dňa `XN_DAY_PRICE` (8,00 €).
+- Dátum a čas je jeden pre celý web (SK aj EN): **Nastavenia → Všeobecné → Christmas Nitra — koniec Early Bird**. Prázdne = `XN_EB_END` v `partials/helpers.php` (1. 11. 2026 00:00). Plná cena 1 dňa `XN_DAY_PRICE` (8,00 €).
+- Test: nastav čas o pár minút dopredu, otvor stránku a po čase obnov; po teste pole vyprázdni.
 - Prepnutie robí prehliadač podľa času (skript v `register.php` → trieda `xn-eb-over` na `<html>`), takže funguje aj s cache.
   Prvky `.xn-eb-only` sa po konci skryjú, `.xn-eb-after` sa zobrazia.
 - **Vstupenky a ceny:** odznak a „Early Bird do…“ zmiznú, cena = *Plná cena*, „Cena za deň“ = *Cena za deň — po skončení* (prázdne = vypočíta sa),
   úvodný text a poznámka = polia *…po skončení Early Bird* (prázdne = štandardný text SK/EN).
-- **Dve cesty:** cena = *Cena po skončení Early Bird* (prázdne = 8,00 €), štítok Early Bird zmizne.
+- **Vstupenky a ceny — ponechanie info:** *Po skončení ukázať odznak „Early Bird skončil“* a *…prečiarknutú Early Bird cenu* (obe predvolene zapnuté).
+- **Dve cesty:** cena = *Cena po skončení Early Bird* (prázdne = 8,00 €), štítok Early Bird zmizne; ak vyplníš *Early Bird — dátum po skončení*, ostane s tým textom.
 - **Hero:** poznámka pri odpočte zmizne, prípadne sa ukáže *Poznámka po skončení Early Bird*.
 - **FAQ:** pri otázke pole *Zobrazovať* (vždy / len počas / len po Early Bird).
 - Náhľad stavu po skončení: `?xn_eb=over` za adresou stránky, späť `?xn_eb=on`.

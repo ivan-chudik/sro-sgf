@@ -46,6 +46,7 @@ $cards = [ 'c1' => 'light', 'c2' => 'dark' ];
                             <?php if ( xn_filled( $settings, $c . '_price_unit' ) ) : ?><span><?php echo esc_html( $settings[ $c . '_price_unit' ] ); ?></span><?php endif; ?>
                             <?php if ( xn_on( $settings, $c . '_eb_show' ) ) : ?>
                                 <span class="two-paths__eb xn-eb-only"><span class="two-paths__eb-t"><?php echo esc_html( $settings[ $c . '_eb_label' ] ?? '' ); ?></span><span class="two-paths__eb-d"><?php echo esc_html( $settings[ $c . '_eb_date' ] ?? '' ); ?></span></span>
+                                <?php if ( xn_filled( $settings, $c . '_eb_after_date' ) ) : ?><span class="two-paths__eb xn-eb-after"><span class="two-paths__eb-t"><?php echo esc_html( $settings[ $c . '_eb_label' ] ?? '' ); ?></span><span class="two-paths__eb-d"><?php echo esc_html( $settings[ $c . '_eb_after_date' ] ); ?></span></span><?php endif; ?>
                             <?php endif; ?>
                         </div>
                     <?php endif; ?>

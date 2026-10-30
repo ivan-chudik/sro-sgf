@@ -114,7 +114,7 @@ class Elementor_Widget_Hero extends \Elementor\Widget_Base {
             'type'        => \Elementor\Controls_Manager::TEXTAREA,
             'rows'        => 2,
             'default'     => '',
-            'description' => 'Prázdne = poznámka sa od 1. 11. 2026 00:00 automaticky skryje.',
+            'description' => 'Prázdne = poznámka sa po skončení Early Bird skryje (Nastavenia → Všeobecné).',
             'condition'   => [ 'countdown_show' => 'yes' ],
         ]);
         $this->end_controls_section();

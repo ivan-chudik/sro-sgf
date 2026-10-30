@@ -216,7 +216,14 @@ function xn_post_link( $post_id ) {
 }
 
 function xn_eb_end_ms() {
-    return (int) strtotime( XN_EB_END ) * 1000;
+    $saved = trim( (string) get_option( 'xn_eb_end', '' ) );
+    $date  = $saved !== '' ? date_create( $saved, wp_timezone() ) : false;
+    if ( ! $date ) $date = date_create( XN_EB_END );
+    return $date->getTimestamp() * 1000;
+}
+
+function xn_eb_end_label( $format = 'j. n. Y H:i' ) {
+    return wp_date( $format, (int) ( xn_eb_end_ms() / 1000 ) );
 }
 
 function xn_eb_parts( $during, $after, $escape = 'esc_html' ) {

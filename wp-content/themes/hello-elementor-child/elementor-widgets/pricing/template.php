@@ -46,6 +46,14 @@ $dual = function( $live, $stream ) {
             <?php if ( xn_on( $settings, 'title_show' ) && xn_filled( $settings, 'title' ) ) : ?>
                 <h2 class="xn-h2 xn-disp"><?php echo nl2br( esc_html( $settings['title'] ) ); ?></h2>
             <?php endif; ?>
+            <?php if ( xn_on( $settings, 'badge_show' ) && xn_on( $settings, 'badge_after_show' ) ) :
+                $ended = trim( (string) ( $settings['badge_after_text'] ?? '' ) );
+                if ( $ended === '' ) $ended = $is_en ? 'ended' : 'skončil'; ?>
+                <div class="pricing__badge xn-eb-after" aria-label="<?php echo esc_attr( trim( ( $settings['badge_label'] ?? '' ) . ' ' . $ended . ' ' . ( $settings['badge_date'] ?? '' ) ) ); ?>">
+                    <span class="pricing__badge-t"><?php echo esc_html( $settings['badge_label'] ?? '' ); ?></span>
+                    <span class="pricing__badge-d"><?php echo esc_html( $ended ); ?><b><?php echo esc_html( $settings['badge_date'] ?? '' ); ?></b></span>
+                </div>
+            <?php endif; ?>
             <?php if ( xn_on( $settings, 'badge_show' ) ) : ?>
                 <div class="pricing__badge xn-eb-only" aria-label="<?php echo esc_attr( trim( ( $settings['badge_label'] ?? '' ) . ' ' . ( $settings['badge_prefix'] ?? '' ) . ' ' . ( $settings['badge_date'] ?? '' ) ) ); ?>">
                     <span class="pricing__badge-t"><?php echo esc_html( $settings['badge_label'] ?? '' ); ?></span>
@@ -100,6 +108,9 @@ $dual = function( $live, $stream ) {
                         <b class="xn-grad"><?php echo xn_eb_parts( $price, $full ); ?></b>
                         <?php if ( xn_filled( $p, 'was_price' ) ) : ?>
                             <span class="pricing__was xn-eb-only"><?php echo esc_html( $p['was_label'] ?? '' ); ?> <s><?php echo esc_html( $p['was_price'] ); ?></s></span>
+                        <?php endif; ?>
+                        <?php if ( xn_on( $settings, 'eb_hist_show' ) && $full !== $price && $price !== '' ) : ?>
+                            <span class="pricing__was xn-eb-after"><?php echo esc_html( $p['eb_label'] ?? '' ); ?> <s><?php echo esc_html( $price ); ?></s></span>
                         <?php endif; ?>
                     </div>
 

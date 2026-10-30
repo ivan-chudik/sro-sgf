@@ -5,6 +5,7 @@ require_once __DIR__ . '/partials/helpers.php';
 require_once __DIR__ . '/partials/brevo.php';
 require_once __DIR__ . '/partials/gtm.php';
 require_once __DIR__ . '/partials/news-meta.php';
+require_once __DIR__ . '/partials/eb-settings.php';
 
 // ── CSS TOKENY — priority 1 zaručí načítanie pred všetkým ───────────
 add_action('wp_head', function() { ?>

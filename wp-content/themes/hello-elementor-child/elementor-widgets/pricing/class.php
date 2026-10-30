@@ -50,9 +50,19 @@ class Elementor_Widget_Pricing extends \Elementor\Widget_Base {
         $this->xn_heading_control( 'eb_after_heading', 'Po skončení Early Bird' );
         $this->add_control('eb_after_note', [
             'type'            => \Elementor\Controls_Manager::RAW_HTML,
-            'raw'             => 'Early Bird končí automaticky 1. 11. 2026 o 00:00. Odznak a Early Bird texty sa skryjú, karty ukážu plnú cenu. Náhľad: pridaj k adrese stránky <b>?xn_eb=over</b>.',
+            'raw'             => 'Koniec Early Bird: <b>Nastavenia → Všeobecné → Christmas Nitra — koniec Early Bird</b> (predvolene 1. 11. 2026 00:00). Potom sa Early Bird texty skryjú a karty ukážu plnú cenu. Náhľad: pridaj k adrese stránky <b>?xn_eb=over</b>.',
             'content_classes' => 'elementor-descriptor',
         ]);
+        $this->xn_show_control( 'badge_after_show', 'Po skončení ukázať odznak „Early Bird skončil“' );
+        $this->add_control('badge_after_text', [
+            'label'       => 'Odznak po skončení — text pri dátume',
+            'type'        => \Elementor\Controls_Manager::TEXT,
+            'default'     => '',
+            'placeholder' => 'skončil',
+            'description' => 'Prázdne = „skončil“ / „ended“ podľa jazyka. Dátum sa berie z poľa Dátum vyššie.',
+            'condition'   => [ 'badge_after_show' => 'yes' ],
+        ]);
+        $this->xn_show_control( 'eb_hist_show', 'Po skončení ukázať na kartách prečiarknutú Early Bird cenu' );
         $this->add_control('lead_after', [
             'label'       => 'Úvodný text po skončení Early Bird',
             'type'        => \Elementor\Controls_Manager::WYSIWYG,
