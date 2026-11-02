@@ -110,11 +110,11 @@ body.admin-bar .custom-header .header__bar { top: 32px; }
 }
 
 @media (max-width: 820px) {
-    .custom-header .header__lang,
+    .custom-header .header__inner { gap: 12px; }
+    .custom-header .header__brand-text,
     .custom-header .header__cta { display: none; }
-}
-@media (max-width: 480px) {
-    .custom-header .header__brand-text { font-size: 12px; letter-spacing: .08em; }
+    .custom-header .header__lang { order: 2; }
+    .custom-header .header__nav { order: 3; }
 }
 
 /* Editor — bez fixed, aby lišta neprekrývala panel */
