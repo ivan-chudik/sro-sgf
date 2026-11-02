@@ -118,6 +118,13 @@ add_action('wp_enqueue_scripts', function() use ($dir, $uri) {
         [],
         filemtime($dir . 'partials/cookie-banner.css')
     );
+    wp_enqueue_script(
+        'xn-cookie-banner-script',
+        $uri . 'partials/cookie-banner.js',
+        [],
+        filemtime($dir . 'partials/cookie-banner.js'),
+        true
+    );
 }, 100);
 
 // ── KATEGÓRIA ────────────────────────────────────────────────────────
