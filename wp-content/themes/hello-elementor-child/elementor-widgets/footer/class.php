@@ -97,12 +97,28 @@ class Elementor_Widget_Footer extends \Elementor\Widget_Base {
         ]);
         $this->end_controls_section();
 
+        $this->start_controls_section( 'section_cookies', [
+            'label' => 'Nastavenia cookies',
+            'tab'   => \Elementor\Controls_Manager::TAB_CONTENT,
+        ]);
+        $this->xn_show_control( 'cookies_show', 'Zobraziť odkaz „Nastavenia cookies“' );
+        $this->add_control('cookies_text', [
+            'label'       => 'Text odkazu',
+            'type'        => \Elementor\Controls_Manager::TEXT,
+            'default'     => '',
+            'placeholder' => 'Nastavenia cookies / Cookie settings',
+            'description' => 'Prázdne = podľa jazyka stránky. Odkaz znova otvorí cookie lištu Complianz.',
+            'condition'   => [ 'cookies_show' => 'yes' ],
+        ]);
+        $this->end_controls_section();
+
         $this->xn_style_section( '{{WRAPPER}} .custom-footer' );
         $this->xn_style_texts([
             [ 'col_title', 'Nadpis stĺpca',   '{{WRAPPER}} .footer__col h4' ],
             [ 'col_text',  'Text stĺpca',     '{{WRAPPER}} .footer__text' ],
             [ 'col_link',  'Odkazy',          '{{WRAPPER}} .footer__text a' ],
             [ 'bottom',    'Spodný riadok',   '{{WRAPPER}} .footer__bottom' ],
+            [ 'cookies',   'Odkaz Nastavenia cookies', '{{WRAPPER}} .footer__cookies' ],
         ]);
         $this->start_controls_section('style_social', [
             'label' => 'Ikonky sociálnych sietí',

@@ -30,10 +30,23 @@ $icons = [
             <?php endforeach; ?>
         </div>
 
-        <?php if ( xn_on( $settings, 'bottom_show' ) ) : ?>
+        <?php
+        $bottom  = xn_on( $settings, 'bottom_show' );
+        $cookies = xn_on( $settings, 'cookies_show' );
+        $cookies_text = trim( (string) ( $settings['cookies_text'] ?? '' ) );
+        if ( $cookies_text === '' ) $cookies_text = xn_lang() === 'en' ? 'Cookie settings' : 'Nastavenia cookies';
+        ?>
+        <?php if ( $bottom || $cookies ) : ?>
             <div class="footer__bottom">
-                <span><?php echo esc_html( $settings['bottom_left'] ?? '' ); ?></span>
-                <span><?php echo esc_html( $settings['bottom_right'] ?? '' ); ?></span>
+                <?php if ( $bottom ) : ?>
+                    <span><?php echo esc_html( $settings['bottom_left'] ?? '' ); ?></span>
+                <?php endif; ?>
+                <?php if ( $cookies ) : ?>
+                    <a class="footer__cookies cmplz-show-banner" href="#"><?php echo esc_html( $cookies_text ); ?></a>
+                <?php endif; ?>
+                <?php if ( $bottom ) : ?>
+                    <span><?php echo esc_html( $settings['bottom_right'] ?? '' ); ?></span>
+                <?php endif; ?>
             </div>
         <?php endif; ?>
     </div>
