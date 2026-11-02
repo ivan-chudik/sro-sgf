@@ -1,0 +1,265 @@
+/* Christmas Nitra — vzhľad cookie lišty Complianz (pozícia „Stred“). Texty a kategórie nastavuje Complianz. */
+
+#cmplz-cookiebanner-container .cmplz-cookiebanner {
+    --xn-cb-bg: #0a0a0d;
+    --xn-cb-line: #2a2a33;
+    box-sizing: border-box;
+    width: min(560px, calc(100vw - 32px)) !important;
+    max-width: none !important;
+    max-height: calc(100vh - 32px);
+    overflow-y: auto;
+    padding: 30px 30px 22px !important;
+    border: 1px solid var(--xn-cb-line) !important;
+    border-radius: 24px !important;
+    background: var(--xn-cb-bg) !important;
+    color: #cfcfd8 !important;
+    font-family: var(--xn-font-text) !important;
+    font-size: 14px !important;
+    line-height: 1.5 !important;
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .62), 0 30px 70px rgba(0, 0, 0, .6) !important;
+    grid-template-columns: 1fr !important;
+    gap: 0 !important;
+}
+#cmplz-cookiebanner-container .cmplz-cookiebanner *,
+#cmplz-cookiebanner-container .cmplz-cookiebanner *::before,
+#cmplz-cookiebanner-container .cmplz-cookiebanner *::after { box-sizing: border-box; }
+#cmplz-cookiebanner-container .cmplz-cookiebanner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: var(--xn-gradient);
+}
+
+#cmplz-cookiebanner-container .cmplz-cookiebanner .cmplz-header {
+    display: flex !important;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    margin: 0 0 14px;
+}
+#cmplz-cookiebanner-container .cmplz-cookiebanner .cmplz-logo { display: none !important; }
+#cmplz-cookiebanner-container .cmplz-cookiebanner .cmplz-title {
+    margin: 0;
+    font-family: var(--xn-font) !important;
+    font-weight: 400 !important;
+    font-size: 24px !important;
+    line-height: 1.1 !important;
+    letter-spacing: .04em;
+    text-transform: uppercase;
+    text-align: left !important;
+    color: #fff !important;
+}
+#cmplz-cookiebanner-container .cmplz-cookiebanner .cmplz-close {
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 auto;
+    width: 36px;
+    height: 36px;
+    border: 1px solid var(--xn-cb-line);
+    border-radius: 50%;
+    color: #fff !important;
+    cursor: pointer;
+    transition: border-color .2s;
+}
+#cmplz-cookiebanner-container .cmplz-cookiebanner .cmplz-close:hover { border-color: var(--xn-pink); }
+#cmplz-cookiebanner-container .cmplz-cookiebanner .cmplz-close svg { width: 12px !important; height: 12px !important; }
+#cmplz-cookiebanner-container .cmplz-cookiebanner .cmplz-divider { display: none !important; }
+
+#cmplz-cookiebanner-container .cmplz-cookiebanner .cmplz-body { margin: 0; }
+#cmplz-cookiebanner-container .cmplz-cookiebanner .cmplz-message {
+    margin: 0 0 22px !important;
+    font-size: 14px !important;
+    line-height: 1.6 !important;
+    text-align: left !important;
+    color: #cfcfd8 !important;
+}
+#cmplz-cookiebanner-container .cmplz-cookiebanner .cmplz-message a { color: var(--xn-pink) !important; }
+
+/* Kategórie (po kliknutí „Zobraziť predvoľby“) */
+#cmplz-cookiebanner-container .cmplz-cookiebanner .cmplz-categories { gap: 8px; margin: 0 0 18px !important; }
+#cmplz-cookiebanner-container .cmplz-cookiebanner .cmplz-category {
+    margin: 0 0 8px !important;
+    border: 1px solid #23232b !important;
+    border-radius: 16px !important;
+    background: #15151b !important;
+    overflow: hidden;
+}
+#cmplz-cookiebanner-container .cmplz-cookiebanner .cmplz-category-header {
+    display: flex !important;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 14px 12px 18px !important;
+    background: transparent !important;
+}
+#cmplz-cookiebanner-container .cmplz-cookiebanner .cmplz-category-title {
+    flex: 1 1 auto;
+    font-family: var(--xn-font) !important;
+    font-weight: 400 !important;
+    font-size: 16px !important;
+    letter-spacing: .04em;
+    text-transform: uppercase;
+    color: #fff !important;
+}
+#cmplz-cookiebanner-container .cmplz-cookiebanner .cmplz-always-active {
+    padding: 4px 10px;
+    border: 1px solid rgba(246, 91, 128, .4);
+    border-radius: 999px;
+    font-size: 10px !important;
+    font-weight: 700 !important;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    color: var(--xn-pink) !important;
+}
+#cmplz-cookiebanner-container .cmplz-cookiebanner .cmplz-always-active .cmplz-banner-checkbox,
+#cmplz-cookiebanner-container .cmplz-cookiebanner .cmplz-banner-checkbox .cmplz-label { display: none !important; }
+#cmplz-cookiebanner-container .cmplz-cookiebanner .cmplz-consent-checkbox {
+    -webkit-appearance: none;
+    appearance: none;
+    position: relative !important;
+    display: block !important;
+    width: 44px !important;
+    height: 26px !important;
+    margin: 0 !important;
+    border: 1px solid #3a3a46;
+    border-radius: 999px;
+    background: #0a0a0d;
+    opacity: 1 !important;
+    cursor: pointer;
+    transition: background .25s, border-color .25s;
+}
+#cmplz-cookiebanner-container .cmplz-cookiebanner .cmplz-consent-checkbox::before {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: #8a8a94;
+    transition: transform .25s, background .25s;
+}
+#cmplz-cookiebanner-container .cmplz-cookiebanner .cmplz-consent-checkbox:checked { border-color: transparent; background: var(--xn-gradient); }
+#cmplz-cookiebanner-container .cmplz-cookiebanner .cmplz-consent-checkbox:checked::before { transform: translateX(18px); background: #fff; }
+#cmplz-cookiebanner-container .cmplz-cookiebanner .cmplz-category-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    border: 0;
+    background: transparent !important;
+    cursor: pointer;
+}
+#cmplz-cookiebanner-container .cmplz-cookiebanner .cmplz-category-toggle svg { width: 12px; height: 12px; fill: var(--xn-pink); }
+#cmplz-cookiebanner-container .cmplz-cookiebanner .cmplz-category-toggle[aria-expanded="true"] .cmplz-icon { transform: rotate(180deg); }
+#cmplz-cookiebanner-container .cmplz-cookiebanner .cmplz-description {
+    padding: 0 18px 14px !important;
+    font-size: 13px !important;
+    line-height: 1.55 !important;
+    color: #9a9aa6 !important;
+}
+#cmplz-cookiebanner-container .cmplz-cookiebanner .cmplz-description[hidden] { display: none !important; }
+
+/* Tlačidlá — Prijať a Odmietnuť rovnako veľké */
+#cmplz-cookiebanner-container .cmplz-cookiebanner .cmplz-buttons {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px !important;
+    margin: 0 !important;
+}
+#cmplz-cookiebanner-container .cmplz-cookiebanner .cmplz-btn {
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    width: 100% !important;
+    min-width: 0 !important;
+    height: 50px !important;
+    margin: 0 !important;
+    padding: 0 18px !important;
+    border: 2px solid #fff !important;
+    border-radius: 999px !important;
+    background: transparent !important;
+    font-family: var(--xn-font-text) !important;
+    font-weight: 700 !important;
+    font-size: 13px !important;
+    line-height: 1 !important;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: #fff !important;
+    cursor: pointer;
+    transition: background .2s, color .2s, border-color .2s;
+}
+#cmplz-cookiebanner-container .cmplz-cookiebanner .cmplz-btn.cmplz-accept {
+    background: #fff !important;
+    color: #000 !important;
+}
+#cmplz-cookiebanner-container .cmplz-cookiebanner .cmplz-btn:hover,
+#cmplz-cookiebanner-container .cmplz-cookiebanner .cmplz-btn.cmplz-accept:hover {
+    border-color: var(--xn-pink) !important;
+    background: var(--xn-pink) !important;
+    color: #fff !important;
+}
+#cmplz-cookiebanner-container .cmplz-cookiebanner .cmplz-btn.cmplz-view-preferences,
+#cmplz-cookiebanner-container .cmplz-cookiebanner .cmplz-btn.cmplz-save-preferences {
+    grid-column: 1 / -1;
+    height: 40px !important;
+    border-color: transparent !important;
+    font-size: 12px !important;
+    color: #9a9aa6 !important;
+}
+#cmplz-cookiebanner-container .cmplz-cookiebanner .cmplz-btn.cmplz-view-preferences:hover,
+#cmplz-cookiebanner-container .cmplz-cookiebanner .cmplz-btn.cmplz-save-preferences:hover {
+    border-color: transparent !important;
+    background: transparent !important;
+    color: var(--xn-pink) !important;
+}
+#cmplz-cookiebanner-container .cmplz-cookiebanner .cmplz-btn.cmplz-save-preferences {
+    height: 50px !important;
+    border-color: #fff !important;
+    color: #fff !important;
+}
+
+#cmplz-cookiebanner-container .cmplz-cookiebanner .cmplz-documents,
+#cmplz-cookiebanner-container .cmplz-cookiebanner .cmplz-links.cmplz-information { margin: 12px 0 0 !important; }
+#cmplz-cookiebanner-container .cmplz-cookiebanner .cmplz-links ul {
+    display: flex !important;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 6px 18px;
+    margin: 0 !important;
+    padding: 0 !important;
+    list-style: none;
+}
+#cmplz-cookiebanner-container .cmplz-cookiebanner .cmplz-links li { margin: 0 !important; padding: 0 !important; font-size: 12px !important; line-height: 1.4 !important; }
+#cmplz-cookiebanner-container .cmplz-cookiebanner .cmplz-links a,
+#cmplz-cookiebanner-container .cmplz-cookiebanner .cmplz-link {
+    font-size: 12px !important;
+    color: #8a8a94 !important;
+    text-decoration: underline !important;
+    text-underline-offset: 3px;
+}
+#cmplz-cookiebanner-container .cmplz-cookiebanner .cmplz-links a:hover { color: var(--xn-pink) !important; }
+
+/* Mobil — panel zospodu */
+@media (max-width: 767px) {
+    #cmplz-cookiebanner-container .cmplz-cookiebanner.cmplz-center {
+        top: auto !important;
+        bottom: 0 !important;
+        left: 0 !important;
+        right: 0 !important;
+        transform: none !important;
+        width: 100% !important;
+        max-height: 85vh;
+        padding: 26px 20px calc(16px + env(safe-area-inset-bottom)) !important;
+        border-width: 1px 0 0 !important;
+        border-radius: 24px 24px 0 0 !important;
+    }
+    #cmplz-cookiebanner-container .cmplz-cookiebanner .cmplz-title { font-size: 20px !important; }
+    #cmplz-cookiebanner-container .cmplz-cookiebanner .cmplz-message { margin-bottom: 18px !important; font-size: 13px !important; }
+    #cmplz-cookiebanner-container .cmplz-cookiebanner .cmplz-btn { height: 48px !important; padding: 0 12px !important; font-size: 12px !important; }
+}

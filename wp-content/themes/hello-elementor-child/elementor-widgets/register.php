@@ -96,6 +96,16 @@ add_action('wp_enqueue_scripts', function() use ($dir, $uri) {
     );
 }, 100);
 
+// Cookie lišta Complianz — vzhľad webu (načíta sa po CSS Complianzu)
+add_action('wp_enqueue_scripts', function() use ($dir, $uri) {
+    wp_enqueue_style(
+        'xn-cookie-banner-style',
+        $uri . 'partials/cookie-banner.css',
+        [],
+        filemtime($dir . 'partials/cookie-banner.css')
+    );
+}, 100);
+
 // ── KATEGÓRIA ────────────────────────────────────────────────────────
 add_action('elementor/elements/categories_registered', function($elements_manager) {
     $elements_manager->add_category('custom-widgets', [
