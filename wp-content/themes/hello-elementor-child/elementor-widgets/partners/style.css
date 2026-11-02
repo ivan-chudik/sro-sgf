@@ -1,11 +1,19 @@
 .custom-partners.xn-section { padding: 0 0 70px; }
 
+.custom-partners .partners__groups { display: flex; flex-wrap: wrap; align-items: stretch; justify-content: center; gap: 56px; }
+.custom-partners .partners__group { display: flex; flex-direction: column; align-items: center; }
+.custom-partners .partners__groups.has-divider .partners__group + .partners__group { padding-left: 56px; border-left: 1px solid #2a2a30; }
+
 .custom-partners .partners__label { margin-bottom: 26px; font-size: 11px; letter-spacing: .2em; text-transform: uppercase; font-weight: 700; color: #8a8a94; text-align: center; }
-.custom-partners .partners__row { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 34px; }
+.custom-partners .partners__row { display: flex; flex: 1; flex-wrap: wrap; align-items: center; justify-content: center; gap: 34px 40px; }
 .custom-partners .partners__item { display: block; }
 .custom-partners .partners__row img { height: 40px; width: auto; max-width: none; opacity: .9; transition: opacity .15s; }
 .custom-partners a.partners__item:hover img { opacity: 1; }
 
+@media (max-width: 1100px) {
+    .custom-partners .partners__groups { flex-direction: column; align-items: center; gap: 44px; }
+    .custom-partners .partners__groups.has-divider .partners__group + .partners__group { padding-left: 0; padding-top: 44px; border-left: 0; border-top: 1px solid #2a2a30; }
+}
 @media (max-width: 480px) {
     .custom-partners .partners__row { gap: 24px 28px; }
     .custom-partners .partners__row img { max-width: 100%; }

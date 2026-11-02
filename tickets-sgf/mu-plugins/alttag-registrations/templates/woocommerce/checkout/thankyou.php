@@ -121,7 +121,7 @@ if ($show_qr_section) :
         } else {
             echo '<p>' . sprintf(
                 /* translators: 1: Stream URL, 2: Stream link text, 3: event noun in genitive case */
-                __('An email to create a password will be sent. After creating it, you will be able to log in to the <a href="%1$s" target="_blank">%2$s</a> page with your email and created password to watch the online stream of the %3$s. Please also check your spam folder.', 'alttag-registrations'),
+                __('An email to create a password will be sent. After creating it, you will be able to log in to the <a href="%1$s" target="_blank">%2$s</a> page with your email and created password to watch the online stream of the %3$s.', 'alttag-registrations'),
                 esc_url($ctx->streamUrl()),
                 esc_html($ctx->streamLinkText()),
                 $noun_genitive

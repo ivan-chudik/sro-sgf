@@ -680,6 +680,20 @@ body.xnt-co-page .select2-container--default .select2-results__option[aria-selec
   transform: translateY(-1px);
 }
 
+.xnt-co-page .xnt-support {
+  margin: 14px 0 0;
+  color: var(--xnt-soft);
+  font-size: 13.5px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.xnt-co-page .xnt-support a {
+  color: #fff;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
 /* ═════════════════════════════════════════════════════════════════════════
    The three explainer cards under the whole checkout container
    ═════════════════════════════════════════════════════════════════════════ */

@@ -136,6 +136,39 @@
    ]
   },
   {
+   "id": "22da5d2",
+   "elType": "container",
+   "isInner": false,
+   "settings": {
+    "content_width": "full",
+    "padding": {
+     "unit": "px",
+     "top": "0",
+     "right": "0",
+     "bottom": "0",
+     "left": "0",
+     "isLinked": true
+    },
+    "flex_gap": {
+     "unit": "px",
+     "size": 0,
+     "column": "0",
+     "row": "0",
+     "isLinked": true
+    }
+   },
+   "elements": [
+    {
+     "id": "5f6b164",
+     "elType": "widget",
+     "widgetType": "video",
+     "isInner": false,
+     "settings": {},
+     "elements": []
+    }
+   ]
+  },
+  {
    "id": "391359a",
    "elType": "container",
    "isInner": false,
@@ -294,6 +327,39 @@
      "id": "a333c62",
      "elType": "widget",
      "widgetType": "competition",
+     "isInner": false,
+     "settings": {},
+     "elements": []
+    }
+   ]
+  },
+  {
+   "id": "dbf74c6",
+   "elType": "container",
+   "isInner": false,
+   "settings": {
+    "content_width": "full",
+    "padding": {
+     "unit": "px",
+     "top": "0",
+     "right": "0",
+     "bottom": "0",
+     "left": "0",
+     "isLinked": true
+    },
+    "flex_gap": {
+     "unit": "px",
+     "size": 0,
+     "column": "0",
+     "row": "0",
+     "isLinked": true
+    }
+   },
+   "elements": [
+    {
+     "id": "273154a",
+     "elType": "widget",
+     "widgetType": "news",
      "isInner": false,
      "settings": {},
      "elements": []

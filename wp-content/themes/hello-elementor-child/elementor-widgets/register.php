@@ -4,6 +4,8 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 require_once __DIR__ . '/partials/helpers.php';
 require_once __DIR__ . '/partials/brevo.php';
 require_once __DIR__ . '/partials/gtm.php';
+require_once __DIR__ . '/partials/news-meta.php';
+require_once __DIR__ . '/partials/eb-settings.php';
 
 // ── CSS TOKENY — priority 1 zaručí načítanie pred všetkým ───────────
 add_action('wp_head', function() { ?>
@@ -30,7 +32,17 @@ html body { background: #000; color: #fff; font-family: var(--xn-font-text); -we
 @media (min-width: 1025px) { .u-hide-desktop { display: none !important; } }
 @media (max-width: 1024px) and (min-width: 768px) { .u-hide-tablet { display: none !important; } }
 @media (max-width: 767px) { .u-hide-mobile { display: none !important; } }
+html:not(.xn-eb-over) .xn-eb-after,
+html.xn-eb-over .xn-eb-only { display: none !important; }
 </style>
+<script>
+(function (d, end) {
+    var q = location.search, over = Date.now() >= end;
+    if (q.indexOf('xn_eb=over') > -1) over = true;
+    if (q.indexOf('xn_eb=on') > -1) over = false;
+    if (over) d.documentElement.classList.add('xn-eb-over');
+})(document, <?php echo (int) xn_eb_end_ms(); ?>);
+</script>
 <?php }, 1);
 
 $dir = get_stylesheet_directory()     . '/elementor-widgets/';
@@ -41,11 +53,13 @@ $xn_widgets = [
     'hero'        => 'Elementor_Widget_Hero',
     'facts'       => 'Elementor_Widget_Facts',
     'ticker'      => 'Elementor_Widget_Ticker',
+    'video'       => 'Elementor_Widget_Video',
     'two-paths'   => 'Elementor_Widget_TwoPaths',
     'reasons'     => 'Elementor_Widget_Reasons',
     'pricing'     => 'Elementor_Widget_Pricing',
     'schedule'    => 'Elementor_Widget_Schedule',
     'competition' => 'Elementor_Widget_Competition',
+    'news'        => 'Elementor_Widget_News',
     'livestream'  => 'Elementor_Widget_Livestream',
     'faq'         => 'Elementor_Widget_Faq',
     'venue'       => 'Elementor_Widget_Venue',

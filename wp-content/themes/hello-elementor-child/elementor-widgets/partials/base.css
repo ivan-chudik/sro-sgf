@@ -20,6 +20,7 @@
 .xn-block a:focus { color: var(--xn-red); }
 
 .xn-block.xn-section { position: relative; overflow: hidden; padding: 110px 0; background: #000; }
+.xn-block[id] { scroll-margin-top: calc(var(--header-bar-h, 74px) + 8px); }
 
 .elementor-widget:has(> .xn-block),
 .elementor-widget:has(> .elementor-widget-container > .xn-block) { margin: 0 !important; }

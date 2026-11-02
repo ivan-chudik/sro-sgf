@@ -678,8 +678,7 @@ class RegistrationContext
 
     public function eventLocationWithStreet($case = 'nominative')
     {
-        $pc = $this->product();
-        $product_id = $pc ? $pc->product()->get_id() : null;
+        $product_id = $this->labelProductId();
 
         if ($case === 'locative') {
             $locative = Settings::getValue('general.venue_locative', $product_id);
@@ -1113,23 +1112,31 @@ class RegistrationContext
         return $pc ? $pc->availableDates() : get_registrations_available_dates();
     }
 
+    /**
+     * Product whose meta supplies visible labels: its translation in the
+     * page language on the order-received page, in the participant language
+     * elsewhere (see get_label_product_id()).
+     */
+    public function labelProductId()
+    {
+        $pc = $this->product();
+        $product = $pc ? $pc->product() : null;
+        if (!$product) {
+            return null;
+        }
+
+        $participant = $this->participant();
+        return get_label_product_id($product->get_id(), $participant ? $participant->language() : '');
+    }
+
     public function availableDateLabels()
     {
-        // If participant has a different language than the product, try translated product labels
-        $participant = $this->participant();
-        if ($participant && function_exists('pll_get_post')) {
-            $lang = $participant->language();
-            $pc = $this->product();
-            $product = $pc ? $pc->product() : null;
-            if ($product && $lang) {
-                $product_id = $product->get_id();
-                $translated_id = pll_get_post($product_id, $lang);
-                if ($translated_id && $translated_id !== $product_id) {
-                    $translated_pc = ProductConfig::get($translated_id);
-                    if ($translated_pc) {
-                        return $translated_pc->availableDates();
-                    }
-                }
+        // If the label language differs from the product's, try translated product labels
+        $translated_id = $this->labelProductId();
+        if ($translated_id && $translated_id !== $this->product()->product()->get_id()) {
+            $translated_pc = ProductConfig::get($translated_id);
+            if ($translated_pc) {
+                return $translated_pc->availableDates();
             }
         }
         return $this->availableDates();

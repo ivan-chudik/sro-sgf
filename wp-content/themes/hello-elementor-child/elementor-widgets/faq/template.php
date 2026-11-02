@@ -10,7 +10,8 @@ $items = array_filter( $settings['items'] ?? [], function( $i ) { return xn_fill
             <div class="faq__list">
                 <?php foreach ( $items as $item ) :
                     $answer = xn_wysiwyg( $item['answer'] ?? '' ); ?>
-                    <details class="faq__item"<?php echo xn_on( $item, 'open' ) ? ' open' : ''; ?>>
+                    <?php $eb = [ 'only' => ' xn-eb-only', 'after' => ' xn-eb-after' ][ $item['eb_show'] ?? '' ] ?? ''; ?>
+                    <details class="faq__item<?php echo esc_attr( $eb ); ?>"<?php echo xn_on( $item, 'open' ) ? ' open' : ''; ?>>
                         <summary><?php echo esc_html( $item['question'] ); ?></summary>
                         <?php if ( $answer !== '' ) : ?>
                             <div class="faq__answer"><?php echo $answer; ?></div>

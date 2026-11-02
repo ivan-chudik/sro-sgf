@@ -1,0 +1,5596 @@
+# Copyright (C) 2026 Alttag
+# This file is distributed under the GPL-3.0.
+msgid ""
+msgstr ""
+"Project-Id-Version: Alttag Registrations 1.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/alttag-registrations\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-09-09T12:30:04+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: alttag-registrations\n"
+
+#. Plugin Name of the plugin
+#: alttag-registrations.php
+msgid "Alttag Registrations"
+msgstr ""
+
+#. Description of the plugin
+#: alttag-registrations.php
+msgid "Alttag Registrations plugin for generating registrations."
+msgstr ""
+
+#. Author of the plugin
+#: alttag-registrations.php
+msgid "Alttag"
+msgstr ""
+
+#. Author URI of the plugin
+#: alttag-registrations.php
+msgid "https://alttag.digital"
+msgstr ""
+
+#: helpers.php:312
+#, php-format
+msgid "Your %s receipt"
+msgstr ""
+
+#: helpers.php:1146
+#: helpers.php:1196
+#: includes/Module/AccommodationModule.php:129
+#: includes/Module/AccommodationModule.php:244
+#: includes/Module/AccommodationModule.php:423
+#: includes/Module/AccommodationModule.php:455
+#: includes/Module/AccommodationModule.php:500
+#: includes/Module/HotelSelectionModule.php:567
+#: includes/Module/HotelSelectionModule.php:2922
+#: includes/RegistrationContext.php:1220
+#, php-format
+msgid "%d person"
+msgid_plural "%d persons"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/AdminPreview.php:58
+#: includes/AdminPreview.php:67
+#: includes/Participant/AdminUI.php:1087
+msgid "Previews"
+msgstr ""
+
+#: includes/AdminPreview.php:89
+#: includes/Participant/AdminUI.php:1103
+msgid "Open in a new tab — nothing is sent, nothing is stored."
+msgstr ""
+
+#: includes/AdminPreview.php:95
+#: includes/Participant/AdminUI.php:456
+#: includes/Participant/AdminUI.php:1107
+msgid "Preview email"
+msgstr ""
+
+#: includes/AdminPreview.php:97
+msgid "No participant yet — email preview unavailable."
+msgstr ""
+
+#: includes/AdminPreview.php:103
+#: includes/Participant/AdminUI.php:1112
+msgid "Preview thank-you page"
+msgstr ""
+
+#: includes/AdminPreview.php:107
+#: includes/Participant/AdminUI.php:1116
+msgid "Preview Stripe receipt"
+msgstr ""
+
+#: includes/AdminPreview.php:149
+msgid "Missing participant_id."
+msgstr ""
+
+#: includes/AdminPreview.php:154
+#: includes/TicketManager.php:643
+msgid "Participant not found."
+msgstr ""
+
+#: includes/AdminPreview.php:180
+msgid "Could not build email preview."
+msgstr ""
+
+#. translators: %1$s = subject, %2$d = order id, %3$d = participant id
+#: includes/AdminPreview.php:190
+#, php-format
+msgid "Email preview — %1$s (order #%2$d, participant #%3$d)"
+msgstr ""
+
+#: includes/AdminPreview.php:212
+#: includes/AdminPreview.php:235
+msgid "Missing order_id."
+msgstr ""
+
+#: includes/AdminPreview.php:217
+#: includes/AdminPreview.php:240
+msgid "Order not found."
+msgstr ""
+
+#: includes/AdminPreview.php:247
+msgid "No Stripe receipt available for this order (payment intent missing or not paid via Stripe)."
+msgstr ""
+
+#: includes/AdminPreview.php:276
+msgid "You are not allowed to preview this."
+msgstr ""
+
+#: includes/AdminPreview.php:284
+msgid "Invalid or expired preview link."
+msgstr ""
+
+#: includes/AdminPreview.php:311
+msgid "ADMIN PREVIEW"
+msgstr ""
+
+#: includes/ArchiveManager.php:89
+msgctxt "order status"
+msgid "Archived"
+msgstr ""
+
+#: includes/ArchiveManager.php:96
+msgctxt "post status"
+msgid "Archived"
+msgstr ""
+
+#: includes/ArchiveManager.php:97
+#, php-format
+msgid "Archived <span class=\"count\">(%s)</span>"
+msgid_plural "Archived <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/ArchiveManager.php:115
+#: includes/ArchiveManager.php:171
+msgid "Move to archive"
+msgstr ""
+
+#: includes/ArchiveManager.php:116
+#: includes/ArchiveManager.php:170
+msgid "Restore from archive"
+msgstr ""
+
+#: includes/ArchiveManager.php:188
+msgid "Missing parameters"
+msgstr ""
+
+#: includes/ArchiveManager.php:192
+#: includes/Participant/AdminUI.php:1313
+msgid "Forbidden"
+msgstr ""
+
+#. translators: %d: number of records moved to archive
+#: includes/ArchiveManager.php:217
+#, php-format
+msgid "%d record moved to archive."
+msgid_plural "%d records moved to archive."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %d: number of records restored from archive
+#: includes/ArchiveManager.php:222
+#, php-format
+msgid "%d record restored from archive."
+msgid_plural "%d records restored from archive."
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/ArchiveManager.php:298
+msgid "Archived"
+msgstr ""
+
+#: includes/Assets.php:68
+msgid "An error occurred"
+msgstr ""
+
+#: includes/Assets.php:69
+msgid "Operation successful"
+msgstr ""
+
+#: includes/CheckoutManager.php:145
+#, php-format
+msgid "Email %s is already registered for this product. Please use a different email address."
+msgstr ""
+
+#: includes/CheckoutManager.php:160
+#, php-format
+msgid "Email %1$s is already registered for: %2$s. Please select different days or use a different email."
+msgstr ""
+
+#: includes/CheckoutManager.php:740
+#: includes/Selection/AbstractSelection.php:503
+#: includes/Selection/DaySelection.php:18
+#: includes/Selection/DaySelection.php:118
+msgid "Select days"
+msgstr ""
+
+#: includes/CheckoutManager.php:741
+#: includes/Module/MultiDayModule.php:640
+#: includes/Module/MultiDayModule.php:952
+#: includes/Module/ParticipantTypeModule.php:836
+#: includes/Module/ParticipantTypeModule.php:985
+#: includes/Selection/DaySelection.php:119
+#: includes/Selection/ParticipantTypeSelection.php:336
+msgid "Total"
+msgstr ""
+
+#: includes/CheckoutManager.php:742
+#: includes/Selection/AbstractSelection.php:507
+#: includes/Selection/DaySelection.php:120
+msgid "days"
+msgstr ""
+
+#: includes/EventManager.php:237
+msgid "podujatie"
+msgstr ""
+
+#: includes/EventManager.php:462
+msgid "Event Details"
+msgstr ""
+
+#: includes/EventManager.php:538
+#, php-format
+msgid "Global: %s"
+msgstr ""
+
+#: includes/EventManager.php:540
+#: includes/EventManager.php:545
+msgid "Enabled"
+msgstr ""
+
+#: includes/EventManager.php:541
+#: includes/EventManager.php:546
+#: includes/PricingTiers.php:306
+msgid "Disabled"
+msgstr ""
+
+#: includes/EventManager.php:544
+msgid "Use global setting"
+msgstr ""
+
+#: includes/EventManager.php:555
+msgid "Companion Mode"
+msgstr ""
+
+#: includes/EventManager.php:557
+msgid "Full: companion name/email fields + auto-registration. Count only: just store person count, no companion fields."
+msgstr ""
+
+#: includes/EventManager.php:559
+msgid "Full (companion fields + registration)"
+msgstr ""
+
+#: includes/EventManager.php:560
+msgid "Count only (no companion fields)"
+msgstr ""
+
+#: includes/EventManager.php:567
+msgid "Hide variable symbol"
+msgstr ""
+
+#: includes/EventManager.php:569
+msgid "Hide variable symbol from email and ticket for this product."
+msgstr ""
+
+#: includes/EventManager.php:599
+msgid "Custom days & pricing"
+msgstr ""
+
+#: includes/EventManager.php:600
+msgid "Override global days & pricing for this product"
+msgstr ""
+
+#: includes/EventManager.php:608
+msgid "Using global:"
+msgstr ""
+
+#: includes/EventManager.php:619
+#: includes/Settings.php:554
+msgid "Days & Pricing"
+msgstr ""
+
+#: includes/EventManager.php:621
+msgid "Date, label and price per day per person."
+msgstr ""
+
+#: includes/EventManager.php:633
+msgid "Friday 10.4."
+msgstr ""
+
+#: includes/EventManager.php:645
+msgid "Add day"
+msgstr ""
+
+#: includes/EventManager.php:651
+#: includes/Selection/AbstractSelection.php:504
+#: includes/Settings.php:561
+msgid "Multi-day discounts"
+msgstr ""
+
+#: includes/EventManager.php:652
+msgid "optional, overrides per-day sum"
+msgstr ""
+
+#: includes/EventManager.php:661
+msgid "days ="
+msgstr ""
+
+#: includes/EventManager.php:672
+msgid "Add tier"
+msgstr ""
+
+#: includes/FieldBuilder.php:463
+#: includes/Participant/Import.php:468
+msgid "Name"
+msgstr ""
+
+#: includes/FieldBuilder.php:471
+#: includes/FieldBuilderPage.php:748
+#: includes/FieldBuilderPage.php:772
+#: includes/Module/HotelSelectionModule.php:854
+#: includes/Participant/AdminUI.php:192
+#: includes/Participant/Import.php:126
+#: includes/Participant/Import.php:342
+#: includes/Participant/Import.php:366
+#: includes/Participant/Import.php:425
+#: includes/Participant/Import.php:467
+#: includes/Participant/Manager.php:60
+#: includes/Settings.php:306
+#: includes/TicketDesignerSettings.php:407
+#: includes/TicketManager.php:47
+#: templates/verification-page.php:121
+msgid "Email"
+msgstr ""
+
+#: includes/FieldBuilder.php:472
+#: includes/Participant/AdminUI.php:193
+#: includes/Participant/Import.php:367
+#: includes/Participant/Manager.php:61
+#: includes/TicketDesignerSettings.php:408
+#: includes/TicketManager.php:52
+#: templates/verification-page.php:122
+msgid "Phone"
+msgstr ""
+
+#: includes/FieldBuilder.php:489
+#: includes/Participant/Import.php:368
+msgid "Company"
+msgstr ""
+
+#: includes/FieldBuilder.php:503
+#: includes/Participant/PostType.php:202
+#: templates/verification-page.php:20
+msgid "Address"
+msgstr ""
+
+#: includes/FieldBuilder.php:511
+#: includes/Participant/Manager.php:67
+#: includes/TicketDesignerSettings.php:415
+#: includes/TicketManager.php:89
+#: includes/WooCommerceManager.php:1394
+#: includes/WooCommerceManager.php:1438
+#: templates/verification-page.php:124
+msgid "Business ID"
+msgstr ""
+
+#: includes/FieldBuilder.php:512
+#: includes/Participant/Manager.php:69
+#: includes/TicketDesignerSettings.php:417
+#: includes/TicketManager.php:99
+#: includes/WooCommerceManager.php:1448
+#: templates/verification-page.php:126
+msgid "VAT ID"
+msgstr ""
+
+#: includes/FieldBuilder.php:513
+#: includes/Participant/Manager.php:68
+#: includes/TicketDesignerSettings.php:416
+#: includes/TicketManager.php:94
+#: includes/WooCommerceManager.php:1395
+#: includes/WooCommerceManager.php:1443
+#: templates/verification-page.php:125
+msgid "Tax ID"
+msgstr ""
+
+#: includes/FieldBuilder.php:530
+msgid "Variable symbol"
+msgstr ""
+
+#: includes/FieldBuilder.php:592
+#: includes/Module/AccommodationModule.php:330
+#: includes/Module/AccommodationModule.php:337
+#: includes/Module/AccommodationModule.php:415
+#: includes/Module/AccommodationModule.php:447
+#: includes/Module/AccommodationModule.php:497
+#: includes/Module/CompanionRegistrationModule.php:670
+#: includes/Participant/AdminUI.php:425
+#: includes/Participant/Import.php:329
+msgid "Yes"
+msgstr ""
+
+#: includes/FieldBuilder.php:592
+#: includes/Module/AccommodationModule.php:324
+#: includes/Module/AccommodationModule.php:497
+#: includes/Participant/AdminUI.php:427
+#: includes/Participant/Import.php:329
+msgid "No"
+msgstr ""
+
+#: includes/FieldBuilder.php:612
+msgid "Order notes"
+msgstr ""
+
+#: includes/FieldBuilder.php:1047
+msgid "Invalid JSON format"
+msgstr ""
+
+#: includes/FieldBuilder.php:1051
+msgid "No field definitions found in JSON"
+msgstr ""
+
+#: includes/FieldBuilder.php:1058
+#, php-format
+msgid "Field \"%s\" is missing required \"key\" property"
+msgstr ""
+
+#: includes/FieldBuilderPage.php:25
+#: includes/FieldBuilderPage.php:26
+#: includes/FieldBuilderPage.php:322
+msgid "Field Builder"
+msgstr ""
+
+#: includes/FieldBuilderPage.php:55
+msgid "Are you sure you want to delete this field?"
+msgstr ""
+
+#: includes/FieldBuilderPage.php:56
+msgid "Field key is required"
+msgstr ""
+
+#: includes/FieldBuilderPage.php:57
+msgid "A field with this key already exists"
+msgstr ""
+
+#: includes/FieldBuilderPage.php:97
+msgid "No file selected"
+msgstr ""
+
+#: includes/FieldBuilderPage.php:109
+msgid "Fields imported successfully"
+msgstr ""
+
+#: includes/FieldBuilderPage.php:124
+msgid "Fields saved successfully"
+msgstr ""
+
+#: includes/FieldBuilderPage.php:333
+msgid "Export JSON"
+msgstr ""
+
+#: includes/FieldBuilderPage.php:340
+msgid "Merge"
+msgstr ""
+
+#: includes/FieldBuilderPage.php:342
+msgid "Import JSON"
+msgstr ""
+
+#: includes/FieldBuilderPage.php:360
+msgid "Add Field"
+msgstr ""
+
+#: includes/FieldBuilderPage.php:364
+msgid "Save Fields"
+msgstr ""
+
+#: includes/FieldBuilderPage.php:398
+msgid "System"
+msgstr ""
+
+#: includes/FieldBuilderPage.php:402
+#: includes/Participant/Email.php:284
+msgid "Delete"
+msgstr ""
+
+#: includes/FieldBuilderPage.php:410
+#: includes/Module/SessionModule.php:249
+#: includes/PricingTiers.php:270
+msgid "Key"
+msgstr ""
+
+#: includes/FieldBuilderPage.php:424
+msgid "Labels"
+msgstr ""
+
+#: includes/FieldBuilderPage.php:442
+#: includes/Module/ParticipantTypeModule.php:939
+#: templates/admin/ticket-designer-settings.php:229
+msgid "Type"
+msgstr ""
+
+#: includes/FieldBuilderPage.php:457
+msgid "Options (one per line)"
+msgstr ""
+
+#: includes/FieldBuilderPage.php:477
+msgid "One option per line. Use \"value|Label\" for separate value and label, or just \"Label\" for both."
+msgstr ""
+
+#: includes/FieldBuilderPage.php:484
+msgid "Required"
+msgstr ""
+
+#: includes/FieldBuilderPage.php:495
+msgid "Visible only for products (IDs)"
+msgstr ""
+
+#: includes/FieldBuilderPage.php:508
+msgid "Comma-separated WooCommerce product IDs. Leave empty to show for all products."
+msgstr ""
+
+#: includes/FieldBuilderPage.php:515
+msgid "Hidden for products (IDs)"
+msgstr ""
+
+#: includes/FieldBuilderPage.php:528
+msgid "Comma-separated WooCommerce product IDs where this field should be hidden. Useful for system fields you want to suppress on specific events."
+msgstr ""
+
+#: includes/FieldBuilderPage.php:535
+#: includes/GroupSeatingUI.php:63
+#: includes/GroupSeatingUI.php:89
+#: includes/GroupSeatingUI.php:105
+#: includes/GroupSeatingUI.php:111
+#: includes/GroupSeatingUI.php:478
+msgid "Group"
+msgstr ""
+
+#: includes/FieldBuilderPage.php:550
+msgid "Priority"
+msgstr ""
+
+#: includes/FieldBuilderPage.php:561
+msgid "Show in"
+msgstr ""
+
+#: includes/FieldBuilderPage.php:579
+msgid "Ticket Only"
+msgstr ""
+
+#: includes/FieldBuilderPage.php:585
+msgid "Field is for ticket/verification display only, not shown on checkout"
+msgstr ""
+
+#: includes/FieldBuilderPage.php:591
+msgid "Ticket Display"
+msgstr ""
+
+#: includes/FieldBuilderPage.php:606
+msgid "Show on ticket"
+msgstr ""
+
+#: includes/FieldBuilderPage.php:610
+msgid "Column:"
+msgstr ""
+
+#: includes/FieldBuilderPage.php:618
+msgid "First"
+msgstr ""
+
+#: includes/FieldBuilderPage.php:621
+msgid "Second"
+msgstr ""
+
+#: includes/FieldBuilderPage.php:628
+msgid "Ticket Labels:"
+msgstr ""
+
+#: includes/FieldBuilderPage.php:649
+msgid "Admin Column"
+msgstr ""
+
+#: includes/FieldBuilderPage.php:657
+msgid "Show as column in participant list"
+msgstr ""
+
+#: includes/FieldBuilderPage.php:661
+msgid "Position:"
+msgstr ""
+
+#: includes/FieldBuilderPage.php:664
+msgid "Before Actions"
+msgstr ""
+
+#: includes/FieldBuilderPage.php:667
+msgid "After Name"
+msgstr ""
+
+#: includes/FieldBuilderPage.php:670
+msgid "After Email"
+msgstr ""
+
+#: includes/FieldBuilderPage.php:675
+msgid "Format:"
+msgstr ""
+
+#: includes/FieldBuilderPage.php:678
+#: includes/FieldBuilderPage.php:747
+#: templates/admin/partials/content-row-item.php:36
+#: templates/admin/ticket-designer-settings.php:808
+msgid "Text"
+msgstr ""
+
+#: includes/FieldBuilderPage.php:681
+msgid "Boolean (✓/✗)"
+msgstr ""
+
+#: includes/FieldBuilderPage.php:684
+#: includes/Module/SessionModule.php:201
+#: templates/verification-page.php:272
+msgid "Date"
+msgstr ""
+
+#: includes/FieldBuilderPage.php:693
+msgid "Sortable"
+msgstr ""
+
+#: includes/FieldBuilderPage.php:700
+msgid "Admin Filter"
+msgstr ""
+
+#: includes/FieldBuilderPage.php:708
+msgid "Show as filter dropdown in participant list"
+msgstr ""
+
+#: includes/FieldBuilderPage.php:715
+msgid "Export/Import"
+msgstr ""
+
+#: includes/FieldBuilderPage.php:723
+msgid "Include in Excel export"
+msgstr ""
+
+#: includes/FieldBuilderPage.php:730
+msgid "Accept in import"
+msgstr ""
+
+#: includes/FieldBuilderPage.php:749
+msgid "Textarea"
+msgstr ""
+
+#: includes/FieldBuilderPage.php:750
+#: includes/Module/AccommodationModule.php:127
+#: includes/Selection/SessionSelection.php:360
+#: includes/Selection/SessionSelection.php:374
+#: includes/Selection/SessionSelection.php:405
+#: includes/Selection/SessionSelection.php:418
+msgid "Select"
+msgstr ""
+
+#: includes/FieldBuilderPage.php:751
+msgid "Checkbox"
+msgstr ""
+
+#: includes/FieldBuilderPage.php:752
+#: includes/Module/MultiDayModule.php:422
+#: includes/Participant/Manager.php:66
+#: includes/TicketDesignerSettings.php:412
+#: includes/TicketManager.php:62
+#: templates/verification-page.php:130
+msgid "Country"
+msgstr ""
+
+#: includes/FieldBuilderPage.php:759
+msgid "Common"
+msgstr ""
+
+#: includes/FieldBuilderPage.php:760
+msgid "Billing"
+msgstr ""
+
+#: includes/FieldBuilderPage.php:761
+msgid "Participation"
+msgstr ""
+
+#: includes/FieldBuilderPage.php:762
+#: includes/Module/HotelSelectionModule.php:2155
+#: includes/Module/HotelSelectionModule.php:2161
+#: includes/Module/HotelSelectionModule.php:2497
+#: includes/Module/HotelSelectionModule.php:2533
+#: includes/Module/HotelSelectionModule.php:2819
+msgid "Hotel"
+msgstr ""
+
+#: includes/FieldBuilderPage.php:763
+msgid "Custom"
+msgstr ""
+
+#: includes/FieldBuilderPage.php:770
+#: includes/Settings.php:305
+msgid "Checkout"
+msgstr ""
+
+#: includes/FieldBuilderPage.php:771
+msgid "Admin"
+msgstr ""
+
+#: includes/FieldBuilderPage.php:773
+msgid "Verification"
+msgstr ""
+
+#: includes/FieldBuilderPage.php:774
+msgid "Export"
+msgstr ""
+
+#: includes/GroupSeating.php:485
+#: includes/GroupSeating.php:511
+#: includes/ProductGroup.php:529
+msgid "Expired request, please reload the page."
+msgstr ""
+
+#. translators: 1: people in the order, 2: seats left in the wave
+#: includes/GroupSeating.php:701
+msgid "We can no longer keep %1$s together in this time slot - %2$s remain, but only separately. Please choose another time or register the people separately."
+msgstr ""
+
+#: includes/GroupSeating.php:675
+msgid "This time slot is sold out. Please choose another one."
+msgstr ""
+
+#. translators: %s: the time slot stored on the order
+#: includes/GroupSeating.php:947
+#, php-format
+msgid "Time slot \"%s\" no longer exists on the product and could not be matched."
+msgstr ""
+
+#. translators: 1: station letter on the order, 2: time slot
+#: includes/GroupSeating.php:959
+#, php-format
+msgid "Station \"%1$s\" does not exist in time slot \"%2$s\" and no station holds the same position."
+msgstr ""
+
+#. translators: 1: seats the participants add up to, 2: seats currently booked on the order
+#: includes/GroupSeating.php:1066
+#, php-format
+msgid "The participants add up to %1$d seats but the order books %2$d, and their participant types do not cover the difference. Correct the line item by hand."
+msgstr ""
+
+#. translators: 1: administrator identity, 2: changed seat counts
+#: includes/GroupSeating.php:1262
+#, php-format
+msgid "Participant seat counts changed by %1$s: %2$s."
+msgstr ""
+
+#: includes/GroupSeating.php:1774
+#: includes/Module/GroupSeatingModule.php:46
+msgid "Grouped seating"
+msgstr ""
+
+#: includes/GroupSeating.php:1775
+msgid "Assign each booking to a station inside the time slot it chose."
+msgstr ""
+
+#: includes/GroupSeating.php:1781
+#: includes/Module/GroupSeatingModule.php:80
+msgid "Stations per time slot"
+msgstr ""
+
+#: includes/GroupSeating.php:1785
+msgid "Seats per station = the time slot capacity divided by this number."
+msgstr ""
+
+#: includes/GroupSeatingUI.php:130
+msgid "Group (seating)"
+msgstr ""
+
+#: includes/GroupSeatingUI.php:143
+msgid "This product does not use grouped seating."
+msgstr ""
+
+#: includes/GroupSeatingUI.php:149
+#: includes/GroupSeatingUI.php:430
+msgid "No time slots are configured for this product."
+msgstr ""
+
+#: includes/GroupSeatingUI.php:161
+msgid "not assigned"
+msgstr ""
+
+#: includes/GroupSeatingUI.php:182
+msgid "Moves the whole booking, because a booking sits together in one station. Capacity is not enforced here, the numbers next to each station are shown so you can decide."
+msgstr ""
+
+#: includes/GroupSeatingUI.php:213
+msgid "Seat counts"
+msgstr ""
+
+#. translators: %s: participant type
+#: includes/GroupSeatingUI.php:224
+#, php-format
+msgid "Decrease %s"
+msgstr ""
+
+#. translators: %s: participant type
+#: includes/GroupSeatingUI.php:235
+#, php-format
+msgid "Seat count for %s"
+msgstr ""
+
+#. translators: %s: participant type
+#: includes/GroupSeatingUI.php:243
+#, php-format
+msgid "Increase %s"
+msgstr ""
+
+#: includes/GroupSeatingUI.php:251
+msgid "Saving updates occupancy immediately. Zero removes every seat of that type."
+msgstr ""
+
+#: includes/GroupSeatingUI.php:382
+#: includes/GroupSeatingUI.php:383
+#: includes/GroupSeatingUI.php:400
+msgid "Group capacity"
+msgstr ""
+
+#: includes/GroupSeatingUI.php:413
+msgid "Recalculate groups"
+msgstr ""
+
+#: includes/GroupSeatingUI.php:420
+msgid "No product uses grouped seating yet. Enable it in the product Inventory tab."
+msgstr ""
+
+#. translators: 1: booked people, 2: total seats
+#: includes/GroupSeatingUI.php:451
+#, php-format
+msgid "Booked: %1$d of %2$d"
+msgstr ""
+
+#: includes/GroupSeatingUI.php:462
+msgid "Only participants with a valid order are counted towards occupancy; cancelled, refunded and failed orders are not."
+msgstr ""
+
+#: includes/GroupSeatingUI.php:477
+#: includes/Module/CompanionRegistrationModule.php:654
+#: includes/Module/SessionModule.php:55
+#: includes/Module/SessionModule.php:947
+#: includes/Module/SessionModule.php:990
+#: includes/Module/SessionModule.php:1249
+#: includes/Selection/SessionSelection.php:295
+msgid "Time slot"
+msgstr ""
+
+#: includes/GroupSeatingUI.php:479
+msgid "Booked"
+msgstr ""
+
+#: includes/GroupSeatingUI.php:480
+msgid "Artificial increase"
+msgstr ""
+
+#: includes/GroupSeatingUI.php:481
+msgid "Free seats"
+msgstr ""
+
+#: includes/GroupSeatingUI.php:532
+msgid "Save increase"
+msgstr ""
+
+#: includes/GroupSeatingUI.php:539
+msgid "Artificial seats are display-only: they do not create participants and do not change real capacity. Customers see fewer free seats in checkout (at zero it looks sold out), but orders, exports, check-in and e-mails are never blocked."
+msgstr ""
+
+#: includes/GroupSeatingUI.php:570
+#: includes/GroupSeatingUI.php:665
+msgid "The link has expired, please reload the page and try again."
+msgstr ""
+
+#. translators: 1: orders checked, 2: groups fixed, 3: waves fixed, 4: participants updated, 5: parties restored
+#: includes/GroupSeatingUI.php:594
+#, php-format
+msgid "Groups recalculated: %1$d orders checked, %2$d groups fixed, %3$d waves fixed, %4$d participants updated, %5$d parties restored."
+msgstr ""
+
+#: includes/GroupSeatingUI.php:607
+msgid "Orders that could not be recalculated automatically:"
+msgstr ""
+
+#. translators: 1: order number, 2: why the order could not be recalculated
+#: includes/GroupSeatingUI.php:612
+#, php-format
+msgid "Order #%1$d: %2$s"
+msgstr ""
+
+#. translators: %d: artificial seats saved
+#: includes/GroupSeatingUI.php:706
+#, php-format
+msgid "Artificial increase saved (+%d)."
+msgstr ""
+
+#: includes/Module/AccommodationModule.php:20
+#: includes/Module/AccommodationModule.php:288
+#: includes/Module/HotelSelectionModule.php:1661
+#: includes/Module/HotelSelectionModule.php:1793
+#: includes/Module/HotelSelectionModule.php:1797
+#: includes/Module/HotelSelectionModule.php:2526
+#: includes/Module/HotelSelectionModule.php:2527
+#: includes/Module/HotelSelectionModule.php:2611
+#: includes/Module/HotelSelectionModule.php:2811
+msgid "Accommodation"
+msgstr ""
+
+#: includes/Module/AccommodationModule.php:25
+msgid "Add accommodation request with person count to checkout, emails, tickets, and admin."
+msgstr ""
+
+#: includes/Module/AccommodationModule.php:43
+msgid "Accommodation Label"
+msgstr ""
+
+#: includes/Module/AccommodationModule.php:45
+#: includes/Module/AccommodationModule.php:111
+#: includes/Module/CompanionRegistrationModule.php:665
+msgid "Hotel accommodation"
+msgstr ""
+
+#: includes/Module/AccommodationModule.php:46
+msgid "Label shown on checkout, emails, and tickets"
+msgstr ""
+
+#: includes/Module/AccommodationModule.php:49
+msgid "Organizer Paid Label"
+msgstr ""
+
+#: includes/Module/AccommodationModule.php:52
+msgid "Optional label like \"paid by organizer\". Leave empty to hide."
+msgstr ""
+
+#: includes/Module/AccommodationModule.php:55
+msgid "Max persons"
+msgstr ""
+
+#: includes/Module/AccommodationModule.php:58
+msgid "Maximum persons per accommodation (creates select 1..N)"
+msgstr ""
+
+#: includes/Module/AccommodationModule.php:171
+#: includes/Module/AccommodationModule.php:192
+#: includes/Module/AccommodationModule.php:422
+#: includes/Module/AccommodationModule.php:454
+#: includes/Module/AccommodationModule.php:511
+msgid "Number of persons"
+msgstr ""
+
+#: includes/Module/AccommodationModule.php:293
+msgid "Accommodation Person Count"
+msgstr ""
+
+#: includes/Module/AccommodationModule.php:294
+msgid "Number of persons (accommodation)"
+msgstr ""
+
+#: includes/Module/AccommodationModule.php:336
+#, php-format
+msgid "%d pers."
+msgid_plural "%d pers."
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/Module/AccommodationModule.php:359
+#, php-format
+msgid "All (%s)"
+msgstr ""
+
+#: includes/Module/AccommodationModule.php:360
+msgid "With accommodation"
+msgstr ""
+
+#: includes/Module/AccommodationModule.php:361
+msgid "Without accommodation"
+msgstr ""
+
+#: includes/Module/AccommodationModule.php:469
+msgid "Accommodation: Number of persons"
+msgstr ""
+
+#: includes/Module/CompanionRegistrationModule.php:20
+msgid "Companion Registration"
+msgstr ""
+
+#: includes/Module/CompanionRegistrationModule.php:25
+msgid "Register a companion (colleague, guest) alongside the main registrant. Creates a separate participant with ticket and sends confirmation email."
+msgstr ""
+
+#: includes/Module/CompanionRegistrationModule.php:43
+msgid "Companion Label"
+msgstr ""
+
+#: includes/Module/CompanionRegistrationModule.php:45
+#: includes/Module/CompanionRegistrationModule.php:112
+msgid "companion"
+msgstr ""
+
+#: includes/Module/CompanionRegistrationModule.php:46
+msgid "Label for companion (e.g. \"colleague\", \"companion\", \"guest\")"
+msgstr ""
+
+#: includes/Module/CompanionRegistrationModule.php:49
+msgid "Send confirmation email to companion"
+msgstr ""
+
+#: includes/Module/CompanionRegistrationModule.php:52
+msgid "Send ticket and confirmation email to the companion after registration"
+msgstr ""
+
+#: includes/Module/CompanionRegistrationModule.php:246
+#, php-format
+msgid "Register a %s"
+msgstr ""
+
+#: includes/Module/CompanionRegistrationModule.php:255
+#: includes/Module/CompanionRegistrationModule.php:775
+#: includes/Module/CompanionRegistrationModule.php:941
+#, php-format
+msgid "First name of %s"
+msgstr ""
+
+#: includes/Module/CompanionRegistrationModule.php:263
+#: includes/Module/CompanionRegistrationModule.php:779
+#: includes/Module/CompanionRegistrationModule.php:942
+#, php-format
+msgid "Last name of %s"
+msgstr ""
+
+#: includes/Module/CompanionRegistrationModule.php:271
+#: includes/Module/CompanionRegistrationModule.php:783
+#: includes/Module/CompanionRegistrationModule.php:868
+#: includes/Module/CompanionRegistrationModule.php:943
+#, php-format
+msgid "Email of %s"
+msgstr ""
+
+#: includes/Module/CompanionRegistrationModule.php:521
+msgid "Auto-registered as companion"
+msgstr ""
+
+#: includes/Module/CompanionRegistrationModule.php:607
+#, php-format
+msgid "Registration confirmation - %s"
+msgstr ""
+
+#: includes/Module/CompanionRegistrationModule.php:613
+msgid "Registration confirmation"
+msgstr ""
+
+#: includes/Module/CompanionRegistrationModule.php:619
+#: includes/Module/HotelSelectionModule.php:2076
+#: includes/RegistrationContext.php:887
+#: includes/ThankYouPage.php:54
+#, php-format
+msgid "Dear %s,"
+msgstr ""
+
+#: includes/Module/CompanionRegistrationModule.php:625
+#, php-format
+msgid "You have been registered for %1$s, taking place on %2$s at %3$s."
+msgstr ""
+
+#: includes/Module/CompanionRegistrationModule.php:632
+#, php-format
+msgid "You have been registered for %1$s, taking place on %2$s."
+msgstr ""
+
+#: includes/Module/CompanionRegistrationModule.php:640
+#, php-format
+msgid "Registered by: %1$s (%2$s)"
+msgstr ""
+
+#: includes/Module/CompanionRegistrationModule.php:648
+#: includes/Module/SessionModule.php:705
+#: includes/Module/SessionModule.php:939
+#: includes/Module/SessionModule.php:976
+#: includes/Module/SessionModule.php:1121
+#: includes/Module/SessionModule.php:1176
+#: includes/Module/SessionModule.php:1248
+#: includes/Selection/SessionSelection.php:35
+msgid "Session"
+msgstr ""
+
+#: includes/Module/CompanionRegistrationModule.php:651
+#: includes/Module/SessionModule.php:202
+#: includes/Module/SessionModule.php:943
+#: includes/Module/SessionModule.php:984
+msgid "Time"
+msgstr ""
+
+#: includes/Module/CompanionRegistrationModule.php:660
+#: includes/Module/SessionModule.php:954
+#: includes/Module/SessionModule.php:1000
+#: includes/Module/SessionModule.php:1122
+#: includes/Module/SessionModule.php:1185
+#: includes/ProductGroup.php:399
+msgid "Location"
+msgstr ""
+
+#: includes/Module/CompanionRegistrationModule.php:682
+msgid "Your ticket with QR code:"
+msgstr ""
+
+#: includes/Module/CompanionRegistrationModule.php:688
+msgid "We look forward to seeing you!"
+msgstr ""
+
+#: includes/Module/CompanionRegistrationModule.php:743
+#, php-format
+msgid "%1$s %2$s has been automatically registered and will receive an email with a ticket."
+msgstr ""
+
+#: includes/Module/CompanionRegistrationModule.php:787
+#: includes/Module/CompanionRegistrationModule.php:808
+#: includes/Module/CompanionRegistrationModule.php:944
+#: includes/Module/MultiParticipantModule.php:119
+msgid "Registered by"
+msgstr ""
+
+#: includes/Module/CompanionRegistrationModule.php:792
+#: includes/Module/CompanionRegistrationModule.php:945
+msgid "Registered by email"
+msgstr ""
+
+#: includes/Module/CompanionRegistrationModule.php:874
+#, php-format
+msgid "%s has been automatically registered and will receive an email with a ticket."
+msgstr ""
+
+#: includes/Module/CompanionRegistrationModule.php:1003
+#: includes/Module/HotelSelectionModule.php:171
+#: includes/Module/MultiDayModule.php:867
+#: includes/Module/ParticipantTypeModule.php:940
+msgid "Persons"
+msgstr ""
+
+#: includes/Module/CompanionRegistrationModule.php:1004
+#: includes/Module/MultiDayModule.php:868
+#: includes/Module/ParticipantTypeModule.php:941
+#: includes/Participant/Import.php:371
+#: includes/PricingTiers.php:301
+msgid "Status"
+msgstr ""
+
+#: includes/Module/CompanionRegistrationModule.php:1005
+#: includes/Participant/AdminUI.php:197
+#: includes/Participant/Email.php:254
+msgid "Actions"
+msgstr ""
+
+#: includes/Module/CompanionRegistrationModule.php:1013
+#: includes/Module/MultiDayModule.php:889
+#: includes/Module/ParticipantTypeModule.php:1016
+#: templates/verification-page.php:162
+msgid "Registered"
+msgstr ""
+
+#: includes/Module/CompanionRegistrationModule.php:1015
+#: includes/Module/ParticipantTypeModule.php:1019
+#: includes/Participant/Manager.php:86
+#: templates/verification-page.php:164
+msgid "Partial"
+msgstr ""
+
+#: includes/Module/CompanionRegistrationModule.php:1017
+#: includes/Module/MultiDayModule.php:891
+#: includes/Module/ParticipantTypeModule.php:1021
+#: includes/Participant/AdminUI.php:434
+#: includes/Participant/Import.php:163
+#: includes/Participant/Manager.php:84
+#: includes/Participant/Manager.php:118
+#: includes/Participant/Manager.php:140
+#: includes/VerificationManager.php:974
+#: templates/verification-page.php:166
+msgid "Pending"
+msgstr ""
+
+#: includes/Module/CompanionRegistrationModule.php:1027
+#: includes/Module/MultiDayModule.php:904
+#: includes/Module/ParticipantTypeModule.php:955
+msgid "Add one person"
+msgstr ""
+
+#: includes/Module/CompanionRegistrationModule.php:1035
+#: includes/Module/MultiDayModule.php:912
+#: includes/Module/ParticipantTypeModule.php:956
+msgid "Remove one person"
+msgstr ""
+
+#: includes/Module/CompanionRegistrationModule.php:1043
+#: includes/Module/MultiDayModule.php:920
+#: includes/Module/ParticipantTypeModule.php:957
+msgid "All"
+msgstr ""
+
+#: includes/Module/CompanionRegistrationModule.php:1051
+#: includes/Module/MultiDayModule.php:928
+#: includes/Module/MultiDayModule.php:978
+#: includes/Module/ParticipantTypeModule.php:958
+#: includes/Module/ParticipantTypeModule.php:1005
+msgid "Cancel All"
+msgstr ""
+
+#: includes/Module/CompanionRegistrationModule.php:1105
+#, php-format
+msgid "Person count: %d/%d"
+msgstr ""
+
+#: includes/Module/GroupSeatingModule.php:51
+msgid "Split each time slot into stations and place every booking into one of them, keeping a booking together."
+msgstr ""
+
+#: includes/Module/GroupSeatingModule.php:83
+msgid "Used when a product does not set its own number. The seats of a time slot are divided between them."
+msgstr ""
+
+#: includes/Module/GroupSeatingModule.php:91
+msgid "Station names"
+msgstr ""
+
+#: includes/Module/GroupSeatingModule.php:93
+msgid "Comma separated, in order. Leave empty for A, B, C, ..."
+msgstr ""
+
+#: includes/Module/HotelSelectionModule.php:76
+#: includes/Module/HotelSelectionModule.php:2586
+msgid "Hotel selection"
+msgstr ""
+
+#: includes/Module/HotelSelectionModule.php:81
+msgid "Adds a hotel-product picker to checkout. Products in the configured taxonomy term become room-type options. Each product can opt into per-person pricing (a price matrix by person count, explicit 1- and 2-person prices, or a per-extra-person surcharge) and define its own min/max persons range. Customizations can append site-specific reminders via the alttag_hotel_email_after_info / alttag_hotel_thankyou_after_info actions."
+msgstr ""
+
+#: includes/Module/HotelSelectionModule.php:147
+msgid "Hotel product category slug"
+msgstr ""
+
+#: includes/Module/HotelSelectionModule.php:150
+msgid "Products in this product_cat taxonomy term are offered as room types."
+msgstr ""
+
+#: includes/Module/HotelSelectionModule.php:156
+msgid "Accommodation checkbox label"
+msgstr ""
+
+#: includes/Module/HotelSelectionModule.php:159
+msgid "I am interested in accommodation"
+msgstr ""
+
+#: includes/Module/HotelSelectionModule.php:162
+msgid "Room type field label"
+msgstr ""
+
+#: includes/Module/HotelSelectionModule.php:165
+msgid "Type of room"
+msgstr ""
+
+#: includes/Module/HotelSelectionModule.php:168
+msgid "Persons field label"
+msgstr ""
+
+#: includes/Module/HotelSelectionModule.php:174
+msgid "Second guest first name label"
+msgstr ""
+
+#: includes/Module/HotelSelectionModule.php:177
+msgid "Second guest first name"
+msgstr ""
+
+#: includes/Module/HotelSelectionModule.php:180
+msgid "Second guest last name label"
+msgstr ""
+
+#: includes/Module/HotelSelectionModule.php:183
+msgid "Second guest last name"
+msgstr ""
+
+#: includes/Module/HotelSelectionModule.php:186
+msgid "Second guest name label (display)"
+msgstr ""
+
+#: includes/Module/HotelSelectionModule.php:189
+msgid "Second guest name"
+msgstr ""
+
+#: includes/Module/HotelSelectionModule.php:190
+msgid "Used for display only (cart summary, email, invoice, thank-you). Two separate first/last name inputs are shown at checkout."
+msgstr ""
+
+#: includes/Module/HotelSelectionModule.php:197
+msgid "Second guest email label"
+msgstr ""
+
+#: includes/Module/HotelSelectionModule.php:200
+msgid "Second guest email"
+msgstr ""
+
+#: includes/Module/HotelSelectionModule.php:203
+msgid "Send notification email to second guest"
+msgstr ""
+
+#: includes/Module/HotelSelectionModule.php:206
+msgid "When the order is paid, send the second guest an email about the accommodation and the need to purchase a conference ticket separately."
+msgstr ""
+
+#: includes/Module/HotelSelectionModule.php:213
+msgid "Guest notification – email subject"
+msgstr ""
+
+#: includes/Module/HotelSelectionModule.php:216
+#: includes/Module/HotelSelectionModule.php:222
+msgid "Supports {event_name}."
+msgstr ""
+
+#: includes/Module/HotelSelectionModule.php:219
+msgid "Guest notification – email heading"
+msgstr ""
+
+#: includes/Module/HotelSelectionModule.php:225
+msgid "Guest notification – intro paragraph"
+msgstr ""
+
+#: includes/Module/HotelSelectionModule.php:228
+msgid "Supports {event_name}, {event_dates}, {hotel_guest_name}."
+msgstr ""
+
+#: includes/Module/HotelSelectionModule.php:234
+msgid "Guest notification – registrant info"
+msgstr ""
+
+#: includes/Module/HotelSelectionModule.php:237
+msgid "Supports {registrant_name}, {registrant_email}. Hidden when both are empty."
+msgstr ""
+
+#: includes/Module/HotelSelectionModule.php:243
+msgid "Guest notification – notice title"
+msgstr ""
+
+#: includes/Module/HotelSelectionModule.php:248
+msgid "Guest notification – notice body"
+msgstr ""
+
+#: includes/Module/HotelSelectionModule.php:251
+msgid "Supports {registration_url} (rendered as a link)."
+msgstr ""
+
+#: includes/Module/HotelSelectionModule.php:257
+msgid "Guest notification – outro paragraph"
+msgstr ""
+
+#: includes/Module/HotelSelectionModule.php:262
+msgid "Guest notification – registration URL"
+msgstr ""
+
+#: includes/Module/HotelSelectionModule.php:264
+msgid "URL where the second guest can buy a ticket."
+msgstr ""
+
+#: includes/Module/HotelSelectionModule.php:267
+msgid "Maximum persons per room"
+msgstr ""
+
+#: includes/Module/HotelSelectionModule.php:270
+msgid "Default maximum value in the persons selector. Individual hotel products can override it."
+msgstr ""
+
+#: includes/Module/HotelSelectionModule.php:280
+msgid "Hotel: price for 1 person"
+msgstr ""
+
+#: includes/Module/HotelSelectionModule.php:285
+msgid "Price applied when this hotel product is purchased with 1 person."
+msgstr ""
+
+#: includes/Module/HotelSelectionModule.php:291
+msgid "Hotel: price for 2 persons"
+msgstr ""
+
+#: includes/Module/HotelSelectionModule.php:296
+msgid "Price applied when this hotel product is purchased with 2 persons. Setting both 1- and 2-person prices enables the default explicit per-person pricing strategy."
+msgstr ""
+
+#: includes/Module/HotelSelectionModule.php:304
+msgid "Hotel: surcharge per extra person"
+msgstr ""
+
+#: includes/Module/HotelSelectionModule.php:309
+msgid "Amount added per additional person beyond the first. Used when no price matrix or explicit 1-/2-person price matches the selected persons count. Persons selector visibility is controlled by the product min/max persons range."
+msgstr ""
+
+#: includes/Module/HotelSelectionModule.php:318
+msgid "Hotel: price by person count"
+msgstr ""
+
+#: includes/Module/HotelSelectionModule.php:323
+msgid "Optional non-linear price matrix. Use semicolon- or newline-separated entries in the form \"count:price\" or \"count=price\", e.g. \"1:100; 2:180; 3:250; 4:320\". When the chosen persons count matches an entry, that price is used; missing counts fall through to the other pricing options below."
+msgstr ""
+
+#: includes/Module/HotelSelectionModule.php:334
+msgid "Hotel: minimum persons"
+msgstr ""
+
+#: includes/Module/HotelSelectionModule.php:339
+msgid "Lowest value the persons selector offers for this product. Defaults to 1."
+msgstr ""
+
+#: includes/Module/HotelSelectionModule.php:345
+msgid "Hotel: maximum persons"
+msgstr ""
+
+#: includes/Module/HotelSelectionModule.php:350
+msgid "Highest value the persons selector offers for this product. Defaults to the global \"Maximum persons per room\" setting."
+msgstr ""
+
+#: includes/Module/HotelSelectionModule.php:534
+msgid "Other rooms"
+msgstr ""
+
+#: includes/Module/HotelSelectionModule.php:564
+msgid "— select —"
+msgstr ""
+
+#: includes/Module/HotelSelectionModule.php:813
+#, php-format
+msgid "%d available"
+msgstr ""
+
+#: includes/Module/HotelSelectionModule.php:842
+msgid "— select a night —"
+msgstr ""
+
+#: includes/Module/HotelSelectionModule.php:843
+msgid "— select a room —"
+msgstr ""
+
+#: includes/Module/HotelSelectionModule.php:844
+msgid "+ Add accommodation"
+msgstr ""
+
+#: includes/Module/HotelSelectionModule.php:845
+msgid "Remove this accommodation"
+msgstr ""
+
+#: includes/Module/HotelSelectionModule.php:846
+#: includes/Module/HotelSelectionModule.php:1256
+msgid "Night"
+msgstr ""
+
+#: includes/Module/HotelSelectionModule.php:852
+#: includes/Module/MultiParticipantModule.php:302
+#: includes/Module/MultiParticipantModule.php:825
+msgid "First name"
+msgstr ""
+
+#: includes/Module/HotelSelectionModule.php:853
+#: includes/Module/MultiParticipantModule.php:303
+#: includes/Module/MultiParticipantModule.php:827
+msgid "Last name"
+msgstr ""
+
+#: includes/Module/HotelSelectionModule.php:855
+msgid "First guest"
+msgstr ""
+
+#: includes/Module/HotelSelectionModule.php:856
+msgid "Second guest"
+msgstr ""
+
+#. translators: %d is the guest ordinal (3, 4, …)
+#. translators: %d is the guest ordinal (2, 3, 4, …)
+#: includes/Module/HotelSelectionModule.php:858
+#: includes/Module/HotelSelectionModule.php:1408
+#, php-format
+msgid "Guest %d"
+msgstr ""
+
+#: includes/Module/HotelSelectionModule.php:1082
+#: includes/Module/HotelSelectionModule.php:1142
+msgid "Please add at least one accommodation or uncheck \"I am interested in accommodation\"."
+msgstr ""
+
+#: includes/Module/HotelSelectionModule.php:1107
+msgid "Please select a night for each accommodation row."
+msgstr ""
+
+#: includes/Module/HotelSelectionModule.php:1115
+msgid "Please select a valid room for each accommodation row."
+msgstr ""
+
+#: includes/Module/HotelSelectionModule.php:1129
+msgid "Please select the number of persons."
+msgstr ""
+
+#: includes/Module/HotelSelectionModule.php:1280
+msgid "Base price"
+msgstr ""
+
+#. translators: 1: guest full name, 2: guest email
+#: includes/Module/HotelSelectionModule.php:1378
+#, php-format
+msgid "%1$s (%2$s)"
+msgstr ""
+
+#. translators: 1: guest contact info, 2: incremental cost added by this guest
+#: includes/Module/HotelSelectionModule.php:1389
+#, php-format
+msgid "%1$s — +%2$s"
+msgstr ""
+
+#. translators: %d is the guest ordinal (2, 3, 4, …)
+#: includes/Module/HotelSelectionModule.php:1418
+#, php-format
+msgid "Name and surname of guest %d"
+msgstr ""
+
+#. translators: %d is the guest ordinal (2, 3, 4, …)
+#: includes/Module/HotelSelectionModule.php:1424
+#, php-format
+msgid "Email of guest %d"
+msgstr ""
+
+#: includes/Module/HotelSelectionModule.php:1722
+#: includes/Module/HotelSelectionModule.php:1847
+msgid "Important notice:"
+msgstr ""
+
+#: includes/Module/HotelSelectionModule.php:1749
+#, php-format
+msgid "Guest <strong>%1$s</strong> - if interested in attending the conference, they must buy a ticket separately %2$shere%3$s."
+msgid_plural "Guests <strong>%1$s</strong> - if interested in attending the conference, they must buy a ticket separately %2$shere%3$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: section label "Accommodation", 2: night label
+#: includes/Module/HotelSelectionModule.php:1792
+#, php-format
+msgid "%1$s — %2$s"
+msgstr ""
+
+#: includes/Module/HotelSelectionModule.php:2044
+#, php-format
+msgid "Accommodation information - %s"
+msgstr ""
+
+#: includes/Module/HotelSelectionModule.php:2349
+msgid "Hold Ctrl/Cmd to select multiple hotels"
+msgstr ""
+
+#: includes/Module/HotelSelectionModule.php:2500
+#: includes/Module/HotelSelectionModule.php:2538
+msgid "Hotel product ID"
+msgstr ""
+
+#. translators: %s is the lowest price for a room (e.g. "139,65 €")
+#: includes/Module/HotelSelectionModule.php:2955
+#, php-format
+msgid "from %s"
+msgstr ""
+
+#: includes/Module/LivestreamModule.php:30
+#: includes/Module/MultiDayModule.php:424
+#: includes/Participant/PostType.php:230
+msgid "Livestream"
+msgstr ""
+
+#: includes/Module/LivestreamModule.php:35
+msgid "Enable online/livestream attendance with access management."
+msgstr ""
+
+#: includes/Module/LivestreamModule.php:53
+msgid "Stream URL"
+msgstr ""
+
+#: includes/Module/LivestreamModule.php:55
+msgid "URL of the livestream page"
+msgstr ""
+
+#: includes/Module/LivestreamModule.php:60
+msgid "Stream Link Text"
+msgstr ""
+
+#: includes/Module/LivestreamModule.php:62
+msgid "Text displayed for the stream link"
+msgstr ""
+
+#: includes/Module/LivestreamModule.php:68
+msgid "Webhook URL"
+msgstr ""
+
+#: includes/Module/LivestreamModule.php:70
+msgid "URL to send livestream access webhooks"
+msgstr ""
+
+#: includes/Module/LivestreamModule.php:184
+#, php-format
+msgid "Recording access granted for %s"
+msgstr ""
+
+#: includes/Module/LivestreamModule.php:185
+#, php-format
+msgid "Livestream access granted for %s"
+msgstr ""
+
+#: includes/Module/MembershipModule.php:35
+msgid "Memberships"
+msgstr ""
+
+#: includes/Module/MembershipModule.php:40
+msgid "Detect membership products by category and override checkout field labels, email title/body, Stripe receipt and SuperFaktura invoice text."
+msgstr ""
+
+#: includes/Module/MembershipModule.php:57
+msgid "Membership product category slug"
+msgstr ""
+
+#: includes/Module/MembershipModule.php:59
+msgid "Product category slug used to detect membership products (e.g. \"membership-product\")."
+msgstr ""
+
+#: includes/Module/MembershipModule.php:65
+msgid "Checkout – first name field label"
+msgstr ""
+
+#: includes/Module/MembershipModule.php:70
+msgid "Checkout – last name field label"
+msgstr ""
+
+#: includes/Module/MembershipModule.php:75
+msgid "Checkout – email field label"
+msgstr ""
+
+#: includes/Module/MembershipModule.php:80
+msgid "SuperFaktura invoice participant label"
+msgstr ""
+
+#: includes/Module/MembershipModule.php:85
+msgid "Replaces \"Participant:\" in SF comment for membership orders."
+msgstr ""
+
+#: includes/Module/MembershipModule.php:91
+#: includes/Module/RecordingModule.php:66
+msgid "Email title (paid)"
+msgstr ""
+
+#: includes/Module/MembershipModule.php:96
+#: includes/Module/MembershipModule.php:104
+#: includes/Module/MembershipModule.php:112
+#: includes/Module/MembershipModule.php:120
+#: includes/Module/MembershipModule.php:128
+#: includes/Module/MembershipModule.php:147
+#: includes/Module/MembershipModule.php:161
+#: includes/Module/MembershipModule.php:169
+#: includes/Module/MembershipModule.php:186
+#: includes/Module/RecordingModule.php:71
+#: includes/Module/RecordingModule.php:79
+#: includes/Module/RecordingModule.php:87
+#: includes/Module/RecordingModule.php:95
+#: includes/Module/RecordingModule.php:103
+#: includes/Module/RecordingModule.php:111
+#: includes/Module/RecordingModule.php:128
+msgid "Supports {product_name}."
+msgstr ""
+
+#: includes/Module/MembershipModule.php:99
+#: includes/Module/RecordingModule.php:74
+msgid "Email title (unpaid)"
+msgstr ""
+
+#: includes/Module/MembershipModule.php:107
+#: includes/Module/RecordingModule.php:82
+msgid "Payment-confirmation body text"
+msgstr ""
+
+#: includes/Module/MembershipModule.php:115
+#: includes/Module/RecordingModule.php:90
+msgid "Registration-confirmation body text"
+msgstr ""
+
+#: includes/Module/MembershipModule.php:123
+msgid "Stripe receipt \"from\" template"
+msgstr ""
+
+#: includes/Module/MembershipModule.php:131
+msgid "Stripe receipt heading template"
+msgstr ""
+
+#: includes/Module/MembershipModule.php:136
+msgid "Supports {product_name}. Replaces \"Your {event} receipt\" portion."
+msgstr ""
+
+#: includes/Module/MembershipModule.php:142
+msgid "Stripe receipt email subject template"
+msgstr ""
+
+#: includes/Module/MembershipModule.php:150
+msgid "Hide info text on Stripe receipts"
+msgstr ""
+
+#: includes/Module/MembershipModule.php:156
+#: includes/Module/RecordingModule.php:98
+msgid "Thank-you heading (paid)"
+msgstr ""
+
+#: includes/Module/MembershipModule.php:164
+#: includes/Module/RecordingModule.php:106
+msgid "Thank-you heading (unpaid)"
+msgstr ""
+
+#: includes/Module/MembershipModule.php:172
+#: includes/Module/RecordingModule.php:114
+msgid "Thank-you greeting template"
+msgstr ""
+
+#: includes/Module/MembershipModule.php:175
+#: includes/Module/RecordingModule.php:117
+msgid "Replaces standard greeting on the thank-you page. Supports {full_name}."
+msgstr ""
+
+#: includes/Module/MembershipModule.php:181
+#: includes/Module/RecordingModule.php:123
+msgid "Thank-you info box title template"
+msgstr ""
+
+#: includes/Module/MembershipModule.php:189
+#: includes/Module/RecordingModule.php:131
+msgid "Thank-you info box body"
+msgstr ""
+
+#: includes/Module/MembershipModule.php:563
+#: includes/Module/MultiParticipantModule.php:242
+#: includes/WooCommerceManager.php:789
+msgid "Participant:"
+msgstr ""
+
+#: includes/Module/MultiDayModule.php:29
+msgid "Multi-day Registrations"
+msgstr ""
+
+#: includes/Module/MultiDayModule.php:34
+msgid "Extended participant features for multi-day events with per-day tracking and verification."
+msgstr ""
+
+#: includes/Module/MultiDayModule.php:52
+msgid "Enable Multi-Day Features"
+msgstr ""
+
+#: includes/Module/MultiDayModule.php:54
+msgid "Enable selected-days columns, per-day verification tools and multi-day participant admin helpers"
+msgstr ""
+
+#: includes/Module/MultiDayModule.php:57
+msgid "Enable Multi-Day Duplicate Validation"
+msgstr ""
+
+#: includes/Module/MultiDayModule.php:59
+msgid "Block overlapping day registrations for the same email on equivalent products"
+msgstr ""
+
+#: includes/Module/MultiDayModule.php:107
+#: includes/Module/MultiDayModule.php:368
+#: includes/Module/MultiDayModule.php:490
+#: includes/Module/SessionModule.php:703
+#: includes/Module/SessionModule.php:1120
+#: includes/Module/SessionModule.php:1143
+#: includes/Participant/AdminUI.php:194
+#: includes/Participant/Manager.php:56
+#: includes/VerificationManager.php:150
+#: templates/verification-page.php:143
+msgid "Product"
+msgstr ""
+
+#: includes/Module/MultiDayModule.php:109
+#: includes/Module/MultiDayModule.php:371
+#: includes/Module/MultiDayModule.php:496
+#: includes/ThankYouPage.php:83
+#: includes/TicketDesignerSettings.php:420
+#: includes/TicketManager.php:158
+#: includes/VerificationManager.php:151
+#: templates/verification-page.php:144
+msgid "Selected days"
+msgstr ""
+
+#: includes/Module/MultiDayModule.php:198
+msgid "All participants"
+msgstr ""
+
+#: includes/Module/MultiDayModule.php:199
+msgid "Livestream users"
+msgstr ""
+
+#: includes/Module/MultiDayModule.php:200
+msgid "In-person participants"
+msgstr ""
+
+#: includes/Module/MultiDayModule.php:218
+msgid "Planned for any day"
+msgstr ""
+
+#: includes/Module/MultiDayModule.php:230
+msgid "Attended on any day"
+msgstr ""
+
+#: includes/Module/MultiDayModule.php:372
+msgid "Total persons"
+msgstr ""
+
+#: includes/Module/MultiDayModule.php:373
+msgid "Registered days"
+msgstr ""
+
+#: includes/Module/MultiDayModule.php:374
+msgid "Verified persons"
+msgstr ""
+
+#: includes/Module/MultiDayModule.php:419
+#: includes/TicketDesignerSettings.php:409
+#: includes/TicketManager.php:79
+#: templates/verification-page.php:127
+msgid "Street"
+msgstr ""
+
+#: includes/Module/MultiDayModule.php:420
+#: includes/Participant/Manager.php:64
+#: includes/ProductGroup.php:634
+#: includes/TicketDesignerSettings.php:411
+#: includes/TicketManager.php:57
+#: includes/WooCommerceManager.php:1388
+#: templates/verification-page.php:128
+msgid "City"
+msgstr ""
+
+#: includes/Module/MultiDayModule.php:421
+#: includes/Participant/Manager.php:65
+#: includes/TicketDesignerSettings.php:410
+#: includes/TicketManager.php:84
+#: templates/verification-page.php:129
+msgid "ZIP"
+msgstr ""
+
+#: includes/Module/MultiDayModule.php:587
+msgid "Persons per day"
+msgstr ""
+
+#: includes/Module/MultiDayModule.php:665
+msgid "Mark the days this person attended on site (works for online/livestream tickets too)."
+msgstr ""
+
+#: includes/Module/MultiDayModule.php:678
+msgid "Attended in person"
+msgstr ""
+
+#: includes/Module/MultiDayModule.php:777
+#, php-format
+msgid "added %s"
+msgstr ""
+
+#: includes/Module/MultiDayModule.php:780
+#, php-format
+msgid "removed %s"
+msgstr ""
+
+#: includes/Module/MultiDayModule.php:784
+#, php-format
+msgid "On-site attendance updated (%s) by %s"
+msgstr ""
+
+#: includes/Module/MultiDayModule.php:815
+#, php-format
+msgid "Selected days: %s"
+msgstr ""
+
+#: includes/Module/MultiDayModule.php:863
+msgid "Registration per day"
+msgstr ""
+
+#: includes/Module/MultiDayModule.php:866
+msgid "Day"
+msgstr ""
+
+#: includes/Module/MultiDayModule.php:869
+#: includes/Module/ParticipantTypeModule.php:942
+msgid "Action"
+msgstr ""
+
+#: includes/Module/MultiDayModule.php:937
+#: includes/Participant/Email.php:238
+#: includes/Participant/Email.php:688
+#: includes/Participant/Import.php:205
+#: includes/Participant/Import.php:506
+msgid "Cancel"
+msgstr ""
+
+#: includes/Module/MultiDayModule.php:939
+msgid "Register"
+msgstr ""
+
+#: includes/Module/MultiDayModule.php:970
+#: includes/Module/ParticipantTypeModule.php:997
+msgid "Register All"
+msgstr ""
+
+#: includes/Module/MultiParticipantModule.php:36
+msgid "Multi-participant Checkout"
+msgstr ""
+
+#: includes/Module/MultiParticipantModule.php:41
+msgid "Collect first name, last name, e-mail and job title per attendee when Number of Seats > 1. Each attendee becomes a separate participant with their own ticket and confirmation e-mail."
+msgstr ""
+
+#. translators: 1: 1-based participant number, 2: full name, 3: e-mail
+#: includes/Module/MultiParticipantModule.php:228
+#, php-format
+msgid "Participant %1$d: %2$s (%3$s)"
+msgstr ""
+
+#: includes/Module/MultiParticipantModule.php:301
+#, php-format
+msgid "Attendee %d"
+msgstr ""
+
+#: includes/Module/MultiParticipantModule.php:304
+#: includes/Module/MultiParticipantModule.php:829
+msgid "E-mail"
+msgstr ""
+
+#: includes/Module/MultiParticipantModule.php:305
+#: includes/Module/MultiParticipantModule.php:749
+#: includes/Module/MultiParticipantModule.php:831
+msgid "Job title"
+msgstr ""
+
+#: includes/Module/MultiParticipantModule.php:306
+msgid "e.g. DevOps Engineer"
+msgstr ""
+
+#: includes/Module/MultiParticipantModule.php:307
+msgid "Additional attendees will receive their own ticket by email. Company info from the buyer is copied automatically."
+msgstr ""
+
+#. translators: 1: number of missing attendee entries, 2: total expected extras
+#: includes/Module/MultiParticipantModule.php:348
+#, php-format
+msgid "Please fill in the additional attendee field (%1$d of %2$d missing)."
+msgid_plural "Please fill in all additional attendee fields (%1$d of %2$d missing)."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: attendee number, 2: field label
+#: includes/Module/MultiParticipantModule.php:391
+#, php-format
+msgid "Attendee %1$d: %2$s is required."
+msgstr ""
+
+#: includes/Module/MultiParticipantModule.php:406
+#, php-format
+msgid "Attendee %d: e-mail address is not valid."
+msgstr ""
+
+#: includes/Module/MultiParticipantModule.php:416
+#, php-format
+msgid "Attendee %d: e-mail must be different from the buyer and other attendees."
+msgstr ""
+
+#. translators: 1: attendee number, 2: e-mail
+#: includes/Module/MultiParticipantModule.php:434
+#, php-format
+msgid "Attendee %1$d: e-mail %2$s is already registered for this product. Use a different e-mail address."
+msgstr ""
+
+#: includes/Module/MultiParticipantModule.php:741
+msgid "Registered by (name)"
+msgstr ""
+
+#: includes/Module/MultiParticipantModule.php:745
+msgid "Registered by (e-mail)"
+msgstr ""
+
+#: includes/Module/NotificationModule.php:22
+msgid "Sales Notifications"
+msgstr ""
+
+#: includes/Module/NotificationModule.php:27
+msgid "Send email notifications when registration count reaches configured thresholds."
+msgstr ""
+
+#: includes/Module/NotificationModule.php:44
+msgid "Notification Email"
+msgstr ""
+
+#: includes/Module/NotificationModule.php:46
+msgid "Email address to receive sales threshold notifications"
+msgstr ""
+
+#: includes/Module/NotificationModule.php:49
+msgid "In-person Threshold"
+msgstr ""
+
+#: includes/Module/NotificationModule.php:51
+msgid "Send notification when in-person registrations reach this count"
+msgstr ""
+
+#: includes/Module/NotificationModule.php:54
+msgid "Livestream Threshold"
+msgstr ""
+
+#: includes/Module/NotificationModule.php:56
+msgid "Send notification when livestream registrations reach this count"
+msgstr ""
+
+#: includes/Module/ParticipantTypeModule.php:51
+#: includes/Module/ParticipantTypeModule.php:132
+#: includes/Module/ParticipantTypeModule.php:325
+#: includes/Module/ParticipantTypeModule.php:326
+msgid "Participant Types"
+msgstr ""
+
+#: includes/Module/ParticipantTypeModule.php:56
+msgid "Let customers pick how many participants of each type (Adult, Child, …) to register, with per-type pricing."
+msgstr ""
+
+#: includes/Module/ParticipantTypeModule.php:157
+msgid "Define participant categories and their prices. Customer picks how many of each at checkout. Enable this module on the \"General\" tab under \"Participant Types\"."
+msgstr ""
+
+#: includes/Module/ParticipantTypeModule.php:163
+msgid "ID"
+msgstr ""
+
+#: includes/Module/ParticipantTypeModule.php:164
+#: includes/Module/SessionModule.php:203
+#: includes/Module/SessionModule.php:236
+#: includes/PricingTiers.php:271
+msgid "Label"
+msgstr ""
+
+#: includes/Module/ParticipantTypeModule.php:165
+#: includes/Participant/Manager.php:70
+#: includes/PricingTiers.php:272
+msgid "Price"
+msgstr ""
+
+#: includes/Module/ParticipantTypeModule.php:166
+msgid "Min"
+msgstr ""
+
+#: includes/Module/ParticipantTypeModule.php:167
+msgid "Max"
+msgstr ""
+
+#: includes/Module/ParticipantTypeModule.php:168
+msgid "Per-type pricing tiers by selected day count. Format: 1:4.00, 2:6.00. Overrides Price when DaySelection is active."
+msgstr ""
+
+#: includes/Module/ParticipantTypeModule.php:168
+msgid "Tiers (days:price)"
+msgstr ""
+
+#: includes/Module/ParticipantTypeModule.php:178
+msgid "Adult"
+msgstr ""
+
+#: includes/Module/ParticipantTypeModule.php:199
+msgid "Add type"
+msgstr ""
+
+#: includes/Module/ParticipantTypeModule.php:535
+#, php-format
+msgid "Participants: %s"
+msgstr ""
+
+#: includes/Module/ParticipantTypeModule.php:567
+#: includes/Module/ParticipantTypeModule.php:585
+#: includes/Module/ParticipantTypeModule.php:611
+#: includes/Module/ParticipantTypeModule.php:644
+#: includes/Module/ParticipantTypeModule.php:792
+#: includes/Participant/PostType.php:43
+#: includes/Participant/PostType.php:45
+#: includes/Selection/ParticipantTypeSelection.php:28
+#: includes/Selection/ParticipantTypeSelection.php:36
+msgid "Participants"
+msgstr ""
+
+#: includes/Module/ParticipantTypeModule.php:723
+msgid "People total"
+msgstr ""
+
+#: includes/Module/ParticipantTypeModule.php:726
+msgid "People checked in"
+msgstr ""
+
+#: includes/Module/ParticipantTypeModule.php:936
+msgid "Check-in per participant type"
+msgstr ""
+
+#: includes/Module/ParticipantTypeModule.php:1177
+#: includes/VerificationManager.php:757
+msgid "all persons checked out"
+msgstr ""
+
+#: includes/Module/ParticipantTypeModule.php:1189
+#: includes/VerificationManager.php:714
+msgid "all persons checked in"
+msgstr ""
+
+#: includes/Module/ParticipantTypeModule.php:1192
+#: includes/VerificationManager.php:210
+msgid "person checked in"
+msgstr ""
+
+#: includes/Module/ParticipantTypeModule.php:1194
+#: includes/VerificationManager.php:261
+msgid "person checked out"
+msgstr ""
+
+#: includes/Module/ParticipantTypeModule.php:1236
+#, php-format
+msgid "Bulk registered all participants (%s) by %s"
+msgstr ""
+
+#: includes/Module/ParticipantTypeModule.php:1255
+#, php-format
+msgid "Bulk cancelled all participants by %s"
+msgstr ""
+
+#: includes/Module/RecordingModule.php:36
+msgid "Recordings"
+msgstr ""
+
+#: includes/Module/RecordingModule.php:41
+msgid "Detect recording products by category and override email title/body and the thank-you page (no ticket, no QR)."
+msgstr ""
+
+#: includes/Module/RecordingModule.php:58
+msgid "Recording product category slug"
+msgstr ""
+
+#: includes/Module/RecordingModule.php:60
+msgid "Product category slug used to detect recording products (e.g. \"recording-product\")."
+msgstr ""
+
+#: includes/Module/SessionModule.php:25
+#: includes/Module/SessionModule.php:169
+msgid "Sessions"
+msgstr ""
+
+#: includes/Module/SessionModule.php:30
+msgid "Session date picker with optional time slots, capacity limits, and auto-close before event."
+msgstr ""
+
+#: includes/Module/SessionModule.php:48
+msgid "Session Field Label"
+msgstr ""
+
+#: includes/Module/SessionModule.php:50
+msgid "Training date"
+msgstr ""
+
+#: includes/Module/SessionModule.php:53
+msgid "Slot Field Label"
+msgstr ""
+
+#: includes/Module/SessionModule.php:58
+msgid "Show product column & filter"
+msgstr ""
+
+#: includes/Module/SessionModule.php:61
+msgid "Show product name column and product filter in participant list"
+msgstr ""
+
+#: includes/Module/SessionModule.php:64
+msgid "Block duplicate session registrations"
+msgstr ""
+
+#: includes/Module/SessionModule.php:67
+msgid "Reject checkout if the same email is already registered for the same product and session date."
+msgstr ""
+
+#: includes/Module/SessionModule.php:188
+msgid "Session Dates"
+msgstr ""
+
+#: includes/Module/SessionModule.php:189
+msgid "Configure session dates with optional time slots."
+msgstr ""
+
+#: includes/Module/SessionModule.php:204
+msgid "Exact datetime when registration closes"
+msgstr ""
+
+#: includes/Module/SessionModule.php:204
+msgid "Close at"
+msgstr ""
+
+#: includes/Module/SessionModule.php:207
+msgid "Capacity"
+msgstr ""
+
+#: includes/Module/SessionModule.php:218
+msgid "Label (e.g. city)"
+msgstr ""
+
+#: includes/Module/SessionModule.php:225
+#: includes/Module/SessionModule.php:309
+msgid "per slot"
+msgstr ""
+
+#: includes/Module/SessionModule.php:227
+#: includes/Module/SessionModule.php:307
+msgid "Hide slots"
+msgstr ""
+
+#: includes/Module/SessionModule.php:227
+msgid "+ Slots"
+msgstr ""
+
+#: includes/Module/SessionModule.php:228
+#: includes/Module/SessionModule.php:316
+msgid "Hide meta"
+msgstr ""
+
+#: includes/Module/SessionModule.php:228
+#: includes/Module/SessionModule.php:255
+msgid "+ Meta"
+msgstr ""
+
+#: includes/Module/SessionModule.php:243
+msgid "+ Slot"
+msgstr ""
+
+#: includes/Module/SessionModule.php:250
+msgid "Value"
+msgstr ""
+
+#: includes/Module/SessionModule.php:263
+msgid "+ Session Date"
+msgstr ""
+
+#: includes/Module/SessionModule.php:671
+msgid "Session Date"
+msgstr ""
+
+#: includes/Module/SessionModule.php:676
+msgid "Time Slot"
+msgstr ""
+
+#: includes/Module/SessionModule.php:681
+#: includes/Participant/Manager.php:55
+msgid "Product ID"
+msgstr ""
+
+#: includes/Module/SessionModule.php:686
+msgid "Product Name"
+msgstr ""
+
+#: includes/Module/SessionModule.php:762
+msgid "All sessions"
+msgstr ""
+
+#: includes/Module/SessionModule.php:917
+#, php-format
+msgid "we look forward to seeing you at <strong>%1$s</strong>, which will take place on <strong>%2$s</strong> at <strong>%3$s</strong>."
+msgstr ""
+
+#: includes/Module/SessionModule.php:925
+#, php-format
+msgid "we look forward to seeing you at <strong>%1$s</strong>, which will take place on <strong>%2$s</strong>."
+msgstr ""
+
+#: includes/Module/SessionModule.php:1032
+#: includes/RegistrationContext.php:912
+#, php-format
+msgid "%1$s, which will take place on %2$s at %3$s"
+msgstr ""
+
+#: includes/Module/SessionModule.php:1040
+#: includes/RegistrationContext.php:905
+#, php-format
+msgid "%1$s, which will take place on %2$s"
+msgstr ""
+
+#: includes/Module/SessionModule.php:1389
+#, php-format
+msgid "The email %1$s is already registered for \"%2$s\" on %3$s."
+msgstr ""
+
+#: includes/Module/WebhookImportModule.php:29
+msgid "Webhook Import"
+msgstr ""
+
+#: includes/Module/WebhookImportModule.php:34
+msgid "REST API endpoint that allows external apps (e.g. stream platform) to create and update participants."
+msgstr ""
+
+#: includes/Module/WebhookImportModule.php:46
+msgid "Webhook Key"
+msgstr ""
+
+#: includes/Module/WebhookImportModule.php:48
+msgid "Secret key for webhook authentication"
+msgstr ""
+
+#: includes/Participant/AdminUI.php:190
+#: includes/Participant/Import.php:364
+#: includes/Participant/Manager.php:58
+#: includes/TicketDesignerSettings.php:405
+#: includes/TicketManager.php:32
+#: templates/verification-page.php:119
+msgid "First Name"
+msgstr ""
+
+#: includes/Participant/AdminUI.php:191
+#: includes/Participant/Import.php:365
+#: includes/Participant/Manager.php:59
+#: includes/TicketDesignerSettings.php:406
+#: includes/TicketManager.php:37
+#: templates/verification-page.php:120
+msgid "Last Name"
+msgstr ""
+
+#: includes/Participant/AdminUI.php:195
+#: includes/Participant/Manager.php:80
+#: templates/verification-page.php:6
+#: templates/verification-page.php:134
+msgid "Registration Status"
+msgstr ""
+
+#: includes/Participant/AdminUI.php:196
+#: includes/Participant/Manager.php:98
+msgid "Create Date"
+msgstr ""
+
+#: includes/Participant/AdminUI.php:207
+msgid "Payment"
+msgstr ""
+
+#: includes/Participant/AdminUI.php:217
+msgid "Lang"
+msgstr ""
+
+#: includes/Participant/AdminUI.php:226
+msgid "Livestream User"
+msgstr ""
+
+#: includes/Participant/AdminUI.php:227
+#: includes/Participant/Manager.php:113
+msgid "Livestream Access"
+msgstr ""
+
+#: includes/Participant/AdminUI.php:397
+#: includes/Participant/AdminUI.php:401
+#, php-format
+msgid "Order status: %s"
+msgstr ""
+
+#: includes/Participant/AdminUI.php:398
+msgid "Paid"
+msgstr ""
+
+#: includes/Participant/AdminUI.php:402
+msgid "Unpaid"
+msgstr ""
+
+#: includes/Participant/AdminUI.php:433
+#: includes/Participant/Manager.php:117
+#: includes/Participant/Manager.php:139
+msgid "Not Granted"
+msgstr ""
+
+#: includes/Participant/AdminUI.php:435
+#: includes/Participant/Manager.php:119
+#: includes/Participant/Manager.php:141
+msgid "Granted"
+msgstr ""
+
+#: includes/Participant/AdminUI.php:436
+#: includes/Participant/Manager.php:120
+#: includes/Participant/Manager.php:142
+msgid "Failed"
+msgstr ""
+
+#: includes/Participant/AdminUI.php:722
+msgid "Export Filtered to Excel"
+msgstr ""
+
+#: includes/Participant/AdminUI.php:731
+#, php-format
+msgid "Export selected to Excel (%d)"
+msgstr ""
+
+#: includes/Participant/AdminUI.php:732
+#: includes/Participant/Export.php:99
+msgid "Export selected to Excel"
+msgstr ""
+
+#: includes/Participant/AdminUI.php:736
+msgid "Export All to Excel"
+msgstr ""
+
+#: includes/Participant/AdminUI.php:738
+msgid "Download All Tickets"
+msgstr ""
+
+#: includes/Participant/AdminUI.php:832
+msgid "All Products"
+msgstr ""
+
+#: includes/Participant/AdminUI.php:851
+msgid "All time slots"
+msgstr ""
+
+#: includes/Participant/AdminUI.php:867
+msgid "All groups"
+msgstr ""
+
+#: includes/Participant/AdminUI.php:882
+msgid "All Registration Statuses"
+msgstr ""
+
+#: includes/Participant/AdminUI.php:902
+msgid "All Languages"
+msgstr ""
+
+#: includes/Participant/AdminUI.php:921
+msgid "All Promo Codes"
+msgstr ""
+
+#: includes/Participant/AdminUI.php:922
+msgid "No Promo Code"
+msgstr ""
+
+#: includes/Participant/AdminUI.php:937
+#: includes/Participant/PostType.php:50
+msgid "All Participants"
+msgstr ""
+
+#: includes/Participant/AdminUI.php:941
+msgid "Imported"
+msgstr ""
+
+#: includes/Participant/AdminUI.php:946
+msgid "Not Imported"
+msgstr ""
+
+#: includes/Participant/AdminUI.php:965
+#: includes/PricingTiers.php:279
+msgid "From"
+msgstr ""
+
+#: includes/Participant/AdminUI.php:969
+msgid "Created from (inclusive)"
+msgstr ""
+
+#: includes/Participant/AdminUI.php:974
+#: includes/PricingTiers.php:280
+msgid "To"
+msgstr ""
+
+#: includes/Participant/AdminUI.php:978
+msgid "Created until (inclusive)"
+msgstr ""
+
+#: includes/Participant/AdminUI.php:1055
+msgid "Email Actions"
+msgstr ""
+
+#: includes/Participant/AdminUI.php:1072
+msgid "Ticket Actions"
+msgstr ""
+
+#: includes/Participant/AdminUI.php:1155
+msgid "Resend email with ticket and invoice"
+msgstr ""
+
+#: includes/Participant/AdminUI.php:1158
+msgid "Resend email with ticket"
+msgstr ""
+
+#: includes/Participant/AdminUI.php:1161
+msgid "Resend email with invoice"
+msgstr ""
+
+#: includes/Participant/AdminUI.php:1163
+msgid "Resend email"
+msgstr ""
+
+#: includes/Participant/AdminUI.php:1172
+msgid "Resend the email with ticket and invoice to the participant."
+msgstr ""
+
+#: includes/Participant/AdminUI.php:1175
+msgid "Resend the email with ticket to the participant."
+msgstr ""
+
+#: includes/Participant/AdminUI.php:1178
+msgid "Resend the email with invoice to the participant."
+msgstr ""
+
+#: includes/Participant/AdminUI.php:1180
+msgid "Resend the email to the participant."
+msgstr ""
+
+#: includes/Participant/AdminUI.php:1196
+msgid "Regenerate the ticket for the participant."
+msgstr ""
+
+#: includes/Participant/AdminUI.php:1199
+msgid "Regenerate Ticket"
+msgstr ""
+
+#: includes/Participant/AdminUI.php:1239
+msgid "Riverstream Access"
+msgstr ""
+
+#: includes/Participant/AdminUI.php:1253
+msgid "This order has no livestream or recording product — Riverstream webhook does not apply."
+msgstr ""
+
+#: includes/Participant/AdminUI.php:1274
+msgid "Reimport to Riverstream (recording)"
+msgstr ""
+
+#: includes/Participant/AdminUI.php:1275
+msgid "Reimport to Riverstream (livestream)"
+msgstr ""
+
+#. translators: 1: access type, 2: current grant state
+#: includes/Participant/AdminUI.php:1281
+#, php-format
+msgid "Access type: %1$s — current state: %2$s"
+msgstr ""
+
+#: includes/Participant/AdminUI.php:1291
+msgid "Resends the registration webhook to Riverstream so the user is (re)assigned to the proper stage."
+msgstr ""
+
+#: includes/Participant/AdminUI.php:1306
+msgid "Missing participant_id"
+msgstr ""
+
+#: includes/Participant/AdminUI.php:1310
+msgid "Invalid nonce"
+msgstr ""
+
+#: includes/Participant/AdminUI.php:1363
+msgid "Riverstream webhook resent successfully."
+msgstr ""
+
+#: includes/Participant/AdminUI.php:1367
+msgid "Riverstream webhook failed — check the registration history."
+msgstr ""
+
+#: includes/Participant/AdminUI.php:1378
+msgid "Ticket was successfully regenerated."
+msgstr ""
+
+#: includes/Participant/AdminUI.php:1382
+msgid "Failed to regenerate ticket. Please try again."
+msgstr ""
+
+#: includes/Participant/AdminUI.php:1394
+#, php-format
+msgid "Email successfully sent to %d participant."
+msgid_plural "Email successfully sent to %d participants."
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/Participant/AdminUI.php:1405
+#, php-format
+msgid "Failed to send email to %d participant."
+msgid_plural "Failed to send email to %d participants."
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/Participant/AdminUI.php:1425
+#: includes/Participant/Email.php:43
+#: includes/Participant/Email.php:44
+#: includes/Participant/Email.php:686
+msgid "Send Email"
+msgstr ""
+
+#: includes/Participant/AdminUI.php:1443
+#: includes/Participant/Email.php:774
+#: includes/Participant/Email.php:939
+#: includes/ParticipantManager.php:104
+msgid "You do not have permission to send emails to participants"
+msgstr ""
+
+#: includes/Participant/AdminUI.php:1447
+msgid "No participants selected for email"
+msgstr ""
+
+#: includes/Participant/AdminUI.php:1468
+#: includes/Participant/Email.php:769
+#: includes/Participant/Email.php:934
+#: includes/Participant/Email.php:1108
+#: includes/Participant/Export.php:52
+#: includes/Participant/Export.php:390
+#: includes/Participant/Export.php:434
+#: includes/Participant/Export.php:471
+#: includes/Participant/Import.php:1315
+#: includes/Participant/Ticket.php:48
+#: includes/TicketDesigner.php:167
+#: includes/TicketDesignerSettings.php:710
+msgid "Security check failed"
+msgstr ""
+
+#: includes/Participant/AdminUI.php:1473
+#: includes/Participant/Email.php:1113
+#: includes/Participant/Ticket.php:53
+msgid "You do not have permission to perform this action"
+msgstr ""
+
+#: includes/Participant/AdminUI.php:1479
+#: includes/Participant/Export.php:63
+#: includes/TicketDesigner.php:129
+#: includes/TicketDesigner.php:176
+msgid "Invalid participant ID"
+msgstr ""
+
+#: includes/Participant/AdminUI.php:1485
+msgid "Verification manager not available"
+msgstr ""
+
+#: includes/Participant/AdminUI.php:1491
+msgid "Failed to regenerate ticket"
+msgstr ""
+
+#: includes/Participant/AdminUI.php:1497
+#: includes/Participant/Ticket.php:101
+msgid "Ticket regenerated"
+msgstr ""
+
+#: includes/Participant/AdminUI.php:1500
+msgid "Ticket regenerated successfully"
+msgstr ""
+
+#: includes/Participant/Email.php:52
+#: includes/Participant/Email.php:53
+#: includes/Participant/Email.php:149
+msgid "Email Templates"
+msgstr ""
+
+#: includes/Participant/Email.php:96
+#, php-format
+msgid "Template \"%s\" saved successfully."
+msgstr ""
+
+#: includes/Participant/Email.php:111
+#, php-format
+msgid "Template \"%s\" deleted successfully."
+msgstr ""
+
+#: includes/Participant/Email.php:156
+msgid "Edit Template"
+msgstr ""
+
+#: includes/Participant/Email.php:158
+msgid "Create New Template"
+msgstr ""
+
+#: includes/Participant/Email.php:173
+#: includes/Participant/Email.php:251
+#: includes/Participant/Email.php:645
+msgid "Template Name"
+msgstr ""
+
+#: includes/Participant/Email.php:186
+#: includes/Participant/Email.php:611
+msgid "Email Subject"
+msgstr ""
+
+#: includes/Participant/Email.php:195
+msgid "You can use placeholders like {first_name}, {last_name}, etc."
+msgstr ""
+
+#: includes/Participant/Email.php:202
+#: includes/Participant/Email.php:577
+msgid "Email Content"
+msgstr ""
+
+#: includes/Participant/Email.php:218
+msgid "Available placeholders:"
+msgstr ""
+
+#: includes/Participant/Email.php:233
+msgid "Save Template"
+msgstr ""
+
+#: includes/Participant/Email.php:247
+msgid "Saved Templates"
+msgstr ""
+
+#: includes/Participant/Email.php:252
+#: includes/Participant/Email.php:312
+#: includes/Participant/Email.php:902
+msgid "Subject"
+msgstr ""
+
+#: includes/Participant/Email.php:253
+msgid "Created"
+msgstr ""
+
+#: includes/Participant/Email.php:266
+#: includes/Participant/PostType.php:373
+#: templates/verification-page.php:316
+msgid "View"
+msgstr ""
+
+#: includes/Participant/Email.php:270
+msgid "Edit"
+msgstr ""
+
+#: includes/Participant/Email.php:279
+msgid "Are you sure you want to delete this template?"
+msgstr ""
+
+#: includes/Participant/Email.php:314
+msgid "Content"
+msgstr ""
+
+#: includes/Participant/Email.php:317
+msgid "Close"
+msgstr ""
+
+#: includes/Participant/Email.php:382
+msgid "No participants selected or selection expired. Please select participants again."
+msgstr ""
+
+#: includes/Participant/Email.php:395
+msgid "No valid participants found."
+msgstr ""
+
+#: includes/Participant/Email.php:441
+msgid "Send Email to Participants"
+msgstr ""
+
+#: includes/Participant/Email.php:450
+#, php-format
+msgid "Test email sent successfully to %s"
+msgstr ""
+
+#: includes/Participant/Email.php:456
+msgid "Failed to send test email. Please check your email configuration."
+msgstr ""
+
+#: includes/Participant/Email.php:466
+#, php-format
+msgid "You are about to send an email to %s participant."
+msgid_plural "You are about to send an email to %s participants."
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/Participant/Email.php:486
+msgid "Emails"
+msgstr ""
+
+#: includes/Participant/Email.php:501
+msgid "Use Template"
+msgstr ""
+
+#: includes/Participant/Email.php:503
+msgid "-- Select Template --"
+msgstr ""
+
+#: includes/Participant/Email.php:511
+msgid "Load Template"
+msgstr ""
+
+#: includes/Participant/Email.php:593
+msgid "You can use the following placeholders in your email:"
+msgstr ""
+
+#: includes/Participant/Email.php:617
+msgid "You can use the same placeholders as in the email content."
+msgstr ""
+
+#: includes/Participant/Email.php:622
+msgid "Attachments"
+msgstr ""
+
+#: includes/Participant/Email.php:628
+msgid "Attach ticket PDF to the email"
+msgstr ""
+
+#: includes/Participant/Email.php:634
+msgid "Attach invoice PDF to the email"
+msgstr ""
+
+#: includes/Participant/Email.php:640
+msgid "Save as Template"
+msgstr ""
+
+#: includes/Participant/Email.php:643
+msgid "Save this email as a template for future use"
+msgstr ""
+
+#: includes/Participant/Email.php:652
+msgid "Test Email"
+msgstr ""
+
+#: includes/Participant/Email.php:654
+msgid "Before sending to all participants, you can send a test email to verify how it looks."
+msgstr ""
+
+#: includes/Participant/Email.php:659
+#, php-format
+msgid "The test email will use data from: <strong>%s %s (%s)</strong>"
+msgstr ""
+
+#: includes/Participant/Email.php:670
+msgid "Test Email Address"
+msgstr ""
+
+#: includes/Participant/Email.php:675
+msgid "your@email.com"
+msgstr ""
+
+#: includes/Participant/Email.php:677
+msgid "Enter the email address where you want to receive the test email."
+msgstr ""
+
+#: includes/Participant/Email.php:687
+msgid "Send Test Email"
+msgstr ""
+
+#: includes/Participant/Email.php:780
+#: includes/Participant/Email.php:945
+msgid "Invalid email session"
+msgstr ""
+
+#: includes/Participant/Email.php:786
+#: includes/Participant/Email.php:951
+msgid "Email session expired or invalid. Please select participants again."
+msgstr ""
+
+#: includes/Participant/Email.php:801
+#: includes/Participant/Email.php:968
+msgid "Email subject and content are required."
+msgstr ""
+
+#: includes/Participant/Email.php:854
+#: includes/Participant/Email.php:1010
+msgid "Download Ticket"
+msgstr ""
+
+#: includes/Participant/Email.php:857
+#: includes/Participant/Email.php:1013
+msgid "Ticket not available"
+msgstr ""
+
+#: includes/Participant/Email.php:861
+#: includes/Participant/Email.php:1017
+msgid "Download Invoice"
+msgstr ""
+
+#: includes/Participant/Email.php:864
+#: includes/Participant/Email.php:1020
+msgid "Invoice not available"
+msgstr ""
+
+#: includes/Participant/Email.php:901
+msgid "Email sent"
+msgstr ""
+
+#: includes/Participant/Email.php:958
+msgid "Please provide a valid test email address."
+msgstr ""
+
+#: includes/Participant/Email.php:1119
+#: includes/Participant/Ticket.php:59
+msgid "Invalid request"
+msgstr ""
+
+#: includes/Participant/Email.php:1190
+msgid "Ticket and invoice email resent"
+msgstr ""
+
+#: includes/Participant/Export.php:57
+#: includes/Participant/Export.php:118
+#: includes/Participant/Export.php:395
+#: includes/Participant/Export.php:437
+msgid "You do not have permission to export participants"
+msgstr ""
+
+#: includes/Participant/Export.php:100
+msgid "Download selected tickets"
+msgstr ""
+
+#: includes/Participant/Export.php:130
+#: includes/Participant/Export.php:476
+msgid "You do not have permission to download tickets"
+msgstr ""
+
+#: includes/Participant/Export.php:134
+msgid "No participants selected for ticket download"
+msgstr ""
+
+#: includes/Participant/Export.php:156
+#, php-format
+msgid "Exported %s participant to Excel."
+msgid_plural "Exported %s participants to Excel."
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/Participant/Export.php:170
+#, php-format
+msgid "Downloaded %s participant ticket."
+msgid_plural "Downloaded %s participant tickets."
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/Participant/Export.php:192
+msgid "No participants selected for export"
+msgstr ""
+
+#: includes/Participant/Export.php:202
+msgid "PhpSpreadsheet library is not available. Please install it using Composer."
+msgstr ""
+
+#: includes/Participant/Export.php:365
+#, php-format
+msgid "Error generating Excel file: %s"
+msgstr ""
+
+#: includes/Participant/Export.php:418
+msgid "No participants found for export"
+msgstr ""
+
+#: includes/Participant/Export.php:456
+msgid "No participants match the current filters."
+msgstr ""
+
+#: includes/Participant/Export.php:499
+msgid "No participants found for ticket download"
+msgstr ""
+
+#: includes/Participant/Export.php:528
+msgid "ZipArchive extension is not available on this server."
+msgstr ""
+
+#: includes/Participant/Export.php:536
+msgid "Could not create ZIP file"
+msgstr ""
+
+#: includes/Participant/Export.php:540
+#: includes/TicketManager.php:170
+#: includes/TicketManager.php:655
+msgid "ticket"
+msgstr ""
+
+#: includes/Participant/Export.php:593
+msgid "No ticket files found for the selected participants"
+msgstr ""
+
+#: includes/Participant/Import.php:85
+#: includes/Participant/Import.php:115
+msgid "Import Participants"
+msgstr ""
+
+#: includes/Participant/Import.php:86
+msgid "Import"
+msgstr ""
+
+#: includes/Participant/Import.php:121
+msgid "Import Format:"
+msgstr ""
+
+#: includes/Participant/Import.php:122
+msgid "Upload an Excel file (.xlsx) with the same structure as the export file. The import will match participants by email address."
+msgstr ""
+
+#: includes/Participant/Import.php:125
+msgid "Required columns:"
+msgstr ""
+
+#: includes/Participant/Import.php:137
+msgid "Excel File"
+msgstr ""
+
+#: includes/Participant/Import.php:142
+msgid "Select an Excel file (.xlsx) exported from this system or with matching column structure."
+msgstr ""
+
+#: includes/Participant/Import.php:148
+msgid "Send Emails"
+msgstr ""
+
+#: includes/Participant/Import.php:153
+msgid "Send confirmation email with ticket to new participants"
+msgstr ""
+
+#: includes/Participant/Import.php:159
+msgid "Default Registration Status"
+msgstr ""
+
+#: includes/Participant/Import.php:164
+#: includes/Participant/Manager.php:85
+#: includes/VerificationManager.php:975
+msgid "Confirmed"
+msgstr ""
+
+#: includes/Participant/Import.php:167
+msgid "Status to use for new participants if not specified in the file."
+msgstr ""
+
+#: includes/Participant/Import.php:173
+#: includes/Settings.php:590
+msgid "Default Language"
+msgstr ""
+
+#: includes/Participant/Import.php:197
+msgid "Language to use for new participants if not specified in the file."
+msgstr ""
+
+#: includes/Participant/Import.php:204
+msgid "Preview Import"
+msgstr ""
+
+#: includes/Participant/Import.php:211
+msgid "Download Template"
+msgstr ""
+
+#: includes/Participant/Import.php:212
+msgid "To get the correct file format, export existing participants:"
+msgstr ""
+
+#: includes/Participant/Import.php:215
+msgid "Export All Participants"
+msgstr ""
+
+#: includes/Participant/Import.php:220
+msgid "Or export a single participant as template:"
+msgstr ""
+
+#: includes/Participant/Import.php:233
+msgid "-- Select participant --"
+msgstr ""
+
+#: includes/Participant/Import.php:246
+msgid "Export Selected"
+msgstr ""
+
+#: includes/Participant/Import.php:255
+msgid "Please select a participant"
+msgstr ""
+
+#: includes/Participant/Import.php:271
+msgid "No participants available for export."
+msgstr ""
+
+#: includes/Participant/Import.php:293
+msgid "Import Preview"
+msgstr ""
+
+#: includes/Participant/Import.php:299
+msgid "Review the changes below before confirming the import."
+msgstr ""
+
+#: includes/Participant/Import.php:305
+msgid "Import Summary"
+msgstr ""
+
+#: includes/Participant/Import.php:308
+msgid "New participants to create:"
+msgstr ""
+
+#: includes/Participant/Import.php:312
+msgid "Existing participants to update:"
+msgstr ""
+
+#: includes/Participant/Import.php:317
+msgid "Existing without changes (skipped):"
+msgstr ""
+
+#: includes/Participant/Import.php:323
+msgid "Rows with errors (skipped):"
+msgstr ""
+
+#: includes/Participant/Import.php:328
+msgid "Send emails to new participants:"
+msgstr ""
+
+#: includes/Participant/Import.php:337
+msgid "Errors (these rows will be skipped)"
+msgstr ""
+
+#: includes/Participant/Import.php:341
+msgid "Row"
+msgstr ""
+
+#: includes/Participant/Import.php:343
+msgid "Error"
+msgstr ""
+
+#: includes/Participant/Import.php:369
+#: includes/Participant/Manager.php:191
+#: templates/verification-page.php:141
+msgid "Language"
+msgstr ""
+
+#: includes/Participant/Import.php:370
+msgid "Promo Code"
+msgstr ""
+
+#: includes/Participant/Import.php:377
+msgid "New Participants"
+msgstr ""
+
+#: includes/Participant/Import.php:420
+msgid "Participants to Update"
+msgstr ""
+
+#: includes/Participant/Import.php:426
+msgid "Current Name"
+msgstr ""
+
+#: includes/Participant/Import.php:427
+msgid "Changes"
+msgstr ""
+
+#: includes/Participant/Import.php:461
+msgid "Skipped (no changes)"
+msgstr ""
+
+#: includes/Participant/Import.php:469
+msgid "Reason"
+msgstr ""
+
+#: includes/Participant/Import.php:487
+msgid "No new participants to create or existing participants to update."
+msgstr ""
+
+#: includes/Participant/Import.php:493
+msgid "Back to Upload"
+msgstr ""
+
+#: includes/Participant/Import.php:503
+msgid "Confirm Import"
+msgstr ""
+
+#: includes/Participant/Import.php:504
+msgid "Are you sure you want to proceed with the import?"
+msgstr ""
+
+#: includes/Participant/Import.php:524
+#, php-format
+msgid "Import completed successfully. Created: %d, Updated: %d, Emails sent: %d"
+msgstr ""
+
+#: includes/Participant/Import.php:536
+msgid "Import cancelled."
+msgstr ""
+
+#: includes/Participant/Import.php:561
+msgid "File upload failed. Please try again."
+msgstr ""
+
+#: includes/Participant/Import.php:570
+msgid "Invalid file type. Please upload an Excel file (.xlsx)."
+msgstr ""
+
+#: includes/Participant/Import.php:613
+msgid "Import session expired. Please upload the file again."
+msgstr ""
+
+#: includes/Participant/Import.php:647
+msgid "PhpSpreadsheet library is not available."
+msgstr ""
+
+#: includes/Participant/Import.php:659
+msgid "The file is empty or contains only headers."
+msgstr ""
+
+#: includes/Participant/Import.php:670
+#, php-format
+msgid "The file must contain an \"Email\" column. Found columns: %s"
+msgstr ""
+
+#: includes/Participant/Import.php:690
+#, php-format
+msgid "Error parsing file: %s"
+msgstr ""
+
+#: includes/Participant/Import.php:936
+msgid "No changes detected"
+msgstr ""
+
+#: includes/Participant/Import.php:958
+msgid "Missing email address"
+msgstr ""
+
+#: includes/Participant/Import.php:966
+msgid "Invalid email address"
+msgstr ""
+
+#: includes/Participant/Import.php:1134
+msgid "Confirmation email with ticket sent"
+msgstr ""
+
+#: includes/Participant/Import.php:1173
+#, php-format
+msgid "Status: %s"
+msgstr ""
+
+#: includes/Participant/Import.php:1174
+#, php-format
+msgid "Language: %s"
+msgstr ""
+
+#: includes/Participant/Import.php:1178
+#, php-format
+msgid "Promo code: %s"
+msgstr ""
+
+#: includes/Participant/Import.php:1181
+#, php-format
+msgid "Variable symbol: %s"
+msgstr ""
+
+#: includes/Participant/Import.php:1182
+#, php-format
+msgid "Imported by: %s"
+msgstr ""
+
+#: includes/Participant/Import.php:1184
+msgid "CREATED VIA IMPORT"
+msgstr ""
+
+#: includes/Participant/Import.php:1196
+msgid "(empty)"
+msgstr ""
+
+#: includes/Participant/Import.php:1204
+msgid "UPDATED VIA IMPORT"
+msgstr ""
+
+#: includes/Participant/Import.php:1205
+#, php-format
+msgid "Updated by: %s"
+msgstr ""
+
+#: includes/Participant/Import.php:1206
+msgid "Changes:"
+msgstr ""
+
+#: includes/Participant/Import.php:1325
+msgid "You do not have permission to import participants"
+msgstr ""
+
+#: includes/Participant/Import.php:1400
+#, php-format
+msgid "Registration confirmation for %s"
+msgstr ""
+
+#: includes/Participant/Import.php:1407
+#: includes/Settings.php:1187
+#: includes/Settings.php:1204
+#, php-format
+msgid "Your ticket for %s"
+msgstr ""
+
+#: includes/Participant/Manager.php:54
+#: templates/verification-page.php:132
+msgid "Order ID"
+msgstr ""
+
+#: includes/Participant/Manager.php:57
+#: includes/TicketDesignerSettings.php:418
+#: includes/TicketManager.php:67
+#: templates/verification-page.php:131
+msgid "Variable Symbol"
+msgstr ""
+
+#: includes/Participant/Manager.php:62
+#: includes/TicketDesignerSettings.php:414
+#: includes/TicketManager.php:42
+#: templates/verification-page.php:123
+msgid "Company Name"
+msgstr ""
+
+#: includes/Participant/Manager.php:63
+msgid "Street and House Number"
+msgstr ""
+
+#: includes/Participant/Manager.php:72
+msgid "Payment Method"
+msgstr ""
+
+#: includes/Participant/Manager.php:75
+msgid "Bank Transfer"
+msgstr ""
+
+#: includes/Participant/Manager.php:76
+msgid "Credit Card"
+msgstr ""
+
+#: includes/Participant/Manager.php:87
+#: templates/verification-page.php:163
+msgid "Completed"
+msgstr ""
+
+#: includes/Participant/Manager.php:88
+#: includes/VerificationManager.php:976
+#: templates/verification-page.php:165
+msgid "Cancelled"
+msgstr ""
+
+#: includes/Participant/Manager.php:91
+#: templates/verification-page.php:138
+msgid "Invoice ID"
+msgstr ""
+
+#: includes/Participant/Manager.php:92
+msgid "Invoice URL"
+msgstr ""
+
+#: includes/Participant/Manager.php:93
+msgid "QR Code URL"
+msgstr ""
+
+#: includes/Participant/Manager.php:94
+#: includes/Participant/PostType.php:218
+#: templates/admin/partials/content-row-item.php:19
+#: templates/admin/ticket-designer-settings.php:595
+msgid "QR Code"
+msgstr ""
+
+#: includes/Participant/Manager.php:95
+msgid "Ticket URL"
+msgstr ""
+
+#: includes/Participant/Manager.php:96
+msgid "Ticket File Path"
+msgstr ""
+
+#: includes/Participant/Manager.php:97
+#: includes/TicketDesignerSettings.php:419
+#: includes/TicketManager.php:72
+msgid "Used Coupons"
+msgstr ""
+
+#: includes/Participant/Manager.php:99
+msgid "Update Date"
+msgstr ""
+
+#: includes/Participant/Manager.php:100
+msgid "Imported At"
+msgstr ""
+
+#: includes/Participant/Manager.php:101
+msgid "Registration History"
+msgstr ""
+
+#: includes/Participant/Manager.php:102
+msgid "Order Notes"
+msgstr ""
+
+#: includes/Participant/Manager.php:108
+msgid "Is Livestream User"
+msgstr ""
+
+#: includes/Participant/Manager.php:130
+msgid "Is Recording User"
+msgstr ""
+
+#: includes/Participant/Manager.php:135
+msgid "Recording Access"
+msgstr ""
+
+#: includes/Participant/Manager.php:581
+msgid "invoice"
+msgstr ""
+
+#: includes/Participant/PostType.php:44
+#: includes/Participant/PostType.php:46
+msgid "Participant"
+msgstr ""
+
+#: includes/Participant/PostType.php:47
+msgid "Add New"
+msgstr ""
+
+#: includes/Participant/PostType.php:48
+msgid "Add New Participant"
+msgstr ""
+
+#: includes/Participant/PostType.php:49
+msgid "Edit Participant"
+msgstr ""
+
+#: includes/Participant/PostType.php:51
+msgid "Search Participants"
+msgstr ""
+
+#: includes/Participant/PostType.php:52
+#: includes/TicketDesignerSettings.php:1021
+msgid "No participants found"
+msgstr ""
+
+#: includes/Participant/PostType.php:53
+msgid "No participants found in Trash"
+msgstr ""
+
+#: includes/Participant/PostType.php:54
+msgid "Parent Participant:"
+msgstr ""
+
+#: includes/Participant/PostType.php:55
+msgid "Participant Photo"
+msgstr ""
+
+#: includes/Participant/PostType.php:56
+msgid "Set participant photo"
+msgstr ""
+
+#: includes/Participant/PostType.php:57
+msgid "Remove participant photo"
+msgstr ""
+
+#: includes/Participant/PostType.php:58
+msgid "Use as participant photo"
+msgstr ""
+
+#: includes/Participant/PostType.php:59
+msgid "Participant archives"
+msgstr ""
+
+#: includes/Participant/PostType.php:60
+msgid "Insert into participant"
+msgstr ""
+
+#: includes/Participant/PostType.php:61
+msgid "Uploaded to this participant"
+msgstr ""
+
+#: includes/Participant/PostType.php:62
+msgid "Filter participants list"
+msgstr ""
+
+#: includes/Participant/PostType.php:63
+msgid "Participants list navigation"
+msgstr ""
+
+#: includes/Participant/PostType.php:64
+msgid "Participants list"
+msgstr ""
+
+#: includes/Participant/PostType.php:65
+msgid "Participant published"
+msgstr ""
+
+#: includes/Participant/PostType.php:66
+msgid "Participant published privately"
+msgstr ""
+
+#: includes/Participant/PostType.php:67
+msgid "Participant reverted to draft"
+msgstr ""
+
+#: includes/Participant/PostType.php:68
+msgid "Participant scheduled"
+msgstr ""
+
+#: includes/Participant/PostType.php:69
+msgid "Participant updated"
+msgstr ""
+
+#: includes/Participant/PostType.php:70
+msgid "Participant link"
+msgstr ""
+
+#: includes/Participant/PostType.php:71
+msgid "A link to the participant"
+msgstr ""
+
+#: includes/Participant/PostType.php:171
+msgid "Participant Details"
+msgstr ""
+
+#: includes/Participant/PostType.php:194
+#: templates/verification-page.php:12
+msgid "Personal Information"
+msgstr ""
+
+#: includes/Participant/PostType.php:198
+#: templates/verification-page.php:16
+msgid "Company Information"
+msgstr ""
+
+#: includes/Participant/PostType.php:206
+#: templates/verification-page.php:24
+msgid "Registration Details"
+msgstr ""
+
+#: includes/Participant/PostType.php:214
+#: templates/verification-page.php:32
+msgid "Documents"
+msgstr ""
+
+#: includes/Participant/PostType.php:222
+msgid "System Information"
+msgstr ""
+
+#: includes/Participant/PostType.php:337
+msgid "-- Select Country --"
+msgstr ""
+
+#: includes/Participant/PostType.php:344
+msgid "-- Select --"
+msgstr ""
+
+#: includes/Participant/PostType.php:366
+msgid "No QR code generated yet."
+msgstr ""
+
+#: includes/Participant/PostType.php:510
+#, php-format
+msgid "Warning: Variable symbol \"%s\" already exists for another participant. Please choose a different one."
+msgstr ""
+
+#: includes/Participant/PostType.php:520
+#, php-format
+msgid "A new unique variable symbol has been automatically generated: \"%s\""
+msgstr ""
+
+#: includes/ParticipantManager.php:110
+msgid "No participants selected"
+msgstr ""
+
+#: includes/PricingTiers.php:45
+#: includes/PricingTiers.php:48
+msgid "Current price (tier)"
+msgstr ""
+
+#: includes/PricingTiers.php:248
+msgid "Registration pricing tiers"
+msgstr ""
+
+#: includes/PricingTiers.php:249
+msgid "Active is a fallback outside dates; Scheduled follows dates; Disabled is unavailable. Ticket limit ends a tier once that many tickets are sold, even inside its dates."
+msgstr ""
+
+#: includes/PricingTiers.php:255
+msgid "Add pricing tier"
+msgstr ""
+
+#: includes/PricingTiers.php:274
+msgid "Ticket limit"
+msgstr ""
+
+#: includes/PricingTiers.php:277
+msgid "Number of tickets at this price. 0 = no limit."
+msgstr ""
+
+#: includes/PricingTiers.php:285
+#: includes/PricingTiers.php:468
+#: includes/PricingTiers.php:533
+#: includes/PricingTiers.php:543
+msgid "Pricing tier"
+msgstr ""
+
+#: includes/PricingTiers.php:286
+#: includes/TicketDesignerSettings.php:267
+#: templates/admin/partials/content-row-item.php:29
+msgid "Remove"
+msgstr ""
+
+#: includes/PricingTiers.php:304
+msgid "Active"
+msgstr ""
+
+#: includes/PricingTiers.php:305
+msgid "Scheduled"
+msgstr ""
+
+#: includes/PricingTiers.php:349
+msgid "Price per participant type"
+msgstr ""
+
+#: includes/PricingTiers.php:367
+msgid "Registration is currently not available for any pricing tier."
+msgstr ""
+
+#: includes/PricingTiers.php:451
+msgid "A registration price could not be selected. Remove the product and add it again."
+msgstr ""
+
+#: includes/PricingTiers.php:532
+msgid "Pricing tier key"
+msgstr ""
+
+#: includes/PricingTiers.php:534
+msgid "Tier price"
+msgstr ""
+
+#: includes/PricingTiers.php:564
+msgid "All pricing tiers"
+msgstr ""
+
+#. translators: 1: first half of an option label, e.g. the theme; 2: the second, e.g. the date or "Sold out".
+#: includes/ProductGroup.php:227
+#, php-format
+msgid "%1$s - %2$s"
+msgstr ""
+
+#: includes/ProductGroup.php:220
+#: includes/Selection/SessionSelection.php:380
+#: includes/Selection/SessionSelection.php:419
+msgid "Sold out"
+msgstr ""
+
+#: includes/ProductGroup.php:371
+msgid "The event could not be switched, please try again."
+msgstr ""
+
+#: includes/ProductGroup.php:379
+#: includes/ProductGroup.php:456
+msgid "Select theme and date"
+msgstr ""
+
+#: includes/ProductGroup.php:421
+msgid "Pick the city, then the theme and date. Date, capacity and price differ per event."
+msgstr ""
+
+#: includes/ProductGroup.php:431
+msgid "Select city"
+msgstr ""
+
+#: includes/ProductGroup.php:441
+msgid "Select location"
+msgstr ""
+
+#: includes/ProductGroup.php:644
+msgid "Theme"
+msgstr ""
+
+#: includes/ProductGroup.php:449
+msgid "Theme and date"
+msgstr ""
+
+#: includes/ProductGroup.php:482
+msgid "Please pick the city, theme and date you want to attend."
+msgstr ""
+
+#: includes/ProductGroup.php:536
+msgid "Nothing to switch."
+msgstr ""
+
+#: includes/ProductGroup.php:542
+msgid "That product is not part of this event."
+msgstr ""
+
+#: includes/ProductGroup.php:553
+msgid "That date is sold out."
+msgstr ""
+
+#: includes/ProductGroup.php:565
+msgid "The product could not be added."
+msgstr ""
+
+#: includes/ProductGroup.php:614
+msgid "Event group"
+msgstr ""
+
+#: includes/ProductGroup.php:617
+msgid "Products sharing this key are alternatives of one event (e.g. one city each) and the checkout offers a select between them."
+msgstr ""
+
+#: includes/ProductGroup.php:624
+msgid "Name inside the group"
+msgstr ""
+
+#: includes/ProductGroup.php:627
+msgid "What this product is called in that select, e.g. \"Bratislava (11. 9. 2026)\". Falls back to the venue."
+msgstr ""
+
+#: includes/ProductGroup.php:637
+msgid "The city the checkout offers first, e.g. \"Bratislava\". Products of one city are offered together. Falls back to what stands before the comma in the name inside the group."
+msgstr ""
+
+#: includes/ProductGroup.php:647
+msgid "What is played, e.g. \"Vesmírny piatok\". Offered with the date once the city is picked. Falls back to the date alone."
+msgstr ""
+
+#: includes/RegistrationContext.php:710
+msgid "on the map"
+msgstr ""
+
+#. translators: 1: Event name, 2: Event date
+#: includes/RegistrationContext.php:723
+#, php-format
+msgid "Thank you for registering for the livestream of %1$s on %2$s."
+msgstr ""
+
+#. translators: 1: Event name, 2: Event date, 3: Event location (locative)
+#: includes/RegistrationContext.php:733
+#, php-format
+msgid "see you at the event %1$s, which will take place on %2$s at %3$s"
+msgstr ""
+
+#. translators: 1: Event name, 2: Event date
+#: includes/RegistrationContext.php:745
+#, php-format
+msgid "see you at the event %1$s on %2$s"
+msgstr ""
+
+#: includes/RegistrationContext.php:779
+#: includes/RegistrationContext.php:790
+msgid "We are sending the detailed information to your email.<br>Please check your spam folder as well."
+msgstr ""
+
+#: includes/RegistrationContext.php:783
+msgid "We are sending the invoice and the receipt with detailed information to your email.<br>Please check your spam folder as well."
+msgstr ""
+
+#: includes/RegistrationContext.php:787
+msgid "We are sending the invoice and detailed information to your email.<br>Please check your spam folder as well."
+msgstr ""
+
+#: includes/RegistrationContext.php:830
+#, php-format
+msgid "Registration confirmation for%1$s%2$s"
+msgstr ""
+
+#: includes/RegistrationContext.php:837
+#, php-format
+msgid "Ticket for%1$s%2$s"
+msgstr ""
+
+#: includes/RegistrationContext.php:975
+#, php-format
+msgid "An email to create your password will be sent to you. After creating it, you will be able to log in to %1$s with your email and created password to watch the livestream."
+msgstr ""
+
+#: includes/RegistrationContext.php:978
+msgid "You can only watch the livestream from one device. If you log in from another device, you will be automatically logged out and will need to log in again."
+msgstr ""
+
+#: includes/RegistrationContext.php:993
+#, php-format
+msgid "When entering %1$s on %2$s at %3$s, please show your QR code from the email."
+msgstr ""
+
+#: includes/Selection/AbstractSelection.php:287
+msgid "persons"
+msgstr ""
+
+#: includes/Selection/AbstractSelection.php:466
+#, php-format
+msgid "%d day"
+msgid_plural "%d days"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/Selection/AbstractSelection.php:505
+#, php-format
+msgid "instead of %s"
+msgstr ""
+
+#: includes/Selection/AbstractSelection.php:506
+msgid "Persons:"
+msgstr ""
+
+#: includes/Selection/AbstractSelection.php:508
+#, php-format
+msgid "All %1$d %2$s"
+msgstr ""
+
+#: includes/Selection/AbstractSelection.php:509
+msgid "Both days"
+msgstr ""
+
+#: includes/Selection/AbstractSelection.php:529
+#, php-format
+msgid "Please select at least one %s."
+msgstr ""
+
+#: includes/Selection/AbstractSelection.php:541
+#, php-format
+msgid "Invalid selection: %s"
+msgstr ""
+
+#: includes/Selection/DaySelection.php:82
+msgid "Please select at least one day."
+msgstr ""
+
+#: includes/Selection/ParticipantTypeSelection.php:205
+msgid "Free"
+msgstr ""
+
+#. translators: 1: minimum count, 2: type label
+#: includes/Selection/ParticipantTypeSelection.php:255
+#, php-format
+msgid "Please select at least %1$d × %2$s."
+msgstr ""
+
+#. translators: 1: maximum count, 2: type label
+#: includes/Selection/ParticipantTypeSelection.php:267
+#, php-format
+msgid "You can select at most %1$d × %2$s."
+msgstr ""
+
+#: includes/Selection/ParticipantTypeSelection.php:280
+msgid "Please select at least one participant."
+msgstr ""
+
+#: includes/Selection/ParticipantTypeSelection.php:335
+msgid "person"
+msgstr ""
+
+#: includes/Selection/ParticipantTypeSelection.php:337
+msgid "Original price"
+msgstr ""
+
+#: includes/Selection/ParticipantTypeSelection.php:338
+#, php-format
+msgid "Discount (%d days)"
+msgstr ""
+
+#. translators: %s: pricing tier name, e.g. Early bird
+#: includes/Selection/ParticipantTypeSelection.php:358
+#, php-format
+msgid "%s discount"
+msgstr ""
+
+#: includes/Selection/ParticipantTypeSelection.php:361
+msgid "Discount"
+msgstr ""
+
+#: includes/Selection/SessionSelection.php:294
+msgid "Session date"
+msgstr ""
+
+#. translators: 1: free seats, 2: total seats
+#: includes/Selection/SessionSelection.php:384
+#: includes/Selection/SessionSelection.php:422
+#, php-format
+msgid "free seats %1$s/%2$s"
+msgstr ""
+
+#: includes/Selection/SessionSelection.php:390
+#: includes/Selection/SessionSelection.php:423
+msgid "Registration closed"
+msgstr ""
+
+#: includes/Selection/SessionSelection.php:420
+msgid "available"
+msgstr ""
+
+#: includes/Selection/SessionSelection.php:436
+msgid "Please select a session date."
+msgstr ""
+
+#: includes/Selection/SessionSelection.php:449
+msgid "Selected session is not valid."
+msgstr ""
+
+#: includes/Selection/SessionSelection.php:454
+#, php-format
+msgid "Registration for %s is closed."
+msgstr ""
+
+#: includes/Selection/SessionSelection.php:464
+msgid "Please select a time slot."
+msgstr ""
+
+#: includes/Selection/SessionSelection.php:476
+msgid "Selected time slot is not valid."
+msgstr ""
+
+#. translators: 1: slot label, 2: remaining seats, 3: requested
+#: includes/Selection/SessionSelection.php:487
+#, php-format
+msgid "Time slot %1$s only has %2$d seat(s) left, you requested %3$d."
+msgstr ""
+
+#. translators: 1: date, 2: remaining seats, 3: requested
+#: includes/Selection/SessionSelection.php:503
+#, php-format
+msgid "Session on %1$s only has %2$d seat(s) left, you requested %3$d."
+msgstr ""
+
+#: includes/Settings.php:303
+msgid "General"
+msgstr ""
+
+#: includes/Settings.php:304
+msgid "Modules"
+msgstr ""
+
+#: includes/Settings.php:343
+msgid "Add-on product (not a primary ticket)"
+msgstr ""
+
+#: includes/Settings.php:348
+msgid "Mark this product as a complementary add-on (e.g. social evening, gala dinner, optional workshop). Add-on products are excluded when picking the primary product on an order — the participant, ticket, and webhook all anchor to the main registration product even if the add-on was in the cart first."
+msgstr ""
+
+#: includes/Settings.php:359
+msgid "Skip session selection (registers for all sessions)"
+msgstr ""
+
+#: includes/Settings.php:364
+msgid "For multi-session/full-package tickets where the buyer should not pick one session at checkout. Disables every session/day/participant-type selector for this product, and projects can opt in to custom checkout UIs via the `alttag_registrations_selection_is_active` filter. The participant is checked in at scan time against any of the product's sessions."
+msgstr ""
+
+#: includes/Settings.php:376
+msgid "Event map URL"
+msgstr ""
+
+#: includes/Settings.php:380
+msgid "Public link to the venue on a map (Google Maps, Apple Maps, …). Available in templates as {map_url}."
+msgstr ""
+
+#: includes/Settings.php:387
+msgid "Event program URL"
+msgstr ""
+
+#: includes/Settings.php:391
+msgid "Public link to the event programme. Available in templates as {program_url}."
+msgstr ""
+
+#: includes/Settings.php:398
+msgid "Event Name"
+msgstr ""
+
+#: includes/Settings.php:405
+msgid "Event Noun (singular)"
+msgstr ""
+
+#: includes/Settings.php:410
+msgid "The generic word used to refer to the event in templates, e.g. \"podujatie\" (Sk) or \"event\" (En). Available in templates as {event_noun}. Override per product when a different word fits (e.g. \"stretnutie\", \"workshop\")."
+msgstr ""
+
+#: includes/Settings.php:419
+msgid "Event Noun (genitive, singular)"
+msgstr ""
+
+#: includes/Settings.php:424
+msgid "Genitive form of the event noun for sentences like \"online stream of the {event_noun_genitive}\". Example: \"podujatia\" (Sk genitive of \"podujatie\"). Falls back to {event_noun} when empty."
+msgstr ""
+
+#: includes/Settings.php:433
+msgid "Event Name (locative case)"
+msgstr ""
+
+#: includes/Settings.php:435
+msgid "Declined event name for sentences like \"na X\", e.g. \"Konferencii Podnikateľ v pluse\""
+msgstr ""
+
+#: includes/Settings.php:444
+msgid "Event Name (accusative case)"
+msgstr ""
+
+#: includes/Settings.php:446
+msgid "Declined event name for sentences like \"Pri vstupe na X\", e.g. \"Konferenciu Podnikateľ v pluse\""
+msgstr ""
+
+#: includes/Settings.php:456
+msgid "Event Start Date"
+msgstr ""
+
+#: includes/Settings.php:463
+msgid "Event End Date"
+msgstr ""
+
+#: includes/Settings.php:470
+msgid "Event Start Time"
+msgstr ""
+
+#: includes/Settings.php:472
+msgid "Format: HH:MM (24h), e.g. \"09:00\". Available in templates as {event_time} and appended to date displays that opt in (email header, thank-you page)."
+msgstr ""
+
+#: includes/Settings.php:481
+msgid "Venue"
+msgstr ""
+
+#: includes/Settings.php:483
+msgid "Venue name, e.g. \"Športová hala Junácka\""
+msgstr ""
+
+#: includes/Settings.php:489
+msgid "Venue Address"
+msgstr ""
+
+#: includes/Settings.php:491
+msgid "Venue address, e.g. \"Junácka 6, Bratislava\""
+msgstr ""
+
+#: includes/Settings.php:497
+msgid "Event group select label"
+msgstr ""
+
+#: includes/Settings.php:499
+msgid "Label of the checkout select that switches between products of one event group, e.g. \"City\". Empty falls back to \"Location\"."
+msgstr ""
+
+#: includes/Settings.php:508
+msgid "Venue (locative case)"
+msgstr ""
+
+#: includes/Settings.php:510
+msgid "Venue with address in locative, e.g. \"Športovej hale Junácka, Junácka 6, Bratislava\""
+msgstr ""
+
+#: includes/Settings.php:519
+msgid "Max participants per order"
+msgstr ""
+
+#: includes/Settings.php:521
+msgid "Leave empty or 0 to disable"
+msgstr ""
+
+#: includes/Settings.php:527
+msgid "Variable symbol prefix"
+msgstr ""
+
+#: includes/Settings.php:529
+msgid "Prefix for variable symbols, e.g. \"SAO2026\". Product SKU used if empty."
+msgstr ""
+
+#: includes/Settings.php:534
+msgid "Max persons per day"
+msgstr ""
+
+#: includes/Settings.php:536
+msgid "Max persons selectable per day. 0 or 1 = no counter."
+msgstr ""
+
+#: includes/Settings.php:542
+msgid "Generate PDF ticket for this product"
+msgstr ""
+
+#: includes/Settings.php:548
+msgid "Disable for membership/hotel/livestream products that should not produce a ticket."
+msgstr ""
+
+#: includes/Settings.php:568
+msgid "Organization Name"
+msgstr ""
+
+#: includes/Settings.php:570
+msgid "Name of the organizing entity"
+msgstr ""
+
+#: includes/Settings.php:574
+msgid "Team Name"
+msgstr ""
+
+#: includes/Settings.php:576
+msgid "Team or department name (used in emails)"
+msgstr ""
+
+#: includes/Settings.php:580
+msgid "Contact Email"
+msgstr ""
+
+#: includes/Settings.php:582
+msgid "Contact email shown in emails and footer"
+msgstr ""
+
+#: includes/Settings.php:585
+msgid "Mail From Address"
+msgstr ""
+
+#: includes/Settings.php:587
+msgid "Email address used as sender"
+msgstr ""
+
+#: includes/Settings.php:593
+msgid "Default language for registrations"
+msgstr ""
+
+#: includes/Settings.php:598
+msgid "Disable Order Notes"
+msgstr ""
+
+#: includes/Settings.php:600
+msgid "Remove the order notes field from checkout"
+msgstr ""
+
+#: includes/Settings.php:603
+msgid "Enable GDPR Consent"
+msgstr ""
+
+#: includes/Settings.php:605
+msgid "Show GDPR consent checkbox on checkout"
+msgstr ""
+
+#: includes/Settings.php:608
+msgid "GDPR Policy URL"
+msgstr ""
+
+#: includes/Settings.php:610
+msgid "Link to GDPR/privacy policy page"
+msgstr ""
+
+#: includes/Settings.php:613
+msgid "Enable Terms Consent"
+msgstr ""
+
+#: includes/Settings.php:615
+msgid "Show terms & conditions checkbox on checkout"
+msgstr ""
+
+#: includes/Settings.php:618
+msgid "Terms & Conditions URL"
+msgstr ""
+
+#: includes/Settings.php:620
+msgid "Link to terms & conditions page"
+msgstr ""
+
+#: includes/Settings.php:623
+msgid "Skip Email Duplicate Check"
+msgstr ""
+
+#: includes/Settings.php:625
+msgid "Allow the same email to register multiple times"
+msgstr ""
+
+#: includes/Settings.php:631
+msgid "Display Invoice Download Link"
+msgstr ""
+
+#: includes/Settings.php:633
+msgid "Show the invoice download link on the thank-you page when an invoice exists"
+msgstr ""
+
+#: includes/Settings.php:636
+msgid "Move order notes to billing column"
+msgstr ""
+
+#: includes/Settings.php:638
+msgid "Render the order-notes field in the billing column instead of the side column"
+msgstr ""
+
+#: includes/Settings.php:644
+msgid "Hide WC native billing address fields"
+msgstr ""
+
+#: includes/Settings.php:646
+msgid "Removes billing_address_1, billing_address_2, billing_city, billing_postcode and billing_country from checkout. Enable when collecting address through FieldBuilder fields. Turn it off on a product that needs a postal address, e.g. because it is invoiced."
+msgstr ""
+
+#: includes/Settings.php:656
+msgid "Registration product banner template"
+msgstr ""
+
+#: includes/Settings.php:659
+msgid "Rendered above the billing form. Supports {product_name}. Leave empty to hide."
+msgstr ""
+
+#: includes/Settings.php:665
+msgid "Custom checkout CSS"
+msgstr ""
+
+#: includes/Settings.php:667
+msgid "Extra CSS injected on the checkout page (e.g. style the registration banner)."
+msgstr ""
+
+#: includes/Settings.php:673
+msgid "Stripe Elements primary color"
+msgstr ""
+
+#: includes/Settings.php:675
+msgid "Primary color for Stripe payment form"
+msgstr ""
+
+#: includes/Settings.php:678
+msgid "Day / participant-type selector theme"
+msgstr ""
+
+#: includes/Settings.php:681
+msgid "Light (works on white backgrounds)"
+msgstr ""
+
+#: includes/Settings.php:682
+msgid "Dark (overlay on dark backgrounds)"
+msgstr ""
+
+#: includes/Settings.php:685
+msgid "Visual theme for the multi-day and participant-type selectors on checkout."
+msgstr ""
+
+#: includes/Settings.php:691
+msgid "Invoice due days"
+msgstr ""
+
+#: includes/Settings.php:696
+msgid "Number of days until SuperFaktura invoice is due. Per-product override allowed."
+msgstr ""
+
+#: includes/Settings.php:707
+msgid "Primary Color"
+msgstr ""
+
+#: includes/Settings.php:710
+msgid "Primary brand color for emails"
+msgstr ""
+
+#: includes/Settings.php:713
+msgid "Accent Color"
+msgstr ""
+
+#: includes/Settings.php:716
+msgid "Accent/text color for email header"
+msgstr ""
+
+#: includes/Settings.php:719
+msgid "Background Color"
+msgstr ""
+
+#: includes/Settings.php:722
+msgid "Email body background color"
+msgstr ""
+
+#: includes/Settings.php:725
+msgid "Dark Primary Color"
+msgstr ""
+
+#: includes/Settings.php:728
+msgid "Darker variant of primary color"
+msgstr ""
+
+#: includes/Settings.php:731
+msgid "Info Text"
+msgstr ""
+
+#: includes/Settings.php:733
+msgid "Information text shown in confirmation email (supports {event_name} placeholder)"
+msgstr ""
+
+#: includes/Settings.php:736
+msgid "Footer Info Text"
+msgstr ""
+
+#: includes/Settings.php:738
+msgid "Footer text for emails (supports {contact_email} placeholder)"
+msgstr ""
+
+#: includes/Settings.php:744
+msgid "Custom email CSS"
+msgstr ""
+
+#: includes/Settings.php:746
+msgid "Extra CSS injected into the order-processing email <style> block."
+msgstr ""
+
+#: includes/Settings.php:752
+msgid "Email greeting format"
+msgstr ""
+
+#: includes/Settings.php:757
+msgid "Greeting template, supports {full_name}, {first_name}, {last_name}, {titles_before}, {titles_after}. Per-product override allowed."
+msgstr ""
+
+#: includes/Settings.php:764
+msgid "In-person email title (paid)"
+msgstr ""
+
+#: includes/Settings.php:767
+msgid "Supports {event_name} and {event_dates} placeholders."
+msgstr ""
+
+#: includes/Settings.php:773
+msgid "In-person email title (unpaid)"
+msgstr ""
+
+#: includes/Settings.php:778
+msgid "Livestream email title (paid)"
+msgstr ""
+
+#: includes/Settings.php:783
+msgid "Livestream email title (unpaid)"
+msgstr ""
+
+#: includes/Settings.php:788
+msgid "In-person event-details template"
+msgstr ""
+
+#: includes/Settings.php:791
+msgid "Supports {event_name}, {event_dates}, {event_location} placeholders."
+msgstr ""
+
+#: includes/Settings.php:797
+msgid "Livestream event-details template"
+msgstr ""
+
+#: includes/Settings.php:800
+msgid "Supports {event_name}, {event_dates} placeholders."
+msgstr ""
+
+#: includes/Settings.php:806
+msgid "Livestream subject – text to replace"
+msgstr ""
+
+#: includes/Settings.php:809
+msgid "Substring removed from participant manual-email subject when participant is livestream."
+msgstr ""
+
+#: includes/Settings.php:815
+msgid "Livestream subject – replacement text"
+msgstr ""
+
+#: includes/Settings.php:872
+#: includes/Settings.php:873
+msgid "Settings"
+msgstr ""
+
+#: includes/Settings.php:979
+msgid "Registration Settings"
+msgstr ""
+
+#: includes/Settings.php:983
+msgid "Settings saved."
+msgstr ""
+
+#: includes/Settings.php:1185
+#, php-format
+msgid "Ticket and invoice for %s"
+msgstr ""
+
+#: includes/Settings.php:1197
+#, php-format
+msgid "Paid invoice for livestream %s"
+msgstr ""
+
+#: includes/Settings.php:1198
+#, php-format
+msgid "Unpaid invoice for livestream %s"
+msgstr ""
+
+#: includes/Settings.php:1200
+#, php-format
+msgid "Registration confirmation for livestream %s"
+msgstr ""
+
+#: includes/Settings.php:1207
+#, php-format
+msgid "Ticket and paid Invoice for %s"
+msgstr ""
+
+#: includes/Settings.php:1208
+#, php-format
+msgid "Ticket and unpaid invoice for %s"
+msgstr ""
+
+#: includes/StripeManager.php:111
+msgid "Please fill in all required checkout fields first."
+msgstr ""
+
+#: includes/StripeManager.php:488
+msgid "Receipt"
+msgstr ""
+
+#: includes/StripeManager.php:495
+msgid "Paid amount"
+msgstr ""
+
+#: includes/StripeManager.php:498
+msgid "Payment date"
+msgstr ""
+
+#: includes/StripeManager.php:500
+msgid "Payment method"
+msgstr ""
+
+#: includes/StripeManager.php:501
+msgid "Summary"
+msgstr ""
+
+#: includes/StripeManager.php:541
+msgid "Amount paid"
+msgstr ""
+
+#: includes/StripeManager.php:569
+msgid "off"
+msgstr ""
+
+#: includes/StripeManager.php:582
+#: includes/WooCommerceManager.php:966
+msgid "VAT"
+msgstr ""
+
+#: includes/StripeManager.php:583
+msgid "Slovakia"
+msgstr ""
+
+#: includes/StripeManager.php:596
+msgid "Subtotal"
+msgstr ""
+
+#: includes/StripeManager.php:606
+msgid "Total amount"
+msgstr ""
+
+#: includes/TicketDesigner.php:57
+#: includes/TicketDesigner.php:58
+#: templates/admin/ticket-preview.php:12
+#: templates/admin/ticket-preview.php:66
+#: templates/admin/ticket-preview.php:75
+msgid "Ticket Preview"
+msgstr ""
+
+#: includes/TicketDesigner.php:123
+#: includes/TicketDesigner.php:172
+#: includes/TicketDesignerSettings.php:715
+#: includes/TicketDesignerSettings.php:1000
+#: includes/TicketDesignerSettings.php:1140
+msgid "Permission denied"
+msgstr ""
+
+#: includes/TicketDesigner.php:134
+#: includes/TicketDesigner.php:181
+msgid "Participant not found"
+msgstr ""
+
+#: includes/TicketDesigner.php:214
+msgid "Could not generate ticket preview"
+msgstr ""
+
+#: includes/TicketDesignerSettings.php:195
+#: includes/TicketDesignerSettings.php:196
+#: templates/admin/ticket-designer-settings.php:7
+msgid "Ticket Designer"
+msgstr ""
+
+#: includes/TicketDesignerSettings.php:262
+#: templates/admin/ticket-designer-settings.php:266
+msgid "Select Image"
+msgstr ""
+
+#: includes/TicketDesignerSettings.php:263
+msgid "Use this image"
+msgstr ""
+
+#: includes/TicketDesignerSettings.php:264
+msgid "Select Logo"
+msgstr ""
+
+#: includes/TicketDesignerSettings.php:265
+#: templates/admin/ticket-designer-settings.php:132
+msgid "Logo Image"
+msgstr ""
+
+#: includes/TicketDesignerSettings.php:266
+msgid "Image URL"
+msgstr ""
+
+#: includes/TicketDesignerSettings.php:268
+msgid "Unsupported image format. Please use PNG, JPG or GIF. WebP is not supported for PDF tickets."
+msgstr ""
+
+#: includes/TicketDesignerSettings.php:269
+msgid "Error generating preview:"
+msgstr ""
+
+#: includes/TicketDesignerSettings.php:270
+msgid "Error generating preview. Please try again."
+msgstr ""
+
+#: includes/TicketDesignerSettings.php:271
+msgid "Settings imported successfully!"
+msgstr ""
+
+#: includes/TicketDesignerSettings.php:272
+msgid "Error importing settings:"
+msgstr ""
+
+#: includes/TicketDesignerSettings.php:273
+msgid "This will replace all current settings with the global ticket design. Continue?"
+msgstr ""
+
+#: includes/TicketDesignerSettings.php:274
+msgid "Could not load global settings."
+msgstr ""
+
+#: includes/TicketDesignerSettings.php:275
+msgid "Error loading global settings. Please try again."
+msgstr ""
+
+#: includes/TicketManager.php:73
+msgid "None"
+msgstr ""
+
+#: includes/TicketManager.php:293
+msgid "To verify your ticket, please scan the QR code at the entrance."
+msgstr ""
+
+#: includes/TicketManager.php:633
+msgid "Access denied. Invalid ticket URL."
+msgstr ""
+
+#: includes/TicketManager.php:634
+msgid "Access Denied"
+msgstr ""
+
+#: includes/TicketManager.php:643
+#: includes/TicketManager.php:662
+msgid "Not Found"
+msgstr ""
+
+#: includes/TicketManager.php:662
+msgid "Ticket not found."
+msgstr ""
+
+#: includes/TicketManager.php:837
+#, php-format
+msgid "Successfully updated %d ticket URLs with secure hashes and protected PDF directory. Please remove the updateExistingTicketUrls function from TicketManager.php."
+msgstr ""
+
+#: includes/VerificationManager.php:149
+#: templates/verification-page.php:142
+msgid "Participant type"
+msgstr ""
+
+#: includes/VerificationManager.php:152
+#: templates/verification-page.php:135
+msgid "Registration date"
+msgstr ""
+
+#: includes/VerificationManager.php:153
+#: templates/verification-page.php:136
+msgid "Updated at"
+msgstr ""
+
+#: includes/VerificationManager.php:457
+msgid "Invalid verification code."
+msgstr ""
+
+#: includes/VerificationManager.php:457
+msgid "Verification error"
+msgstr ""
+
+#: includes/VerificationManager.php:504
+#, php-format
+msgid "Registration %s by %s via %s"
+msgstr ""
+
+#: includes/VerificationManager.php:605
+#, php-format
+msgid "Registered for %s by %s"
+msgstr ""
+
+#: includes/VerificationManager.php:663
+#, php-format
+msgid "Bulk registered for all days (%s) by %s"
+msgstr ""
+
+#: includes/VerificationManager.php:807
+#, php-format
+msgid "Bulk cancelled all days (%s) by %s"
+msgstr ""
+
+#: includes/VerificationManager.php:866
+#, php-format
+msgid "Cancelled registration for %s by %s"
+msgstr ""
+
+#: includes/VerificationManager.php:991
+msgid "Manual"
+msgstr ""
+
+#: includes/WooCommerceManager.php:384
+#, php-format
+msgid "Variable symbol generated: %s (no invoice plugin active)"
+msgstr ""
+
+#: includes/WooCommerceManager.php:691
+msgid "Date:"
+msgstr ""
+
+#: includes/WooCommerceManager.php:708
+msgid "Time slot:"
+msgstr ""
+
+#: includes/WooCommerceManager.php:728
+msgid "Participants:"
+msgstr ""
+
+#: includes/WooCommerceManager.php:798
+msgid "Order notes:"
+msgstr ""
+
+#: includes/WooCommerceManager.php:1169
+msgid "GDPR regulations"
+msgstr ""
+
+#: includes/WooCommerceManager.php:1178
+#, php-format
+msgid "I agree to the processing of my personal data in accordance with %s."
+msgstr ""
+
+#: includes/WooCommerceManager.php:1193
+msgid "Please agree to the GDPR consent to proceed with the order."
+msgstr ""
+
+#: includes/WooCommerceManager.php:1212
+msgid "Terms and Conditions"
+msgstr ""
+
+#: includes/WooCommerceManager.php:1218
+#, php-format
+msgid "I agree to the processing of my personal data in accordance with the %s."
+msgstr ""
+
+#: includes/WooCommerceManager.php:1236
+msgid "Please agree to the Terms and Conditions to proceed with the order."
+msgstr ""
+
+#: includes/WooCommerceManager.php:1386
+msgid "Street address"
+msgstr ""
+
+#: includes/WooCommerceManager.php:1387
+msgid "Postal code"
+msgstr ""
+
+#: includes/WooCommerceManager.php:1393
+msgid "Company name"
+msgstr ""
+
+#: includes/WooCommerceManager.php:1421
+#, php-format
+msgid "%s is required when purchasing as a company."
+msgstr ""
+
+#: includes/WooCommerceManager.php:1422
+#, php-format
+msgid "%s is a required field."
+msgstr ""
+
+#: includes/WooCommerceManager.php:1439
+msgid "must contain 6 to 8 digits"
+msgstr ""
+
+#: includes/WooCommerceManager.php:1444
+msgid "must contain digits only (max. 12)"
+msgstr ""
+
+#: includes/WooCommerceManager.php:1449
+msgid "must start with a country prefix followed by digits (e.g. SK1234567890)"
+msgstr ""
+
+#. translators: 1: field label, 2: format hint
+#: includes/WooCommerceManager.php:1462
+#, php-format
+msgid "%1$s %2$s."
+msgstr ""
+
+#: includes/WooCommerceManager.php:1555
+#, php-format
+msgid "Email %s is already registered for livestream access. Please use a different email address."
+msgstr ""
+
+#: templates/admin/partials/content-row-item.php:10
+msgid "Text Block"
+msgstr ""
+
+#: templates/admin/partials/content-row-item.php:13
+#: templates/admin/partials/content-row-item.php:171
+#: templates/admin/ticket-designer-settings.php:233
+msgid "Image"
+msgstr ""
+
+#: templates/admin/partials/content-row-item.php:16
+msgid "Logo Row"
+msgstr ""
+
+#: templates/admin/partials/content-row-item.php:22
+msgid "Pill (title on colored bar)"
+msgstr ""
+
+#: templates/admin/partials/content-row-item.php:26
+msgid "Duplicate"
+msgstr ""
+
+#: templates/admin/partials/content-row-item.php:67
+msgid "Available shortcodes:"
+msgstr ""
+
+#: templates/admin/partials/content-row-item.php:94
+msgid "Customize (font, color, spacing, position)"
+msgstr ""
+
+#: templates/admin/partials/content-row-item.php:96
+#: templates/admin/partials/content-row-item.php:207
+#: templates/admin/partials/content-row-item.php:335
+#: templates/admin/partials/content-row-item.php:407
+#: templates/admin/partials/content-row-item.php:522
+msgid "Reset all customizations to Auto"
+msgstr ""
+
+#: templates/admin/partials/content-row-item.php:98
+#: templates/admin/partials/content-row-item.php:209
+#: templates/admin/partials/content-row-item.php:337
+#: templates/admin/partials/content-row-item.php:409
+#: templates/admin/partials/content-row-item.php:524
+#: templates/admin/ticket-designer-settings.php:125
+#: templates/admin/ticket-designer-settings.php:175
+#: templates/admin/ticket-designer-settings.php:416
+#: templates/admin/ticket-designer-settings.php:508
+#: templates/admin/ticket-designer-settings.php:600
+#: templates/admin/ticket-designer-settings.php:763
+#: templates/admin/ticket-designer-settings.php:790
+msgid "Reset"
+msgstr ""
+
+#: templates/admin/partials/content-row-item.php:103
+#: templates/admin/partials/content-row-item.php:214
+#: templates/admin/partials/content-row-item.php:342
+#: templates/admin/partials/content-row-item.php:414
+#: templates/admin/partials/content-row-item.php:529
+msgid "Padding Top (px)"
+msgstr ""
+
+#: templates/admin/partials/content-row-item.php:110
+#: templates/admin/partials/content-row-item.php:221
+#: templates/admin/partials/content-row-item.php:349
+#: templates/admin/partials/content-row-item.php:421
+#: templates/admin/partials/content-row-item.php:536
+msgid "Padding Bottom (px)"
+msgstr ""
+
+#: templates/admin/partials/content-row-item.php:119
+#: templates/admin/ticket-designer-settings.php:842
+msgid "Font Size (px)"
+msgstr ""
+
+#: templates/admin/partials/content-row-item.php:126
+#: templates/admin/ticket-designer-settings.php:848
+msgid "Color"
+msgstr ""
+
+#: templates/admin/partials/content-row-item.php:135
+#: templates/admin/partials/content-row-item.php:260
+#: templates/admin/partials/content-row-item.php:453
+#: templates/admin/ticket-designer-settings.php:425
+#: templates/admin/ticket-designer-settings.php:517
+#: templates/admin/ticket-designer-settings.php:862
+msgid "Width (px)"
+msgstr ""
+
+#: templates/admin/partials/content-row-item.php:141
+msgid "Auto (full width)"
+msgstr ""
+
+#: templates/admin/partials/content-row-item.php:142
+msgid "Leave as 0 for full width"
+msgstr ""
+
+#: templates/admin/partials/content-row-item.php:147
+#: templates/admin/partials/content-row-item.php:243
+#: templates/admin/partials/content-row-item.php:490
+#: templates/admin/partials/content-row-item.php:559
+#: templates/admin/ticket-designer-settings.php:856
+msgid "X Position (px)"
+msgstr ""
+
+#: templates/admin/partials/content-row-item.php:153
+#: templates/admin/partials/content-row-item.php:162
+#: templates/admin/partials/content-row-item.php:255
+#: templates/admin/partials/content-row-item.php:265
+#: templates/admin/partials/content-row-item.php:273
+#: templates/admin/partials/content-row-item.php:363
+#: templates/admin/partials/content-row-item.php:371
+#: templates/admin/partials/content-row-item.php:379
+#: templates/admin/partials/content-row-item.php:387
+#: templates/admin/partials/content-row-item.php:502
+#: templates/admin/partials/content-row-item.php:564
+#: templates/admin/partials/content-row-item.php:572
+msgid "Auto"
+msgstr ""
+
+#: templates/admin/partials/content-row-item.php:156
+#: templates/admin/partials/content-row-item.php:250
+#: templates/admin/partials/content-row-item.php:358
+#: templates/admin/partials/content-row-item.php:497
+#: templates/admin/partials/content-row-item.php:567
+msgid "Y Position (px)"
+msgstr ""
+
+#: templates/admin/partials/content-row-item.php:176
+#: templates/admin/partials/content-row-item.php:298
+msgid "Click to change image"
+msgstr ""
+
+#: templates/admin/partials/content-row-item.php:190
+msgid "Image URL — click the tile to browse"
+msgstr ""
+
+#: templates/admin/partials/content-row-item.php:205
+msgid "Customize (alignment, size, spacing, position)"
+msgstr ""
+
+#: templates/admin/partials/content-row-item.php:229
+#: templates/admin/partials/content-row-item.php:476
+msgid "Alignment"
+msgstr ""
+
+#: templates/admin/partials/content-row-item.php:234
+#: templates/admin/partials/content-row-item.php:481
+msgid "Centered"
+msgstr ""
+
+#: templates/admin/partials/content-row-item.php:237
+msgid "Absolute Position"
+msgstr ""
+
+#: templates/admin/partials/content-row-item.php:268
+#: templates/admin/partials/content-row-item.php:460
+msgid "Height (px)"
+msgstr ""
+
+#: templates/admin/partials/content-row-item.php:283
+msgid "Logos"
+msgstr ""
+
+#: templates/admin/partials/content-row-item.php:293
+msgid "Drag to reorder"
+msgstr ""
+
+#: templates/admin/partials/content-row-item.php:310
+msgid "Image URL — click the tile above to browse"
+msgstr ""
+
+#: templates/admin/partials/content-row-item.php:312
+msgid "Remove logo"
+msgstr ""
+
+#: templates/admin/partials/content-row-item.php:319
+msgid "Add Logo"
+msgstr ""
+
+#: templates/admin/partials/content-row-item.php:333
+msgid "Customize (dimensions, spacing, position)"
+msgstr ""
+
+#: templates/admin/partials/content-row-item.php:366
+msgid "Logo Width (px)"
+msgstr ""
+
+#: templates/admin/partials/content-row-item.php:374
+msgid "Logo Height (px)"
+msgstr ""
+
+#: templates/admin/partials/content-row-item.php:382
+msgid "Spacing (px)"
+msgstr ""
+
+#: templates/admin/partials/content-row-item.php:396
+msgid "Title"
+msgstr ""
+
+#: templates/admin/partials/content-row-item.php:401
+msgid "e.g. PARTNERS"
+msgstr ""
+
+#: templates/admin/partials/content-row-item.php:405
+msgid "Customize (colors, size, spacing, position)"
+msgstr ""
+
+#: templates/admin/partials/content-row-item.php:430
+#: templates/admin/ticket-designer-settings.php:238
+msgid "Background color"
+msgstr ""
+
+#: templates/admin/partials/content-row-item.php:437
+#: templates/admin/ticket-designer-settings.php:353
+msgid "Text color"
+msgstr ""
+
+#: templates/admin/partials/content-row-item.php:444
+#: templates/admin/partials/content-row-item.php:660
+#: templates/admin/ticket-designer-settings.php:359
+msgid "Font size (px)"
+msgstr ""
+
+#: templates/admin/partials/content-row-item.php:467
+#: templates/admin/ticket-designer-settings.php:214
+msgid "Border radius (px)"
+msgstr ""
+
+#: templates/admin/partials/content-row-item.php:472
+msgid "Half of height = full pill"
+msgstr ""
+
+#: templates/admin/partials/content-row-item.php:484
+msgid "Absolute position"
+msgstr ""
+
+#: templates/admin/partials/content-row-item.php:511
+msgid "QR Code Content (URL or text)"
+msgstr ""
+
+#: templates/admin/partials/content-row-item.php:516
+msgid "https://example.com or any text"
+msgstr ""
+
+#: templates/admin/partials/content-row-item.php:520
+msgid "Customize (position, size, frame, title label, spacing)"
+msgstr ""
+
+#: templates/admin/partials/content-row-item.php:543
+msgid "Padding left (px)"
+msgstr ""
+
+#: templates/admin/partials/content-row-item.php:550
+msgid "Padding right (px)"
+msgstr ""
+
+#: templates/admin/partials/content-row-item.php:575
+#: templates/admin/ticket-designer-settings.php:608
+msgid "Size (px)"
+msgstr ""
+
+#: templates/admin/partials/content-row-item.php:589
+msgid "Render next block inline (side by side)"
+msgstr ""
+
+#: templates/admin/partials/content-row-item.php:593
+msgid "Frame (border around QR)"
+msgstr ""
+
+#: templates/admin/partials/content-row-item.php:601
+msgid "Draw frame around QR"
+msgstr ""
+
+#: templates/admin/partials/content-row-item.php:605
+msgid "Frame color"
+msgstr ""
+
+#: templates/admin/partials/content-row-item.php:613
+msgid "Frame width (px)"
+msgstr ""
+
+#: templates/admin/partials/content-row-item.php:620
+msgid "Frame radius (px)"
+msgstr ""
+
+#: templates/admin/partials/content-row-item.php:627
+msgid "Padding (px)"
+msgstr ""
+
+#: templates/admin/partials/content-row-item.php:635
+msgid "Title label below QR"
+msgstr ""
+
+#: templates/admin/partials/content-row-item.php:637
+msgid "Title text"
+msgstr ""
+
+#: templates/admin/partials/content-row-item.php:642
+msgid "e.g. PROGRAM (leave empty to hide)"
+msgstr ""
+
+#: templates/admin/partials/content-row-item.php:646
+msgid "Pill background"
+msgstr ""
+
+#: templates/admin/partials/content-row-item.php:653
+msgid "Pill text color"
+msgstr ""
+
+#: templates/admin/partials/content-row-item.php:667
+msgid "Pill height (px)"
+msgstr ""
+
+#: templates/admin/ticket-designer-settings.php:11
+msgid "Settings saved successfully."
+msgstr ""
+
+#: templates/admin/ticket-designer-settings.php:18
+msgid "Design for:"
+msgstr ""
+
+#: templates/admin/ticket-designer-settings.php:30
+msgid "Global (default)"
+msgstr ""
+
+#: templates/admin/ticket-designer-settings.php:53
+msgid "Edit ticket for language:"
+msgstr ""
+
+#. translators: %s: language name
+#: templates/admin/ticket-designer-settings.php:76
+#, php-format
+msgid "Currently editing: %s"
+msgstr ""
+
+#: templates/admin/ticket-designer-settings.php:97
+msgid "Use custom ticket design for this product"
+msgstr ""
+
+#: templates/admin/ticket-designer-settings.php:101
+msgid "Copy from Global"
+msgstr ""
+
+#: templates/admin/ticket-designer-settings.php:105
+msgid "When disabled, the global ticket design will be used."
+msgstr ""
+
+#: templates/admin/ticket-designer-settings.php:111
+msgid "Header"
+msgstr ""
+
+#: templates/admin/ticket-designer-settings.php:112
+msgid "Body"
+msgstr ""
+
+#: templates/admin/ticket-designer-settings.php:113
+msgid "Footer"
+msgstr ""
+
+#: templates/admin/ticket-designer-settings.php:120
+msgid "Header Logo"
+msgstr ""
+
+#: templates/admin/ticket-designer-settings.php:123
+#: templates/admin/ticket-designer-settings.php:173
+#: templates/admin/ticket-designer-settings.php:414
+#: templates/admin/ticket-designer-settings.php:506
+#: templates/admin/ticket-designer-settings.php:598
+#: templates/admin/ticket-designer-settings.php:788
+msgid "Reset this section to defaults"
+msgstr ""
+
+#: templates/admin/ticket-designer-settings.php:129
+msgid "Small logo image rendered above the ticket frame."
+msgstr ""
+
+#: templates/admin/ticket-designer-settings.php:137
+msgid "Click to change logo"
+msgstr ""
+
+#: templates/admin/ticket-designer-settings.php:150
+msgid "Logo URL — click the tile to browse"
+msgstr ""
+
+#: templates/admin/ticket-designer-settings.php:157
+msgid "Vertical space reserved above the ticket where the logo image is placed and centered."
+msgstr ""
+
+#: templates/admin/ticket-designer-settings.php:158
+msgid "Header height (px)"
+msgstr ""
+
+#: templates/admin/ticket-designer-settings.php:170
+msgid "Ticket Frame"
+msgstr ""
+
+#: templates/admin/ticket-designer-settings.php:184
+#: templates/admin/ticket-designer-settings.php:799
+msgid "Enable"
+msgstr ""
+
+#: templates/admin/ticket-designer-settings.php:188
+msgid "Draws a styled ticket body (rounded rectangle with background, left stub, perforation and vertical right text). When enabled, the Header Image is used as a small logo above the frame — not as full background."
+msgstr ""
+
+#: templates/admin/ticket-designer-settings.php:196
+msgid "1. Layout"
+msgstr ""
+
+#: templates/admin/ticket-designer-settings.php:200
+msgid "Minimum height — ticket auto-grows if the content is taller."
+msgstr ""
+
+#: templates/admin/ticket-designer-settings.php:201
+msgid "Min height (px)"
+msgstr ""
+
+#: templates/admin/ticket-designer-settings.php:208
+msgid "Odsadenie od loga (px)"
+msgstr ""
+
+#: templates/admin/ticket-designer-settings.php:227
+msgid "2. Background"
+msgstr ""
+
+#: templates/admin/ticket-designer-settings.php:231
+msgid "Solid color"
+msgstr ""
+
+#: templates/admin/ticket-designer-settings.php:232
+msgid "Gradient (two colors)"
+msgstr ""
+
+#: templates/admin/ticket-designer-settings.php:239
+msgid "Gradient start color"
+msgstr ""
+
+#: templates/admin/ticket-designer-settings.php:245
+msgid "Gradient end color"
+msgstr ""
+
+#: templates/admin/ticket-designer-settings.php:251
+msgid "Direction"
+msgstr ""
+
+#: templates/admin/ticket-designer-settings.php:253
+msgid "Left → Right"
+msgstr ""
+
+#: templates/admin/ticket-designer-settings.php:254
+msgid "Top → Bottom"
+msgstr ""
+
+#: templates/admin/ticket-designer-settings.php:259
+msgid "Background image"
+msgstr ""
+
+#: templates/admin/ticket-designer-settings.php:276
+msgid "3. Left stub"
+msgstr ""
+
+#: templates/admin/ticket-designer-settings.php:279
+msgid "Stub color"
+msgstr ""
+
+#: templates/admin/ticket-designer-settings.php:285
+msgid "Stub width (px)"
+msgstr ""
+
+#: templates/admin/ticket-designer-settings.php:292
+msgid "A stylized ticket icon is drawn centered in the stub automatically."
+msgstr ""
+
+#: templates/admin/ticket-designer-settings.php:300
+msgid "4. Perforation (dashed line + white notches)"
+msgstr ""
+
+#: templates/admin/ticket-designer-settings.php:304
+msgid "X position (px from ticket left)"
+msgstr ""
+
+#: templates/admin/ticket-designer-settings.php:310
+#: templates/admin/ticket-designer-settings.php:326
+msgid "Line color"
+msgstr ""
+
+#: templates/admin/ticket-designer-settings.php:322
+msgid "5. Cut line below ticket (scissors + dashed line)"
+msgstr ""
+
+#: templates/admin/ticket-designer-settings.php:332
+msgid "Gap from ticket bottom (px)"
+msgstr ""
+
+#: templates/admin/ticket-designer-settings.php:344
+msgid "6. Right vertical text"
+msgstr ""
+
+#: templates/admin/ticket-designer-settings.php:346
+msgid "Text (rotated 90°, read bottom → top on the right edge). Leave empty to hide."
+msgstr ""
+
+#: templates/admin/ticket-designer-settings.php:349
+msgid "e.g. To validate your ticket, please scan the QR code at the entrance control."
+msgstr ""
+
+#: templates/admin/ticket-designer-settings.php:411
+msgid "Left Column"
+msgstr ""
+
+#: templates/admin/ticket-designer-settings.php:435
+#: templates/admin/ticket-designer-settings.php:527
+msgid "Font Size"
+msgstr ""
+
+#: templates/admin/ticket-designer-settings.php:441
+#: templates/admin/ticket-designer-settings.php:533
+msgid "Text Color"
+msgstr ""
+
+#: templates/admin/ticket-designer-settings.php:449
+#: templates/admin/ticket-designer-settings.php:541
+msgid "Label Color"
+msgstr ""
+
+#: templates/admin/ticket-designer-settings.php:453
+#: templates/admin/ticket-designer-settings.php:545
+msgid "Same as text"
+msgstr ""
+
+#: templates/admin/ticket-designer-settings.php:462
+#: templates/admin/ticket-designer-settings.php:554
+msgid "Vertical Center"
+msgstr ""
+
+#: templates/admin/ticket-designer-settings.php:467
+#: templates/admin/ticket-designer-settings.php:559
+msgid "Label Position"
+msgstr ""
+
+#: templates/admin/ticket-designer-settings.php:470
+#: templates/admin/ticket-designer-settings.php:562
+msgid "Inline (Label: Value)"
+msgstr ""
+
+#: templates/admin/ticket-designer-settings.php:473
+#: templates/admin/ticket-designer-settings.php:565
+msgid "Above value"
+msgstr ""
+
+#: templates/admin/ticket-designer-settings.php:478
+#: templates/admin/ticket-designer-settings.php:570
+msgid "Word Wrap"
+msgstr ""
+
+#: templates/admin/ticket-designer-settings.php:481
+#: templates/admin/ticket-designer-settings.php:573
+msgid "Break long words"
+msgstr ""
+
+#: templates/admin/ticket-designer-settings.php:484
+#: templates/admin/ticket-designer-settings.php:576
+msgid "Keep whole words"
+msgstr ""
+
+#: templates/admin/ticket-designer-settings.php:491
+#: templates/admin/ticket-designer-settings.php:583
+msgid "Line Height (px)"
+msgstr ""
+
+#: templates/admin/ticket-designer-settings.php:503
+msgid "Right Column"
+msgstr ""
+
+#: templates/admin/ticket-designer-settings.php:604
+msgid "The QR code is auto-centered in the ticket's right section (right of the perforation line)."
+msgstr ""
+
+#: templates/admin/ticket-designer-settings.php:621
+msgid "Ticket Fields"
+msgstr ""
+
+#: templates/admin/ticket-designer-settings.php:623
+msgid "Redistribute fields evenly between the two columns in their natural category order"
+msgstr ""
+
+#: templates/admin/ticket-designer-settings.php:625
+msgid "Reset to auto"
+msgstr ""
+
+#: templates/admin/ticket-designer-settings.php:629
+msgid "Drag to reorder. Drag between columns to move. Uncheck to hide a field from the ticket."
+msgstr ""
+
+#: templates/admin/ticket-designer-settings.php:638
+msgid "Auto-distribute filled fields evenly between columns"
+msgstr ""
+
+#: templates/admin/ticket-designer-settings.php:642
+msgid "When enabled, empty fields (like unused company data) are skipped and the remaining populated fields are split evenly between the two columns at render time. The manual drag order below still controls the FIELD ORDER within the natural flow."
+msgstr ""
+
+#: templates/admin/ticket-designer-settings.php:647
+msgid "First Column"
+msgstr ""
+
+#: templates/admin/ticket-designer-settings.php:648
+msgid "Second Column"
+msgstr ""
+
+#: templates/admin/ticket-designer-settings.php:758
+msgid "Content Rows"
+msgstr ""
+
+#: templates/admin/ticket-designer-settings.php:761
+msgid "Remove all content rows"
+msgstr ""
+
+#: templates/admin/ticket-designer-settings.php:774
+msgid "Add Content Row"
+msgstr ""
+
+#: templates/admin/ticket-designer-settings.php:785
+msgid "Footer Text"
+msgstr ""
+
+#: templates/admin/ticket-designer-settings.php:803
+msgid "Fixed text block that always renders at the very bottom of the ticket (e.g. legal info / GDPR notice)."
+msgstr ""
+
+#: templates/admin/ticket-designer-settings.php:829
+msgid "Supports basic formatting (bold, italic, underline, lists). Shortcodes:"
+msgstr ""
+
+#: templates/admin/ticket-designer-settings.php:866
+msgid "0 = auto full-width"
+msgstr ""
+
+#: templates/admin/ticket-designer-settings.php:895
+msgid "Save Settings"
+msgstr ""
+
+#: templates/admin/ticket-designer-settings.php:899
+msgid "Export Settings"
+msgstr ""
+
+#: templates/admin/ticket-designer-settings.php:903
+msgid "Import Settings"
+msgstr ""
+
+#: templates/admin/ticket-designer-settings.php:914
+msgid "Live Preview"
+msgstr ""
+
+#: templates/admin/ticket-designer-settings.php:916
+msgid "Refresh Preview"
+msgstr ""
+
+#: templates/admin/ticket-designer-settings.php:922
+msgid "Generating preview..."
+msgstr ""
+
+#: templates/admin/ticket-preview.php:16
+msgid "Select Participant"
+msgstr ""
+
+#: templates/admin/ticket-preview.php:20
+msgid "Choose a participant to preview their ticket:"
+msgstr ""
+
+#: templates/admin/ticket-preview.php:24
+msgid "-- Select Participant --"
+msgstr ""
+
+#: templates/admin/ticket-preview.php:51
+msgid "Load Preview"
+msgstr ""
+
+#: templates/admin/ticket-preview.php:57
+msgid "Loading preview..."
+msgstr ""
+
+#: templates/order-processing-email.php:41
+#: templates/woocommerce/checkout/thankyou.php:65
+#, php-format
+msgid "Dear %s %s,"
+msgstr ""
+
+#: templates/order-processing-email.php:79
+#, php-format
+msgid "Thank you for your registration for %s."
+msgstr ""
+
+#: templates/order-processing-email.php:81
+#, php-format
+msgid "Thank you for your registration for the event %s."
+msgstr ""
+
+#: templates/order-processing-email.php:86
+#, php-format
+msgid "Thank you for paying for %s."
+msgstr ""
+
+#: templates/order-processing-email.php:88
+#, php-format
+msgid "Thank you for paying for the entrance to %s."
+msgstr ""
+
+#: templates/order-processing-email.php:95
+#, php-format
+msgid "Thank you for registering for the event %s."
+msgstr ""
+
+#: templates/order-processing-email.php:107
+#: templates/woocommerce/checkout/thankyou.php:165
+#, php-format
+msgid "Important: When making the bank transfer, please use the variable symbol: %s"
+msgstr ""
+
+#: templates/order-processing-email.php:118
+msgid "Your order details:"
+msgstr ""
+
+#: templates/order-processing-email.php:154
+msgid "Your QR Code Ticket:"
+msgstr ""
+
+#: templates/order-processing-email.php:157
+msgid "QR Code Ticket"
+msgstr ""
+
+#: templates/order-processing-email.php:159
+#, php-format
+msgid "If the QR code is not displayed, you can find it in the attached ticket or %sdownload here%s."
+msgstr ""
+
+#: templates/order-processing-email.php:164
+msgid "QR code will be generated after payment confirmation."
+msgstr ""
+
+#: templates/order-processing-email.php:168
+msgid "Please keep this email for your records.<br>You will need to present the QR code when attending the event."
+msgstr ""
+
+#: templates/verification-page.php:133
+msgid "Order Status"
+msgstr ""
+
+#: templates/verification-page.php:137
+msgid "Order Comments"
+msgstr ""
+
+#: templates/verification-page.php:139
+msgid "Invoice"
+msgstr ""
+
+#: templates/verification-page.php:140
+msgid "Ticket"
+msgstr ""
+
+#: templates/verification-page.php:205
+msgid "Registration Verification"
+msgstr ""
+
+#: templates/verification-page.php:235
+msgid "Current Status"
+msgstr ""
+
+#: templates/verification-page.php:240
+msgid "Last Update"
+msgstr ""
+
+#: templates/verification-page.php:254
+#, php-format
+msgid "Register %d Participants"
+msgstr ""
+
+#: templates/verification-page.php:256
+msgid "Register Participant"
+msgstr ""
+
+#: templates/verification-page.php:263
+msgid "Cancel Registration"
+msgstr ""
+
+#: templates/verification-page.php:269
+msgid "History"
+msgstr ""
+
+#: templates/verification-page.php:273
+msgid "Event"
+msgstr ""
+
+#: templates/woocommerce/checkout/thankyou.php:49
+msgid "Thank you for your payment and registration!"
+msgstr ""
+
+#: templates/woocommerce/checkout/thankyou.php:51
+msgid "Thank you for registration!"
+msgstr ""
+
+#. translators: 1: Stream URL, 2: Stream link text, 3: event noun in genitive case (e.g. "podujatia")
+#: templates/woocommerce/checkout/thankyou.php:112
+#, php-format
+msgid "An email to create a password will be sent after payment of the order. After creating it, you will be able to log in to the <a href=\"%1$s\" target=\"_blank\">%2$s</a> page with your email and created password to watch the online stream of the %3$s."
+msgstr ""
+
+#. translators: %s: event noun in genitive case
+#: templates/woocommerce/checkout/thankyou.php:118
+#, php-format
+msgid "You will be able to watch the online stream of the %s from only one device. If you log in from another device, you will be automatically logged out and will have to log in again."
+msgstr ""
+
+#. translators: 1: Stream URL, 2: Stream link text, 3: event noun in genitive case
+#: templates/woocommerce/checkout/thankyou.php:124
+#, php-format
+msgid "An email to create a password will be sent. After creating it, you will be able to log in to the <a href=\"%1$s\" target=\"_blank\">%2$s</a> page with your email and created password to watch the online stream of the %3$s."
+msgstr ""
+
+#. translators: %s: event noun in genitive case
+#: templates/woocommerce/checkout/thankyou.php:130
+#, php-format
+msgid "You can watch the online stream of the %s from only one device. If you log in from another device, you will be automatically logged out and will have to log in again."
+msgstr ""
+
+#. translators: 1: Event name (accusative), 2: Event date, 3: Event location, 4: accent color
+#: templates/woocommerce/checkout/thankyou.php:141
+#, php-format
+msgid "When entering the <strong>%1$s</strong> on <strong>%2$s</strong> at <strong>%3$s</strong>, please show your <span style=\"color:%4$s; font-weight: bold;\">QR code</span> from the email."
+msgstr ""
+
+#: templates/woocommerce/checkout/thankyou.php:190
+msgid "Registered attendees:"
+msgstr ""
+
+#: templates/woocommerce/checkout/thankyou.php:215
+msgid "you"
+msgstr ""
+
+#: templates/woocommerce/checkout/thankyou.php:221
+msgid "Additional attendees will receive their own ticket at the e-mail address listed above."
+msgstr ""
+
+#: templates/woocommerce/checkout/thankyou.php:239
+msgid "Download invoice"
+msgstr ""
+
+#: templates/woocommerce/checkout/thankyou.php:253
+msgid "Download ticket"
+msgstr ""
+
+#: templates/woocommerce/checkout/thankyou.php:264
+msgid "Have a nice day!"
+msgstr ""
+
+#. translators: 1: seats left in the wave, 2: seats left in the largest group, 3: people in the order
+#: includes/GroupSeating.php:690
+#: includes/Selection/SessionSelection.php:461
+msgid "In this time %1$s remain free, but split across groups - at most %2$s can be together in one group. We always keep families in one group, so this time does not fit your %3$s. Please choose another time."
+msgstr ""
+
+#: includes/Selection/SessionSelection.php
+msgid "at most %1$s together in one group"
+msgstr ""
+
+#: includes/Selection/ParticipantTypeSelection.php:232
+msgid "Register the whole family in one order - we always keep one group together. Separate orders may end up in different groups."
+msgstr ""
+
+#: includes/GroupSeating.php:693
+#: includes/Selection/SessionSelection.php:449
+msgctxt "accusative, follows a preposition or verb"
+msgid "%d person"
+msgid_plural "%d people"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/GroupSeating.php:689
+#: includes/GroupSeating.php:690
+#: includes/Selection/SessionSelection.php:448
+msgid "%d seat"
+msgid_plural "%d seats"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/StripeTestCardHelper.php:51
+msgid "Copied"
+msgstr ""
+
+#: includes/StripeTestCardHelper.php:72
+msgid "Stripe test card"
+msgstr ""
+
+#: includes/StripeTestCardHelper.php:74
+msgid "Stripe TEST mode"
+msgstr ""
+
+#: includes/StripeTestCardHelper.php:75
+msgid "Test card for verifying the checkout"
+msgstr ""
+
+#: includes/StripeTestCardHelper.php:78
+msgid "Card number"
+msgstr ""
+
+#: includes/StripeTestCardHelper.php:84
+msgid "Copy"
+msgstr ""
+
+#: includes/StripeTestCardHelper.php:90
+msgid "Expiry: any future date (month/year later than the current one). CVC: any 3-digit number. More test cards: %s"
+msgstr ""
+
+#: includes/AdminTestToggles.php:189
+msgid "Test modes"
+msgstr ""

@@ -202,6 +202,7 @@
     "was_label": "From 1 Nov",
     "was_price": "€8.00",
     "per": "Price per day <b>€6.80</b>",
+    "per_after": "Price per day <b>€8.00</b>",
     "features": "All competition sessions of the day | The whole competition day live\nIdeal for the Saturday finals\nE-ticket with QR code | Access right after payment",
     "btn_live": "Buy ticket · 1 day",
     "btn_stream": "Buy livestream · 1 day",
@@ -221,6 +222,7 @@
     "was_label": "From 1 Nov",
     "was_price": "€15.00",
     "per": "Price per day <b>€6.38</b>",
+    "per_after": "Price per day <b>€7.50</b>",
     "features": "E.g. Saturday finals + Sunday National Championships\nAll sessions on both days | Both days live on every device\nE-ticket with QR code | Access right after payment",
     "btn_live": "Buy ticket · 2 days",
     "btn_stream": "Buy livestream · 2 days",
@@ -240,6 +242,7 @@
     "was_label": "From 1 Nov",
     "was_price": "€20.00",
     "per": "Price per day <b>€4.25</b> — two extra days included",
+    "per_after": "Price per day <b>€5.00</b>",
     "features": "All four days, finals included\nOne ticket, no re-buying | One access, every device\nSaturday finals and weekend National Championships included",
     "btn_live": "Buy 4-day pass",
     "btn_stream": "Buy livestream · 4 days",
@@ -247,7 +250,7 @@
     "_id": "ae05fcc"
    }
   ],
-  "fine": "<p><b>Early Bird</b> applies until 31 October 2026; from 1 November the full price applies. Prices are final for the buyer — no additional fees. Sales and payment via <a href=\"https://tickets.sgf.sk/?add-to-cart=5964\" target=\"_blank\" rel=\"noopener\">tickets.sgf.sk</a>; watch the livestream at <a href=\"https://stream.sgf.sk/\" target=\"_blank\" rel=\"noopener\">stream.sgf.sk</a>. The detailed timetable will be published after the entry deadline on 18 October 2026.</p>"
+  "fine": "<p><b>Early Bird</b> applies until 31 October 2026; from 1 November the full price applies. Prices are final for the buyer — no additional fees. Sales and payment via <a href=\"https://tickets.sgf.sk/?add-to-cart=5964\" target=\"_blank\" rel=\"noopener\">tickets.sgf.sk</a>; watch the livestream at <a href=\"https://stream.sgf.sk/\" target=\"_blank\" rel=\"noopener\">stream.sgf.sk</a>. Prices are per person, but the whole order receives <b>one ticket with a QR code valid for everyone in the order</b>. Questions about tickets and the livestream: <a href=\"mailto:roman@alttag.media\">roman@alttag.media</a>. The detailed timetable will be published after the entry deadline on 18 October 2026.</p>"
  },
  "schedule": {
   "anchor_id": "schedule",
@@ -261,7 +264,7 @@
     "date": "26 November 2026",
     "btn_text": "Ticket · day 1",
     "btn_style": "grad",
-    "items": "WG | Training and podium training | seniors and juniors\nOpen | Individuals · day 1 | international invitational competition",
+    "items": "Open | Individuals · born 2019 – 2016 | award ceremony\nOpen | Individuals · born 2015 – 2014 | award ceremony",
     "_id": "b935b61"
    },
    {
@@ -270,7 +273,7 @@
     "date": "27 November 2026",
     "btn_text": "Ticket · day 2",
     "btn_style": "grad",
-    "items": "WG | Qualification · all-around | seniors and juniors · hoop, ball, clubs, ribbon\nOpen | Individuals · day 2 | international invitational competition",
+    "items": "WG | Qualification · juniors | award ceremony\nOpen | Individuals · juniors | award ceremony\nWG | Qualification · seniors | opening ceremony · award ceremony",
     "_id": "4d044cb"
    },
    {
@@ -279,7 +282,7 @@
     "date": "28 November 2026",
     "btn_text": "Ticket · finals",
     "btn_style": "primary",
-    "items": "WG | Apparatus finals | hoop, ball, clubs, ribbon · award ceremony\nOpen | Individuals and groups\nSVK | Slovak National Group Championships",
+    "items": "Open | Individuals · born 2013 | award ceremony\nOpen | Individuals · seniors | award ceremony\nSVK | Groups without apparatus · born 2020 – 2017 and younger | Championships opening · Christmas Nitra & SVK award ceremony\nWG | Finals · juniors and seniors | finals opening ceremony",
     "_id": "16d6b5f"
    },
    {
@@ -288,7 +291,7 @@
     "date": "29 November 2026",
     "btn_text": "Ticket · day 4",
     "btn_style": "grad",
-    "items": "Open | Groups | doubles and triplets\nSVK | Slovak National Group Championships | award ceremony",
+    "items": "SVK | Pairs and trios without apparatus | Championships opening ceremony\nSVK | Pairs and trios with apparatus | Christmas Nitra & SVK award ceremony\nSVK | Groups · hopes and juniors\nSVK | Groups · pre-juniors and seniors | Christmas Nitra & SVK award ceremony",
     "_id": "9fbca22"
    }
   ],
@@ -387,6 +390,24 @@
   ],
   "box3_note": "<p><b>Deadlines for clubs:</b> definitive registration 30 Sept 2026 · nominative registration 18 Oct 2026 · music upload to KSIS 1 Nov 2026 · <a href=\"mailto:christmas.nitra@gmail.com\">christmas.nitra@gmail.com</a></p>"
  },
+ "video": {
+  "anchor_id": "spot",
+  "eyebrow": "Spot · Christmas Nitra 2026",
+  "title": "This is Christmas Nitra",
+  "video_title": "Christmas Nitra 2026 — spot",
+  "play_label": "Play video",
+  "btn1_text": "Buy tickets"
+ },
+ "news": {
+  "anchor_id": "news",
+  "eyebrow": "News",
+  "title": "What's happening at Christmas Nitra",
+  "date_format": "j M Y",
+  "more_text": "Read article",
+  "prev_label": "Previous articles",
+  "next_label": "Next articles",
+  "btn1_text": "All news on sgf.sk"
+ },
  "livestream": {
   "title": "Can't make it? Miss nothing.",
   "lead": "<p>All four days are streamed live. Buy access the same way you buy a ticket and watch on any device.</p>",
@@ -438,27 +459,39 @@
    },
    {
     "open": "",
+    "question": "I'm buying for several people. How many tickets will I get?",
+    "answer": "<p>One. The price is per person, but the whole order receives <b>one ticket with a QR code that is valid for everyone in the order</b>. Show it once at the entrance, so please arrive together. If everyone needs their own ticket (for example, you arrive at different times), place a separate order for each person.</p>",
+    "_id": "cd12806"
+   },
+   {
+    "open": "",
+    "question": "My ticket didn't arrive or I have a problem with it. Who do I contact?",
+    "answer": "<p>We send the ticket by e-mail right after payment, so please also check your Spam or Promotions folder. If you can't find it or need help with your purchase or the livestream, write to <a href=\"mailto:roman@alttag.media\">roman@alttag.media</a> and include your order number.</p>",
+    "_id": "67a9359"
+   },
+   {
+    "open": "",
     "question": "What does Early Bird mean?",
     "answer": "<p>A discounted price for purchases until 31 October 2026 — it applies equally to arena tickets and to the livestream. From 1 November the full price applies. Prices are final, nothing is added.</p>",
-    "_id": "cd12806"
+    "_id": "00c4c40"
    },
    {
     "open": "",
     "question": "How does the livestream work?",
     "answer": "<p>Buy access at tickets.sgf.sk and watch at stream.sgf.sk after signing in with the same e-mail. It works on phones, laptops and smart TVs. Access is active right after payment.</p>",
-    "_id": "67a9359"
+    "_id": "3e93fb3"
    },
    {
     "open": "",
     "question": "Can I return a ticket or move it to another day?",
-    "answer": "<p>Tickets are tied to a specific day or days. Refund and exchange conditions follow the terms and conditions of tickets.sgf.sk — you'll find them at checkout.</p>",
-    "_id": "00c4c40"
+    "answer": "<p>Tickets are tied to a specific day or days. Refund and exchange conditions follow the terms and conditions of tickets.sgf.sk — you'll find them at checkout. For questions about your order, contact support at <a href='mailto:roman@alttag.media'>roman@alttag.media</a>.</p>",
+    "_id": "0cd925c"
    },
    {
     "open": "",
     "question": "Who organises the competition?",
     "answer": "<p>ŠK ŠOG Nitra – rhythmic gymnastics (MODERGYM) in cooperation with the Slovak Gymnastics Federation and the Secondary Sports School Nitra. The event is an official World Gymnastics competition. Contact: Zuzana Vilčeková, <a href=\"mailto:christmas.nitra@gmail.com\">christmas.nitra@gmail.com</a>, +421 911 430 001.</p>",
-    "_id": "3e93fb3"
+    "_id": "18abf43"
    }
   ]
  },
@@ -505,53 +538,45 @@
   "photo_alt": "Nitra City Sports Hall – Klokočina"
  },
  "reminder": {
+  "anchor_id": "form",
   "eyebrow": "Still deciding?",
   "title": "We'll remind you before sales open and before the competition",
   "lead": "<p>No spam — three e-mails at most: sales opening, the schedule and the day before the event.</p>",
   "note": "<p>By submitting you agree to the processing of your e-mail for this reminder. <a href=\"https://www.sgf.sk/sk/article/gdpr\" target=\"_blank\" rel=\"noopener\">Privacy policy</a></p>"
  },
  "partners": {
-  "label": "Organisers and partners",
+  "label": "Organisers",
   "logos": [
    {
     "image": {
-     "url": "https://sro.sgf.sk/wp-content/themes/hello-elementor-child/elementor-widgets/assets/logos/sog-nitra-white.png",
+     "url": "https://sro.sgf.sk/wp-content/themes/hello-elementor-child/elementor-widgets/assets/logos/cn-org-sgf-claim-en-white.png",
      "id": ""
     },
-    "alt": "ŠK ŠOG Nitra — rhythmic gymnastics",
+    "alt": "Slovak Gymnastics Federation",
     "height": {
-     "size": 34,
+     "size": 42,
      "unit": "px"
     },
     "_id": "a247d95"
    },
    {
     "image": {
-     "url": "https://sro.sgf.sk/wp-content/themes/hello-elementor-child/elementor-widgets/assets/logos/sgf-white.png",
+     "url": "https://sro.sgf.sk/wp-content/themes/hello-elementor-child/elementor-widgets/assets/logos/cn-org-sk-sog-nitra-mg-white.png",
      "id": ""
     },
-    "alt": "Slovak Gymnastics Federation",
+    "alt": "ŠK ŠOG Nitra — rhythmic gymnastics",
     "height": {
-     "size": 26,
+     "size": 46,
      "unit": "px"
     },
     "_id": "f0ccbb3"
-   },
+   }
+  ],
+  "label2": "Partners",
+  "logos2": [
    {
     "image": {
-     "url": "https://sro.sgf.sk/wp-content/themes/hello-elementor-child/elementor-widgets/assets/logos/sss-white-hd.png",
-     "id": ""
-    },
-    "alt": "Secondary Sports School Nitra",
-    "height": {
-     "size": 56,
-     "unit": "px"
-    },
-    "_id": "a41c93b"
-   },
-   {
-    "image": {
-     "url": "https://sro.sgf.sk/wp-content/themes/hello-elementor-child/elementor-widgets/assets/logos/wg-white-hd.png",
+     "url": "https://sro.sgf.sk/wp-content/themes/hello-elementor-child/elementor-widgets/assets/logos/cn-partner-wg-white.png",
      "id": ""
     },
     "alt": "World Gymnastics",
@@ -559,43 +584,43 @@
      "size": 40,
      "unit": "px"
     },
-    "_id": "9de4288"
+    "_id": "7f3a9fa"
    },
    {
     "image": {
-     "url": "https://sro.sgf.sk/wp-content/themes/hello-elementor-child/elementor-widgets/assets/logos/eg-white.png",
+     "url": "https://sro.sgf.sk/wp-content/themes/hello-elementor-child/elementor-widgets/assets/logos/cn-partner-eg-white.png",
      "id": ""
     },
     "alt": "European Gymnastics",
     "height": {
-     "size": 40,
+     "size": 44,
      "unit": "px"
     },
-    "_id": "29eda0e"
+    "_id": "22fe886"
    },
    {
     "image": {
-     "url": "https://sro.sgf.sk/wp-content/themes/hello-elementor-child/elementor-widgets/assets/logos/min-cestovny-ruch-sport-white.png",
+     "url": "https://sro.sgf.sk/wp-content/themes/hello-elementor-child/elementor-widgets/assets/logos/cn-partner-mcras-en-white.png",
      "id": ""
     },
     "alt": "Ministry of Tourism and Sports of the Slovak Republic",
     "height": {
-     "size": 46,
+     "size": 40,
      "unit": "px"
     },
-    "_id": "8ddd1ba"
+    "_id": "6badb6a"
    },
    {
     "image": {
-     "url": "https://sro.sgf.sk/wp-content/themes/hello-elementor-child/elementor-widgets/assets/logos/min-skolstva-white.png",
+     "url": "https://sro.sgf.sk/wp-content/themes/hello-elementor-child/elementor-widgets/assets/logos/cn-partner-sss-nitra-white.png",
      "id": ""
     },
-    "alt": "Ministry of Education, Research, Development and Youth of the Slovak Republic",
+    "alt": "Secondary Sports School Nitra",
     "height": {
-     "size": 46,
+     "size": 62,
      "unit": "px"
     },
-    "_id": "ed5b2d5"
+    "_id": "65e4e1f"
    }
   ]
  },
