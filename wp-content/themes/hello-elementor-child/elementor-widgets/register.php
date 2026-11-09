@@ -61,6 +61,7 @@ $xn_widgets = [
     'competition' => 'Elementor_Widget_Competition',
     'news'        => 'Elementor_Widget_News',
     'livestream'  => 'Elementor_Widget_Livestream',
+    'merch'       => 'Elementor_Widget_Merch',
     'faq'         => 'Elementor_Widget_Faq',
     'venue'       => 'Elementor_Widget_Venue',
     'reminder'    => 'Elementor_Widget_Reminder',

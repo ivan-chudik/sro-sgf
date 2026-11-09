@@ -1,0 +1,117 @@
+.custom-merch .merch__head { text-align: center; }
+.custom-merch .merch__head .xn-h2,
+.custom-merch .merch__head .xn-lead { margin-left: auto; margin-right: auto; }
+.custom-merch .merch__head:empty { display: none; }
+
+.custom-merch .merch__badge-row { display: flex; justify-content: center; margin-top: 28px; }
+.custom-merch .merch__head:empty + .merch__badge-row { margin-top: 0; }
+.custom-merch .merch__badge {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 20px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, .06);
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    color: #fff;
+}
+.custom-merch .merch__badge::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    padding: 1.5px;
+    background: var(--xn-gradient);
+    -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+}
+.custom-merch .merch__badge::before {
+    content: "";
+    flex-shrink: 0;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--xn-pink);
+    animation: merch-pulse 1.8s ease-in-out infinite;
+}
+@keyframes merch-pulse { 50% { opacity: .35; } }
+
+.custom-merch .merch__poster {
+    position: relative;
+    width: 100%;
+    max-width: var(--merch-w, 1040px);
+    margin: 40px auto 0;
+    border-radius: 24px;
+    overflow: hidden;
+    background: #111;
+    box-shadow: 0 30px 80px rgba(0, 0, 0, .55);
+}
+.custom-merch .merch__poster::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    padding: 2px;
+    background: var(--xn-gradient);
+    -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+}
+.custom-merch .merch__head:empty + .merch__poster { margin-top: 0; }
+.custom-merch .merch__zoom { display: block; cursor: zoom-in; }
+.custom-merch .merch__img { display: block; width: 100%; height: auto; transition: transform .6s; }
+.custom-merch .merch__zoom:hover .merch__img { transform: scale(1.02); }
+.custom-merch .merch__zoom:focus-visible { outline: 3px solid var(--xn-pink); outline-offset: -3px; }
+
+.custom-merch .merch__items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    max-width: 900px;
+    margin: 36px auto 0;
+    padding: 0;
+    list-style: none;
+}
+.custom-merch .merch__item {
+    margin: 0;
+    padding: 9px 18px;
+    border: 1px solid rgba(255, 255, 255, .16);
+    border-radius: 999px;
+    font-size: 15px;
+    color: #e6e6ee;
+}
+
+.custom-merch .merch__cta { justify-content: center; margin-top: 36px; }
+
+.custom-merch .merch__note {
+    max-width: 640px;
+    margin: 20px auto 0;
+    text-align: center;
+    font-size: 15px;
+    color: #8a8a94;
+}
+.custom-merch .merch__note p { margin: 0; }
+.custom-merch .merch__note p + p { margin-top: .6em; }
+.custom-merch .merch__note a { color: #fff; text-decoration: underline; }
+
+@media (max-width: 820px) {
+    .custom-merch .merch__poster { margin-top: 32px; border-radius: 18px; }
+    .custom-merch .merch__items { margin-top: 28px; }
+}
+@media (max-width: 767px) {
+    .custom-merch .merch__poster { max-width: var(--merch-w-m, 560px); }
+    .custom-merch .merch__badge { font-size: 12px; padding: 9px 16px; }
+    .custom-merch .merch__item { font-size: 14px; padding: 8px 14px; }
+}
+@media (prefers-reduced-motion: reduce) {
+    .custom-merch .merch__badge::before { animation: none; }
+    .custom-merch .merch__img { transition: none; }
+}
