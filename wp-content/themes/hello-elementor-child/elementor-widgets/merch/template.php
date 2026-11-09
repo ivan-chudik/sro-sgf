@@ -16,7 +16,7 @@ $note       = xn_on( $settings, 'note_show' ) ? xn_wysiwyg( $settings['note'] ??
         <?php endif; ?>
 
         <?php if ( xn_on( $settings, 'poster_show' ) && $poster_url ) : ?>
-            <figure class="merch__poster">
+            <div class="merch__poster">
                 <?php if ( $lightbox ) : ?>
                     <a class="merch__zoom" href="<?php echo esc_url( $poster_url ); ?>" data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="merch-<?php echo esc_attr( $this->get_id() ); ?>" aria-label="<?php echo esc_attr( 'Zväčšiť: ' . $poster_alt ); ?>">
                 <?php endif; ?>
@@ -27,7 +27,7 @@ $note       = xn_on( $settings, 'note_show' ) ? xn_wysiwyg( $settings['note'] ??
                     <img class="merch__img" src="<?php echo esc_url( $poster_url ); ?>" alt="<?php echo esc_attr( $poster_alt ); ?>" loading="lazy" decoding="async" />
                 </picture>
                 <?php if ( $lightbox ) : ?></a><?php endif; ?>
-            </figure>
+            </div>
         <?php endif; ?>
 
         <?php if ( $items ) : ?>
