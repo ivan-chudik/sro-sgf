@@ -87,6 +87,7 @@ class Elementor_Widget_Partners extends \Elementor\Widget_Base {
             $l( 'cn-partner-eg-white.png', 'European Gymnastics', 44 ),
             $l( 'cn-partner-mcras-sk-white.png', 'Ministerstvo cestovného ruchu a športu SR', 46 ),
             $l( 'cn-partner-sss-nitra-white.png', 'Stredná športová škola Nitra', 62 ),
+            $l( 'cn-partner-4ka-white.png', '4ka', 54 ),
         ]);
 
         $this->start_controls_section( 'section_layout', [
