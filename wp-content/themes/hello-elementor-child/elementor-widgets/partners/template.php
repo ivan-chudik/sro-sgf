@@ -14,7 +14,7 @@ if ( ! $groups ) return;
 ?>
 <section class="custom-partners xn-block xn-section" data-widget="partners">
     <div class="xn-wrap">
-        <div class="partners__groups<?php echo xn_on( $settings, 'divider_show' ) ? ' has-divider' : ''; ?>">
+        <div class="partners__groups is-<?php echo esc_attr( ( $settings['groups_layout'] ?? 'stack' ) === 'row' ? 'row' : 'stack' ); ?><?php echo xn_on( $settings, 'divider_show' ) ? ' has-divider' : ''; ?>">
             <?php foreach ( $groups as $group ) : ?>
                 <div class="partners__group">
                     <?php if ( trim( $group['label'] ) !== '' ) : ?>

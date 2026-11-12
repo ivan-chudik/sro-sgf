@@ -94,6 +94,12 @@ class Elementor_Widget_Partners extends \Elementor\Widget_Base {
             'label' => 'Rozloženie',
             'tab'   => \Elementor\Controls_Manager::TAB_CONTENT,
         ]);
+        $this->add_control('groups_layout', [
+            'label'   => 'Skupiny',
+            'type'    => \Elementor\Controls_Manager::SELECT,
+            'default' => 'stack',
+            'options' => [ 'stack' => 'Pod sebou', 'row' => 'Vedľa seba' ],
+        ]);
         $this->add_responsive_control('gap', [
             'label'      => 'Medzera medzi logami',
             'type'       => \Elementor\Controls_Manager::SLIDER,
