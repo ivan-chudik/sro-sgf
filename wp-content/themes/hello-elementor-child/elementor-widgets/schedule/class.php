@@ -70,7 +70,7 @@ class Elementor_Widget_Schedule extends \Elementor\Widget_Base {
             'type'        => \Elementor\Controls_Manager::TEXTAREA,
             'rows'        => 4,
             'default'     => '',
-            'description' => '1 riadok = 1 blok: "čas | štítok | text | doplnok" (čas je nepovinný). Napr. 16:30 – 20:30 | WG | Finále · juniorky a seniorky | slávnostné otvorenie 16:00',
+            'description' => '1 riadok = 1 blok: "čas | štítok | text | doplnok" (čas je nepovinný). Napr. 16:30 - 20:30 | WG | Finále · juniorky a seniorky | slávnostné otvorenie 16:00',
         ]);
         $day->add_control('btn_text', [
             'label'   => 'Text tlačidla',
@@ -96,13 +96,13 @@ class Elementor_Widget_Schedule extends \Elementor\Widget_Base {
             'title_field' => '{{{ label }}} — {{{ title }}}',
             'default'     => [
                 [ 'label' => 'Deň 1', 'title' => 'Štvrtok', 'date' => '26. novembra 2026', 'btn_text' => 'Vstupenka · deň 1', 'btn_style' => 'grad',
-                  'items' => "08:00 – 12:25 | Open | Jednotlivkyne · ročníky 2019 – 2016 | 12:25 vyhlásenie výsledkov\n13:00 – 16:45 | Open | Jednotlivkyne · ročníky 2015 – 2014 | 17:00 vyhlásenie výsledkov\n18:00 – 22:00 | WG | Pódiový tréning" ],
+                  'items' => "08:00 - 12:25 | Open | Jednotlivkyne · ročníky 2019 - 2016 | 12:25 vyhlásenie výsledkov\n13:00 - 16:45 | Open | Jednotlivkyne · ročníky 2015 - 2014 | 17:00 vyhlásenie výsledkov\n18:00 - 22:00 | WG | Pódiový tréning" ],
                 [ 'label' => 'Deň 2', 'title' => 'Piatok', 'date' => '27. novembra 2026', 'btn_text' => 'Vstupenka · deň 2', 'btn_style' => 'grad',
-                  'items' => "08:00 – 14:30 | WG | Kvalifikácia · juniorky\n14:40 – 16:20 | Open | Jednotlivkyne · juniorky 2011 – 2012 | vyhlásenie výsledkov junioriek WG a Open · slávnostné otvorenie súťaže\n17:00 – 20:30 | WG | Kvalifikácia · seniorky | 20:30 vyhlásenie výsledkov" ],
+                  'items' => "08:00 - 14:30 | WG | Kvalifikácia · juniorky\n14:40 - 16:20 | Open | Jednotlivkyne · juniorky 2011 - 2012 | vyhlásenie výsledkov junioriek WG a Open · slávnostné otvorenie súťaže\n17:00 - 20:30 | WG | Kvalifikácia · seniorky | 20:30 vyhlásenie výsledkov" ],
                 [ 'label' => 'Deň 3', 'title' => 'Sobota', 'date' => '28. novembra 2026', 'btn_text' => 'Vstupenka · finále', 'btn_style' => 'primary',
-                  'items' => "08:00 – 11:05 | Open | Jednotlivkyne · ročník 2013 a seniorky | 11:10 vyhlásenie výsledkov\n11:30 – 14:30 | MSR | Spoločné skladby bez náčinia · 2020 – 2017 a mladšie | 11:30 slávnostné otvorenie MSR · 14:35 vyhlásenie výsledkov\n16:00 – 20:30 | WG | Finále · juniorky a seniorky | 16:00 slávnostné otvorenie finále" ],
+                  'items' => "08:00 - 11:05 | Open | Jednotlivkyne · ročník 2013 a seniorky | 11:10 vyhlásenie výsledkov\n11:30 - 14:30 | MSR | Spoločné skladby bez náčinia · 2020 - 2017 a mladšie | 11:30 slávnostné otvorenie MSR · 14:35 vyhlásenie výsledkov\n16:00 - 20:30 | WG | Finále · juniorky a seniorky | 16:00 slávnostné otvorenie finále" ],
                 [ 'label' => 'Deň 4', 'title' => 'Nedeľa', 'date' => '29. novembra 2026', 'btn_text' => 'Vstupenka · deň 4', 'btn_style' => 'grad',
-                  'items' => "09:00 – 11:20 | MSR | Dvojice a trojice bez náčinia | 08:40 slávnostné otvorenie MSR\n11:30 – 13:10 | MSR | Dvojice a trojice s náčiním | 13:15 vyhlásenie výsledkov\n14:10 – 15:20 | MSR | Spoločné skladby · nádeje a juniorky\n15:30 – 16:25 | MSR | Spoločné skladby · pre-juniorky a seniorky | 16:30 vyhlásenie výsledkov Vianočnej Nitry a MSR" ],
+                  'items' => "09:00 - 11:20 | MSR | Dvojice a trojice bez náčinia | 08:40 slávnostné otvorenie MSR\n11:30 - 13:10 | MSR | Dvojice a trojice s náčiním | 13:15 vyhlásenie výsledkov\n14:10 - 15:20 | MSR | Spoločné skladby · nádeje a juniorky\n15:30 - 16:25 | MSR | Spoločné skladby · pre-juniorky a seniorky | 16:30 vyhlásenie výsledkov Vianočnej Nitry a MSR" ],
             ],
         ]);
         $this->end_controls_section();

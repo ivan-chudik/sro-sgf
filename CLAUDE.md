@@ -442,3 +442,4 @@ include get_stylesheet_directory() . '/elementor-widgets/partials/button.php';
 - Spoločné controls sú v traite `Xn_Widget_Controls` (`partials/controls.php`), helpery v `partials/helpers.php`.
 - SK/EN = ten istý widget, iný obsah. Predajné URL prázdne = automaticky podľa jazyka (`xn_tickets_url()`). EN obsah sa generuje cez `elementor-templates/build.py`.
 - Nav Menu a Form sú natívne Elementor widgety v uložených šablónach, ktoré sa renderujú v CN · Header / CN · Pripomienka (SELECT šablóny).
+- Rozsahy časov, rokov a čísel v obsahu (defaulty widgetov, `build.py`, texty pre klienta) písať s bežným spojovníkom `-` s medzerami (`08:00 - 12:25`, `2019 - 2016`), nie s pomlčkou `–` (en dash). Časy v EN aj SK v 24-hodinovom formáte.
