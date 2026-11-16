@@ -24,11 +24,13 @@ $note     = xn_on( $settings, 'note_show' ) ? xn_wysiwyg( $settings['note_text']
                     <?php $rows = xn_lines( $d['items'] ?? '' ); if ( $rows ) : ?>
                         <ul class="schedule__list">
                             <?php foreach ( $rows as $row ) :
-                                list( $tag, $text, $sub ) = xn_cols( $row, 3 );
+                                $cols = xn_cols( $row, 4 );
+                                $time = preg_match( '/^\d{1,2}[:.]\d{2}/', $cols[0] ) ? array_shift( $cols ) : '';
+                                list( $tag, $text, $sub ) = array_pad( $cols, 3, '' );
                                 $variant = xn_tag_variant( $tag, $settings['tags_grad'] ?? '', $settings['tags_orchid'] ?? '' ); ?>
                                 <li>
                                     <span class="schedule__tag schedule__tag--<?php echo esc_attr( $variant ); ?>"><?php echo esc_html( $tag ); ?></span>
-                                    <div><?php echo esc_html( $text ); ?><?php if ( $sub !== '' ) : ?><em><?php echo esc_html( $sub ); ?></em><?php endif; ?></div>
+                                    <div><?php if ( $time !== '' ) : ?><span class="schedule__time"><?php echo esc_html( $time ); ?></span><?php endif; ?><?php echo esc_html( $text ); ?><?php if ( $sub !== '' ) : ?><em><?php echo esc_html( $sub ); ?></em><?php endif; ?></div>
                                 </li>
                             <?php endforeach; ?>
                         </ul>
@@ -43,6 +45,10 @@ $note     = xn_on( $settings, 'note_show' ) ? xn_wysiwyg( $settings['note_text']
                 </article>
             <?php endforeach; ?>
         </div>
+
+        <?php if ( xn_on( $settings, 'pdf_show' ) ) : ?>
+            <div class="xn-cta-row schedule__cta"><?php $this->xn_render_button( $settings, 'pdf', '', [ 'class' => 'schedule__pdf', 'attrs' => [ 'target' => '_blank', 'rel' => 'noopener' ] ] ); ?></div>
+        <?php endif; ?>
 
         <?php if ( xn_on( $settings, 'note_show' ) ) : ?>
             <div class="schedule__note">
